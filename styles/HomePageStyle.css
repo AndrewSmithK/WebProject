@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.header {
+    margin: 0;
+    height: 60px;
+    background-color: #5EA2DF;
+    /*text-align: center;*/
+}
+
+.label {
+    float: right;
+    margin: 20px 15px;
+}
