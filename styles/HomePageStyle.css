@@ -4,6 +4,7 @@ body {
 
 .header {
     margin: 0;
+    padding-right: 100px;
     height: 30px;
     background-color: #317bda;
     opacity: 0.72;
@@ -18,15 +19,15 @@ body {
     font-size: 9px;
 }
 
-#centerLabel {
+#center-label {
     border-left: 1px solid white;
     border-right: 1px solid white;
     margin: 10px 2.5px;
     padding: 0 7px;
 }
 
-#container {
-    margin-right: 100px;
+nav {
+    margin-left: 30%;
 }
 
 .navigation {
@@ -34,6 +35,15 @@ body {
     background-color: #317bda;
     border-bottom: 1px solid #f7f7f7;
     /*background-clip: border-box;*/
+}
+
+.navigation ul li{
+    list-style-type: none;
+}
+
+.navigation ul {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .navigation a {
@@ -45,79 +55,72 @@ body {
 }
 
 .navigation a:hover {
-    background-color: aqua;
+    background-color: #50ceff;
 }
 
-
-.navLinks {
+.nav-links {
     padding: 24px 25px;
     float: left;
     font-size: 10px;
 }
 
-#requestNavButton {
-    background-color: white;
+.nav-buttons {
+    float: right;
+    margin: 15px 90px 15px 0;
+}
+
+.nav-buttons button {
+    padding: 9px 10px;
+    font-family: Roboto, serif;
+    font-size: 11px;
     color: blue;
-    float: right;
-    margin: 15px 5px;
-    font-family: Roboto, serif;
-    font-size: 11px;
-    padding: 9px 10px;
+    background-color: white;
     border: none;
     border-radius: 2px;
 }
 
-#logInNavButton {
-    background-color: #5EA2DF;
+.nav-buttons .nav-button-login {
     color: white;
-    float: right;
-    margin: 15px 100px 15px 5px;
-    font-family: Roboto, serif;
-    font-size: 11px;
-    padding: 9px 10px;
-    border: none;
-    border-radius: 2px;
+    background-color: #6AA0E4;
 }
 
-#navLogo {
+.navLogo {
     float: left;
-    margin: 18px 12.5% 18px 100px;
+    margin: 18px 0 18px 100px;
 }
 
-.container {
+.content {
     height: 450px;
     background-color: #317bda;
+    color: white;
+    font-weight: 500;
+    font-family: MuseoSans;
+    padding-left: 10%;
 }
 
-.containerImage {
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.content .icon {
     padding-top: 30px;
     padding-bottom: 26px;
     margin-bottom: 35px;
 }
 
-.containerImage img{
+.content .icon img{
     float: right;
     margin-right: 100px;
 }
 
-.containerText {
-    font-size: 30px;
-    /*font-family: MuseoSans, serif;*/
-    font-weight: 500;
-    color: white;
-    text-align: left;
-    margin-left: 150px;
-    margin-bottom: 30px;
-}
-
-#containerAnotherText {
-    font-size: 24px;
-    margin-bottom: 50px;
-}
-
-#requestContainerButton {
+.content button {
     background-color: #31cfda;
-    margin-left: 150px;
     padding: 13px 20px;
     border: none;
     border-radius: 3px;
@@ -125,61 +128,171 @@ body {
     font-size: 16px;
 }
 
-.disclaimerText {
+.disclaimer {
     height: 50px;
     background-color: #f5f7f9;
     font-family: Roboto, serif;
     font-size: 12px;
 }
 
-.disclaimerText p {
+.disclaimer p {
     margin: 0;
     padding: 18px 0;
     text-align: center;
+    border-bottom: 1px solid #eaeff3;;
 }
 
-.containerBePartOfTheFuture {
+.advantages{
     height: 565px;
     background-color: white;
     text-align: center;
 }
 
-.bePartOfTheFutureMainLabel {
+.advantages h2 {
     font-size: 36px;
     color: #317bda;
     margin: 70px auto 10px auto;
 }
 
-.bePartOfTheFutureAnotherLabel {
+.advantages h3 {
+    font-weight: 300;
     font-size: 26px;
     color: #5b7289;
+    margin: 0;
 }
 
-.containerContent {
-    padding: 80px 130px 0 130px;
+.advantages .container {
+    padding: 80px 0 0 7%;
+    font-family: Roboto;
 }
 
-.containerContentBlock {
-    width: 270px;
+.advantages .item {
+    /*width: 26%; !* width: 270px;*!*/
     text-align: left;
     float: left;
+    margin: 0 5% 20px 5%;
 }
 
-.containerContentBlockImg {
+.advantages .icon {
     margin-bottom: 30px;
 }
 
-.containerContentBlockMainText{
+.advantages h4 {
     font-size: 20px;
     color: #317bda;
-    margin-bottom: 11px;
+    margin:  0 0 11px 0;
 }
 
-.containerContentBlockAnotherText{
+.advantages p {
     font-size: 13px;
     color: #5b7289;
+    margin: 0;
+    padding: 0;
 }
 
-#containerContentCenterBlock {
-    margin: 0 6px;
+.image {
+    text-align: center;
+    background-color: #5b7289;
+}
+
+#get-started {
+    padding: 90px 0 0 100px;
+    height: 600px;
+}
+
+#get-started .main-container {
+     position: absolute;
+ }
+
+
+#get-started h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#get-started .container{
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+#get-started .item {
+    margin-bottom: 25px;
+}
+
+#get-started .title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#explanation {
+    background-color: #f5f7f9;
+    padding-top: 90px;
+}
+
+#explanation h2 {
+    margin-top: 0;
+}
+
+#explanation h3 {
+    color: #317bda;
+}
+
+#icon-lead {
+    margin: 5px 0;
+}
+
+#explanation .item {
+    height: 295px;
+    width: 260px;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    padding: 45px 25px 0 25px;
+    margin: 0 22px 22px;
+}
+
+#explanation .item p{
+    margin-bottom: 20px;
+}
+
+
+.circle-container1 {
+    position: absolute;
+    top: 88px;
+    left: 0;
+}
+
+.circle-container2 {
+    position: absolute;
+    top: 179px;
+    left: 0;
+}
+
+.circle-container3 {
+    position: absolute;
+    left: 0;
+    bottom: 132px;
+}
+
+.circle-container4 {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #31cfda;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    background: white;
 }
