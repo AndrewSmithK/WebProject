@@ -8,40 +8,44 @@
 <body>
 
     <div class="header">
-        <div id="container">
-            <div class="label">CONSUMER WEBSITE</div>
-            <div class="label" id="centerLabel">COMPLAINTS</div>
-            <div class="label">WE ARE HIRING</div>
-        </div>
+        <div class="label">CONSUMER WEBSITE</div>
+        <div class="label" id="center-label">COMPLAINTS</div>
+        <div class="label">WE ARE HIRING</div>
     </div>
 
     <div class="navigation">
-        <img id="navLogo" src="../images/HomePageImages/logo-qover.png" alt="logo-qover"/>
+        <div class="navLogo">
+            <img  src="../images/HomePageImages/logo-qover.png" alt="logo-qover"/>
+        </div>
         <nav>
-            <a class="navLinks" href="/about">ABOUT</a>
-            <a class="navLinks" href="/products">OUR PRODUCTS</a>
-            <a class="navLinks" href="/developers">DEVELOPERS</a>
-            <a class="navLinks" href="/contact">CONTACT US</a>
+            <ul>
+                <li><a class="nav-links" href="/about">ABOUT</a></li>
+                <li><a class="nav-links" href="/products">OUR PRODUCTS</a><li>
+                <li><a class="nav-links" href="/developers">DEVELOPERS</a><li>
+                <li><a class="nav-links" href="/contact">CONTACT US</a><li>
+            </ul>
         </nav>
-        <button id="logInNavButton">Log in</button>
-        <button id="requestNavButton">Request an access</button>
+        <div class="nav-buttons">
+            <button>Request an access</button>
+            <button class="nav-button-login">Log in</button>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="containerImage">
+    <div class="content">
+        <div class="icon">
             <img src="../images/HomePageImages/lloyds-logo.png" alt="lloyds-logo"/>
         </div>
-        <div class="containerText">
+        <h1>
             Sell digitally branded innovative <br>
              and traditional insurance to your <br>
             customers
-        </div>
-        <div class="containerText" id="containerAnotherText">
+        </h1>
+        <h2>
             Call us today. Start selling tomorrow!
-        </div>
-        <button id="requestContainerButton">Request a demo</button>
+        </h2>
+        <button>Request a demo</button>
     </div>
-    <div class="disclaimerText">
+    <div class="disclaimer">
         <p>
             <b>Disclaimer</b>: This website targets brokers and introducers willing to embrace
             the digital revolution in insurance.
@@ -50,56 +54,223 @@
         </p>
     </div>
 
-    <div class="containerBePartOfTheFuture">
-        <div class="bePartOfTheFutureMainLabel">
+    <section class="advantages">
+        <h2>
             Be part of the future
-        </div>
-        <div class="bePartOfTheFutureAnotherLabel">
+        </h2>
+        <h3>
             100% Digital - Sublime Customer Experience
-        </div>
-        <div class="containerContent">
-            <div class="containerContentBlock">
-                <div class="containerContentBlockImg">
+        </h3>
+        <div class="container">
+            <div class="item">
+                <div class="icon">
                     <img src="../images/HomePageImages/icon-revenue.png">
                 </div>
-                <div class="containerContentBlockMainText">
-                    Reach new source  of revenues
-                </div>
-                <div class="containerContentBlockAnotherText">
-                    Gain additional revenues by adding our insurance products to broaden your offering
-                </div>
+                <h4>
+                    Reach new source <br>
+                     of revenues
+                </h4>
+                <p>
+                    Gain additional revenues by adding <br>
+                    our insurance products to broaden your offering
+                </p>
             </div>
 
-            <div class="containerContentBlock" id="containerContentCenterBlock">
-                <div class="containerContentBlockImg">
+            <div class="item">
+                <div class="icon">
                     <img src="../images/HomePageImages/icon-on-demand.png"/>
                 </div>
-                <div class="containerContentBlockMainText">
-                    Your branding, our innovative products
-                </div>
-                <div class="containerContentBlockAnotherText">
-                    It takes only 5 minutes to adjust our solution to your branding.
-                    We offer much more: innovative products, on-demand features,
+                <h4>
+                    Your branding,  <br>
+                    our innovative products
+                </h4>
+                <p>
+                    It takes only 5 minutes to adjust our solution <br>
+                    to your branding.We offer much more: <br>
+                    innovative products, on-demand features,<br>
                     cancellation at any time... That's our DNA!
-                </div>
+                </p>
             </div>
 
-            <div class="containerContentBlock">
-                <div class="containerContentBlockImg">
+            <div class="item">
+                <div class="icon">
                     <img src="../images/HomePageImages/icon-dev.png"/>
                 </div>
-                <div class="containerContentBlockMainText">
-                    Referral, digital lead  or Full Integration
-                </div>
-                <div class="containerContentBlockAnotherText">
-                    Our fully automated & online solution can be integrated within your IT in a few minutes.
-                    Your customer gets a price in real time and can purchase
-                    an insurance contract which is digitally and instantly issued.
-                </div>
+                <h4>
+                    Referral, digital lead  or Full<br>
+                    Integration
+                </h4>
+                <p>
+                    Our fully automated & online solution can be <br>
+                    integrated within your IT in a few minutes. <br>
+                    Your customer gets a price in real time and <br>
+                    can purchase an insurance contract which is digitally <br>
+                    and instantly issued.
+                </p>
             </div>
 
         </div>
+    </section>
+
+    <div class="image">
+        <img src="../images/HomePageImages/value-chain-v-4.png"/>
     </div>
 
+    <section class="content" id="get-started">
+        <div class="main-container">
+            <h2>
+                Get Started in 1 Minute
+            </h2>
+
+            <div class="container">
+
+                <div class="item">
+                    <div class="title">
+                        Select your product
+                    </div>
+
+                    <div class="text">
+                        Discover our library of insurance products.Keep posted with the <br>
+                        latest news. We are developing a lot of them for several countries.
+                    </div>
+
+
+
+                    <div class="circle-container1">
+                        <div class="circle">1</div>
+                    </div>
+
+
+
+                </div>
+                <div class="item">
+                    <div class="title">
+                        Sign a B2B Agreement and get your token
+                    </div>
+
+                    <div class="text">
+                        Before signing, you can of course play around with our API. Once you <br>
+                        get a token, you can start selling immediately !
+                    </div>
+
+
+
+
+                    <div class="circle-container2">
+                        <div class="circle">2</div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="item">
+                    <div class="title">
+                        Choose a distribution model
+                    </div>
+
+                    <div class="text">
+                        You are a techy? Consider the full integration of our solution in your <br>
+                        system. Not familiar with technology? Don't worry, using our digital <br>
+                        leads or referral distribution model is an easy game.
+                    </div>
+
+
+
+                    <div class="circle-container3">
+                        <div class="circle">3</div>
+                    </div>
+
+
+
+                </div>
+                <div class="item">
+                    <div class="title">
+                        Enjoy being part of the future!
+                    </div>
+                </div>
+
+
+
+                <div class="circle-container4">
+                    <div class="circle">4</div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" id="explanation">
+        <h2>
+            How does it work?
+        </h2>
+
+        <h3>
+            Choose one of the three options!
+        </h3>
+
+        <div class="container">
+            <div class="item">
+                <div class="icon">
+                    <img src="../images/HomePageImages/icon-referral.png">
+                </div>
+                <h4>
+                    Referral
+                </h4>
+                <p>
+                    <b>
+                        You want to keep it simple ?
+                    </b>
+                </p>
+                <p>
+                    No worries! Make the purchase yourself and <br>
+                    print the contract. An easy way to offer our <br>
+                    products to your customers.
+                </p>
+            </div>
+
+            <div class="item">
+                <div class="icon">
+                    <img id="icon-lead" src="../images/HomePageImages/icon-lead.png">
+                </div>
+                <h4>
+                    Digital Lead
+                </h4>
+                <p>
+                    <b>
+                        Send a link to your customer via email, with <br>
+                        your own branding or Qover's (your choice).
+                    </b>
+                </p>
+                <p>
+                    You can preselect your customer options <br>
+                    and he can purchase the coverage he wants <br>
+                    in real time.
+                </p>
+            </div>
+
+            <div class="item">
+                <div class="icon">
+                    <img src="../images/HomePageImages/icon-vertical.png">
+                </div>
+                <h4>
+                    Vertical Integration
+                </h4>
+                <p>
+                    <b>
+                        It only takes few lines of code to add our <br>
+                        digital module within your website or App.
+                    </b>
+                </p>
+                <p>
+                    No IT resources in-house? Our developers <br>
+                    can make the integration for you!
+                </p>
+
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
