@@ -1,0 +1,41 @@
+$fa-font-path: '../fonts/fontawesome';
+@import 'font-awesome';
+@import 'normalize';
+@import 'media';
+@import 'varibles';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700');
+
+$font-family: 'Open Sans', sans-serif;
+$font-family: 'Ubuntu', sans-serif;
+$footer-height: 50px;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: $footer-height;
+    min-height: 100%;
+    line-height: 1.5;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    .footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+    }
+  }
+}
