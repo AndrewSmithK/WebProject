@@ -1,16 +1,35 @@
 @import 'varibles';
 
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
 
 .main-title {
   font-family: MuseoSans;
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  color: var(--dark-sky-blue);
+  color: $dark-sky-blue;
 }
 
 .main-title-white {
-  color: var(--white);
+  color: $white;
+}
+
+.main-title-left {
+  text-align: left;
+}
+
+.main-title-container {
+  margin-bottom: 10px;
+}
+
+.middle-title {
+  font-family: MuseoSans;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;
+  color: $white;
 }
 
 .sub-title {
@@ -18,7 +37,11 @@
   font-size: 26px;
   font-weight: 300;
   text-align: center;
-  color: var(--dark-sky-blue);
+  color: $dark-sky-blue;
+}
+
+.sub-title-grey {
+  color: $grey;
 }
 
 .item-title {
@@ -27,7 +50,11 @@
   font-weight: bold;
   line-height: 1.1;
   text-align: left;
-  color: var(--dark-sky-blue);
+  color: $dark-sky-blue;
+}
+
+.item-title-white {
+  color: $white;
 }
 
 .item-title-center {
@@ -39,8 +66,18 @@
   font-size: 13px;
   line-height: 1.38;
   text-align: center;
-  color: var(--grey);
+  color: $grey;
 }
+
+.item-text-left {
+  text-align: left;
+}
+
+.item-text-white {
+  color: $white;
+}
+
+
 
 
 //.container {
