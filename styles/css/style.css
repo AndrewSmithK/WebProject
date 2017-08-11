@@ -1,58 +1,43 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700");
-.container {
-  margin: 0 auto;
-}
-
-.section {
-  padding: 100px 0;
-}
-
-.section > .title {
+.main-title {
+  font-family: MuseoSans;
+  font-size: 36px;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 75px;
+  color: var(--dark-sky-blue);
 }
 
-.section > .title h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 42px;
-  font-weight: 400;
-  text-transform: uppercase;
+.main-title-white {
+  color: var(--white);
 }
 
-.btn {
-  display: block;
-  padding: 0 45px;
-  height: 50px;
-  line-height: 50px;
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-  background: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.sub-title {
+  font-family: MuseoSans;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--dark-sky-blue);
 }
 
-.img-responsive {
-  width: 100%;
+.item-title {
+  font-family: MuseoSans;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+  color: var(--dark-sky-blue);
 }
 
-.text-white {
-  color: #fff;
+.item-title-center {
+  text-align: center;
 }
 
-.text-black {
-  color: #333;
-}
-
-.cf:after {
-  display: block;
-  clear: both;
-  content: "";
+.item-text {
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--grey);
 }
 @charset "UTF-8";
 
@@ -3621,6 +3606,7 @@ html body {
   font-weight: 400;
   font-size: 16px;
   color: #333;
+  background: #5b7289;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
