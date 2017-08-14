@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e97f1485-21f8-4eb6-ad9d-19d95369fc89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/code.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon-customer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon-dev-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon-revenue-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lloyds-logo-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/lloyds-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo-qover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/style.css" afterPath="$PROJECT_DIR$/styles/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/style.min.css" afterPath="$PROJECT_DIR$/styles/css/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/global.scss" afterPath="$PROJECT_DIR$/styles/sass/global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/sass/main.scss" afterPath="$PROJECT_DIR$/styles/sass/main.scss" />
-    </list>
+    <list default="true" id="e97f1485-21f8-4eb6-ad9d-19d95369fc89" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -246,12 +231,12 @@
       <updated>1502448587108</updated>
       <workItem from="1502448588416" duration="14621000" />
       <workItem from="1502696041569" duration="10989000" />
-      <workItem from="1502708387057" duration="12016000" />
+      <workItem from="1502708387057" duration="12195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37626000" />
+    <option name="totallyTimeSpent" value="37805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="755" extended-state="6" />
