@@ -1,5 +1,7 @@
 @import 'varibles';
-
+body {
+  color: $white;
+}
 body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -16,6 +18,10 @@ body, h1, h2, h3, h4, h5, h6, p {
   color: $white;
 }
 
+.main-title-grey {
+  color: $grey;
+}
+
 .main-title-left {
   text-align: left;
 }
@@ -26,9 +32,8 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .middle-title {
   font-family: MuseoSans;
-  font-size: 26px;
-  font-weight: 300;
-  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
   color: $white;
 }
 
@@ -40,8 +45,24 @@ body, h1, h2, h3, h4, h5, h6, p {
   color: $dark-sky-blue;
 }
 
+.sub-title-left {
+  text-align: left;
+}
+
 .sub-title-grey {
   color: $grey;
+}
+
+.sub-title-white {
+  color: $white;
+}
+
+.item-title-big {
+  font-family: MuseoSans;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  color: $white;
 }
 
 .item-title {
@@ -57,8 +78,19 @@ body, h1, h2, h3, h4, h5, h6, p {
   color: $white;
 }
 
+.item-title-grey {
+  color: $grey;
+}
+
 .item-title-center {
   text-align: center;
+}
+.item-title-small {
+  font-family: MuseoSans;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: $turquoise;
 }
 
 .item-text {
@@ -69,12 +101,42 @@ body, h1, h2, h3, h4, h5, h6, p {
   color: $grey;
 }
 
+.item-text-small {
+  font-family: Roboto, sans-serif;
+  text-align: left;
+  color: $white;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.64;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
 .item-text-left {
   text-align: left;
 }
 
 .item-text-white {
   color: $white;
+}
+
+.list-title {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.section-btn{
+  clear: both;
+  border-radius: 3px;
+  border: none;
+  color: $white;
+  background-color: $turquoise;
+  padding: 13px 20px;
+}
+
+.section-btn-transparent {
+  background-color: $dark-sky-blue;
 }
 
 

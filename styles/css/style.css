@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700");
+body {
+  color: #ffffff;
+}
+
 body,
 h1,
 h2,
@@ -22,6 +26,10 @@ p {
   color: #ffffff;
 }
 
+.main-title-grey {
+  color: #5b7289;
+}
+
 .main-title-left {
   text-align: left;
 }
@@ -32,9 +40,8 @@ p {
 
 .middle-title {
   font-family: MuseoSans;
-  font-size: 26px;
-  font-weight: 300;
-  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -46,8 +53,24 @@ p {
   color: #317bda;
 }
 
+.sub-title-left {
+  text-align: left;
+}
+
 .sub-title-grey {
   color: #5b7289;
+}
+
+.sub-title-white {
+  color: #ffffff;
+}
+
+.item-title-big {
+  font-family: MuseoSans;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
 }
 
 .item-title {
@@ -63,8 +86,20 @@ p {
   color: #ffffff;
 }
 
+.item-title-grey {
+  color: #5b7289;
+}
+
 .item-title-center {
   text-align: center;
+}
+
+.item-title-small {
+  font-family: MuseoSans;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #31cfda;
 }
 
 .item-text {
@@ -75,12 +110,42 @@ p {
   color: #5b7289;
 }
 
+.item-text-small {
+  font-family: Roboto, sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.64;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
 .item-text-left {
   text-align: left;
 }
 
 .item-text-white {
   color: #ffffff;
+}
+
+.list-title {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.section-btn {
+  clear: both;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: #31cfda;
+  padding: 13px 20px;
+}
+
+.section-btn-transparent {
+  background-color: #317bda;
 }
 @charset "UTF-8";
 
@@ -3626,6 +3691,107 @@ template {
   display: none;
 }
 
+.navigation {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: rgba(247, 247, 247, 0.6);
+  box-shadow: rgba(247, 247, 247, 0.6);
+  background-color: #317bda;
+}
+
+.navigation .navLogo {
+  float: left;
+  margin: 18px 0 18px 100px;
+}
+
+.navigation nav {
+  margin-left: 30%;
+}
+
+.navigation nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.navigation nav ul li {
+  list-style-type: none;
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation nav ul li a:hover {
+  background-color: #50ceff;
+}
+
+.navigation .nav-buttons {
+  float: right;
+  margin: 15px 90px 15px 0;
+}
+
+.navigation .nav-buttons .nav-button-login {
+  color: white;
+  background-color: #6AA0E4;
+}
+
+.navigation .nav-buttons button {
+  padding: 9px 10px;
+  font-family: Roboto, serif;
+  font-size: 11px;
+  color: blue;
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+.nav-links {
+  padding: 23px 25px 22px;
+  float: left;
+  font-size: 10px;
+}
+
+#header {
+  height: 450px;
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  padding-left: 10%;
+}
+
+#header .content h1 {
+  margin-bottom: 30px;
+}
+
+#header .content h2 {
+  margin-bottom: 50px;
+}
+
+#header .content .icon {
+  padding-top: 30px;
+  padding-bottom: 26px;
+  margin-bottom: 35px;
+}
+
+#header .content .icon img {
+  float: right;
+  margin-right: 100px;
+}
+
+.disclaimer {
+  padding: 22px 0 18px;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  background-color: #f5f7f9;
+}
+
+.disclaimer .item-text p {
+  vertical-align: middle;
+}
+
 #gap-insurance {
   height: 740px;
   background-color: #317bda;
@@ -3644,8 +3810,10 @@ template {
   padding-left: 100px;
 }
 
-#gap-insurance .content .ul {
-  padding-left: 16px;
+#gap-insurance .content ul {
+  padding-left: 20px;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 #gap-insurance .content .item-title-container {
@@ -3653,19 +3821,32 @@ template {
   margin-bottom: 10px;
 }
 
-#gap-insurance .content .item {
-  margin: 10px 50px 10px 0;
+#gap-insurance .content p {
+  margin: 0 0 15px 0;
+}
+
+#gap-insurance .content .container {
+  clear: both;
+}
+
+#gap-insurance .content .container .item {
+  margin: 10px 80px 10px 0;
   float: left;
 }
 
-#gap-insurance .content .item .icon {
+#gap-insurance .content .container .item .item-icon {
   float: left;
   padding: 0;
-  margin: 0;
+  margin-right: 11px;
 }
 
-#gap-insurance .content .item .icon img {
-  margin-right: 11px;
+#gap-insurance .content .container .item .item-text {
+  font-size: 11px;
+  text-align: left;
+}
+
+#gap-insurance .content a {
+  color: #ffffff;
 }
 
 #gap-insurance .content .bitmap-icon {
@@ -3832,5 +4013,205 @@ template {
 #explanation .picture .picture-icon {
   float: left;
   margin: 15px 25px 0 34px;
+}
+
+#robust-api {
+  height: 750px;
+  background-color: #ffffff;
+  padding-top: 140px;
+  text-align: center;
+}
+
+#robust-api .main-title-container {
+  margin: 50px 0;
+}
+
+#robust-api .gap-image {
+  height: 280px;
+  width: 600px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+#robust-api .content {
+  text-align: left;
+  margin: 50px auto auto auto;
+  width: 800px;
+  height: 150px;
+}
+
+#robust-api .content .item {
+  float: left;
+  margin: 0 10px;
+}
+
+#robust-api .content .item .item-title {
+  margin-bottom: 15px;
+}
+
+#robust-api .content .item .link {
+  margin-top: 15px;
+}
+
+#inn-products {
+  height: 515px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(245, 247, 249, 0)), to(#f5f7f9)), -webkit-gradient(linear, left top, left bottom, from(#f5f7f9), to(#f5f7f9));
+  background-image: linear-gradient(to top, rgba(245, 247, 249, 0), #f5f7f9), linear-gradient(#f5f7f9, #f5f7f9);
+}
+
+#inn-products .header {
+  position: relative;
+  width: 100%;
+  padding-top: 130px;
+  margin-top: 60px;
+}
+
+#inn-products .header .half-circle {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  top: -70px;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#inn-products .header .icon {
+  width: 64px;
+  height: 75px;
+  position: absolute;
+  bottom: 37px;
+  left: 50%;
+  margin-left: -32px;
+}
+
+#inn-products .content {
+  margin: 50px auto auto;
+  width: 1050px;
+}
+
+#inn-products .content .item {
+  width: 220px;
+  height: 213.6px;
+  background-color: #ffffff;
+  float: left;
+  margin: 0 20px;
+}
+
+#inn-products .content .item .item-icon {
+  margin: 40px 78px 38px 77px;
+}
+
+#inn-products .content .item .item-icon #third-icon {
+  margin-top: -10px;
+}
+
+#inn-products .content .item .item-icon #fourth-icon {
+  margin-top: 21px;
+  margin-left: -20px;
+}
+
+#inn-products .content .item .item-text {
+  font-size: 14px;
+}
+
+#partners {
+  height: 106px;
+  background-color: #ffffff;
+  padding: 70px 0 75px;
+}
+
+#partners .content {
+  width: 1120px;
+  margin: 40px auto auto;
+}
+
+#partners .content .icon {
+  margin: 0 29px;
+  float: left;
+}
+
+#subscribe {
+  padding-top: 49px;
+  height: 141px;
+  font-size: 13px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(245, 247, 249, 0)), to(#f5f7f9)), -webkit-gradient(linear, left top, left bottom, from(#f5f7f9), to(#f5f7f9));
+  background-image: linear-gradient(to top, rgba(245, 247, 249, 0), #f5f7f9), linear-gradient(#f5f7f9, #f5f7f9);
+}
+
+#subscribe .form {
+  width: 405px;
+  margin: 29px auto auto;
+}
+
+#subscribe .form input {
+  width: 273px;
+  border: solid 1px rgba(91, 114, 137, 0.2);
+  padding: 12px 0 13px 13px;
+  float: left;
+  color: rgba(91, 114, 137, 0.5);
+}
+
+#subscribe .form button {
+  width: 103px;
+  padding: 13px 22px 14px;
+}
+
+footer {
+  height: 325px;
+}
+
+footer .container {
+  background-color: #317bda;
+}
+
+footer .container .content {
+  height: 255px;
+  width: 1100px;
+  margin: auto;
+  padding: 60px 100px 0;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+footer .container .content .icon {
+  float: left;
+  margin-top: -10px;
+  margin-right: 42px;
+}
+
+footer .container .content .item {
+  float: left;
+  margin: 0 69px;
+}
+
+footer .container .content .item ul {
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer .container .content .item ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+footer .container .content address .item {
+  margin: 25px 0 0 42px;
+}
+
+footer .copyright {
+  height: 26px;
+  background-color: #2166c2;
+  padding: 22px 100px;
+}
+
+footer .copyright p {
+  margin: auto;
+  width: 1000px;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #ffffff;
 }
 

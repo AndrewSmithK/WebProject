@@ -5,6 +5,95 @@ $fa-font-path: '../fonts/fontawesome';
 @import 'varibles';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700');
 
+.navigation {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid transparent;
+  box-shadow: rgba(247, 247, 247, 0.6);
+  background-color: #317bda;
+  .navLogo {
+    float: left;
+    margin: 18px 0 18px 100px;
+  }
+  nav {
+    margin-left: 30%;
+    ul {
+      margin: 0;
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+        a:hover {
+          background-color: #50ceff;
+        }
+      }
+    }
+  }
+  .nav-buttons {
+    float: right;
+    margin: 15px 90px 15px 0;
+    .nav-button-login{
+      color: white;
+      background-color: #6AA0E4;
+    }
+    button {
+      padding: 9px 10px;
+      font-family: Roboto, serif;
+      font-size: 11px;
+      color: blue;
+      background-color: white;
+      border: none;
+      border-radius: 2px;
+    }
+  }
+}
+
+.nav-links {
+  padding: 23px 25px 22px;
+  float: left;
+  font-size: 10px;
+}
+
+#header {
+  height: 450px;
+  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  padding-left: 10%;
+  .content {
+    h1 {
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-bottom: 50px;
+    }
+    .icon {
+      padding-top: 30px;
+      padding-bottom: 26px;
+      margin-bottom: 35px;
+      img{
+        float: right;
+        margin-right: 100px;
+      }
+    }
+  }
+}
+
+.disclaimer {
+  padding: 22px 0 18px;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  background-color: $pale-grey-two;
+  .item-text {
+    p{
+      vertical-align: middle;
+    }
+  }
+}
 
 #gap-insurance {
   height: 740px;
@@ -19,24 +108,36 @@ $fa-font-path: '../fonts/fontawesome';
   .content{
     padding-top: 70px;
     padding-left: 100px;
-    .ul {
-      padding-left: 16px;
+    ul {
+      padding-left: 20px;
+      font-size: 13px;
+      font-weight: 300;
     }
     .item-title-container{
       margin-top: 30px;
       margin-bottom: 10px;
     }
-    .item {
-      margin: 10px 50px 10px 0;
-      float: left;
-      .icon {
+    p {
+      margin: 0 0 15px 0;
+    }
+    .container {
+      clear: both;
+      .item {
+        margin: 10px 80px 10px 0;
         float: left;
-        padding: 0;
-        margin: 0;
-        img {
+        .item-icon{
+          float: left;
+          padding: 0;
           margin-right: 11px;
         }
+        .item-text {
+          font-size: 11px;
+          text-align: left;
+        }
       }
+    }
+    a {
+      color: $white;
     }
     .bitmap-icon {
       position: absolute;
@@ -186,7 +287,178 @@ $fa-font-path: '../fonts/fontawesome';
   }
 }
 
+#robust-api {
+  height: 750px;
+  background-color: $white;
+  padding-top: 140px;
+  text-align: center;
+  .main-title-container {
+    margin: 50px 0;
+  }
+  .gap-image {
+    height: 280px;
+    width: 600px;
+    margin: auto;
+    opacity: 0.9;
+  }
+  .content {
+    text-align: left;
+    margin: 50px auto auto auto;
+    width: 800px;
+    height: 150px;
+    .item {
+      float: left;
+      margin: 0 10px;
+      .item-title {
+        margin-bottom: 15px;
+      }
+      .link {
+        margin-top: 15px;
+      }
+    }
+  }
+}
 
+#inn-products {
+  height: 515px;
+  text-align: center;
+  background-image: linear-gradient(to top, rgba(245, 247, 249, 0), $pale-grey-two), linear-gradient($pale-grey-two, $pale-grey-two);
+  .header {
+    position: relative;
+    width: 100%;
+
+    padding-top: 130px;
+    margin-top: 60px;
+    .half-circle {
+      position: absolute;
+      left: 50%;
+      margin-left: -70px;
+      top: -70px;
+      width: 140px;
+      height: 140px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .icon {
+      width: 64px;
+      height: 75px;
+      position: absolute;
+      bottom: 37px;
+      left: 50%;
+      margin-left: -32px;
+    }
+  }
+  .content {
+     margin: 50px auto auto;
+     width: 1050px;
+     .item {
+       width: 220px;
+       height: 213.6px;
+       background-color: $white;
+       float: left;
+       margin: 0 20px;
+       .item-icon {
+         margin: 40px 78px 38px 77px;
+         #third-icon {
+           margin-top: -10px;
+         }
+         #fourth-icon {
+           margin-top: 21px;
+           margin-left: -20px;
+         }
+       }
+       .item-text {
+         font-size: 14px;
+       }
+     }
+   }
+}
+
+#partners {
+  height: 106px;
+  background-color: $white;
+  padding: 70px 0 75px;
+  .content {
+    width: 1120px;
+    margin: 40px auto auto;
+    .icon {
+      margin: 0 29px;
+      float: left;
+    }
+  }
+}
+
+#subscribe {
+  padding-top: 49px;
+  height: 141px;
+  font-size: 13px;
+  background-image: linear-gradient(to top, rgba(245, 247, 249, 0), $pale-grey-two), linear-gradient($pale-grey-two, $pale-grey-two);
+  .form {
+    width: 405px;
+    margin: 29px auto auto;
+    input {
+      width: 273px;
+      border: solid 1px rgba(91, 114, 137, 0.2);
+      padding: 12px 0 13px 13px;
+      float: left;
+      color: rgba(91, 114, 137, 0.5)
+    }
+    button {
+      width: 103px;
+      padding: 13px 22px 14px;
+    }
+  }
+}
+
+footer {
+  height: 325px;
+  .container {
+    background-color: $dark-sky-blue;
+    .content {
+      height: 255px;
+      width: 1100px;
+      margin: auto;
+      padding: 60px 100px 0;
+      color: $white;
+      font-size: 12px;
+      .icon {
+        float: left;
+        margin-top: -10px;
+        margin-right: 42px;
+      }
+      .item {
+        float: left;
+        margin: 0 69px;
+
+        ul {
+          padding: 0;
+          margin: 20px 0;
+          li {
+            list-style-type: none;
+            margin-bottom: 15px
+          }
+        }
+      }
+      address {
+        .item {
+          margin: 25px 0 0 42px;
+        }
+      }
+    }
+  }
+  .copyright {
+    height: 26px;
+    background-color: rgb(33, 102, 194);
+    p{
+      margin: auto;
+      width: 1000px;
+      font-size: 10px;
+      line-height: 1.3;
+      color: $white;
+    }
+    padding: 22px 100px;
+  }
+}
 //$font-family: 'Open Sans', sans-serif;
 //$font-family: 'Ubuntu', sans-serif;
 //$footer-height: 50px;
