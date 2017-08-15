@@ -1,144 +1,51 @@
 @import 'varibles';
+
 body {
   color: $white;
-}
-body, h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
+  font-family: 'MuseoSans', Courier New;
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
 }
 
-.main-title {
-  font-family: MuseoSans;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
+.section {
+  padding: 60px 0;
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+.text-blue {
   color: $dark-sky-blue;
 }
 
-.main-title-white {
-  color: $white;
+
+//////////////////////////////////////////
+
+.img-fluid {
+  width: 100%;
 }
 
-.main-title-grey {
-  color: $grey;
+.show {
+  display: block;
 }
 
-.main-title-left {
-  text-align: left;
+.hide {
+  display: none;
 }
-
-.main-title-container {
-  margin-bottom: 10px;
-}
-
-.middle-title {
-  font-family: MuseoSans;
-  font-size: 30px;
-  font-weight: 500;
-  color: $white;
-}
-
-.sub-title {
-  font-family: MuseoSans;
-  font-size: 26px;
-  font-weight: 300;
-  text-align: center;
-  color: $dark-sky-blue;
-}
-
-.sub-title-left {
-  text-align: left;
-}
-
-.sub-title-grey {
-  color: $grey;
-}
-
-.sub-title-white {
-  color: $white;
-}
-
-.item-title-big {
-  font-family: MuseoSans;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: left;
-  color: $white;
-}
-
-.item-title {
-  font-family: MuseoSans;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: left;
-  color: $dark-sky-blue;
-}
-
-.item-title-white {
-  color: $white;
-}
-
-.item-title-grey {
-  color: $grey;
-}
-
-.item-title-center {
-  text-align: center;
-}
-.item-title-small {
-  font-family: MuseoSans;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-  color: $turquoise;
-}
-
-.item-text {
-  font-family: Roboto, sans-serif;
-  font-size: 13px;
-  line-height: 1.38;
-  text-align: center;
-  color: $grey;
-}
-
-.item-text-small {
-  font-family: Roboto, sans-serif;
-  text-align: left;
-  color: $white;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.64;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-.item-text-left {
-  text-align: left;
-}
-
-.item-text-white {
-  color: $white;
-}
-
-.list-title {
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 1.2px;
-}
-
-.section-btn{
-  clear: both;
-  border-radius: 3px;
-  border: none;
-  color: $white;
-  background-color: $turquoise;
-  padding: 13px 20px;
-}
-
-.section-btn-transparent {
-  background-color: $dark-sky-blue;
-}
-
 
 
 
