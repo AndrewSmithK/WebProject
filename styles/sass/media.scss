@@ -2,13 +2,104 @@
 @import "media-queries";
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+  .section {
+    padding: 50px 0;
+    .title {
+      font-size: 28px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .item-title {
+      font-size: 16px;
+    }
+    .item-text {
+      display: none;
+    }
+  }
+
+  #header {
+    padding-bottom: 15px;
+    .container{
+      padding-left: 20px;
+      padding-right: 20px;
+      h2{
+        font-size: 24px;
+      }
+      h4{
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .logo {
+        margin-bottom: 35px;
+      }
+      .imac, .logo {
+        display: block;
+      }
+    }
+  }
+
+  .disclaimer {
+    .text {
+      font-size: 10px;
+    }
+  }
+
+  #advantages {
+    padding-left: 10px;
+    padding-right: 10px;
+    .subtitle{
+      margin-bottom: 30px;
+    }
+    .container {
+      margin-bottom: 0;
+      .item {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 40px;
+        .item-icon {
+          float:left;
+        }
+      }
+    }
+  }
+
+  #explanation {
+    .container {
+      .item {
+        border-left: 42px solid $pale-grey-two;
+        border-right: 42px solid $pale-grey-two;
+      }
+      .item-title {
+        font-size: 20px;
+      }
+    }
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 576px) and (max-width: 767px) {
+  #explanation {
+    .container {
+      .item {
+        padding: 50px 50px;
+      }
+    }
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {}
+  #advantages {
+    .container{
+      .item {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {}
