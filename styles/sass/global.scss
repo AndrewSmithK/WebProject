@@ -8,6 +8,98 @@ body {
   }
 }
 
+.btn-white {
+  background-color: $white;
+  a {
+    color: $dark-sky-blue;
+  }
+}
+
+.btn-turquoise {
+  background-color: $turquoise;
+  a {
+    color: $white;
+  }
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+  color: $white;
+}
+
+.btn-dark-blue {
+  background-color: $dark-sky-blue;
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $white;
+  }
+  color: $white;
+}
+
+.btn-turquoise:hover {
+  background-color: #2db0bb;
+
+}
+
+.btn-dark-blue:hover  {
+  background-color: #2f5cb6;
+  a {
+    text-decoration: none;
+  }
+}
+
+
+.text-grey {
+  color: $grey;
+}
+
+.text-blue {
+  color: $dark-sky-blue;
+}
+
+.text-turquoise {
+  color: $turquoise;
+}
+
+.bg-blue {
+  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-dark-blue {
+  background-color: $dark-sky-blue;
+}
+
+.bg-turquoise {
+  background-color: $turquoise;
+}
+
+.bg-pale-grey-two {
+  background-color: $pale-grey-two;
+}
+
+.bg-light-grey {
+  background-image: linear-gradient(to top, rgba(245, 247, 249, 0), $pale-grey-two), linear-gradient($pale-grey-two, $pale-grey-two);
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.item-text-small {
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.64;
+  letter-spacing: 1px;
+}
+
 .text {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -22,13 +114,11 @@ body {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    color: $dark-sky-blue;
   }
   .subtitle {
     font-size: 26px;
     font-weight: 300;
     text-align: center;
-    color: $grey;
     margin: 10px 0 50px 0;
   }
   .item-title {
@@ -36,17 +126,14 @@ body {
     font-weight: bold;
     line-height: 1.1;
     text-align: left;
-    color: $dark-sky-blue;
   }
   .item-text {
     font-family: Roboto, sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
-    color: $grey;
   }
 }
-
 
 //////////////////////////////////////////
 
