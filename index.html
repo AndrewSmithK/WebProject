@@ -1,104 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+	<!-- <link rel="shortcut icon" href="#" type="image/x-icon"> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./styles/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,900" rel="stylesheet">
+
 	<title>Document</title>
 </head>
 <body>
 
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-dark-blue" id="navigation">
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<a class="navbar-brand" href="#">
-		<img src="images/logo-qover.png">
-	</a>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#"> ABOUT <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item dropdown active">
-				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">OUR PRODUCTS</a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#"> DEVELOPERS <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#"> CONTACT US <span class="sr-only">(current)</span></a>
-			</li>
-		</ul>
-	</div>
-	<button class="btn btn-white">
-		<a class="item-text-small" href="">
-			Request an access
-		</a>
-	</button>
-	<button class="btn btn-primary">
-		<a class="item-text-small text-white" href="">
-			Log in
-		</a>
-	</button>
-</nav>
-	<!--<div class="navigation">-->
-		<!--<div class="navLogo">-->
-			<!--<img  src="images/logo-qover.png" alt="logo-qover"/>-->
-		<!--</div>-->
-		<!--<nav>-->
-			<!--<ul>-->
-				<!--<li class="item-text-small"><a class="nav-links" href="/about">ABOUT</a></li>-->
-				<!--<li class="item-text-small"><a class="nav-links" href="/products">OUR PRODUCTS</a><li>-->
-				<!--<li class="item-text-small"><a class="nav-links" href="/developers">DEVELOPERS</a><li>-->
-				<!--<li class="item-text-small"><a class="nav-links" href="/contact">CONTACT US</a><li>-->
-			<!--</ul>-->
-		<!--</nav>-->
-		<!--<div class="nav-buttons">-->
-			<!--<button>Request an access</button>-->
-			<!--<button class="nav-button-login">Log in</button>-->
-		<!--</div>-->
-	<!--</div>-->
-	<section class="section bg-blue" id="header">
+	<div class="navigation container-fluid">
 		<div class="container">
-			<div class="icon hidden-xs-down">
-				<img src="images/lloyds-logo-small.png" alt="lloyds-logo"/>
+			<a class="logo" href="#">
+				<img  src="images/logo-qover.png" alt="logo-qover"/>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="/about">About</a></li>
+					<li><a href="/products">
+						Our products<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="/developers">Developers</a></li>
+					<li><a href="/contact">Contact us</a></li>
+				</ul>
+			</nav>
+			<div class="nav-buttons">
+				<a class="btn btn-turquoise nav-button-login" herf="#">Log in</a>
+				<a class="btn btn-white" herf="#">Request an access</a>
 			</div>
-			<h2 class="text-white">
-				Sell digitally branded innovative and
-				traditional insurance to
-				your customers
-			</h2>
-			<h4 class="text-white">
-				Call us today. Start selling tomorrow!
-			</h4>
-			<button type="button" class="btn hidden-sm-down btn-turquoise">
-				<a href="">
-					Request a demo
-				</a>
-			</button>
-			<div class="icon-bottom hidden-sm-up">
-				<img src="images/lloyds-logo-small.png" alt="lloyds-logo"/>
+		</div>
+	</div>
+	<section class="section" id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="text-white">
+						Sell digitally branded innovative and
+						traditional insurance to
+						your customers
+					</h1>
+					<h4 class="text-white">
+						Call us today. Start selling tomorrow!
+					</h4>
+					<button class="btn hidden-sm-down btn-turquoise">
+						Request a demo
+					</button>
+				</div>
+				<div class="col-md-6">
+					<div class="icon hidden-xs-down">
+						<img src="images/lloyds-logo-small.png" alt="lloyds-logo" />
+					</div>
+					<div class="cover-icon hidden-sm-up">
+						<img src="images/lloyds-logo-small.png" alt="lloyds-logo" />
+					</div>
+					<div class="mac-image">
+						<img src="images/imac/imac.png" class="img-responsive" />
+					</div>
+				</div>
 			</div>
-			<img src="images/imac/imac.png" srcset="images/imac/imac@2x.png 2x,images/imac/imac@3x.png 3x" align="center" class="hidden-sm-up">
 		</div>
 	</section>
 	<div class="disclaimer bg-pale-grey-two">
-		<div class="container text">
-			<p>
+		<div class="container">
+			<p class="text-grey">
+				<i class="fa fa-star text-turquoise" aria-hidden="true"></i>
 				<b>Disclaimer:</b>
 				This website targets brokers and introducers willing to embrace the digital revolution in insurance.
-				If you are a private individual, please visit our consumer <a href="">consumer website.</a>
+				If you are a private individual, please visit our consumer <a href="#">consumer website.</a>
 			</p>
 		</div>
 	</div>
@@ -302,9 +274,6 @@
 		</div>
 	</section>
 	<section class="section bg-dark-blue" id="gap-insurance">
-		<!--<div class="nav-bar">-->
-			<!--Navigation-Bar-->
-		<!--</div>-->
 		<div class="container text-white">
 			<h6 class="item-title-small text-turquoise">
 				Discover our first product:
@@ -363,8 +332,8 @@
 				</div>
 			</div>
 			<div style="clear: both; margin-top: 85px">
-				<button class="btn button btn-turquoise"><a class="" href="">More info about the GAP</a></button>
-				<button class="btn button btn-dark-blue"><a class="" href="">Become a partner</a></button>
+				<button class="btn button btn-turquoise"><a class="" href="#">More info about the GAP</a></button>
+				<button class="btn button btn-dark-blue"><a class="" href="#">Become a partner</a></button>
 			</div>
 			<div class="bitmap-icon">
 				<img src="images/bitmap.png"/>
@@ -394,11 +363,9 @@
 						our side so that you can get up and running with Qover in few
 						minutes.
 					</p>
-					<div class="link text-left">
-						<a href="/api-documentation">
-							See the API documentation
-						</a>
-					</div>
+					<a href="/api-documentation" class="text-left">
+						See the API documentation
+					</a>
 				</div>
 				<div class="item col-md-6">
 					<h5 class="item-title text-grey">
@@ -412,14 +379,14 @@
 				</div>
 			</div>
 		</div>
+		<div class="half-circle bg-white">
+			<div class="icon">
+				<img src="images/blue.png"/>
+			</div>
+		</div>
 	</section>
 	<section class="bg-light-grey" id="inn-products">
 		<div class="header hide">
-			<div class="half-circle bg-white">
-				<div class="icon">
-					<img src="images/blue.png"/>
-				</div>
-			</div>
 			<h2 class="sub-title text-grey text-center">
 				Innovative products - backed by the bests
 			</h2>
@@ -558,7 +525,7 @@
 		</div>
 	</footer>
 
-	<script src="./js/bundle.js"></script>
-	<script src="./js/script.js"></script>
+	<!-- <script src="./js/bundle.js"></script>
+	<script src="./js/script.js"></script> -->
 </body>
 </html>

@@ -17,7 +17,7 @@ const path = "./"
 
 // sass
 gulp.task('sass', () => {
-  return gulp.src('styles/sass/*.scss')
+  return gulp.src('styles/sass/main.scss')
     .pipe(sass({
       includePaths: [
         require('node-normalize-scss').includePaths,

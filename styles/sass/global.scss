@@ -2,55 +2,70 @@
 
 body {
   color: $white;
-  font-family: 'MuseoSans', Courier New;
-  h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+  font-family: 'MuseoSans', sans-serif;
+}
+  
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'MuseoSans', sans-serif;
+}
+
+a {
+  color: $dark-sky-blue;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 14px;
+  &:hover {
+    color: $dark-sky-blue;
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
   }
 }
 
 .btn-white {
   background-color: $white;
-  a {
-    color: $dark-sky-blue;
-  }
+  color: $dark-sky-blue !important;
 }
 
 .btn-turquoise {
   background-color: $turquoise;
-  a {
-    color: $white;
-  }
-  a:hover {
-    color: $white;
-    text-decoration: none;
-  }
   color: $white;
+  &:hover {
+    color: $white;
+    background-color: $turquoise;
+  }
 }
 
 .btn-dark-blue {
   background-color: $dark-sky-blue;
-  a {
-    color: $white;
-    text-decoration: underline;
-  }
-  a:hover {
-    color: $white;
-  }
   color: $white;
-}
-
-.btn-turquoise:hover {
-  background-color: #2db0bb;
-
-}
-
-.btn-dark-blue:hover  {
-  background-color: #2f5cb6;
-  a {
-    text-decoration: none;
+  text-decoration: underline;
+  &:hover {
+    color: $white;
+    background-color: $dark-sky-blue;
   }
 }
-
 
 .text-grey {
   color: $grey;
@@ -114,6 +129,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    line-height: 43px;
   }
   .subtitle {
     font-size: 26px;

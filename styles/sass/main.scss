@@ -1,165 +1,124 @@
-$fa-font-path: '../fonts/fontawesome';
+$fa-font-path: '../../fonts/fontawesome';
 @import 'font-awesome';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'normalize';
 @import 'media';
 @import 'varibles';
 @import 'fonts';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700');
+@import 'global';
 
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(247,247,247, .3);
 
-#navigation {
-  padding: 18px 100px 17px 100px;
-  font-size: 11px;
-  .navbar-brand {
-    margin-right: 180px;
-  }
-  .nav-item {
-    margin-right: 45px;
-  }
-  .btn-primary {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .btn-primary:hover {
-    border-color: rgba(255, 255, 255, 0.9);
-  }
-  button {
-    padding: 9px 10px 8px 10px;
-    margin-left: 10px;
-    a {
-      letter-spacing: normal;
+  .logo {
+    display: block;
+    float: left;
+    margin-right: 186px;
+    padding: 18px 0 17px;
+    width: 89px;
+
+    img {
+      width: 100%
     }
   }
-  border-bottom: 2px solid rgba(55, 153, 254, 0.9);
-}
-//.navigation {
-//  position: fixed;
-//  z-index: 1;
-//  width: 100%;
-//  height: 60px;
-//  border-bottom: 1px solid transparent;
-//  box-shadow: rgba(247, 247, 247, 0.6);
-//  background-color: #317bda;
-//  .navLogo {
-//    float: left;
-//    margin: 18px 0 18px 100px;
-//  }
-//  nav {
-//    margin-left: 30%;
-//    ul {
-//      margin: 0;
-//      padding-left: 0;
-//      li {
-//        list-style-type: none;
-//        a {
-//          text-decoration: none;
-//          color: $white;
-//        }
-//        a:hover {
-//          background-color: #50ceff;
-//        }
-//      }
-//    }
-//  }
-//  .nav-buttons {
-//    float: right;
-//    margin: 15px 90px 15px 0;
-//    .nav-button-login{
-//      color: white;
-//      background-color: #6AA0E4;
-//    }
-//    button {
-//      padding: 9px 10px;
-//      font-family: Roboto, serif;
-//      font-size: 11px;
-//      color: blue;
-//      background-color: white;
-//      border: none;
-//      border-radius: 2px;
-//    }
-//  }
-//}
-//
-//.nav-links {
-//  padding: 23px 25px 22px;
-//  float: left;
-//  font-size: 10px;
-//}
-//
 
-//
+  nav {
+    float: left;
+    overflow: hidden;
 
-//
-#gap-insurance {
-  position: relative;
-  padding-top: 70px;
-  .container{
-    padding-left: 27.5px;
     ul {
-      padding-left: 20px;
-    }
-    .item-title{
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    p {
-      margin: 0 0 15px 0;
-    }
-    .content {
-      clear: both;
-      .item {
-        margin: 10px 80px 10px 0;
+      margin: 0;
+      padding: 0;
+
+      li {
         float: left;
-        .item-icon{
-          float: left;
-          padding: 0;
-          margin-right: 11px;
-        }
-        .item-text {
+        display: block;
+        margin-right: 45px;
+        padding: 24px 0 23px;
+        height: 100%;
+        line-height: 11px;
+        list-style: none;
+
+        a {
+          color: white;
           font-size: 11px;
-          text-align: left;
+          font-weight: 300;
+          letter-spacing: 0.9px;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            text-decoration: underline;
+          }
+          i {
+            margin-left: 10px;
+            font-size: 14px;
+          }
         }
       }
     }
+  }
 
-    button {
-      padding: 13px 20px;
-    }
+  .nav-buttons {
+    float: right;
+    padding: 15px 0;
 
-    .bitmap-icon {
-      position: absolute;
-      top: -25px;
-      right: -62.5px;
+    .btn {
+      float: right;
+      margin-left: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 2px;
     }
   }
 }
 
 #header {
-  .container {
-    h2 {
-      font-size: 30px;
-      font-weight: 500;
+  padding-top: 140px;
+  background-color: $dark-sky-blue;
+  background-image: url('../../images/future-homepage.png');
+  background-image: url('../../images/future-homepage.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-size: cover;
+
+  h4 {
+    margin: 30px auto 50px auto;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .icon {
+    overflow: hidden;
+    margin: -40px auto 35px auto;
+
+    img{
+      float: right;
     }
-    h4 {
-      margin: 30px auto 50px auto;
-      font-size: 24px;
-      font-weight: 500;
+  }
+
+  .icon-bottom {
+    margin-bottom: 35px;
+  }
+
+  .mac-image {
+    img {
+      max-width: 400px;
     }
-    .icon {
-      overflow: hidden;
-      margin: -40px auto 35px auto;
-      img{
-        float: right;
-      }
-    }
-    .icon-bottom {
-      margin-bottom: 35px;
-    }
-    button {
-      padding: 13px 20px;
-      margin-bottom: 28px;
-    }
-    button:hover {
+  }
+
+  button {
+    padding: 13px 20px;
+    margin-bottom: 28px;
+
+    &:hover {
       background-color: #2ec0cb;
     }
   }
@@ -167,6 +126,18 @@ $fa-font-path: '../fonts/fontawesome';
 
 .disclaimer {
   padding: 18px 0;
+  font-weight: 400;
+  font-size: 12px;
+  
+  i {
+    margin-right: 10px;
+  }
+  b {
+    font-weight: 500;
+  }
+  a {
+    font-size: 12px;
+  }
 }
 
 #advantages {
@@ -284,7 +255,6 @@ $fa-font-path: '../fonts/fontawesome';
 
 #robust-api {
   padding: 140px 200px 0;
-  text-align: center;
   .title {
     margin: 50px 0;
   }
@@ -293,10 +263,27 @@ $fa-font-path: '../fonts/fontawesome';
   }
   .gap-image {
     opacity: 0.9;
+    text-align: center
   }
   .container {
     margin-top: 50px;
   }
+  .half-circle {
+      position: relative;
+      margin: 0 auto;
+      margin-top: -140px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      transform: translate(0,134px);
+      .icon {
+        width: 64px;
+        height: 75px;
+        position: absolute;
+        top: calc(50% - 38px);
+        left: calc(50% - 32px);
+      }
+    }
 }
 
 #inn-products {
@@ -305,23 +292,6 @@ $fa-font-path: '../fonts/fontawesome';
     position: relative;
     padding-top: 130px;
     margin-top: 60px;
-    .half-circle {
-      position: absolute;
-      left: 50%;
-      margin-left: -70px;
-      top: -70px;
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-    }
-    .icon {
-      width: 64px;
-      height: 75px;
-      position: absolute;
-      bottom: 37px;
-      left: 50%;
-      margin-left: -32px;
-    }
   }
   .container {
     margin-top: 30px;
@@ -343,6 +313,51 @@ $fa-font-path: '../fonts/fontawesome';
        }
      }
    }
+}
+
+
+#gap-insurance {
+  position: relative;
+  padding-top: 70px;
+  .container{
+    padding-left: 27.5px;
+    ul {
+      padding-left: 20px;
+    }
+    .item-title{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0 0 15px 0;
+    }
+    .content {
+      clear: both;
+      .item {
+        margin: 10px 80px 10px 0;
+        float: left;
+        .item-icon{
+          float: left;
+          padding: 0;
+          margin-right: 11px;
+        }
+        .item-text {
+          font-size: 11px;
+          text-align: left;
+        }
+      }
+    }
+
+    button {
+      padding: 13px 20px;
+    }
+
+    .bitmap-icon {
+      position: absolute;
+      top: -25px;
+      right: -62.5px;
+    }
+  }
 }
 
 #partners {
