@@ -13982,7 +13982,7 @@ template {
 
 body {
   color: #ffffff;
-  font-family: 'MuseoSans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -14106,16 +14106,8 @@ a:hover {
   background-color: #ffffff;
 }
 
-.item-text-small {
-  font-family: Roboto, sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.64;
-  letter-spacing: 1px;
-}
-
 .section {
-  padding: 70px 0;
+  padding: 70px 0 90px;
 }
 
 .section > .title {
@@ -14132,18 +14124,20 @@ a:hover {
   margin: 10px 0 50px 0;
 }
 
-.section .item-title {
+.title {
   font-size: 20px;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: left;
+  line-height: 20px;
+  font-family: 'MuseoSans', sans-serif;
 }
 
-.section .item-text {
-  font-family: Roboto, sans-serif;
+.text {
   font-size: 13px;
-  line-height: 1.38;
-  text-align: left;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.text b {
+  font-weight: 500;
 }
 
 .navigation {
@@ -14315,116 +14309,110 @@ a:hover {
 }
 
 #advantages .container .item .text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
   color: #5b7289;
 }
 
-#get-started {
-  padding: 90px 0 100px 100px;
-}
-
-#get-started .container {
-  margin-left: 0;
-  position: relative;
-  padding-left: 50px;
-  padding-top: 50px;
+#get-started .container .secture-title {
+  margin-bottom: 45px;
+  font-family: 'MuseoSans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 43px;
 }
 
 #get-started .container .item {
+  position: relative;
   margin-bottom: 25px;
+  padding-left: 50px;
 }
 
-#get-started .container .item .item-title {
-  margin-bottom: 8px;
+#get-started .container .item .title {
+  margin-bottom: 10px;
 }
 
-#get-started .container .line {
+#get-started .container .item .circle {
   position: absolute;
-  background-color: white;
-  top: 77px;
-  left: 14px;
-  height: 257px;
-  width: 0;
-  border: 1px solid white;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#get-started .container .shadow-image {
+  position: relative;
+  float: left;
   z-index: 1;
 }
 
-#get-started .container .circle-container1 {
+#get-started .container .shadow-image:before {
   position: absolute;
-  top: 47px;
-  left: 0;
-  z-index: 3;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background: #464a4c;
+  opacity: .3;
+  content: '';
+  z-index: -1;
 }
 
-#get-started .container .circle-container2 {
-  position: absolute;
-  top: 138px;
-  left: 0;
-  z-index: 3;
+#explanation .row {
+  margin-left: -28px;
+  margin-right: -28px;
 }
 
-#get-started .container .circle-container3 {
-  position: absolute;
-  left: 0;
-  top: 227px;
-  z-index: 3;
+#explanation .row .col {
+  padding: 17px;
 }
 
-#get-started .container .circle-container4 {
-  position: absolute;
-  left: 0;
-  top: 334px;
-  z-index: 3;
+#explanation .row .item {
+  padding: 45px 25px;
+  height: 335px;
+  -webkit-box-shadow: 0 0 10px 0 #f5f7f9;
+  box-shadow: 0 0 10px 0 #f5f7f9;
 }
 
-#get-started .container .circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  font-size: 12px;
-  font-weight: bold;
-  color: #31cfda;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  background: white;
-  z-index: 3;
-}
-
-#explanation #label {
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-#explanation #label .label-icon {
-  padding: 34px 10px 34px 30px;
-}
-
-#explanation #label .text-container {
-  padding: 23px 15px;
-}
-
-#explanation #label .text-container .item-text {
-  margin-top: 11px;
-}
-
-#explanation .container .item {
-  padding: 50px 25px;
-  border: 17.5px solid #f5f7f9;
-  border-top: 10px solid #f5f7f9;
-  border-bottom: 10px solid #f5f7f9;
-}
-
-#explanation .container .item .item-icon {
+#explanation .row .item .icon {
   margin-bottom: 45px;
+  height: 50px;
+  line-height: 50px;
 }
 
-#explanation .container .item .item-text {
+#explanation .row .item .text {
   margin: 20px auto;
+}
+
+#explanation .label {
+  margin: 50px auto 0;
+  max-width: 520px;
+  overflow: hidden;
+}
+
+#explanation .label .icon {
+  float: left;
+  width: 100px;
+  height: 100%;
+  padding: 34px 25px 34px 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#explanation .label .text {
+  float: left;
+  padding: 23px 35px 23px 0;
+  width: calc(100% - 100px);
+  height: 100%;
+}
+
+#explanation .label .text .title {
+  margin-bottom: 11px;
 }
 
 #robust-api {
@@ -14435,7 +14423,7 @@ a:hover {
   margin: 50px 0;
 }
 
-#robust-api .item-text {
+#robust-api .text {
   margin: 15px 0;
 }
 

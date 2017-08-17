@@ -14,6 +14,7 @@ $fa-font-path: '../../fonts/fontawesome';
   height: 60px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(247,247,247, .3);
+  // background: rgba(255,255,255,.5);
   z-index: 999;
 
   .logo {
@@ -170,9 +171,6 @@ $fa-font-path: '../../fonts/fontawesome';
       }
       
       .text {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 18px;
         color: $grey;
       }
     }
@@ -180,107 +178,120 @@ $fa-font-path: '../../fonts/fontawesome';
 }
 
 #get-started {
-  padding: 90px 0 100px 100px;
+
   .container {
-    margin-left: 0;
-    position: relative;
-    padding-left: 50px;
-    padding-top: 50px;
+    .secture-title {
+      margin-bottom: 45px;
+      font-family: 'MuseoSans', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 43px;
+    }
+
     .item {
+      position: relative;
       margin-bottom: 25px;
-      .item-title {
-        margin-bottom: 8px;
+      padding-left: 50px;
+
+      .title {
+        margin-bottom: 10px;
       }
-    }
-    .line {
-       position: absolute;
-       background-color: white;
-       top: 77px;
-       left: 14px;
-       height: 257px;
-       width: 0;
-       border: 1px solid white;
-       z-index: 1;
-     }
-    .circle-container1 {
-       position: absolute;
-       top: 47px;
-       left: 0;
-       z-index: 3;
-     }
-    .circle-container2 {
+
+      .circle {
         position: absolute;
-        top: 138px;
+        top: -5px;
         left: 0;
-        z-index: 3;
+        width: 30px;
+        height: 30px;
+        line-height: 31px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 50%;
+        background: #fff;
       }
-    .circle-container3 {
-      position: absolute;
-      left: 0;
-      top: 227px;
-      z-index: 3;
     }
-    .circle-container4 {
-      position: absolute;
-      left: 0;
-      top: 334px;
-      z-index: 3;
+
+    .shadow-image {
+      position: relative;
+      float: left;
+      z-index: 1;
+
+      &:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        background: $gray;
+        opacity: .3;
+        content: '';
+        z-index: -1;
+      }
     }
-    .circle {
-       width: 30px;
-       height: 30px;
-       border-radius: 50%;
-       -moz-border-radius: 50%;
-       -webkit-border-radius: 50%;
-       font-size: 12px;
-       font-weight: bold;
-       color: #31cfda;
-       text-align: center;
-       display: table-cell;
-       vertical-align: middle;
-       background: white;
-       z-index: 3;
-     }
   }
 }
 
 #explanation {
-  #label {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    .label-icon {
-      padding: 34px 10px 34px 30px;
+  .row {
+    margin-left: -28px;
+    margin-right: -28px;
+
+    .col {
+      padding: 17px;
     }
-    .text-container {
-      padding: 23px 15px;
-      .item-text {
-        margin-top: 11px;
-      }
-    }
-  }
-  .container {
+
     .item {
-      padding: 50px 25px;
-      border: 17.5px solid $pale-grey-two;
-      border-top: 10px solid $pale-grey-two;
-      border-bottom: 10px solid $pale-grey-two;
-      .item-icon {
+      padding: 45px 25px;
+      height: 335px;
+      box-shadow: 0 0 10px 0 $pale-grey-two;
+
+      .icon {
         margin-bottom: 45px;
+        height: 50px;
+        line-height: 50px;
       }
-      .item-text {
-          margin: 20px auto;
+
+      .text {
+        margin: 20px auto;
       }
     }
   }
 
+  .label {
+    margin: 50px auto 0;
+    max-width: 520px;
+    overflow: hidden;
+
+    .icon {
+      float: left;
+      width: 100px;
+      height: 100%;
+      padding: 34px 25px 34px 30px;
+      box-sizing: border-box;
+    }
+
+    .text {
+      float: left;
+      padding: 23px 35px 23px 0;
+      width: calc(100% - 100px);
+      height: 100%;
+
+      .title {
+        margin-bottom: 11px;
+      }
+    }
+  }
 }
 
 #robust-api {
   padding: 140px 200px 0;
+  
   .title {
     margin: 50px 0;
   }
-  .item-text {
+  .text {
     margin: 15px 0;
   }
   .gap-image {
