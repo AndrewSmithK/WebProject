@@ -26,6 +26,10 @@ a {
   }
 }
 
+.container {
+  max-width: 1000px;
+}
+
 .btn {
   display: inline-block;
   padding-right: 20px;
@@ -83,6 +87,10 @@ a {
   background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
 }
 
+.bg-gray {
+  background: $grey;
+}
+
 .bg-inherit {
   background-color: inherit;
 }
@@ -115,23 +123,15 @@ a {
   letter-spacing: 1px;
 }
 
-.text {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-  color: $grey;
-}
-
 .section {
   padding: 70px 0;
-  .title {
+  & > .title {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     line-height: 43px;
   }
-  .subtitle {
+  & > .subtitle {
     font-size: 26px;
     font-weight: 300;
     text-align: center;

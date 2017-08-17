@@ -10,11 +10,11 @@ $fa-font-path: '../../fonts/fontawesome';
 .navigation {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   height: 60px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(247,247,247, .3);
+  z-index: 999;
 
   .logo {
     display: block;
@@ -84,15 +84,29 @@ $fa-font-path: '../../fonts/fontawesome';
 
 #header {
   padding-top: 140px;
+  padding-bottom: 63px;
   background-color: $dark-sky-blue;
   background-image: url('../../images/future-homepage.png');
   background-image: url('../../images/future-homepage.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-size: cover;
 
-  h4 {
-    margin: 30px auto 50px auto;
-    font-size: 24px;
-    font-weight: 500;
+  .left-block {
+    padding-left: 50px;
+
+    h4 {
+      margin: 30px auto 50px auto;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    button {
+      padding: 13px 20px;
+      margin-bottom: 28px;
+
+      &:hover {
+        background-color: #2ec0cb;
+      }
+    }
   }
 
   .icon {
@@ -109,50 +123,58 @@ $fa-font-path: '../../fonts/fontawesome';
   }
 
   .mac-image {
+    text-align: center;
+
     img {
-      max-width: 400px;
-    }
-  }
-
-  button {
-    padding: 13px 20px;
-    margin-bottom: 28px;
-
-    &:hover {
-      background-color: #2ec0cb;
+      max-width: 350px;
+      width: 100%;
     }
   }
 }
 
 .disclaimer {
   padding: 18px 0;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
+  text-align: center;
   
-  i {
-    margin-right: 10px;
-  }
-  b {
-    font-weight: 500;
-  }
-  a {
-    font-size: 12px;
+  p {
+    display: inline-block;
+    margin-left: -11px;
+    margin-right: -11px;
+
+    i {
+      margin-right: 5px;
+    }
+    b {
+      font-weight: 500;
+    }
+    a {
+      font-size: 12px;
+    }
   }
 }
 
 #advantages {
   .container {
-    .item {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
     margin-bottom: 60px;
-    .item-icon {
+
+    .item {
       margin-top: 30px;
-      margin-right: 20px;
-    }
-    .item-title {
-      margin: 30px auto 11px auto;
+      padding-left: 30px;
+      padding-right: 35px;
+
+      .title {
+        margin: 30px auto 11px auto;
+      }
+      
+      .text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: $grey;
+      }
     }
   }
 }
