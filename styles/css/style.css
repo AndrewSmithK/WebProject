@@ -14222,8 +14222,7 @@ a:hover {
   padding-top: 140px;
   padding-bottom: 63px;
   background-color: #317bda;
-  background-image: url("../../images/future-homepage.png");
-  background-image: url("../../images/future-homepage.png"), radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  background-image: url("../../images/future-about.png"), radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
   background-size: cover;
 }
 
@@ -14567,6 +14566,10 @@ a:hover {
   color: rgba(91, 114, 137, 0.5);
 }
 
+#subscribe .form input::-webkit-input-placeholder {
+  color: rgba(91, 114, 137, 0.5);
+}
+
 #subscribe .form button {
   padding: 10px 22px 10px;
 }
@@ -14586,6 +14589,12 @@ footer .container .icon {
   margin-right: 20px;
 }
 
+footer .container .item .list-title {
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+}
+
 footer .container .item ul {
   padding: 0;
   margin: 20px 0;
@@ -14593,11 +14602,23 @@ footer .container .item ul {
 
 footer .container .item ul li {
   list-style-type: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 footer .container address {
-  margin-left: 6%;
+  margin-left: 6.25%;
+  padding-left: 0;
+}
+
+footer .container address .title {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer .container address .text {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 footer .copyright {
@@ -14607,4 +14628,84 @@ footer .copyright {
 
 footer .copyright p {
   font-size: 10px;
+  line-height: 13px;
+}
+
+#why-qover .title {
+  margin-bottom: 50px;
+}
+
+#why-qover .container {
+  margin-bottom: 55px;
+}
+
+#why-qover .container .insertion {
+  padding: 0 20px;
+}
+
+#why-qover .container .insertion .item {
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd), linear-gradient(#f5f7f9, #f5f7f9), linear-gradient(291deg, #31cfda, #82e5c9 76%, #b9f4bc);
+  font-size: 16px;
+  font-family: 'MuseoSans', sans-serif;
+  font-weight: 300;
+  line-height: 21px;
+  margin-top: 0;
+  padding: 60px 60px 45px 140px;
+}
+
+#why-qover .container .insertion b {
+  font-weight: bold;
+}
+
+#why-qover .container .insertion .text {
+  line-height: 18px;
+  font-weight: 500;
+}
+
+#why-qover .container .insertion .text-title {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  margin: 30px auto 10px auto;
+}
+
+#why-qover .container .item {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 35px;
+}
+
+#why-qover .container .item .title {
+  margin: 30px auto 15px auto;
+}
+
+#why-qover .container .item .text {
+  margin-bottom: 15px;
+}
+
+#why-qover .container .icon {
+  text-align: right;
+}
+
+#circle .container {
+  margin-bottom: 0;
+}
+
+#circle .container .item {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 35px;
+}
+
+#circle .container .item .title {
+  margin: 30px auto 11px auto;
+  font-weight: 900;
+  line-height: 1.11;
+  letter-spacing: 1px;
+}
+
+#circle .container .item .text {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.25;
 }
