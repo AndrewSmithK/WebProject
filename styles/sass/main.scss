@@ -321,25 +321,32 @@ $fa-font-path: '../../fonts/fontawesome';
 
 #inn-products {
   padding-bottom: 70px;
+
   .header {
     position: relative;
     padding-top: 130px;
     margin-top: 60px;
   }
+
   .container {
     margin-top: 30px;
     text-align: center;
+
      .item {
        border: 20px solid $pale-grey-two;
+
        .item-icon {
          margin: 40px auto 38px auto;
+
          #third-icon {
            margin-top: -10px;
          }
+
          #fourth-icon {
            margin-top: 21px;
          }
        }
+
        .item-text {
          font-size: 14px;
          margin-bottom: 40px;
@@ -352,28 +359,36 @@ $fa-font-path: '../../fonts/fontawesome';
 #gap-insurance {
   position: relative;
   padding-top: 70px;
+
   .container{
     padding-left: 27.5px;
+
     ul {
       padding-left: 20px;
     }
+
     .item-title{
       margin-top: 30px;
       margin-bottom: 10px;
     }
+
     p {
       margin: 0 0 15px 0;
     }
+
     .content {
       clear: both;
+
       .item {
         margin: 10px 80px 10px 0;
         float: left;
+
         .item-icon{
           float: left;
           padding: 0;
           margin-right: 11px;
         }
+
         .item-text {
           font-size: 11px;
           text-align: left;
@@ -395,8 +410,10 @@ $fa-font-path: '../../fonts/fontawesome';
 
 #partners {
   padding: 70px 0 75px;
+
   .container {
     margin: 40px auto auto;
+
     .icon {
     }
   }
@@ -405,6 +422,7 @@ $fa-font-path: '../../fonts/fontawesome';
 #subscribe {
   padding: 50px 0;
   font-size: 13px;
+  
   .form {
     margin: 29px auto auto;
     input {
