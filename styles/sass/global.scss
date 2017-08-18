@@ -129,6 +129,16 @@ a {
 
 // bg-end //
 
+//bd
+
+.bd-right {
+  border-right: 2px solid $dark-sky-blue;
+}
+
+.bd-left {
+  border-left: 2px solid $dark-sky-blue;
+}
+
 .section {
   padding: 70px 0 90px;
   & > .title {

@@ -13,26 +13,24 @@
 </head>
 <body>
 
-<div class="navigation container-fluid">
+<div class="container-fluid" id="topline">
     <div class="container">
-        <div class="row">
-            <a class="logo" href="#">
-                <img  src="images/logo-qover.png" alt="logo-qover"/>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">
-                        Our products<i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="#">Developers</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="nav-buttons">
-                <a class="btn btn-turquoise nav-button-login" herf="#">Log in</a>
-                <a class="btn btn-white" herf="#">Request an access</a>
-            </div>
+        <a class="logo" href="#">
+            <img  src="images/logo-qover.png" alt="logo-qover"/>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">
+                    Our products<i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="topline-buttons">
+            <a class="btn btn-turquoise nav-button-login" href="#">Log in</a>
+            <a class="btn btn-white" href="#">Request an access</a>
         </div>
     </div>
 </div>
@@ -59,7 +57,7 @@
             </div>
             <div class="col-md-6">
                 <div class="mac-image">
-                    <img src="images/imac/imac.png" />
+                    <img src="images/imac/imac.png" alt="imac" />
                 </div>
             </div>
         </div>
@@ -74,7 +72,7 @@
         <div class="row">
             <div class="item col-md-4 col-sm-12">
                 <div class="icon">
-                    <img src="images/icon-settings.png">
+                    <img src="images/icon-settings.png" alt="icon-settings">
                 </div>
                 <h4 class="title text-blue">
                     <b>
@@ -89,7 +87,7 @@
             </div>
             <div class="item col-md-4 col-sm-12">
                 <div class="item-icon">
-                    <img src="images/icon-energy.png"/>
+                    <img src="images/icon-energy.png" alt="icon-energy"/>
                 </div>
                 <h4 class="title text-blue">
                     <b>
@@ -103,7 +101,7 @@
             </div>
             <div class="item col-md-4 col-sm-12">
                 <div class="item-icon">
-                    <img src="images/icon-dev-about.png"/>
+                    <img src="images/icon-dev-about.png" alt="icon-dev-about"/>
                 </div>
                 <h4 class="title text-blue">
                     <b>We are the only fully digital player</b>
@@ -115,8 +113,8 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="insertion row  justify-content-center">
+    <div class="container" id="insertion">
+        <div class="insertion row justify-content-center">
             <div class="item col-md-10">
                 <div>
                     <b>With our business model, you keep the same level of commission</b>
@@ -138,10 +136,10 @@
 <section class="section bg-pale-grey-two" id="circle">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-3 ">
-                <div class="item text-right">
+            <div class="col-md-3 side-bar">
+                <div class="item text-right bd-right">
                     <h3 class="title text-blue">SLICED</h3>
-                    <p class="text text-grey">
+                    <p class="text text-grey" >
                         Personalized <br>
                         pick & choose <br>
                         insurance products. <br>
@@ -149,7 +147,7 @@
                     </p>
                 </div>
 
-                <div class="item text-right">
+                <div class="item text-right bd-right" id="left-bar">
                     <h3 class="title text-blue">ON-DEMAND</h3>
                     <p class="text text-grey">
                         Coverage from <br>
@@ -159,10 +157,10 @@
                 </div>
             </div>
             <div class="icon col-md-5">
-                <img src="images/qover-wheel.png"/>
+                <img src="images/qover-wheel.png" alt="qover-wheel"/>
             </div>
-            <div class="col-md-3">
-               <div class="item">
+            <div class="col-md-3 side-bar">
+               <div class="item bd-left">
                     <h3 class="title text-blue">DIGITAL</h3>
                     <p class="text text-grey">
                         Systems & processes <br>
@@ -170,7 +168,7 @@
                     </p>
                 </div>
 
-                <div class="item">
+                <div class="item bd-left">
                     <h3 class="title text-blue">INSURANCE</h3>
                     <p class="text text-grey">
                         Full- Fledged insurance <br>
@@ -178,7 +176,7 @@
                     </p>
                 </div>
 
-                <div class="item">
+                <div class="item bd-left">
                     <h3 class="title text-blue">INFRASTRUCTURE</h3>
                     <p class="text text-grey">
                         Easy-to-use and robust <br>
@@ -190,61 +188,433 @@
         </div>
     </div>
 </section>
+<section class="section" id="who-we-are">
+    <h1 class="title text-turquoise">Who we are?</h1>
+    <h3 class="subtitle text-grey">Meet our team of ninjas</h3>
+    <div class="container">
+        <div class="row icons">
+            <div class="col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/quentin/quentin.png" alt="quentin"/>
+                    </div>
+                   <div class="text">
+                        <p class="icon-title">
+                            Co-Founder &  Managing Director
+                        </p>
+                        <p class="icon-text">
+                            Quentin Colmant
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/jean-charles/jean-charles.png" alt="jean-charles"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Co-Founder &  Managing Director
+                        </p>
+                        <p class="icon-text">
+                            Jean-Charles Velge
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/eleonore/eleonore.png" alt="eleonore"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            insurance / HR / Accounting & Marketing
+                        </p>
+                        <p class="icon-text">
+                            Eléonore Speeckaert
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/geert/geert.png" alt="geert"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Head of IT Development
+                        </p>
+                        <p class="icon-text">
+                            Geert Vandendriessche
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/denis/denis.png" alt="denis"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Full Stack Dev
+                        </p>
+                        <p class="icon-text">
+                            Denis Schmitz
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/ali/ali.png" alt="ali"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Back End Dev
+                        </p>
+                        <p class="icon-text">
+                            Ali El Gariani
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row icons">
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/romuald/romuald.png" alt="romuald"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Full Stack Dev
+                        </p>
+                        <p class="icon-text">
+                            Romuald Deshayes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/juan/juan.png" alt="juan"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Front End Dev
+                        </p>
+                        <p class="icon-text">
+                            Juan Carlos Sanchez
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/amandine/amandine.png" alt="amandine"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Legal & Insurance counsel
+                        </p>
+                        <p class="icon-text">
+                            Amandine de Lhoneux
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/dominique/dominique.png" alt="dominique"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Sales Manager
+                        </p>
+                        <p class="icon-text">
+                            Dominique Depondt
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/hamza/hamza.png" alt="hamza"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            UI Designer
+                        </p>
+                        <p class="icon-text">
+                            Nathalie Francotte
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/hamza/hamza.png" alt="hamza"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Junior dev
+                        </p>
+                        <p class="icon-text">
+                            Hamza Mounir
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row icons">
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/emilien/emilien.png" alt="emilien"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Junior dev
+                        </p>
+                        <p class="icon-text">
+                            Emilien Durieu
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/simon/simon.png" alt="simon"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Junior dev
+                        </p>
+                        <p class="icon-text">
+                            Simon Parmentier
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/mathieu/mathieu.png" alt="mathieu"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            ux designer
+                        </p>
+                        <p class="icon-text">
+                            Mathieu Nisen
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/alexandre/alexandre.png" alt="alexandre"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Software Engineer
+                        </p>
+                        <p class="icon-text">
+                            Alexandre Cys
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/alexandre-roba/alexandre-roba.png" alt="alexandre-roba"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Software Engineer
+                        </p>
+                        <p class="icon-text">
+                            Alexandre Roba
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/adrien-lebrun/adrien-lebrun.png" alt="adrien-lebrun"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            title
+                        </p>
+                        <p class="icon-text">
+                            Adrien Lebrun
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row icons">
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/francesca/francesca.png" alt="cédric-françois"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Software Engineer
+                        </p>
+                        <p class="icon-text">
+                            Cédric François
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/francesca/francesca.png" alt="cédric-degallaix"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            Software Engineer
+                        </p>
+                        <p class="icon-text">
+                            Cédric Degallaix
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/francesca/francesca.png" alt="francesca"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            title
+                        </p>
+                        <p class="icon-text">
+                            Francesca Nicolini
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="icon col-md-2">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/who-we-are/arthur/arthur.png" alt="arthur"/>
+                    </div>
+                    <div class="text">
+                        <p class="icon-title">
+                            title
+                        </p>
+                        <p class="icon-text">
+                            Arthur Lemoine
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon col-md-2">
+               <div class="last-icon"><p> Want to join  the team?</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="section" id="contact-us">
+    <div class="container">
+        <div class="content row justify-content-center">
+            <h2 class="title">
+                Let’s make something great together
+            </h2>
+            <h4 class="subtitle">
+                You want to be a partner or wish to have more information  about our products? Contact us!
+            </h4>
+            <a class="btn hidden-sm-down btn-turquoise text-center">Contact us</a>
+        </div>
+    </div>
+</section>
 
 <footer class="footer bg-dark-blue">
     <div class="container">
         <div class="row text-white">
-            <div class="icon col-md-2">
-                <img src="images/logo-qover.png">
+            <div class="logo col-md-2">
+                <img src="images/logo-qover.png" alt="logo-qover">
             </div>
             <div class="item col-md-2">
                 <div class="list-title">
-                    <b>COMPANY</b>
+                    <b>Company</b>
                 </div>
                 <ul>
-                    <li>About Qover</li>
-                    <li>Contact us</li>
-                    <li>Complaints</li>
-                    <li>Terms & Policies</li>
+                    <li><a href="#">About Qover</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Complaints</a></li>
+                    <li><a href="#">Terms & Policies</a></li>
                 </ul>
             </div>
             <div class="item col-md-2">
                 <div class="list-title">
-                    <b>OUT PRODUCTS</b>
+                    <b>Our products</b>
                 </div>
                 <ul>
-                    <li>GAP insurance</li>
-                    <li>Light casco</li>
-                    <li>Full casco</li>
-                    <li>Driver Accident</li>
-                    <li>Accident & Health</li>
-                    <li>Travel</li>
-                    <li>Job Loss</li>
+                    <li><a href="#">GAP insurance</a></li>
+                    <li><a href="#">Light casco</a></li>
+                    <li><a href="#">Full casco</a></li>
+                    <li><a href="#">Driver Accident</a></li>
+                    <li><a href="#">Accident & Health</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Job Loss</a></li>
                 </ul>
             </div>
             <div class="item col-md-2">
                 <div class="list-title">
-                    <b>DEVELOPERS</b>
+                    <b>Developers</b>
                 </div>
                 <ul>
-                    <li>API Documentation</li>
+                    <li><a href="#">API Documentation</a></li>
                 </ul>
             </div>
-            <address class="item col-md-3">
-                <div class="title">Qover SA/NV</div>
-                <p class="text">
-                    Rue des Palais 44 - 1030 Brussels  <br>
-                    RPM: BE0650.939.878 - FSMA: 115284A
-                </p>
-            </address>
+            <div class="col-md-3">
+                <div class="sn text-white">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </div>
+                <address>
+                    <p>
+                        <b>Qover SA/NV</b>
+                        Rue des Palais 44 - 1030 Brussels <br>
+                        RPM: BE0650.939.878 - FSMA: 115284A
+                    </p>
+                </address>
+            </div>
+
         </div>
     </div>
     <div class="copyright text-white">
-        <p>
-            The information given on this website is for information purposes only and is therefore not binding.
-            It is the customer’s responsibility to read fully the General Policy Conditions of our products and to make carefully considered
-            decisions. © 2017 Qover SA/NV – RPM 0650.939.878 – FSMA 115284A. All rights Reserved.
-        </p>
+        <div class="container">
+            <p>
+                The information given on this website is for information purposes only and is therefore not binding.
+                It is the customer’s responsibility to read fully the General Policy Conditions of our products and to make carefully considered
+                decisions. © 2017 Qover SA/NV – RPM 0650.939.878 – FSMA 115284A. All rights Reserved.
+            </p>
+        </div>
     </div>
 </footer>
 
