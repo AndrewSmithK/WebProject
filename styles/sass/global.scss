@@ -65,6 +65,15 @@ a {
   }
 }
 
+.btn-grey {
+  background-color: #7B8EA0;
+  color: $black;
+  &:hover {
+    color: $black;
+    background-color: #7B8EA0;
+  }
+}
+
 .btn-dark-blue {
   background-color: $dark-sky-blue;
   color: $white;
@@ -89,6 +98,10 @@ a {
 
 .text-turquoise {
   color: $turquoise;
+}
+
+.non-active-text {
+  opacity: 0.6
 }
 
 // text-end //
