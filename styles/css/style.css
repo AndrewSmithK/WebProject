@@ -14418,10 +14418,10 @@ a:hover {
 }
 
 #robust-api {
-  padding: 140px 200px 0;
+  padding: 140px 0 0;
 }
 
-#robust-api .title {
+#robust-api > .title {
   margin: 50px 0;
 }
 
@@ -14434,8 +14434,25 @@ a:hover {
   text-align: center;
 }
 
-#robust-api .container {
+#robust-api .text-blocks {
   margin-top: 50px;
+}
+
+#robust-api .text-blocks .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#robust-api .text-blocks .link {
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#robust-api .text-blocks .link i {
+  margin-left: 10px;
+  font-size: 16px;
 }
 
 #robust-api .half-circle {
@@ -14467,30 +14484,26 @@ a:hover {
   margin-top: 60px;
 }
 
-#inn-products .container {
-  margin-top: 30px;
-  text-align: center;
+#inn-products .subtitle {
+  font-weight: 300;
+  margin-bottom: 50px;
 }
 
-#inn-products .container .item {
-  border: 20px solid #f5f7f9;
+#inn-products .item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 0 0 10px 0 #eaeff3;
+  box-shadow: 0 0 10px 0 #eaeff3;
 }
 
-#inn-products .container .item .item-icon {
-  margin: 40px auto 38px auto;
+#inn-products .item .icon {
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 30px;
 }
 
-#inn-products .container .item .item-icon #third-icon {
-  margin-top: -10px;
-}
-
-#inn-products .container .item .item-icon #fourth-icon {
-  margin-top: 21px;
-}
-
-#inn-products .container .item .item-text {
+#inn-products .item .text {
   font-size: 14px;
-  margin-bottom: 40px;
 }
 
 #gap-insurance {
@@ -14586,7 +14599,7 @@ a:hover {
 }
 
 #subscribe form {
-  margin: 29px auto;
+  margin: 29px auto 0;
 }
 
 #subscribe form input {
