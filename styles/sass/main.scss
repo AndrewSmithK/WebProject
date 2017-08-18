@@ -1,7 +1,6 @@
 $fa-font-path: '../../fonts/fontawesome';
 @import 'font-awesome';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'normalize';
 @import 'media';
 @import 'varibles';
 @import 'fonts';
@@ -85,8 +84,7 @@ $fa-font-path: '../../fonts/fontawesome';
   padding-top: 140px;
   padding-bottom: 63px;
   background-color: $dark-sky-blue;
-  background-image: url('../../images/future-homepage.png');
-  background-image: url('../../images/future-homepage.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-size: cover;
 
   .left-block {
@@ -481,6 +479,7 @@ $fa-font-path: '../../fonts/fontawesome';
         background-color: #2ec0cb;
       }
     }
+
   }
 }
 
@@ -562,8 +561,87 @@ footer {
   }
 }
 
+//Page-2 "About" styles
+#why-qover {
+  .title {
+    margin-bottom: 50px;
+  }
+  .container {
+    margin-bottom: 55px;
+    .insertion {
+      padding: 0 20px;
+      .item {
+        background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd), linear-gradient($pale-grey-two, $pale-grey-two), linear-gradient(291deg, $turquoise, #82e5c9 76%, #b9f4bc);
+        font-size: 16px;
+        font-family: 'MuseoSans', sans-serif;
+        font-weight: 300;
+        line-height: 21px;
+        margin-top: 0;
+        padding: 60px 60px 45px 140px;
+      }
 
+      b {
+        font-weight: bold;
+      }
 
+      .text {
+        line-height: 18px;
+        font-weight: 500;
+      }
+
+      .text-title {
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        margin: 30px auto 10px auto;
+      }
+    }
+
+    .item {
+      margin-top: 30px;
+      padding-left: 30px;
+      padding-right: 35px;
+
+      .title {
+        margin: 30px auto 15px auto;
+      }
+
+      .text {
+        margin-bottom: 15px;
+      }
+    }
+
+    .icon {
+      text-align: right;
+      //padding-right: 5px;
+    }
+  }
+}
+
+#circle {
+
+  .container {
+    margin-bottom: 0;
+    .item {
+      margin-top: 30px;
+      padding-left: 30px;
+      padding-right: 35px;
+
+      .title {
+        margin: 30px auto 11px auto;
+        font-weight: 900;
+        line-height: 1.11;
+        letter-spacing: 1px;
+      }
+
+      .text {
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.25;
+      }
+    }
+  }
+}
 
 
 

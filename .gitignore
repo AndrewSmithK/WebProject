@@ -2,7 +2,7 @@
 node_modules
 
 # Distenation folder for building app
-dist
+styles/css
 
 # In macOS .DS_Store is a file that stores custom attributes of its containing folder
 .DS_Store
