@@ -13562,6 +13562,16 @@ a:hover {
   background-color: #31cfda;
 }
 
+.btn-grey {
+  background-color: #7B8EA0;
+  color: #000d25;
+}
+
+.btn-grey:hover {
+  color: #000d25;
+  background-color: #7B8EA0;
+}
+
 .btn-dark-blue {
   background-color: #317bda;
   color: #ffffff;
@@ -13583,6 +13593,10 @@ a:hover {
 
 .text-turquoise {
   color: #31cfda;
+}
+
+.non-active-text {
+  opacity: 0.6;
 }
 
 .bg-blue {
@@ -14002,6 +14016,14 @@ a:hover {
   margin-top: 60px;
 }
 
+#inn-products .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 50px;
+  margin-top: -60px;
+}
+
 #inn-products .subtitle {
   font-weight: 300;
   margin-bottom: 50px;
@@ -14128,6 +14150,10 @@ a:hover {
   color: rgba(91, 114, 137, 0.5);
 }
 
+#subscribe form input::-webkit-input-placeholder {
+  color: rgba(91, 114, 137, 0.5);
+}
+
 #subscribe form button {
   padding: 10px 22px 10px;
   height: 40px;
@@ -14218,7 +14244,7 @@ footer .copyright p {
 }
 
 #header-about .container {
-  padding: 0 300px;
+  padding: 0 295px;
 }
 
 #header-about .container .title {
@@ -14429,4 +14455,64 @@ footer .copyright p {
 #contact-us .container a {
   padding-top: 13px;
   padding-bottom: 13px;
+}
+
+#trad-inn-prod {
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+
+#trad-inn-prod .container {
+  margin-top: 52px;
+}
+
+#trad-inn-prod .container .item {
+  padding-bottom: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b7289), to(#5b7289)), radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  background-image: linear-gradient(#5b7289, #5b7289), radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+}
+
+#trad-inn-prod .container .item .last-icon {
+  margin-bottom: 6px;
+}
+
+#trad-inn-prod .container .item button {
+  margin-top: 7px;
+}
+
+#trad-inn-prod .container .item button .non-active-text {
+  opacity: 0.2;
+}
+
+#trad-inn-prod .container .item .text-container {
+  padding: 0 15px;
+}
+
+#trad-inn-prod .container .item .title {
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#prod-in-dev {
+  padding: 70px 0 90px 100px;
+  background-image: url("../../images/Our-Products(Lifestyle)/product-in-development/product-in-development.png"), radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#prod-in-dev .container {
+  margin-left: -15px;
+}
+
+#prod-in-dev .container .items {
+  margin-bottom: 30px;
+}
+
+#prod-in-dev .container .items .title {
+  margin-bottom: 10px;
+}
+
+#prod-in-dev .container .items .text {
+  padding-right: 80px;
 }
