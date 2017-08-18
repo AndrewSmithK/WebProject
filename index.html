@@ -13,26 +13,24 @@
 </head>
 <body>
 
-	<div class="navigation container-fluid">
+	<div class="container-fluid" id="topline">
 		<div class="container">
-			<div class="row">
-				<a class="logo" href="#">
-					<img  src="images/logo-qover.png" alt="logo-qover"/>
-				</a>
-				<nav>
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">
-							Our products<i class="fa fa-angle-down" aria-hidden="true"></i>
-						</a></li>
-						<li><a href="#">Developers</a></li>
-						<li><a href="#">Contact us</a></li>
-					</ul>
-				</nav>
-				<div class="nav-buttons">
-					<a class="btn btn-turquoise nav-button-login" herf="#">Log in</a>
-					<a class="btn btn-white" herf="#">Request an access</a>
-				</div>
+			<a class="logo" href="#">
+				<img  src="images/logo-qover.png" alt="logo-qover"/>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">
+						Our products<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="#">Developers</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+			<div class="topline-buttons">
+				<a class="btn btn-turquoise nav-button-login" herf="#">Log in</a>
+				<a class="btn btn-white" herf="#">Request an access</a>
 			</div>
 		</div>
 	</div>
@@ -254,74 +252,68 @@
 	<section class="section bg-dark-blue" id="gap-insurance">
 		<div class="container text-white">
 			<div class="row">
-				<div class="col">
+				<div class="col-6">
 					<h3 class="subtitle">
-						<small>Discover our first product:</small><br/>
+						<small class="text-turquoise">Discover our first product:</small><br/>
 						Be one of the first to introduce the <br/>
 						Motor GAP Insurance in Belgium.
 					</h3>
-					<h4 class="title">
-						What is GAP Insurance?
-					</h4>
-					<p class="text">
-						Get back 100% back of the purchase price of a car up to 5-years.
-					</p>
-					<p class="text">
-						The GAP insurance covers the potential financial shotfall between the <br>
-						purchase price of the car and the indemnity paid by the casco insurer <br>
-						in case the vehicle is written off.
-					</p>
-					<h4 class="title">
-						Target customer:
-					</h4>
-					<ul class="text">
-						<li>For new and used cars bought in the last 6 months </li>
-						<li>Must have a casco insurance</li>
-					</ul>
-					<h4 class="title">
+					<div class="text-block">
+						<h4 class="title">
+							What is GAP Insurance?
+						</h4>
+						<p class="text">
+							Get back 100% back of the purchase price of a car up to 5-years.
+							<br/><br/>
+							The GAP insurance covers the potential financial shotfall between the <br>
+							purchase price of the car and the indemnity paid by the casco insurer <br>
+							in case the vehicle is written off.
+						</p>
+					</div>
+					
+					<div class="text-block">
+						<h4 class="title">
+							Target customer:
+						</h4>
+						<p class="text">
+							•&nbsp;&nbsp;&nbsp;&nbsp;For new and used cars bought in the last 6 months <br>
+							•&nbsp;&nbsp;&nbsp;&nbsp;Must have a casco insurance
+						</p>
+					</div>
+
+					<h4 class="title" style="margin-bottom: 20px;">
 						We sublime the customer experience
 					</h4>
-					<div class="content">
-						<div class="item">
-							<div class="icon">
-								<img src="images/icon-coverage.png"/>
-							</div>
-							<div class="text-small">
-									UP TO 60 MONTH
-							</div>
+
+					<div class="icon-label-list">
+						<div class="icon-label">
+							<img src="images/icon-coverage.png"/>
+							<span>Up to 60 months</span>
 						</div>
-						<div class="item">
-							<div class="item-icon">
-								<img src="images/icon-cancel.png"/>
-							</div>
-							<div class="text-small">
-									CANCEL ANYTIME
-							</div>
+						<div class="icon-label" style="float: right">
+							<img src="images/icon-cancel.png"/>
+							<span>Cancel anytime</span>
+						</div>
+						<div class="icon-label">
+							<img src="images/icon-referral_small.png"/>
+							<span>Digital, efficient and much (much) cheaper</span>
 						</div>
 					</div>
-					<div class="content">
-						<div class="item">
-							<div class="item-icon">
-								<img src="images/icon-referral_small.png"/>
-							</div>
-							<div class="text-small">
-									DIGITAL, EFFICIENT AND MUCH (MUCH) CHEAPER
-							</div>
-						</div>
-					</div>
-					<div style="clear: both; margin-top: 85px">
-						<button class="btn button btn-turquoise"><a class="" href="#">More info about the GAP</a></button>
-						<button class="btn button btn-dark-blue"><a class="" href="#">Become a partner</a></button>
+
+					<div>
+						<a class="btn button btn-turquoise" href="#">More info about the GAP</a>
+						<a class="link text-white" href="#">Become a partner<i class="fa fa-angle-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="col"></div>
-			</div>
-			
-			<div class="bitmap-icon">
-				<img src="images/bitmap.png"/>
+				<div class="col-6">
+					<div class="big-image">
+						<img src="images/mockup.png" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+
 	<section class="section" id="robust-api">
 		<div class="icon">
 			<img src="images/icon-dev-big.png"/>
@@ -367,6 +359,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="bg-light-grey" id="inn-products">
 		<div class="header hide">
 			<h2 class="sub-title text-grey text-center">
@@ -441,69 +434,83 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="section bg-light-grey" id="subscribe">
-		<h4 class="item-title text-grey text-center">
-			Keep up with the latest features
-		</h4>
 		<div class="row">
-			<div class="form">
+			<h4 class="title text-grey text-center">
+				Keep up with the latest features
+			</h4>
+			<form>
 				<input type="email" placeholder="please@qover.me" />
-				<button class="btn bg-turquoise text-white">Subscribe</button>
-			</div>
+				<button type="submit" class="btn bg-turquoise text-white">Subscribe</button>
+			</form>
 		</div>
 	</section>
+
 	<footer class="footer bg-dark-blue">
 		<div class="container">
 			<div class="row text-white">
-				<div class="icon col-md-2">
+				<div class="logo col-md-2">
 					<img src="images/logo-qover.png">
 				</div>
 				<div class="item col-md-2">
 					<div class="list-title">
-						<b>COMPANY</b>
+						<b>Company</b>
 					</div>
 					<ul>
-						<li>About Qover</li>
-						<li>Contact us</li>
-						<li>Complaints</li>
-						<li>Terms & Policies</li>
+						<li><a href="#">About Qover</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Complaints</a></li>
+						<li><a href="#">Terms & Policies</a></li>
 					</ul>
 				</div>
 				<div class="item col-md-2">
 					<div class="list-title">
-						<b>OUT PRODUCTS</b>
+						<b>Our products</b>
 					</div>
 					<ul>
-						<li>GAP insurance</li>
-						<li>Light casco</li>
-						<li>Full casco</li>
-						<li>Driver Accident</li>
-						<li>Accident & Health</li>
-						<li>Travel</li>
-						<li>Job Loss</li>
+						<li><a href="#">GAP insurance</a></li>
+						<li><a href="#">Light casco</a></li>
+						<li><a href="#">Full casco</a></li>
+						<li><a href="#">Driver Accident</a></li>
+						<li><a href="#">Accident & Health</a></li>
+						<li><a href="#">Travel</a></li>
+						<li><a href="#">Job Loss</a></li>
 					</ul>
 				</div>
 				<div class="item col-md-2">
 					<div class="list-title">
-						<b>DEVELOPERS</b>
+						<b>Developers</b>
 					</div>
 					<ul>
-						<li>API Documentation</li>
+						<li><a href="#">API Documentation</a></li>
 					</ul>
 				</div>
-				<address class="item col-md-3">
-					<b>Qover SA/NV</b><br>
-					Rue des Palais 44 - 1030 Brussels  <br>
-					RPM: BE0650.939.878 - FSMA: 115284A
-				</address>
+				<div class="col-md-3">
+					<div class="sn text-white">
+						<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					</div>
+					<address>
+						<p>
+							<b>Qover SA/NV</b>
+							Rue des Palais 44 - 1030 Brussels <br>
+							RPM: BE0650.939.878 - FSMA: 115284A
+						</p>
+					</address>
+				</div>
+				
 			</div>
 		</div>
 		<div class="copyright text-white">
-			<p>
-				The information given on this website is for information purposes only and is therefore not binding.
-				It is the customer’s responsibility to read fully the General Policy Conditions of our products and to make carefully considered
-				decisions. © 2017 Qover SA/NV – RPM 0650.939.878 – FSMA 115284A. All rights Reserved.
-			</p>
+			<div class="container">
+				<p>
+					The information given on this website is for information purposes only and is therefore not binding.
+					It is the customer’s responsibility to read fully the General Policy Conditions of our products and to make carefully considered
+					decisions. © 2017 Qover SA/NV – RPM 0650.939.878 – FSMA 115284A. All rights Reserved.
+				</p>
+			</div>
 		</div>
 	</footer>
 

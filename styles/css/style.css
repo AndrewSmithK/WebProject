@@ -13983,6 +13983,7 @@ template {
 body {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -14140,7 +14141,7 @@ a:hover {
   font-weight: 500;
 }
 
-.navigation {
+#topline {
   position: fixed;
   top: 0;
   width: 100%;
@@ -14151,29 +14152,29 @@ a:hover {
   z-index: 999;
 }
 
-.navigation .logo {
-  display: block;
+#topline .logo {
   float: left;
+  display: block;
   margin-right: 186px;
   padding: 18px 0 17px;
   width: 89px;
 }
 
-.navigation .logo img {
+#topline .logo img {
   width: 100%;
 }
 
-.navigation nav {
+#topline nav {
   float: left;
   overflow: hidden;
 }
 
-.navigation nav ul {
+#topline nav ul {
   margin: 0;
   padding: 0;
 }
 
-.navigation nav ul li {
+#topline nav ul li {
   float: left;
   display: block;
   margin-right: 45px;
@@ -14183,30 +14184,29 @@ a:hover {
   list-style: none;
 }
 
-.navigation nav ul li a {
+#topline nav ul li a {
   color: white;
   font-size: 11px;
-  font-weight: 300;
   letter-spacing: 0.9px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navigation nav ul li a:hover {
+#topline nav ul li a:hover {
   text-decoration: underline;
 }
 
-.navigation nav ul li a i {
+#topline nav ul li a i {
   margin-left: 10px;
   font-size: 14px;
 }
 
-.navigation .nav-buttons {
+#topline .topline-buttons {
   float: right;
   padding: 15px 0;
 }
 
-.navigation .nav-buttons .btn {
+#topline .topline-buttons .btn {
   float: right;
   margin-left: 10px;
   padding-left: 10px;
@@ -14312,7 +14312,7 @@ a:hover {
   color: #5b7289;
 }
 
-#get-started .container .secture-title {
+#get-started .secture-title {
   margin-bottom: 45px;
   font-family: 'MuseoSans', sans-serif;
   font-size: 36px;
@@ -14321,17 +14321,17 @@ a:hover {
   line-height: 43px;
 }
 
-#get-started .container .item {
+#get-started .item {
   position: relative;
   margin-bottom: 25px;
   padding-left: 50px;
 }
 
-#get-started .container .item .title {
+#get-started .item .title {
   margin-bottom: 10px;
 }
 
-#get-started .container .item .circle {
+#get-started .item .circle {
   position: absolute;
   top: -5px;
   left: 0;
@@ -14345,13 +14345,13 @@ a:hover {
   background: #fff;
 }
 
-#get-started .container .shadow-image {
+#get-started .item .shadow-image {
   position: relative;
   float: left;
   z-index: 1;
 }
 
-#get-started .container .shadow-image:before {
+#get-started .item .shadow-image:before {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -14375,8 +14375,9 @@ a:hover {
 #explanation .row .item {
   padding: 45px 25px;
   height: 335px;
-  -webkit-box-shadow: 0 0 10px 0 #f5f7f9;
-  box-shadow: 0 0 10px 0 #f5f7f9;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px #eaeff3;
+  box-shadow: 0 0 10px #eaeff3;
 }
 
 #explanation .row .item .icon {
@@ -14392,6 +14393,7 @@ a:hover {
 #explanation .label {
   margin: 50px auto 0;
   max-width: 520px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -14496,51 +14498,78 @@ a:hover {
   padding-top: 70px;
 }
 
-#gap-insurance .container {
-  padding-left: 27.5px;
+#gap-insurance .container .subtitle {
+  font-family: 'MuseoSans', sans-serif;
+  margin: 10px 0 30px;
+  font-weight: 300;
 }
 
-#gap-insurance .container ul {
-  padding-left: 20px;
-}
-
-#gap-insurance .container .item-title {
-  margin-top: 30px;
+#gap-insurance .container .subtitle small {
+  display: inline-block;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
-#gap-insurance .container p {
-  margin: 0 0 15px 0;
+#gap-insurance .container .text-block {
+  margin-bottom: 30px;
 }
 
-#gap-insurance .container .content {
-  clear: both;
+#gap-insurance .container .title {
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-#gap-insurance .container .content .item {
-  margin: 10px 80px 10px 0;
+#gap-insurance .container .icon-label-list {
+  position: relative;
+  max-width: 324px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#gap-insurance .container .icon-label-list .icon-label {
   float: left;
+  margin-bottom: 12px;
 }
 
-#gap-insurance .container .content .item .item-icon {
-  float: left;
-  padding: 0;
-  margin-right: 11px;
+#gap-insurance .container .icon-label-list .icon-label img {
+  margin-right: 8px;
 }
 
-#gap-insurance .container .content .item .item-text {
+#gap-insurance .container .icon-label-list .icon-label span {
+  text-transform: uppercase;
+  font-family: Roboto;
   font-size: 11px;
-  text-align: left;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 1px;
 }
 
-#gap-insurance .container button {
+#gap-insurance .container .btn {
   padding: 13px 20px;
 }
 
-#gap-insurance .container .bitmap-icon {
+#gap-insurance .container .link {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#gap-insurance .container .link i {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#gap-insurance .container .big-image {
+  position: relative;
+  width: 100%;
+}
+
+#gap-insurance .container .big-image img {
+  display: block;
   position: absolute;
-  top: -25px;
-  right: -62.5px;
+  left: 0;
 }
 
 #partners {
@@ -14556,55 +14585,98 @@ a:hover {
   font-size: 13px;
 }
 
-#subscribe .form {
-  margin: 29px auto auto;
+#subscribe form {
+  margin: 29px auto;
 }
 
-#subscribe .form input {
+#subscribe form input {
   border: solid 1px rgba(91, 114, 137, 0.2);
   padding: 12px 140px 13px 13px;
   float: left;
+  height: 40px;
   color: rgba(91, 114, 137, 0.5);
 }
 
-#subscribe .form button {
+#subscribe form button {
   padding: 10px 22px 10px;
+  height: 40px;
+  border-radius: 0 3px 3px 0;
 }
 
-#subscribe .form button:hover {
+#subscribe form button:hover {
   background-color: #2ec0cb;
 }
 
 footer .container {
-  margin: auto;
-  padding: 60px 27.5px;
-  font-size: 12px;
+  padding-top: 50px;
 }
 
-footer .container .icon {
-  margin-top: -10px;
-  margin-right: 20px;
+footer .container .item .list-title {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 footer .container .item ul {
   padding: 0;
-  margin: 20px 0;
+  margin-top: 13px;
+  margin-bottom: 57px;
 }
 
 footer .container .item ul li {
-  list-style-type: none;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+footer .container .item ul li a {
+  color: white;
+  font-style: 12px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+footer .container .item ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .container .sn {
   margin-bottom: 15px;
 }
 
+footer .container .sn a {
+  margin-right: 7px;
+  color: white;
+  font-size: 24px;
+  line-height: 25px;
+}
+
 footer .container address {
-  margin-left: 6%;
+  margin-left: auto;
+}
+
+footer .container address p {
+  font-size: 12px;
+}
+
+footer .container address p b {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 footer .copyright {
-  padding: 22px 100px;
+  padding: 22px 0;
   background-color: #2166c2;
 }
 
+footer .copyright .container {
+  padding: 0;
+}
+
 footer .copyright p {
+  font-family: Roboto;
   font-size: 10px;
+  line-height: 1.3;
 }

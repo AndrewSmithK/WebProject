@@ -3,6 +3,7 @@
 body {
   color: $white;
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
   
 h1, h2, h3, h4, h5, h6, p {
@@ -20,6 +21,7 @@ a {
   text-decoration: underline;
   font-weight: 500;
   font-size: 14px;
+
   &:hover {
     color: $dark-sky-blue;
     text-decoration: underline;
