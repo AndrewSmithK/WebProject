@@ -571,7 +571,8 @@ footer {
 
   #insertion {
     position: absolute;
-    left: 130px;
+    left: 50%;
+    margin-left: -425px;
     bottom: -80px;
   }
   .container {
@@ -587,6 +588,9 @@ footer {
         margin-top: 0;
         padding: 60px 60px 45px 140px;
         border-radius: 3px;
+        .item-text {
+          margin-bottom: 0;
+        }
       }
 
       b {
@@ -634,12 +638,17 @@ footer {
     #left-bar {
       margin-top: 75px;
     }
-    .item {
-
-      margin-top: 30px;
-      padding-left: 20px;
+    .left-side-bar {
+      padding-left: 55px;
       padding-right: 20px;
+    }
 
+    .right-side-bar {
+      padding-right: 35px;
+      padding-left: 20px;
+    }
+    .item {
+      margin-top: 30px;
       .title {
         margin: 30px auto 11px auto;
         font-weight: 900;
