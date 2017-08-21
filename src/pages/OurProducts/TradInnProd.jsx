@@ -1,10 +1,10 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
-import AccidentHealth from '../../images/our-products/accident-health/accident-health.png';
-import Travel from '../../images/our-products/travel/travel.png';
-import JobLoss from '../../images/our-products/job-loss/job-loss.png';
-import Landlord from '../../images/our-products/landlord/landlord.png';
+import AccidentHealth from '../../images/our-products/accident-health.png';
+import Travel from '../../images/our-products/travel.png';
+import JobLoss from '../../images/our-products/job-loss.png';
+import Landlord from '../../images/our-products/landlord.png';
 
 export default class TradInnProd extends React.Component {
   render() {

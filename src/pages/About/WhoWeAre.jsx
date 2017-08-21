@@ -1,25 +1,25 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
-import Quentin from '../../images/who-we-are/quentin/quentin.png';
-import JeanCharles from '../../images/who-we-are/jean-charles/jean-charles.png';
-import Eleonore from '../../images/who-we-are/eleonore/eleonore.png';
-import Geert from '../../images/who-we-are/geert/geert.png';
-import Denis from '../../images/who-we-are/denis/denis.png';
-import Ali from '../../images/who-we-are/ali/ali.png';
-import Romuald from '../../images/who-we-are/romuald/romuald.png';
-import Juan from '../../images/who-we-are/juan/juan.png';
-import Amandine from '../../images/who-we-are/amandine/amandine.png';
-import Dominique from '../../images/who-we-are/dominique/dominique.png';
-import Hamza from '../../images/who-we-are/hamza/hamza.png';
-import Emilien from '../../images/who-we-are/emilien/emilien.png';
-import Simon from '../../images/who-we-are/Simon/Simon.png';
-import Mathieu from '../../images/who-we-are/mathieu/mathieu.png';
-import Alexandre from '../../images/who-we-are/alexandre/alexandre.png';
-import AlexandreRoba from '../../images/who-we-are/alexandre-roba/alexandre-roba.png';
-import AnrienLebrun from '../../images/who-we-are/adrien-lebrun/adrien-lebrun.png';
-import Francesca from '../../images/who-we-are/francesca/francesca.png';
-import Arthur from '../../images/who-we-are/arthur/arthur.png';
+import Quentin from '../../images/who-we-are/quentin.png';
+import JeanCharles from '../../images/who-we-are/jean-charles.png';
+import Eleonore from '../../images/who-we-are/eleonore.png';
+import Geert from '../../images/who-we-are/geert.png';
+import Denis from '../../images/who-we-are/denis.png';
+import Ali from '../../images/who-we-are/ali.png';
+import Romuald from '../../images/who-we-are/romuald.png';
+import Juan from '../../images/who-we-are/juan.png';
+import Amandine from '../../images/who-we-are/amandine.png';
+import Dominique from '../../images/who-we-are/dominique.png';
+import Hamza from '../../images/who-we-are/hamza.png';
+import Emilien from '../../images/who-we-are/emilien.png';
+import Simon from '../../images/who-we-are/Simon.png';
+import Mathieu from '../../images/who-we-are/mathieu.png';
+import Alexandre from '../../images/who-we-are/alexandre.png';
+import AlexandreRoba from '../../images/who-we-are/alexandre-roba.png';
+import AnrienLebrun from '../../images/who-we-are/adrien-lebrun.png';
+import Francesca from '../../images/who-we-are/francesca.png';
+import Arthur from '../../images/who-we-are/arthur.png';
 
 export default class WhoWeAre extends React.Component {
   render() {
