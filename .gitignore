@@ -38,3 +38,5 @@ jspm_packages
 
 # WebPack
 webpack-assets.json
+
+public
