@@ -1,0 +1,227 @@
+@import 'varibles';
+
+#header-about {
+  padding: 130px 0 90px 0;
+  background-image: url('../images/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  
+  .container {
+    padding: 0 295px;
+
+    .title {
+      margin-bottom: 30px;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 43px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
+
+#why-qover {
+  position: relative;
+  padding-bottom: 287px;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  #insertion {
+    position: absolute;
+    left: 50%;
+    margin-left: -425px;
+    bottom: -80px;
+  }
+
+  .container {
+    .insertion {
+      padding: 0 20px;
+
+      .item {
+        background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd), linear-gradient($pale-grey-two, $pale-grey-two), linear-gradient(291deg, $turquoise, #82e5c9 76%, #b9f4bc);
+        font-size: 16px;
+        font-family: 'MuseoSans', sans-serif;
+        font-weight: 300;
+        line-height: 21px;
+        margin-top: 0;
+        padding: 60px 60px 45px 140px;
+        border-radius: 3px;
+
+        .item-text {
+          margin-bottom: 0;
+        }
+      }
+
+      b {
+        font-weight: bold;
+      }
+
+      .text {
+        line-height: 18px;
+        font-weight: 500;
+      }
+
+      .text-title {
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        margin: 30px auto 10px auto;
+      }
+    }
+
+    .item {
+      margin-top: 30px;
+      padding-left: 30px;
+      padding-right: 35px;
+
+      .title {
+        margin: 30px auto 15px auto;
+      }
+
+      .text {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+}
+
+#circle {
+  padding-top: 155px;
+  padding-bottom: 70px;
+
+  .container {
+    margin-bottom: 0;
+
+    .side-bar {
+      margin-top: 12px;
+    }
+
+    #left-bar {
+      margin-top: 75px;
+    }
+    
+    .left-side-bar {
+      padding-left: 55px;
+      padding-right: 20px;
+    }
+
+    .right-side-bar {
+      padding-right: 35px;
+      padding-left: 20px;
+    }
+    
+    .item {
+      margin-top: 30px;
+
+      .title {
+        margin: 30px auto 11px auto;
+        font-weight: 900;
+        line-height: 1.11;
+        letter-spacing: 1px;
+      }
+
+      .text {
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.25;
+      }
+    }
+    
+    .icon {
+       margin: 0 17px;
+    }
+  }
+}
+
+#who-we-are {
+  font-family: 'MuseoSans', sans-serif;
+  padding-bottom: 90px;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .container {
+    .icons {
+      margin: 0 -20px 20px -20px;
+    }
+
+    .item {
+      position: relative;
+    }
+
+    .text {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      font-family: 'MuseoSans', sans-serif;
+
+      .icon-title {
+        font-weight: bold;
+        font-size: 9px;
+        letter-spacing: 1px;
+        line-height: 10px;
+        text-transform: uppercase;
+      }
+
+      .icon-text {
+        font-family: 'MuseoSans', sans-serif;
+        letter-spacing: -0.3px;
+        font-size: 13px;
+        font-weight: 300;
+        margin-top: 5px;
+      }
+    }
+    
+    .icon {
+      img {
+        background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+        border-radius: 3px;
+      }
+    }
+
+    .last-icon {
+      font-family: 'MuseoSans', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      width: 150px;
+      text-align: center;
+      padding: 51px 25px;
+      background-color: $turquoise;
+      border-radius: 3px;
+    }
+  }
+}
+
+#contact-us {
+  padding-bottom: 70px;
+  background-image: url('../images/contact-us/banner-contact/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  text-align: center;
+
+  .container {
+    padding: 0px 180px;
+    font-family: 'MuseoSans', sans-serif;
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    a {
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+}

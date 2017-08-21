@@ -1,0 +1,60 @@
+@import 'varibles';
+
+#trad-inn-prod {
+  padding-top: 90px;
+  padding-bottom: 10px;
+
+  .container {
+    margin-top: 52px;
+
+    .item {
+      padding-bottom: 30px;
+      background-image: linear-gradient($grey, $grey), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+      
+      .last-icon {
+        margin-bottom: 6px;
+      }
+
+      button {
+        margin-top: 7px;
+
+        .non-active-text {
+          opacity: 0.2;
+        }
+      }
+
+      .text-container {
+        padding: 0 15px;
+      }
+
+      .title {
+        font-weight: 700;
+        margin-top: -10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+#prod-in-dev {
+  padding: 70px 0 90px 100px;
+  background-image: url('../images/Our-Products(Lifestyle)/product-in-development/product-in-development.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  .container {
+    margin-left: -15px;
+
+    .items {
+      margin-bottom: 30px;
+
+      .title {
+        margin-bottom: 10px;
+      }
+
+      .text {
+        padding-right: 80px;
+      }
+    }
+  }
+}
