@@ -1,8 +1,8 @@
-@import 'varibles';
+@import '../../styles/varibles';
 
 #header-about {
   padding: 130px 0 90px 0;
-  background-image: url('../images/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   
   .container {
     padding: 0 295px;
@@ -200,7 +200,7 @@
 
 #contact-us {
   padding-bottom: 70px;
-  background-image: url('../images/contact-us/banner-contact/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/contact-us/banner-contact/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   text-align: center;
 
   .container {

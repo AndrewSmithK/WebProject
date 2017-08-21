@@ -9,9 +9,9 @@ import GetStarted from './GetStarted';
 import Explanation from './Explanation';
 import GapInsurance from './GapInsurance';
 import RobustApi from './RobustApi';
-import InnProducts from './InnProducts';
+import InnProducts from '../../components/InnProducts';
 import Partners from './Partners';
-import Subscribe from './Subscribe';
+import Subscribe from '../../components/Subscribe';
 
 import './styles.scss';
 

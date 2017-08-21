@@ -1,7 +1,6 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
-// import IconRevenue from '../../images/name.png';
 
 export default class Subscribe extends React.Component {
   render() {

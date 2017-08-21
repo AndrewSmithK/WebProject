@@ -1,4 +1,26 @@
-@import 'varibles';
+@import '../../styles/varibles';
+
+#header-our-products {
+  padding: 130px 0 90px 0;
+  background-image: url('../../images/our-products/future-our-products/future-our-products.png'), radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
+  
+  .container {
+    padding: 0 295px;
+
+    .title {
+      margin-bottom: 30px;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 43px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
 
 #trad-inn-prod {
   padding-top: 90px;
@@ -15,11 +37,19 @@
         margin-bottom: 6px;
       }
 
-      button {
+      .btn {
         margin-top: 7px;
 
-        .non-active-text {
+        &.btn-disabled {
           opacity: 0.2;
+          cursor: default;
+          background-color: #7B8EA0;
+          color: $black;
+          
+          &:hover {
+            color: $black;
+            background-color: #7B8EA0;
+          }
         }
       }
 
@@ -38,7 +68,7 @@
 
 #prod-in-dev {
   padding: 70px 0 90px 100px;
-  background-image: url('../images/Our-Products(Lifestyle)/product-in-development/product-in-development.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/our-products/product-in-development/product-in-development.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-repeat: no-repeat;
   background-position: right;
 

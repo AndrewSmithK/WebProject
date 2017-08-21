@@ -1,10 +1,10 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
-import IconRevenueBig from '../../images/icon-revenue-big.png';
-import IconDiamont from '../../images/icon-diamont.png';
-import IconCustomer from '../../images/icon-customer.png';
-import LloydsLogo from '../../images/lloyds-logo.png';
+import IconRevenueBig from '../images/icon-revenue-big.png';
+import IconDiamont from '../images/icon-diamont.png';
+import IconCustomer from '../images/icon-customer.png';
+import LloydsLogo from '../images/lloyds-logo.png';
 
 export default class InnProducts extends React.Component {
   render() {

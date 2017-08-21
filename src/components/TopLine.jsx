@@ -1,23 +1,24 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
+import { Link } from 'react-router'
 import LogoQover from '../images/logo-qover.png';
 
 export default class TopLine extends React.Component {
   render() {
     return <div className="container-fluid" id="topline">
       <div className="container">
-        <a className="logo" href="#">
+        <Link to="/" className="logo">
           <img  src={LogoQover} alt="logo-qover"/>
-        </a>
+        </Link>
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/our-products">
               Our products<i className="fa fa-angle-down" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Contact us</a></li>
+            </Link></li>
+            <li><Link to="/about">Developers</Link></li>
+            <li><Link to="/about">Contact us</Link></li>
           </ul>
         </nav>
         <div className="topline-buttons">

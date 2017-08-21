@@ -1,6 +1,7 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
+import { Link } from 'react-router'
 import LogoQover from '../images/logo-qover.png';
 
 export default class TopLine extends React.Component {
@@ -16,10 +17,10 @@ export default class TopLine extends React.Component {
                 <b>Company</b>
               </div>
               <ul>
-                <li><a href="#">About Qover</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Complaints</a></li>
-                <li><a href="#">Terms & Policies</a></li>
+                <li><Link to="/about">About Qover</Link></li>
+                <li><Link to="#">Contact us</Link></li>
+                <li><Link to="#">Complaints</Link></li>
+                <li><Link to="#">Terms & Policies</Link></li>
               </ul>
             </div>
             <div className="item col-md-2">
@@ -27,13 +28,13 @@ export default class TopLine extends React.Component {
                 <b>Our products</b>
               </div>
               <ul>
-                <li><a href="#">GAP insurance</a></li>
-                <li><a href="#">Light casco</a></li>
-                <li><a href="#">Full casco</a></li>
-                <li><a href="#">Driver Accident</a></li>
-                <li><a href="#">Accident & Health</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Job Loss</a></li>
+                <li><Link to="#">GAP insurance</Link></li>
+                <li><Link to="#">Light casco</Link></li>
+                <li><Link to="#">Full casco</Link></li>
+                <li><Link to="#">Driver Accident</Link></li>
+                <li><Link to="#">Accident & Health</Link></li>
+                <li><Link to="#">Travel</Link></li>
+                <li><Link to="#">Job Loss</Link></li>
               </ul>
             </div>
             <div className="item col-md-2">
@@ -41,14 +42,14 @@ export default class TopLine extends React.Component {
                 <b>Developers</b>
               </div>
               <ul>
-                <li><a href="#">API Documentation</a></li>
+                <li><Link to="#">API Documentation</Link></li>
               </ul>
             </div>
             <div className="col-md-3">
               <div className="sn text-white">
-                <a href="#"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="#"><i className="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <Link to="#"><i className="fa fa-facebook-square" aria-hidden="true"></i></Link>
+                <Link to="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
+                <Link to="#"><i className="fa fa-twitter-square" aria-hidden="true"></i></Link>
               </div>
               <address>
                 <p>

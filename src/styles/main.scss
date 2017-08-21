@@ -361,3 +361,42 @@ footer {
     }
   }
 }
+
+#inn-products {
+  padding-bottom: 70px;
+
+  .header {
+    position: relative;
+    padding-top: 130px;
+    margin-top: 60px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    margin-bottom: 50px;
+    margin-top: -60px;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+
+  .item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 10px 0 $pale-grey;
+
+    .icon {
+      height: 70px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+  }
+}
