@@ -15,7 +15,7 @@ import {
   createStore,
 } from '../src/redux/createStore';
 import getRoutes from '../src/routes';
-import Template from '../src/Template';
+import Template from '../src/template';
 import { port, apiHost, apiPort } from '../config/env';
 
 const targetUrl = `http://${apiHost}:${apiPort}`;

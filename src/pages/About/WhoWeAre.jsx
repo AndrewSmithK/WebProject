@@ -13,7 +13,7 @@ import Amandine from '../../images/who-we-are/amandine.png';
 import Dominique from '../../images/who-we-are/dominique.png';
 import Hamza from '../../images/who-we-are/hamza.png';
 import Emilien from '../../images/who-we-are/emilien.png';
-import Simon from '../../images/who-we-are/Simon.png';
+import Simon from '../../images/who-we-are/simon.png';
 import Mathieu from '../../images/who-we-are/mathieu.png';
 import Alexandre from '../../images/who-we-are/alexandre.png';
 import AlexandreRoba from '../../images/who-we-are/alexandre-roba.png';

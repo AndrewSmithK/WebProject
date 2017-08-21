@@ -18,7 +18,7 @@ export default (store) => { // eslint-disable-line
       <IndexRoute component={Home} />
 
       <Route path="/about" component={About} />
-      <Route path="/our-products" component={OurProducts} />
+      <Route path="/our-products" component={OurProducts}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
