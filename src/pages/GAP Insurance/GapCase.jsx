@@ -1,6 +1,9 @@
 
 import React from 'react';
-import IconPlay from '../../images/gap-insurance/icon-play.png';
+import IconMail from '../../images/gap-insurance/icon-mail.png';
+import IconDesk from '../../images/gap-insurance/icon-desktop.png';
+import IconPhone from '../../images/gap-insurance/icon-phone.png';
+
 
 export default class GapCase extends React.Component {
   render() {
@@ -18,14 +21,66 @@ export default class GapCase extends React.Component {
               <h4 className="title">
                 <b>
                   Qover mainly uses digital medium of communication.
-                </b>                        
+                </b>
               </h4>
+              <h5 className="subtitle text-turquoise">
+                Your customer can reach us by:
+              </h5>
+              <div className="row">
+                <div className="col-md-10">
+                  <div className="icon">
+                    <img src={IconMail}/>
+                  </div>
+                  <p className="text">
+                    Sending an email to claims@qover.me  with all relevant and required documents  in the attachment
+                  </p>
+                </div>
+                <div className="col-md-10">
+                  <div className="icon">
+                    <img src={IconDesk}/>
+                  </div>
+                  <p className="text">
+                    Going on our website www.qover.me  and use the claim form
+                  </p>
+                </div>
+                <div className="col-md-10">
+                  <div className="icon">
+                    <img src={IconPhone}/>
+                  </div>
+                  <p className="text">
+                    Calling us at (+32) 588 25 50
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-md-6">
-            <p className="text">
-              All claims must be notified as soon as reasonably possible, and in any event within 30 days of a total loss.
-            </p>
+          <div className="col-md-7">
+            <div className="text-container">
+              <p className="text text-grey">
+                All claims must be notified as soon as reasonably possible, and in any event within 30 days of a total loss.
+              </p>
+              <p className="text text-grey">
+                Your customer must comply with the claim procedure as
+                explained in the General Policy Conditions, the Policy Schedule and by us.
+              </p>
+              <p className="text text-grey">
+                Important: your customer should not accept any settlement offer
+                from his motor insurer without first contacting the administrator or the claim adjuster.
+              </p>
+              <p className="text text-grey">
+                To authorise a claim, your customer should provide us with: <br/>
+                 •&nbsp;His personal and vehicle details (name, surname, vehicle type, plate, etc.) <br/>
+                •&nbsp;The Claim notification statement  <br/>
+                •&nbsp;A copy of his full or light casco Policy Schedule  <br/>
+                •&nbsp;In the case of theft, he must report the incident to the police and provide us with the crime reference number of the file
+              </p>
+              <p className="text text-grey">
+                Please note that your customer also need to provide the following pieces at a later stage of the process:  <br/>
+                •&nbsp;The settlement Proposal Letter of his Casco Insurer <br/>
+                 •&nbsp;The expertise report (if applicable)  <br/>
+                •&nbsp;The invoice or equivalent proof of purchase for his vehicle <br/>
+              </p>
+            </div>
           </div>
         </div>
       </div>

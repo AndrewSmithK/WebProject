@@ -289,7 +289,7 @@
   .container {
     .contacts {
       margin-left: 35px;
-      padding: 32px 30px 38px 30px;
+      padding: 32px 30px 22px 30px;
       background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
       border-radius: 3px;
       .title {
@@ -301,6 +301,30 @@
         b {
           font-weight: bold;
         }
+      }
+      .subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .icon {
+        float: left;
+        margin-right: 18px;
+        margin-bottom: 20px;
+      }
+      .text {
+        margin-right: -20px;
+        margin-bottom: 15px;
+        margin-top: 4px;
+      }
+
+    }
+    .text-container {
+      margin-left: 20px;
+      padding-right: 35px;
+      margin-bottom: -20px;
+      .text {
+        margin-bottom: 20px;
       }
     }
   }
