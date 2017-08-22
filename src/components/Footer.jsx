@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router'
-import LogoQover from '../images/logo-qover.png';
+import LogoQover from '../images/logo-qover-white.png';
 
 export default class TopLine extends React.Component {
   render() {
