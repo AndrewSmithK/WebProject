@@ -40,7 +40,6 @@ if (__DEVTOOLS__ && !global.devToolsExtension) {
     <Provider store={store} key="provider">
       <div>
         {component}
-        <DevTools />
       </div>
     </Provider>,
     dest

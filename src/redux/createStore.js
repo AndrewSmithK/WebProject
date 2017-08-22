@@ -17,7 +17,7 @@ function createStoreWithReducer(history, data, reducer) {
 
     finalCreateStore = compose(
       applyMiddleware(...middleware),
-      global.devToolsExtension ? global.devToolsExtension() : DevTools.instrument(),
+      // global.devToolsExtension ? global.devToolsExtension() : DevTools.instrument(),
       persistState(global.location.href.match(/[?&]debug_session=([^&]+)\b/))
     )(_createStore);
   } else {

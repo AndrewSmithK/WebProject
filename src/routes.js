@@ -9,6 +9,7 @@ import {
   Home,
   About,
   OurProducts,
+  GapInsurance,
   NotFound } from './pages';
 
 export default (store) => { // eslint-disable-line
@@ -19,6 +20,7 @@ export default (store) => { // eslint-disable-line
 
       <Route path="/about" component={About} />
       <Route path="/our-products" component={OurProducts}/>
+      <Route path="/our-products/gap-insurance" components={GapInsurance}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />

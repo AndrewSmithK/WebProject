@@ -4,7 +4,7 @@ import React from 'react';
 import ScreenshotApi from '../../images/gap-insurance/screeshot-api.png';
 import {Link} from 'react-router';
 
-export default class GAPHeader extends React.Component {
+export default class GapHeader extends React.Component {
   render() {
     return <section className="section" id="header-gap-insurance">
       <div className="container">
