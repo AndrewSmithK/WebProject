@@ -220,6 +220,7 @@ a {
 
   &.narrow {
     position: fixed;
+    border: 1px solid #f7f7f7;
     background: #fff;
     transition: all .4s;
 
@@ -229,6 +230,11 @@ a {
 
     a {
       color: #333;
+
+      &:hover {
+        color: $dark-sky-blue;
+        border-color: $dark-sky-blue;
+      }
     }
     
     .topline-buttons {
