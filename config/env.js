@@ -1,9 +1,9 @@
 module.exports = {
-  port: process.env.PORT || 8000,
+  port: process.env.PORT || 3000,
 
   apiHost: 'localhost',
-  apiPort: 8001,
+  apiPort: 3001,
 
   webpackHost: 'localhost',
-  webpackPort: 8002,
+  webpackPort: 3002,
 };
