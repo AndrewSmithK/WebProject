@@ -129,18 +129,45 @@
 
 #gap-fact-sheet {
   padding-bottom: 56px;
+  padding-top: 90px;
   .container {
-    .title {
+    .main-title {
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 32px;
     }
+    .sheet {
+      position: relative;
+      width: 100%;
+      .clips {
+        position: absolute;
+        left: calc(50% - 27px);
+        top: -55px;
+        z-index: 3;
+
+        &:before {
+          position: absolute;
+          display: block;
+          bottom: 0;
+          left: -16px;
+          width: 85px;
+          height:4px;
+          border-radius: 2px;
+          background: $dark-sky-blue;
+          content: '';
+        }
+      }
+    }
     .content-container {
       margin-left: 30px;
-      margin-right: 100px;
-      padding: 35px 25px 26px 25px;
+      margin-right: 10px;
+      padding: 35px 25px 25px 25px;
+      display: block;
+      position: absolute;
+      left: 0;
+      box-shadow: 1px 1px 15px 0 $pale-grey;
       .content {
-        padding: 25px;
+        padding: 25px 25px 26px 25px;
         .title {
           font-size: 20px;
           line-height: 22px;
@@ -148,7 +175,7 @@
           margin-bottom: 30px;
         }
         .text {
-          margin-bottom: 26px;
+          margin-bottom: 17px;
         }
         #last-block {
           margin-bottom: 0;
@@ -224,7 +251,7 @@
       opacity: 0.7;
     }
     .items {
-      padding: 70px 50px 95px 50px;
+      padding: 70px 50px 77px 50px;
       margin-left: -30px;
       margin-right: -21px;
       border: 1px solid $pale-grey;
@@ -239,6 +266,34 @@
         }
         padding: 50px 25px 50px 25px;
         background-image: url('../../images/gap-insurance/icon-paper.png');
+      }
+    }
+  }
+}
+
+#gap-case {
+  padding-top: 0;
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .container {
+    .contacts {
+      margin-left: 35px;
+      padding: 32px 30px 38px 30px;
+      background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+      border-radius: 3px;
+      .title {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        b {
+          font-weight: bold;
+        }
       }
     }
   }

@@ -21,9 +21,10 @@ export default class GapSupport extends React.Component {
               </h5>
               <div className="row">
                 <div className="col-md-1">
-                  <div className="icon">
-                    <img src={IconCheck} alt="icon-check"/>
-                  </div>
+                  <div className="icon-phonelink" style={{width: 15 + 'px', height: 15 + 'px', background: '#f00'}}/>
+                  {/*<div className="icon">*/}
+                    {/*<img src={IconCheck} alt="icon-check"/>*/}
+                  {/*</div>*/}
                 </div>
                 <div className="col-md-11">
                   <p className="text text-grey">
@@ -32,9 +33,10 @@ export default class GapSupport extends React.Component {
                   </p>
                 </div>
                 <div className="col-md-1">
-                  <div className="icon">
-                    <img src={IconCheck} alt="icon-check"/>
-                  </div>
+                  <div className="icon-phonelink" style={{width: 15 + 'px', height: 15 + 'px', background: '#f00'}}/>
+                  {/*<div className="icon">*/}
+                    {/*<img src={IconCheck} alt="icon-check"/>*/}
+                  {/*</div>*/}
                 </div>
                 <div className="col-md-11">
                   <p className="text text-grey">
@@ -43,9 +45,10 @@ export default class GapSupport extends React.Component {
                   </p>
                 </div>
                 <div className="col-md-1">
-                  <div className="icon">
-                    <img src={IconCheck} alt="icon-check"/>
-                  </div>
+                  <div className="icon-phonelink" style={{width: 15 + 'px', height: 15 + 'px', background: '#f00'}}/>
+                  {/*<div className="icon">*/}
+                    {/*<img src={IconCheck} alt="icon-check"/>*/}
+                  {/*</div>*/}
                 </div>
                 <div className="col-md-11">
                   <p className="text text-grey">
@@ -55,9 +58,10 @@ export default class GapSupport extends React.Component {
                   </p>
                 </div>
                 <div className="col-md-1">
-                  <div className="icon">
-                    <img src={IconCheck} alt="icon-check"/>
-                  </div>
+                  <div className="icon-phonelink" style={{width: 15 + 'px', height: 15 + 'px', background: '#f00'}}/>
+                  {/*<div className="icon">*/}
+                    {/*<img src={IconCheck} alt="icon-check"/>*/}
+                  {/*</div>*/}
                 </div>
                 <div className="col-md-11">
                   <p className="text text-grey">
@@ -66,9 +70,10 @@ export default class GapSupport extends React.Component {
                   </p>
                 </div>
                 <div className="col-md-1">
-                  <div className="icon">
-                    <img src={IconCheck} alt="icon-check"/>
-                  </div>
+                  <div className="icon-phonelink" style={{width: 15 + 'px', height: 15 + 'px', background: '#f00'}}/>
+                  {/*<div className="icon">*/}
+                    {/*<img src={IconCheck} alt="icon-check"/>*/}
+                  {/*</div>*/}
                 </div>
                 <div className="col-md-11">
                   <p className="text text-grey">
@@ -94,9 +99,10 @@ export default class GapSupport extends React.Component {
                 </h6>
                 <div className="row">
                   <div className="col-md-3">
-                    <div className="icon-phonelink">
-                      <img src={IconPhonelink} />
-                    </div>
+                    <div className="icon-phonelink" style={{width: 26 + 'px', height: 30 + 'px', background: '#f00'}}/>
+                    {/*<div className="icon-phonelink">*/}
+                      {/*<img src={IconPhonelink} />*/}
+                    {/*</div>*/}
                   </div>
                   <div className="col-md-9">
                     <Link to="#" className="text text-blue">
@@ -104,9 +110,10 @@ export default class GapSupport extends React.Component {
                     </Link>
                   </div>
                   <div className="col-md-3">
-                    <div className="icon-phonelink">
-                      <img src={IconPhonelink} />
-                    </div>
+                    <div className="icon-phonelink" style={{width: 26 + 'px', height: 30 + 'px', background: '#f00'}}/>
+                    {/*<div className="icon-phonelink">*/}
+                      {/*<img src={IconPhonelink} />*/}
+                    {/*</div>*/}
                   </div>
                   <div className="col-md-9">
                     <Link to="#" className="text text-blue">
@@ -114,9 +121,10 @@ export default class GapSupport extends React.Component {
                     </Link>
                   </div>
                   <div className="col-md-3">
-                    <div className="icon-phonelink">
-                      <img src={IconPhonelink} />
-                    </div>
+                    <div className="icon-phonelink" style={{width: 26 + 'px', height: 30 + 'px', background: '#f00'}}/>
+                    {/*<div className="icon-phonelink">*/}
+                      {/*<img src={IconPhonelink} />*/}
+                    {/*</div>*/}
                   </div>
                   <div className="col-md-9">
                     <Link to="#" className="text text-blue">

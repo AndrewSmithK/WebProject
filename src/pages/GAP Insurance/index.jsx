@@ -6,7 +6,8 @@ import GapHeader from './GapHeader';
 import GapVideo from './GapVideo';
 import GapCareAbout from './GapCareAbout';
 import GapFactSheet from './GapFactSheet';
-import GapSupport from './GapSupport'
+import GapSupport from './GapSupport';
+import GapCase from './GapCase';
 import './styles.scss';
 
 export default class GapInsurance extends React.Component {
@@ -17,6 +18,7 @@ export default class GapInsurance extends React.Component {
       <GapCareAbout/>
       <GapFactSheet/>
       <GapSupport/>
+      <GapCase/>
     </div>;
   }
 }
