@@ -230,10 +230,9 @@ a {
     }
 
     a {
-      color: #333;
+      color: $dark-sky-blue;
 
       &:hover {
-        color: $dark-sky-blue;
         border-color: $dark-sky-blue;
       }
     }
