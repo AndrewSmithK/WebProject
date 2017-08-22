@@ -1,7 +1,7 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
-import IconCancel from '../../images/icon-cancel.png';
+import IconCancel from '../../images/icon-cancel-small.png';
 import IconCoverage from '../../images/icon-coverage.png';
 import IconReferralSmall from '../../images/icon-referral_small.png';
 import Mockup from '../../images/mockup.png';

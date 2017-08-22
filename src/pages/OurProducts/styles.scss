@@ -3,6 +3,7 @@
 #header-our-products {
   padding: 130px 0 90px 0;
   background-image: url('../../images/our-products/future-our-products.png'), radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
+  background-size: cover;
   
   .container {
     padding: 0 295px;
@@ -79,6 +80,7 @@
       margin-bottom: 30px;
 
       .title {
+        font-weight: 700;
         margin-bottom: 10px;
       }
 

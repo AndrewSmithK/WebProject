@@ -15,14 +15,20 @@ export default class ProdInDev extends React.Component {
         <div className="container">
             <div className="row items">
                     <div className="item col-md-5">
-                        <h5 className="title non-active-text">Motor extended warranty</h5>
+                        <h5 className="title non-active-text">
+                            <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+                            Motor extended warranty
+                        </h5>
                         <p className="text non-active-text">
                             Extend the manufacturer warranty on your vehicle.
                             Three variants covering mechanical and electronic failures. Wear and tear excluded.
                         </p>
                     </div>
                 <div className="item col-md-5">
-                    <h5 className="title non-active-text">Product Name</h5>
+                    <h5 className="title non-active-text">
+                        <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+                        Product Name
+                    </h5>
                     <p className="text non-active-text">
                         Description
                     </p>
@@ -30,13 +36,19 @@ export default class ProdInDev extends React.Component {
             </div>
             <div className="row items">
                 <div className="item col-md-5">
-                    <h5 className="title">Mandatory Third-Party-Liability</h5>
+                    <h5 className="title">
+                        <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+                        Mandatory Third-Party-Liability
+                    </h5>
                     <p className="text">
                         Mandatory motor liability insurance for private cars and light commercial vehicles.
                     </p>
                 </div>
                 <div className="item col-md-5">
-                    <h5 className="title non-active-text">Rental damage</h5>
+                    <h5 className="title non-active-text">
+                        <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+                        Rental damage
+                    </h5>
                     <p className="text non-active-text">
                         Cover for damages caused by tenants to your property.
                         Two variants: long- or short term rental contracts.

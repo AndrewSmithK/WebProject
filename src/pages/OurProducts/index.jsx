@@ -4,7 +4,7 @@ import React from 'react';
 
 import Header from './Header';
 import TradInnProd from './TradInnProd';
-import InnProducts from '../../components/InnProducts';
+import InnProducts from './InnProducts';
 import ProdInDev from './ProdInDev';
 import Subscribe from '../../components/Subscribe';
 
@@ -15,7 +15,7 @@ export default class OurProducts extends React.Component {
     return <div>
       <Header></Header>
       <TradInnProd></TradInnProd>
-      <InnProducts></InnProducts>
+      <InnProducts title="Our Amazing features"></InnProducts>
       <ProdInDev></ProdInDev>
       <Subscribe></Subscribe>
     </div>;

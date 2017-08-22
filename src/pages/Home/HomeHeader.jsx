@@ -29,7 +29,7 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image">
-              <img src={imac} alt="imac"/>
+              <div style={{width: 410 + 'px', height: 300 + 'px', background: '#f00'}}></div>
             </div>
           </div>
         </div>

@@ -9,9 +9,9 @@ import Landlord from '../../images/our-products/landlord.png';
 export default class TradInnProd extends React.Component {
   render() {
     return <section className="section" id="trad-inn-prod">
-        <h1 className="title text-grey">
+        <h2 className="title text-grey">
             Traditional & innovative products
-        </h1>
+        </h2>
         <div className="container">
             <div className="row">
                 <div className="col-md-3">

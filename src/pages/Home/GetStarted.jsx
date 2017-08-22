@@ -44,7 +44,7 @@ export default class GetStarted extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="shadow-image">
-              <img src={Charts} className="img-fluid" alt="qover - charts" />
+              <div style={{width: 510 + 'px', height: 485 + 'px', background: '#f00'}}></div>
             </div>
           </div>
         </div>

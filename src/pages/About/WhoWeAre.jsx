@@ -182,9 +182,7 @@ export default class WhoWeAre extends React.Component {
                 </div>
                 <div className="icon col-md-2">
                     <div className="item">
-                        <div className="icon">
-                            <img src={Hamza} alt="hamza"/>
-                        </div>
+                        <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                         <div className="text">
                             <p className="icon-title">
                                 UI Designer
@@ -307,7 +305,7 @@ export default class WhoWeAre extends React.Component {
                 <div className="icon col-md-2">
                     <div className="item">
                         <div className="icon">
-                            <img src={Francesca} alt="cédric-françois"/>
+                            <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                         </div>
                         <div className="text">
                             <p className="icon-title">
@@ -322,7 +320,7 @@ export default class WhoWeAre extends React.Component {
                 <div className="icon col-md-2">
                     <div className="item">
                         <div className="icon">
-                            <img src={Francesca} alt="cédric-degallaix"/>
+                            <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                         </div>
                         <div className="text">
                             <p className="icon-title">

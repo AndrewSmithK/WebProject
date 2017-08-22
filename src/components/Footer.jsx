@@ -47,9 +47,9 @@ export default class TopLine extends React.Component {
             </div>
             <div className="col-md-3">
               <div className="sn text-white">
-                <Link to="#"><i className="fa fa-facebook-square" aria-hidden="true"></i></Link>
-                <Link to="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
-                <Link to="#"><i className="fa fa-twitter-square" aria-hidden="true"></i></Link>
+                <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
+                <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
+                <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
               </div>
               <address>
                 <p>
