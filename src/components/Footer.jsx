@@ -28,7 +28,7 @@ export default class TopLine extends React.Component {
                 <b>Our products</b>
               </div>
               <ul>
-                <li><Link to="#">GAP insurance</Link></li>
+                <li><Link to="/our-products/gap-insurance">GAP insurance</Link></li>
                 <li><Link to="#">Light casco</Link></li>
                 <li><Link to="#">Full casco</Link></li>
                 <li><Link to="#">Driver Accident</Link></li>

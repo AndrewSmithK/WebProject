@@ -55,7 +55,7 @@ export default class TopLine extends React.Component {
                   <ul>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#31cfda'}}>Gap insurance</Link>
+                        <Link to="/our-products/gap-insurance" style={{color: '#31cfda'}}>Gap insurance</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
