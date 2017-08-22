@@ -11,8 +11,8 @@
     "dev-server": "NODE_ENV=development nodemon --exec babel-node ./bin/server.js",
     "webpack-dev-server": "NODE_ENV=development babel-node ./bin/webpack-dev-server.js",
     "start": "concurrently --kill-others \"npm run start-api\" \"npm run start-server\"",
-    "start-api": "NODE_ENV=production babel-node ./bin/api.js",
-    "start-server": "NODE_ENV=production babel-node ./bin/server.js",
+    "start-api": "NODE_ENV=production node ./bin/api.js --exec babel-node --presets stage-0",
+    "start-server": "NODE_ENV=production node ./bin/server.js --exec babel-node --presets stage-0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Volodymyr Kravchuk <volodymyr.krvchuk@inveritasoft.com>",
