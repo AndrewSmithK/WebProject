@@ -158,6 +158,7 @@
         }
       }
     }
+
     .content-container {
       margin-left: 30px;
       margin-right: 10px;
@@ -166,23 +167,29 @@
       position: absolute;
       left: 0;
       box-shadow: 1px 1px 15px rgba(49, 123, 218, .2);
+
       .content {
         padding: 25px 25px 26px 25px;
+
         .title {
           font-size: 20px;
           line-height: 22px;
           font-weight: bold;
           margin-bottom: 30px;
         }
+
         .text {
           margin-bottom: 17px;
         }
+
         #last-block {
           margin-bottom: 0;
         }
+
         .icon {
           margin-left: -15px;
         }
+        
         p {
           margin-left: -30px;
           margin-right: -10px;
