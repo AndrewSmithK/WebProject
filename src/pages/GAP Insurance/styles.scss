@@ -329,3 +329,26 @@
     }
   }
 }
+
+#gap-partners {
+  background-color: $grey;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-right: 70px;
+    float: left;
+  }
+  .content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .icon {
+    float: left;
+    margin-top: -16px;
+    margin-left: 48px;
+  }
+}
+
