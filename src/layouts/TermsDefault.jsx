@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Route } from 'react-router-dom';
+import { Route } from 'react-router';
 
 import TermsHeader from '../components/TermsHeader';
 import TermsSideBar from '../components/TermsSideBar';
@@ -17,9 +17,6 @@ export default class TermsDefault extends React.Component {
       <div className="content">
         {this.props.children}
       </div>
-
-
-      <Route path="/termsPolicies/notices" components={Terms} />
     </div>);
   }
 }

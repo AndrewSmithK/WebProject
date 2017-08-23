@@ -45,7 +45,7 @@ export default class TopLine extends React.Component {
                 <li><Link to="#">API Documentation</Link></li>
               </ul>
             </div>
-            <div className="col-md-3">
+            <div className="address col-md-3">
               <div className="sn text-white">
                 <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
                 <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>

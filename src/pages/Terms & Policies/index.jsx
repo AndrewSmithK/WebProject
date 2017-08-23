@@ -1,7 +1,8 @@
 
 import React from 'react';
-import TermsHeader from '../../components/TermsHeader';
+
 import TermsNotices from "./TermsNotices";
+
 import './style.scss';
 
 export default class Terms extends React.Component {

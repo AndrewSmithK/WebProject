@@ -410,8 +410,12 @@ a {
 footer {
   .container {
     padding-top: 50px;
-
+  .logo {
+    margin-left: -32.5px;
+    margin-right: 22px;
+  }
     .item {
+      margin-left: 18px;
       .list-title {
         font-size: 9px;
         font-weight: 900;
@@ -431,7 +435,7 @@ footer {
 
           a {
             color: white;
-            font-style: 12px;
+            font-size: 12px;
             font-weight: 300;
             text-decoration: none;
 
@@ -441,6 +445,10 @@ footer {
           }
         }
       }
+    }
+    .address {
+      margin-left: 70px;
+      margin-right: -32.5px;
     }
 
     .sn {
