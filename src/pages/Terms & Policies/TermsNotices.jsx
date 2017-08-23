@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class TemsNotices extends React.Component {
+export default class TermsNotices extends React.Component {
   render () {
     return <div className="text-container">
       <h5 className="title text-blue">

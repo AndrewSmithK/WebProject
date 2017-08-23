@@ -1,15 +1,11 @@
 /* eslint react/prefer-stateless-function: 0 */
 
 import React from 'react';
-import {Link, Route, BrowserRouter as Router} from 'react-router';
-import TermsDefault from "../layouts/TermsDefault";
-import TermsNotices from '../pages/Terms & Policies/TermsNotices';
-import TermsCookies from '../pages/Terms & Policies/TermsCookies';
+import {Link} from 'react-router';
 
-export default class TermsNoticesSideBar extends React.Component {
+export default class TermsSideBar extends React.Component {
   render() {
     return <section className="section" id="terms-notices">
-      <Router>
         <div className="container">
           <div className="row justify-content-center">
            <div className="col-md-4">
@@ -55,13 +51,10 @@ export default class TermsNoticesSideBar extends React.Component {
                </div>
              </div>
            </div>
-              <div className="col-md-8"></div>
+              <div className="col-md-8">
+              </div>
           </div>
         </div>
-        <Route exact path="/termsPolicies" component={TermsDefault}/>
-        <Route path="/notices" component={TermsNotices}/>
-        <Route path="/cookiePolicy" component={TermsCookies}/>
-      </Router>
     </section>;
   }
 }
