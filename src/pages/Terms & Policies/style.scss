@@ -18,6 +18,7 @@
 #terms-notices {
   padding-bottom: 70px;
   .container {
+
     .title {
       font-weight: 700;
       line-height: 22px;
@@ -41,14 +42,57 @@
         color: $grey;
       }
     }
-    .text-container {
-      margin-bottom: -20px;
-      margin-left: -45px;
-      padding-right: 30px;
-      .text {
-        margin-bottom: 20px;
+  }
+}
+
+.text-container {
+  margin-bottom: -20px;
+  margin-left: -45px;
+  padding-right: 31px;
+  .ls-none {
+    list-style-type: none;
+  }
+  .item {
+    margin-bottom: 30px;
+    ol {
+      list-style-type: lower-roman;
+    }
+    ol, ul {
+      padding-left: 25px;
+      margin-bottom: 20px;
+      li {
+        padding-left: 20px;
+        ul {
+          padding-left: 15px;
+          margin-bottom: 17px;
+          li {
+            padding-left: 5px;
+          }
+        }
       }
     }
+  }
 
+  .chain-icon {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+  #main-subtitle {
+    margin-bottom: 10px;
+    line-height: 28px;
+  }
+  .subtitle {
+    margin-bottom: 20px
+  }
+  .text {
+    b {
+      font-weight: bold;
+    }
+    margin-bottom: 15px;
   }
 }
