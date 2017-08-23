@@ -1,0 +1,54 @@
+@import "../../styles/varibles";
+
+#terms-header {
+  padding: 130px 0 70px 0;
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  .container {
+    padding: 0 295px;
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 43px;
+    }
+  }
+}
+
+#terms-notices {
+  padding-bottom: 70px;
+  .container {
+    .title {
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .item-title {
+      margin-left: -15px;
+      padding: 15px 10px;
+      //background-color: $pale-grey-two;
+      border-bottom: 1px solid $pale-grey;
+      line-height: 11px;
+      a {
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $grey;
+      }
+    }
+    .text-container {
+      margin-bottom: -20px;
+      margin-left: -45px;
+      padding-right: 30px;
+      .text {
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+}
