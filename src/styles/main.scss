@@ -408,14 +408,16 @@ a {
 }
 
 footer {
+  border-top: 5px solid #2066c2;
+
   .container {
-    padding-top: 50px;
-  .logo {
-    margin-left: -32.5px;
-    margin-right: 22px;
-  }
+    padding-top: 45px;
+
+    .logo {
+      
+    }
+
     .item {
-      margin-left: 18px;
       .list-title {
         font-size: 9px;
         font-weight: 900;
@@ -431,11 +433,14 @@ footer {
 
         li {
           list-style: none;
-          margin-bottom: 8px;
+          line-height: 12px;
 
           a {
+            display: inline-block;
+            margin-bottom: 12px;
             color: white;
             font-size: 12px;
+            line-height: 12px;
             font-weight: 300;
             text-decoration: none;
 
@@ -446,9 +451,9 @@ footer {
         }
       }
     }
+
     .address {
-      margin-left: 70px;
-      margin-right: -32.5px;
+      float: right;
     }
 
     .sn {

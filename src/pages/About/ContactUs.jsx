@@ -8,7 +8,7 @@ export default class ContactUs extends React.Component {
         <div className="container">
             <div className="content row justify-content-center">
                 <h2 className="title">
-                    Let’s make something great together
+                    Let’s make <b>something great together</b>
                 </h2>
                 <h4 className="subtitle">
                     You want to be a partner or wish to have more information about our products? Contact us!

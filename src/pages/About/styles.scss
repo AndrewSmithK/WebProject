@@ -5,9 +5,8 @@
   background-image: url('../../images/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   
   .container {
-    padding: 0 295px;
-
     .title {
+      width: 100%;
       margin-bottom: 30px;
       font-size: 36px;
       font-weight: 700;
@@ -18,6 +17,7 @@
     .subtitle {
       font-size: 24px;
       font-weight: 500;
+      font-family: 'MuseoSans', sans-serif;
     }
   }
 }
@@ -199,7 +199,7 @@
 }
 
 #contact-us {
-  padding-bottom: 70px;
+  padding-bottom: 67px;
   background-image: url('../../images/contact-us/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   text-align: center;
 
@@ -209,14 +209,21 @@
 
     .title {
       font-size: 30px;
-      font-weight: bold;
+      font-weight: 500;
+      line-height: normal;
       margin-bottom: 30px;
+      font-family: 'MuseoSans', sans-serif;
+      
+      b {
+        font-weight: 700;
+      }
     }
 
     .subtitle {
       font-size: 24px;
       font-weight: 500;
-      margin-bottom: 30px;
+      line-height: 30px;
+      margin-bottom: 28px;
     }
 
     a {

@@ -40,7 +40,7 @@ export default class TopLine extends React.Component {
   
   render() {
     return <div className={`container-fluid ${this.state.navClass}`} id="topline">
-      <div className="container">
+      <div className="container pr-0 pl-0">
         <Link to="/" className="logo"></Link>
         <nav>
           <ul>

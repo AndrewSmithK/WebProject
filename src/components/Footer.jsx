@@ -9,10 +9,10 @@ export default class TopLine extends React.Component {
     return <footer className="footer bg-dark-blue">
         <div className="container">
           <div className="row text-white">
-            <div className="logo col-md-2">
+            <div className="logo col">
               <img src={LogoQover} alt="Qover - logo-qover"/>
             </div>
-            <div className="item col-md-2">
+            <div className="item col">
               <div className="list-title">
                 <b>Company</b>
               </div>
@@ -23,7 +23,7 @@ export default class TopLine extends React.Component {
                 <li><Link to="#">Terms & Policies</Link></li>
               </ul>
             </div>
-            <div className="item col-md-2">
+            <div className="item col">
               <div className="list-title">
                 <b>Our products</b>
               </div>
@@ -37,7 +37,7 @@ export default class TopLine extends React.Component {
                 <li><Link to="#">Job Loss</Link></li>
               </ul>
             </div>
-            <div className="item col-md-2">
+            <div className="item col">
               <div className="list-title">
                 <b>Developers</b>
               </div>
