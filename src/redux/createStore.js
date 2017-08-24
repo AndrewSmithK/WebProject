@@ -1,5 +1,3 @@
-/* eslint import/no-extraneous-dependencies: 0, global-require: 0, no-underscore-dangle: 0 */
-
 import { createStore as _createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 

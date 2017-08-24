@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import LogoLloyds from '../../images/parthners/logo-lloyds.png';
 import LogoMunich from '../../images/parthners/logo-munich-re.png';

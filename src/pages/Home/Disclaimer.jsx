@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 
 export default class Disclaimer extends React.Component {

@@ -1,6 +1,3 @@
-/* eslint react/prefer-stateless-function: 0, react/forbid-prop-types: 0 */
-/* eslint global-require: 0 */
-
 import React from 'react';
 
 import TopLine from '../components/TopLine';

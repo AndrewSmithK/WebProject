@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import ScreenshotApi from '../../images/gap-insurance/screeshot-api.png';
 import {Link} from 'react-router';

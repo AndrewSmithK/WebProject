@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import IconRevenue from '../../images/icon-revenue.png';
 import IconOnDemand from '../../images/icon-on-demand.png';
@@ -7,7 +5,7 @@ import IconDev from '../../images/icon-dev.png';
 
 export default class Advantages extends React.Component {
   render() {
-    return <section className="section" id="advantages">
+    return (<section className="section" id="advantages">
       <h2 className="title text-blue">
         Be part of the future
       </h2>
@@ -18,10 +16,10 @@ export default class Advantages extends React.Component {
         <div className="row">
           <div className="item col-md-4 col-sm-12">
             <div className="icon">
-              <img src={IconRevenue} alt="icon-revenue"/>
+              <img src={IconRevenue} alt="icon-revenue" />
             </div>
             <h4 className="title text-blue">
-              Reach new source <br/>
+              Reach new source <br />
               of revenues
             </h4>
             <p className="text text-grey">
@@ -31,31 +29,35 @@ export default class Advantages extends React.Component {
           </div>
           <div className="item col-md-4 col-sm-12">
             <div className="item-icon">
-              <img src={IconOnDemand} alt="icon-on-demand"/>
+              <img src={IconOnDemand} alt="icon-on-demand" />
             </div>
             <h4 className="title text-blue">
-              Your branding, <br/>
+              Your branding, <br />
               our innovative products
             </h4>
             <p className="text text-grey">
-              It takes only 5 minutes to adjust our solution to your branding.We offer much more: innovative products, on-demand features, cancellation at any time... That's our DNA!
+              It takes only 5 minutes to adjust our solution to your branding.
+              We offer much more: innovative products, on-demand features,
+              cancellation at any time...
+              That&apos;s our DNA!
             </p>
           </div>
           <div className="item col-md-4 col-sm-12">
             <div className="item-icon">
-              <img src={IconDev} alt="icon-dev"/>
+              <img src={IconDev} alt="icon-dev" />
             </div>
             <h4 className="title text-blue">
-              Referral, digital lead <br/>
+              Referral, digital lead <br />
               or Full Integration
             </h4>
             <p className="text text-grey">
-              Our fully automated & online solution can be integrated within your IT in a few minutes.
-              Your customer gets a price in real time and can purchase an insurance contract which is digitally and instantly issued.
+              Our fully automated & online solution can be integrated within your IT
+              in a few minutes. Your customer gets a price in real time and can purchase
+              an insurance contract which is digitally and instantly issued.
             </p>
           </div>
         </div>
       </div>
-    </section>;
+    </section>);
   }
 }

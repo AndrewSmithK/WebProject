@@ -1,6 +1,3 @@
-
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import QoverWheel from '../../images/qover-wheel.png';
 
@@ -21,7 +18,7 @@ export default class Circle extends React.Component {
                     <div className="item left-side-bar text-right bd-right" id="left-bar">
                         <h3 className="title text-blue">ON-DEMAND</h3>
                         <p className="text text-grey">
-                            Coverage from
+                            Coverage from<br/>
                             1 day up to 5 years.
                             Cancel anytime
                         </p>

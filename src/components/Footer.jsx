@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import { Link } from 'react-router'
 import LogoQover from '../images/logo-qover-white.png';
@@ -9,10 +7,10 @@ export default class TopLine extends React.Component {
     return <footer className="footer bg-dark-blue">
         <div className="container">
           <div className="row text-white">
-            <div className="logo col">
+            <div className="logo" style={{width: 89 + 'px', marginRight: 111 + 'px'}}>
               <img src={LogoQover} alt="Qover - logo-qover"/>
             </div>
-            <div className="item col">
+            <div className="item" style={{width: 90 + 'px', marginRight: 75 + 'px'}}>
               <div className="list-title">
                 <b>Company</b>
               </div>
@@ -23,7 +21,7 @@ export default class TopLine extends React.Component {
                 <li><Link to="#">Terms & Policies</Link></li>
               </ul>
             </div>
-            <div className="item col">
+            <div className="item" style={{width: 96 + 'px', marginRight: 69 + 'px'}}>
               <div className="list-title">
                 <b>Our products</b>
               </div>
@@ -37,7 +35,7 @@ export default class TopLine extends React.Component {
                 <li><Link to="#">Job Loss</Link></li>
               </ul>
             </div>
-            <div className="item col">
+            <div className="item" style={{width: 104 + 'px', marginRight: 116 + 'px'}}>
               <div className="list-title">
                 <b>Developers</b>
               </div>
@@ -45,7 +43,7 @@ export default class TopLine extends React.Component {
                 <li><Link to="#">API Documentation</Link></li>
               </ul>
             </div>
-            <div className="address col-md-3">
+            <div className="address">
               <div className="sn text-white">
                 <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
                 <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>

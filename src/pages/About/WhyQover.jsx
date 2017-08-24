@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import IconSettings from '../../images/icon-settings.png';
 import IconEnergy from '../../images/icon-energy.png';

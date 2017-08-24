@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import Quentin from '../../images/who-we-are/quentin.png';
 import JeanCharles from '../../images/who-we-are/jean-charles.png';

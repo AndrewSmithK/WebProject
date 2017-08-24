@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 
 export default class AboutHeader extends React.Component {
@@ -11,7 +9,7 @@ export default class AboutHeader extends React.Component {
 					About Qover
 				</h1>
 				<h4 className="subtitle text-white">
-					Bringing insurance to a whole new level <br />
+					Bringing insurance to a whole new level<br />
 					– experience seamless digital service
 				</h4>
 			</div>	

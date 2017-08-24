@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import AccidentHealth from '../../images/our-products/accident-health.png';
 import Travel from '../../images/our-products/travel.png';

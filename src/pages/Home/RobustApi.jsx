@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import ApiImage from '../../images/api-image.jpg';
 import IconDevBig from '../../images/icon-dev-big.png';

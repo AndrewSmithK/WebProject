@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import LloydsLogoSmall from '../../images/lloyds-logo-small.png';
 import imac from '../../images/imac.png';

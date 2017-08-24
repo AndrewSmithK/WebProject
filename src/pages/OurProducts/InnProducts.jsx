@@ -1,5 +1,3 @@
-/* eslint react/prefer-stateless-function: 0 */
-
 import React from 'react';
 import IconCancel from '../../images/icon-cancel.png';
 import IconDiamont from '../../images/icon-diamont.png';

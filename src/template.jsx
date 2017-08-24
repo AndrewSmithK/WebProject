@@ -1,6 +1,3 @@
-/* eslint react/prefer-stateless-function: 0, react/no-danger: 0, react/forbid-prop-types: 0 */
-/* eslint no-underscore-dangle: 0, global-require: 0 */
-
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import serialize from 'serialize-javascript';
@@ -17,22 +14,14 @@ export default class Template extends React.Component {
           <title>Qover</title>
           {/* production */}
           {Object.keys(assets.styles).map((style, key) => {
-              
             console.log(assets.styles[style]);
-            return <link
+            return (<link
               href={assets.styles[style]}
               key={key} media="screen, projection"
               rel="stylesheet" type="text/css" charSet="UTF-8"
-            />
+            />);
           }
-            
           )}
-          {/* development */}
-          {
-            // Object.keys(assets.styles).length === 0 ?
-            //   <style dangerouslySetInnerHTML={{ __html: require('../containers/App.css')._style }} /> :
-            // null
-          }
         </head>
         <body>
           <div id="root" dangerouslySetInnerHTML={{ __html: content }} />
