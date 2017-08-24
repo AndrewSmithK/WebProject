@@ -8,7 +8,7 @@ export default class TermsSideBar extends React.Component {
         Terms & Policies
       </h6>
       <div className="item-title">
-        <Link to="/terms-policies/notices">
+        <Link to="/terms-policies">
           Legal notices
         </Link>
       </div>

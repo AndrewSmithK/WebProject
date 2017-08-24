@@ -27,7 +27,7 @@ export default () => (
     <Route path="/our-products" component={OurProducts} />
     <Route path="/our-products/gap-insurance" component={GapInsurance} />
     <Route path="/terms-policies" component={TermsDefault}>
-      <Route path="/terms-policies/notices" component={TermsNotices} />
+      <IndexRoute component={TermsNotices} />
       <Route path="/terms-policies/cookie-policy" component={TermsCookies} />
       <Route path="/terms-policies/conflicts" component={TermsConflicts} />
       <Route path="/terms-policies/data" component={TermsDataPrivacy} />

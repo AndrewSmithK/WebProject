@@ -26,10 +26,12 @@
       line-height: 22px;
       margin-bottom: 30px;
     }
+
     .subtitle {
       font-weight: 700;
       margin-bottom: 30px;
     }
+
     .item-title {
       margin-left: -15px;
       padding: 15px 10px;
@@ -51,16 +53,20 @@
   margin-bottom: -20px;
   margin-left: -45px;
   padding-right: 31px;
+  
   .ls-none {
     list-style-type: none;
   }
+  
   .item {
     margin-bottom: 30px;
+    
     ol {
       list-style-type: lower-roman;
     }
+
     ol, ul {
-      padding-left: 25px;
+        padding-left: 25px;
       margin-bottom: 20px;
       li {
         padding-left: 20px;
@@ -74,6 +80,7 @@
       }
     }
   }
+
   .line {
     margin-right: 18px;
   }
