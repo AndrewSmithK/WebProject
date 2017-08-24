@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default class TermsSideBar extends React.Component {
   render() {
-    return (<div>
+    return (<div className="side-container">
       <h6 className="subtitle text-grey">
         Terms & Policies
       </h6>
