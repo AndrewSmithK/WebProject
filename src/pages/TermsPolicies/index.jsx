@@ -10,7 +10,6 @@ import TermsComplaints from './TermsComplaints'
 
 import './style.scss';
 
-
 export default class Terms extends React.Component {
   render() {
     return (
