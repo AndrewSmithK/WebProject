@@ -153,18 +153,16 @@ export default class TermsDataPrivacy extends React.Component {
             Insurance administration:
           </li>
           <li className="text text-grey ls-none">
-            <ul>
-              <li className="text text-grey">
-                by us, (re)insurer(s) and (re)insurance broker(s) for any (re)insurance claim made by us, for renewal
-                purposes, for our management reporting and for internal and external audit;
-              </li>
-              <li className="text text-grey">
-                to satisfy information requests; - to provide notifications about changes to our services; and
-              </li>
-              <li className="text text-grey">
-                with appropriate consents, to provide marketing services.
-              </li>
-            </ul>
+            <p className="text text-grey">
+              <span className="line"><b>-</b></span>by us, (re)insurer(s) and (re)insurance broker(s) for any (re)insurance claim made by us, for renewal
+              purposes, for our management reporting and for internal and external audit;
+            </p>
+            <p className="text text-grey">
+              <span className="line"><b>-</b></span>to satisfy information requests; - to provide notifications about changes to our services; and
+            </p>
+            <p className="text text-grey">
+              <span className="line"><b>-</b></span>with appropriate consents, to provide marketing services.
+            </p>
           </li>
           <li className="text text-grey">
             Statistical analysis: for the purposes of statistical analysis and review of our business and business
