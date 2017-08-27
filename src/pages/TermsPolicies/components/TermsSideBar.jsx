@@ -86,60 +86,60 @@ export default class TermsSideBar extends React.Component {
       <h6 className="subtitle text-grey">
         Terms & Policies
       </h6>
-      <div className={this.state.noticies ? 'active' : 'item-title'} onClick={this.activeNotice.bind(this)}>
+      <div className={`${this.state.noticies ? 'active' : ''} item-title`} onClick={this.activeNotice.bind(this)}>
         <Link to="/terms-policies">
           Legal notices
         </Link>
       </div>
-      <div className={this.state.cookie ? 'active' : 'item-title'} onClick={this.activeCookie.bind(this)}>
+      <div className={`${this.state.cookie ? 'active' : ''} item-title`} onClick={this.activeCookie.bind(this)}>
         <Link to="/terms-policies/cookie-policy">
           Cookie policy
         </Link>
         <ul>
-          <li>Log data</li>
-          <li>Cookies</li>
+          <li><Link>Log data</Link></li>
+          <li><Link>Cookies</Link></li>
         </ul>
       </div>
-      <div className={this.state.conflicts ? 'active' : 'item-title'} onClick={this.activeConflicts.bind(this)}>
+      <div className={`${this.state.conflicts ? 'active' : ''} item-title`} onClick={this.activeConflicts.bind(this)}>
         <Link to="/terms-policies/conflicts">
           Conflicts of Interest &
           Inducement Policy
         </Link>
         <ul>
-          <li>Information on the policy on conflicts of interest</li>
-          <li>Information Qover's policy on inducements</li>
+          <li><Link>Link   Information on the policy on conflicts of interest</Link></li>
+          <li><Link>Information Qover's policy on inducements</Link></li>
         </ul>
       </div>
-      <div className={this.state.data ? 'active' : 'item-title'} onClick={this.activeData.bind(this)}>
+      <div className={`${this.state.data ? 'active' : ''} item-title`} onClick={this.activeData.bind(this)}>
         <Link to="/terms-policies/data">
           Data privacy
         </Link>
         <ul>
-          <li>Summary</li>
-          <li>Policy</li>
-          <li>Information we may collect</li>
-          <li>Communications</li>
-          <li>Security</li>
-          <li>Use of Personal Information</li>
-          <li>Information that you provide about other parties</li>
-          <li>Disclosure of your Personal Information</li>
-          <li>Access to information</li>
-          <li>Changes to This Privacy Policy</li>
+          <li><Link>Summary</Link></li>
+          <li><Link>Policy</Link></li>
+          <li><Link>Information we may collect</Link></li>
+          <li><Link>Communications</Link></li>
+          <li><Link>Security</Link></li>
+          <li><Link>Use of Personal Information</Link></li>
+          <li><Link>Information that you provide about other parties</Link></li>
+          <li><Link>Disclosure of your Personal Information</Link></li>
+          <li><Link>Access to information</Link></li>
+          <li><Link>Changes to This Privacy Policy</Link></li>
         </ul>
       </div>
-      <div className={this.state.notifications ? 'active' : 'item-title'} onClick={this.activeNotifications.bind(this)}>
+      <div className={`${this.state.notifications ? 'active' : ''} item-title`} onClick={this.activeNotifications.bind(this)}>
         <Link to="/terms-policies/notification">
           Claim notification
         </Link>
       </div>
-      <div className={this.state.complaints ? 'active' : 'item-title'} onClick={this.activeComplaints.bind(this)}>
+      <div className={`${this.state.complaints ? 'active' : ''} item-title`} onClick={this.activeComplaints.bind(this)}>
         <Link to="/terms-policies/complaints">
           Complaints
         </Link>
         <ul>
-          <li>Qover</li>
-          <li>Ombudsman</li>
-          <li>The European Online Dispute Resolution Platform</li>
+          <li><Link>Qover</Link></li>
+          <li><Link>Ombudsman</Link></li>
+          <li><Link>The European Online Dispute Resolution Platform</Link></li>
         </ul>
       </div>
       <div className="item-title">

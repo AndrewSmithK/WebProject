@@ -1,14 +1,18 @@
 import React from 'react';
 import ScreenshotApi from '../../images/gap-insurance/screeshot-api.png';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 
 export default class GapHeader extends React.Component {
   render() {
     return <section className="section" id="header-gap-insurance">
       <div className="container">
-        <Link to="/our-products"><div className="label"><i className="fa fa-angle-left" aria-hidden="true"></i> ALL products</div></Link>
+        <Link to="/our-products">
+          <div className="label">
+            <i className="fa fa-angle-left" aria-hidden="true" />ALL products
+          </div>
+        </Link>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-7 p-0">
             <div className="block">
               <div className="row">
                 <div className="col-md-4" >

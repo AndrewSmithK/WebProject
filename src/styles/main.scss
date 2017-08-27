@@ -111,6 +111,25 @@ a {
 
 // btn-end //
 
+// form //
+
+.field {
+  float: left;
+  position: relative;
+
+  &.half {
+    width: 50%;
+    padding: 0 15px;
+  }
+
+  &.full {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+// form-end //
+
 // text // 
 
 .text-grey {

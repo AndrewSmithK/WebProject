@@ -1,16 +1,16 @@
 import React from 'react';
 
-export default class AboutHeader extends React.Component {
+export default class Header extends React.Component {
   render() {
-    return (<section className="section" id="header-about">
+    return (<section className="section" id="header-contact-us">
       <div className="container">
         <div className="row justify-content-center text-center">
           <h1 className="title text-white">
-					About Qover
+					Contact us
 				</h1>
           <h4 className="subtitle text-white">
-						Bringing insurance to a whole new level<br />
-						– experience seamless digital service
+            Got a question? We’d love to hear from you.<br />
+            Drop us a message, we’ll get in touch as soon as possible.
 					</h4>
         </div>
       </div>

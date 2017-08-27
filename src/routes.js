@@ -16,14 +16,15 @@ import {
   About,
   OurProducts,
   GapInsurance,
+  ContactUs,
   NotFound } from './pages';
 
 export default () => (
   <Route path="/" component={Default}>
     { /* Home (main) route */ }
     <IndexRoute component={Home} />
-
     <Route path="/about" component={About} />
+    <Route path="/contact-us" component={ContactUs} />
     <Route path="/our-products" component={OurProducts} />
     <Route path="/our-products/gap-insurance" component={GapInsurance} />
     <Route path="/terms-policies" component={TermsDefault}>

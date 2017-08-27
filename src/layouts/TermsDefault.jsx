@@ -15,10 +15,10 @@ export default class TermsDefault extends React.Component {
       <section className="section" id="terms-notices">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-4">
+            <div className="col-md-3">
               <TermsSideBar />
             </div>
-            <div className="col-md-8">
+            <div className="col-md-9">
               {this.props.children}
             </div>
           </div>

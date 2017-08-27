@@ -101,7 +101,7 @@ export default class TopLine extends React.Component {
               </div>
             </li>
             <li><Link to="/about">Developers</Link></li>
-            <li><Link to="/about">Contact us</Link></li>
+            <li><Link to="/contact-us">Contact us</Link></li>
           </ul>
         </nav>
         <div className="topline-buttons">
