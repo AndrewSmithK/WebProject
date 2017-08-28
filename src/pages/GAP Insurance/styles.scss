@@ -281,17 +281,20 @@
       margin-left: -30px;
       margin-right: -21px;
       border: 1px solid $pale-grey;
-      background-color: $pale-grey;
+      background-color: $pale-grey-two;
 
       .item-paper {
         a {
           padding-right: 0;
         }
+        .icon-pdf {
+          margin-bottom: 20px;
+        }
         .icon-phonelink {
           margin-bottom: 20px;
         }
-        padding: 50px 25px 50px 25px;
-        background-image: url('../../images/gap-insurance/icon-paper.png');
+        padding: 50px 25px 29px 25px;
+        background-image: url('../../images/gap-insurance/icon-paper.svg');
       }
     }
   }

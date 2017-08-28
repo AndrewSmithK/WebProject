@@ -1,6 +1,6 @@
 
 import React from 'react';
-import IconPlay from '../../images/gap-insurance/icon-play.png';
+import IconPlay from '../../images/gap-insurance/icon-play.svg';
 
 export default class GapVideo extends React.Component {
   render() {

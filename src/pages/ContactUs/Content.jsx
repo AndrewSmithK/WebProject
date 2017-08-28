@@ -1,9 +1,9 @@
 import React from 'react';
 import Field from '../../components/small/Field';
 
-import poneIcon from '../../images/icon-phone.svg';
-import mailIcon from '../../images/icon-mail.svg';
-import pinIcon from '../../images/icon-pin.svg';
+import poneIcon from '../../images/contact-us/icon-phone.svg';
+import mailIcon from '../../images/contact-us/icon-mail.svg';
+import pinIcon from '../../images/contact-us/icon-pin.svg';
 
 export default class Content extends React.Component {
   render() {

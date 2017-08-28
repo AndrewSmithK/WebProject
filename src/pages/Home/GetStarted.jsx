@@ -1,9 +1,10 @@
 import React from 'react';
+import dashboard from '../../images/img-dashboard.png';
 // import Charts from '../../images/charts.png';
 
 export default class GetStarted extends React.Component {
   render() {
-    return (<section className="section bg-blue text-white" id="get-started">
+    return (<section className="section text-white" id="get-started">
       <div className="container">
         <div className="row">
           <div className="col-md-6 pr-4">
@@ -55,7 +56,8 @@ export default class GetStarted extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="shadow-image">
-              <div style={{ width: `${510}px`, height: `${485}px`, background: '#f00' }} />
+              {/*<div style={{ width: `${510}px`, height: `${485}px`, background: '#f00' }} />*/}
+              <img src={dashboard} alt="dashboard" />
             </div>
           </div>
         </div>

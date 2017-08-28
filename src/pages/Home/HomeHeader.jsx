@@ -1,13 +1,14 @@
 import React from 'react';
 import LloydsLogoSmall from '../../images/lloyds-logo-small.png';
 import imac from '../../images/imac.png';
+import api from '../../images/api.svg';
 
 export default class HomeHeader extends React.Component {
   render() {
-    return <section className="section" id="header">
+    return (<section className="section" id="header">
       <div className="container">
         <div className="icon">
-          <img src={LloydsLogoSmall} alt="lloyds-logo"/>
+          <img src={LloydsLogoSmall} alt="lloyds-logo" />
         </div>
         <div className="row">
           <div className="col-md-6">
@@ -27,11 +28,12 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image">
-              <div style={{width: 410 + 'px', height: 300 + 'px', background: '#f00'}}></div>
+              <img src={imac} alt="imac" />
+              <img className="api-logo" src={api} alt="api" />
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>);
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import ValueChain from '../../images/value-chain-v-4.png';
+import ValueChain from '../../images/value-chain-v-4.svg';
 
 export default class ProdInDev extends React.Component {
   render() {

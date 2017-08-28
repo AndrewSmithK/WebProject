@@ -55,6 +55,10 @@
         .item-text {
           margin-bottom: 0;
         }
+        .qover-logo {
+          position: absolute;
+          left: 0;
+        }
       }
 
       b {
@@ -77,6 +81,10 @@
       margin-top: 30px;
       padding-left: 30px;
       padding-right: 35px;
+
+      .logo {
+        margin-bottom: 15px;
+      }
 
       .title {
         margin: 30px auto 15px auto;

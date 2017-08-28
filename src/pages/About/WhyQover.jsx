@@ -1,7 +1,9 @@
 import React from 'react';
-import IconSettings from '../../images/icon-settings.png';
-import IconEnergy from '../../images/icon-energy.png';
-import IconDevAbout from '../../images/icon-dev-about.png';
+import IconSettings from '../../images/icon-settings.svg';
+import IconEnergy from '../../images/icon-energy.svg';
+import IconDevAbout from '../../images/icon-dev-about.svg';
+import lloyds from '../../images/logo-lloyds.svg';
+import qover from '../../images/q-qover.svg';
 import coverholderLogo from '../../images/coverholder-logo.png';
 
 export default class WhyQover extends React.Component {
@@ -37,7 +39,9 @@ export default class WhyQover extends React.Component {
                 The Lloyd’s is behind us
               </b>
             </h4>
-            <div style={{width: 178 + 'px', height: 30 + 'px', marginBottom: 15 + 'px',  background: '#f00'}}></div>
+            <div className="logo">
+              <img src={lloyds} alt="lloyds" />
+            </div>
             <p className="text text-grey">Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks.</p>
             <p className="text text-grey">Around 80 syndicates are underwriting insurance at Lloyd’s, covering all classes of business. Together they interact with thousands of brokers daily to create insurance solutions for businesses in over 200 countries and territories around the world. Lloyd’s insures the majority of FTSE 100 and Dow Jones industrial average companies.</p>
             <p className="text text-grey">Lloyd’s enjoys strong financial security supported by excellent ratings. Visit www.lloyds.com for more information.</p>
@@ -59,6 +63,9 @@ export default class WhyQover extends React.Component {
       <div className="container" id="insertion">
         <div className="insertion row">
           <div className="item col-md-10">
+            <div className="qover-logo">
+              <img src={qover} alt="qover" />
+            </div>
             <div>
               <b>With our business model, you keep the same level of commission</b>
               (more if you wish to administrate your customer contracts yourself)

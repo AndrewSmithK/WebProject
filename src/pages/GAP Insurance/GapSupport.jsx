@@ -1,6 +1,7 @@
 import React from 'react';
-import IconCheck from '../../images/gap-insurance/icon-checkbox.png';
-import IconPhonelink from '../../images/gap-insurance/phonelink-material.png';
+import IconCheck from '../../images/gap-insurance/icon-checkbox.svg';
+import IconPhonelink from '../../images/gap-insurance/phonelink-material.svg';
+import Pdf from '../../images/gap-insurance/icon-pdf.svg';
 import { Link } from 'react-router-dom';
 
 export default class GapSupport extends React.Component {
@@ -99,10 +100,9 @@ export default class GapSupport extends React.Component {
                 </h6>
                 <div className="row">
                   <div className="col-md-3">
-                    <div className="icon-phonelink" style={{width: 26 + 'px', height: 30 + 'px', background: '#f00'}}/>
-                    {/*<div className="icon-phonelink">*/}
-                      {/*<img src={IconPhonelink} />*/}
-                    {/*</div>*/}
+                    <div className="icon-pdf">
+                      <img src={Pdf} alt="icon-pdf" />
+                    </div>
                   </div>
                   <div className="col-md-9">
                     <Link to="/" className="text text-blue">
@@ -110,10 +110,9 @@ export default class GapSupport extends React.Component {
                     </Link>
                   </div>
                   <div className="col-md-3">
-                    <div className="icon-phonelink" style={{width: 26 + 'px', height: 30 + 'px', background: '#f00'}}/>
-                    {/*<div className="icon-phonelink">*/}
-                      {/*<img src={IconPhonelink} />*/}
-                    {/*</div>*/}
+                    <div className="icon-pdf">
+                      <img src={Pdf} alt="icon-pdf" />
+                    </div>
                   </div>
                   <div className="col-md-9">
                     <Link to="/" className="text text-blue">
@@ -121,10 +120,9 @@ export default class GapSupport extends React.Component {
                     </Link>
                   </div>
                   <div className="col-md-3">
-                    <div className="icon-phonelink" style={{width: 26 + 'px', height: 30 + 'px', background: '#f00'}}/>
-                    {/*<div className="icon-phonelink">*/}
-                      {/*<img src={IconPhonelink} />*/}
-                    {/*</div>*/}
+                    <div className="icon-pdf">
+                      <img src={Pdf} alt="icon-pdf" />
+                    </div>
                   </div>
                   <div className="col-md-9">
                     <Link to="/" className="text text-blue">
@@ -133,7 +131,7 @@ export default class GapSupport extends React.Component {
                   </div>
                   <div className="col-md-3">
                     <div className="icon-phonelink">
-                      <img src={IconPhonelink} />
+                      <img src={IconPhonelink} alt="icon-phoneLink" />
                     </div>
                   </div>
                   <div className="col-md-9">

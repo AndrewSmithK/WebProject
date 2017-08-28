@@ -1,7 +1,7 @@
 import React from 'react';
-import IconRevenue from '../../images/icon-revenue.png';
-import IconOnDemand from '../../images/icon-on-demand.png';
-import IconDev from '../../images/icon-dev.png';
+import IconRevenue from '../../images/icon-revenue.svg';
+import IconOnDemand from '../../images/icon-on-demand.svg';
+import IconDev from '../../images/icon-dev.svg';
 
 export default class Advantages extends React.Component {
   render() {
