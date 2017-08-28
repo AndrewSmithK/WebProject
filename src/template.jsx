@@ -14,7 +14,6 @@ export default class Template extends React.Component {
           <title>Qover</title>
           {/* production */}
           {Object.keys(assets.styles).map((style, key) => {
-            console.log(assets.styles[style]);
             return (<link
               href={assets.styles[style]}
               key={key} media="screen, projection"

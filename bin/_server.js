@@ -5,9 +5,9 @@ import path from 'path';
 import PrettyError from 'pretty-error';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
-import { match, RouterContext } from 'react-router';
+import { StaticRouter } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import createHistory from 'react-router/lib/createMemoryHistory';
+import { createMemoryHistory } from 'history';
 import { Provider } from 'react-redux';
 import {
   createStore,
@@ -56,38 +56,55 @@ app.use((req, res) => {
     webpackIsomorphicTools.refresh();
   }
 
-  const memoryHistory = createHistory(req.originalUrl);
+  const memoryHistory = createMemoryHistory(req.originalUrl);
   const store = createStore(memoryHistory);
-  const history = syncHistoryWithStore(memoryHistory, store);
 
   function hydrateOnClient() {
     res.send(`<!doctype html>${ReactDOM.renderToString(<Template assets={webpackIsomorphicTools.assets()} store={store} />)}`);
   }
 
-  match({ history, routes: getRoutes(store), location: req.originalUrl },
-  (error, redirectLocation, renderProps) => {
-    if (redirectLocation) {
-      res.redirect(redirectLocation.pathname + redirectLocation.search);
-    } else if (error) {
-      console.error('ROUTER ERROR:', pretty.render(error));
-      res.status(500);
-      hydrateOnClient();
-    } else if (renderProps) {
-      const component = (
-        <Provider store={store} key="provider">
-          <RouterContext {...renderProps} />
-        </Provider>
-      );
+  const context = {};
+  const component = (
+    <Provider store={store} key="provider">
+      <StaticRouter location={req.originalUrl} context={context}>
+        {getRoutes(store)}
+      </StaticRouter>
+    </Provider>);
 
-      res.status(200);
+  if (context.status === 404) {
+    res.status(404);
+  } else if (context.status === 302) {
+    res.redirect(302, context.url);
+  } else {
+    res.status(200);
+    global.navigator = { userAgent: req.headers['user-agent'] };
+    res.send(`<!doctype html>${ReactDOM.renderToStaticMarkup(<Template assets={webpackIsomorphicTools.assets()} component={component} store={store} />)}`);
+  }
 
-      global.navigator = { userAgent: req.headers['user-agent'] };
+  // match({ history, routes: getRoutes(store), location: req.originalUrl },
+  // (error, redirectLocation, renderProps) => {
+  //   if (redirectLocation) {
+  //     res.redirect(redirectLocation.pathname + redirectLocation.search);
+  //   } else if (error) {
+  //     console.error('ROUTER ERROR:', pretty.render(error));
+  //     res.status(500);
+  //     hydrateOnClient();
+  //   } else if (renderProps) {
+  //     const component = (
+  //       <Provider store={store} key="provider">
+  //         <RouterContext {...renderProps} />
+  //       </Provider>
+  //     );
 
-      res.send(`<!doctype html>${ReactDOM.renderToStaticMarkup(<Template assets={webpackIsomorphicTools.assets()} component={component} store={store} />)}`);
-    } else {
-      res.status(404).send('Not found');
-    }
-  });
+  //     res.status(200);
+
+  //     global.navigator = { userAgent: req.headers['user-agent'] };
+
+  //     res.send(`<!doctype html>${ReactDOM.renderToStaticMarkup(<Template assets={webpackIsomorphicTools.assets()} component={component} store={store} />)}`);
+  //   } else {
+  //     res.status(404).send('Not found');
+  //   }
+  // });
 });
 
 app.listen(port, (err) => {

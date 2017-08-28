@@ -12,15 +12,15 @@ import './styles.scss';
 
 export default class GapInsurance extends React.Component {
   render() {
-    return <div>
-      <GapHeader/>
-      <GapVideo/>
-      <GapCareAbout/>
-      <GapFactSheet/>
-      <GapSupport/>
-      <GapCase/>
-      <GapPartners/>
-      <Subscribe/>
-    </div>;
+    return (<div>
+      <GapHeader />
+      <GapVideo />
+      <GapCareAbout />
+      <GapFactSheet />
+      <GapSupport />
+      <GapCase />
+      <GapPartners />
+      <Subscribe />
+    </div>);
   }
 }

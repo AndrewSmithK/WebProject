@@ -1,7 +1,7 @@
 import React from 'react';
 import IconCheck from '../../images/gap-insurance/icon-checkbox.png';
 import IconPhonelink from '../../images/gap-insurance/phonelink-material.png';
-import {Link} from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default class GapSupport extends React.Component {
   render() {
@@ -105,7 +105,7 @@ export default class GapSupport extends React.Component {
                     {/*</div>*/}
                   </div>
                   <div className="col-md-9">
-                    <Link to="#" className="text text-blue">
+                    <Link to="/" className="text text-blue">
                       General Policy Conditions
                     </Link>
                   </div>
@@ -116,7 +116,7 @@ export default class GapSupport extends React.Component {
                     {/*</div>*/}
                   </div>
                   <div className="col-md-9">
-                    <Link to="#" className="text text-blue">
+                    <Link to="/" className="text text-blue">
                       Key Facts
                     </Link>
                   </div>
@@ -127,7 +127,7 @@ export default class GapSupport extends React.Component {
                     {/*</div>*/}
                   </div>
                   <div className="col-md-9">
-                    <Link to="#" className="text text-blue">
+                    <Link to="/" className="text text-blue">
                       Read our Brochure
                     </Link>
                   </div>
@@ -137,7 +137,7 @@ export default class GapSupport extends React.Component {
                     </div>
                   </div>
                   <div className="col-md-9">
-                    <Link to="#" className="text text-blue">
+                    <Link to="/" className="text text-blue">
                       Discover our FAQ
                     </Link>
                   </div>

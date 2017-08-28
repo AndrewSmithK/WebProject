@@ -4,7 +4,6 @@ import IconMail from '../../images/gap-insurance/icon-mail.png';
 import IconDesk from '../../images/gap-insurance/icon-desktop.png';
 import IconPhone from '../../images/gap-insurance/icon-phone.png';
 
-
 export default class GapCase extends React.Component {
   render() {
     return <section className="section" id="gap-case">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import LogoQover from '../images/logo-qover-white.png';
 
 export default class TopLine extends React.Component {
@@ -16,8 +16,8 @@ export default class TopLine extends React.Component {
             </div>
             <ul>
               <li><Link to="/about">About Qover</Link></li>
-              <li><Link to="#">Contact us</Link></li>
-              <li><Link to="#">Complaints</Link></li>
+              <li><Link to="/">Contact us</Link></li>
+              <li><Link to="/">Complaints</Link></li>
               <li><Link to="/terms-policies">Terms & Policies</Link></li>
             </ul>
           </div>
@@ -27,12 +27,12 @@ export default class TopLine extends React.Component {
             </div>
             <ul>
               <li><Link to="/our-products/gap-insurance">GAP insurance</Link></li>
-              <li><Link to="#">Light casco</Link></li>
-              <li><Link to="#">Full casco</Link></li>
-              <li><Link to="#">Driver Accident</Link></li>
-              <li><Link to="#">Accident & Health</Link></li>
-              <li><Link to="#">Travel</Link></li>
-              <li><Link to="#">Job Loss</Link></li>
+              <li><Link to="/">Light casco</Link></li>
+              <li><Link to="/">Full casco</Link></li>
+              <li><Link to="/">Driver Accident</Link></li>
+              <li><Link to="/">Accident & Health</Link></li>
+              <li><Link to="/">Travel</Link></li>
+              <li><Link to="/">Job Loss</Link></li>
             </ul>
           </div>
           <div className="item" style={{width: 104 + 'px', marginRight: 116 + 'px'}}>
@@ -40,14 +40,14 @@ export default class TopLine extends React.Component {
               <b>Developers</b>
             </div>
             <ul>
-              <li><Link to="#">API Documentation</Link></li>
+              <li><Link to="/">API Documentation</Link></li>
             </ul>
           </div>
           <div className="address">
             <div className="sn text-white">
-              <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
-              <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
-              <Link to="#"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
+              <Link to="/"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
+              <Link to="/"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
+              <Link to="/"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
             </div>
             <address>
               <p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import IconCancel from '../../images/icon-cancel-small.png';
 import IconCoverage from '../../images/icon-coverage.png';
 import IconReferralSmall from '../../images/icon-referral_small.png';
@@ -58,8 +58,8 @@ export default class GapInsurance extends React.Component {
             </div>
 
             <div>
-              <Link className="btn button btn-turquoise" to="#">More info about the GAP</Link>
-              <Link className="link text-white" to="#">
+              <Link className="btn button btn-turquoise" to="/">More info about the GAP</Link>
+              <Link className="link text-white" to="/">
                 Become a partner<i className="fa fa-angle-right" aria-hidden="true" />
               </Link>
             </div>

@@ -9,7 +9,6 @@ import '../pages/TermsPolicies/style.scss';
 
 export default class TermsDefault extends React.Component {
   render() {
-    console.log(`children${this.props.children}`);
     return (<div className="app">
       <TermsHeader />
       <section className="section" id="terms-notices">

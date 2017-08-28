@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default class TopLine extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      navClass: ''
+      navClass: '',
     };
   }
 
@@ -15,7 +15,6 @@ export default class TopLine extends React.Component {
   }
 
   handleScroll() {
-    console.log("handleScroll");
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
     let scrolling = false;
@@ -23,23 +22,22 @@ export default class TopLine extends React.Component {
     window.addEventListener('scroll', doItOnScroll);
 
     function doItOnScroll() {
-        scrolling = true;
-        console.log("Scroll");
+      scrolling = true;
     }
 
     setInterval(function() {
-        if(scrolling) {
-            scrolling = false;
-            scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            scrolled > 100 ? this.setState({navClass: 'narrow'}) : this.setState({navClass: ''});
-        }
+      if (scrolling) {
+        scrolling = false;
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        scrolled > 100 ? this.setState({ navClass: 'narrow' }) : this.setState({navClass: '' });
+      }
     }.bind(this), 200);
   }
-  
+
   render() {
     return <div className={`container-fluid ${this.state.navClass}`} id="topline">
       <div className="container pr-0 pl-0">
-        <Link to="/" className="logo"></Link>
+        <Link to="/" className="logo" />
         <nav>
           <ul>
             <li><Link to="/about">About</Link></li>
@@ -53,25 +51,25 @@ export default class TopLine extends React.Component {
                   <ul>
                     <li>
                       <div className="item">
-                        <Link to="/our-products/gap-insurance" style={{color: '#31cfda'}}>Gap insurance</Link>
+                        <Link to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>Gap insurance</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#3daed2'}}>Light-casco</Link>
+                        <Link to="/" style={{ color: '#3daed2' }}>Light-casco</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#3897d6'}}>Full-casco</Link>
+                        <Link to="/" style={{ color: '#3897d6' }}>Full-casco</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#317bda'}}>Driver accident</Link>
+                        <Link to="/" style={{ color: '#317bda' }}>Driver accident</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
@@ -80,19 +78,19 @@ export default class TopLine extends React.Component {
                   <ul>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#31cfda'}}>Accident & health</Link>
+                        <Link to="/" style={{ color: '#31cfda' }}>Accident & health</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#3aa2d3'}}>Travel</Link>
+                        <Link to="/" style={{ color: '#3aa2d3' }}>Travel</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>
                     <li>
                       <div className="item">
-                        <Link to="#" style={{color: '#317bda'}}>Job loss</Link>
+                        <Link to="/" style={{ color: '#317bda' }}>Job loss</Link>
                         <p>Protect 100% of your car’s purchase price up to 5-years.</p>
                       </div>
                     </li>

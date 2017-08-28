@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default class TermsSideBar extends React.Component {
 
@@ -96,8 +96,8 @@ export default class TermsSideBar extends React.Component {
           Cookie policy
         </Link>
         <ul>
-          <li><Link>Log data</Link></li>
-          <li><Link>Cookies</Link></li>
+          <li><Link to="/terms-policies">Log data</Link></li>
+          <li><Link to="/terms-policies">Cookies</Link></li>
         </ul>
       </div>
       <div className={`${this.state.conflicts ? 'active' : ''} item-title`} onClick={this.activeConflicts.bind(this)}>
@@ -106,8 +106,8 @@ export default class TermsSideBar extends React.Component {
           Inducement Policy
         </Link>
         <ul>
-          <li><Link>Link   Information on the policy on conflicts of interest</Link></li>
-          <li><Link>Information Qover's policy on inducements</Link></li>
+          <li><Link to="/terms-policies">Link   Information on the policy on conflicts of interest</Link></li>
+          <li><Link to="/terms-policies">Information Qover's policy on inducements</Link></li>
         </ul>
       </div>
       <div className={`${this.state.data ? 'active' : ''} item-title`} onClick={this.activeData.bind(this)}>
@@ -115,16 +115,16 @@ export default class TermsSideBar extends React.Component {
           Data privacy
         </Link>
         <ul>
-          <li><Link>Summary</Link></li>
-          <li><Link>Policy</Link></li>
-          <li><Link>Information we may collect</Link></li>
-          <li><Link>Communications</Link></li>
-          <li><Link>Security</Link></li>
-          <li><Link>Use of Personal Information</Link></li>
-          <li><Link>Information that you provide about other parties</Link></li>
-          <li><Link>Disclosure of your Personal Information</Link></li>
-          <li><Link>Access to information</Link></li>
-          <li><Link>Changes to This Privacy Policy</Link></li>
+          <li><Link to="/terms-policies">Summary</Link></li>
+          <li><Link to="/terms-policies">Policy</Link></li>
+          <li><Link to="/terms-policies">Information we may collect</Link></li>
+          <li><Link to="/terms-policies">Communications</Link></li>
+          <li><Link to="/terms-policies">Security</Link></li>
+          <li><Link to="/terms-policies">Use of Personal Information</Link></li>
+          <li><Link to="/terms-policies">Information that you provide about other parties</Link></li>
+          <li><Link to="/terms-policies">Disclosure of your Personal Information</Link></li>
+          <li><Link to="/terms-policies">Access to information</Link></li>
+          <li><Link to="/terms-policies">Changes to This Privacy Policy</Link></li>
         </ul>
       </div>
       <div className={`${this.state.notifications ? 'active' : ''} item-title`} onClick={this.activeNotifications.bind(this)}>
@@ -137,9 +137,9 @@ export default class TermsSideBar extends React.Component {
           Complaints
         </Link>
         <ul>
-          <li><Link>Qover</Link></li>
-          <li><Link>Ombudsman</Link></li>
-          <li><Link>The European Online Dispute Resolution Platform</Link></li>
+          <li><Link to="/terms-policies">Qover</Link></li>
+          <li><Link to="/terms-policies">Ombudsman</Link></li>
+          <li><Link to="/terms-policies">The European Online Dispute Resolution Platform</Link></li>
         </ul>
       </div>
       <div className="item-title">
