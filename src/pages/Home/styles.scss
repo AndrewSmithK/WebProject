@@ -6,7 +6,7 @@
   padding-top: 140px;
   padding-bottom: 63px;
   background-color: $dark-sky-blue;
-  background-image: url('../../images/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-size: cover;
 
   .left-block {
@@ -95,7 +95,7 @@
 
 #get-started {
   padding-top: 90px;
-  background-image: url('../../images/get-started-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
+  background-image: url('../../images/HomePage/GetStarted/get-started-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
   .secture-title {
     margin-bottom: 50px;
     font-family: 'MuseoSans', sans-serif;
@@ -366,6 +366,14 @@
 
   .container {
     margin: 40px auto auto;
+
+    #third {
+      margin-top: -7px;
+    }
+
+    #cj {
+      margin-top: 3px;
+    }
   }
 }
 

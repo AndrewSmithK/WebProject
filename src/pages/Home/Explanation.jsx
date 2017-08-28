@@ -1,8 +1,8 @@
 import React from 'react';
-import IconReferral from '../../images/icon-referral.svg';
-import IconLead from '../../images/icon-lead.svg';
-import IconVertical from '../../images/icon-vertical.svg';
-import IconLaunch from '../../images/icon-launch.svg';
+import IconReferral from '../../images/HomePage/Explanation/icon-referral.svg';
+import IconLead from '../../images/HomePage/Explanation/icon-lead.svg';
+import IconVertical from '../../images/HomePage/Explanation/icon-vertical.svg';
+import IconLaunch from '../../images/HomePage/Explanation/icon-launch.svg';
 
 export default class Explanation extends React.Component {
   render() {

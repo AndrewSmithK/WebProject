@@ -1,10 +1,9 @@
 import React from 'react';
-import IconSettings from '../../images/icon-settings.svg';
-import IconEnergy from '../../images/icon-energy.svg';
-import IconDevAbout from '../../images/icon-dev-about.svg';
-import lloyds from '../../images/logo-lloyds.svg';
-import qover from '../../images/q-qover.svg';
-import coverholderLogo from '../../images/coverholder-logo.png';
+import IconSettings from '../../images/About/WhyQover/icon-settings.svg';
+import IconEnergy from '../../images/About/WhyQover/icon-energy.svg';
+import IconDevAbout from '../../images/About/WhyQover/icon-dev-about.svg';
+import lloyds from '../../images/About/WhyQover/logo-lloyds.svg';
+import qover from '../../images/About/WhyQover/q-qover.svg';
 
 export default class WhyQover extends React.Component {
   render() {

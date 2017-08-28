@@ -1,9 +1,9 @@
 
 import React from 'react';
-import IconCancel from '../../images/gap-insurance/icon-cancel.svg';
-import IconCalendar from '../../images/gap-insurance/icon-calendar.svg';
-import IconCoverage from '../../images/gap-insurance/icon-coverage.svg';
-import IconNewCar from '../../images/gap-insurance/icon-new-car.svg';
+import IconCancel from '../../images/OurProducts/GapInsurance/icon-cancel.svg';
+import IconCalendar from '../../images/OurProducts/GapInsurance/icon-calendar.svg';
+import IconCoverage from '../../images/OurProducts/GapInsurance/icon-coverage.svg';
+import IconNewCar from '../../images/OurProducts/GapInsurance/icon-new-car.svg';
 
 export default class GapCareAbout extends React.Component {
   render() {

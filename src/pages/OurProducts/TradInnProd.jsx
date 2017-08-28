@@ -1,8 +1,8 @@
 import React from 'react';
-import AccidentHealth from '../../images/our-products/accident-health.png';
-import Travel from '../../images/our-products/travel.png';
-import JobLoss from '../../images/our-products/job-loss.png';
-import Landlord from '../../images/our-products/landlord.png';
+import AccidentHealth from '../../images/OurProducts/accident-health.png';
+import Travel from '../../images/OurProducts/travel.png';
+import JobLoss from '../../images/OurProducts/job-loss.png';
+import Landlord from '../../images/OurProducts/landlord.png';
 
 export default class TradInnProd extends React.Component {
   render() {
