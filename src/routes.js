@@ -17,7 +17,8 @@ import {
   OurProducts,
   GapInsurance,
   ContactUs,
-  NotFound } from './pages';
+  NotFound,
+  Signin } from './pages';
 
 export default () => (
   <Default>
@@ -28,6 +29,7 @@ export default () => (
       <Route path="/contact-us" component={ContactUs} />
       <Route exact path="/our-products" component={OurProducts} />
       <Route path="/our-products/gap-insurance" component={GapInsurance} />
+      <Route path="/signin" component={Signin} />
       <TermsDefault>
         <Switch>
           <Route exact path="/terms-policies" component={TermsNotices} />
@@ -40,7 +42,7 @@ export default () => (
         </Switch>
       </TermsDefault>
       { /* Catch all route */ }
-      <Route component={NotFound} status={404} />
     </Switch>
+      <Route component={NotFound} status={404} />
   </Default>
 );
