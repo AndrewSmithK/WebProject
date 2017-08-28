@@ -7,6 +7,10 @@ import createHistory from 'history/createBrowserHistory';
 import { createStore } from './redux/createStore';
 import getRoutes from './routes';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+injectTapEventPlugin();
+
 const dest = global.document.getElementById('root');
 const store = createStore(createHistory(), global.__data);
 const history = syncHistoryWithStore(createHistory(), store);
