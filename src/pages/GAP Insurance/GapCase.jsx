@@ -1,8 +1,8 @@
 
 import React from 'react';
-import IconMail from '../../images/gap-insurance/icon-mail.svg';
-import IconDesk from '../../images/gap-insurance/icon-desktop.svg';
-import IconPhone from '../../images/gap-insurance/icon-phone.svg';
+import IconMail from '../../images/OurProducts/GapInsurance/icon-mail.svg';
+import IconDesk from '../../images/OurProducts/GapInsurance/icon-desktop.svg';
+import IconPhone from '../../images/OurProducts/GapInsurance/icon-phone.svg';
 
 export default class GapCase extends React.Component {
   render() {

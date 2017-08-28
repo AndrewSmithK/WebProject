@@ -1,5 +1,5 @@
 import React from 'react';
-import QoverWheel from '../../images/qover-wheel.svg';
+import QoverWheel from '../../images/About/Circle/qover-wheel.svg';
 
 export default class Circle extends React.Component {
   render() {

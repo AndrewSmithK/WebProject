@@ -1,7 +1,7 @@
 import React from 'react';
-import LloydsLogoSmall from '../../images/lloyds-logo-small.png';
-import imac from '../../images/imac.png';
-import api from '../../images/api.svg';
+import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
+import imac from '../../images/HomePage/Header/imac.png';
+import api from '../../images/HomePage/Header/api.svg';
 
 export default class HomeHeader extends React.Component {
   render() {

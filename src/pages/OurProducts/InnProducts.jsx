@@ -1,8 +1,8 @@
 import React from 'react';
-import IconCancel from '../../images/icon-cancel.svg';
-import IconDiamont from '../../images/icon-diamont.png';
-import IconDev from '../../images/icon-dev-big-our.svg';
-import IconRevenue from '../../images/icon-revenue-big.svg';
+import IconCancel from '../../images/OurProducts/icon-cancel.svg';
+import IconDiamont from '../../images/HomePage/InnProducts/icon-diamont.png';
+import IconDev from '../../images/OurProducts/icon-dev-big-our.svg';
+import IconRevenue from '../../images/HomePage/InnProducts/icon-revenue-big.svg';
 
 export default class InnProducts extends React.Component {
   render() {
@@ -27,8 +27,8 @@ export default class InnProducts extends React.Component {
           </div>
           <div className="col-md-3">
             <div className="item text-center bg-white">
-              <div className="icon">
-                <img src={IconDiamont} style={{height: 50 + 'px'}} alt="icon-diamont"/>
+              <div className="icon" style={{ height: 70 + 'px', background: '#f00' }}>
+                {/*<img src={IconDiamont} style={{height: 50 + 'px' background: '#f00'}} alt="icon-diamont"/>*/}
               </div>
               <div className="text text-grey">
                 <b>Your branding our ours. .</b><br/>

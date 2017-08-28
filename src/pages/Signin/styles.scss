@@ -1,0 +1,46 @@
+#signin-page {
+  padding-top: 130px;
+  color: black;
+  background-color: #317bda;
+
+  
+  .box-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 400px;
+    min-height: 300px;
+    
+    .email-form {
+      padding: 15px;
+      background-color: white;
+      border-radius: 5px;
+
+      .field {
+        width: 100%;
+        float: none;
+        padding: 0;
+      }
+    
+      .btn {
+        background-color: #317bda;
+        color: white;
+      }
+    
+      .title {
+        color: #317bda;
+      }
+    }
+
+    .ask {
+      .btn {
+        background-color: transparent;
+        border: 2px solid blue;
+        color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoQover from '../images/logo-qover-white.png';
+import LogoQover from '../images/Footer/logo-qover.svg';
+import Twitter from '../images/Footer/twitter.svg';
+import Facebook from '../images/Footer/facebook.svg';
+import Linkedin from '../images/Footer/linkedin.svg';
 
 export default class TopLine extends React.Component {
   render() {
@@ -45,9 +48,21 @@ export default class TopLine extends React.Component {
           </div>
           <div className="address">
             <div className="sn text-white">
-              <Link to="/"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
-              <Link to="/"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
-              <Link to="/"><div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div></Link>
+              <Link to="/">
+                <div className="logo">
+                  <img src={Facebook} alt="facebook" />
+                </div>
+              </Link>
+              <Link to="/">
+                <div className="logo">
+                  <img src={Linkedin} alt="linkedin" />
+                </div>
+              </Link>
+              <Link to="/">
+                <div className="logo">
+                  <img src={Twitter} alt="twitter" />
+                </div>
+              </Link>
             </div>
             <address>
               <p>

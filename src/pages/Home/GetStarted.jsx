@@ -1,6 +1,5 @@
 import React from 'react';
-import dashboard from '../../images/img-dashboard.png';
-// import Charts from '../../images/charts.png';
+import dashboard from '../../images/HomePage/GetStarted/img-dashboard.png';
 
 export default class GetStarted extends React.Component {
   render() {

@@ -4,7 +4,7 @@
   padding: 130px 0 90px 0;
   height: 500px;
   background-color: $dark-sky-blue;
-  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1)), url('../../images/map.png');
+  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1)), url('../../images/contact-us/map.png');
   background-size: cover;
   
   .container {
@@ -90,7 +90,7 @@
       width: 330px;
       min-height: 100%;
       border-radius: 0 5px 5px 0;
-      background: $grey url(../../images/combined-shape.svg) no-repeat right center;
+      background: $grey url(../../images/contact-us/combined-shape.svg) no-repeat right center;
       z-index: 1;
 
       .title {

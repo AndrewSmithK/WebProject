@@ -1,5 +1,5 @@
 import React from 'react';
-import ScreenshotApi from '../../images/gap-insurance/screeshot-api.png';
+import ScreenshotApi from '../../images/OurProducts/GapInsurance/screeshot-api.png';
 import { Link } from 'react-router-dom';
 
 export default class GapHeader extends React.Component {

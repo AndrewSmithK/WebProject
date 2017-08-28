@@ -1,5 +1,6 @@
 import React from 'react';
-import ValueChain from '../../images/value-chain-v-4.svg';
+
+import ActiveCheckBox from '../../images/OurProducts/icon-checkbox.svg';
 
 export default class ProdInDev extends React.Component {
   render() {
@@ -13,8 +14,8 @@ export default class ProdInDev extends React.Component {
         <div className="container">
             <div className="row items">
                     <div className="item col-md-5">
+                      <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                         <h5 className="title non-active-text">
-                            <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                             Motor extended warranty
                         </h5>
                         <p className="text non-active-text">
@@ -23,8 +24,8 @@ export default class ProdInDev extends React.Component {
                         </p>
                     </div>
                 <div className="item col-md-5">
+                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                     <h5 className="title non-active-text">
-                        <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                         Product Name
                     </h5>
                     <p className="text non-active-text">
@@ -34,8 +35,11 @@ export default class ProdInDev extends React.Component {
             </div>
             <div className="row items">
                 <div className="item col-md-5">
+                  <div className="checkbox">
+                    <img src={ActiveCheckBox} alt="ActiveCheckBox" />
+                  </div>
                     <h5 className="title">
-                        <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+
                         Mandatory Third-Party-Liability
                     </h5>
                     <p className="text">
@@ -43,8 +47,8 @@ export default class ProdInDev extends React.Component {
                     </p>
                 </div>
                 <div className="item col-md-5">
+                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                     <h5 className="title non-active-text">
-                        <div style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                         Rental damage
                     </h5>
                     <p className="text non-active-text">

@@ -1,8 +1,8 @@
 import React from 'react';
-import IconRevenueBig from '../../images/icon-revenue-big.svg';
-import IconDiamont from '../../images/icon-diamont.png';
-import IconCustomer from '../../images/icon-customer.svg';
-import LloydsLogo from '../../images/lloyds-logo.svg';
+import IconRevenueBig from '../../images/HomePage/InnProducts/icon-revenue-big.svg';
+import IconDiamont from '../../images/HomePage/InnProducts/icon-diamont.png';
+import IconCustomer from '../../images/HomePage/InnProducts/icon-customer.svg';
+import LloydsLogo from '../../images/HomePage/InnProducts/lloyds-logo.svg';
 
 export default class InnProducts extends React.Component {
   render() {
