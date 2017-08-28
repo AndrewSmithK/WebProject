@@ -1,20 +1,50 @@
 #signin-page {
   padding-top: 130px;
   color: black;
-  background-color: #317bda;
+  min-height: 100%;
 
+  background-image: linear-gradient(106deg, #317bda, rgba(49, 207, 218, 0.5)), linear-gradient(#317bda, #317bda);
   
+  .page-head {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 30px;
+    opacity: 0.12;
+    background-color: #fff;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: 49px;
+    width: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11px;
+
+    .coptrights {
+      padding-top: 15px;
+    }
+  }
+
   .box-wrap {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
-    width: 400px;
-    min-height: 300px;
+    width: 350px;
+    height: 332px;
+
+    .logo {
+      text-align: center;
+    }
     
     .email-form {
-      padding: 15px;
+      padding: 20px;
       background-color: white;
       border-radius: 5px;
 
@@ -25,12 +55,15 @@
       .btn {
         background-color: #317bda;
         color: white;
-        margin-top: 20px;
+        margin-top: 35px;
       }
     
       .title {
-        color: #317bda;
+        font-size: 18px;
+        line-height: 1.56;
         text-align: center;
+        color: #5b7289;
+        padding: 15px 0;
       }
 
       .row {
@@ -40,18 +73,30 @@
         .text-right {
           font-weight: bold;
         }
+
+        .remember {
+          color: #5b7289;
+        }
       }
     }
 
     .ask {
       margin-top: 15px;
 
+      span {
+        text-decoration: underline;
+      }
+
       .btn {
         background-color: transparent;
-        border: 2px solid #31cfda;
+        border: 1px solid #fff;
         color: white;
-        border-radius: 5px;
+        border-radius: 3px;
       }
     }
+  }
+
+  .btn {
+    font-size: 14px;
   }
 }

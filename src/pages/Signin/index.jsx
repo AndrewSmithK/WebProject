@@ -10,6 +10,9 @@ export default class Signin extends Component {
     return (
       <MuiThemeProvider>
         <div id="signin-page">
+          <div className="page-head">
+            <p>QOVER.ME</p>
+          </div>
           <div className="container">
             <div className="box-wrap">
               <div className="logo">
@@ -32,7 +35,7 @@ export default class Signin extends Component {
                     <div className="clearfix"></div>
 
                     <div className="row">
-                      <div className="col-sm-6">
+                      <div className="col-sm-6 remember">
                         <img src={Checkbox} /> Remember me
                       </div>
 
@@ -48,6 +51,9 @@ export default class Signin extends Component {
                <button className="btn btn-block" type="submit">Don't have an account? <span>Ask access</span></button>
               </div>
             </div>
+          </div>
+          <div className="footer">
+            <p className="coptrights">&copy; Qover 2017</p>
           </div>
         </div>
       </MuiThemeProvider>
