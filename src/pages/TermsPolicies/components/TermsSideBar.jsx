@@ -96,7 +96,7 @@ export default class TermsSideBar extends React.Component {
           Cookie policy
         </Link>
         <ul>
-          <li><Link hash="koo">Log data</Link></li>
+          <li><Link to="/terms-policies">Log data</Link></li>
           <li><Link to="/terms-policies">Cookies</Link></li>
         </ul>
       </div>

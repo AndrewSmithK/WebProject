@@ -39,7 +39,7 @@ export default class TermsDataPrivacy extends React.Component {
            Questions about Qover’s data protection practices should be directed to us:
         </p>
         <ul>
-          <li className="text text-grey" name="koo">
+          <li className="text text-grey">
             To unsubscribe or amend your Personal Data, contact: <a href="mailto:contact@qover.be">contact@qover.be</a>
           </li>
           <li className="text text-grey">
