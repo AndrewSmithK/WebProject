@@ -1,7 +1,7 @@
 import React from 'react';
-import ApiImage from '../../images/api-image.jpg';
-import IconDevBig from '../../images/icon-dev-big.svg';
-import Blue from '../../images/blue.svg';
+import ApiImage from '../../images/HomePage/RobustApi/api-image.jpg';
+import IconDevBig from '../../images/HomePage/RobustApi/icon-dev-big.svg';
+import Blue from '../../images/HomePage/RobustApi/blue.svg';
 
 export default class RobustApi extends React.Component {
   render() {

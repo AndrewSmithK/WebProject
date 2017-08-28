@@ -1,6 +1,6 @@
 import React from 'react';
-import IconCheckbox from '../../images/gap-insurance/icon-checkbox.svg';
-import IconClips from '../../images/gap-insurance/clips.svg';
+import IconCheckbox from '../../images/OurProducts/GapInsurance/icon-checkbox.svg';
+import IconClips from '../../images/OurProducts/GapInsurance/clips.svg';
 
 export default class GapFactSheet extends React.Component {
   render() {

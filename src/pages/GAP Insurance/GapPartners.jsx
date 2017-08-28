@@ -1,10 +1,10 @@
 
 import React from 'react';
-import dieteren from '../../images/gap-insurance/logo-dieteren-white.svg';
-import Fiat from '../../images/gap-insurance/logo-fiat.png';
-import VW from '../../images/gap-insurance/logo-vw.png';
-import Toyota from '../../images/gap-insurance/logo-toyota-3-x.png';
-import Tesla from '../../images/gap-insurance/logo-tesla.png';
+import dieteren from '../../images/OurProducts/GapInsurance/logo-dieteren-white.svg';
+import Fiat from '../../images/OurProducts/GapInsurance/logo-fiat.png';
+import VW from '../../images/OurProducts/GapInsurance/logo-vw.png';
+import Toyota from '../../images/OurProducts/GapInsurance/logo-toyota-3-x.png';
+import Tesla from '../../images/OurProducts/GapInsurance/logo-tesla.png';
 
 export default class GapPartners extends React.Component {
   render() {

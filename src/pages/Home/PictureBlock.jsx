@@ -1,5 +1,5 @@
 import React from 'react';
-import ValueChain from '../../images/value-chain-v-4.svg';
+import ValueChain from '../../images/HomePage/value-chain-v-4.svg';
 
 export default class PictureBlock extends React.Component {
   render() {

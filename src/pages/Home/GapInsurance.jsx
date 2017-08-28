@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import IconCancel from '../../images/icon-cancel-small.svg';
-import IconCoverage from '../../images/icon-coverage.svg';
-import IconReferralSmall from '../../images/icon-referral-small.svg';
-import Mockup from '../../images/mockup.png';
+import IconCancel from '../../images/HomePage/GapInsurance/icon-cancel-small.svg';
+import IconCoverage from '../../images/HomePage/GapInsurance/icon-coverage.svg';
+import IconReferralSmall from '../../images/HomePage/GapInsurance/icon-referral-small.svg';
+import Mockup from '../../images/HomePage/GapInsurance/mockup.png';
 
 export default class GapInsurance extends React.Component {
   render() {

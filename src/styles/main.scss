@@ -243,9 +243,8 @@ a {
     border: 1px solid #f7f7f7;
     background: #fff;
     transition: all .4s;
-
     .logo {
-      background: url(../images/logo-qover.png) center no-repeat;
+      background: url(../images/Header/logo-qover.svg) center no-repeat;
     }
 
     a {
@@ -276,7 +275,7 @@ a {
     margin: 18px 186px 17px 0;
     width: 89px;
     height: 25px;
-    background: url(../images/logo-qover-white.png) center no-repeat;
+    background: url(../images/Header/logo-qover-white.svg) center no-repeat;
 
     img {
       width: 100%
@@ -433,7 +432,7 @@ footer {
     padding-top: 45px;
 
     .logo {
-      
+      display: inline-block;
     }
 
     .item {

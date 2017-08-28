@@ -1,7 +1,7 @@
 import React from 'react';
-import IconCheck from '../../images/gap-insurance/icon-checkbox.svg';
-import IconPhonelink from '../../images/gap-insurance/phonelink-material.svg';
-import Pdf from '../../images/gap-insurance/icon-pdf.svg';
+import IconCheck from '../../images/OurProducts/GapInsurance/icon-checkbox.svg';
+import IconPhonelink from '../../images/OurProducts/GapInsurance/phonelink-material.svg';
+import Pdf from '../../images/OurProducts/GapInsurance/icon-pdf.svg';
 import { Link } from 'react-router-dom';
 
 export default class GapSupport extends React.Component {

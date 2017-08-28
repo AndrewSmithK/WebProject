@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import { Route } from 'react-router';
-
 import TermsHeader from '../pages/TermsPolicies/components/TermsHeader';
 import TermsSideBar from '../pages/TermsPolicies/components/TermsSideBar';
 
