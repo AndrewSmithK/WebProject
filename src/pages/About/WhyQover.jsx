@@ -1,17 +1,9 @@
 import React from 'react';
-<<<<<<< HEAD
-import IconSettings from '../../images/icon-settings.svg';
-import IconEnergy from '../../images/icon-energy.svg';
-import IconDevAbout from '../../images/icon-dev-about.svg';
-import lloyds from '../../images/logo-lloyds.svg';
-import qover from '../../images/q-qover.svg';
-=======
 import IconSettings from '../../images/About/WhyQover/icon-settings.svg';
 import IconEnergy from '../../images/About/WhyQover/icon-energy.svg';
 import IconDevAbout from '../../images/About/WhyQover/icon-dev-about.svg';
 import lloyds from '../../images/About/WhyQover/logo-lloyds.svg';
 import qover from '../../images/About/WhyQover/q-qover.svg';
->>>>>>> b5877b0b03e671cfbcc9b6426d4e0958cf4913f7
 
 export default class WhyQover extends React.Component {
   render() {

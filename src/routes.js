@@ -16,7 +16,8 @@ import {
   TermsConflicts,
   TermsDataPrivacy,
   TermsClaimNotif,
-  TermsComplaints } from './pages';
+  TermsComplaints,
+  Signin } from './pages';
 
 const DefaultLayout = ({component: Component, ...rest}) => {
   return (
@@ -49,12 +50,13 @@ export default () => (
     <DefaultLayout exact path="/our-products" component={OurProducts} />
     <DefaultLayout path="/our-products/gap-insurance" component={GapInsurance} />
     <TermsLayout exact path="/terms-policies" component={TermsNotices} />
-    <TermsLayout exact path="/terms-policies/cookie-policy" component={TermsCookies} />
-    <TermsLayout exact path="/terms-policies/conflicts" component={TermsConflicts} />
-    <TermsLayout exact path="/terms-policies/data" component={TermsDataPrivacy} />
-    <TermsLayout exact path="/terms-policies/notification" component={TermsClaimNotif} />
-    <TermsLayout exact path="/terms-policies/complaints" component={TermsComplaints} />
+    <TermsLayout path="/terms-policies/cookie-policy" component={TermsCookies} />
+    <TermsLayout path="/terms-policies/conflicts" component={TermsConflicts} />
+    <TermsLayout path="/terms-policies/data" component={TermsDataPrivacy} />
+    <TermsLayout path="/terms-policies/notification" component={TermsClaimNotif} />
+    <TermsLayout path="/terms-policies/complaints" component={TermsComplaints} />
     { /* Catch all route */ }
+    <Route path="/signin" component={Signin} />
     <Route component={NotFound} status={404} />
   </Switch>
 );
