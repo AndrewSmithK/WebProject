@@ -1,8 +1,8 @@
 import React from 'react';
-import IconCancel from '../../images/icon-cancel.png';
+import IconCancel from '../../images/icon-cancel.svg';
 import IconDiamont from '../../images/icon-diamont.png';
-import IconDev from '../../images/icon-dev-big.png';
-import IconRevenue from '../../images/icon-revenue-big.png';
+import IconDev from '../../images/icon-dev-big-our.svg';
+import IconRevenue from '../../images/icon-revenue-big.svg';
 
 export default class InnProducts extends React.Component {
   render() {

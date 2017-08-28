@@ -1,5 +1,5 @@
 import React from 'react';
-import QoverWheel from '../../images/qover-wheel.png';
+import QoverWheel from '../../images/qover-wheel.svg';
 
 export default class Circle extends React.Component {
   render() {
@@ -25,7 +25,7 @@ export default class Circle extends React.Component {
                     </div>
                 </div>
                 <div className="icon col-md-5">
-                    <img src={QoverWheel} alt="qover-wheel"/>
+                    <img src={QoverWheel} alt="qover-wheel" />
                 </div>
                 <div className="col-md-3 side-bar">
                   <div className="item right-side-bar bd-left">

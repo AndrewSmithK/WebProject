@@ -1,8 +1,8 @@
 import React from 'react';
-import IconReferral from '../../images/icon-referral.png';
-import IconLead from '../../images/icon-lead.png';
-import IconVertical from '../../images/icon-vertical.png';
-import IconLaunch from '../../images/icon-launch.png';
+import IconReferral from '../../images/icon-referral.svg';
+import IconLead from '../../images/icon-lead.svg';
+import IconVertical from '../../images/icon-vertical.svg';
+import IconLaunch from '../../images/icon-launch.svg';
 
 export default class Explanation extends React.Component {
   render() {
@@ -18,7 +18,7 @@ export default class Explanation extends React.Component {
           <div className="col">
             <div className="item bg-white">
               <div className="icon">
-                <img src={IconReferral} alt="icon-referral"/>
+                <img src={IconReferral} alt="icon-referral" />
               </div>
               <h5 className="title text-blue">Referral</h5>
               <p className="text text-grey">

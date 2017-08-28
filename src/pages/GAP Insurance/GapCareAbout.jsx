@@ -1,9 +1,9 @@
 
 import React from 'react';
-import IconCancel from '../../images/gap-insurance/icon-cancel.png';
-import IconCalendar from '../../images/gap-insurance/icon-calendar.png';
-import IconCoverage from '../../images/gap-insurance/icon-coverage.png';
-import IconNewCar from '../../images/gap-insurance/icon-new-car.png';
+import IconCancel from '../../images/gap-insurance/icon-cancel.svg';
+import IconCalendar from '../../images/gap-insurance/icon-calendar.svg';
+import IconCoverage from '../../images/gap-insurance/icon-coverage.svg';
+import IconNewCar from '../../images/gap-insurance/icon-new-car.svg';
 
 export default class GapCareAbout extends React.Component {
   render() {
@@ -18,7 +18,7 @@ export default class GapCareAbout extends React.Component {
               <div className="row">
                 <div className="col-md-2">
                   <div className="icon">
-                    <img src={IconCancel} alt="icon-cancel"/>
+                    <img src={IconCancel} alt="icon-cancel" />
                   </div>
                 </div>
                 <div className="col-md-10">
@@ -41,7 +41,7 @@ export default class GapCareAbout extends React.Component {
               <div className="row">
                 <div className="col-md-2">
                   <div className="icon">
-                    <img src={IconCalendar} alt="icon-ca=lendar"/>
+                    <img src={IconCalendar} alt="icon-ca=lendar" />
                   </div>
                 </div>
                 <div className="col-md-10">
@@ -64,7 +64,7 @@ export default class GapCareAbout extends React.Component {
               <div className="row">
                 <div className="col-md-2">
                   <div className="icon">
-                    <img src={IconCoverage} alt="icon-coverage"/>
+                    <img src={IconCoverage} alt="icon-coverage" />
                   </div>
                 </div>
                 <div className="col-md-10">
@@ -86,7 +86,7 @@ export default class GapCareAbout extends React.Component {
               <div className="row">
                 <div className="col-md-2">
                   <div className="icon">
-                    <img src={IconNewCar} alt="icon-new-car"/>
+                    <img src={IconNewCar} alt="icon-new-car" />
                   </div>
                 </div>
                 <div className="col-md-10">
