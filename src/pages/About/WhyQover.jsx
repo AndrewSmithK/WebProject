@@ -4,7 +4,6 @@ import IconEnergy from '../../images/icon-energy.svg';
 import IconDevAbout from '../../images/icon-dev-about.svg';
 import lloyds from '../../images/logo-lloyds.svg';
 import qover from '../../images/q-qover.svg';
-import coverholderLogo from '../../images/coverholder-logo.png';
 
 export default class WhyQover extends React.Component {
   render() {

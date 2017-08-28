@@ -4,43 +4,57 @@ import { Route, Switch } from 'react-router-dom';
 import Default from './layouts/Default';
 import TermsDefault from './layouts/TermsDefault';
 
-import TermsNotices from './pages/TermsPolicies/TermsNotices';
-import TermsCookies from './pages/TermsPolicies/TermsCookies';
-import TermsConflicts from './pages/TermsPolicies/TermsConflicts';
-import TermsDataPrivacy from './pages/TermsPolicies/TermsDataPrivacy';
-import TermsClaimNotif from './pages/TermsPolicies/TermsClaimNotif';
-import TermsComplaints from './pages/TermsPolicies/TermsComplaints';
-
 import {
   Home,
   About,
   OurProducts,
   GapInsurance,
   ContactUs,
-  NotFound } from './pages';
+  NotFound,
+  TermsNotices,
+  TermsCookies,
+  TermsConflicts,
+  TermsDataPrivacy,
+  TermsClaimNotif,
+  TermsComplaints } from './pages';
+
+const DefaultLayout = ({component: Component, ...rest}) => {
+  return (
+    <Route {...rest} render={matchProps => (
+      <Default>
+        <Component {...matchProps} />
+      </Default>
+    )} />
+  )
+};
+
+const TermsLayout = ({component: Component, ...rest}) => {
+  return (
+    <Route {...rest} render={matchProps => (
+      <Default>
+        <TermsDefault>
+          <Component {...matchProps} />
+        </TermsDefault>
+      </Default>
+    )} />
+  )
+};
 
 export default () => (
-  <Default>
+  <Switch>
     { /* Home (main) route */ }
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contact-us" component={ContactUs} />
-      <Route exact path="/our-products" component={OurProducts} />
-      <Route path="/our-products/gap-insurance" component={GapInsurance} />
-      <TermsDefault>
-        <Switch>
-          <Route exact path="/terms-policies" component={TermsNotices} />
-          <Route path="/terms-policies/cookie-policy" component={TermsCookies} />
-          <Route path="/terms-policies/conflicts" component={TermsConflicts} />
-          <Route path="/terms-policies/data" component={TermsDataPrivacy} />
-          <Route path="/terms-policies/notification" component={TermsClaimNotif} />
-          <Route path="/terms-policies/complaints" component={TermsComplaints} />
-          <Route path="/terms-policies/FAQ" component={TermsNotices} />
-        </Switch>
-      </TermsDefault>
-      { /* Catch all route */ }
-      <Route component={NotFound} status={404} />
-    </Switch>
-  </Default>
+    <DefaultLayout exact path="/" component={Home} />
+    <DefaultLayout path="/about" component={About} />
+    <DefaultLayout path="/contact-us" component={ContactUs} />
+    <DefaultLayout exact path="/our-products" component={OurProducts} />
+    <DefaultLayout path="/our-products/gap-insurance" component={GapInsurance} />
+    <TermsLayout exact path="/terms-policies" component={TermsNotices} />
+    <TermsLayout exact path="/terms-policies/cookie-policy" component={TermsCookies} />
+    <TermsLayout exact path="/terms-policies/conflicts" component={TermsConflicts} />
+    <TermsLayout exact path="/terms-policies/data" component={TermsDataPrivacy} />
+    <TermsLayout exact path="/terms-policies/notification" component={TermsClaimNotif} />
+    <TermsLayout exact path="/terms-policies/complaints" component={TermsComplaints} />
+    { /* Catch all route */ }
+    <Route component={NotFound} status={404} />
+  </Switch>
 );
