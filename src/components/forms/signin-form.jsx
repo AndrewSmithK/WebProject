@@ -32,7 +32,7 @@ export default class SigninForm extends Component {
             </div>
           </div>
 
-          <button className="btn btn-block" type="submit">Sign in to your account</button>
+          <button className="btn btn-block signin-button" type="submit">Sign in to your account</button>
         </form>
       </div>
     );

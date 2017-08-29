@@ -17,7 +17,7 @@ export default class ForgotForm extends Component {
 
           <div className="clearfix"></div>
 
-          <button className="btn btn-block" type="submit">Reset password</button>
+          <button className="btn btn-block reset-button" type="submit">Reset password</button>
         </form>
       </div>
     );
