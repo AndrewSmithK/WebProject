@@ -9,7 +9,7 @@ export default class Header extends React.Component {
 					Contact us
 				</h1>
           <h4 className="subtitle text-white">
-            Got a question? We’d love to hear from you.<br />
+            <b>Got a question? We’d love to hear from you.</b><br />
             Drop us a message, we’ll get in touch as soon as possible.
 					</h4>
         </div>

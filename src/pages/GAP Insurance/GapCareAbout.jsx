@@ -14,12 +14,10 @@ export default class GapCareAbout extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div className="item">
+            <div className="item left-item">
               <div className="row">
-                <div className="col-md-2">
-                  <div className="icon">
-                    <img src={IconCancel} alt="icon-cancel" />
-                  </div>
+                <div className="icon">
+                  <img src={IconCancel} alt="icon-cancel" />
                 </div>
                 <div className="col-md-10">
                   <div className="text">
@@ -37,12 +35,10 @@ export default class GapCareAbout extends React.Component {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="item">
+            <div className="item right-item">
               <div className="row">
-                <div className="col-md-2">
-                  <div className="icon">
-                    <img src={IconCalendar} alt="icon-ca=lendar" />
-                  </div>
+                <div className="icon">
+                  <img src={IconCalendar} alt="icon-ca=lendar" />
                 </div>
                 <div className="col-md-10">
                   <div className="text">
@@ -60,12 +56,10 @@ export default class GapCareAbout extends React.Component {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="item">
+            <div className="item left-item">
               <div className="row">
-                <div className="col-md-2">
-                  <div className="icon">
-                    <img src={IconCoverage} alt="icon-coverage" />
-                  </div>
+                <div className="icon">
+                  <img src={IconCoverage} alt="icon-coverage" />
                 </div>
                 <div className="col-md-10">
                   <div className="text">
@@ -82,12 +76,10 @@ export default class GapCareAbout extends React.Component {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="item">
+            <div className="item right-item">
               <div className="row">
-                <div className="col-md-2">
-                  <div className="icon">
-                    <img src={IconNewCar} alt="icon-new-car" />
-                  </div>
+                <div className="icon">
+                  <img src={IconNewCar} alt="icon-new-car" />
                 </div>
                 <div className="col-md-10">
                   <div className="text">

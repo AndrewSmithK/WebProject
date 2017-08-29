@@ -27,9 +27,7 @@ export default class InnProducts extends React.Component {
           </div>
           <div className="col-md-3">
             <div className="item text-center bg-white">
-              <div className="icon">
-                <img src={IconDiamont} style={{ height: `${50}px` }} alt="icon-diamont" />
-              </div>
+              <div className="icon" style={{ height: 70 + 'px', background: '#f00' }}></div>
               <div className="text text-grey">
                 <b>Your branding our ours.</b><br />
                 Up to you.
@@ -53,13 +51,14 @@ export default class InnProducts extends React.Component {
                 <img id="fourth-icon" src={LloydsLogo} alt="lloyds-logo" />
               </div>
               <div className="text text-grey">
-                <b>Backed by the</b><br />
+                <b>Backed by the<br />
                 Lloyd’s of London
+                </b>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>);
+  </section>);
   }
 }

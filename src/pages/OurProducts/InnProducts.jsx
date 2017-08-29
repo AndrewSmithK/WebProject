@@ -6,7 +6,7 @@ import IconRevenue from '../../images/HomePage/InnProducts/icon-revenue-big.svg'
 
 export default class InnProducts extends React.Component {
   render() {
-    return <section className="bg-light-grey" id="inn-products">
+    return <section className="bg-light-grey" id="our-features">
       <div className="header hide">
         <h2 className="title text-blue text-center">
           Our Amazing features

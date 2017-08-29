@@ -303,72 +303,102 @@ export default class WhoWeAre extends React.Component {
                 </div>
             </div>
             <div className="row icons">
-                <div className="icon col-md-2">
-                    <div className="item">
-                        <div className="icon">
-                            <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
-                        </div>
-                        <div className="text">
-                            <p className="icon-title">
-                                Software Engineer
-                            </p>
-                            <p className="icon-text">
-                                Cédric François
-                            </p>
-                        </div>
-                    </div>
+              <div className="icon col-md-2">
+                  <div className="item">
+                      <div className="icon">
+                          <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                      </div>
+                      <div className="text">
+                          <p className="icon-title">
+                              Software Engineer
+                          </p>
+                          <p className="icon-text">
+                              Cédric François
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div className="icon col-md-2">
+                  <div className="item">
+                      <div className="icon">
+                          <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                      </div>
+                      <div className="text">
+                          <p className="icon-title">
+                              Software Engineer
+                          </p>
+                          <p className="icon-text">
+                              Cédric Degallaix
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div className="icon col-md-2">
+                  <div className="item">
+                      <div className="icon">
+                          <img src={Francesca} alt="francesca" />
+                      </div>
+                      <div className="text">
+                          <p className="icon-title">
+                              title
+                          </p>
+                          <p className="icon-text">
+                              Francesca Nicolini
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div className="icon col-md-2">
+                  <div className="item">
+                      <div className="icon">
+                          <img src={Arthur} alt="arthur" />
+                      </div>
+                      <div className="text">
+                          <p className="icon-title">
+                              title
+                          </p>
+                          <p className="icon-text">
+                              Arthur Lemoine
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div className="icon col-md-2">
+                <div className="item">
+                  <div className="icon">
+                    <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                  </div>
+                  <div className="text">
+                    <p className="icon-title">
+                      Product Owner
+                    </p>
+                    <p className="icon-text">
+                      Laurent Parmentier
+                    </p>
+                  </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
-                        <div className="icon">
-                            <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
-                        </div>
-                        <div className="text">
-                            <p className="icon-title">
-                                Software Engineer
-                            </p>
-                            <p className="icon-text">
-                                Cédric Degallaix
-                            </p>
-                        </div>
-                    </div>
+              </div>
+              <div className="icon col-md-2">
+                <div className="item">
+                  <div className="icon">
+                    <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                  </div>
+                  <div className="text">
+                    <p className="icon-title">
+                      Actuary
+                    </p>
+                    <p className="icon-text">
+                      Pauline Dedeurwaerder
+                    </p>
+                  </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
-                        <div className="icon">
-                            <img src={Francesca} alt="francesca" />
-                        </div>
-                        <div className="text">
-                            <p className="icon-title">
-                                title
-                            </p>
-                            <p className="icon-text">
-                                Francesca Nicolini
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div className="icon col-md-2">
-                    <div className="item">
-                        <div className="icon">
-                            <img src={Arthur} alt="arthur" />
-                        </div>
-                        <div className="text">
-                            <p className="icon-title">
-                                title
-                            </p>
-                            <p className="icon-text">
-                                Arthur Lemoine
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="icon col-md-2">
-                  <div className="last-icon"><p> Want to join the team?</p></div>
-                </div>
-
+              </div>
             </div>
+          <div className="row icons">
+            <div className="icon col-md-2">
+              <div className="last-icon"><p> Want to join the team?</p></div>
+            </div>
+          </div>
         </div>
     </section>;
   }
