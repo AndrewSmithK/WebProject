@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Field from '../../components/small/Field';
 
-import Checkbox from '../../images/checkbox.png';
 import './forgot-form.scss';
 
 export default class ForgotForm extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Field from '../../components/small/Field';
 
-import Checkbox from '../../images/checkbox.png';
+import Checkbox from '../../images/Signin/icon-checkbox.svg';
 
 export default class SigninForm extends Component {
   render() {
