@@ -11,3 +11,4 @@ export TermsDataPrivacy from './TermsPolicies/TermsDataPrivacy';
 export TermsClaimNotif from './TermsPolicies/TermsClaimNotif';
 export TermsComplaints from './TermsPolicies/TermsComplaints';
 export Signin from './Signin';
+export Forgot from './Forgot';

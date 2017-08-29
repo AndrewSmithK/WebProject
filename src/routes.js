@@ -17,7 +17,8 @@ import {
   TermsDataPrivacy,
   TermsClaimNotif,
   TermsComplaints,
-  Signin } from './pages';
+  Signin,
+  Forgot } from './pages';
 
 import ScrollToTop from './ScrollTo';
 
@@ -62,6 +63,7 @@ export default () => (
       <TermsLayout path="/terms-policies/complaints" component={TermsComplaints} />
       { /* Catch all route */ }
       <Route path="/signin" component={Signin} />
+      <Route path="/forgot" component={Forgot} />
       <Route component={NotFound} status={404} />
   </Switch>
 </ScrollToTop>

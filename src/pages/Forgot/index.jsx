@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import Form from '../../components/forms';
-import SigninForm from '../../components/forms/signin-form';
+import ForgotForm from '../../components/forms/forgot-form';
 
 export default class Forgot extends Component {
   render() {
     return (
       <Form>
-        <SigninForm />
+        <ForgotForm />
       </Form>
     );
   }
