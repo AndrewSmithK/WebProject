@@ -3,6 +3,7 @@ import React from 'react';
 import HomeHeader from './HomeHeader';
 import Disclaimer from './Disclaimer';
 import Advantages from './Advantages';
+import PictureBlock from './PictureBlock';
 import GetStarted from './GetStarted';
 import Explanation from './Explanation';
 import GapInsurance from './GapInsurance';
@@ -13,12 +14,14 @@ import Subscribe from '../../components/Subscribe';
 
 import './styles.scss';
 
+
 export default class Home extends React.Component {
   render() {
     return (<div>
       <HomeHeader />
       <Disclaimer />
       <Advantages />
+      <PictureBlock />
       <GetStarted />
       <Explanation />
       <GapInsurance />
