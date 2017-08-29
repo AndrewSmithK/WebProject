@@ -18,7 +18,7 @@ export default class Signin extends Component {
           <div className="content-box">
             <div className="box-wrap">
               <div className="logo">
-                logo
+                <div></div>
               </div>
               <div className="email-form">
                 <div className="title">Welcome at Qover</div>

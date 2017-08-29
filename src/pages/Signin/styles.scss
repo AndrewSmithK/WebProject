@@ -50,7 +50,14 @@
     height: 332px;
 
     .logo {
-      text-align: center;
+      margin-bottom: 30px;
+      
+      div {
+        width: 86.1px;
+        height: 100px;
+        background-color: red;
+        margin: 0 auto;
+      }
     }
     
     .email-form {
