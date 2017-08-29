@@ -11,9 +11,11 @@ export default class Signin extends Component {
       <MuiThemeProvider>
         <div id="signin-page">
           <div className="page-head">
-            <p>QOVER.ME</p>
+            <div className="container">
+              <p>&#60; QOVER.ME</p>
+            </div>
           </div>
-          <div className="container">
+          <div className="content-box">
             <div className="box-wrap">
               <div className="logo">
                 logo
