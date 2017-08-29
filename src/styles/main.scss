@@ -419,7 +419,7 @@ a {
 
     .btn-login {
       color: #fff;
-      background: #6abfde;
+      background: rgba(255, 255, 255, 0.2);
       border: 1px solid #6abfde; 
     }
   }
@@ -536,6 +536,8 @@ footer {
   .subtitle {
     font-weight: 300;
     margin-bottom: 50px;
+    font-size: 26px;
+    font-family: 'MuseoSans';
   }
 
   .item {
@@ -551,6 +553,9 @@ footer {
 
     .text {
       font-size: 14px;
+      b {
+        font-weight: 700;
+      }
     }
   }
 }

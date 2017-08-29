@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Field from '../../components/small/Field';
 import { MuiThemeProvider } from 'material-ui/styles';
 
-import Checkbox from '../../images/checkbox.png';
+import Checkbox from '../../images/SignIn/icon-checkbox.svg';
 import './styles.scss';
 
 export default class Signin extends Component {

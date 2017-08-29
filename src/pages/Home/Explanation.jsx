@@ -70,7 +70,7 @@ export default class Explanation extends React.Component {
         <div className="text">
           <h5 className="title">Even more if you are an intermediary</h5>
           <p>
-            An Amendment or a cancellation ? <br/> 
+            <b>An Amendment or a cancellation ?</b> <br/>
             It is digital, plug & play and real-time for you and for your customer
           </p>
         </div>

@@ -28,7 +28,7 @@ export default class GapPartners extends React.Component {
               <div className="icon">
                 <img src={Toyota} alt="Toyota" />
               </div>
-              <div className="icon">
+              <div className="icon" id="tesla">
                 <img src={Tesla} alt="Tesla" />
               </div>
               {/*<div className="icon" style={{width: 51.1 + 'px', height: 51.1 + 'px', background: '#f00'}}/>*/}
