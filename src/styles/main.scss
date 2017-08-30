@@ -5,6 +5,8 @@ $fa-font-path: '../fonts/fontawesome';
 @import 'fonts';
 @import 'varibles';
 
+$break-mobile: 500px;
+
 html,
 body,
 #root {
@@ -421,6 +423,25 @@ a {
       color: #fff;
       background: rgba(255, 255, 255, 0.2);
       border: 1px solid #6abfde; 
+    }
+  }
+  
+  .burger-menu-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    border-bottom: none;
+    nav, .topline-buttons {
+      display: none;
+    }
+    .burger-menu-icon {
+      display: block;
+      float: right;
+      width: 20px;
+      height: 17px;
+      border-radius: 1px;
+      margin: 20px 0 17px 0;
     }
   }
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MobileNavigation from './MobileNavigation';
+
+import MenuIcon from '../images/Header/icon-burger.svg';
 
 export default class TopLine extends React.Component {
   constructor() {
@@ -7,6 +10,7 @@ export default class TopLine extends React.Component {
 
     this.state = {
       navClass: '',
+      showMobNav: false
     };
   }
 
@@ -26,7 +30,7 @@ export default class TopLine extends React.Component {
     }
 
     setInterval(function() {
-      if (scrolling) {
+      if (scrolling && window.innerWidth > 500) {
         scrolling = false;
         scrolled = window.pageYOffset || document.documentElement.scrollTop;
         scrolled > 100 ? this.setState({ navClass: 'narrow' }) : this.setState({navClass: '' });
@@ -34,10 +38,19 @@ export default class TopLine extends React.Component {
     }.bind(this), 200);
   }
 
+  toglMobNav() {
+    this.setState({
+      showMobNav: !this.state.showMobNav
+    });
+  }
+
   render() {
     return <div className={`container-fluid ${this.state.navClass}`} id="topline">
       <div className="container pr-0 pl-0">
         <Link to="/" className="logo" />
+        <div onClick={this.toglMobNav.bind(this)} className="burger-menu-icon">
+          <img src={MenuIcon} alt="Burger Icon" />
+        </div>
         <nav>
           <ul>
             <li><Link to="/about">About</Link></li>
@@ -107,6 +120,7 @@ export default class TopLine extends React.Component {
           <a className="btn btn-access" href="#">Request an access</a>
         </div>
       </div>
+      { this.state.showMobNav && <MobileNavigation toglMobNav={this.toglMobNav.bind(this)} /> }
     </div>;
   }
 }
