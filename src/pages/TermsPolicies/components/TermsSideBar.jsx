@@ -13,6 +13,12 @@ export default class TermsSideBar extends React.Component {
       notifications: false,
       complaints: false,
     };
+    this.activeNotice = this.activeNotice.bind(this);
+    this.activeCookie = this.activeCookie.bind(this);
+    this.activeConflicts = this.activeConflicts.bind(this);
+    this.activeData = this.activeData.bind(this);
+    this.activeNotifications = this.activeNotifications.bind(this);
+    this.activeComplaints = this.activeComplaints.bind(this);
   }
 
   activeNotice() {
@@ -86,12 +92,12 @@ export default class TermsSideBar extends React.Component {
       <h6 className="subtitle text-grey">
         Terms & Policies
       </h6>
-      <div className={`${this.state.noticies ? 'active' : ''} item-title`} onClick={this.activeNotice.bind(this)}>
+      <div className={`${this.state.noticies ? 'active' : ''} item-title`} onClick={this.activeNotice}>
         <Link to="/terms-policies">
           Legal notices
         </Link>
       </div>
-      <div className={`${this.state.cookie ? 'active' : ''} item-title`} onClick={this.activeCookie.bind(this)}>
+      <div className={`${this.state.cookie ? 'active' : ''} item-title`} onClick={this.activeCookie}>
         <Link to="/terms-policies/cookie-policy">
           Cookie policy
         </Link>
@@ -100,7 +106,7 @@ export default class TermsSideBar extends React.Component {
           <li><Link to="/terms-policies">Cookies</Link></li>
         </ul>
       </div>
-      <div className={`${this.state.conflicts ? 'active' : ''} item-title`} onClick={this.activeConflicts.bind(this)}>
+      <div className={`${this.state.conflicts ? 'active' : ''} item-title`} onClick={this.activeConflicts}>
         <Link to="/terms-policies/conflicts">
           Conflicts of Interest &
           Inducement Policy
@@ -110,7 +116,7 @@ export default class TermsSideBar extends React.Component {
           <li><Link to="/terms-policies">Information Qover's policy on inducements</Link></li>
         </ul>
       </div>
-      <div className={`${this.state.data ? 'active' : ''} item-title`} onClick={this.activeData.bind(this)}>
+      <div className={`${this.state.data ? 'active' : ''} item-title`} onClick={this.activeData}>
         <Link to="/terms-policies/data">
           Data privacy
         </Link>
@@ -127,12 +133,12 @@ export default class TermsSideBar extends React.Component {
           <li><Link to="/terms-policies">Changes to This Privacy Policy</Link></li>
         </ul>
       </div>
-      <div className={`${this.state.notifications ? 'active' : ''} item-title`} onClick={this.activeNotifications.bind(this)}>
+      <div className={`${this.state.notifications ? 'active' : ''} item-title`} onClick={this.activeNotifications}>
         <Link to="/terms-policies/notification">
           Claim notification
         </Link>
       </div>
-      <div className={`${this.state.complaints ? 'active' : ''} item-title`} onClick={this.activeComplaints.bind(this)}>
+      <div className={`${this.state.complaints ? 'active' : ''} item-title`} onClick={this.activeComplaints}>
         <Link to="/terms-policies/complaints">
           Complaints
         </Link>

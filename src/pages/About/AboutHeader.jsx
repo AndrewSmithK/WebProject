@@ -9,8 +9,8 @@ export default class AboutHeader extends React.Component {
 					About Qover
 				</h1>
           <h4 className="subtitle text-white">
-						Bringing insurance to a whole new level<br />
-						– experience seamless digital service
+						Bringing insurance to a whole new level<br className="d-none d-md-block"/>
+            &nbsp;– experience seamless digital service
 					</h4>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default class WhoWeAre extends React.Component {
         <h3 className="subtitle text-grey">Meet our team of ninjas</h3>
         <div className="container">
             <div className="row icons">
-                <div className="col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Quentin} alt="quentin" />
@@ -42,8 +42,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={JeanCharles} alt="jean-charles" />
                         </div>
@@ -57,7 +57,7 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Eleonore} alt="eleonore" />
@@ -72,8 +72,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Geert} alt="geert" />
                         </div>
@@ -87,7 +87,7 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Denis} alt="denis" />
@@ -102,8 +102,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Ali} alt="ali" />
                         </div>
@@ -119,7 +119,7 @@ export default class WhoWeAre extends React.Component {
                 </div>
             </div>
             <div className="row icons">
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Romuald} alt="romuald" />
@@ -134,8 +134,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Juan} alt="juan" />
                         </div>
@@ -149,7 +149,7 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Amandine} alt="amandine" />
@@ -164,8 +164,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Dominique} alt="dominique" />
                         </div>
@@ -179,7 +179,7 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                       <div className="icon">
                         <img src={Nathalie} alt="nathalie" />
@@ -194,8 +194,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Hamza} alt="hamza" />
                         </div>
@@ -211,11 +211,11 @@ export default class WhoWeAre extends React.Component {
                 </div>
             </div>
             <div className="row icons">
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
-                        <div className="icon">
-                            <img src={Emilien} alt="emilien" />
-                        </div>
+                      <div className="icon">
+                        <img src={Emilien} alt="emilien" width="100%"/>
+                      </div>
                         <div className="text">
                             <p className="icon-title">
                                 Junior dev
@@ -226,8 +226,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Simon} alt="simon" />
                         </div>
@@ -241,7 +241,7 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Mathieu} alt="mathieu" />
@@ -256,8 +256,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={Alexandre} alt="alexandre" />
                         </div>
@@ -271,7 +271,7 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
+                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={AlexandreRoba} alt="alexandre-roba" />
@@ -286,8 +286,8 @@ export default class WhoWeAre extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="icon col-md-2">
-                    <div className="item">
+                <div className="col-md-2 col-6">
+                    <div className="item right-icon">
                         <div className="icon">
                             <img src={AnrienLebrun} alt="adrien-lebrun" />
                         </div>
@@ -303,7 +303,7 @@ export default class WhoWeAre extends React.Component {
                 </div>
             </div>
             <div className="row icons">
-              <div className="icon col-md-2">
+              <div className="col-md-2 col-6">
                   <div className="item">
                       <div className="icon">
                           <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
@@ -318,8 +318,8 @@ export default class WhoWeAre extends React.Component {
                       </div>
                   </div>
               </div>
-              <div className="icon col-md-2">
-                  <div className="item">
+              <div className="col-md-2 col-6">
+                  <div className="item right-icon">
                       <div className="icon">
                           <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                       </div>
@@ -333,7 +333,7 @@ export default class WhoWeAre extends React.Component {
                       </div>
                   </div>
               </div>
-              <div className="icon col-md-2">
+              <div className="col-md-2 col-6">
                   <div className="item">
                       <div className="icon">
                           <img src={Francesca} alt="francesca" />
@@ -348,8 +348,8 @@ export default class WhoWeAre extends React.Component {
                       </div>
                   </div>
               </div>
-              <div className="icon col-md-2">
-                  <div className="item">
+              <div className="col-md-2 col-6">
+                  <div className="item right-icon">
                       <div className="icon">
                           <img src={Arthur} alt="arthur" />
                       </div>
@@ -363,7 +363,7 @@ export default class WhoWeAre extends React.Component {
                       </div>
                   </div>
               </div>
-              <div className="icon col-md-2">
+              <div className="col-md-2 col-6">
                 <div className="item">
                   <div className="icon">
                     <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
@@ -378,8 +378,8 @@ export default class WhoWeAre extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="icon col-md-2">
-                <div className="item">
+              <div className="col-md-2 col-6">
+                <div className="item right-icon">
                   <div className="icon">
                     <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                   </div>
@@ -395,7 +395,7 @@ export default class WhoWeAre extends React.Component {
               </div>
             </div>
           <div className="row icons">
-            <div className="icon col-md-2">
+            <div className="col-md-2 col-6">
               <div className="last-icon"><p> Want to join the team?</p></div>
             </div>
           </div>

@@ -10,21 +10,21 @@ export default class Circle extends React.Component {
                     <div className="left-side-bar item text-right bd-right">
                         <h3 className="title text-blue">SLICED</h3>
                         <p className="text text-grey" >
-                            Personalized<br/>
-                            pick & choose insurance products.
+                            Personalized<br className="d-none d-md-block" />
+                          &nbsp;pick & choose insurance products.
                             Full range of non-life insurance products
                         </p>
                     </div>
                     <div className="item left-side-bar text-right bd-right" id="left-bar">
                         <h3 className="title text-blue">ON-DEMAND</h3>
                         <p className="text text-grey">
-                            Coverage from<br/>
-                            1 day up to 5 years.
+                            Coverage from<br className="d-none d-md-block" />
+                          &nbsp;1 day up to 5 years.
                             Cancel anytime
                         </p>
                     </div>
                 </div>
-                <div className="icon col-md-5">
+                <div className="icon col-md-5 d-none d-lg-block">
                     <img src={QoverWheel} alt="qover-wheel" />
                 </div>
                 <div className="col-md-3 side-bar">

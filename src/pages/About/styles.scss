@@ -1,5 +1,9 @@
 @import '../../styles/varibles';
 
+.d-sm-block {
+  transition: all 2s linear;
+}
+
 #header-about {
   padding: 130px 0 90px 0;
   background-image: url('../../images/About/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
@@ -88,6 +92,13 @@
 
       .title {
         margin: 30px auto 15px auto;
+        position: relative;
+        span {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          cursor: pointer;
+        }
       }
 
       .text {
@@ -134,7 +145,6 @@
       }
 
       .text {
-        opacity: 0.7;
         font-weight: 300;
         font-size: 16px;
         margin-bottom: 15px;
@@ -164,6 +174,7 @@
 
     .item {
       position: relative;
+      margin-right: -12px;
     }
 
     .text {
