@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 
 import IconClose from '../images/Header/icon-close.svg';
 import Logo from '../images/Header/logo-qover.svg';
@@ -69,8 +69,7 @@ export default class MobileNavigation extends Component {
     }
   }
 
-  toglSubNav(e) {
-    e.preventDefault();
+  toglSubNav() {
     this.setState({
       showSubNav: !this.state.showSubNav
     });
@@ -83,16 +82,16 @@ export default class MobileNavigation extends Component {
         <div className="mobile-logo"><img src={Logo} /></div>
         <div>
           <ul className="nav-list">
-            <li><Link to="/">Homepage</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/" exact activeClassName="selected">Homepage</Link></li>
+            <li><Link to="/about" exact activeClassName="selected">About</Link></li>
             <li>
-              <Link to="/our-products" onClick={this.toglSubNav.bind(this)}>
+              <Link to="/our-products" exact activeClassName="selected" onClick={this.toglSubNav.bind(this)}>
                 Our products<i className="fa fa-angle-down" aria-hidden="true"></i>
               </Link>
               { this.state.showSubNav && <SubNav /> }
             </li>
-            <li><Link to="/about">Developers</Link></li>
-            <li><Link to="/contact-us">Contact us</Link></li>
+            <li><Link to="/about" exact activeClassName="selected">Developers</Link></li>
+            <li><Link to="/contact-us" exact activeClassName="selected">Contact us</Link></li>
           </ul>
         </div>
         <div className="link-block">
