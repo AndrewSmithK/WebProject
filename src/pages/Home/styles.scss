@@ -177,6 +177,23 @@
     //  z-index: -1;
     //}
   }
+
+  @media screen and (max-width: $break-mobile) {
+    .secture-title {
+      font-size: 28px;
+    }
+    .item {
+      .title {
+        font-size: 16px;
+      }
+      p {
+        display: none;
+      }
+    }
+    .shadow-image {
+      display: none;
+    }
+  }
 }
 
 #explanation {
@@ -246,6 +263,20 @@
       }
     }
   }
+
+  @media screen and (max-width: $break-mobile) {
+    .label {
+      margin: 0 20px;
+    }
+    .row {
+      .item {
+        height: 190px;
+        .text {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 #robust-api {
@@ -302,6 +333,44 @@
         left: calc(50% - 32px);
       }
     }
+
+    @media screen and (max-width: $break-mobile) {
+      & > .title {
+        font-size: 28px;
+      }
+      .gap-image {
+        display: none;
+      }
+      .text-blocks {
+        .title {
+          font-size: 16px;
+        }
+      }
+      .half-circle {
+        display: none;
+      }
+    }
+}
+
+#inn-products {
+  @media screen and (max-width: $break-mobile) {
+    .header {
+      padding-top: 50px;
+      .subtitle {
+        font-size: 20px;
+      }
+    }
+    .item {
+      .icon {
+        display: inline-block;
+      }
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+      }
+    }
+  }
 }
 
 #gap-insurance {

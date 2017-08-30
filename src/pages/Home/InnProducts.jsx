@@ -7,7 +7,7 @@ import LloydsLogo from '../../images/HomePage/InnProducts/lloyds-logo.svg';
 export default class InnProducts extends React.Component {
   render() {
     return (<section className="bg-light-grey" id="inn-products">
-      <div className="header hide">
+      <div className="header">
         <h2 className="subtitle text-grey text-center">
           Innovative products - backed by the bests
         </h2>
