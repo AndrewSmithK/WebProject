@@ -103,7 +103,8 @@
 #gap-video {
   padding-top: 90px;
   padding-bottom: 210px;
-  background-image: url('../../images/OurProducts/GapInsurance/video.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/OurProducts/GapInsurance/video.png');
+  background-color: $turquoise;
   background-size: cover;
 
   .title {
@@ -126,15 +127,27 @@
     margin-bottom: 70px;
   }
   .container {
-    .item {
-      margin-bottom: 50px;
-      margin-left: -15px;
+    .left-item {
+      margin-left: -20px;
       margin-right: 20px;
+    }
+    .right-item {
+      margin-right: -20px;
+      margin-left: 20px;
+    }
+    .item {
+      .icon {
+        float:left;
+        margin-right: 30px;
+      }
+      margin-bottom: 50px;
+      padding-left: 15px;
       h4 {
         font-size: 20px;
         line-height: 22px;
         font-weight: bold;
         margin-bottom: 14px;
+        font-family: 'MuseoSans';
       }
       p {
         font-size: 13px;
@@ -160,7 +173,7 @@
       width: 100%;
       .clips {
         position: absolute;
-        left: calc(50% - 27px);
+        left: calc(50% - 17px);
         top: -55px;
         z-index: 3;
 
@@ -179,6 +192,7 @@
     }
 
     .content-container {
+      border-radius: 3px;
       margin-left: 30px;
       margin-right: 10px;
       padding: 35px 25px 25px 25px;
@@ -228,7 +242,6 @@
       font-size: 15px;
       font-weight: 300;
       line-height: 1.33;
-      opacity: 0.7
     }
     .subtitle {
       margin-top: 18px;
@@ -274,7 +287,6 @@
       line-height: 18px;
       font-style: italic;
       font-weight: 300;
-      opacity: 0.7;
     }
     .items {
       padding: 70px 50px 77px 50px;
@@ -285,6 +297,7 @@
 
       .item-paper {
         a {
+          font-weight: 500;
           padding-right: 0;
         }
         .icon-pdf {

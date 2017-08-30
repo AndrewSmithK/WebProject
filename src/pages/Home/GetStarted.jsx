@@ -26,7 +26,7 @@ export default class GetStarted extends React.Component {
                 <div className="item">
                   <h5 className="title">Sign a B2B Agreement and get your token</h5>
                   <p className="text text-left text-white">
-                    Before signing, you can of course play around with our <b>API</b>. Once you
+                    Before signing, you can of course play around with our <b id="api">API</b>. Once you
                     get a token, you can start selling immediately !
                   </p>
                   <span className="circle">2</span>

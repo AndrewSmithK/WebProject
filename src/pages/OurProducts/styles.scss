@@ -19,13 +19,15 @@
     .subtitle {
       font-size: 24px;
       font-weight: 500;
+      line-height: 30px;
+      font-family: 'MuseoSans';
     }
   }
 }
 
 #trad-inn-prod {
   padding-top: 90px;
-  padding-bottom: 10px;
+  padding-bottom: 90px;
 
   .container {
     margin-top: 52px;
@@ -33,7 +35,8 @@
     .item {
       padding-bottom: 30px;
       background-image: linear-gradient($grey, $grey), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
-      
+      border-radius: 3px;
+
       .last-icon {
         margin-bottom: 6px;
       }
@@ -67,11 +70,57 @@
   }
 }
 
+#our-features {
+    padding-top: 70px;
+    padding-bottom: 111.4px;
+
+    .header {
+      position: relative;
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 43px;
+      margin-bottom: 50px;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      margin-bottom: 50px;
+      font-size: 26px;
+      font-family: 'MuseoSans';
+    }
+
+    .item {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      box-shadow: 0 0 10px 0 $pale-grey;
+
+      .icon {
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 30px;
+      }
+
+      .text {
+        font-size: 14px;
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+}
+
 #prod-in-dev {
   padding: 70px 0 90px 100px;
   background-image: url('../../images/OurProducts/product-in-development.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-repeat: no-repeat;
   background-position: right;
+
+  button {
+    font-weight: 500;
+  }
 
   .container {
     margin-left: -15px;

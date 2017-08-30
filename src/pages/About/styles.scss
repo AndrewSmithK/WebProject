@@ -151,6 +151,7 @@
 #who-we-are {
   font-family: 'MuseoSans', sans-serif;
   padding-bottom: 90px;
+  padding-top: 90px;
 
   .title {
     font-weight: bold;
@@ -169,7 +170,7 @@
       position: absolute;
       left: 10px;
       bottom: 10px;
-      font-family: 'MuseoSans', sans-serif;
+      font-family: Roboto;
 
       .icon-title {
         font-weight: bold;
@@ -180,7 +181,6 @@
       }
 
       .icon-text {
-        font-family: 'MuseoSans', sans-serif;
         letter-spacing: -0.3px;
         font-size: 13px;
         font-weight: 300;
@@ -239,6 +239,7 @@
     a {
       padding-top: 13px;
       padding-bottom: 13px;
+      font-weight: 500;
     }
   }
 }

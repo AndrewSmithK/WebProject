@@ -2,8 +2,7 @@
 
 #header-contact-us {
   padding: 130px 0 90px 0;
-  height: 500px;
-  background-color: $dark-sky-blue;
+  height: 472px;
   background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1)), url('../../images/contact-us/map.png');
   background-size: cover;
   
@@ -22,6 +21,9 @@
       font-weight: 500;
       line-height: 30px;
       font-family: 'MuseoSans', sans-serif;
+      b{
+        font-weight: 700;
+      }
     }
   }
 }
