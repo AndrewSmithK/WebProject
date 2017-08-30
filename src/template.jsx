@@ -11,6 +11,7 @@ export default class Template extends React.Component {
     return (
       <html lang="en">
         <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <title>Qover</title>
           {/* production */}
           {Object.keys(assets.styles).map((style, key) => {
@@ -29,7 +30,7 @@ export default class Template extends React.Component {
             charSet="UTF-8"
           />
           <script
-            src={
+            src={                  
               process.env.NODE_ENV === 'development' ?
               `http://${webpackHost}:${webpackPort}/assets/main.js` :
               '/assets/main.js'
