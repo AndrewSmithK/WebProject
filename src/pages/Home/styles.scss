@@ -361,13 +361,19 @@
       }
     }
     .item {
+      padding-top: 0;
+      height: 70px;
+      margin-bottom: 10px;
       .icon {
         display: inline-block;
+        margin-bottom: 0;
+        width: 40%;
       }
       .text {
         display: inline-block;
         vertical-align: middle;
         text-align: left;
+        width: 60%;
       }
     }
   }
@@ -471,6 +477,12 @@
       margin-top: 3px;
     }
   }
+
+  @media screen and (max-width: $break-mobile) {
+    .subtitle {
+      font-size: 20px;
+    }
+  }
 }
 
 #subscribe {
@@ -505,5 +517,16 @@
       }
     }
 
+  }
+  @media screen and (max-width: $break-mobile) {
+    padding: 30px 0;
+    .title {
+      font-size: 16px;
+    }
+    form {
+      input {
+        padding-right: 23px;
+      }
+    }
   }
 }
