@@ -5,7 +5,77 @@ import IconClose from '../images/Header/icon-close.svg';
 import Logo from '../images/Header/logo-qover.svg';
 import './MobileNavigation.scss';
 
+const SubNav = () => (
+  <div className="subnav-wrap bg-pale-grey-two">
+    <div className="subnav">
+      <h5 className="title">Motor Products</h5>
+      <ul>
+        <li>
+          <div className="item">
+            <Link to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>Gap insurance</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+        <li>
+          <div className="item">
+            <Link to="/" style={{ color: '#3daed2' }}>Light-casco</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+        <li>
+          <div className="item">
+            <Link to="/" style={{ color: '#3897d6' }}>Full-casco</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+        <li>
+          <div className="item">
+            <Link to="/" style={{ color: '#317bda' }}>Driver accident</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+      </ul>
+      <h5 className="title">Life style</h5>
+      <ul>
+        <li>
+          <div className="item">
+            <Link to="/" style={{ color: '#31cfda' }}>Accident & health</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+        <li>
+          <div className="item">
+            <Link to="/" style={{ color: '#3aa2d3' }}>Travel</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+        <li>
+          <div className="item">
+            <Link to="/" style={{ color: '#317bda' }}>Job loss</Link>
+            <p>Protect 100% of your car’s purchase price up to 5-years.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+);
+
 export default class MobileNavigation extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showSubNav: false
+    }
+  }
+
+  toglSubNav(e) {
+    e.preventDefault();
+    this.setState({
+      showSubNav: !this.state.showSubNav
+    });
+  }
+
   render() {
     return (
       <div className="mob-nav">
@@ -15,6 +85,12 @@ export default class MobileNavigation extends Component {
           <ul className="nav-list">
             <li><Link to="/">Homepage</Link></li>
             <li><Link to="/about">About</Link></li>
+            <li>
+              <Link to="/our-products" onClick={this.toglSubNav.bind(this)}>
+                Our products<i className="fa fa-angle-down" aria-hidden="true"></i>
+              </Link>
+              { this.state.showSubNav && <SubNav /> }
+            </li>
             <li><Link to="/about">Developers</Link></li>
             <li><Link to="/contact-us">Contact us</Link></li>
           </ul>
