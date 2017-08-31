@@ -71,22 +71,54 @@
       margin-bottom: 40px;
     }
     .container{
-      .right-icon {
-        margin-left: -10px !important;
+      position: relative;
+      .click-visible {
+        position: absolute;
+        text-align: center;
+        left: calc(50% - 57px);
+        top: 168px;
+        font-size: 15px;                          
+        font-weight: 500;
+        font-family: Roboto;
+        display: block !important;
       }
       .last-icon {
-        height: 130px !important;
-        width: 130px !important;
-        padding: 30px 25px !important;
+        height: 45px !important;
+        width: 200px !important;
+        padding: 10px 10px !important;
       }
+
+      .show-all {
+        height: auto !important;
+        -moz-transition: height 3s ease;
+        -webkit-transition: height 3s ease;
+        -o-transition: height 3s ease;
+        transition: height 3s ease;
+      }
+
       .icons {
+        position: relative;
         margin-bottom: 0 !important;
+        height: 150px;
+        overflow: hidden;
+        -moz-transition: height 3s ease;
+        -webkit-transition: height 3s ease;
+        -o-transition: height 3s ease;
+        transition: height 3s ease;
+
         .item {
-          margin-left: 5px;
-          margin-bottom: 20px ;
           img {
             width: 130px;
           }
+        }
+
+        .item:nth-child(2n){
+          margin-left: 20px;
+        }
+
+        .div-block {
+          width: 130px !important;
+          height: 130px !important;
         }
       }
     }

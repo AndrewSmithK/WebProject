@@ -1,126 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import TermsItem from './TermsItem';
+
 export default class TermsSideBar extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      noticies: true,
-      cookie: false,
-      conflicts: false,
-      data: false,
-      notifications: false,
-      complaints: false,
-    };
-    this.activeNotice = this.activeNotice.bind(this);
-    this.activeCookie = this.activeCookie.bind(this);
-    this.activeConflicts = this.activeConflicts.bind(this);
-    this.activeData = this.activeData.bind(this);
-    this.activeNotifications = this.activeNotifications.bind(this);
-    this.activeComplaints = this.activeComplaints.bind(this);
-  }
-
-  activeNotice() {
-    this.setState({
-      noticies: !this.state.noticies,
-      cookie: false,
-      conflicts: false,
-      data: false,
-      notifications: false,
-      complaints: false,
-    });
-  }
-
-  activeCookie() {
-    this.setState({
-      cookie: !this.state.cookie,
-      noticies: false,
-      conflicts: false,
-      data: false,
-      notifications: false,
-      complaints: false,
-    });
-  }
-
-  activeConflicts() {
-    this.setState({
-      conflicts: !this.state.conflicts,
-      noticies: false,
-      cookie: false,
-      data: false,
-      notifications: false,
-      complaints: false,
-    });
-  }
-
-  activeData() {
-    this.setState({
-      data: !this.state.data,
-      noticies: false,
-      conflicts: false,
-      cookie: false,
-      notifications: false,
-      complaints: false,
-    });
-  }
-
-  activeNotifications() {
-    this.setState({
-      notifications: !this.state.notifications,
-      noticies: false,
-      conflicts: false,
-      data: false,
-      cookie: false,
-      complaints: false,
-    });
-  }
-
-  activeComplaints() {
-    this.setState({
-      complaints: !this.state.complaints,
-      noticies: false,
-      conflicts: false,
-      data: false,
-      cookie: false,
-      notifications: false,
-    });
-  }
-
   render() {
-    return (<div className="side-container">
-      <h6 className="subtitle text-grey">
-        Terms & Policies
-      </h6>
-      <div className={`${this.state.noticies ? 'active' : ''} item-title`} onClick={this.activeNotice}>
-        <Link to="/terms-policies">
-          Legal notices
-        </Link>
-      </div>
-      <div className={`${this.state.cookie ? 'active' : ''} item-title`} onClick={this.activeCookie}>
-        <Link to="/terms-policies/cookie-policy">
-          Cookie policy
-        </Link>
-        <ul>
+    return (
+      <div className="side-container">
+        <h6 className="subtitle text-grey">
+          Terms & Policies
+        </h6>
+        <TermsItem title="Legal notices" path="/terms-policies" />
+
+        <TermsItem title="Cookie policy" path="/terms-policies/cookie-policy">
           <li><Link to="/terms-policies">Log data</Link></li>
           <li><Link to="/terms-policies">Cookies</Link></li>
-        </ul>
-      </div>
-      <div className={`${this.state.conflicts ? 'active' : ''} item-title`} onClick={this.activeConflicts}>
-        <Link to="/terms-policies/conflicts">
-          Conflicts of Interest &
-          Inducement Policy
-        </Link>
-        <ul>
+        </TermsItem>
+
+        <TermsItem title="Conflicts of Interest & Inducement Policy" path="/terms-policies/conflicts">
           <li><Link to="/terms-policies">Link   Information on the policy on conflicts of interest</Link></li>
           <li><Link to="/terms-policies">Information Qover's policy on inducements</Link></li>
-        </ul>
-      </div>
-      <div className={`${this.state.data ? 'active' : ''} item-title`} onClick={this.activeData}>
-        <Link to="/terms-policies/data">
-          Data privacy
-        </Link>
-        <ul>
+        </TermsItem>
+
+        <TermsItem title="Data privacy" path="/terms-policies/data">
           <li><Link to="/terms-policies">Summary</Link></li>
           <li><Link to="/terms-policies">Policy</Link></li>
           <li><Link to="/terms-policies">Information we may collect</Link></li>
@@ -131,28 +33,22 @@ export default class TermsSideBar extends React.Component {
           <li><Link to="/terms-policies">Disclosure of your Personal Information</Link></li>
           <li><Link to="/terms-policies">Access to information</Link></li>
           <li><Link to="/terms-policies">Changes to This Privacy Policy</Link></li>
-        </ul>
-      </div>
-      <div className={`${this.state.notifications ? 'active' : ''} item-title`} onClick={this.activeNotifications}>
-        <Link to="/terms-policies/notification">
-          Claim notification
-        </Link>
-      </div>
-      <div className={`${this.state.complaints ? 'active' : ''} item-title`} onClick={this.activeComplaints}>
-        <Link to="/terms-policies/complaints">
-          Complaints
-        </Link>
-        <ul>
+        </TermsItem>
+
+        <TermsItem title="Claim notification" path="/terms-policies/notification" />
+
+        <TermsItem title="Complaints" path="/terms-policies/complaints">
           <li><Link to="/terms-policies">Qover</Link></li>
           <li><Link to="/terms-policies">Ombudsman</Link></li>
           <li><Link to="/terms-policies">The European Online Dispute Resolution Platform</Link></li>
-        </ul>
+        </TermsItem>
+
+        <div className="item-title">
+          <Link to="/terms-policies/FAQ">
+            FAQ
+          </Link>
+        </div>
       </div>
-      <div className="item-title">
-        <Link to="/terms-policies/FAQ">
-          FAQ
-        </Link>
-      </div>
-    </div>);
+    );
   }
 }

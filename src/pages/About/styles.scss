@@ -168,13 +168,19 @@
   }
 
   .container {
+    .click-visible {
+      display: none;
+    }
+
     .icons {
-      margin: 0 -20px 20px -20px;
+      margin: 0 -20px;
     }
 
     .item {
       position: relative;
-      margin-right: -12px;
+      margin-bottom: 20px;
+      margin-left: 9px;
+      margin-right: 9px;
     }
 
     .text {
@@ -211,7 +217,9 @@
       font-size: 16px;
       font-weight: bold;
       width: 150px;
+      height: 150px;
       text-align: center;
+      margin-left: 15px;
       padding: 51px 25px;
       background-color: $turquoise;
       border-radius: 3px;
@@ -225,7 +233,7 @@
   text-align: center;
 
   .container {
-    padding: 0px 180px;
+    padding: 0 180px;
     font-family: 'MuseoSans', sans-serif;
 
     .title {
