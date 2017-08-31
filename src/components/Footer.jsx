@@ -13,7 +13,7 @@ export default class TopLine extends React.Component {
           <div className="logo" style={{width: 89 + 'px', marginRight: 111 + 'px'}}>
             <img src={LogoQover} alt="Qover - logo-qover"/>
           </div>
-          <div className="item" style={{width: 90 + 'px', marginRight: 75 + 'px'}}>
+          <div className="item item1">
             <div className="list-title">
               <b>Company</b>
             </div>
@@ -24,7 +24,7 @@ export default class TopLine extends React.Component {
               <li><Link to="/terms-policies">Terms & Policies</Link></li>
             </ul>
           </div>
-          <div className="item" style={{width: 96 + 'px', marginRight: 69 + 'px'}}>
+          <div className="item item2">
             <div className="list-title">
               <b>Our products</b>
             </div>
@@ -38,7 +38,7 @@ export default class TopLine extends React.Component {
               <li><Link to="/">Job Loss</Link></li>
             </ul>
           </div>
-          <div className="item" style={{width: 104 + 'px', marginRight: 116 + 'px'}}>
+          <div className="item item3">
             <div className="list-title">
               <b>Developers</b>
             </div>

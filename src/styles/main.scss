@@ -448,6 +448,20 @@ a {
 }
 
 footer {
+  .item1 {
+    width: 90px;
+    margin-right: 75px;
+  }
+  .item2 {
+    width: 90px;
+    margin-right: 69px;
+  }
+  .item3 {
+    width: 104px;
+    margin-right: 116px;
+  }
+
+
   border-top: 5px solid #2066c2;
 
   .container {
@@ -538,9 +552,23 @@ footer {
   }
 
   @media screen and (max-width: $break-mobile) {
+    .container {
+      .row {
+        padding: 0 20px;
+      }
+    }
+    .copyright {
+      p {
+        padding: 0 20px;
+      }
+    }
+    .logo {
+      margin-bottom: 30px;
+    }
     .item {
       float: left;
       width: 50%;
+      margin: 0;
     }
   }
 }
