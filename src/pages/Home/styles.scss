@@ -51,7 +51,17 @@
     }
   }
 
+  .icon2 {
+    display: none;
+  }
+
   @media screen and (max-width: $break-mobile) {
+    .icon {
+      display: none;
+      &2 {
+        display: block;
+      }
+    }
     .left-block {
       h1.text-white {
         font-size: 24px;
@@ -121,7 +131,9 @@
       vertical-align: middle;
       display: table;
       width: 100%;
-      .icon {
+      .item-icon, .icon {
+        vertical-align: middle;
+        text-align: center;
         margin: 0;
         width: 40%;
         display: table-cell;

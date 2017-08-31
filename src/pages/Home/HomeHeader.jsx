@@ -21,6 +21,9 @@ export default class HomeHeader extends React.Component {
               <h4 className="text-white">
                 Call us today. Start selling tomorrow!
               </h4>
+              <div className="icon2">
+                <img src={LloydsLogoSmall} alt="lloyds-logo" />
+              </div>
               <button className="btn hidden-sm-down btn-turquoise">
                 Request a demo
               </button>
