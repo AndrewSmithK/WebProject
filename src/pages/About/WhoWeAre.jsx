@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Quentin from '../../images/About/Who-we-are/quentin.png';
 import JeanCharles from '../../images/About/Who-we-are/jean-charles.png';
 import Eleonore from '../../images/About/Who-we-are/eleonore.png';
@@ -21,13 +22,38 @@ import Arthur from '../../images/About/Who-we-are/arthur.png';
 import Nathalie from '../../images/About/Who-we-are/nat.png';
 
 export default class WhoWeAre extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visible: false,
+    };
+    this.visibilityClick = this.visibilityClick.bind(this);
+  }
+
+  visibilityClick() {
+    this.setState({
+      visible: !this.state.visible,
+    });
+  }
+
   render() {
     return <section className="section" id="who-we-are">
         <h1 className="title text-turquoise">Who we are?</h1>
         <h3 className="subtitle text-grey">Meet our team of ninjas</h3>
         <div className="container">
-            <div className="row icons">
-                <div className="col-md-2 col-6">
+
+
+            <div className={this.state.visible ? 'd-none' : 'click-visible text-grey'}>
+              See all the team
+              <div>
+                  <span className="text-blue" onClick={this.visibilityClick}>
+                    <i className="fa fa-angle-down" />
+                  </span>
+              </div>
+            </div>
+
+
+            <div className={`${this.state.visible ? 'show-all' : ''} row icons justify-content-center`}>
                     <div className="item">
                         <div className="icon">
                             <img src={Quentin} alt="quentin" />
@@ -41,9 +67,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={JeanCharles} alt="jean-charles" />
                         </div>
@@ -56,8 +80,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Eleonore} alt="eleonore" />
@@ -71,9 +93,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Geert} alt="geert" />
                         </div>
@@ -86,8 +106,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Denis} alt="denis" />
@@ -101,9 +119,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Ali} alt="ali" />
                         </div>
@@ -116,10 +132,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="row icons">
-                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Romuald} alt="romuald" />
@@ -133,9 +145,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Juan} alt="juan" />
                         </div>
@@ -148,8 +158,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Amandine} alt="amandine" />
@@ -163,9 +171,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Dominique} alt="dominique" />
                         </div>
@@ -178,8 +184,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
                     <div className="item">
                       <div className="icon">
                         <img src={Nathalie} alt="nathalie" />
@@ -193,9 +197,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Hamza} alt="hamza" />
                         </div>
@@ -208,10 +210,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="row icons">
-                <div className="col-md-2 col-6">
                     <div className="item">
                       <div className="icon">
                         <img src={Emilien} alt="emilien" width="100%"/>
@@ -225,9 +223,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Simon} alt="simon" />
                         </div>
@@ -240,8 +236,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={Mathieu} alt="mathieu" />
@@ -255,9 +249,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={Alexandre} alt="alexandre" />
                         </div>
@@ -270,8 +262,6 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
                     <div className="item">
                         <div className="icon">
                             <img src={AlexandreRoba} alt="alexandre-roba" />
@@ -285,9 +275,7 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="col-md-2 col-6">
-                    <div className="item right-icon">
+                    <div className="item">
                         <div className="icon">
                             <img src={AnrienLebrun} alt="adrien-lebrun" />
                         </div>
@@ -300,13 +288,9 @@ export default class WhoWeAre extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="row icons">
-              <div className="col-md-2 col-6">
-                  <div className="item">
+                    <div className="item">
                       <div className="icon">
-                          <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                          <div className="div-block" style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                       </div>
                       <div className="text">
                           <p className="icon-title">
@@ -316,89 +300,74 @@ export default class WhoWeAre extends React.Component {
                               Cédric François
                           </p>
                       </div>
-                  </div>
-              </div>
-              <div className="col-md-2 col-6">
-                  <div className="item right-icon">
+                    </div>
+                    <div className="item">
+                        <div className="icon">
+                            <div className="div-block" style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                        </div>
+                        <div className="text">
+                            <p className="icon-title">
+                                Software Engineer
+                            </p>
+                            <p className="icon-text">
+                                Cédric Degallaix
+                            </p>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="icon">
+                            <img src={Francesca} alt="francesca" />
+                        </div>
+                        <div className="text">
+                            <p className="icon-title">
+                                title
+                            </p>
+                            <p className="icon-text">
+                                Francesca Nicolini
+                            </p>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="icon">
+                            <img src={Arthur} alt="arthur" />
+                        </div>
+                        <div className="text">
+                            <p className="icon-title">
+                                title
+                            </p>
+                            <p className="icon-text">
+                                Arthur Lemoine
+                            </p>
+                        </div>
+                    </div>
+                    <div className="item">
                       <div className="icon">
-                          <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
+                        <div className="div-block" style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                       </div>
                       <div className="text">
-                          <p className="icon-title">
-                              Software Engineer
-                          </p>
-                          <p className="icon-text">
-                              Cédric Degallaix
-                          </p>
+                        <p className="icon-title">
+                          Product Owner
+                        </p>
+                        <p className="icon-text">
+                          Laurent Parmentier
+                        </p>
                       </div>
-                  </div>
-              </div>
-              <div className="col-md-2 col-6">
-                  <div className="item">
+                    </div>
+                    <div className="item">
                       <div className="icon">
-                          <img src={Francesca} alt="francesca" />
+                        <div className="div-block" style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
                       </div>
                       <div className="text">
-                          <p className="icon-title">
-                              title
-                          </p>
-                          <p className="icon-text">
-                              Francesca Nicolini
-                          </p>
+                        <p className="icon-title">
+                          Actuary
+                        </p>
+                        <p className="icon-text">
+                          Pauline Dedeurwaerder
+                        </p>
                       </div>
-                  </div>
-              </div>
-              <div className="col-md-2 col-6">
-                  <div className="item right-icon">
-                      <div className="icon">
-                          <img src={Arthur} alt="arthur" />
-                      </div>
-                      <div className="text">
-                          <p className="icon-title">
-                              title
-                          </p>
-                          <p className="icon-text">
-                              Arthur Lemoine
-                          </p>
-                      </div>
-                  </div>
-              </div>
-              <div className="col-md-2 col-6">
-                <div className="item">
-                  <div className="icon">
-                    <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
-                  </div>
-                  <div className="text">
-                    <p className="icon-title">
-                      Product Owner
-                    </p>
-                    <p className="icon-text">
-                      Laurent Parmentier
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-2 col-6">
-                <div className="item right-icon">
-                  <div className="icon">
-                    <div style={{width: 150 + 'px', height: 150 + 'px', background: '#f00'}}></div>
-                  </div>
-                  <div className="text">
-                    <p className="icon-title">
-                      Actuary
-                    </p>
-                    <p className="icon-text">
-                      Pauline Dedeurwaerder
-                    </p>
-                  </div>
-                </div>
-              </div>
+                    </div>
+                    <div className="last-icon"><p> Want to join the team?</p></div>
             </div>
-          <div className="row icons">
-            <div className="col-md-2 col-6">
-              <div className="last-icon"><p> Want to join the team?</p></div>
-            </div>
-          </div>
         </div>
     </section>;
   }
