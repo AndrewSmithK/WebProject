@@ -13,16 +13,16 @@ export default class ProdInDev extends React.Component {
         </h4>
         <div className="container">
             <div className="row items">
-                    <div className="item col-md-5">
-                      <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
-                        <h5 className="title non-active-text">
-                            Motor extended warranty
-                        </h5>
-                        <p className="text non-active-text">
-                            Extend the manufacturer warranty on your vehicle.
-                            Three variants covering mechanical and electronic failures. Wear and tear excluded.
-                        </p>
-                    </div>
+                <div className="item col-md-5">
+                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+                    <h5 className="title non-active-text">
+                        Motor extended warranty
+                    </h5>
+                    <p className="text non-active-text">
+                        Extend the manufacturer warranty on your vehicle.
+                        Three variants covering mechanical and electronic failures. Wear and tear excluded.
+                    </p>
+                </div>
                 <div className="item col-md-5">
                   <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                     <h5 className="title non-active-text">

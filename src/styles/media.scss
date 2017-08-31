@@ -36,6 +36,35 @@
         margin-bottom: 12px !important;
         line-height: 33px !important;
       }
+    .container {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+
+      .item {
+        padding: 18px 20px 18px 24px;
+        margin-bottom: 10px;
+        #diamonds {
+          margin-left: -9px;
+          margin-right: 20px;
+        }
+        .small-icon {
+          float: left;
+          margin-right: 29px;
+        }
+
+        .text {
+          text-align: left;
+        }
+      }
+
+      .display {
+        display: block !important;
+      }
+
+      .hide {
+        display: none;
+      }
+    }
   }
 
   #prod-in-dev {
