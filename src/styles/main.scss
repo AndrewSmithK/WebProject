@@ -434,12 +434,15 @@ a {
       display: none;
     }
     .burger-menu-icon {
+      position: absolute;
       display: block;
       float: right;
       width: 20px;
       height: 17px;
       border-radius: 1px;
-      margin: 20px 0 17px 0;
+      // margin: 20px 0 17px 0;
+      top: 20px;
+      right: 17px;
     }
   }
 }
@@ -531,6 +534,13 @@ footer {
       font-family: Roboto;
       font-size: 10px;
       line-height: 1.3;
+    }
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    .item {
+      float: left;
+      width: 50%;
     }
   }
 }

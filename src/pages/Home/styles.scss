@@ -56,6 +56,7 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    padding-top: 90px;
     .icon {
       display: none;
       &2 {
@@ -63,11 +64,15 @@
       }
     }
     .left-block {
+      .icon2 {
+        margin-bottom: 35px;
+      }
       h1.text-white {
         font-size: 24px;
       }
       h4.text-white {
         font-size: 18px;
+        margin-bottom: 20px;
       }
       button {
         display: none;
@@ -96,6 +101,15 @@
     }
     a {
       font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    p {
+      margin: 0 20px;
+      font-size: 10px;
+      line-height: 1.5;
+      text-align: left;
     }
   }
 }
@@ -135,13 +149,13 @@
         vertical-align: middle;
         text-align: center;
         margin: 0;
-        width: 40%;
+        width: 30%;
         display: table-cell;
       }
       .title {
         margin: 0;
         padding: 0;
-        width: 60%;
+        width: 70%;
         display: table-cell;
         font-size: 16px;
         text-align: left;
@@ -320,14 +334,39 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    .title {
+      font-size: 28px;
+    }
     .label {
       margin: 0 20px;
+      .icon {
+        margin: 0 auto;
+        float: none;
+      }
+      .text {
+        float: none;
+        padding: 0 20px 30px 20px;
+        width: 100%;
+        text-align: center;
+        .title {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
     }
     .row {
       .item {
+        width: 240px;
         height: 190px;
+        border-radius: 3px;
+        margin: 0 auto;
         .text {
           display: none;
+        }
+        .title {
+          font-size: 20px;
         }
       }
     }
@@ -410,6 +449,8 @@
 #inn-products {
   @media screen and (max-width: $break-mobile) {
     .header {
+      width: 280px;
+      margin: 0 auto;
       padding-top: 50px;
       .subtitle {
         font-size: 20px;
@@ -423,6 +464,9 @@
         display: inline-block;
         margin-bottom: 0;
         width: 40%;
+        img {
+          width: 40%;
+        }
       }
       .text {
         display: inline-block;
@@ -516,6 +560,37 @@
       }
     }
   }
+  @media screen and (max-width: $break-mobile) {
+    .col-6 {
+      padding: 40px;
+      max-width: 100%;
+      flex: none;
+      a.link {
+        margin-left: 0;
+      }
+      .subtitle {
+        font-size: 20px;
+        .text-turquoise {
+          font-size: 14px;
+        }
+      }
+      .text-block {
+        .title {
+          font-size: 16px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      .big-image {
+        margin-top: -70px;
+        img {
+          width: 280px;
+          height: 306px;
+        }
+      }
+    }
+  }
 }
 
 #partners {
@@ -534,6 +609,15 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    .constainer {
+      overflow: hidden;
+    }
+    .justify-content-around {
+      width: 1000px;
+      & > div {
+        float: left;
+      }
+    }
     .subtitle {
       font-size: 20px;
     }
