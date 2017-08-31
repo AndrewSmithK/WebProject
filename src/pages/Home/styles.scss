@@ -50,6 +50,20 @@
       left: 25px;
     }
   }
+
+  @media screen and (max-width: $break-mobile) {
+    .left-block {
+      h1.text-white {
+        font-size: 24px;
+      }
+      h4.text-white {
+        font-size: 18px;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
 }
 
 .disclaimer {
@@ -93,6 +107,35 @@
       
       .text {
         color: $grey;
+      }
+    }
+  }
+  @media screen and (max-width: $break-mobile) {
+    .title {
+      font-size: 28px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .item {
+      vertical-align: middle;
+      display: table;
+      width: 100%;
+      .icon {
+        margin: 0;
+        width: 40%;
+        display: table-cell;
+      }
+      .title {
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        display: table-cell;
+        font-size: 16px;
+        text-align: left;
+      }
+      .text {
+        display: none;
       }
     }
   }
