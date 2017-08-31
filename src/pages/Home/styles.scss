@@ -135,11 +135,18 @@
     }
   }
   @media screen and (max-width: $break-mobile) {
+    padding-top: 50px;
+    padding-bottom: 0px;
     .title {
+      width: 280px;
+      margin: 0 auto;
       font-size: 28px;
     }
     .subtitle {
+      width: 280px;
+      margin: 0 auto;
       font-size: 20px;
+      margin-bottom: 30px;
     }
     .item {
       vertical-align: middle;
@@ -248,6 +255,12 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    padding-bottom: 30px;
+    padding-top: 50px;
+    .container {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
     .secture-title {
       font-size: 28px;
     }
@@ -334,6 +347,13 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    > .title, > .subtitle {
+      width: 260px;
+      margin: 0 auto;
+    }
+    .subtitle {
+      margin-bottom: 30px;
+    }
     .title {
       font-size: 28px;
     }
@@ -357,6 +377,11 @@
       }
     }
     .row {
+      .col {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+      }
       .item {
         width: 240px;
         height: 190px;
