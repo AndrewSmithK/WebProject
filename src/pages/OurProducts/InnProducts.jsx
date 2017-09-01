@@ -41,7 +41,7 @@ export default class InnProducts extends React.Component {
                 <img src={IconDiamsSmall} />
               </div>
               <div className="text text-grey">
-                <b>Your branding our ours. .</b><br />
+                <b>Your branding our ours.</b><br />
                 Up to you.
               </div>
             </div>
