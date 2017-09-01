@@ -56,10 +56,10 @@ export default class GapFactSheet extends React.Component {
           <div className="col-md-5">
             <div className="row">
               <div className="sheet">
-                <div className="clips">
+                <div className="clips d-none">
                   <img src={IconClips} alt="clips"/>
                 </div>
-                <div className="content-container bg-white">
+                <div className="content-container bg-white d-none">
                   <div className="content bg-pale-grey-two">
                     <h4 className="title text-blue">
                       How can Qover offer such

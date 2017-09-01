@@ -16,19 +16,24 @@ export default class GapPartners extends React.Component {
               <h2 className="title text-left">
                 They are already working with us
               </h2>
-              <div className="icon">
+              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }} />
+              <div className="icon hide">
                 <img src={dieteren} alt="dieteren" />
               </div>
-              <div className="icon">
+              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }} />
+              <div className="icon hide">
                 <img src={Fiat} alt="Fiat" />
               </div>
-              <div className="icon">
+              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }}  />
+              <div className="icon hide">
                 <img src={VW} alt="Volkswagen" />
               </div>
-              <div className="icon">
+              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }}  />
+              <div className="icon hide">
                 <img src={Toyota} alt="Toyota" />
               </div>
-              <div className="icon" id="tesla">
+              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }}  />
+              <div className="icon hide" id="tesla">
                 <img src={Tesla} alt="Tesla" />
               </div>
               {/*<div className="icon" style={{width: 51.1 + 'px', height: 51.1 + 'px', background: '#f00'}}/>*/}
