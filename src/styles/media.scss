@@ -18,7 +18,8 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-  // Subscribe
+
+  // Our Products
 
   #header-our-products {
     padding-top: 90px !important;
@@ -41,6 +42,7 @@
     .title {
       font-size: 28px !important;
       margin-bottom: 12px !important;
+      padding: 0 !important;
     }
   }
 
@@ -84,15 +86,17 @@
 
   #prod-in-dev {
     background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd), linear-gradient(156deg, #31cfda, #82e5c9 76%, #b9f4bc) !important;
-    padding: 50px 40px 50px 35px !important;
+    padding: 50px 20px 50px 20px !important;
     .title {
       font-size: 28px;
       line-height: 33px ;
+      padding-left: 0 !important;
     }
 
     .subtitle {
       font-size: 20px ;
       margin-bottom: 30px ;
+      padding: 0 !important;
     }
 
     .container {
