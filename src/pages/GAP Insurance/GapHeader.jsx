@@ -34,8 +34,9 @@ export default class GapHeader extends React.Component {
             </div>
           </div>
         </div>
+        <div className="d-none display" style={{ background: '#ff0000', width: 280 + 'px', height: 160 + 'px' }}></div>
       </div>
-      <div className="screenshot-api">
+      <div className="screenshot-api hide">
         <img src={ScreenshotApi} alt="screenshot-api"/>
       </div>
     </section>;

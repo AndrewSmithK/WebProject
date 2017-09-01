@@ -47,7 +47,7 @@ export default class GapCase extends React.Component {
                     <img src={IconPhone}/>
                   </div>
                   <p className="text">
-                    Calling us at (+32) 588 25 50
+                    &nbsp;&nbsp;Calling us at (+32) 588 25 50
                   </p>
                 </div>
               </div>

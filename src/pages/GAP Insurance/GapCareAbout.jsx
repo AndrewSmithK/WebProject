@@ -19,12 +19,12 @@ export default class GapCareAbout extends React.Component {
                 <div className="icon">
                   <img src={IconCancel} alt="icon-cancel" />
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-10 col-9">
                   <div className="text">
                     <h4 className="text-grey">
                       Cancel anytime
                     </h4>
-                    <p className="text-grey">
+                    <p className="text-grey hide">
                       Your customer can cancel his contract at anytime.
                       We will automatically make a pro-rata refund.
                       There is no cancellation fee. Full transparency, no hidden fees!
@@ -40,12 +40,12 @@ export default class GapCareAbout extends React.Component {
                 <div className="icon">
                   <img src={IconCalendar} alt="icon-ca=lendar" />
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-10 col-9">
                   <div className="text">
                     <h4 className="text-grey">
                       Extend prevailing 100% coverage
                     </h4>
-                    <p className="text-grey">
+                    <p className="text-grey hide">
                       Sometimes Full Casco insurers guarantee 100% of a vehicle value
                       for a certain period.Your customer can then defer his contract for
                       up to 3 years when this 100% ends.
@@ -61,12 +61,12 @@ export default class GapCareAbout extends React.Component {
                 <div className="icon">
                   <img src={IconCoverage} alt="icon-coverage" />
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-10 col-9">
                   <div className="text">
                     <h4 className="text-grey">
                       Coverage up to 5 years
                     </h4>
-                    <p className="text-grey">
+                    <p className="text-grey hide">
                       Your customer can protect 100% of the purchase price of his car for
                       up to 5 years.
                     </p>
@@ -81,12 +81,12 @@ export default class GapCareAbout extends React.Component {
                 <div className="icon">
                   <img src={IconNewCar} alt="icon-new-car" />
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-10 col-9">
                   <div className="text">
                     <h4 className="text-grey">
                       New & recent used cars
                     </h4>
-                    <p className="text-grey">
+                    <p className="text-grey hide">
                       Available for new and used cars, which are maximum 3 years old,
                       have covered less than 100,000 km at the start date and have been
                       bought in the last 6 months.
