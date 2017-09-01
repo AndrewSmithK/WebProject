@@ -53,38 +53,6 @@
   .icon2 {
     display: none;
   }
-
-  @media screen and (max-width: $break-mobile) {
-    padding-top: 90px;
-    padding-bottom: 15px;
-
-    .icon {
-      display: none;
-
-      &2 {
-        display: block;
-      }
-    }
-
-    .left-block {
-      .icon2 {
-        margin-bottom: 35px;
-      }
-
-      h1.text-white {
-        font-size: 24px;
-      }
-
-      h4.text-white {
-        font-size: 18px;
-        margin-bottom: 20px;
-      }
-
-      button {
-        display: none;
-      }
-    }
-  }
 }
 
 .disclaimer {
@@ -107,21 +75,6 @@
     }
     a {
       font-size: 12px;
-    }
-  }
-
-  @media screen and (max-width: $break-mobile) {
-    p {
-      margin: 0 20px;
-      font-size: 10px;
-      line-height: 1.5;
-      text-align: left;
-
-      a {
-        font-size: 10px;
-        font-weight: 400;
-        color: $grey;
-      }
     }
   }
 }
@@ -150,60 +103,51 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: $break-mobile) {
-    & {
-      padding-top: 50px;
-      padding-bottom: 50px;
+#picture-block {
+  background: #5b7289;
+  & > .title {
+    font-weight: 300;
+    margin-bottom: 70px;
+
+    b {
+      font-weight: 700;
     }
+  }
 
-    & > .title {
-      font-size: 28px;
-    }
+  .infographic {
+    width: 100%;
+    height: 120px;
+    background: url('../../images/HomePage/value-chain-v-4.svg') no-repeat;
+    background-size: contain;
+  }
 
-    .subtitle {
-      width: 280px;
-      margin: 0 auto;
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
+  .descripts {
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
 
-    .container {
-      margin-bottom: 0;
+    .item {
+      flex-grow: 1;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
 
-      .item-box {
-        margin-top: 0;
+      img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 87.7px;
+        height: 23.8px;
+      }
 
-        .item {
-          margin-bottom: 30px;
-          vertical-align: middle;
-          display: table;
-          width: 100%;
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-
-          .item-icon {
-            float: left;
-            text-align: center;
-            margin: 0;
-            margin-right: 18px;
-            width: 42px;
-          }
-
-          .title {
-            float: left;
-            margin: 0;
-            padding: 0;
-            font-size: 16px;
-            text-align: left;
-          }
-
-          .text {
-            display: none;
-          }
-        }
+      h4 {
+        height: 23.8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
       }
     }
   }
@@ -275,46 +219,6 @@
   .shadow-image {
     position: relative;
     float: left;
-    //z-index: 1;
-
-    //&:before {
-    //  position: absolute;
-    //  top: 10px;
-    //  left: 10px;
-    //  width: 100%;
-    //  height: 100%;
-    //  background: $grey;
-    //  opacity: .3;
-    //  content: '';
-    //  z-index: -1;
-    //}
-  }
-
-  @media screen and (max-width: $break-mobile) {
-    & {
-      padding: 50px 25px 30px;
-    }
-
-    .secture-title {
-      font-size: 28px;
-      line-height: 1.3;
-    }
-
-    .item {
-      padding-bottom: 7px;
-
-      .title {
-        font-size: 16px;
-      }
-
-      p {
-        display: none;
-      }
-    }
-
-    .shadow-image {
-      display: none;
-    }
   }
 }
 
@@ -378,66 +282,9 @@
         font-weight: bold;
       }
 
-      p{
-        b{
+      p {
+        b {
           font-weight: bold;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: $break-mobile) {
-    & {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    .title {
-      font-size: 28px;
-    }
-
-    .label {
-      margin: 0 20px;
-
-      .icon {
-        margin: 0 auto;
-        float: none;
-      }
-
-      .text {
-        float: none;
-        padding: 0 20px 30px 20px;
-        width: 100%;
-        text-align: center;
-
-        .title {
-          font-size: 20px;
-        }
-
-        p {
-          font-size: 13px;
-        }
-      }
-    }
-
-    .row {
-      margin-bottom: 25px;
-
-      .col {
-        padding: 5px 17px;
-      }
-      .item {
-        width: 240px;
-        height: 190px;
-        border-radius: 3px;
-        margin: 0 auto;
-
-        .text {
-          display: none;
-        }
-
-        .title {
-          font-size: 20px;
         }
       }
     }
@@ -498,55 +345,6 @@
         left: calc(50% - 32px);
       }
     }
-
-    @media screen and (max-width: $break-mobile) {
-      & > .title {
-        font-size: 28px;
-      }
-      .gap-image {
-        display: none;
-      }
-      .text-blocks {
-        .title {
-          font-size: 16px;
-        }
-      }
-      .half-circle {
-        display: none;
-      }
-    }
-}
-
-#inn-products {
-  @media screen and (max-width: $break-mobile) {
-    .header {
-      width: 280px;
-      margin: 0 auto;
-      padding-top: 50px;
-      .subtitle {
-        font-size: 20px;
-      }
-    }
-    .item {
-      padding-top: 0;
-      height: 70px;
-      margin-bottom: 10px;
-      .icon {
-        display: inline-block;
-        margin-bottom: 0;
-        width: 40%;
-        img {
-          width: 40%;
-        }
-      }
-      .text {
-        display: inline-block;
-        vertical-align: middle;
-        text-align: left;
-        width: 60%;
-      }
-    }
-  }
 }
 
 #gap-insurance {
@@ -630,8 +428,301 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: $break-mobile) {
+#partners {
+  padding: 70px 0 75px;
+
+  .container {
+    margin: 40px auto auto;
+
+    #third {
+      margin-top: -7px;
+    }
+
+    #cj {
+      margin-top: 3px;
+    }
+  }
+}
+
+#subscribe {
+  padding: 50px 0;
+  font-size: 13px;
+  
+  .title {
+    font-weight: bold;
+  }
+
+  form {
+    margin: 29px auto 0;
+
+    input {
+      border: solid 1px rgba(91, 114, 137, 0.2);
+      padding: 12px 140px 13px 13px;
+      float: left;
+      height: 40px;
+      color: rgba(91, 114, 137, 0.5);
+      &::-webkit-input-placeholder { color: rgba(91, 114, 137, 0.5); }
+    }
+
+    button {
+      padding: 0 22px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 0 3px 3px 0;
+      font-family: Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #2ec0cb;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-mobile) {
+  #header {
+    padding-top: 90px;
+    padding-bottom: 15px;
+
+    .icon {
+      display: none;
+
+      &2 {
+        display: block;
+      }
+    }
+
+    .left-block {
+      .icon2 {
+        margin-bottom: 35px;
+      }
+
+      h1.text-white {
+        font-size: 24px;
+      }
+
+      h4.text-white {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
+
+  .disclaimer {
+    p {
+      margin: 0 20px;
+      font-size: 10px;
+      line-height: 1.5;
+      text-align: left;
+
+      a {
+        font-size: 10px;
+        font-weight: 400;
+        color: $grey;
+      }
+    }
+  }
+
+  #advantages {
+    & {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    & > .title {
+      font-size: 28px;
+    }
+
+    .subtitle {
+      width: 280px;
+      margin: 0 auto;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      margin-bottom: 0;
+
+      .item-box {
+        margin-top: 0;
+
+        .item {
+          margin-bottom: 30px;
+          vertical-align: middle;
+          display: table;
+          width: 100%;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .item-icon {
+            float: left;
+            text-align: center;
+            margin: 0;
+            margin-right: 18px;
+            width: 42px;
+          }
+
+          .title {
+            float: left;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            text-align: left;
+          }
+
+          .text {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #get-started {
+    & {
+      padding: 50px 25px 30px;
+    }
+
+    .secture-title {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    .item {
+      padding-bottom: 7px;
+
+      .title {
+        font-size: 16px;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .shadow-image {
+      display: none;
+    }
+  }
+  
+  #explanation {
+    & {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .title {
+      font-size: 28px;
+    }
+
+    .label {
+      margin: 0 20px;
+
+      .icon {
+        margin: 0 auto;
+        float: none;
+      }
+
+      .text {
+        float: none;
+        padding: 0 20px 30px 20px;
+        width: 100%;
+        text-align: center;
+
+        .title {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .row {
+      margin-bottom: 25px;
+
+      .col {
+        padding: 5px 17px;
+      }
+      .item {
+        width: 240px;
+        height: 190px;
+        border-radius: 3px;
+        margin: 0 auto;
+
+        .text {
+          display: none;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  
+  #robust-api {
+    & > .title {
+      font-size: 28px;
+    }
+    .gap-image {
+      display: none;
+    }
+    .text-blocks {
+      .title {
+        font-size: 16px;
+      }
+    }
+    .half-circle {
+      display: none;
+    }
+  }
+
+  #inn-products {
+    .header {
+      width: 280px;
+      margin: 0 auto;
+      padding-top: 50px;
+
+      .subtitle {
+        font-size: 20px;
+      }
+    }
+
+    .item {
+      padding-top: 0;
+      height: 70px;
+      margin-bottom: 10px;
+
+      .icon {
+        display: inline-block;
+        margin-bottom: 0;
+        width: 40%;
+        
+        img {
+          width: 40%;
+        }
+      }
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        width: 60%;
+      }
+    }
+  }
+
+  #gap-insurance {
     .col-6 {
       padding: 0 40px 100px;
       max-width: 100%;
@@ -677,24 +768,8 @@
       }
     }
   }
-}
-
-#partners {
-  padding: 70px 0 75px;
-
-  .container {
-    margin: 40px auto auto;
-
-    #third {
-      margin-top: -7px;
-    }
-
-    #cj {
-      margin-top: 3px;
-    }
-  }
-
-  @media screen and (max-width: $break-mobile) {
+  
+  #partners {
     .constainer {
       overflow: hidden;
     }
@@ -708,47 +783,10 @@
       font-size: 20px;
     }
   }
-}
 
-#subscribe {
-  padding: 50px 0;
-  font-size: 13px;
-  
-  .title {
-    font-weight: bold;
-  }
-
-  form {
-    margin: 29px auto 0;
-
-    input {
-      border: solid 1px rgba(91, 114, 137, 0.2);
-      padding: 12px 140px 13px 13px;
-      float: left;
-      height: 40px;
-      color: rgba(91, 114, 137, 0.5);
-      &::-webkit-input-placeholder { color: rgba(91, 114, 137, 0.5); }
-    }
-
-    button {
-      padding: 0 22px;
-      height: 40px;
-      line-height: 40px;
-      border-radius: 0 3px 3px 0;
-      font-family: Roboto, sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-
-      &:hover {
-        background-color: #2ec0cb;
-      }
-    }
-
-  }
-
-  @media screen and (max-width: $break-mobile) {
+  #subscribe {
     padding: 30px 0;
-
+    
     .title {
       font-size: 16px;
     }
