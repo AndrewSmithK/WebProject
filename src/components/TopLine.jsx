@@ -51,6 +51,10 @@ export default class TopLine extends React.Component {
         <div onClick={this.toglMobNav.bind(this)} className="burger-menu-icon">
           <img src={MenuIcon} alt="Burger Icon" />
         </div>
+        <div className="topline-buttons">
+          <a className="btn btn-login" href="#">Log in</a>
+          <a className="btn btn-access" href="#">Request an access</a>
+        </div>
         <nav>
           <ul>
             <li><Link to="/about">About</Link></li>
@@ -115,10 +119,6 @@ export default class TopLine extends React.Component {
             <li><Link to="/contact-us">Contact us</Link></li>
           </ul>
         </nav>
-        <div className="topline-buttons">
-          <a className="btn btn-login" href="#">Log in</a>
-          <a className="btn btn-access" href="#">Request an access</a>
-        </div>
       </div>
       { this.state.showMobNav && <MobileNavigation toglMobNav={this.toglMobNav.bind(this)} /> }
     </div>;

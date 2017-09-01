@@ -21,6 +21,7 @@ export default class WhyQover extends Component {
             <p className="text text-grey">With Qover, you can differentiate yourself from the market with a much more competitive price for your customers.</p>
           </DropdownItem>
           <DropdownItem title="We are strong : The Lloyd’s is behind us" image={IconEnergy} >
+            <img src={lloyds} className="logo" alt="lloyds logo" />
             <p className="text text-grey">Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks.</p>
             <p className="text text-grey">Around 80 syndicates are underwriting insurance at Lloyd’s, covering all classes of business. Together they interact with thousands of brokers daily to create insurance solutions for businesses in over 200 countries and territories around the world. Lloyd’s insures the majority of FTSE 100 and Dow Jones industrial average companies.</p>
             <p className="text text-grey">Lloyd’s enjoys strong financial security supported by excellent ratings. Visit www.lloyds.com for more information.</p>
@@ -40,8 +41,8 @@ export default class WhyQover extends Component {
             <img src={qover} alt="qover" />
            </div>
            <div>
-             <b>With our business model, you keep the same level of commission</b>
-             (more if you wish to administrate your customer contracts yourself)
+             <b>With our business model, you keep the same level of commission</b> 
+             (more if you wish to administrate your customer contracts yourself) 
              <b>while offering much cheaper premium to your customers.</b>
            </div>
            <div className="text text-title">

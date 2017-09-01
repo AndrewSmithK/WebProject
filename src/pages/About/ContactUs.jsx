@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default class ContactUs extends React.Component {
   render() {
@@ -11,7 +12,7 @@ export default class ContactUs extends React.Component {
                 <h4 className="subtitle">
                     You want to be a partner or wish to have more information about our products? Contact us!
                 </h4>
-                <a className="btn hidden-sm-down btn-turquoise text-center">Contact us</a>
+                <Link to="/contact-us" className="btn hidden-sm-down btn-turquoise text-center">Contact us</Link>
             </div>
         </div>
     </section>;

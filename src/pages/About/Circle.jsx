@@ -24,7 +24,7 @@ export default class Circle extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="icon col-md-5 d-none d-lg-block">
+                <div className="icon col-md-5">
                     <img src={QoverWheel} alt="qover-wheel" />
                 </div>
                 <div className="col-md-3 side-bar">

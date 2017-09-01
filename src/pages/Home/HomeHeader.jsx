@@ -26,7 +26,7 @@ export default class HomeHeader extends React.Component {
                 <img src={LloydsLogoSmall} alt="lloyds-logo" />
               </div>
               <button className="btn hidden-sm-down btn-turquoise">
-                Request a demo
+                Ask for demo
               </button>
             </div>
           </div>

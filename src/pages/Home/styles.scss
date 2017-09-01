@@ -149,6 +149,21 @@
         letter-spacing: 0.9px;
         text-transform: uppercase;
       }
+
+      &:nth-child(1) p {
+        float: left;
+        max-width: 103px;
+      }
+
+      &:nth-child(2) p {
+        margin: 0 auto;
+        max-width: 270px;
+      }
+
+      &:nth-child(3) p {
+        float: right;
+        max-width: 168px;
+      }
     }
   }
 }

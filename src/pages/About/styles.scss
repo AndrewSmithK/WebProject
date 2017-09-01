@@ -15,7 +15,8 @@
 #header-about {
   padding: 130px 0 90px 0;
   background-image: url('../../images/About/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
-  
+  background-size: cover;
+
   .container {
     .title {
       width: 100%;
@@ -64,6 +65,11 @@
         padding: 60px 60px 45px 140px;
         border-radius: 3px;
         float: left;
+
+        .logo {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
 
         .item-text {
           margin-bottom: 0;
@@ -179,7 +185,10 @@
 
   .container {
     .employers-list {
+      width: calc(100% + 10px);
       margin: 0 -5px;
+      flex-wrap: wrap;
+      display: flex;
     }
 
     .click-visible {
@@ -202,7 +211,10 @@
       .icon {
         width: 100%;
         height: 100%;
-        
+        background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, rgb(67, 200, 205));
+        border-radius: 3px;
+        overflow: hidden;
+
         img {
           width: 100%;
         }
@@ -230,13 +242,6 @@
         margin-top: 5px;
       }
     }
-    
-    .icon {
-      img {
-        background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
-        border-radius: 3px;
-      }
-    }
 
     .last-icon {
       float: left;
@@ -257,6 +262,7 @@
 #contact-us {
   padding-bottom: 67px;
   background-image: url('../../images/contact-us/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-size: cover;
   text-align: center;
 
   .container {
@@ -288,7 +294,99 @@
   }
 }
 
-@media (max-width: 480px) {
+
+@media screen and (max-width: 992px) {
+  #circle {
+    
+    .container {
+      .left-side-bar {
+        padding-left: 0;
+        margin-left: 0;
+      }
+      .right-side-bar {
+        padding-right: 0;
+        margin-right: 0;
+      }
+      .icon {
+        display: block;
+        margin: 0;
+        width: 120px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #why-qover {
+    #insertion {
+      left: unset;
+      bottom: unset;
+      margin-left: auto;
+
+      .item {
+        float: none;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #circle {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .container{
+      .icon {
+        display: none;
+      }
+
+      .side-bar {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .title {
+          font-size: 14px;
+          letter-spacing: 0.9px;
+        }
+
+        .text {
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+
+      .left-side-bar {
+        border: none;
+        text-align: left !important;
+        padding-left: 5px;
+        padding-right: 0;
+      }
+
+      .right-side-bar {
+        text-align: left;
+        border: none;
+        padding-left: 5px;
+      }
+
+      #left-bar {
+        margin-top: 0;
+      }
+
+      .item {
+        margin-top: 0;
+
+        .text {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
   .m-hidden {
     display: none;
   }
@@ -321,10 +419,9 @@
     }
 
     #insertion {
-      position: relative;
-      top: 35px;
-      margin-left: 0;
-      left:0;
+      left: unset;
+      bottom: unset;
+      margin-left: auto;
 
       .item {
         font-size: 14px;
@@ -418,53 +515,6 @@
     }
   }
 
-  #circle {
-    padding-top: 30px;
-    padding-bottom: 50px;
-
-    .container{
-      .side-bar {
-        margin-top: 0;
-        margin-bottom: 0;
-
-        .title {
-          font-size: 14px;
-          letter-spacing: 0.9px;
-        }
-
-        .text {
-          font-size: 13px;
-          font-weight: 400;
-        }
-      }
-
-      .left-side-bar {
-        border: none;
-        text-align: left !important;
-        padding-left: 5px;
-        padding-right: 0;
-      }
-
-      .right-side-bar {
-        text-align: left;
-        border: none;
-        padding-left: 5px;
-      }
-
-      #left-bar {
-        margin-top: 0;
-      }
-
-      .item {
-        margin-top: 0;
-
-        .text {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
   .footer {
     .copyright {
       padding-left: 20px;
@@ -472,3 +522,4 @@
     }
   }
 }
+

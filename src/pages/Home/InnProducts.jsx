@@ -27,7 +27,7 @@ export default class InnProducts extends React.Component {
           </div>
           <div className="col-md-3">
             <div className="item text-center bg-white">
-              <div className="icon" style={{ height: 70 + 'px', background: '#f00' }}></div>
+              <div className="icon" style={{ height: `${70}px`, background: '#f00' }}></div>
               <div className="text text-grey">
                 <b>Your branding our ours.</b><br />
                 Up to you.
