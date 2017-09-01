@@ -1,5 +1,6 @@
 import React from 'react';
 import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
+import imacMobile from '../../images/HomePage/Header/imac-mobile.png';
 import imac from '../../images/HomePage/Header/imac.png';
 import api from '../../images/HomePage/Header/api.svg';
 
@@ -30,9 +31,12 @@ export default class HomeHeader extends React.Component {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="mac-image">
+            <div className="mac-image m-hidden">
               <img src={imac} alt="imac" />
               <img className="api-logo" src={api} alt="api" />
+            </div>
+            <div className="mac-image d-hidden">
+              <img src={imacMobile} alt="imac" />
             </div>
           </div>
         </div>

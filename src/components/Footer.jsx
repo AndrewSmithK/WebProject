@@ -10,8 +10,8 @@ export default class TopLine extends React.Component {
     return (<footer className="footer bg-dark-blue">
       <div className="container">
         <div className="row text-white">
-          <div className="logo" style={{width: 89 + 'px', marginRight: 111 + 'px'}}>
-            <img src={LogoQover} alt="Qover - logo-qover"/>
+          <div className="logo" style={{ width: `${89}px`, marginRight: `${111  }px` }}>
+            <img src={LogoQover} alt="Qover - logo-qover" />
           </div>
           <div className="item item1">
             <div className="list-title">
@@ -30,12 +30,12 @@ export default class TopLine extends React.Component {
             </div>
             <ul>
               <li><Link to="/our-products/gap-insurance">GAP insurance</Link></li>
-              <li><Link to="/">Light casco</Link></li>
+              { /* <li><Link to="/">Light casco</Link></li>
               <li><Link to="/">Full casco</Link></li>
               <li><Link to="/">Driver Accident</Link></li>
               <li><Link to="/">Accident & Health</Link></li>
               <li><Link to="/">Travel</Link></li>
-              <li><Link to="/">Job Loss</Link></li>
+              <li><Link to="/">Job Loss</Link></li> */ }
             </ul>
           </div>
           <div className="item item3">
@@ -67,7 +67,7 @@ export default class TopLine extends React.Component {
             <address>
               <p>
                 <b>Qover SA/NV</b>
-                Rue des Palais 44 - 1030 Brussels <br/>
+                Rue des Palais 44 - 1030 Brussels <br />
                 RPM: BE0650.939.878 - FSMA: 115284A
               </p>
             </address>

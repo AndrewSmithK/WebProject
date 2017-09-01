@@ -8,7 +8,7 @@ export default class Disclaimer extends React.Component {
           <i className="fa fa-star text-turquoise" aria-hidden="true"></i>
           <b>Disclaimer:</b>
           This website targets brokers and introducers willing to embrace the digital revolution in insurance.
-          If you are a private individual, please visit our consumer <a href="#">consumer website.</a>
+          If you are a private individual, please visit our <a href="#">consumer website.</a>
         </p>
       </div>
     </div>;

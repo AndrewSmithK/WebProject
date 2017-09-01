@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 export default class DropdownItem extends Component {
@@ -22,17 +21,16 @@ export default class DropdownItem extends Component {
         <div className="icon">
           <img src={this.props.image} alt="icon-settings" />
         </div>
-        <h4 className="title text-blue">
+        <h4 className="title text-blue" onClick={this.visibilityClick}>
           <b>{this.props.title}</b>
-          <span className="d-none display" onClick={this.visibilityClick}>
+          <span className="d-hidden">
             <i className={this.state.visible ? 'fa fa-angle-up' : 'fa fa-angle-down'} aria-hidden="true" />
           </span>
         </h4>
-        <div className={this.state.visible ? 'display' : 'hide'}>
+        <div className={`${this.state.visible ? 'open' : ''} desc`}>
           {this.props.children}
         </div>
       </div>
     );
   }
 }
-

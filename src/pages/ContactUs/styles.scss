@@ -3,7 +3,7 @@
 #header-contact-us {
   padding: 130px 0 90px 0;
   height: 472px;
-  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1)), url('../../images/contact-us/map.png');
+  background-image: url('../../images/contact-us/map.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1));
   background-size: cover;
   
   .container {

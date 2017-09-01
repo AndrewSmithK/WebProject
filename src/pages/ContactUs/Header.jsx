@@ -6,12 +6,12 @@ export default class Header extends React.Component {
       <div className="container">
         <div className="row justify-content-center text-center">
           <h1 className="title text-white">
-					Contact us
-				</h1>
+            Contact us
+          </h1>
           <h4 className="subtitle text-white">
             <b>Got a question? We’d love to hear from you.</b><br />
             Drop us a message, we’ll get in touch as soon as possible.
-					</h4>
+          </h4>
         </div>
       </div>
     </section>);

@@ -22,34 +22,32 @@ import {
 
 import ScrollToTop from './ScrollTo';
 
-const DefaultLayout = ({component: Component, ...rest}) => {
-  return (
-    <Route {...rest} render={matchProps => (
+const DefaultLayout = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest} render={matchProps => (
       <Default>
         <Component {...matchProps} />
       </Default>
-    )} />
-  )
-};
+    )}
+  />
+);
 
-const TermsLayout = ({component: Component, ...rest}) => {
-  return (
-    <Route {...rest} render={matchProps => (
+const TermsLayout = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest} render={matchProps => (
       <Default>
         <TermsDefault>
           <Component {...matchProps} />
         </TermsDefault>
       </Default>
-    )} />
-  )
-};
-
-
+    )}
+  />
+);
 
 export default () => (
-<ScrollToTop>
-  <Switch>
-    { /* Home (main) route */ }
+  <ScrollToTop>
+    <Switch>
+      { /* Home (main) route */ }
       <DefaultLayout exact path="/" component={Home} />
       <DefaultLayout path="/about" component={About} />
       <DefaultLayout path="/contact-us" component={ContactUs} />
@@ -65,6 +63,6 @@ export default () => (
       <Route path="/signin" component={Signin} />
       <Route path="/forgot" component={Forgot} />
       <Route component={NotFound} status={404} />
-  </Switch>
-</ScrollToTop>
+    </Switch>
+  </ScrollToTop>
 );

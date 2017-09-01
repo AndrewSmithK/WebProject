@@ -18,7 +18,6 @@
     }
 
     button {
-      padding: 13px 20px;
       margin-bottom: 28px;
       font-family: Roboto;
       font-weight: 500;
@@ -57,23 +56,30 @@
 
   @media screen and (max-width: $break-mobile) {
     padding-top: 90px;
+    padding-bottom: 15px;
+
     .icon {
       display: none;
+
       &2 {
         display: block;
       }
     }
+
     .left-block {
       .icon2 {
         margin-bottom: 35px;
       }
+
       h1.text-white {
         font-size: 24px;
       }
+
       h4.text-white {
         font-size: 18px;
         margin-bottom: 20px;
       }
+
       button {
         display: none;
       }
@@ -110,58 +116,91 @@
       font-size: 10px;
       line-height: 1.5;
       text-align: left;
+
+      a {
+        font-size: 10px;
+        font-weight: 400;
+        color: $grey;
+      }
     }
   }
 }
 
 #advantages {
   padding-bottom: 61px;
+  
   .container {
     margin-bottom: 60px;
 
-
-    .item {
+    .item-box {
       margin-top: 30px;
-      padding-left: 30px;
-      padding-right: 35px;
-
-      .title {
-        margin: 30px auto 11px auto;
-      }
       
-      .text {
-        color: $grey;
+      .item {
+        float: left;
+        padding-left: 30px;
+        padding-right: 35px;
+  
+        .title {
+          margin: 30px auto 11px auto;
+        }
+        
+        .text {
+          color: $grey;
+        }
       }
     }
   }
+
   @media screen and (max-width: $break-mobile) {
+    & {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
     .title {
       font-size: 28px;
     }
+
     .subtitle {
       font-size: 20px;
     }
-    .item {
-      vertical-align: middle;
-      display: table;
-      width: 100%;
-      .item-icon, .icon {
-        vertical-align: middle;
-        text-align: center;
-        margin: 0;
-        width: 30%;
-        display: table-cell;
-      }
-      .title {
-        margin: 0;
-        padding: 0;
-        width: 70%;
-        display: table-cell;
-        font-size: 16px;
-        text-align: left;
-      }
-      .text {
-        display: none;
+
+    .container {
+      margin-bottom: 0;
+
+      .item-box {
+        margin-top: 0;
+
+        .item {
+          margin-bottom: 30px;
+          vertical-align: middle;
+          display: table;
+          width: 100%;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .item-icon {
+            float: left;
+            text-align: center;
+            margin: 0;
+            margin-right: 18px;
+            width: 42px;
+          }
+
+          .title {
+            float: left;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            text-align: left;
+          }
+
+          .text {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -170,6 +209,7 @@
 #get-started {
   padding-top: 90px;
   background-image: url('../../images/HomePage/GetStarted/get-started-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
+  
   .secture-title {
     margin-bottom: 50px;
     font-family: 'MuseoSans', sans-serif;
@@ -248,17 +288,27 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    & {
+      padding: 50px 25px 30px;
+    }
+
     .secture-title {
       font-size: 28px;
+      line-height: 1.3;
     }
+
     .item {
+      padding-bottom: 7px;
+
       .title {
         font-size: 16px;
       }
+
       p {
         display: none;
       }
     }
+
     .shadow-image {
       display: none;
     }
@@ -334,37 +384,55 @@
   }
 
   @media screen and (max-width: $break-mobile) {
+    & {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
     .title {
       font-size: 28px;
     }
+
     .label {
       margin: 0 20px;
+
       .icon {
         margin: 0 auto;
         float: none;
       }
+
       .text {
         float: none;
         padding: 0 20px 30px 20px;
         width: 100%;
         text-align: center;
+
         .title {
           font-size: 20px;
         }
+
         p {
           font-size: 13px;
         }
       }
     }
+
     .row {
+      margin-bottom: 25px;
+
+      .col {
+        padding: 5px 17px;
+      }
       .item {
         width: 240px;
         height: 190px;
         border-radius: 3px;
         margin: 0 auto;
+
         .text {
           display: none;
         }
+
         .title {
           font-size: 20px;
         }
@@ -374,7 +442,7 @@
 }
 
 #robust-api {
-  padding: 140px 0 0;
+  padding: 140px 15px 0;
   
   & > .title {
     margin: 50px 0;
@@ -531,7 +599,6 @@
     }
     
     .btn {
-      padding: 13px 20px;
       font-family: Roboto;
       font-weight: 500;
     }
@@ -560,30 +627,46 @@
       }
     }
   }
+
   @media screen and (max-width: $break-mobile) {
     .col-6 {
-      padding: 40px;
+      padding: 0 40px 100px;
       max-width: 100%;
       flex: none;
+
       a.link {
         margin-left: 0;
+        margin-top: 20px;
       }
+
       .subtitle {
         font-size: 20px;
         .text-turquoise {
           font-size: 14px;
         }
       }
+
+      .icon-label-list {
+        margin-bottom: 20px;
+
+        .icon-label {
+          width: 100%;
+        }
+      }
+
       .text-block {
         .title {
           font-size: 16px;
         }
+
         p {
           font-size: 13px;
         }
       }
+
       .big-image {
-        margin-top: -70px;
+        margin-top: -90px;
+
         img {
           width: 280px;
           height: 306px;
@@ -627,6 +710,7 @@
 #subscribe {
   padding: 50px 0;
   font-size: 13px;
+  
   .title {
     font-weight: bold;
   }
@@ -644,8 +728,9 @@
     }
 
     button {
-      padding: 10px 22px 10px;
+      padding: 0 22px;
       height: 40px;
+      line-height: 40px;
       border-radius: 0 3px 3px 0;
       font-family: Roboto, sans-serif;
       font-size: 13px;
@@ -657,11 +742,14 @@
     }
 
   }
+
   @media screen and (max-width: $break-mobile) {
     padding: 30px 0;
+
     .title {
       font-size: 16px;
     }
+
     form {
       input {
         padding-right: 23px;

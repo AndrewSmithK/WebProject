@@ -13,6 +13,9 @@ const WebpackIsomorphicToolsPlugin = require('webpack-isomorphic-tools/plugin');
 const webpackIsomorphicToolsPlugin = new WebpackIsomorphicToolsPlugin(webpackIsomorphicToolsConfig);
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const extractStyles = new ExtractTextPlugin('stylesheets/styles.css');
+
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -39,15 +42,11 @@ module.exports = {
         loader: 'babel',
       },
       {
-        test: /\.css$/,
-        loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!postcss',
-      },
-      {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-                  'style',
-                  'css!sass',
-                ),
+        loader: extractStyles.extract(
+          'style',
+          'css!sass',
+        ),
       },
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
@@ -88,7 +87,7 @@ module.exports = {
   },
   plugins: [
     // hot reload
-    new ExtractTextPlugin('[name]-[chunkhash].css', { allChunks: true }),
+    extractStyles,
     new webpack.HotModuleReplacementPlugin(),
     new webpack.IgnorePlugin(/webpack-stats\.json$/),
     new webpack.DefinePlugin({
