@@ -13,16 +13,16 @@ export default class ProdInDev extends React.Component {
         </h4>
         <div className="container">
             <div className="row items">
-                    <div className="item col-md-5">
-                      <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
-                        <h5 className="title non-active-text">
-                            Motor extended warranty
-                        </h5>
-                        <p className="text non-active-text">
-                            Extend the manufacturer warranty on your vehicle.
-                            Three variants covering mechanical and electronic failures. Wear and tear excluded.
-                        </p>
-                    </div>
+                <div className="item col-md-5">
+                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
+                    <h5 className="title non-active-text">
+                        Motor extended warranty
+                    </h5>
+                    <p className="text non-active-text">
+                        Extend the manufacturer warranty on your vehicle.
+                        Three variants covering mechanical and electronic failures. Wear and tear excluded.
+                    </p>
+                </div>
                 <div className="item col-md-5">
                   <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
                     <h5 className="title non-active-text">
@@ -34,12 +34,11 @@ export default class ProdInDev extends React.Component {
                 </div>
             </div>
             <div className="row items">
-                <div className="item col-md-5">
+                <div className="item col-md-5 hide">s
                   <div className="checkbox">
                     <img src={ActiveCheckBox} alt="ActiveCheckBox" />
                   </div>
                     <h5 className="title">
-
                         Mandatory Third-Party-Liability
                     </h5>
                     <p className="text">
@@ -55,6 +54,17 @@ export default class ProdInDev extends React.Component {
                         Cover for damages caused by tenants to your property.
                         Two variants: long- or short term rental contracts.
                     </p>
+                </div>
+                <div className="item col-md-5 d-none display">
+                  <div className="checkbox">
+                    <img src={ActiveCheckBox} alt="ActiveCheckBox" />
+                  </div>
+                  <h5 className="title">
+                    Mandatory Third-Party-Liability
+                  </h5>
+                  <p className="text">
+                    Mandatory motor liability insurance for private cars and light commercial vehicles.
+                  </p>
                 </div>
             </div>
         </div>

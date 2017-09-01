@@ -27,7 +27,7 @@ export default class TradInnProd extends React.Component {
               <button className="btn btn-disabled">Coming soon</button>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 d-none d-md-block">
             <div className="item text-center bg-white">
               <div className="icon">
                 <img src={Travel} alt="travel" />
@@ -42,7 +42,7 @@ export default class TradInnProd extends React.Component {
               <button className="btn btn-disabled">Coming soon</button>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 d-none d-md-block">
             <div className="item text-center bg-white">
               <div className="icon" >
                 <img src={JobLoss} alt="job-loss" />
@@ -57,7 +57,7 @@ export default class TradInnProd extends React.Component {
               <button className="btn btn-disabled">Coming soon</button>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 d-none d-md-block">
             <div className="item text-center bg-white">
               <div className="icon last-icon" >
                 <img src={Landlord} alt="landlord" />
