@@ -1,0 +1,192 @@
+@import '../../styles/varibles';
+
+#header-contact-us {
+  padding: 130px 0 90px 0;
+  height: 472px;
+  background-image: url('../../images/contact-us/map.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1));
+  background-size: cover;
+  
+  .container {
+    .title {
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 43px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      font-family: 'MuseoSans', sans-serif;
+      b{
+        font-weight: 700;
+      }
+    }
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    padding: 130px 20px 90px 20px;
+    .container {
+      .title {
+        font-size: 28px;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#contactUs {
+  margin-top: -119px;
+  padding-bottom: 90px;
+
+  .wraper {
+    .title {
+      font-weight: 700;
+    }
+
+    .form-col {
+      float: left;
+      position: relative;
+      width: calc(100% - 330px);
+
+      &:before {
+        position: absolute;
+        top: 119px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 119px);
+        box-shadow: 1px 1px 15px 0 $pale-grey;
+        // z-index: -1;
+        content: '';
+      }
+    }
+
+    .form-wrap {
+      position: relative;
+      padding: 50px 50px 110px;
+      width: 100%;
+      min-height: 100%;
+      border-radius: 5px 0 0 5px;
+      border: solid 1px rgba(151, 151, 151, 0.2);
+      background: #fff;
+      box-sizing: border-box;
+
+      .title {
+        color: $dark-sky-blue;
+        margin-bottom: 40px;
+      }
+
+      .form {
+
+        .btn {
+          margin-left: 15px;
+          margin-top: 45px;
+          width: 91px;
+          height: 45px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: 'Roboto';
+          border-radius: 3px;
+          background-color: $dark-sky-blue;
+        }
+      }
+    }
+  
+    .contact-info-col {
+      float: left;
+      padding: 50px;
+      width: 330px;
+      min-height: 100%;
+      border-radius: 0 5px 5px 0;
+      background: $grey url(../../images/contact-us/combined-shape.svg) no-repeat right center;
+      z-index: 1;
+
+      .title {
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        margin-bottom: 30px;        
+        font-weight: 300;
+        font-size: 18px;
+        font-family: 'MuseoSans';
+      }
+
+      .contact-list {
+        padding-left: 36px;
+
+        li {
+          position: relative;
+          margin-bottom: 20px; 
+          list-style: none;
+
+          .icon {
+            position: absolute;
+            top: 0;
+            left: -36px;
+            width: 16px;
+            text-align: center;
+          }
+
+          .sn {
+            padding-top: 20px;
+          }
+
+          address {
+            span {         
+              font-size: 11px;
+              line-height: 1.64;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              line-height: 18px;
+            }
+            
+            p {
+              margin: 5px 0;              
+              font-size: 13px;
+              line-height: 18px;
+            }
+          }
+
+
+          span {
+            font-family: Roboto;
+          }
+        }
+      }
+    }
+
+    .rpm {
+      display: block;
+      padding-top: 10px;
+      font-size: 10px;
+      line-height: 14px;
+      font-family: Roboto;
+    }
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    padding-bottom: 0;
+    margin-top: 0;
+    .wraper {
+      .form-col {
+        width: 100%;
+        .field {
+          width: 100%;
+        }
+        .form-wrap {
+          padding: 50px 20px 110px;
+        }
+      }
+      .contact-info-col {
+        border-radius: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1200" height="auto" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="a" width="100.8%" height="107.8%" x="-.5%" y="-2.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.194415798 0 0 0 0 0.285544953 0 0 0 0 0.376674107 0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="b" cx="-0.06123000144958496" cy="-0.08593000411987305" r="2.3441200256347656" gradientTransform="matrix(.11392 .17765 -.03065 1.4668 -.057 .051)">
+      <stop offset="0" stop-color="#317BDA"/>
+      <stop offset="1" stop-color="#43C8CD"/>
+    </radialGradient>
+    <path id="c" d="M0 2.994A2.992 2.992 0 0 1 2.993 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88L100.97 87.15c-.536 1.574-2.308 2.85-3.963 2.85H2.993A2.995 2.995 0 0 1 0 87.006V2.994z"/>
+    <path id="d" d="M885.312 2.815C884.748 1.26 885.626 0 887.287 0h109.327a2.996 2.996 0 0 1 2.996 2.994v84.012A2.991 2.991 0 0 1 996.614 90H887.287c-1.655 0-2.538-1.262-1.975-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L885.312 2.815z"/>
+    <radialGradient id="e" cx="-0.2946299934387207" cy="1" r="1.2946299743652343" gradientTransform="matrix(.01404 0 0 1.49051 -.29 -.49)">
+      <stop offset="0" stop-color="#317BDA"/>
+      <stop offset="1" stop-color="#43C8CD"/>
+    </radialGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g filter="url(#a)" transform="matrix(1, 0, 0, 1, 0.226036, 0.215356)">
+      <path d="M111.312 2.815C110.748 1.26 111.629 0 113.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L111.312 2.815zm111 0C221.748 1.26 222.629 0 224.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L222.312 2.815zm110 0C331.748 1.26 332.629 0 334.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L332.312 2.815zm111 0C442.748 1.26 443.629 0 445.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L443.312 2.815zm110 0C552.748 1.26 553.629 0 555.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L553.312 2.815zm111 0C663.748 1.26 664.629 0 666.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L664.312 2.815zm110 0C773.748 1.26 774.629 0 776.284 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88l-14.028 41.21c-.536 1.574-2.308 2.85-3.963 2.85h-94.014c-1.653 0-2.535-1.262-1.972-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L774.312 2.815z" fill="url(#b)"/>
+      <path id="" d="M0 2.994A2.992 2.992 0 0 1 2.993 0h94.014c1.653 0 3.427 1.274 3.963 2.85l14.028 41.21c.177.52.178 1.357 0 1.88L100.97 87.15c-.536 1.574-2.308 2.85-3.963 2.85H2.993A2.995 2.995 0 0 1 0 87.006V2.994z" transform="matrix(1, 0, 0, 1, 0, 0)" style="mix-blend-mode: multiply;"/>
+      <path stroke="#42566A" d="M.5 2.994v84.012A2.495 2.495 0 0 0 2.993 89.5h94.014c1.44 0 3.023-1.138 3.49-2.51l14.028-41.211c.142-.417.142-1.142 0-1.558l-14.028-41.21C100.029 1.637 98.447.5 97.007.5H2.993A2.492 2.492 0 0 0 .5 2.994z"/>
+      <g>
+        <path id="" d="M885.312 2.815C884.748 1.26 885.626 0 887.287 0h109.327a2.996 2.996 0 0 1 2.996 2.994v84.012A2.991 2.991 0 0 1 996.614 90H887.287c-1.655 0-2.538-1.262-1.975-2.815l14.954-41.245c.188-.52.19-1.357 0-1.88L885.312 2.815z" transform="matrix(1, 0, 0, 1, 0, 0)" style="mix-blend-mode: multiply;"/>
+        <path stroke="#42566A" d="M885.782 2.645l14.954 41.245c.23.632.229 1.59 0 2.22l-14.954 41.245c-.445 1.228.198 2.145 1.505 2.145h109.327a2.491 2.491 0 0 0 2.496-2.494V2.994A2.496 2.496 0 0 0 996.614.5H887.287c-1.312 0-1.951.914-1.505 2.145z"/>
+      </g>
+    </g>
+    <path stroke="url(#e)" stroke-linecap="round" stroke-linejoin="round" d="M 111.226 105.215 L 111.226 115.215 L 823.266 115.215 L 823.266 105.215"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" d="M 832.226 105.215 L 832.226 115.215 L 1000.574 115.215 L 1000.574 105.215 M 1.226 105.215 L 1.226 115.215 L 102.574 115.215 L 102.574 105.215"/>
+    <g fill="#FFF" font-family="Roboto" font-size="13" font-weight="400" transform="matrix(1, 0, 0, 1, -99.773964, -245.784637)">
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x=".406" y="19">Risk Carrying</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="131.629" y="12">Product</tspan> <tspan x="116.205" y="27">Development</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="246.038" y="12">Pricing</tspan> <tspan x="239.418" y="27">(Actuary)</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="356.8" y="12">Policy</tspan> <tspan x="348.322" y="27">Issuance</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="466.3" y="12">Policy</tspan> <tspan x="457.01" y="27">Servicing</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="575.41" y="12">Claims</tspan> <tspan x="557.068" y="27">Management</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="701.813" y="19">IT</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="784.069" y="12">Marketing</tspan> <tspan x="791.785" y="27">&amp; Sales</tspan>
+            </text>
+      <text transform="translate(119 276)" style="white-space: pre;">
+                <tspan x="895.224" y="19">Distribution</tspan>
+            </text>
+    </g>
+  </g>
+</svg>

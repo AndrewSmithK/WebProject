@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="225" viewBox="0 0 160 225">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="160" height="225" fill="#3D4E5F" rx="3"/>
+        <path fill="#EAEFF3" d="M3 0h154a3 3 0 0 1 3 3v13H0V3a3 3 0 0 1 3-3z"/>
+        <g transform="translate(6 6)">
+            <circle cx="2" cy="2" r="2" fill="#EF534A"/>
+            <circle cx="8.909" cy="2" r="2" fill="#EDC04A"/>
+            <circle cx="15.818" cy="2" r="2" fill="#97D272"/>
+        </g>
+        <text fill="#5B7289" font-family="Roboto-Regular, Roboto" font-size="6">
+            <tspan x="66.802" y="10">Qover API</tspan>
+        </text>
+        <text font-family="AndaleMono, Andale Mono" font-size="5.5">
+            <tspan x="23" y="40" fill="#E2E7ED">{</tspan> <tspan x="23" y="47.5" fill="#BAFBFF"> &quot;risk&quot;: {</tspan> <tspan x="23" y="55" fill="#BAFBFF"> &quot;code&quot;: &quot;127354&quot;,</tspan> <tspan x="23" y="62.5" fill="#BAFBFF"> &quot;codeType&quot;: &quot;NAT&quot;,</tspan> <tspan x="23" y="70" fill="#BAFBFF"> &quot;country&quot;: &quot;BE&quot;,</tspan> <tspan x="23" y="77.5" fill="#BAFBFF"> &quot;vehicleType&quot;: &quot;10&quot;</tspan>  <tspan x="23" y="85" fill="#E2E7ED"> },</tspan> <tspan x="23" y="92.5" fill="#BAFBFF"> &quot;product&quot;: &quot;GAP_RTI&quot;,</tspan> <tspan x="23" y="100" fill="#BAFBFF"> &quot;start_date&quot;: &quot;2017-07-21&quot;,</tspan> <tspan x="23" y="107.5" fill="#BAFBFF"> &quot;invoice&quot;: </tspan> <tspan x="65.907" y="107.5" fill="#FFDECF">1500000</tspan> <tspan x="89.011" y="107.5" fill="#BAFBFF">,</tspan> <tspan x="23" y="115" fill="#BAFBFF"> &quot;firstRegistrationYear&quot;: &quot;2017&quot;,</tspan> <tspan x="23" y="122.5" fill="#BAFBFF"> &quot;requestPaper&quot;: false,</tspan> <tspan x="23" y="130" fill="#BAFBFF"> &quot;isRecentlyPurchased&quot;: true,</tspan> <tspan x="23" y="137.5" fill="#BAFBFF"> &quot;startDate&quot;: &quot;</tspan> <tspan x="75.809" y="137.5" fill="#FFDECF">2017-07-06</tspan> <tspan x="108.814" y="137.5" fill="#BAFBFF">&quot;,</tspan> <tspan x="23" y="145" fill="#BAFBFF"> &quot;drivers&quot;: </tspan> <tspan x="65.907" y="145" fill="#E2E7ED">[</tspan>  <tspan x="23" y="152.5" fill="#E2E7ED"> {</tspan> <tspan x="23" y="160" fill="#BAFBFF"> &quot;birthdate&quot;: &quot;</tspan> <tspan x="89.011" y="160" fill="#FFDECF">1988-09-25</tspan> <tspan x="122.016" y="160" fill="#BAFBFF">&quot;,</tspan> <tspan x="23" y="167.5" fill="#BAFBFF"> &quot;previousRecentClaims&quot;: &quot;0&quot;</tspan>  <tspan x="23" y="175" fill="#E2E7ED"> }</tspan> <tspan x="23" y="182.5" fill="#E2E7ED"> ]</tspan> <tspan x="23" y="190" fill="#E2E7ED">}</tspan>
+        </text>
+        <text fill="#7088A0" font-family="AndaleMono, Andale Mono" font-size="5.5">
+            <tspan x="10.699" y="40">1</tspan> <tspan x="10.699" y="47.5">2</tspan> <tspan x="10.699" y="55">3</tspan> <tspan x="10.699" y="62.5">4</tspan> <tspan x="10.699" y="70">5</tspan> <tspan x="10.699" y="77.5">6</tspan> <tspan x="10.699" y="85">7</tspan> <tspan x="10.699" y="92.5">8</tspan> <tspan x="10.699" y="100">9</tspan> <tspan x="7.399" y="107.5">10</tspan> <tspan x="7.399" y="115">11</tspan> <tspan x="7.399" y="122.5">12</tspan> <tspan x="7.399" y="130">13</tspan> <tspan x="7.399" y="137.5">14</tspan> <tspan x="7.399" y="145">15</tspan> <tspan x="7.399" y="152.5">16</tspan> <tspan x="7.399" y="160">17</tspan> <tspan x="7.399" y="167.5">18</tspan> <tspan x="7.399" y="175">19</tspan> <tspan x="7.399" y="182.5">20</tspan> <tspan x="7.399" y="190">21</tspan> <tspan x="7.399" y="197.5">22</tspan> <tspan x="7.399" y="205">23</tspan>
+        </text>
+        <text fill="#FFF" font-family="Roboto-Medium, Roboto" font-size="4" font-weight="400" letter-spacing=".6">
+            <tspan x="8" y="27">BOD</tspan> <tspan x="17.614" y="27">Y</tspan>
+        </text>
+    </g>
+</svg>
