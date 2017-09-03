@@ -8,7 +8,7 @@ import NotFound from '../components/NotFound';
 import Home from './Home';
 import About from './About';
 import OurProducts from './OurProducts';
-import GapInsurance from './GAP Insurance';
+import GapInsurance from './GAPInsurance';
 import ContactUs from './ContactUs';
 import TermsNotices from './TermsPolicies/TermsNotices';
 import TermsCookies from './TermsPolicies/TermsCookies';

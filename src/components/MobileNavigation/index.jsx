@@ -77,7 +77,7 @@ export default class MobileNavigation extends Component {
           <li><Link to="/" exact activeClassName="selected">Homepage</Link></li>
           <li><Link to="/about" exact activeClassName="selected">About</Link></li>
           <li>
-            <span ClassName="selected" onClick={this.toglSubNav.bind(this)}>
+            <span className="selected" onClick={this.toglSubNav.bind(this)}>
                 Our products<i className="fa fa-angle-down" aria-hidden="true" />
             </span>
             { this.state.showSubNav && <SubNav /> }
