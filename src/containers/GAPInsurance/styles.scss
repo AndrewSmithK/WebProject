@@ -250,28 +250,98 @@
 
 #gap-support {
   padding-top: 70px;
+
   .container {
-    border-left: 1px solid $pale-grey;
-    .content {
-      margin-left: -15px;
-      padding: 49px 0 50px 50px;
-      border-top: 1px solid $pale-grey;
-      border-bottom: 1px solid $pale-grey;
+    border: 1px solid $pale-grey;
+
+    .info {
+      float: left;
+      padding: 50px;
+      width: calc(100% - 350px);
+
+      .title {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .info-list {
+        padding-left: 23px;
+        padding-bottom: 10px;
+
+        .item {
+          position: relative;
+          list-style: none;
+          padding-top: 3px;
+          padding-bottom: 12px;
+
+          .icon {
+            position: absolute;
+            top: 0;
+            left: -23px;
+
+            i {
+              color: #13d6de;
+              font-size: 15px;
+            }
+          }
+        }
+      }
     }
-    .title {
-      line-height: 22px;
-      font-weight: bold;
-      margin-bottom: 30px;
+
+    .files {
+      float: left;
+      padding: 70px 50px 71px 50px;
+      width: 350px;
+      border: 1px solid $pale-grey;
+      background-color: $pale-grey-two;
+
+      .subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .item-paper {
+        padding: 50px 25px 30px 25px;
+        background-image: url('../../images/OurProducts/GapInsurance/paper.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        .item-link {
+          padding-left: 15px;
+          padding-right: 15px;
+
+          a {
+            font-weight: 500;
+            padding-right: 0;
+          }
+
+          .icon-pdf {
+            display: inline-block;
+            float: left;
+            margin-bottom: 20px;
+          }
+
+          .icon-phonelink {
+            display: inline-block;
+            margin-bottom: 20px;
+          }
+
+          .link-text {
+            a {
+              margin-left: 0;
+            }
+            
+            display: inline-block;
+            padding-top: 5px;
+            padding-left: 15px;
+          }
+        }
+      }
     }
-    .subtitle {
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    .text {
-      margin-left: -15px;
-      margin-bottom: 15px;
-      padding-right: 45px;
-    }
+
     .read-carefully {
       padding-left: 15px;
       padding-right: 40px;
@@ -281,44 +351,6 @@
       line-height: 18px;
       font-style: italic;
       font-weight: 300;
-    }
-    .items {
-      padding: 70px 50px 71px 50px;
-      margin-left: -30px;
-      margin-right: -21px;
-      border: 1px solid $pale-grey;
-      background-color: $pale-grey-two;
-
-      .item-paper {
-        .item-link {
-          padding-left: 15px;
-          padding-right: 15px;
-          a {
-            font-weight: 500;
-            padding-right: 0;
-          }
-          .icon-pdf {
-            display: inline-block;
-            float: left;
-            margin-bottom: 20px;
-          }
-          .icon-phonelink {
-            display: inline-block;
-            margin-bottom: 20px;
-          }
-          .link-text {
-            a {
-              margin-left: 0;
-            }
-            display: inline-block;
-            padding-top: 5px;
-            padding-left: 15px;
-          }
-        }
-        padding: 50px 25px 30px 25px;
-        background-image: url('../../images/OurProducts/GapInsurance/icon-paper.svg');
-        background-size: cover;
-      }
     }
   }
 }
@@ -331,12 +363,14 @@
     font-weight: bold;
     margin-bottom: 50px;
   }
+  
   .container {
     .contacts {
       margin-left: 35px;
       padding: 32px 30px 22px 30px;
       background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
       border-radius: 3px;
+
       .title {
         font-family: Roboto, sans-serif;
         font-size: 16px;
