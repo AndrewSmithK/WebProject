@@ -1,0 +1,30 @@
+@import '../../../node_modules/slick-carousel/slick/slick.css';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+
+#home-carousel {
+  color: #000;
+  .slick-list {
+    .slick-slide {
+      text-align: center;
+    }
+  }
+  .slick-dots {
+    li {
+      width: auto;
+    }
+    .slick-active {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #f00;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
