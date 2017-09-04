@@ -6,13 +6,20 @@ $slick-dots-height: 110px;
 #home-carousel {
   padding-bottom: $slick-dots-height;
   background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
-  .slick-next {
+  .slick-arrow {
     z-index: 999;
-    right: 0;
+    font-size: 40px;
+    height: 40px;
+    color: white;
+    &:before {
+      content: '';
+    }
+  }
+  .slick-next {
+    right: 35px;
   }
   .slick-prev {
-    z-index: 999;
-    left: 0;
+    left: 35px;
   }
   .slick-list {
     .slick-slide {
@@ -62,6 +69,7 @@ $slick-dots-height: 110px;
     bottom: -$slick-dots-height;
     li {
       width: auto;
+      margin: 0 40px;
     }
     .slick-active {
       &:before {

@@ -13,9 +13,9 @@ const NextArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', background: 'red' }}
+      style={{ ...style, display: 'block' }}
       onClick={onClick}
-    ></div>
+    ><i className="fa fa-angle-right" aria-hidden="true"></i></div>
   );
 };
 
@@ -24,9 +24,9 @@ const PrevArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', background: 'green' }}
+      style={{ ...style, display: 'block' }}
       onClick={onClick}
-    ></div>
+    ><i className="fa fa-angle-left" aria-hidden="true"></i></div>
   );
 };
 
