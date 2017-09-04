@@ -146,3 +146,30 @@
     }
   }
 }
+
+
+@media screen and (max-width: 992px) {
+  #header-our-products {
+    .container {
+      padding: 0;
+    }
+  }
+
+  #trad-inn-prod {
+    .item {
+      margin-bottom: 20px;
+
+      .icon {
+        img {
+          width: 100%
+        }
+      }
+    }
+  }
+
+  #our-features {
+    .item {
+      margin-bottom: 30px;
+    }
+  }
+}

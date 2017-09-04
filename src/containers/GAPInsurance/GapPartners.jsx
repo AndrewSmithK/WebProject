@@ -13,7 +13,7 @@ export default class GapPartners extends React.Component {
         <div className="row">
           <div className="col-md-12">
             <div className="content">
-              <h2 className="title text-left">
+              <h2 className="title">
                 They are already working with us
               </h2>
               <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }} />

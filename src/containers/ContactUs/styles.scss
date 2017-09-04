@@ -3,7 +3,7 @@
 #header-contact-us {
   padding: 130px 0 90px 0;
   height: 472px;
-  background-image: url('../../images/contact-us/map.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .1));
+  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, rgba(67, 200, 205, .2)), url('../../images/contact-us/map.png');
   background-size: cover;
   
   .container {
@@ -170,10 +170,35 @@
       font-family: Roboto;
     }
   }
+}
 
-  @media screen and (max-width: $break-mobile) {
+@media screen and (max-width: 992px) {
+
+  #contactUs {
+    padding-bottom: 0;
+
+    .wraper {
+      .form-col, .contact-info-col {
+        width: 100%;
+        border-radius: 0;
+        .form-wrap {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-mobile) {
+
+  #header-contact-us {
+    height: auto;
+  }
+
+  #contactUs {
     padding-bottom: 0;
     margin-top: 0;
+
     .wraper {
       .form-col {
         width: 100%;
@@ -190,3 +215,4 @@
     }
   }
 }
+

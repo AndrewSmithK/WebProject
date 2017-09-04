@@ -34,7 +34,7 @@ export default class ProdInDev extends React.Component {
                 </div>
             </div>
             <div className="row items">
-                <div className="item col-md-5 hide">s
+                <div className="item col-md-5 hide">
                   <div className="checkbox">
                     <img src={ActiveCheckBox} alt="ActiveCheckBox" />
                   </div>

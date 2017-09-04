@@ -1,5 +1,25 @@
 @import 'varibles';
 
+@media screen and (max-width: 992px) {
+  .footer {
+    .container {
+      padding: 30px;
+      .logo {
+        margin-right: 30px !important;
+      }
+      .item1 {
+        margin-right: 15px;
+      }
+      .item2 {
+        margin-right: 15px;
+      }
+      .item3 {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $break-mobile) {
   .section {
     padding: 50px 5px;
@@ -21,40 +41,6 @@
 
   // GAP Insurance
 
-  #header-gap-insurance {
-    padding-top: 80px !important;
-    padding-bottom: 0px !important;
-    .display {
-      display: block !important;
-    }
-    .hide {
-      display: none !important;
-    }
-    .logo {
-      margin: 0 0 15px 0 !important;
-      display: inline-block !important;
-      font-size: 11px !important;
-      letter-spacing: 1.6px !important;
-    }
-    .block {
-      padding-right: 15px !important;
-      padding-left: 15px !important;
-      h1 {
-        font-size: 18px !important;
-      }
-
-      h4 {
-        font-size: 16px !important;
-        margin: 20px 0 15px 0 !important;
-      }
-
-      .link {
-        margin: 14px 0 25px 0 !important;
-      }
-
-    }
-  }
-
   #gap-video {
     padding: 20px 0 80px 0 !important;
     .display {
@@ -69,54 +55,6 @@
     }
     .icon-play {
       margin-top: 12px !important;
-    }
-  }
-
-  #gap-careAbout {
-    padding: 50px 20px 16px 20px !important;
-    .display {
-      display: block !important;
-    }
-    .hide {
-      display: none !important;
-    }
-    .title {
-      font-size: 28px !important;
-      padding: 0;
-      margin-top: 0 !important;
-      margin-bottom: 30px !important;
-    }
-    .container {
-      .right-item {
-        margin-left: -20px !important;
-      }
-      .item {
-        margin-bottom: 20px !important;
-        .icon {
-          margin-left: 25px !important;
-          margin-right: 0 !important;
-        }
-        .text {
-          h4 {
-            font-size: 16px;
-            padding: 10px 0 8px 10px !important;
-          }
-        }
-      }
-    }
-  }
-
-  #gap-fact-sheet {
-    padding-top: 50px !important;
-    padding-bottom: 32px !important;
-    .display {
-      display: block !important;
-    }
-    .hide {
-      display: none !important;
-    }
-    .main-title {
-      font-size: 28px !important;
     }
   }
 
@@ -162,51 +100,6 @@
         font-size: 16px !important;
         margin-right: 0 !important;
         margin-bottom: 20px !important;
-      }
-    }
-  }
-
-  #gap-support {
-    padding-top: 50px !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    .title {
-      font-size: 28px !important;
-    }
-    .subtitle {
-      font-size: 20px !important;
-    }
-    .container {
-      .content {
-        margin-left: 0 !important;
-        border: none !important;
-        padding-top: 14px !important;
-        padding-left: 5px !important;
-        .title {
-          font-size: 16px !important;
-        }
-        .read-carefully {
-          padding-left: 20px !important;
-        }
-        .text {
-          padding-right: 0 !important;
-          margin-left: 0 !important;
-        }
-      }
-      .items {
-        height: 285px;
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        .item-paper {
-          margin-top: -104px;
-          background-size: cover;
-          border-bottom: 1px solid #eaeff3;
-          .item-link {
-            width: 100%;
-          }
-        }
       }
     }
   }

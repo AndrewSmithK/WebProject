@@ -14,12 +14,8 @@ export default class GapHeader extends React.Component {
         <div className="row">
           <div className="col-md-7 p-0">
             <div className="block">
-              <div className="row">
-                <div className="col-md-4" >
-                  <div className="logo text-blue bg-white">
-                    Gap Insurance
-                  </div>
-                </div>
+              <div className="logo-box">
+                <div className="logo text-blue bg-white">Gap Insurance</div>
               </div>
               <h1 className="text-white">
                 Protect 100% of the purchase price of your car for up to 5 years.

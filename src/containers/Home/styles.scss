@@ -664,6 +664,7 @@
     }
 
     .row {
+      margin: 0;
       margin-bottom: 25px;
 
       .col {
@@ -789,7 +790,6 @@
       overflow: hidden;
     }
     .justify-content-around {
-      width: 1000px;
       & > div {
         float: left;
       }
