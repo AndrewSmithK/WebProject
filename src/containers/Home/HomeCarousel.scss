@@ -4,7 +4,7 @@
 $slick-dots-height: 110px;
 
 #home-carousel {
-  padding-bottom: $slick-dots-height;
+  // padding-bottom: $slick-dots-height;
   background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
   .slick-arrow {
     z-index: 999;
@@ -83,6 +83,28 @@ $slick-dots-height: 110px;
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
+      }
+    }
+  }
+  .bottom-slider {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #3ba8d2;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &-image {
+      line-height: 110px;
+      img {
+        display: inline-block;
       }
     }
   }
