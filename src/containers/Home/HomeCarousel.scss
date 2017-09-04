@@ -17,6 +17,42 @@ $slick-dots-height: 110px;
   .slick-list {
     .slick-slide {
       text-align: center;
+      .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 34px;
+        margin-bottom: 50px;
+      }
+      .belgian-financial {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.33;
+        margin-bottom: 20px;
+      }
+      .read-article {
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Roboto;
+        margin-bottom: 50px;
+        i {
+          margin-left: 10px;
+        }
+      }
+      .text {
+        font-family: MuseoSans;
+        font-size: 16px;
+        font-weight: 300;
+        span {
+          font-weight: bold;
+        }
+      }
     }
   }
   .slick-dots {

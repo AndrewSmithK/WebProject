@@ -51,17 +51,17 @@ export default () => {
         <div><h3>1</h3></div>
         <div><h3>2</h3></div>
         <div>
-          <h1>
-            The whole world is talking about Qover
-          </h1>
-          <div>
-            « Belgian financial technology startup Qover has raised €5.5 million in a Series A round ledby Anthemis. »
-          </div>
-          <div>
-            Read the full article
-          </div>
-          <div>
-            Jonathan Keane, Tech. EU
+          <div className="container">
+            <h2 className="title">
+              The whole world is talking <br /> about Qover
+            </h2>
+            <div className="belgian-financial">
+              « Belgian financial technology startup Qover has raised €5.5 million <br /> in a Series A round ledby Anthemis. »
+            </div>
+            <a href="#" className="read-article">Read the full article<i className="fa fa-angle-right" aria-hidden="true" /></a>
+            <div className="text">
+              Jonathan Keane, <span>Tech. EU</span>
+            </div>
           </div>
         </div>
         <div><h3>4</h3></div>
