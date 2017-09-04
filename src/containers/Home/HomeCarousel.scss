@@ -1,14 +1,29 @@
 @import '../../../node_modules/slick-carousel/slick/slick.css';
 @import '../../../node_modules/slick-carousel/slick/slick-theme.css';
 
+$slick-dots-height: 110px;
+
 #home-carousel {
-  color: #000;
+  padding-bottom: $slick-dots-height;
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  .slick-next {
+    z-index: 999;
+    right: 0;
+  }
+  .slick-prev {
+    z-index: 999;
+    left: 0;
+  }
   .slick-list {
     .slick-slide {
       text-align: center;
     }
   }
   .slick-dots {
+    height: $slick-dots-height;
+    line-height: $slick-dots-height;
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: -$slick-dots-height;
     li {
       width: auto;
     }
@@ -18,9 +33,9 @@
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #f00;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #fff;
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
