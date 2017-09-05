@@ -1,0 +1,18 @@
+@import '../../../node_modules/slick-carousel/slick/slick.css';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+
+.products-carousel {
+
+    .slick-slider {
+        .slick-slide {
+            padding-left: 10px;
+            padding-right: 10px;
+            transform: scale(1, 0.9);
+            transition: 0.3s;
+            &.slick-center {
+                transform: none;
+            }
+        }
+    }
+
+}

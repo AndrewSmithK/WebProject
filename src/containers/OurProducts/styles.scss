@@ -68,6 +68,27 @@
       }
     }
   }
+  .products-carousel {
+    display: none;
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    padding-right: 0;
+    padding-left: 0;
+    .products-carousel {
+      display: block;
+    }
+    .only-desktop {
+      display: none;
+    }
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+      .item {
+        margin: 0;
+      }
+    }
+  }
 }
 
 #our-features {

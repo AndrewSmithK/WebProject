@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Carousel from './ProductsCarousel';
+
 import AccidentHealth from '../../images/OurProducts/accident-health.png';
 import Travel from '../../images/OurProducts/travel.png';
 import JobLoss from '../../images/OurProducts/job-loss.png';
@@ -11,6 +14,11 @@ export default class TradInnProd extends React.Component {
         Traditional & innovative products
       </h2>
       <div className="container">
+          <Carousel />
+        
+      </div>
+
+      <div className="container only-desktop">
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="item text-center bg-white">
