@@ -461,17 +461,20 @@
     }
     .nav-link {
       text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 14px;
+      font-weight: 300;
       letter-spacing: 0.5px;
       text-align: center;
       color: #fff;
       border-radius: 0;
-      padding: 13px 0 11px 0;
+      line-height: 48px;
       margin: 0 30px;
+      padding: 0;
       &.active {
         background-color: transparent;
         border-bottom: 2px solid #fff;
+        font-size: 16px;
+        font-weight: 500;
       }
     }
   }
