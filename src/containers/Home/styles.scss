@@ -478,6 +478,36 @@
       }
     }
   }
+
+  @media screen and (max-width: $break-mobile) {
+    .gap-tabs {
+      height: 50px;
+      overflow: hidden;
+      .container {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+        .nav-pills {
+          width: 440px;
+          .nav-item {
+            .nav-link {
+              font-size: 12px;
+              font-weight: 300;
+              letter-spacing: 0.5px;
+              margin: 0 10px;
+              &.active {
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+            &:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #partners {
