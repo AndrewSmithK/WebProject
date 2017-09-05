@@ -46,40 +46,53 @@ export default () => {
                             <h5 className="title">Accident & Health</h5>
                             <p className="text">
                                 Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.
-                    </p>
+                  whether it occurs at home or at work.
+                </p>
                         </div>
                         <button className="btn btn-disabled">Coming soon</button>
                     </div>
                 </div>
-
-                <div className="col-lg-3 col-md-6">
+                <div className="col-lg-3 col-md-6 d-md-block">
                     <div className="item text-center bg-white">
                         <div className="icon">
-                            <img src={AccidentHealth} alt="accident-health" />
+                            <img src={Travel} alt="travel" />
                         </div>
                         <div className="text-container">
-                            <h5 className="title">Accident & Health</h5>
+                            <h5 className="title">Travel</h5>
                             <p className="text">
                                 Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.
-                    </p>
+                  whether it occurs at home or at work.
+                </p>
                         </div>
                         <button className="btn btn-disabled">Coming soon</button>
                     </div>
                 </div>
-
-                <div className="col-lg-3 col-md-6">
+                <div className="col-lg-3 col-md-6 d-md-block">
                     <div className="item text-center bg-white">
-                        <div className="icon">
-                            <img src={AccidentHealth} alt="accident-health" />
+                        <div className="icon" >
+                            <img src={JobLoss} alt="job-loss" />
                         </div>
                         <div className="text-container">
-                            <h5 className="title">Accident & Health</h5>
+                            <h5 className="title">Job Loss</h5>
                             <p className="text">
                                 Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.
-                    </p>
+                  whether it occurs at home or at work.
+                </p>
+                        </div>
+                        <button className="btn btn-disabled">Coming soon</button>
+                    </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-md-block">
+                    <div className="item text-center bg-white">
+                        <div className="icon last-icon" >
+                            <img src={Landlord} alt="landlord" />
+                        </div>
+                        <div className="text-container">
+                            <h5 className="title">Landlord Insurance</h5>
+                            <p className="text">
+                                Protect you from the financial loss from an accident,
+                  whether it occurs at home or at work.
+                </p>
                         </div>
                         <button className="btn btn-disabled">Coming soon</button>
                     </div>

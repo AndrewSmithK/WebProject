@@ -9,6 +9,9 @@
             padding-right: 10px;
             transform: scale(1, 0.9);
             transition: 0.3s;
+            .item {
+                height: 300px;
+            }
             &.slick-center {
                 transform: none;
             }
