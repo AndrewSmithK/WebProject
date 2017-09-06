@@ -21,7 +21,7 @@ export default (props) => (
                     />
                 </p>
             </div>
-            {props.staus === 'soon' ?
+            {props.status === 'soon' ?
                 <button className="btn btn-disabled">
                     <FormattedMessage
                         id={`products.traditional.ComingSoon`}

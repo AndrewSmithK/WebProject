@@ -1,85 +1,61 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Slider from 'react-slick'
-
-import AccidentHealth from '../../images/OurProducts/accident-health.png';
-import Travel from '../../images/OurProducts/travel.png';
-import JobLoss from '../../images/OurProducts/job-loss.png';
-import Landlord from '../../images/OurProducts/landlord.png';
+import { FormattedMessage } from 'react-intl-phraseapp';
 
 import './ProductsCarousel.scss'
 
-export default () => {
-    const settings = {
-        dots: true,
-        infinite: false,
-        centerMode: true,
-        initialSlide: 1
+export default class ProductsCarousel extends Component {
+    render() {
+        const settings = {
+            dots: true,
+            infinite: false,
+            centerMode: true,
+            initialSlide: 1
+        }
+        return (
+            <div className="products-carousel">
+                <Slider {...settings}>
+                    {
+                        this.props.items.map((item, index) => (
+                            <div key={index} className="col-lg-3 col-md-6">
+                                <div className="item text-center bg-white">
+                                    <div className="icon">
+                                        <img src={item.image} alt="accident-health" />
+                                    </div>
+                                    <div className="text-container">
+                                        <h5 className="title">
+                                            <FormattedMessage
+                                                id={`products.traditional.${index}.title`}
+                                                defaultMessage={item.title}
+                                            />
+                                        </h5>
+                                        <p className="text">
+                                            <FormattedMessage
+                                                id={`products.traditional.${index}.text`}
+                                                defaultMessage={item.text}
+                                            />
+                                        </p>
+                                    </div>
+                                    {item.status === 'soon' ?
+                                        <button className="btn btn-disabled">
+                                            <FormattedMessage
+                                                id={`products.traditional.ComingSoon`}
+                                                defaultMessage={`Coming soon`}
+                                            />
+                                        </button> :
+                                        <button className="btn">
+                                            <FormattedMessage
+                                                id={`products.traditional.ComingSoon`}
+                                                defaultMessage={`More info`}
+                                            />
+                                        </button>
+                                    }
+                                </div>
+                            </div>
+                        ))
+                    }
+                </Slider>
+            </div>
+        )
     }
-    return (
-        <div className="products-carousel">
-            <Slider {...settings}>
-                <div className="col-lg-3 col-md-6">
-                    <div className="item text-center bg-white">
-                        <div className="icon">
-                            <img src={AccidentHealth} alt="accident-health" />
-                        </div>
-                        <div className="text-container">
-                            <h5 className="title">Accident & Health</h5>
-                            <p className="text">
-                                Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-                        </div>
-                        <button className="btn btn-disabled">Coming soon</button>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-md-block">
-                    <div className="item text-center bg-white">
-                        <div className="icon">
-                            <img src={Travel} alt="travel" />
-                        </div>
-                        <div className="text-container">
-                            <h5 className="title">Travel</h5>
-                            <p className="text">
-                                Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-                        </div>
-                        <button className="btn btn-disabled">Coming soon</button>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-md-block">
-                    <div className="item text-center bg-white">
-                        <div className="icon" >
-                            <img src={JobLoss} alt="job-loss" />
-                        </div>
-                        <div className="text-container">
-                            <h5 className="title">Job Loss</h5>
-                            <p className="text">
-                                Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-                        </div>
-                        <button className="btn btn-disabled">Coming soon</button>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-md-block">
-                    <div className="item text-center bg-white">
-                        <div className="icon last-icon" >
-                            <img src={Landlord} alt="landlord" />
-                        </div>
-                        <div className="text-container">
-                            <h5 className="title">Landlord Insurance</h5>
-                            <p className="text">
-                                Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-                        </div>
-                        <button className="btn btn-disabled">Coming soon</button>
-                    </div>
-                </div>
-            </Slider>
-        </div>
-    )
-
 }
