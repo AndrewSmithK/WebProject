@@ -7,6 +7,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {IntlProvider} from 'react-intl';
 import {initializePhraseAppEditor} from 'react-intl-phraseapp';
 
+import $ from 'jquery'
+import Popper from 'popper.js'
+
 import configureStore from './store'
 import App from './containers/App'
 import registerServiceWorker from './registerServiceWorker'
@@ -22,6 +25,11 @@ initializePhraseAppEditor({
   suffix: '__]]'
 });
 
+window.jQuery = $
+window.Popper = Popper
+require('bootstrap')
+
+// Let the reducers handle initial state
 const initialState = {}
 const store = configureStore(initialState)
 

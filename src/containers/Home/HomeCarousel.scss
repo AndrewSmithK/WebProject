@@ -1,0 +1,89 @@
+@import '../../../node_modules/slick-carousel/slick/slick.css';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.css';
+
+$slick-dots-height: 110px;
+
+#home-carousel {
+  padding-bottom: $slick-dots-height;
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+  .slick-arrow {
+    z-index: 999;
+    font-size: 40px;
+    height: 40px;
+    color: white;
+    &:before {
+      content: '';
+    }
+  }
+  .slick-next {
+    right: 35px;
+  }
+  .slick-prev {
+    left: 35px;
+  }
+  .slick-list {
+    .slick-slide {
+      text-align: center;
+      .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 34px;
+        margin-bottom: 50px;
+      }
+      .belgian-financial {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.33;
+        margin-bottom: 20px;
+      }
+      .read-article {
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Roboto;
+        margin-bottom: 50px;
+        i {
+          margin-left: 10px;
+        }
+      }
+      .text {
+        font-family: MuseoSans;
+        font-size: 16px;
+        font-weight: 300;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    height: $slick-dots-height;
+    line-height: $slick-dots-height;
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: -$slick-dots-height;
+    li {
+      width: auto;
+      margin: 0 40px;
+    }
+    .slick-active {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #fff;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}

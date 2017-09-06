@@ -68,6 +68,29 @@
       }
     }
   }
+  .products-carousel {
+    display: none;
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    padding: 50px 0 70px 0;
+    h2.title {
+      margin: 0 20px;
+    }
+    .products-carousel {
+      display: block;
+    }
+    .only-desktop {
+      display: none;
+    }
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+      .item {
+        margin: 0;
+      }
+    }
+  }
 }
 
 #our-features {

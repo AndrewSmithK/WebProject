@@ -16,6 +16,11 @@ export default class TradInnProd extends React.Component {
         />
       </h2>
       <div className="container">
+          <Carousel />
+        
+      </div>
+
+      <div className="container only-desktop">
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="item text-center bg-white">

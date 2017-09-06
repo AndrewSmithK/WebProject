@@ -22,7 +22,7 @@
 
 @media screen and (max-width: $break-mobile) {
   .section {
-    padding: 50px 5px;
+    padding: 50px 0;
 
     & > .title {
       padding-left: 15px;
@@ -123,7 +123,7 @@
   }
 
   #trad-inn-prod {
-    padding: 50px 20px !important;
+    // padding: 50px 20px !important;
     .title {
       font-size: 28px !important;
       margin-bottom: 12px !important;

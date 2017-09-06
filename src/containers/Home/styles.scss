@@ -364,7 +364,7 @@
 
 #gap-insurance {
   position: relative;
-  padding-top: 70px;
+  padding-top: 0;
 
   .container{
     .subtitle {
@@ -443,10 +443,75 @@
       }
     }
   }
+
+  .gap-tabs {
+    background-color: red;
+    margin-bottom: 50px;
+  }
+  .nav-item {
+    & > p {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 1.3px;
+      text-align: left;
+      color: #9cc0ef;
+      text-transform: uppercase;
+      margin-right: 108px;
+      line-height: 50px;
+    }
+    .nav-link {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #fff;
+      border-radius: 0;
+      line-height: 48px;
+      margin: 0 30px;
+      padding: 0;
+      &.active {
+        background-color: transparent;
+        border-bottom: 2px solid #fff;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    .gap-tabs {
+      height: 50px;
+      overflow: hidden;
+      .container {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+        .nav-pills {
+          width: 440px;
+          .nav-item {
+            .nav-link {
+              font-size: 12px;
+              font-weight: 300;
+              letter-spacing: 0.5px;
+              margin: 0 10px;
+              &.active {
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+            &:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #partners {
-  padding: 70px 0 75px;
+  padding: 70px70px 0 75px;
 
   .container {
     margin: 40px auto auto;
