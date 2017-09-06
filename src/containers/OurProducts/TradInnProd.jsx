@@ -1,13 +1,73 @@
 import React from 'react';
 
 import Carousel from './ProductsCarousel';
+import Item from './ProductItem'
 
 import AccidentHealth from '../../images/OurProducts/accident-health.png';
 import Travel from '../../images/OurProducts/travel.png';
 import JobLoss from '../../images/OurProducts/job-loss.png';
 import Landlord from '../../images/OurProducts/landlord.png';
 
+const mock = [{
+  image: AccidentHealth,
+  title: 'Accident & Health',
+  text: 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+  status: 'soon',
+  category: 'motor',
+  country: 'france'
+}, {
+  image: Travel,
+  title: 'Travel',
+  text: 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+  status: 'soon',
+  category: 'lifectyle',
+  country: 'belgium'
+}, {
+  image: JobLoss,
+  title: 'Job Loss',
+  text: 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+  status: 'soon',
+  category: 'lifectyle',
+  country: 'germany'
+}, {
+  image: Landlord,
+  title: 'Landlord Insurance',
+  text: 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+  status: 'soon',
+  category: 'motor',
+  country: 'germany'
+}]
+
 export default class TradInnProd extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      category: 'all',
+      country: 'belgium'
+    }
+  }
+
+  changeCategory(category) {
+    // this.setState({
+    //   category
+    // })
+    console.log('test', category)
+  }
+
+  changeCountry(country) {
+
+  }
+
+  renderProductItems(items) {
+    if (this.state.category === 'all') {
+      items.forEach(item => {
+        if (item.country === this.state.country) {
+          return item
+        }
+      })
+    }
+  }
+
   render() {
     return (<section className="section" id="trad-inn-prod">
       <h2 className="title text-grey">
@@ -49,66 +109,7 @@ export default class TradInnProd extends React.Component {
 
       <div className="container only-desktop">
         <div className="row">
-          <div className="col-lg-3 col-md-6">
-            <div className="item text-center bg-white">
-              <div className="icon">
-                <img src={AccidentHealth} alt="accident-health" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">Accident & Health</h5>
-                <p className="text">
-                  Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-              </div>
-              <button className="btn btn-disabled">Coming soon</button>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 d-none d-md-block">
-            <div className="item text-center bg-white">
-              <div className="icon">
-                <img src={Travel} alt="travel" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">Travel</h5>
-                <p className="text">
-                  Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-              </div>
-              <button className="btn btn-disabled">Coming soon</button>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 d-none d-md-block">
-            <div className="item text-center bg-white">
-              <div className="icon" >
-                <img src={JobLoss} alt="job-loss" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">Job Loss</h5>
-                <p className="text">
-                  Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-              </div>
-              <button className="btn btn-disabled">Coming soon</button>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 d-none d-md-block">
-            <div className="item text-center bg-white">
-              <div className="icon last-icon" >
-                <img src={Landlord} alt="landlord" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">Landlord Insurance</h5>
-                <p className="text">
-                  Protect you from the financial loss from an accident,
-                  whether it occurs at home or at work.
-                </p>
-              </div>
-              <button className="btn btn-disabled">Coming soon</button>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>);

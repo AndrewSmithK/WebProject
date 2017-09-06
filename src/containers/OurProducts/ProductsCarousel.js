@@ -8,25 +8,6 @@ import Landlord from '../../images/OurProducts/landlord.png';
 
 import './ProductsCarousel.scss'
 
-const carouselItem = (props) => {
-    return (
-        <div className="col-lg-3 col-md-6">
-            <div className="item text-center bg-white">
-                <div className="icon">
-                    <img src={props.image} alt="accident-health" />
-                </div>
-                <div className="text-container">
-                    <h5 className="title">{props.title}</h5>
-                    <p className="text">
-                        {props.text}
-                    </p>
-                </div>
-                <button className="btn btn-disabled">{props.buttonText}</button>
-            </div>
-        </div>
-    )
-}
-
 export default () => {
     const settings = {
         dots: true,
