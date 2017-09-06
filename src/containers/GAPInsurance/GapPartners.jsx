@@ -1,5 +1,6 @@
-
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import dieteren from '../../images/OurProducts/GapInsurance/logo-dieteren-white.svg';
 import Fiat from '../../images/OurProducts/GapInsurance/logo-fiat.png';
 import VW from '../../images/OurProducts/GapInsurance/logo-vw.png';
@@ -14,7 +15,10 @@ export default class GapPartners extends React.Component {
           <div className="col-md-12">
             <div className="content">
               <h2 className="title">
-                They are already working with us
+                <FormattedMessage 
+                  id={`gap.partners.title`}
+                  defaultMessage={`They are already working with us`}
+                />
               </h2>
               <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }} />
               <div className="icon hide">

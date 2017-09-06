@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import IconSettings from '../../images/About/WhyQover/icon-settings.svg';
 import IconEnergy from '../../images/About/WhyQover/icon-energy.svg';
 import IconDevAbout from '../../images/About/WhyQover/icon-dev-about.svg';
@@ -7,57 +9,101 @@ import qover from '../../images/About/WhyQover/q-qover.svg';
 import DropdownItem from './dropdownItem';
 
 export default class WhyQover extends Component {
+  whyItems = [
+    {
+      title: "We build the product & the pricing ourselves",
+      icon: IconSettings,
+      text: [
+        {paragraph: "The only viable way to truly innovate in Insurance is to behave as an Insurer from a product development & pricing perspective."},
+        {paragraph: "This is what we do at Qover! We don't sell &quot;on the shelf&quot; products from an Insurer but we internally build our own products and make the pricing."},
+        {paragraph: "So at Qover, you will find unique innovative products with a pricing sophistication that goes beyond what traditional insurers do."},
+        {paragraph: "With Qover, you can differentiate yourself from the market with a much more competitive price for your customers."}
+      ]
+    },
+    {
+      title: "We are strong : The Lloyd’s is behind us",
+      icon: IconEnergy,
+      text: [
+        {paragraph: <img src={lloyds} alt="" />},
+        {paragraph: "Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks."},
+        {paragraph: "Around 80 syndicates are underwriting insurance at Lloyd’s, covering all classes of business. Together they interact with thousands of brokers daily to create insurance solutions for businesses in over 200 countries and territories around the world. Lloyd’s insures the majority of FTSE 100 and Dow Jones industrial average companies."},
+        {paragraph: "Lloyd’s enjoys strong financial security supported by excellent ratings. Visit www.lloyds.com for more information."}
+      ]
+    },
+    {
+      title: "We are the only fully digital player",
+      icon: IconDevAbout,
+      text: [
+        {paragraph: "Digital does not only mean &quot;on the internet&quot;. At Qover it means rethinking the front and back-office of an insurer optimizing processes by using technology."},
+        {paragraph: "The result allows us to make instant decision, offer personalised products at the lowest rate."},
+        {paragraph: "Check it out by yourself: no upfront fees, no hidden charges. By filling few basic details, your customer gets a personalised quote and buy the contract in real time. No more paper!"},
+        {paragraph: "We have entirely digitalised the user experience. We created the smartest system around where you can access your own dashboard, manage your porfolio & follow your statistics."}
+      ]
+    }
+  ];
+
   render() {
     return (<section className="section" id="why-qover">
       <h1 className="title text-turquoise">
-        Why Qover?
+        <FormattedMessage
+          id="about.whyQover.title"
+          defaultMessage={`Why Qover?`}
+        />
       </h1>
       <div className="container">
-        <div className="row">
-          <DropdownItem title="We build the product & the pricing ourselves" image={IconSettings} >
-            <p className="text text-grey">The only viable way to truly innovate in Insurance is to behave as an Insurer from a product development & pricing perspective.</p>
-            <p className="text text-grey">This is what we do at Qover! We don't sell &quot;on the shelf&quot; products from an Insurer but we internally build our own products and make the pricing.</p>
-            <p className="text text-grey">So at Qover, you will find unique innovative products with a pricing sophistication that goes beyond what traditional insurers do.</p>
-            <p className="text text-grey">With Qover, you can differentiate yourself from the market with a much more competitive price for your customers.</p>
-          </DropdownItem>
-          <DropdownItem title="We are strong : The Lloyd’s is behind us" image={IconEnergy} >
-            <img src={lloyds} className="logo" alt="lloyds logo" />
-            <p className="text text-grey">Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks.</p>
-            <p className="text text-grey">Around 80 syndicates are underwriting insurance at Lloyd’s, covering all classes of business. Together they interact with thousands of brokers daily to create insurance solutions for businesses in over 200 countries and territories around the world. Lloyd’s insures the majority of FTSE 100 and Dow Jones industrial average companies.</p>
-            <p className="text text-grey">Lloyd’s enjoys strong financial security supported by excellent ratings. Visit www.lloyds.com for more information.</p>
-          </DropdownItem>
-          <DropdownItem title="We are the only fully digital player" image={IconDevAbout} >
-            <p className="text text-grey">Digital does not only mean &quot;on the internet&quot;. At Qover it means rethinking the front and back-office of an insurer optimizing processes by using technology.</p>
-            <p className="text text-grey">The result allows us to make instant decision, offer personalised products at the lowest rate.</p>
-            <p className="text text-grey">Check it out by yourself: no upfront fees, no hidden charges. By filling few basic details, your customer gets a personalised quote and buy the contract in real time. No more paper!</p>
-            <p className="text text-grey">We have entirely digitalised the user experience. We created the smartest system around where you can access your own dashboard, manage your porfolio & follow your statistics.</p>
-          </DropdownItem>
+        <div className="row text-grey">
+        {
+          this.whyItems.map((item, i) => (
+            <DropdownItem title={item.title} numb={i} key={i} image={item.icon} >
+            {
+              item.text.map((el, j) => (
+                <p className="text" key={j}>
+                  <FormattedMessage id={`about.whyQover.desc${i}.p${j}`} defaultMessage={el.p} />
+                </p>
+              ))
+            }
+            </DropdownItem>
+          ))
+        }
         </div>
       </div>
        <div className="container" id="insertion">
          <div className="insertion row">
-           <div className="item col-md-10 col-sm-12">
-           <div className="qover-logo">
-            <img src={qover} alt="qover" />
-           </div>
-           <div>
-             <b>With our business model, you keep the same level of commission</b> 
-             (more if you wish to administrate your customer contracts yourself) 
-             <b>while offering much cheaper premium to your customers.</b>
-           </div>
-           <div className="text text-title">
-             HERE'S HOW IT WORKS:
-           </div>
-           <p className="text item-text">
-             - Using technology, we have trimmed the fat from traditional insurance processes by rebuilding the entire insurance ecosystem from scratch.
-           </p>
-           <p className="text item-text">
-             - As coverholder of the Lloyd's of London, we guarantee the best financial security.
-           </p>
-           <p className="text item-text">
-             - At Qover we made insurance faster, cheaper and safer.
-           </p>
-           </div>
+            <div className="item col-md-10 col-sm-12">
+            <div className="qover-logo">
+              <img src={qover} alt="qover" />
+            </div>
+            <b><FormattedMessage 
+              id={`about.insertion.p1.part1`}
+              defaultMessage={`With our business model, you keep the same level of commission`}
+            /></b> <FormattedMessage 
+              id={`about.insertion.p1.part2`}
+              defaultMessage={`(more if you wish to administrate your customer contracts yourself)`}
+            /> <b><FormattedMessage 
+              id={`about.insertion.p1.part3`}
+              defaultMessage={`while offering much cheaper premium to your customers.`}
+            /></b>
+            <div className="text text-title">
+              <FormattedMessage 
+                id={`about.insertion.subtitle`}
+                defaultMessage={`Here's how it works:`}
+              />
+            </div>
+            <p className="text item-text">
+              <FormattedMessage 
+                id={`about.insertion.p2.part1`}
+                defaultMessage={`- Using technology, we have trimmed the fat from traditional insurance processes by rebuilding the entire insurance ecosystem from scratch.`}
+              /><br />
+              <FormattedMessage 
+                id={`about.insertion.p2.part2`}
+                defaultMessage={`- As coverholder of the Lloyd's of London, we guarantee the best financial security.`}
+              /><br />
+              <FormattedMessage 
+                id={`about.insertion.p2.part3`}
+                defaultMessage={`- At Qover we made insurance faster, cheaper and safer.`}
+              />
+            </p>
+            </div>
          </div>
        </div>
     </section>);

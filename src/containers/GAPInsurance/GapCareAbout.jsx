@@ -1,5 +1,6 @@
-
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import IconCancel from '../../images/OurProducts/GapInsurance/icon-cancel.svg';
 import IconCalendar from '../../images/OurProducts/GapInsurance/icon-calendar.svg';
 import IconCoverage from '../../images/OurProducts/GapInsurance/icon-coverage.svg';
@@ -9,7 +10,10 @@ export default class GapCareAbout extends React.Component {
   render() {
     return <section className="section" id="gap-careAbout">
       <h2 className="title text-grey">
-        We care about your customer
+        <FormattedMessage 
+          id={`gap.careAbout.title`}
+          defaultMessage={`We care about your customer`}
+        />
       </h2>
       <div className="container">
         <div className="row">
@@ -20,12 +24,19 @@ export default class GapCareAbout extends React.Component {
               </div>
               <div className="text">
                 <h4 className="text-grey">
-                  Cancel anytime
+                  <FormattedMessage 
+                    id={`gap.careAbout.cancel.title`}
+                    defaultMessage={`Cancel anytime`}
+                  />
                 </h4>
                 <p className="text-grey hide">
-                  Your customer can cancel his contract at anytime.
-                  We will automatically make a pro-rata refund.
-                  There is no cancellation fee. Full transparency, no hidden fees!
+                  <FormattedMessage 
+                    id={`gap.careAbout.cancel.text`}
+                    defaultMessage={`
+                      Your customer can cancel his contract at anytime.
+                      We will automatically make a pro-rata refund.
+                      There is no cancellation fee. Full transparency, no hidden fees!`}
+                  />
                 </p>
               </div>
             </div>
@@ -37,12 +48,18 @@ export default class GapCareAbout extends React.Component {
               </div>
               <div className="text">
                 <h4 className="text-grey">
-                  Extend prevailing 100% coverage
+                  <FormattedMessage 
+                    id={`gap.careAbout.extend.title`}
+                    defaultMessage={`Extend prevailing 100% coverage`}
+                  />
                 </h4>
                 <p className="text-grey hide">
-                  Sometimes Full Casco insurers guarantee 100% of a vehicle value
-                  for a certain period.Your customer can then defer his contract for
-                  up to 3 years when this 100% ends.
+                  <FormattedMessage 
+                    id={`gap.careAbout.extend.text`}
+                    defaultMessage={`Sometimes Full Casco insurers guarantee 100% of a vehicle value
+                    for a certain period.Your customer can then defer his contract for
+                    up to 3 years when this 100% ends.`}
+                  />
                 </p>
               </div>
             </div>
@@ -54,11 +71,17 @@ export default class GapCareAbout extends React.Component {
               </div>
               <div className="text">
                 <h4 className="text-grey">
-                  Coverage up to 5 years
+                  <FormattedMessage 
+                    id={`gap.careAbout.coverage.title`}
+                    defaultMessage={`Coverage up to 5 years`}
+                  />
                 </h4>
                 <p className="text-grey hide">
-                  Your customer can protect 100% of the purchase price of his car for
-                  up to 5 years.
+                  <FormattedMessage 
+                    id={`gap.careAbout.coverage.text`}
+                    defaultMessage={`Your customer can protect 100% of the purchase price of his car for
+                    up to 5 years.`}
+                  />
                 </p>
               </div>
             </div>
@@ -70,12 +93,18 @@ export default class GapCareAbout extends React.Component {
               </div>
               <div className="text">
                 <h4 className="text-grey">
-                  New & recent used cars
+                  <FormattedMessage 
+                    id={`gap.careAbout.cars.title`}
+                    defaultMessage={`New & recent used cars`}
+                  />
                 </h4>
                 <p className="text-grey hide">
-                  Available for new and used cars, which are maximum 3 years old,
-                  have covered less than 100,000 km at the start date and have been
-                  bought in the last 6 months.
+                  <FormattedMessage 
+                    id={`gap.careAbout.cars.text`}
+                    defaultMessage={`Available for new and used cars, which are maximum 3 years old,
+                    have covered less than 100,000 km at the start date and have been
+                    bought in the last 6 months.`}
+                  />
                 </p>
               </div>
             </div>

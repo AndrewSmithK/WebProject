@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
 
 export default class AboutHeader extends React.Component {
   render() {
@@ -6,11 +7,21 @@ export default class AboutHeader extends React.Component {
       <div className="container">
         <div className="row justify-content-center text-center">
           <h1 className="title text-white">
-					About Qover
+          <FormattedMessage
+            id="about.headerTitle"
+            defaultMessage={`About Qover`}
+          />
 				</h1>
           <h4 className="subtitle text-white">
-						Bringing insurance to a whole new level<br className="d-none d-md-block"/>
-            &nbsp;– experience seamless digital service
+            <FormattedMessage
+              id="about.headerSubtitle1"
+              defaultMessage={`Bringing insurance to a whole new level`}
+            />
+            <br className="d-none d-md-block"/>&nbsp;
+            <FormattedMessage
+              id="about.headerSubtitle2"
+              defaultMessage={`– experience seamless digital service`}
+            />
 					</h4>
         </div>
       </div>

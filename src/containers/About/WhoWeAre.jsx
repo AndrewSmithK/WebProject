@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
 
 import Quentin from '../../images/About/Who-we-are/quentin.png';
 import JeanCharles from '../../images/About/Who-we-are/jean-charles.png';
@@ -38,8 +39,18 @@ export default class WhoWeAre extends React.Component {
 
   render() {
     return (<section className="section" id="who-we-are">
-      <h1 className="title text-turquoise">Who we are?</h1>
-      <h3 className="subtitle text-grey">Meet our team of ninjas</h3>
+      <h1 className="title text-turquoise">
+        <FormattedMessage 
+          id={`about.whoWeAre.title`}
+          defaultMessage={`Who we are?`}
+        />
+      </h1>
+      <h3 className="subtitle text-grey">
+        <FormattedMessage 
+          id={`about.whoWeAre.subtitle`}
+          defaultMessage={`Meet our team of ninjas`}
+        />
+      </h3>
       <div className={`container ${this.state.visible ? 'open' : ''}`}>
         <div className="row">
           <div className="employers-list justify-content-center">
@@ -49,10 +60,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Co-Founder & Managing Director
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Quentin.position`}
+                    defaultMessage={`Co-Founder & Managing Director`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Quentin Colmant
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Quentin.name`}
+                    defaultMessage={`Quentin Colmant`}
+                  />
                 </p>
               </div>
             </div>
@@ -62,10 +79,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Co-Founder & Managing Director
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.JeanCharles.position`}
+                    defaultMessage={`Co-Founder & Managing Director`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Jean-Charles Velge
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.JeanCharles.name`}
+                    defaultMessage={`Jean-Charles Velge`}
+                  />
                 </p>
               </div>
             </div>
@@ -75,10 +98,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  insurance / HR / Accounting & Marketing
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Eleonore.position`}
+                    defaultMessage={`insurance / HR / Accounting & Marketing`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Eléonore Speeckaert
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Eleonore.name`}
+                    defaultMessage={`Eléonore Speeckaert`}
+                  />
                 </p>
               </div>
             </div>
@@ -88,10 +117,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Head of IT Development
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Geert.position`}
+                    defaultMessage={`Head of IT Development`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Geert Vandendriessche
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Geert.name`}
+                    defaultMessage={`Geert Vandendriessche`}
+                  />
                 </p>
               </div>
             </div>
@@ -101,10 +136,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Full Stack Dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Denis.position`}
+                    defaultMessage={`Full Stack Dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Denis Schmitz
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Denis.name`}
+                    defaultMessage={`Denis Schmitz`}
+                  />
                 </p>
               </div>
             </div>
@@ -114,10 +155,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Back End Dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Ali.position`}
+                    defaultMessage={`Back End Dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Ali El Gariani
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Ali.name`}
+                    defaultMessage={`Ali El Gariani`}
+                  />
                 </p>
               </div>
             </div>
@@ -127,10 +174,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Full Stack Dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Romuald.position`}
+                    defaultMessage={`Full Stack Dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Romuald Deshayes
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Romuald.name`}
+                    defaultMessage={`Romuald Deshayes`}
+                  />
                 </p>
               </div>
             </div>
@@ -140,10 +193,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Front End Dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Juan.position`}
+                    defaultMessage={`Front End Dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Juan Carlos Sanchez
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Juan.name`}
+                    defaultMessage={`Juan Carlos Sanchez`}
+                  />
                 </p>
               </div>
             </div>
@@ -153,10 +212,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Legal & Insurance counsel
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Amandine.position`}
+                    defaultMessage={`Legal & Insurance counsel`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Amandine de Lhoneux
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Amandine.name`}
+                    defaultMessage={`Amandine de Lhoneux`}
+                  />
                 </p>
               </div>
             </div>
@@ -166,10 +231,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Sales Manager
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Dominique.position`}
+                    defaultMessage={`Sales Manager`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Dominique Depondt
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Dominique.name`}
+                    defaultMessage={`Dominique Depondt`}
+                  />
                 </p>
               </div>
             </div>
@@ -179,10 +250,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  UI Designer
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Nathalie.position`}
+                    defaultMessage={`UI Designer`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Nathalie Francotte
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Nathalie.name`}
+                    defaultMessage={`Nathalie Francotte`}
+                  />
                 </p>
               </div>
             </div>
@@ -192,10 +269,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Junior dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Hamza.position`}
+                    defaultMessage={`Junior dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Hamza Mounir
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Hamza.name`}
+                    defaultMessage={`Hamza Mounir`}
+                  />
                 </p>
               </div>
             </div>
@@ -205,10 +288,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Junior dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Emilien.position`}
+                    defaultMessage={`Junior dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Emilien Durieu
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Emilien.name`}
+                    defaultMessage={`Emilien Durieu`}
+                  />
                 </p>
               </div>
             </div>
@@ -218,10 +307,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Junior dev
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Simon.position`}
+                    defaultMessage={`Junior dev`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Simon Parmentier
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Simon.name`}
+                    defaultMessage={`Simon Parmentier`}
+                  />
                 </p>
               </div>
             </div>
@@ -231,10 +326,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  ux designer
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Mathieu.position`}
+                    defaultMessage={`ux designer`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Mathieu Nisen
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Mathieu.name`}
+                    defaultMessage={`Mathieu Nisen`}
+                  />
                 </p>
               </div>
             </div>
@@ -244,10 +345,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Software Engineer
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Alexandre.position`}
+                    defaultMessage={`Software Engineer`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Alexandre Cys
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Alexandre.name`}
+                    defaultMessage={`Alexandre Cys`}
+                  />
                 </p>
               </div>
             </div>
@@ -257,10 +364,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Software Engineer
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.AlexandreRoba.position`}
+                    defaultMessage={`Software Engineer`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Alexandre Roba
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.AlexandreRoba.name`}
+                    defaultMessage={`Alexandre Roba`}
+                  />
                 </p>
               </div>
             </div>
@@ -270,10 +383,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  title
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.AnrienLebrun.position`}
+                    defaultMessage={`title`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Adrien Lebrun
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.AnrienLebrun.name`}
+                    defaultMessage={`Adrien Lebrun`}
+                  />
                 </p>
               </div>
             </div>
@@ -283,10 +402,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Software Engineer
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Francois.position`}
+                    defaultMessage={`Software Engineer`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Cédric François
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Francois.name`}
+                    defaultMessage={`Cédric François`}
+                  />
                 </p>
               </div>
             </div>
@@ -296,10 +421,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Software Engineer
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Degallaix.position`}
+                    defaultMessage={`Software Engineer`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Cédric Degallaix
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Degallaix.name`}
+                    defaultMessage={`Cédric Degallaix`}
+                  />
                 </p>
               </div>
             </div>
@@ -309,10 +440,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  title
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Francesca.position`}
+                    defaultMessage={`title`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Francesca Nicolini
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Francesca.name`}
+                    defaultMessage={`Francesca Nicolini`}
+                  />
                 </p>
               </div>
             </div>
@@ -322,10 +459,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  title
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Arthur.position`}
+                    defaultMessage={`title`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Arthur Lemoine
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Arthur.name`}
+                    defaultMessage={`Arthur Lemoine`}
+                  />
                 </p>
               </div>
             </div>
@@ -335,10 +478,16 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Product Owner
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Laurent.position`}
+                    defaultMessage={`Product Owner`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Laurent Parmentier
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Laurent.name`}
+                    defaultMessage={`Laurent Parmentier`}
+                  />
                 </p>
               </div>
             </div>
@@ -348,14 +497,27 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  Actuary
+                  <FormattedMessage 
+                    id={`about.whoWeAre.team.Pauline.position`}
+                    defaultMessage={`Actuary`}
+                  />
                 </p>
                 <p className="icon-text">
-                  Pauline Dedeurwaerder
+                  <FormattedMessage
+                    id={`about.whoWeAre.team.Pauline.name`}
+                    defaultMessage={`Pauline Dedeurwaerder`}
+                  />
                 </p>
               </div>
             </div>
-            <div className="last-icon m-hidden"><p> Want to join the team?</p></div>
+            <div className="last-icon m-hidden">
+              <p>
+                <FormattedMessage
+                  id={`about.whoWeAre.team.WantToJoin`}
+                  defaultMessage={`Want to join the team?`}
+                />
+              </p>
+            </div>
           </div>
         </div>
 
@@ -366,8 +528,12 @@ export default class WhoWeAre extends React.Component {
               <i className="fa fa-angle-down" />
             </div>
           </div>
-
-          <a className="btn hidden-sm-down btn-turquoise text-center">Want to join the team?</a>
+          <a className="btn hidden-sm-down btn-turquoise text-center">
+            <FormattedMessage
+              id={`about.whoWeAre.team.WantToJoin`}
+              defaultMessage={`Want to join the team?`}
+            />
+          </a>
         </div>
       </div>
     </section>);

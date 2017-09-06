@@ -1,4 +1,6 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import IconCancel from '../../images/OurProducts/icon-cancel.svg';
 import IconDev from '../../images/OurProducts/icon-dev-big-our.svg';
 import IconRevenue from '../../images/HomePage/InnProducts/icon-revenue-big.svg';
@@ -12,7 +14,10 @@ export default class InnProducts extends React.Component {
     return <section className="bg-light-grey" id="our-features">
       <div className="header hide">
         <h2 className="title text-blue text-center">
-          Our Amazing features
+          <FormattedMessage 
+            id={`products.innProducts.title`}
+            defaultMessage={`Our Amazing features`}
+          />
         </h2>
       </div>
       <div className="container">
@@ -26,8 +31,16 @@ export default class InnProducts extends React.Component {
                 <img src={IconCancelSmall} alt="" />
               </div>
               <div className="text text-grey">
-                <b>Cancel anytime</b><br />
-                Cancel any time in real-time
+                <b>
+                  <FormattedMessage 
+                    id={`products.innProducts.cancel.title`}
+                    defaultMessage={`Cancel anytime`}
+                  />
+                </b><br />
+                <FormattedMessage 
+                  id={`products.innProducts.cancel.text`}
+                  defaultMessage={`Cancel any time in real-time`}
+                />
               </div>
             </div>
           </div>
@@ -40,8 +53,16 @@ export default class InnProducts extends React.Component {
                 <img src={IconDiamsSmall} alt="" />
               </div>
               <div className="text text-grey">
-                <b>Your branding our ours.</b><br />
-                Up to you.
+                <b>
+                  <FormattedMessage 
+                    id={`products.innProducts.branding.title`}
+                    defaultMessage={`Your branding our ours.`}
+                  />
+                </b><br />
+                <FormattedMessage 
+                  id={`products.innProducts.cancel.text`}
+                  defaultMessage={`Up to you.`}
+                />
               </div>
             </div>
           </div>
@@ -54,8 +75,16 @@ export default class InnProducts extends React.Component {
                 <img src={IconDevSmall} alt="" />
               </div>
               <div className="text text-grey">
-                <b>Fully digital</b><br />
-                No paper anymore!
+                <b>
+                <FormattedMessage 
+                  id={`products.innProducts.digital.title`}
+                  defaultMessage={`Fully digital`}
+                />
+                </b><br />
+                <FormattedMessage 
+                  id={`products.innProducts.cancel.text`}
+                  defaultMessage={`No paper anymore!`}
+                />
               </div>
             </div>
           </div>
@@ -68,8 +97,16 @@ export default class InnProducts extends React.Component {
                 <img src={IconRevenueSmall} alt="" />
               </div>
               <div className="text text-grey">
-                <b>Attractive comission</b><br />
-                Yet competitive premiums
+                <b>
+                <FormattedMessage 
+                  id={`products.innProducts.attractive.title`}
+                  defaultMessage={`Attractive comission`}
+                />
+                </b><br />
+                <FormattedMessage 
+                  id={`products.innProducts.cancel.text`}
+                  defaultMessage={`Yet competitive premiums`}
+                />
               </div>
             </div>
           </div>

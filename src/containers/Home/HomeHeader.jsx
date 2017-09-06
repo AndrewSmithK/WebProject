@@ -1,4 +1,6 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
 import imacMobile from '../../images/HomePage/Header/imac-mobile.png';
 import imac from '../../images/HomePage/Header/imac.png';
@@ -15,18 +17,27 @@ export default class HomeHeader extends React.Component {
           <div className="col-md-6">
             <div className="left-block">
               <h1 className="text-white">
-                Sell digitally branded innovative and
-                traditional insurance to
-                your customers
+                <FormattedMessage 
+                  id={`home.title`}
+                  defaultMessage={`Sell digitally branded innovative and
+                  traditional insurance to
+                  your customers`}
+                />
               </h1>
-              <h4 className="text-white">
-                Call us today. Start selling tomorrow!
+              <h4 className="text-white">                
+                <FormattedMessage 
+                  id={`home.callToAction`}
+                  defaultMessage={`Call us today. Start selling tomorrow!`}
+                />
               </h4>
               <div className="icon2">
                 <img src={LloydsLogoSmall} alt="lloyds-logo" />
               </div>
               <button className="btn hidden-sm-down btn-turquoise">
-                Ask for demo
+                <FormattedMessage 
+                  id={`home.btnDemo`}
+                  defaultMessage={`Ask for demo`}
+                />
               </button>
             </div>
           </div>
