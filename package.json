@@ -1,5 +1,5 @@
 {
-  "name": "ssr-create-react-app-v2",
+  "name": "qover",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -58,6 +58,7 @@
     "popper.js": "^1.12.5",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-intl-phraseapp": "^0.1.0",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
     "react-slick": "^0.15.4",

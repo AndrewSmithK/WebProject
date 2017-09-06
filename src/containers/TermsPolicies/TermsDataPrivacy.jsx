@@ -1,10 +1,14 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
 
 export default class TermsDataPrivacy extends React.Component {
   render () {
     return <div className="text-container">
       <h5 className="title text-blue">
-        Data Privacy
+        <FormattedMessage 
+          id={`terms.data.title`}
+          defaultMessage={`Data Privacy`}
+        />
       </h5>
       <div className="item">
         <h6 className="subtitle text-turquoise">

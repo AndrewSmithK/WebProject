@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FormattedHTMLMessage } from 'react-intl-phraseapp';
 
 export default class DropdownItem extends Component {
   constructor(props) {
@@ -22,8 +23,11 @@ export default class DropdownItem extends Component {
           <img src={this.props.image} alt="icon-settings" />
         </div>
         <h4 className="title text-blue" onClick={this.visibilityClick}>
-          <b>{this.props.title}</b>
-          <span className="d-hidden">
+          <FormattedHTMLMessage
+            id={`about.whyQover.title${this.props.numb}`}
+            defaultMessage={`<b>${this.props.title}</b>`}
+          />
+          <span className="arrow d-hidden">
             <i className={this.state.visible ? 'fa fa-angle-up' : 'fa fa-angle-down'} aria-hidden="true" />
           </span>
         </h4>

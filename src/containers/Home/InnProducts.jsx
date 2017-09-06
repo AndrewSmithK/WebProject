@@ -1,4 +1,6 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import IconRevenueBig from '../../images/HomePage/InnProducts/icon-revenue-big.svg';
 import IconCustomer from '../../images/HomePage/InnProducts/icon-customer.svg';
 import LloydsLogo from '../../images/HomePage/InnProducts/lloyds-logo.svg';
@@ -9,6 +11,12 @@ export default class InnProducts extends React.Component {
       <div className="header">
         <h2 className="subtitle text-grey text-center">
           Innovative products - backed by the bests
+          <FormattedMessage 
+            id={`home.InnProducts.title`}
+            defaultMessage={`Sell digitally branded innovative and
+            traditional insurance to
+            your customers`}
+          />
         </h2>
       </div>
       <div className="container">

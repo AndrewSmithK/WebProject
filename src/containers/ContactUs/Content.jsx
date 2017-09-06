@@ -1,6 +1,7 @@
 import React from 'react';
-import Field from '../../components/small/Field';
+import { FormattedMessage } from 'react-intl-phraseapp';
 
+import Field from '../../components/small/Field';
 import poneIcon from '../../images/contact-us/icon-phone.svg';
 import mailIcon from '../../images/contact-us/icon-mail.svg';
 import pinIcon from '../../images/contact-us/icon-pin.svg';
@@ -13,7 +14,12 @@ export default class Content extends React.Component {
           <div className="row wraper">
             <div className="form-col">
               <div className="form-wrap">
-                <h3 className="title">Send us a message</h3>
+                <h3 className="title">
+                  <FormattedMessage 
+                    id={`contactUs.title`}
+                    defaultMessage={`Send us a message`}
+                  />
+                </h3>
                 <form className="row form">
                   <Field
                     width="half"
