@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
+import Carousel from './ProductsCarousel.js';
+
 import AccidentHealth from '../../images/OurProducts/accident-health.png';
 import Travel from '../../images/OurProducts/travel.png';
 import JobLoss from '../../images/OurProducts/job-loss.png';
@@ -17,7 +19,6 @@ export default class TradInnProd extends React.Component {
       </h2>
       <div className="container">
           <Carousel />
-        
       </div>
 
       <div className="container only-desktop">
