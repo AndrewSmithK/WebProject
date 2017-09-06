@@ -13,9 +13,38 @@ export default class TradInnProd extends React.Component {
       <h2 className="title text-grey">
         Traditional & innovative products
       </h2>
+
+      <div className="container filter-box">
+        <div className="filter">
+          <div className="title">Filter by categories</div>
+          <div className="desktop-select">
+            <button className="filter-item active">All</button>
+            <button className="filter-item">Motor</button>
+            <button className="filter-item">Lifestyle</button>
+          </div>
+
+          <div className="mobile-select">
+            <select className="filter-item active">
+              <option>All</option>
+              <option>Motor</option>
+              <option>Lifestyle</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="filter">
+          <div className="title">Filter by country</div>
+          <select className="filter-item active">
+            <option>Belgium</option>
+            <option>Germany</option>
+            <option>France</option>
+          </select>
+        </div>
+      </div>
+      <div className="clearfix"></div>
+
       <div className="container">
-          <Carousel />
-        
+        <Carousel />
       </div>
 
       <div className="container only-desktop">
