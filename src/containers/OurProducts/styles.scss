@@ -125,6 +125,14 @@
     }
   }
 
+  .mobile-select {
+    display: none;
+  }
+
+  .desktop-select {
+    display: inline-block;
+  }
+
   @media screen and (max-width: $break-mobile) {
     padding: 50px 0 70px 0;
     h2.title {
@@ -146,6 +154,9 @@
     }
 
     .filter-box {
+      .mobile-select {
+        display: block;
+      }
       .filter {
         margin-bottom: 10px;
         width: calc(100% - 40px);
