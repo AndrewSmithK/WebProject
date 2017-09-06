@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl-phraseapp'
 
 export default (props) => (
     <div className="col-lg-3 col-md-6">
@@ -7,14 +8,32 @@ export default (props) => (
                 <img src={props.image} alt="accident-health" />
             </div>
             <div className="text-container">
-                <h5 className="title">{props.title}</h5>
+                <h5 className="title">
+                    <FormattedMessage
+                        id={`products.traditional.${props.num}.title`}
+                        defaultMessage={props.title}
+                    />
+                </h5>
                 <p className="text">
-                    {props.text}
+                    <FormattedMessage
+                        id={`products.traditional.${props.num}.text`}
+                        defaultMessage={props.text}
+                    />
                 </p>
             </div>
             {props.staus === 'soon' ?
-                <button className="btn btn-disabled">Coming soon</button> :
-                <button className="btn">More info</button>
+                <button className="btn btn-disabled">
+                    <FormattedMessage
+                        id={`products.traditional.ComingSoon`}
+                        defaultMessage={`Coming soon`}
+                    />
+                </button> :
+                <button className="btn">
+                    <FormattedMessage
+                        id={`products.traditional.ComingSoon`}
+                        defaultMessage={`More info`}
+                    />
+                </button>
             }
         </div>
     </div>

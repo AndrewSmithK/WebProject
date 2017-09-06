@@ -59,6 +59,12 @@ export default class TradInnProd extends React.Component {
 
   }
 
+  renderAllItems(items) {
+    return items.map((item, index) => (
+      <Item key={index} num={index} {...item} />
+    ))
+  }
+
   renderProductItems(items) {
     if (this.state.category === 'all') {
       items.forEach(item => {
@@ -112,118 +118,7 @@ export default class TradInnProd extends React.Component {
       </div>
       <div className="container only-desktop">
         <div className="row">
-          <div className="col-lg-3 col-md-6">
-            <div className="item text-center bg-white">
-              <div className="icon">
-                <img src={AccidentHealth} alt="accident-health" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">
-                  <FormattedMessage 
-                    id={`products.traditional.item1.title`}
-                    defaultMessage={`Accident & Health`}
-                  />
-                </h5>
-                <p className="text">
-                  <FormattedMessage 
-                    id={`products.traditional.item1.text`}
-                    defaultMessage={`Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.`}
-                  />
-                </p>
-              </div>
-              <button className="btn btn-disabled">
-                <FormattedMessage 
-                  id={`products.traditional.ComingSoon`}
-                  defaultMessage={`Coming soon`}
-                />
-              </button>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 d-none d-md-block">
-            <div className="item text-center bg-white">
-              <div className="icon">
-                <img src={Travel} alt="travel" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">
-                  <FormattedMessage 
-                    id={`products.traditional.item2.title`}
-                    defaultMessage={`Travel`}
-                  />
-                </h5>
-                <p className="text">
-                  <FormattedMessage 
-                    id={`products.traditional.item2.text`}
-                    defaultMessage={`Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.`}
-                  />
-                </p>
-              </div>
-              <button className="btn btn-disabled">
-                <FormattedMessage 
-                  id={`products.traditional.ComingSoon`}
-                  defaultMessage={`Coming soon`}
-                />
-              </button>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 d-none d-md-block">
-            <div className="item text-center bg-white">
-              <div className="icon" >
-                <img src={JobLoss} alt="job-loss" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">
-                  <FormattedMessage 
-                    id={`products.traditional.item3.title`}
-                    defaultMessage={`Job Loss`}
-                  />
-                </h5>
-                <p className="text">
-                  <FormattedMessage 
-                    id={`products.traditional.item3.text`}
-                    defaultMessage={`Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.`}
-                  />
-                </p>
-              </div>
-              <button className="btn btn-disabled">
-                <FormattedMessage 
-                  id={`products.traditional.ComingSoon`}
-                  defaultMessage={`Coming soon`}
-                />
-              </button>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 d-none d-md-block">
-            <div className="item text-center bg-white">
-              <div className="icon last-icon" >
-                <img src={Landlord} alt="landlord" />
-              </div>
-              <div className="text-container">
-                <h5 className="title">
-                  <FormattedMessage 
-                    id={`products.traditional.item4.title`}
-                    defaultMessage={`Landlord Insurance`}
-                  />
-                </h5>
-                <p className="text">
-                  <FormattedMessage 
-                    id={`products.traditional.item4.text`}
-                    defaultMessage={`Protect you from the financial loss from an accident,
-                    whether it occurs at home or at work.`}
-                  />
-                </p>
-              </div>
-              <button className="btn btn-disabled">
-                <FormattedMessage 
-                  id={`products.traditional.ComingSoon`}
-                  defaultMessage={`Coming soon`}
-                />
-              </button>
-            </div>
-          </div>
+          {this.renderAllItems(mock)}
         </div>
       </div>
     </section>);
