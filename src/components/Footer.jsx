@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import LogoQover from '../images/Footer/logo-qover.svg';
 import Twitter from '../images/Footer/twitter.svg';
 import Facebook from '../images/Footer/facebook.svg';
@@ -15,21 +17,56 @@ export default class TopLine extends React.Component {
           </div>
           <div className="item item1">
             <div className="list-title">
-              <b>Company</b>
+              <b>
+                <FormattedMessage 
+                  id={`footer.title`}
+                  defaultMessage={`Company`}
+                />
+              </b>
             </div>
             <ul>
-              <li><Link to="/about">About Qover</Link></li>
-              <li><Link to="/">Contact us</Link></li>
-              <li><Link to="/">Complaints</Link></li>
-              <li><Link to="/terms-policies">Terms & Policies</Link></li>
+              <li><Link to="/about">
+                <FormattedMessage 
+                  id={`footer.about`}
+                  defaultMessage={`About Qover`}
+                />
+              </Link></li>
+              <li><Link to="/">
+                <FormattedMessage 
+                  id={`footer.contactUs`}
+                  defaultMessage={`Contact us`}
+                />
+              </Link></li>
+              <li><Link to="/">
+                <FormattedMessage 
+                  id={`footer.complaints`}
+                  defaultMessage={`Complaints`}
+                />
+              </Link></li>
+              <li><Link to="/terms-policies">
+                <FormattedMessage 
+                  id={`footer.termsPolicies`}
+                  defaultMessage={`Terms & Policies`}
+                />
+              </Link></li>
             </ul>
           </div>
           <div className="item item2">
             <div className="list-title">
-              <b>Our products</b>
+              <b>
+                <FormattedMessage 
+                  id={`footer.ourProducts`}
+                  defaultMessage={`Our products`}
+                />
+              </b>
             </div>
             <ul>
-              <li><Link to="/our-products/gap-insurance">GAP insurance</Link></li>
+              <li><Link to="/our-products/gap-insurance">
+                <FormattedMessage 
+                  id={`footer.gap`}
+                  defaultMessage={`GAP insurance`}
+                />
+              </Link></li>
               { /* <li><Link to="/">Light casco</Link></li>
               <li><Link to="/">Full casco</Link></li>
               <li><Link to="/">Driver Accident</Link></li>
@@ -40,10 +77,20 @@ export default class TopLine extends React.Component {
           </div>
           <div className="item item3">
             <div className="list-title">
-              <b>Developers</b>
+              <b>
+                <FormattedMessage 
+                  id={`footer.developers`}
+                  defaultMessage={`Developers`}
+                />
+              </b>
             </div>
             <ul>
-              <li><Link to="/">API Documentation</Link></li>
+              <li><Link to="/">
+                <FormattedMessage 
+                  id={`footer.apiDoc`}
+                  defaultMessage={`API Documentation`}
+                />
+              </Link></li>
             </ul>
           </div>
           <div className="address">
@@ -67,8 +114,14 @@ export default class TopLine extends React.Component {
             <address>
               <p>
                 <b>Qover SA/NV</b>
-                Rue des Palais 44 - 1030 Brussels <br />
-                RPM: BE0650.939.878 - FSMA: 115284A
+                <FormattedMessage 
+                  id={`footer.address.part1`}
+                  defaultMessage={`Rue des Palais 44 - 1030 Brussels`}
+                /><br />
+                <FormattedMessage 
+                  id={`footer.address.part1`}
+                  defaultMessage={`RPM: BE0650.939.878 - FSMA: 115284A`}
+                />
               </p>
             </address>
           </div>
@@ -77,9 +130,12 @@ export default class TopLine extends React.Component {
       <div className="copyright text-white">
         <div className="container">
           <p>
-            The information given on this website is for information purposes only and is therefore not binding.
-            It is the customer’s responsibility to read fully the General Policy Conditions of our products and to make carefully considered
-            decisions. © 2017 Qover SA/NV – RPM 0650.939.878 – FSMA 115284A. All rights Reserved.
+            <FormattedMessage 
+              id={`footer.copyright`}
+              defaultMessage={`The information given on this website is for information purposes only and is therefore not binding.
+              It is the customer’s responsibility to read fully the General Policy Conditions of our products and to make carefully considered
+              decisions. © 2017 Qover SA/NV – RPM 0650.939.878 – FSMA 115284A. All rights Reserved.`}
+            />
           </p>
         </div>
       </div>

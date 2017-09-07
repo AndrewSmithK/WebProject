@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl-phraseapp';
 import Slider from 'react-slick';
 
 import './HomeCarousel.scss';
@@ -31,6 +32,48 @@ const PrevArrow = (props) => {
   );
 };
 
+const CarouselItem = (props) => (
+  <div className="container">
+    <h2 className="title">
+      <FormattedMessage 
+        id={`home.carousel.title.part1`}
+        defaultMessage={`The whole world is talking`}
+      /><br />
+      <FormattedMessage 
+        id={`home.carousel.title.part2`}
+        defaultMessage={`about Qover`}
+      />
+    </h2>
+    <div className="belgian-financial">
+      « <FormattedMessage 
+        id={`home.carousel.quote.part1`}
+        defaultMessage={`Belgian financial technology startup Qover has raised €5.5 million`}
+      /><br /> 
+      <FormattedMessage 
+        id={`home.carousel.quote.part2`}
+        defaultMessage={`in a Series A round ledby Anthemis.`}
+      /> »
+    </div>
+    <Link to="#" className="read-article">
+      <FormattedMessage 
+        id={`home.carousel.linkFullArticle`}
+        defaultMessage={`Read the full article`}
+      /><i className="fa fa-angle-right" aria-hidden="true" />
+    </Link>
+    <div className="text">
+      <FormattedMessage 
+        id={`home.carousel.JonathanKeane`}
+        defaultMessage={`Jonathan Keane,`}
+      /> <b>
+        <FormattedMessage 
+          id={`home.carousel.TechEU`}
+          defaultMessage={`Tech. EU`}
+        />
+      </b>
+    </div>
+  </div>
+)
+
 export default () => {
   const settings = {
     customPaging(i) {
@@ -49,24 +92,11 @@ export default () => {
   return (
     <section id="home-carousel">
       <Slider {...settings}>
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div>
-          <div className="container">
-            <h2 className="title">
-              The whole world is talking <br /> about Qover
-            </h2>
-            <div className="belgian-financial">
-              « Belgian financial technology startup Qover has raised €5.5 million <br /> in a Series A round ledby Anthemis. »
-            </div>
-            <Link to="#" className="read-article">Read the full article<i className="fa fa-angle-right" aria-hidden="true" /></Link>
-            <div className="text">
-              Jonathan Keane, <span>Tech. EU</span>
-            </div>
-          </div>
-        </div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
+        <div><CarouselItem /></div>
+        <div><CarouselItem /></div>
+        <div><CarouselItem /></div>
+        <div><CarouselItem /></div>
+        <div><CarouselItem /></div>
       </Slider>
     </section>
   );
