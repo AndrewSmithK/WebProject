@@ -141,10 +141,11 @@ export default class TradInnProd extends React.Component {
 
           <div className="select-field mobile-select">
             <SelectField
+            fullWidth
             value={this.state.category}
             onChange={this.changeCategory.bind(this)}
             style={{
-              width: 'auto'
+              width: '100px'
             }}
             iconStyle={{
               fill: '#317bda',
@@ -178,7 +179,7 @@ export default class TradInnProd extends React.Component {
               value={this.state.country}
               onChange={this.changeCountry.bind(this)}
               style={{
-                width: 'auto'
+                width: '100px'
               }}
               iconStyle={{
                 fill: '#317bda',
@@ -208,8 +209,11 @@ export default class TradInnProd extends React.Component {
 
       <div className="clearfix"></div>
 
-      <div className="container">
-        <Carousel items={this.state.items} />
+      <div className="container only-mobile">
+        {this.state.items.length > 0 ?
+          <Carousel items={this.state.items} /> :
+          <div className="container no-results">no results found</div>
+        }
       </div>
       <div className="container only-desktop">
         <div className="row">
