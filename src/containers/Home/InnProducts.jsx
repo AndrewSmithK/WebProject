@@ -10,12 +10,9 @@ export default class InnProducts extends React.Component {
     return (<section className="bg-light-grey" id="inn-products">
       <div className="header">
         <h2 className="subtitle text-grey text-center">
-          Innovative products - backed by the bests
           <FormattedMessage 
             id={`home.InnProducts.title`}
-            defaultMessage={`Sell digitally branded innovative and
-            traditional insurance to
-            your customers`}
+            defaultMessage={`Innovative products - backed by the bests`}
           />
         </h2>
       </div>
@@ -27,8 +24,14 @@ export default class InnProducts extends React.Component {
                 <img src={IconRevenueBig} alt="icon-revenur-big" />
               </div>
               <div className="text text-grey">
-                <b>Attractive commission</b><br />
-                Yet competitive premiums
+                <b><FormattedMessage 
+                  id={`home.InnProducts.item1.title`}
+                  defaultMessage={`Attractive commission`}
+                /></b><br />
+                <FormattedMessage 
+                  id={`home.InnProducts.item1.text`}
+                  defaultMessage={`Yet competitive premiums`}
+                />
               </div>
             </div>
           </div>
@@ -36,8 +39,14 @@ export default class InnProducts extends React.Component {
             <div className="item text-center bg-white">
               <div className="icon" style={{ height: `${70}px`, background: '#f00' }}></div>
               <div className="text text-grey">
-                <b>Your branding our ours.</b><br />
-                Up to you.
+                <b><FormattedMessage 
+                  id={`home.InnProducts.item2.title`}
+                  defaultMessage={`Your branding our ours.`}
+                /></b><br />
+                <FormattedMessage 
+                  id={`home.InnProducts.item2.text`}
+                  defaultMessage={`Up to you.`}
+                />
               </div>
             </div>
           </div>
@@ -46,9 +55,15 @@ export default class InnProducts extends React.Component {
               <div className="icon" >
                 <img id="third-icon" src={IconCustomer} alt="icon-customer" />
               </div>
-              <div className="text text-grey">
-                <b>Customer friendly</b><br />
-                Cancel any time
+              <div className="text text-grey">                  
+                <b><FormattedMessage 
+                  id={`home.InnProducts.item3.title`}
+                  defaultMessage={`Customer friendly`}
+                /></b><br />
+                <FormattedMessage 
+                  id={`home.InnProducts.item3.text`}
+                  defaultMessage={`Cancel any time`}
+                />
               </div>
             </div>
           </div>
@@ -58,9 +73,14 @@ export default class InnProducts extends React.Component {
                 <img id="fourth-icon" src={LloydsLogo} alt="lloyds-logo" />
               </div>
               <div className="text text-grey">
-                <b>Backed by the<br />
-                Lloyd’s of London
-                </b>
+                <b><FormattedMessage 
+                  id={`home.InnProducts.item4.title`}
+                  defaultMessage={`Backed by the`}
+                /><br />
+                <FormattedMessage 
+                  id={`home.InnProducts.item4.text`}
+                  defaultMessage={`Lloyd’s of London`}
+                /></b>
               </div>
             </div>
           </div>

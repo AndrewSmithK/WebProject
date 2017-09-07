@@ -1,4 +1,6 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl-phraseapp';
+
 import LogoLloyds from '../../images/HomePage/Parthners/logo-lloyds.svg';
 import LogoMunich from '../../images/HomePage/Parthners/logo-munich-re.svg';
 import LogoAnthemisColor from '../../images/HomePage/Parthners/logo-anthemis-color.png';
@@ -11,7 +13,10 @@ export default class Partners extends React.Component {
   render() {
     return <section className="section bg-white" id="partners">
       <h3 className="subtitle text-grey">
-        Our trusted partners
+        <FormattedMessage 
+          id={`home.partners.title`}
+          defaultMessage={`Our trusted partners`}
+        />
       </h3>
       <div className="container">
         <div className="row justify-content-around">

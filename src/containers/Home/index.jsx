@@ -3,7 +3,7 @@ import React from 'react';
 import HomeHeader from './HomeHeader';
 import Disclaimer from './Disclaimer';
 import Advantages from './Advantages';
-import PictureBlock from './PictureBlock';
+import Chain from './Chain';
 import GetStarted from './GetStarted';
 import Explanation from './Explanation';
 import GapInsurance from './GapInsurance';
@@ -21,7 +21,7 @@ export default class Home extends React.Component {
       <HomeHeader />
       <Disclaimer />
       <Advantages />
-      <PictureBlock />
+      <Chain />
       <GetStarted />
       <Explanation />
       <GapInsurance />
