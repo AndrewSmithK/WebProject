@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 import './HomeCarousel.scss';
@@ -58,7 +59,7 @@ export default () => {
             <div className="belgian-financial">
               « Belgian financial technology startup Qover has raised €5.5 million <br /> in a Series A round ledby Anthemis. »
             </div>
-            <a href="#" className="read-article">Read the full article<i className="fa fa-angle-right" aria-hidden="true" /></a>
+            <Link to="#" className="read-article">Read the full article<i className="fa fa-angle-right" aria-hidden="true" /></Link>
             <div className="text">
               Jonathan Keane, <span>Tech. EU</span>
             </div>
