@@ -119,8 +119,9 @@
           border-bottom: 2px solid #317bda;
         }
       }
-      select {
-        height: 40px;
+      .select-field {
+        float: right;
+        margin: 0 20px;
       }
     }
   }

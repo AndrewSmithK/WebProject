@@ -1,4 +1,6 @@
 import React from 'react';
+import SelectField from 'material-ui/SelectField'
+import MenuItem from 'material-ui/MenuItem'
 import { FormattedMessage } from 'react-intl-phraseapp';
 import _ from 'lodash'
 
@@ -45,41 +47,66 @@ export default class TradInnProd extends React.Component {
     super(props)
     this.state = {
       category: 'all',
-      country: 'germany',
+      country: 'all',
       items: []
     }
   }
 
-  changeCategory(category) {
-    console.log(this.state.country)
-    this.setState({
-      category: category,
-      items: category === 'all' ?
-        _.filter(mock, { 'country': this.state.country }) :
-        _.filter(mock, { 'category': category, 'country': this.state.country })
-    })
-  }
-
-  changeCategoryEvent(event) {
-    const country = this.state.country
-    const category = event.target.value
-    this.setState({
-      category: category,
-      items: category === 'all' ?
-        _.filter(mock, { 'country': country }) :
-        _.filter(mock, { 'category': category, 'country': country })
-    })
-  }
-
-  changeCountry(event) {
-    const country = event.target.value
+  changeCountry(event, index, country) {
     const category = this.state.category
-    this.setState({
-      country: country,
-      items: category === 'all' ?
-        _.filter(mock, { 'country': country }) :
-        _.filter(mock, { 'category': category, 'country': country })
-    })
+    if (country === 'all') {
+      this.setState({
+        country: country,
+        items: category === 'all' ?
+          _.filter(mock, {}) :
+          _.filter(mock, { 'category': category })
+      })
+    } else {
+      this.setState({
+        country: country,
+        items: category === 'all' ?
+          _.filter(mock, { 'country': country }) :
+          _.filter(mock, { 'category': category, 'country': country })
+      })
+    }
+  }
+
+  changeCategory(event, index, category) {
+    const country = this.state.country
+    if (category === 'all') {
+      this.setState({
+        category: category,
+        items: country === 'all' ?
+          _.filter(mock, {}) :
+          _.filter(mock, { 'country': country })
+      })
+    } else {
+      this.setState({
+        category: category,
+        items: country === 'all' ?
+          _.filter(mock, { 'category': category }) :
+          _.filter(mock, { 'category': category, 'country': country })
+      })
+    }
+  }
+
+  changeCategoryButton(category) {
+    const country = this.state.country
+    if (category === 'all') {
+      this.setState({
+        category: category,
+        items: country === 'all' ?
+          _.filter(mock, {}) :
+          _.filter(mock, { 'country': country })
+      })
+    } else {
+      this.setState({
+        category: category,
+        items: country === 'all' ?
+          _.filter(mock, { 'category': category }) :
+          _.filter(mock, { 'category': category, 'country': country })
+      })
+    }
   }
 
   renderAllItems(items) {
@@ -107,29 +134,77 @@ export default class TradInnProd extends React.Component {
         <div className="filter">
           <div className="title">Filter by categories</div>
           <div className="desktop-select">
-            <button onClick={() => this.changeCategory('all')} className="filter-item active">All</button>
-            <button onClick={() => this.changeCategory('motor')} className="filter-item">Motor</button>
-            <button onClick={() => this.changeCategory('lifestyle')} className="filter-item">Lifestyle</button>
+            <button onClick={() => this.changeCategoryButton('all')} className={`filter-item ${this.state.category === 'all' ? 'active' : '' }`}>All</button>
+            <button onClick={() => this.changeCategoryButton('motor')} className={`filter-item ${this.state.category === 'motor' ? 'active' : '' }`}>Motor</button>
+            <button onClick={() => this.changeCategoryButton('lifestyle')} className={`filter-item ${this.state.category === 'lifestyle' ? 'active' : '' }`}>Lifestyle</button>
           </div>
 
-          <div className="mobile-select">
-            <select onChange={this.changeCategoryEvent.bind(this)} className="filter-item active">
-              <option value="all">All</option>
-              <option value="motor">Motor</option>
-              <option value="lifestyle">Lifestyle</option>
-            </select>
+          <div className="select-field mobile-select">
+            <SelectField
+            value={this.state.category}
+            onChange={this.changeCategory.bind(this)}
+            style={{
+              width: 'auto'
+            }}
+            iconStyle={{
+              fill: '#317bda',
+              paddingRight: '0',
+              right: '-12px'
+            }}
+            labelStyle={{
+              color: '#317bda',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              letterSpacing: '0.6px'
+            }}
+            underlineStyle={{
+              borderBottomWidth: '2px',
+              borderBottomColor: '#317bda',
+            }}
+          >
+          <MenuItem value={'all'} primaryText="All" />
+          <MenuItem value={'motor'} primaryText="Motor" />
+          <MenuItem value={'lifestyle'} primaryText="Lifestyle" />
+        </SelectField>
           </div>
         </div>
 
         <div className="filter">
           <div className="title">Filter by country</div>
-          <select onChange={this.changeCountry.bind(this)} className="filter-item active">
-            <option value="belgium">Belgium</option>
-            <option value="germany">Germany</option>
-            <option value="france">France</option>
-          </select>
+
+          <div className="select-field">
+            <SelectField
+              value={this.state.country}
+              onChange={this.changeCountry.bind(this)}
+              style={{
+                width: 'auto'
+              }}
+              iconStyle={{
+                fill: '#317bda',
+                paddingRight: '0',
+                right: '-12px'
+              }}
+              labelStyle={{
+                color: '#317bda',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                letterSpacing: '0.6px'
+              }}
+              underlineStyle={{
+                borderBottomWidth: '2px',
+                borderBottomColor: '#317bda',
+              }}
+            >
+            <MenuItem value={'all'} primaryText="All" />
+            <MenuItem value={'belgium'} primaryText="Belgium" />
+            <MenuItem value={'germany'} primaryText="Germany" />
+            <MenuItem value={'france'} primaryText="France" />
+          </SelectField>
+        </div>
+
         </div>
       </div>
+
       <div className="clearfix"></div>
 
       <div className="container">
