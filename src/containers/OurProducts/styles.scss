@@ -122,6 +122,7 @@
       .select-field {
         float: right;
         margin: 0 20px;
+        margin-bottom: -30px;
       }
     }
   }
@@ -132,6 +133,12 @@
 
   .desktop-select {
     display: inline-block;
+  }
+
+  .no-results {
+    color: #5b7289;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   @media screen and (max-width: $break-mobile) {
