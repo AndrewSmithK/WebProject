@@ -4,6 +4,7 @@ import { FormattedMessage } from 'react-intl-phraseapp';
 import IconRevenueBig from '../../images/HomePage/InnProducts/icon-revenue-big.svg';
 import IconCustomer from '../../images/HomePage/InnProducts/icon-customer.svg';
 import LloydsLogo from '../../images/HomePage/InnProducts/lloyds-logo.svg';
+import IconDiamonds from '../../images/HomePage/InnProducts/icon-diamont.png';
 
 export default class InnProducts extends React.Component {
   render() {
@@ -37,7 +38,9 @@ export default class InnProducts extends React.Component {
           </div>
           <div className="col-md-3">
             <div className="item text-center bg-white">
-              <div className="icon" style={{ height: `${70}px`, background: '#f00' }}></div>
+              <div className="icon">
+                <img src={IconDiamonds} alt="icon-diamonds" />
+              </div>
               <div className="text text-grey">
                 <b><FormattedMessage 
                   id={`home.InnProducts.item2.title`}
