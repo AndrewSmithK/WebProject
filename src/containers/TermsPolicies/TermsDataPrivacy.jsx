@@ -12,70 +12,109 @@ export default class TermsDataPrivacy extends React.Component {
       </h5>
       <div className="item">
         <h6 className="subtitle text-turquoise">
-          Summary
+          <FormattedMessage 
+            id={`terms.data.block1.title`}
+            defaultMessage={`Summary`}
+          />
         </h6>
         <p className="text text-grey">
-          Qover shall process as the controller Personal Data that it obtains in connection in accordance with its Privacy
-          Policy and as summarized herein.
+          <FormattedMessage 
+            id={`terms.data.block1.p1`}
+            defaultMessage={`Qover shall process as the controller Personal Data that it obtains in connection in accordance with its Privacy
+            Policy and as summarized herein.`}
+          />
         </p>
          <p className="text text-grey">
-           The term “Personal Data” or “Personal Information” refers to personally identifiable information about an
-           individual, such as their name, birthday, email address, health related data or mailing address. Qover may
-           process Personal Data in order to arrange the insured’s insurance cover (including claims and renewals), to
-           comply with a legal requirement, to administer account, to provide customer service, to perform checks and
-           statistical analysis, to engage in fraud prevention and market our products and services.
+          <FormattedMessage 
+            id={`terms.data.block1.p2`}
+            defaultMessage={`The term “Personal Data” or “Personal Information” refers to personally identifiable information about an
+            individual, such as their name, birthday, email address, health related data or mailing address. Qover may
+            process Personal Data in order to arrange the insured’s insurance cover (including claims and renewals), to
+            comply with a legal requirement, to administer account, to provide customer service, to perform checks and
+            statistical analysis, to engage in fraud prevention and market our products and services.`}
+          />
         </p>
-         <p className="text text-grey">
-           In order to arrange the insured’s insurance cover, or process a claim, Qover may disclose personal data to other
-           parties such as insurance partners, underwriters, claim adjusters who act for Qover for further processing. This
-           may include personal data being disclosed to legal or regulatory bodies in order to comply with diverse legal
-           regulations. Qover shall endeavor to ensure that any such data processed or disclosed is appropriately protected
-           by technical and operational security measures and contractual measures where appropriate.
+        <p className="text text-grey">
+          <FormattedMessage 
+            id={`terms.data.block1.p3`}
+            defaultMessage={`In order to arrange the insured’s insurance cover, or process a claim, Qover may disclose personal data to other
+            parties such as insurance partners, underwriters, claim adjusters who act for Qover for further processing. This
+            may include personal data being disclosed to legal or regulatory bodies in order to comply with diverse legal
+            regulations. Qover shall endeavor to ensure that any such data processed or disclosed is appropriately protected
+            by technical and operational security measures and contractual measures where appropriate.`}
+          />
         </p>
-         <p className="text text-grey">
-           Qover shall also correct, amend or delete any inaccurate data and the insured may inform us of any such change
-           by contacting Qover at the address stated in your Schedule. The insured has right to request the access to and
-           rectification or erasure of his personal data. Qover shall only keep Personal Data for as long as reasonably
-           necessary for the purposes for which it was collected or to comply with any legal, ethical or document retention
-           requirements.
+        <p className="text text-grey">
+          <FormattedMessage 
+            id={`terms.data.block1.p4`}
+            defaultMessage={`Qover shall also correct, amend or delete any inaccurate data and the insured may inform us of any such change
+            by contacting Qover at the address stated in your Schedule. The insured has right to request the access to and
+            rectification or erasure of his personal data. Qover shall only keep Personal Data for as long as reasonably
+            necessary for the purposes for which it was collected or to comply with any legal, ethical or document retention
+            requirements.`}
+          />
         </p>
-         <p className="text text-grey">
-           Questions about Qover’s data protection practices should be directed to us:
+        <p className="text text-grey">
+          <FormattedMessage 
+            id={`terms.data.block1.p5`}
+            defaultMessage={`Questions about Qover’s data protection practices should be directed to us:`}
+          />
         </p>
         <ul>
           <li className="text text-grey">
-            To unsubscribe or amend your Personal Data, contact: <a href="mailto:contact@qover.be">contact@qover.be</a>
+            <FormattedMessage 
+              id={`terms.data.block1.list.item1`}
+              defaultMessage={`To unsubscribe or amend your Personal Data, contact: `}
+            /> <a href="mailto:contact@qover.be">contact@qover.be</a>
           </li>
           <li className="text text-grey">
-            To request deletion, a copy of Personal Data, or for any other individual data subject queries, contact <a href="mailto:contact@qover.be">privacy@qover.be</a>
+            <FormattedMessage 
+              id={`terms.data.block1.list.item2`}
+              defaultMessage={`To request deletion, a copy of Personal Data, or for any other individual data subject queries, contact`}
+            /> <a href="mailto:contact@qover.be">privacy@qover.be</a>
           </li>
           <li className="text text-grey">
-            You are always entitled to lodge a complaint with the supervisory authority by contacting the Belgian
-            Privacy Commission, by contacting <a href="mailto:contact@qover.be">commission@privacycommission.be</a>
+            <FormattedMessage 
+              id={`terms.data.block1.list.item3`}
+              defaultMessage={`You are always entitled to lodge a complaint with the supervisory authority by contacting the Belgian
+              Privacy Commission, by contacting`}
+            /> <a href="mailto:contact@qover.be">commission@privacycommission.be</a>
           </li>
         </ul>
       </div>
 
       <div className="item">
         <h6 className="subtitle text-turquoise">
-          Policy
+          <FormattedMessage 
+            id={`terms.data.block2.title`}
+            defaultMessage={`Policy`}
+          />
         </h6>
         <p className="text text-grey">
-          This page informs you of our policies regarding the collection, use and disclosure of Personal Information we
-          receive from users of the site.
+          <FormattedMessage 
+            id={`terms.data.block2.p1`}
+            defaultMessage={`This page informs you of our policies regarding the collection, use and disclosure of Personal Information we
+            receive from users of the site.`}
+          />
         </p>
         <p className="text text-grey">
-          We are committed to ensuring the protection of all Personal Information that we hold and to fulfilling our
-          responsibilities and obligations under data protection legislation, especially in compliance with the Belgian
-          Privacy Act of 8 December 1992 on the protection of privacy in relation to the processing of personal data.
-          By submitting Personal Information to us, you agree that we may process such information in accordance with this
-          Privacy Policy.
+          <FormattedMessage 
+            id={`terms.data.block2.p2`}
+            defaultMessage={`We are committed to ensuring the protection of all Personal Information that we hold and to fulfilling our
+            responsibilities and obligations under data protection legislation, especially in compliance with the Belgian
+            Privacy Act of 8 December 1992 on the protection of privacy in relation to the processing of personal data.
+            By submitting Personal Information to us, you agree that we may process such information in accordance with this
+            Privacy Policy.`}
+          />
         </p>
       </div>
 
       <div className="item">
         <h6 className="subtitle text-turquoise">
-          Information we may collect
+          <FormattedMessage 
+            id={`terms.data.block3.title`}
+            defaultMessage={`Information we may collect`}
+          />
         </h6>
         <p className="text text-grey">
           Questions about Qover’s data protection practices should be directed to us:

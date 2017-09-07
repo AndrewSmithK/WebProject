@@ -11,33 +11,66 @@ import DropdownItem from './dropdownItem';
 export default class WhyQover extends Component {
   whyItems = [
     {
-      title: "We build the product & the pricing ourselves",
+      title: {
+        id: "about.whyQover.desc1.title",
+        text: "We build the product & the pricing ourselves",
+      },
       icon: IconSettings,
-      text: [
-        {paragraph: "The only viable way to truly innovate in Insurance is to behave as an Insurer from a product development & pricing perspective."},
-        {paragraph: "This is what we do at Qover! We don't sell &quot;on the shelf&quot; products from an Insurer but we internally build our own products and make the pricing."},
-        {paragraph: "So at Qover, you will find unique innovative products with a pricing sophistication that goes beyond what traditional insurers do."},
-        {paragraph: "With Qover, you can differentiate yourself from the market with a much more competitive price for your customers."}
+      desc: [
+        {
+          id: "about.whyQover.desc1.p1",
+          text: "The only viable way to truly innovate in Insurance is to behave as an Insurer from a product development & pricing perspective."},
+        {
+          id: "about.whyQover.desc1.p2",
+          text: "This is what we do at Qover! We don't sell &quot;on the shelf&quot; products from an Insurer but we internally build our own products and make the pricing."},
+        {
+          id: "about.whyQover.desc1.p3",
+          text: "So at Qover, you will find unique innovative products with a pricing sophistication that goes beyond what traditional insurers do."},
+        {
+          id: "about.whyQover.desc1.p4",
+          text: "With Qover, you can differentiate yourself from the market with a much more competitive price for your customers."}
       ]
     },
     {
-      title: "We are strong : The Lloyd’s is behind us",
+      title: {
+        id: "about.whyQover.desc2.title",
+        text: "We are strong : The Lloyd’s is behind us",
+      },
       icon: IconEnergy,
-      text: [
-        {paragraph: <img src={lloyds} alt="" />},
-        {paragraph: "Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks."},
-        {paragraph: "Around 80 syndicates are underwriting insurance at Lloyd’s, covering all classes of business. Together they interact with thousands of brokers daily to create insurance solutions for businesses in over 200 countries and territories around the world. Lloyd’s insures the majority of FTSE 100 and Dow Jones industrial average companies."},
-        {paragraph: "Lloyd’s enjoys strong financial security supported by excellent ratings. Visit www.lloyds.com for more information."}
+      desc: [
+        {
+          id: "about.whyQover.desc2.p1",
+          text: <img src={lloyds} alt="" />},
+        {
+          id: "about.whyQover.desc2.p2",
+          text: "Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks."},
+        {
+          id: "about.whyQover.desc2.p3",
+          text: "Around 80 syndicates are underwriting insurance at Lloyd’s, covering all classes of business. Together they interact with thousands of brokers daily to create insurance solutions for businesses in over 200 countries and territories around the world. Lloyd’s insures the majority of FTSE 100 and Dow Jones industrial average companies."},
+        {
+          id: "about.whyQover.desc2.p4",
+          text: "Lloyd’s enjoys strong financial security supported by excellent ratings. Visit www.lloyds.com for more information."}
       ]
     },
     {
-      title: "We are the only fully digital player",
+      title: {
+        id: "about.whyQover.desc3.title",
+        text: "We are the only fully digital player",
+      },
       icon: IconDevAbout,
-      text: [
-        {paragraph: "Digital does not only mean &quot;on the internet&quot;. At Qover it means rethinking the front and back-office of an insurer optimizing processes by using technology."},
-        {paragraph: "The result allows us to make instant decision, offer personalised products at the lowest rate."},
-        {paragraph: "Check it out by yourself: no upfront fees, no hidden charges. By filling few basic details, your customer gets a personalised quote and buy the contract in real time. No more paper!"},
-        {paragraph: "We have entirely digitalised the user experience. We created the smartest system around where you can access your own dashboard, manage your porfolio & follow your statistics."}
+      desc: [
+        {
+          id: "about.whyQover.desc3.p1",
+          text: "Digital does not only mean &quot;on the internet&quot;. At Qover it means rethinking the front and back-office of an insurer optimizing processes by using technology."},
+        {
+          id: "about.whyQover.desc3.p2",
+          text: "The result allows us to make instant decision, offer personalised products at the lowest rate."},
+        {
+          id: "about.whyQover.desc3.p3",
+          text: "Check it out by yourself: no upfront fees, no hidden charges. By filling few basic details, your customer gets a personalised quote and buy the contract in real time. No more paper!"},
+        {
+          id: "about.whyQover.desc3.p4",
+          text: "We have entirely digitalised the user experience. We created the smartest system around where you can access your own dashboard, manage your porfolio & follow your statistics."}
       ]
     }
   ];
@@ -54,11 +87,11 @@ export default class WhyQover extends Component {
         <div className="row text-grey">
         {
           this.whyItems.map((item, i) => (
-            <DropdownItem title={item.title} numb={i} key={i} image={item.icon} >
+            <DropdownItem title={item.title} key={i} image={item.icon} >
             {
-              item.text.map((el, j) => (
+              item.desc.map((el, j) => (
                 <p className="text" key={j}>
-                  <FormattedMessage id={`about.whyQover.desc${i}.p${j}`} defaultMessage={el.p} />
+                  <FormattedMessage id={el.id} defaultMessage={el.text} />
                 </p>
               ))
             }
