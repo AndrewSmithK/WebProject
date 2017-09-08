@@ -16,8 +16,7 @@ export default class Subscribe extends React.Component {
         <div className="row ">
           <form>
             <input type="email" placeholder="please@qover.me" />
-            <button type="submit" className="btn bg-turquoise text-white">
-              Subscribe
+            <button type="submit" className="btn bg-turquoise text-white">  
               <FormattedMessage 
                 id={`subscribe.btnSubscribe`}
                 defaultMessage={`Subscribe`}
