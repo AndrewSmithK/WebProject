@@ -120,7 +120,7 @@
   padding-top: 90px;
   padding-bottom: 210px;
   background: $turquoise url('../../images/OurProducts/GapInsurance/video.png') center / cover;
-
+  height: 615px !important;
   .title {
     line-height: 31px;
     font-size: 26px;
@@ -623,7 +623,7 @@
     .container {
       .content-box {
         position: relative;
-        margin: 0 -5px;
+        margin: 0 0px;
         padding: 35px 10px 13px;
         border-radius: 0;
         box-shadow: 1px 1px 15px 0 $pale-grey;
@@ -667,7 +667,7 @@
   }
 
   #gap-support {
-    margin: 0 -5px;
+    margin: 0 0;
     padding: 0;
     padding-top: 50px;
     padding-bottom: 0;
