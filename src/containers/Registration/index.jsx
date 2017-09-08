@@ -2,6 +2,7 @@ import React from 'react'
 import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
 import TextField from 'material-ui/TextField'
+import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 
 import './style.scss'
 
@@ -11,7 +12,7 @@ const selectFieldSettings = {
     fullWidth: true,
     floatingLabelText: "Frequency",
     dropDownMenuProps: {
-        iconButton: <img src={arrowBottom} alt="arrowBottom"/>
+        iconButton: <img src={arrowBottom} alt="arrowBottom" />
     },
     iconStyle: {
         paddingRight: 0,
@@ -54,6 +55,14 @@ const textFieldSettings = {
     }
 }
 
+const radioButtonSettings = {
+    style: {
+        width: 'auto',
+        marginLeft: '30px',
+        float: 'left'
+    }
+}
+
 export default () => (
     <div id="registration">
         <div className="head-block">
@@ -80,6 +89,15 @@ export default () => (
                         <TextField {...textFieldSettings} />
                     </div>
                 </div>
+
+                <div className="radio-button-group">
+                    <div className="radio-button-group__title">Insurance intermediary</div>
+                    <RadioButtonGroup defaultSelected="1" name="insurance">
+                        <RadioButton value="1" label="Yes" {...radioButtonSettings} />
+                        <RadioButton value="0" label="No" {...radioButtonSettings} />
+                    </RadioButtonGroup>
+                </div>
+
             </div>
 
             <div className="form">
