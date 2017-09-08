@@ -21,22 +21,23 @@ export default class TopLine extends React.Component {
   }
 
   handleScroll() {
-    let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    let scrolled = global.window.pageYOffset || global.document.documentElement.scrollTop;
 
     let scrolling = false;
 
-    window.addEventListener('scroll', doItOnScroll);
+    global.window.addEventListener('scroll', doItOnScroll);
 
     function doItOnScroll() {
       scrolling = true;
     }
 
     setInterval(function() {
-      if (scrolling && window.innerWidth > 500) {
+      if (scrolling && global.window.innerWidth > 500) {
         scrolling = false;
-        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        scrolled = global.window.pageYOffset || document.documentElement.scrollTop;
         scrolled > 100 ? this.setState({ navClass: 'narrow' }) : this.setState({navClass: '' });
       }
+      console.log('handleScroll');
     }.bind(this), 200);
   }
 
@@ -47,7 +48,7 @@ export default class TopLine extends React.Component {
   }
 
   render() {
-    return <div className={`container-fluid ${this.stateClass}`} id="topline">
+    return <div className={`container-fluid ${this.state.navClass}`} id="topline">
       <div className="container pr-0 pl-0">
         <Link to="/" className="logo" />
         <div onClick={this.toglMobNav.bind(this)} className="burger-menu-icon">
