@@ -7,6 +7,8 @@
   padding-bottom: 63px;
   background-color: $dark-sky-blue;
   background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
   .left-block {

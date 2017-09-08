@@ -15,6 +15,7 @@
 #header-about {
   padding: 130px 0 90px 0;
   background-image: url('../../images/About/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-repeat: no-repeat;
   background-size: cover;
 
   .container {
@@ -241,6 +242,7 @@
         font-size: 13px;
         font-weight: 300;
         margin-top: 5px;
+        opacity: 0.8;
       }
     }
 

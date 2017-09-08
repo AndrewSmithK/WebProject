@@ -14,7 +14,7 @@ export default class InnProducts extends React.Component {
     return <section className="bg-light-grey" id="our-features">
       <div className="header hide">
         <h2 className="title text-blue text-center">
-          <FormattedMessage 
+          <FormattedMessage
             id={`products.innProducts.title`}
             defaultMessage={`Our Amazing features`}
           />
@@ -32,12 +32,12 @@ export default class InnProducts extends React.Component {
               </div>
               <div className="text text-grey">
                 <b>
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`products.innProducts.cancel.title`}
                     defaultMessage={`Cancel anytime`}
                   />
                 </b><br />
-                <FormattedMessage 
+                <FormattedMessage
                   id={`products.innProducts.cancel.text`}
                   defaultMessage={`Cancel any time in real-time`}
                 />
@@ -54,12 +54,12 @@ export default class InnProducts extends React.Component {
               </div>
               <div className="text text-grey">
                 <b>
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`products.innProducts.branding.title`}
                     defaultMessage={`Your branding our ours.`}
                   />
                 </b><br />
-                <FormattedMessage 
+                <FormattedMessage
                   id={`products.innProducts.cancel.text`}
                   defaultMessage={`Up to you.`}
                 />
@@ -76,12 +76,12 @@ export default class InnProducts extends React.Component {
               </div>
               <div className="text text-grey">
                 <b>
-                <FormattedMessage 
+                <FormattedMessage
                   id={`products.innProducts.digital.title`}
                   defaultMessage={`Fully digital`}
                 />
                 </b><br />
-                <FormattedMessage 
+                <FormattedMessage
                   id={`products.innProducts.cancel.text`}
                   defaultMessage={`No paper anymore!`}
                 />
@@ -98,12 +98,12 @@ export default class InnProducts extends React.Component {
               </div>
               <div className="text text-grey">
                 <b>
-                <FormattedMessage 
+                <FormattedMessage
                   id={`products.innProducts.attractive.title`}
                   defaultMessage={`Attractive comission`}
                 />
                 </b><br />
-                <FormattedMessage 
+                <FormattedMessage
                   id={`products.innProducts.cancel.text`}
                   defaultMessage={`Yet competitive premiums`}
                 />

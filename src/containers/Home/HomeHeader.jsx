@@ -36,7 +36,7 @@ export default class HomeHeader extends React.Component {
               <button className="btn hidden-sm-down btn-turquoise">
                 <FormattedMessage 
                   id={`home.btnDemo`}
-                  defaultMessage={`Ask for demo`}
+                  defaultMessage={`Request a demo`}
                 />
               </button>
             </div>
