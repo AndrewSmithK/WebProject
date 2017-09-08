@@ -90,9 +90,9 @@ export default class Content extends React.Component {
                   FSMA: 115284A</p></li>
                 <li>
                   <div className="sn">
-                    <div style={{ background: '#f00', width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} />
-                    <div style={{ background: '#f00', width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} />
-                    <div style={{ background: '#f00', width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} />
+                    <div style={{  width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} ><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></div>
+                    <div style={{  width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} ><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
+                    <div style={{  width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} ><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></div>
                   </div>
                 </li>
               </ul>
