@@ -12,6 +12,10 @@
   display: block;
 }
 
+.justify-center {
+  justify-content: flex-start;
+}
+
 #header-about {
   padding: 130px 0 90px 0;
   background-image: url('../../images/About/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
@@ -254,7 +258,6 @@
       width: 150px;
       height: 150px;
       text-align: center;
-      margin-left: 15px;
       padding: 51px 25px;
       background-color: $turquoise;
       border-radius: 3px;
@@ -299,6 +302,9 @@
 
 
 @media screen and (max-width: 992px) {
+  .justify-center {
+    justify-content: center !important;
+  }
   #circle {
     
     .container {
@@ -338,7 +344,7 @@
 
 @media screen and (max-width: 768px) {
   #circle {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
 
     .container{

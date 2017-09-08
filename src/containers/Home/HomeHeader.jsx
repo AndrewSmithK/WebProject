@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
@@ -7,6 +8,15 @@ import imac from '../../images/HomePage/Header/imac.png';
 import api from '../../images/HomePage/Header/api.svg';
 
 export default class HomeHeader extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isMounted: false};
+  }
+
+  componentDidMount() {
+    this.setState({ isMounted: true });
+  }
+
   render() {
     return (<section className="section" id="header">
       <div className="container">
@@ -43,8 +53,22 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image m-hidden">
-              <img src={imac} alt="imac" />
-              <img className="api-logo" src={api} alt="api" />
+              <Parallax
+                offsetYMax={10}
+                offsetYMin={-60}
+                slowerScrollRate
+                tag="imac">
+                <img src={imac} alt="imac" />
+              </Parallax>
+              <div className="api-logo">
+                <Parallax
+                  offsetYMax={10}
+                  offsetYMin={-60}
+                  slowerScrollRate
+                  tag="api-logo">
+                  <img src={api} alt="api" />
+                </Parallax>
+              </div>
             </div>
             <div className="mac-image d-hidden">
               <img src={imacMobile} alt="imac" />

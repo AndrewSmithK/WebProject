@@ -23,10 +23,10 @@ export default class DropdownItem extends Component {
           <img src={this.props.image} alt="icon-settings" />
         </div>
         <h4 className="title text-blue" onClick={this.visibilityClick}>
-          <FormattedHTMLMessage
+          <b><FormattedHTMLMessage
             id={this.props.title.id}
-            defaultMessage={`<b>${this.props.title.text}</b>`}
-          />
+            defaultMessage={this.props.title.text}
+          /></b>
           <span className="arrow d-hidden">
             <i className={this.state.visible ? 'fa fa-angle-up' : 'fa fa-angle-down'} aria-hidden="true" />
           </span>

@@ -53,7 +53,7 @@ export default class WhoWeAre extends React.Component {
       </h3>
       <div className={`container ${this.state.visible ? 'open' : ''}`}>
         <div className="row">
-          <div className="employers-list justify-content-center">
+          <div className="employers-list justify-center">
             <div className="item">
               <div className="icon">
                 <img src={Quentin} alt="quentin" />
@@ -510,7 +510,7 @@ export default class WhoWeAre extends React.Component {
                 </p>
               </div>
             </div>
-            <div className="last-icon m-hidden">
+            <div className="item last-icon m-hidden">
               <p>
                 <FormattedMessage
                   id={`about.whoWeAre.team.WantToJoin`}

@@ -28,14 +28,13 @@ export default class Advantages extends React.Component {
                 <img src={IconRevenue} alt="icon-revenue" />
               </div>
               <h4 className="title text-blue">
-                <FormattedMessage 
+                <FormattedMessage
                   id={`home.advantages.item1.title`}
-                  defaultMessage={`Reach new source
-                  of revenues`}
+                  defaultMessage={`Reach new source of revenues`}
                 />
               </h4>
               <p className="text text-grey">
-                <FormattedMessage 
+                <FormattedMessage
                   id={`home.advantages.item1.text`}
                   defaultMessage={`Gain additional revenues by adding our insurance
                   products to broaden your offering.`}
@@ -47,13 +46,13 @@ export default class Advantages extends React.Component {
                 <img src={IconOnDemand} alt="icon-on-demand" />
               </div>
               <h4 className="title text-blue">
-                <FormattedMessage 
+                <FormattedMessage
                   id={`home.advantages.item2.title`}
                   defaultMessage={`Your branding, our innovative products`}
                 />
               </h4>
               <p className="text text-grey">
-                <FormattedMessage 
+                <FormattedMessage
                   id={`home.advantages.item1.text`}
                   defaultMessage={`It takes only 5 minutes to adjust our solution to your branding.
                   We offer much more: innovative products, on-demand features,
@@ -67,14 +66,14 @@ export default class Advantages extends React.Component {
                 <img src={IconDev} alt="icon-dev" />
               </div>
               <h4 className="title text-blue">
-                <FormattedMessage 
+                <FormattedMessage
                   id={`home.advantages.item2.title`}
                   defaultMessage={`Referral, digital lead
                   or Full Integration`}
                 />
               </h4>
               <p className="text text-grey">
-                <FormattedMessage 
+                <FormattedMessage
                   id={`home.advantages.item2.title`}
                   defaultMessage={`Our fully automated & online solution can be integrated within your IT
                   in a few minutes. Your customer gets a price in real time and can purchase

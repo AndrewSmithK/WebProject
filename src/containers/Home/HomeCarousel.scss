@@ -16,6 +16,13 @@ $slick-dots-height: 110px;
       content: '';
     }
   }
+
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    & {
+      display: none;
+    }
+  }
+
   .slick-next {
     right: 35px;
   }

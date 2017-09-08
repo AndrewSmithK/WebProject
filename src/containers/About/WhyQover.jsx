@@ -39,7 +39,6 @@ export default class WhyQover extends Component {
       icon: IconEnergy,
       desc: [
         {
-          id: "about.whyQover.desc2.p1",
           text: <img src={lloyds} alt="" />},
         {
           id: "about.whyQover.desc2.p2",
@@ -91,7 +90,7 @@ export default class WhyQover extends Component {
             {
               item.desc.map((el, j) => (
                 <p className="text" key={j}>
-                  <FormattedMessage id={el.id} defaultMessage={el.text} />
+                  {el.id ? <FormattedMessage id={el.id} defaultMessage={el.text} /> : el.text}
                 </p>
               ))
             }
