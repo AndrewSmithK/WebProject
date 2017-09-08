@@ -1,0 +1,74 @@
+$first-break: 636px;
+
+#registration {
+    .head-block {
+        background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
+        padding: 130px 0;
+
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 43px;
+        }
+    }
+
+    .main-block {
+        max-width: 650px;
+        margin: -60px auto 80px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 15px 0 #eaeff3;
+        border: solid 1px #eaeff3;
+        color: black;
+        
+        .form {
+            background-color: #fff;
+            padding: 60px 50px;
+            
+            &:after {
+                content: '';
+                clear: both;
+                display: block;
+            }
+
+            &:last-child {
+                background-color: #f5f7f9;
+                border-top: 1px solid #eaeff3;
+            }
+            
+            &__title {
+                font-family: MuseoSans;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1;
+                text-align: left;
+                color: #317bda;
+                margin-bottom: 50px;
+            }
+
+            &__row {
+                @media (min-width: $first-break) {
+                    .form__field {
+                        padding: 0 25px 0 0;
+                        &:last-child {
+                            text-align: right;
+                            padding: 0 0 0 25px;
+                        }
+                    }
+                }
+            }
+
+            &__field {
+                width: 50%;
+                float: left;
+                min-width: 260px;
+                font-family: Roboto;
+                label {
+                    margin-bottom: 10px;
+                }
+                @media (max-width: $first-break) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
