@@ -7,7 +7,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { IntlProvider } from 'react-intl';
 import { initializePhraseAppEditor } from 'react-intl-phraseapp';
 import { ParallaxController } from 'react-scroll-parallax';
-import { initConf } from '../config/phraseapp'
+// import { initConf } from '../config/phraseapp'
 
 import $ from 'jquery'
 import Popper from 'popper.js'
@@ -20,7 +20,12 @@ import initializePhraseAppEnabled from './scripts/phraceappEnable'
 ParallaxController.init();
 injectTapEventPlugin()
 initializePhraseAppEnabled()
-initializePhraseAppEditor(initConf);
+initializePhraseAppEditor({
+  projectId: 'a3a97416736eb85bea5e555988548a56',
+  phraseEnabled: localStorage.phraseEnabled === 'true',
+  prefix: '[[__',
+  suffix: '__]]'
+});
 
 window.jQuery = $
 window.Popper = Popper
