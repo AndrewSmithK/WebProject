@@ -569,6 +569,14 @@
   #header-gap-insurance {
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 0;
+    .picture {
+      margin-left: -15px;
+      margin-right: -15px;
+      img {
+        width: 100%;
+      }
+    }
     .block {
       padding-right: 0;
       h1 {
@@ -624,7 +632,7 @@
       .content-box {
         position: relative;
         margin: 0 -5px;
-        padding: 35px 10px 13px;
+        padding: 35px 10px 13px 15px;
         border-radius: 0;
         box-shadow: 1px 1px 15px 0 $pale-grey;
   
@@ -647,7 +655,18 @@
             }
           }
         }
+
       }
+      .sheet {
+         .clips {
+           top: -55px;
+           left: calc(50% - 33px);
+           &:before {
+             background: $pale-grey;
+             height: 5px;
+           }
+         }
+       }
     }
 
     .descript-list {
