@@ -4,9 +4,10 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {IntlProvider} from 'react-intl';
-import {initializePhraseAppEditor} from 'react-intl-phraseapp';
+import { IntlProvider } from 'react-intl';
+import { initializePhraseAppEditor } from 'react-intl-phraseapp';
 import { ParallaxController } from 'react-scroll-parallax';
+import { initConf } from '../config/phraseapp'
 
 import $ from 'jquery'
 import Popper from 'popper.js'
@@ -19,13 +20,7 @@ import initializePhraseAppEnabled from './scripts/phraceappEnable'
 ParallaxController.init();
 injectTapEventPlugin()
 initializePhraseAppEnabled()
-
-initializePhraseAppEditor({
-  projectId: '3bd1ef73d577719aafd5e8cbf85687fc',
-  phraseEnabled: localStorage.phraseEnabled === 'true',
-  prefix: '[[__',
-  suffix: '__]]'
-});
+initializePhraseAppEditor(initConf);
 
 window.jQuery = $
 window.Popper = Popper
