@@ -58,13 +58,19 @@
       list-style: none;
       margin: 20px 0;
 
-      a, span {
+      span {
         font-size: 11px;
         color: #317bda;
         text-decoration: none;
         font-weight: 400;
-        
-        &.selected {
+      }
+
+      a {
+        font-size: 11px;
+        color: #317bda;
+        text-decoration: none;
+        font-weight: 400;
+        &.selected span {
           font-weight: bold;
           color: #31cfda;
         }

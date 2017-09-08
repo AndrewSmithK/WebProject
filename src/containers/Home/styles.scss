@@ -7,6 +7,8 @@
   padding-bottom: 63px;
   background-color: $dark-sky-blue;
   background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
   .left-block {
@@ -300,7 +302,7 @@
 
       p {
         b {
-          font-weight: bold;
+          font-weight: 500;
         }
       }
     }
@@ -361,6 +363,12 @@
         left: calc(50% - 32px);
       }
     }
+}
+
+#inn-products {
+  img {
+    height: 50px;
+  }
 }
 
 #gap-insurance {
@@ -514,7 +522,7 @@
 }
 
 #partners {
-  padding: 70px70px 0 75px;
+  padding: 70px 70px 0 75px;
 
   .container {
     margin: 40px auto auto;
@@ -566,6 +574,14 @@
 }
 
 @media screen and (max-width: $break-mobile) {
+  .hide {
+    display: none;
+  }
+
+  .display {
+    display: block !important;
+  }
+
   #header {
     padding-top: 90px;
     padding-bottom: 15px;
@@ -756,16 +772,25 @@
   }
   
   #robust-api {
+    padding: 100px 5px 20px;
     & > .title {
+      padding: 0 15px;
+      line-height: 34px;
       font-size: 28px;
+      margin: 30px 0;
     }
     .gap-image {
       display: none;
     }
     .text-blocks {
-      .title {
-        font-size: 16px;
+      margin-top: 0;
+      .item{
+        margin-bottom: 30px;
+        .title {
+          font-size: 16px;
+        }
       }
+
     }
     .half-circle {
       display: none;
@@ -795,6 +820,7 @@
         
         img {
           width: 40%;
+          height: auto;
         }
       }
       .text {

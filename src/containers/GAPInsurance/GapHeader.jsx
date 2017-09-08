@@ -9,10 +9,10 @@ export default class GapHeader extends React.Component {
     return <section className="section" id="header-gap-insurance">
       <div className="container">
         <Link to="/our-products">
-          <div className="label">
-            <i className="fa fa-angle-left" aria-hidden="true" /><FormattedMessage 
+          <div className="return-label text-white">
+            <i className="fa fa-angle-left fa-lg" aria-hidden="true" /><FormattedMessage
               id={`gap.header.btnBack`}
-              defaultMessage={`ALL products`}
+              defaultMessage={` ALL products`}
             />
           </div>
         </Link>

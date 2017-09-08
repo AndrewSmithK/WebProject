@@ -10,7 +10,7 @@ export default class TermsSideBar extends React.Component {
         <h6 className="subtitle text-grey">
           Terms & Policies
         </h6>
-        <TermsItem title="Legal notices" path="/terms-policies" />
+        <TermsItem title="Legal notices" path="/terms-policies" exact={true} />
 
         <TermsItem title="Cookie policy" path="/terms-policies/cookie-policy">
           <li><Link to="/terms-policies">Log data</Link></li>

@@ -12,7 +12,7 @@ export default class RobustApi extends React.Component {
       <div className="icon text-center">
         <img src={IconDevBig} alt="Qover - icon-dev-big"/>
       </div>
-      <h2 className="title text-grey">
+      <h2 className="title text-grey hide">
         <FormattedMessage 
           id={`home.robustApi.title.part1`}
           defaultMessage={`Easy to use and robust API that makes`}
@@ -22,6 +22,12 @@ export default class RobustApi extends React.Component {
           defaultMessage={`insurance distribution effortless`}
         />
       </h2>
+        <h2 className="title text-grey d-none display">
+            <FormattedMessage
+                id={`home.robustApi.title.part1`}
+                defaultMessage={`Easy to use and robust API that transforms insurance into a piece of cake`}
+            />
+        </h2>
       <div className="gap-image">
         <img src={Api} className="img-fluid" alt="Qover - api" />
       </div>
