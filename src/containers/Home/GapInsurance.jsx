@@ -31,15 +31,11 @@ export default class GapInsurance extends React.Component {
           </ul>
         </div>
       </div>
-
-      
-
       <div className="tab-content">
         <div role="tabpanel" className="tab-pane active" id="insurance">
-
         <div className="container text-white">
         <div className="row">
-          <div className="col-6">
+          <div className="left-block col-12 col-md-6">
             <h3 className="subtitle">
               <small className="text-turquoise">
                 <FormattedMessage 
@@ -148,7 +144,7 @@ export default class GapInsurance extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="big-image">
               <img src={Mockup} alt="mockup" />
             </div>
