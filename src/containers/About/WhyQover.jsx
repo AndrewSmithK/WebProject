@@ -118,7 +118,7 @@ export default class WhyQover extends Component {
               id={`about.insertion.p1.part3`}
               defaultMessage={`while offering much cheaper premium to your customers.`}
             /></b>
-            <div className="text text-title high-priority-z-index">
+            <div className="text text-title high-priority">
               <FormattedMessage 
                 id={`about.insertion.subtitle`}
                 defaultMessage={`Here's how it works:`}
