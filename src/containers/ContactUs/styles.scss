@@ -202,7 +202,31 @@
 @media screen and (max-width: $break-mobile) {
 
   #header-contact-us {
+    padding-top: 90px;
+    padding-bottom: 50px;
     height: auto;
+    background: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+    position: relative;
+
+    .container {
+      .subtitle {
+        line-height: 24px;
+      }
+    }
+
+    &:before {
+      background: transparent;
+      background: url('../../images/contact-us/header-bg-mobile.jpg') no-repeat center / cover;
+      content: "";
+      opacity: 0.3;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index:0;
+    }
   }
 
   #contactUs {
