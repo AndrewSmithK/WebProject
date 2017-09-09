@@ -160,6 +160,7 @@
       margin-top: 30px;
 
       .title {
+        text-transform: uppercase;
         margin: 30px auto 11px auto;
         font-weight: 900;
         line-height: 1.11;
@@ -269,6 +270,7 @@
   padding-bottom: 67px;
   background-image: url('../../images/contact-us/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-size: cover;
+  background-position: center;
   text-align: center;
 
   .container {
@@ -405,6 +407,7 @@
   }
 
    #header-about {
+    padding-top: 80px;
     padding-bottom: 50px;
 
     .title {
