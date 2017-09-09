@@ -231,48 +231,58 @@ a {
 .hiringline {
   position: absolute;
   top: 0px;
-  height: 25px;
+  padding: 6px 0;
+  height: 30px;
   background-color: rgba(255,255,255,0.12);
+
   .hiring {
-      .btn {
+      .btn-hiring {
         float: right;
-        margin-left: 10px;
-        margin-top: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 20px;
+        margin-right: 20px;
+        padding: 0 5px;
+        height: 18px;
+        line-height: 18px;
         color: #fff;
-        line-height: 20px;
-        font-size: 11px;
+        font-size: 9px;
         font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
         border-radius: 2px;
+        border: solid 1px rgb(255, 255, 255);
       }
+
+      .link {
+        float: right;
+        color: #fff;
+        font-size: 9px;
+        line-height: 18px;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .separator {
+        float: right;
+        margin: 0 10px; 
+        font-size: 9px;
+        line-height: 18px;
+      }
+
       @media (max-width: 381px) {
         .btn {
           font-size: 8px;
         }
-      }
-      .btndivider {
-        float: right;
-        line-height: 17px;
-      }
-      .wehire{
-        color: #fff;
-        background: rgba(255, 255, 255, 0.0);
-        border: 1px solid #fff;
-      }
-      .complaints {
-
-      }
-      .consumersweb {
-        padding-right: 0px;
       }
     }
   }
 
 #topline {
   position: absolute;
-  top: 20px;
+  top: 30px;
   width: 100%;
   height: 60px;
   box-sizing: border-box;
@@ -281,9 +291,11 @@ a {
   transition: all .4s;
   &.narrow {
     position: fixed;
+    top: 0;  
     border: 1px solid #f7f7f7;
     background: #fff;
     transition: all .4s;
+    
     .logo {
       background: url(../images/Header/logo-qover.svg) center no-repeat;
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Hiring extends React.Component {
     constructor() {
@@ -10,12 +11,11 @@ export default class Hiring extends React.Component {
     render() {
         return (
             <div className="container-fluid hiringline">
-                <div className="container hiring pr-0 pl-0">
-                            <a href="/" className="btn consumersweb">CONSUMERS WEBSITE</a>
-                            <span className="btndivider">&nbsp;|</span>
-                            <a href="/" className="btn complaints">COMPLAINTS</a> 
-                            <a href="/" className="wehire btn">WE ARE HIRING</a>
-
+                <div className="container hiring p-0">
+                    <Link to="/" className="link">Consumer website</Link>
+                    <span className="separator">|</span>
+                    <Link to="/" className="link">Complaints</Link> 
+                    <Link to="/" className="btn btn-hiring">We are hiring</Link>
                 </div>
             </div>);
     }
