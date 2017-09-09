@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
+import Hiring from "./Hiring";
 import MobileNavigation from './MobileNavigation';
 
 import MenuIcon from '../images/Header/icon-burger.svg';
@@ -48,7 +49,9 @@ export default class TopLine extends React.Component {
   }
 
   render() {
-    return <div className={`container-fluid ${this.state.navClass}`} id="topline">
+    return (<div>
+      <Hiring />
+      <div className={`container-fluid ${this.state.navClass}`} id="topline">
       <div className="container pr-0 pl-0">
         <Link to="/" className="logo" />
         <div onClick={this.toglMobNav.bind(this)} className="burger-menu-icon">
@@ -232,6 +235,6 @@ export default class TopLine extends React.Component {
         </nav>
       </div>
       { this.state.showMobNav && <MobileNavigation toglMobNav={this.toglMobNav.bind(this)} /> }
-    </div>;
+  </div></div>);
   }
 }

@@ -228,17 +228,57 @@ a {
     font-weight: 500;
   }
 }
+.hiringline {
+  position: absolute;
+  top: 0px;
+  height: 25px;
+  background-color: rgba(255,255,255,0.12);
+  .hiring {
+      .btn {
+        float: right;
+        margin-left: 10px;
+        margin-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 20px;
+        color: #fff;
+        line-height: 20px;
+        font-size: 11px;
+        font-weight: 500;
+        border-radius: 2px;
+      }
+      @media (max-width: 381px) {
+        .btn {
+          font-size: 8px;
+        }
+      }
+      .btndivider {
+        float: right;
+        line-height: 17px;
+      }
+      .wehire{
+        color: #fff;
+        background: rgba(255, 255, 255, 0.0);
+        border: 1px solid #fff;
+      }
+      .complaints {
+
+      }
+      .consumersweb {
+        padding-right: 0px;
+      }
+    }
+  }
 
 #topline {
   position: absolute;
-  top: 0;
+  top: 20px;
   width: 100%;
   height: 60px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(247,247,247, .3);
   z-index: 999;
   transition: all .4s;
-
   &.narrow {
     position: fixed;
     border: 1px solid #f7f7f7;
@@ -269,7 +309,11 @@ a {
       }
     }
   }
-
+  @media (max-width: 381px) {
+    #topline {
+      top: 30px !important;
+    }
+  }
   .logo {
     float: left;
     display: block;
