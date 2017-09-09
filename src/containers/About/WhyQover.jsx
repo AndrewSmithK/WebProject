@@ -104,23 +104,27 @@ export default class WhyQover extends Component {
             <div className="qover-logo">
               <img src={qover} alt="qover" />
             </div>
-            <b><FormattedMessage 
+            <b className="high-priority-z-index"><FormattedMessage
               id={`about.insertion.p1.part1`}
               defaultMessage={`With our business model, you keep the same level of commission`}
-            /></b> <FormattedMessage 
-              id={`about.insertion.p1.part2`}
-              defaultMessage={`(more if you wish to administrate your customer contracts yourself)`}
-            /> <b><FormattedMessage 
+            /></b>
+              <span className="high-priority-z-index">
+              <FormattedMessage
+                  id={`about.insertion.p1.part2`}
+                  defaultMessage={`(more if you wish to administrate your customer contracts yourself)`}
+              />
+            </span>
+              <b className="high-priority-z-index"><FormattedMessage
               id={`about.insertion.p1.part3`}
               defaultMessage={`while offering much cheaper premium to your customers.`}
             /></b>
-            <div className="text text-title">
+            <div className="text text-title high-priority-z-index">
               <FormattedMessage 
                 id={`about.insertion.subtitle`}
                 defaultMessage={`Here's how it works:`}
               />
             </div>
-            <p className="text item-text">
+            <p className="text item-text high-priority-z-index">
               <FormattedMessage 
                 id={`about.insertion.p2.part1`}
                 defaultMessage={`- Using technology, we have trimmed the fat from traditional insurance processes by rebuilding the entire insurance ecosystem from scratch.`}

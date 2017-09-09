@@ -1,5 +1,9 @@
 @import '../../styles/varibles';
 
+.high-priority-z-index {
+  opacity:0.99999;
+}
+
 .d-sm-block {
   transition: all 2s linear;
 }
@@ -427,6 +431,38 @@
       font-size: 18px;
       padding-left: 17px;
       padding-right: 18px;
+    }
+  }
+
+  #contact-us {
+    background: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+    position: relative;
+    .container {
+      padding: 0 30px;
+      .content {
+        .title {
+          margin-bottom: 10px;
+        }
+        .subtitle {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &:before {
+      background: transparent;
+      background: url('../../images/About/contact-bg-mobile.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      content: "";
+      opacity: 0.1;
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index:0;
     }
   }
 

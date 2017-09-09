@@ -6,7 +6,7 @@ export default class ContactUs extends React.Component {
   render() {
     return <section className="section" id="contact-us">
       <div className="container">
-        <div className="content row justify-content-center">
+        <div className="content row justify-content-center high-priority-z-index">
           <h2 className="title">
             <FormattedMessage 
               id={`about.contactUs.title.part1`}
