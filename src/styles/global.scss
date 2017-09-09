@@ -353,8 +353,9 @@ a {
         height: 100%;
         line-height: 11px;
         list-style: none;
+        
         &:nth-child(2){
-          a {
+          & > a {
             padding-top: 22.5px;
           }
         }

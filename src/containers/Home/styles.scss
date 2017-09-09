@@ -189,7 +189,9 @@
 #get-started {
   padding-top: 90px;
   background-image: url('../../images/HomePage/GetStarted/get-started-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
   
   .secture-title {
     margin-bottom: 50px;
@@ -712,6 +714,7 @@
 
   #get-started {
     background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
+    
     & {
       padding: 50px 25px 30px;
     }
