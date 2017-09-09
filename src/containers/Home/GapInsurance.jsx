@@ -64,8 +64,8 @@ export default class GapInsurance extends React.Component {
                 <br /><br />
                 <FormattedMessage 
                   id={`home.gap.part1.p2`}
-                  defaultMessage={`The GAP insurance covers the potential financial shotfall between the <br />
-                  purchase price of the car and the indemnity paid by the casco insurer <br />
+                  defaultMessage={`The GAP insurance covers the potential financial shotfall between the
+                  purchase price of the car and the indemnity paid by the casco insurer
                   in case the vehicle is written off.`}
                 />
               </p>
