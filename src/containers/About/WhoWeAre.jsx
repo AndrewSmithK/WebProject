@@ -398,7 +398,7 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, background: '#f00' }} />
+                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)'}} />
               </div>
               <div className="text">
                 <p className="icon-title">
@@ -417,7 +417,7 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, background: '#f00' }} />
+                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)' }} />
               </div>
               <div className="text">
                 <p className="icon-title">
@@ -474,7 +474,7 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, background: '#f00' }} />
+                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)' }} />
               </div>
               <div className="text">
                 <p className="icon-title">
@@ -493,7 +493,7 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, background: '#f00' }} />
+                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)' }} />
               </div>
               <div className="text">
                 <p className="icon-title">
