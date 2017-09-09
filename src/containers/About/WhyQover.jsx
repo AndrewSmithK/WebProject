@@ -37,9 +37,8 @@ export default class WhyQover extends Component {
         text: "We are strong : The Lloyd’s is behind us",
       },
       icon: IconEnergy,
+      logo: lloyds,
       desc: [
-        {
-          text: <img src={lloyds} alt="" />},
         {
           id: "about.whyQover.desc2.p2",
           text: "Lloyd’s is the world’s specialist insurance and reinsurance market, bringing together an outstanding concentration of underwriting expertise and talent. It is often the first to insure emerging, unusual and complex risks."},
@@ -86,7 +85,7 @@ export default class WhyQover extends Component {
         <div className="row text-grey">
         {
           this.whyItems.map((item, i) => (
-            <DropdownItem title={item.title} key={i} image={item.icon} >
+            <DropdownItem title={item.title} logo={item.logo} key={i} image={item.icon} >
             {
               item.desc.map((el, j) => (
                 <p className="text" key={j}>

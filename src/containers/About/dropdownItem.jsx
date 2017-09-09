@@ -30,6 +30,7 @@ export default class DropdownItem extends Component {
           <span className="arrow d-hidden">
             <i className={this.state.visible ? 'fa fa-angle-up' : 'fa fa-angle-down'} aria-hidden="true" />
           </span>
+          {this.props.logo ? <img src={this.props.logo} className="logo" alt="" /> : ''}
         </h4>
         <div className={`${this.state.visible ? 'open' : ''} desc`}>
           {this.props.children}

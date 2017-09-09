@@ -109,7 +109,8 @@
       padding-right: 35px;
 
       .logo {
-        margin-bottom: 15px;
+        display: block;
+        margin-top: 15px;
       }
 
       .title {
@@ -341,6 +342,12 @@
       .item {
         float: none;
         margin: 0 auto;
+      }
+    }
+
+    .item {
+      .logo {
+        margin-bottom: 8px;
       }
     }
   }
