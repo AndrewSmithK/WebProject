@@ -12,6 +12,10 @@
   display: block;
 }
 
+.justify-center {
+  justify-content: flex-start;
+}
+
 #header-about {
   padding: 130px 0 90px 0;
   background-image: url('../../images/About/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
@@ -156,6 +160,7 @@
       margin-top: 30px;
 
       .title {
+        text-transform: uppercase;
         margin: 30px auto 11px auto;
         font-weight: 900;
         line-height: 1.11;
@@ -254,7 +259,6 @@
       width: 150px;
       height: 150px;
       text-align: center;
-      margin-left: 15px;
       padding: 51px 25px;
       background-color: $turquoise;
       border-radius: 3px;
@@ -266,6 +270,7 @@
   padding-bottom: 67px;
   background-image: url('../../images/contact-us/banner-contact.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-size: cover;
+  background-position: center;
   text-align: center;
 
   .container {
@@ -299,6 +304,9 @@
 
 
 @media screen and (max-width: 992px) {
+  .justify-center {
+    justify-content: center !important;
+  }
   #circle {
     
     .container {
@@ -338,7 +346,7 @@
 
 @media screen and (max-width: 768px) {
   #circle {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
 
     .container{
@@ -399,6 +407,7 @@
   }
 
    #header-about {
+    padding-top: 80px;
     padding-bottom: 50px;
 
     .title {

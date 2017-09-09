@@ -13,7 +13,7 @@ export default class Circle extends React.Component {
               <h3 className="title text-blue">
                 <FormattedMessage 
                   id={`about.circle.slice.title`}
-                  defaultMessage={`Slice`}
+                  defaultMessage={`Sliced`}
                 />
               </h3>
               <p className="text text-grey" >
@@ -27,13 +27,13 @@ export default class Circle extends React.Component {
             <div className="item left-side-bar text-right bd-right" id="left-bar">
               <h3 className="title text-blue">
                 <FormattedMessage 
-                  id={`about.circle.onDemando.title`}
-                  defaultMessage={`On-demando`}
+                  id={`about.circle.onDemand.title`}
+                  defaultMessage={`On-demand`}
                 />
               </h3>
               <p className="text text-grey">
                 <FormattedMessage 
-                  id={`about.circle.onDemando.text`}
+                  id={`about.circle.onDemand.text`}
                   defaultMessage={`Coverage from 1 day up to 5 years. Cancel anytime`}
                 />
               </p>

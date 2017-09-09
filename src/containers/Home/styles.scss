@@ -664,7 +664,8 @@
       width: 280px;
       margin: 0 auto;
       font-size: 20px;
-      margin-bottom: 30px;
+      margin-top: 10px;
+      margin-bottom: 53px;
     }
 
     .container {
@@ -678,6 +679,8 @@
           vertical-align: middle;
           display: table;
           width: 100%;
+          padding-left: 15px;
+          padding-right: 55px;
 
           &:last-child {
             margin-bottom: 0;
@@ -687,12 +690,12 @@
             float: left;
             text-align: center;
             margin: 0;
+            margin-left: 25px;
             margin-right: 18px;
             width: 42px;
           }
 
           .title {
-            float: left;
             margin: 0;
             padding: 0;
             font-size: 16px;
@@ -708,6 +711,7 @@
   }
 
   #get-started {
+    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
     & {
       padding: 50px 25px 30px;
     }

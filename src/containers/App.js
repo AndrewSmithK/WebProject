@@ -16,6 +16,7 @@ import TermsConflicts from './TermsPolicies/TermsConflicts';
 import TermsDataPrivacy from './TermsPolicies/TermsDataPrivacy';
 import TermsClaimNotif from './TermsPolicies/TermsClaimNotif';
 import TermsComplaints from './TermsPolicies/TermsComplaints';
+import Registration from './Registration';
 import Signin from './Signin';
 import Forgot from './Forgot';
 
@@ -52,6 +53,7 @@ export default () => (
       <DefaultLayout path="/contact-us" component={ContactUs} />
       <DefaultLayout exact path="/our-products" component={OurProducts} />
       <DefaultLayout path="/our-products/gap-insurance" component={GapInsurance} />
+      <DefaultLayout path="/registration" component={Registration} />
       <TermsLayout exact path="/terms-policies" component={TermsNotices} />
       <TermsLayout path="/terms-policies/cookie-policy" component={TermsCookies} />
       <TermsLayout path="/terms-policies/conflicts" component={TermsConflicts} />
