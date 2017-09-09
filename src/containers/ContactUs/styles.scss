@@ -136,6 +136,17 @@
 
           .sn {
             padding-top: 20px;
+
+            a {
+              margin-right: 20px;
+              height: 20px;
+              width: auto;
+              color: rgba(255,255,255,.5);
+
+              &:hover {
+                color: rgba(255,255,255,.75);
+              }
+            }
           }
 
           address {

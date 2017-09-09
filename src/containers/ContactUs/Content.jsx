@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import Field from '../../components/small/Field';
@@ -90,9 +91,9 @@ export default class Content extends React.Component {
                   FSMA: 115284A</p></li>
                 <li>
                   <div className="sn">
-                    <div style={{  width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} ><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></div>
-                    <div style={{  width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} ><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
-                    <div style={{  width: `${20}px`, height: `${20}px`, marginRight: `${20}px`, display: 'inline-block' }} ><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></div>
+                    <Link to="/"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></Link>
+                    <Link to="/"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></Link>
+                    <Link to="/"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></Link>
                   </div>
                 </li>
               </ul>
