@@ -3,8 +3,22 @@
 #header-contact-us {
   padding: 130px 0 90px 0;
   height: 472px;
-  background-image: url('../../images/contact-us/map.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
-  background-size: cover;
+  background: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  position: relative;
+
+  &:before {
+    background: transparent;
+    background: url('../../images/contact-us/map.png') no-repeat center / cover;
+    content: "";
+    opacity: 0.4;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:0;
+  }
   .container {
     .title {
       width: 100%;
