@@ -23,7 +23,7 @@ export default class Explanation extends React.Component {
       </h3>
       <div className="container">
         <div className="row text-center">
-          <div className="col">
+          <div className="col-md-4 col-12">
             <div className="item bg-white">
               <div className="icon">
                 <img src={IconReferral} alt="icon-referral" />
@@ -51,7 +51,7 @@ export default class Explanation extends React.Component {
               </p>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-4 col-12">
             <div className="item bg-white">
               <div className="icon">
                 <img src={IconLead} alt="icon-lead"/>
@@ -80,7 +80,7 @@ export default class Explanation extends React.Component {
               </p>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-4 col-12">
             <div className="item bg-white">
               <div className="icon">
                 <img src={IconVertical} alt="icon-vertical"/>

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax as ParallaxBox } from 'react-scroll-parallax';
+import { Parallax } from 'react-parallax';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
 import imacMobile from '../../images/HomePage/Header/imac-mobile.png';
 import imac from '../../images/HomePage/Header/imac.png';
 import api from '../../images/HomePage/Header/api.svg';
+import bg from '../../images/HomePage/homepage-bg.png';
 
 export default class HomeHeader extends React.Component {
   constructor(props) {
@@ -19,7 +21,9 @@ export default class HomeHeader extends React.Component {
 
   render() {
     return (<section className="section" id="header">
+    <Parallax bgImage={bg} strength={400}>
       <div className="container">
+        <div className="header-space"></div>
         <div className="icon">
           <img src={LloydsLogoSmall} alt="lloyds-logo" />
         </div>
@@ -53,22 +57,20 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image m-hidden">
-              <Parallax
-                offsetYMax={10}
-                offsetYMin={-60}
+              <ParallaxBox
+                offsetYMax={20}
+                offsetYMin={-20}
                 slowerScrollRate
                 tag="imac">
-                <img src={imac} alt="imac" />
-              </Parallax>
-              <div className="api-logo">
-                <Parallax
-                  offsetYMax={10}
-                  offsetYMin={-60}
-                  slowerScrollRate
-                  tag="api-logo">
-                  <img src={api} alt="api" />
-                </Parallax>
-              </div>
+                <img src={imac} alt="" />
+              </ParallaxBox>
+              <ParallaxBox
+                offsetYMax={20}
+                offsetYMin={-20}
+                slowerScrollRate
+                tag="LloydsLogoSmall">
+                <img src={api} alt="" />
+              </ParallaxBox>
             </div>
             <div className="mac-image d-hidden">
               <img src={imacMobile} alt="imac" />
@@ -76,6 +78,7 @@ export default class HomeHeader extends React.Component {
           </div>
         </div>
       </div>
+      </Parallax>
     </section>);
   }
 }

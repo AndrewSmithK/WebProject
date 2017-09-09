@@ -111,14 +111,17 @@
         letter-spacing: 0.6px;
         text-align: center;
         background: transparent;
-        transition: 0.3s;
+        transition: transform 0.2s ease-in-out;
+        outline: none;
+        cursor: pointer;
         &.active {
           color: #317bda;
           font-size: 16px;
+          transform: scale(1.1);
           font-weight: 500;
           letter-spacing: 0.6px;
           border-bottom: 2px solid #317bda;
-          transition: 0.3s;
+          transition: transform 0.2s ease-in-out;
         }
       }
       .select-field {

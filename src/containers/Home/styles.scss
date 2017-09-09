@@ -3,13 +3,23 @@
 // Home-page
 
 #header {
-  padding-top: 140px;
+  position: relative;
+  padding-top: 0;
   padding-bottom: 63px;
   background-color: $dark-sky-blue;
-  background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  // background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+
+  .header-space {
+    padding-bottom: 140px;
+  }
+
+  .react-parallax  {
+    position: static !important;
+  }
 
   .left-block {
     h4 {
@@ -257,10 +267,15 @@
     }
 
     .item {
+      margin-bottom: 10px;
       padding: 45px 25px;
       height: 335px;
       border-radius: 3px;
       box-shadow: 0 0 10px $pale-grey;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       .icon {
         margin-bottom: 45px;
