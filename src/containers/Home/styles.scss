@@ -107,6 +107,7 @@
   
         .title {
           margin: 30px auto 11px auto;
+          font-weight: bold;
         }
         
         .text {
@@ -639,6 +640,17 @@
       &:hover {
         background-color: #2ec0cb;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #robust-api {
+    .display {
+      display: block !important;
+    }
+    .hide {
+      display: none !important;
     }
   }
 }

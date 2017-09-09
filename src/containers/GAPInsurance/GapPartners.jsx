@@ -20,25 +20,22 @@ export default class GapPartners extends React.Component {
                   defaultMessage={`They are already working with us`}
                 />
               </h2>
-              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }} />
-              <div className="icon hide">
-                <img src={dieteren} alt="dieteren" />
-              </div>
-              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }} />
-              <div className="icon hide">
-                <img src={Fiat} alt="Fiat" />
-              </div>
-              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }}  />
-              <div className="icon hide">
-                <img src={VW} alt="Volkswagen" />
-              </div>
-              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }}  />
-              <div className="icon hide">
-                <img src={Toyota} alt="Toyota" />
-              </div>
-              <div className="icon d-none display" style={{ background: '#ff0000', width: 30 + 'px', height: 30 + 'px' }}  />
-              <div className="icon hide" id="tesla">
-                <img src={Tesla} alt="Tesla" />
+              <div className="icons">
+                <div className="icon">
+                  <img src={dieteren} alt="dieteren" />
+                </div>
+                <div className="icon">
+                  <img src={Fiat} alt="Fiat" />
+                </div>
+                <div className="icon">
+                  <img src={VW} alt="Volkswagen" />
+                </div>
+                <div className="icon">
+                  <img src={Toyota} alt="Toyota" />
+                </div>
+                <div className="icon">
+                  <img src={Tesla} alt="Tesla" />
+                </div>
               </div>
               {/*<div className="icon" style={{width: 51.1 + 'px', height: 51.1 + 'px', background: '#f00'}}/>*/}
               {/*<div className="icon" style={{width: 61.6 + 'px', height: 51.1 + 'px', background: '#f00'}}/>*/}
