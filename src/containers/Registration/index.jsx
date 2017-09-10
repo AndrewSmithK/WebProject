@@ -20,11 +20,13 @@ const selectFieldSettings = {
     },
     underlineStyle: {
         borderBottomWidth: '2px',
-        borderBottomColor: '#317bda'
+        borderBottomColor: '#317bda',
+        bottom: '5px'
     },
     labelStyle: {
         color: '#317bda',
-        fontSize: '18px'
+        fontSize: '18px',
+        paddingBottom: '15px'
     },
     floatingLabelStyle: {
         fontSize: '10px',
@@ -38,7 +40,8 @@ const textFieldSettings = {
     floatingLabelText: "Fixed Floating Label Text",
     underlineStyle: {
         borderBottomWidth: '2px',
-        borderBottomColor: '#317bda'
+        borderBottomColor: '#317bda',
+        bottom: '5px'
     },
     floatingLabelFocusStyle: {
         fontSize: '10px',
@@ -58,8 +61,11 @@ const textFieldSettings = {
 const radioButtonSettings = {
     style: {
         width: 'auto',
-        marginLeft: '30px',
+        marginRight: '30px',
         float: 'left'
+    },
+    iconStyle: {
+        marginRight: '10px'
     }
 }
 
@@ -90,9 +96,9 @@ export default () => (
                     </div>
                 </div>
 
-                <div className="radio-button-group">
-                    <div className="radio-button-group__title">Insurance intermediary</div>
-                    <RadioButtonGroup defaultSelected="1" name="insurance">
+                <div className="radio-group">
+                    <div className="radio-group__title">Insurance intermediary</div>
+                    <RadioButtonGroup defaultSelected="1" name="insurance" className="radio-group__buttons">
                         <RadioButton value="1" label="Yes" {...radioButtonSettings} />
                         <RadioButton value="0" label="No" {...radioButtonSettings} />
                     </RadioButtonGroup>

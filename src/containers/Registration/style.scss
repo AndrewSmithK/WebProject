@@ -74,11 +74,16 @@ $first-break: 636px;
                 }
             }
 
-            .radio-button-group {
+            .radio-group {
                 font-size: 18px;
+                line-height: 24px;
                 &__title {
                     float: left;
                     color: #5b7289;
+                    margin-right: 30px;
+                }
+                &__buttons {
+                    float: left;
                 }
                 &:after {
                     content: '';
