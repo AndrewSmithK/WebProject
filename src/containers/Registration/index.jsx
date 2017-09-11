@@ -3,13 +3,19 @@ import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
 import TextField from 'material-ui/TextField'
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
-import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
+import { ValidatorForm, TextValidator, SelectValidator } from 'react-material-ui-form-validator'
 
 import './style.scss'
 
 import arrowBottom from './icon-dropdown.svg'
 
+const countryList = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Republic of Cyprus', 'Czech Republic',
+    'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia',
+    'Liechtenstein', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Norway', 'Poland', 'Portugal',
+    'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'United Kingdom', 'OTHER']
+
 const selectFieldSettings = {
+    className: 'text-field',
     fullWidth: true,
     dropDownMenuProps: {
         iconButton: <img src={arrowBottom} alt="arrowBottom" />
@@ -31,6 +37,13 @@ const selectFieldSettings = {
     floatingLabelStyle: {
         fontSize: '10px',
         color: '#5b7289'
+    },
+    errorStyle: {
+        backgroundColor: '#f4566a',
+        color: '#f4566a',
+        padding: '10px',
+        fontSize: '12px',
+        fontWeight: '500'
     }
 }
 
@@ -88,7 +101,15 @@ export default class Registration extends Component {
                 function: '',
                 lastName: '',
                 firstName: '',
-                number: ''
+                number: '',
+                registrationNumber: '',
+                title: '',
+                legalName: '',
+                addressFirst: '',
+                postCode: '',
+                city: '',
+                website: '',
+                description: ''
             },
             submitted: false
         }
@@ -124,21 +145,42 @@ export default class Registration extends Component {
                             <h2 className="form__title">The Company</h2>
                             <div className="form__row">
                                 <div className="form__field">
-                                    <SelectField {...selectFieldSettings} value={1} floatingLabelText="Country" >
-                                        <MenuItem value={1} primaryText="Belgium" />
-                                        <MenuItem value={2} primaryText="Germany" />
-                                        <MenuItem value={3} primaryText="France" />
-                                    </SelectField>
+                                    <SelectValidator
+                                        {...selectFieldSettings}
+                                        name="country"
+                                        value={0}
+                                        floatingLabelText="Country"
+                                        validators={['required']}
+                                        errorMessages={['You forgot to give us the country.']}
+                                    >
+                                        {countryList.map((country, index) => <MenuItem key={index} value={index} primaryText={country} />)}
+                                    </SelectValidator>
                                 </div>
 
                                 <div className="form__field">
-                                    <TextField {...textFieldSettings} floatingLabelText="Company registration number" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.registrationNumber}
+                                        onChange={this.handleChange}
+                                        floatingLabelText="Company registration number"
+                                        name="registrationNumber"
+                                        validators={['required']}
+                                        errorMessages={['You forgot to give us the company registration number.']}
+                                    />
                                 </div>
                             </div>
 
                             <div className="form__row">
                                 <div className="form__field">
-                                    <TextField {...textFieldSettings} floatingLabelText="Legal Name" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.legalName}
+                                        onChange={this.handleChange}
+                                        floatingLabelText="Legal Name"
+                                        name="legalName"
+                                        validators={['required']}
+                                        errorMessages={['This field is required.']}
+                                    />
                                 </div>
 
                                 <div className="form__field">
@@ -146,17 +188,41 @@ export default class Registration extends Component {
                                 </div>
                             </div>
 
-                            <TextField {...textFieldSettings} floatingLabelText="Address Line 1" />
+                            <TextValidator
+                                {...textFieldSettings}
+                                value={formData.addressFirst}
+                                onChange={this.handleChange}
+                                floatingLabelText="Address Line 1"
+                                name="addressFirst"
+                                validators={['required']}
+                                errorMessages={['This field is required.']}
+                            />
 
                             <TextField {...textFieldSettings} floatingLabelText="Address Line 2" />
 
                             <div className="form__row form__row--post">
                                 <div className="form__field form__field--post">
-                                    <TextField {...textFieldSettings} floatingLabelText="Post Code" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.postCode}
+                                        onChange={this.handleChange}
+                                        floatingLabelText="Post Code"
+                                        name="postCode"
+                                        validators={['required']}
+                                        errorMessages={['This field is required.']}
+                                    />
                                 </div>
 
                                 <div className="form__field form__field--code">
-                                    <TextField {...textFieldSettings} floatingLabelText="City" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.city}
+                                        onChange={this.handleChange}
+                                        floatingLabelText="City"
+                                        name="city"
+                                        validators={['required']}
+                                        errorMessages={['This field is required.']}
+                                    />
                                 </div>
                             </div>
 
@@ -173,10 +239,28 @@ export default class Registration extends Component {
                             </div>
 
                             <div className="form__field">
-                                <TextField {...textFieldSettings} floatingLabelText="Website" />
+                                <TextValidator
+                                    {...textFieldSettings}
+                                    value={formData.website}
+                                    onChange={this.handleChange}
+                                    floatingLabelText="Website"
+                                    name="website"
+                                    validators={['required']}
+                                    errorMessages={['This field is required.']}
+                                />
                             </div>
 
-                            <TextField {...textFieldSettings} multiLine rows={3} floatingLabelText="Short description of your business" />
+                            <TextValidator
+                                {...textFieldSettings}
+                                value={formData.description}
+                                onChange={this.handleChange}
+                                multiLine
+                                rows={3}
+                                floatingLabelText="Short description of your business"
+                                name="description"
+                                validators={['required', 'maxNumber:250']}
+                                errorMessages={['This field is required.', 'max 250 characters']}
+                            />
 
                         </div>
 
@@ -184,9 +268,17 @@ export default class Registration extends Component {
                             <h2 className="form__title">The Contact Person</h2>
 
                             <div className="form__field">
-                                <SelectField {...selectFieldSettings} value={1} floatingLabelText="Title" >
-                                    <MenuItem value={1} primaryText="Miss" />
-                                </SelectField>
+                                <SelectValidator
+                                    {...selectFieldSettings}
+                                    name="country"
+                                    value={0}
+                                    floatingLabelText="Title"
+                                    validators={['required']}
+                                    errorMessages={['This field is required.']}
+                                >
+                                    <MenuItem value={0} primaryText="Mr" />
+                                    <MenuItem value={1} primaryText="Mme" />
+                                </SelectValidator>
                             </div>
 
                             <div className="form__row">
