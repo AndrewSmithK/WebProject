@@ -18,7 +18,7 @@ export default class DropdownItem extends Component {
 
   render() {
     return (
-      <div className="text-block col-md-4 col-sm-12 p-0">
+      <div className="text-block">
         <h4 className="title" onClick={this.visibilityClick}>
           <FormattedHTMLMessage
             id={this.props.title.id}
