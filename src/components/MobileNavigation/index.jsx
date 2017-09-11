@@ -10,7 +10,7 @@ const SubNav = () => (
   <div className="subnav-wrap bg-pale-grey-two">
     <div className="subnav">
       <ul>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>
               <FormattedMessage 
@@ -20,7 +20,7 @@ const SubNav = () => (
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/" style={{ color: '#3daed2' }}>
               <FormattedMessage 
@@ -30,7 +30,7 @@ const SubNav = () => (
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/" style={{ color: '#3897d6' }}>
               <FormattedMessage 
@@ -40,7 +40,7 @@ const SubNav = () => (
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/" style={{ color: '#317bda' }}>
               <FormattedMessage 
@@ -52,7 +52,7 @@ const SubNav = () => (
         </li>
       </ul>
       <ul>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/" style={{ color: '#31cfda' }}>
               <FormattedMessage 
@@ -62,7 +62,7 @@ const SubNav = () => (
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/" style={{ color: '#3aa2d3' }}>
               <FormattedMessage 
@@ -72,7 +72,7 @@ const SubNav = () => (
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={this.props.toglMobNav}>
           <div className="item">
             <Link to="/" style={{ color: '#317bda' }}>
               <FormattedMessage 
@@ -122,7 +122,7 @@ export default class MobileNavigation extends Component {
               defaultMessage={`About`}
             />
           </Link></li>
-          <li onClick={this.props.toglMobNav}>
+          <li>
             <span className="selected" onClick={this.toglSubNav.bind(this)}>
               <FormattedMessage 
                 id={`topLine.ourProducts`}
