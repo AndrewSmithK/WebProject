@@ -582,7 +582,16 @@
     background-position: center;
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 80px;
     padding-bottom: 0;
+    .hide {
+      display: none;
+    }
+    .container {
+      a {
+        margin-right: 0;
+      }
+    }
     .picture {
       margin-left: -15px;
       margin-right: -15px;
@@ -602,6 +611,9 @@
       .link {
         margin: 15px 0 25px;
       }
+      a {
+        margin-right: 20px;
+      }
     }
   }
 
@@ -612,6 +624,9 @@
     & > .title {
       font-size: 28px;
       line-height: 1.3;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 30px;
     }
 
     .container {
@@ -644,8 +659,8 @@
     .container {
       .content-box {
         position: relative;
-        margin: 0 -5px;
-        padding: 35px 10px 13px 15px;
+        margin: 0;
+        padding: 35px 10px 13px 10px;
         border-radius: 0;
         box-shadow: 1px 1px 15px 0 $pale-grey;
   
@@ -673,7 +688,7 @@
       .sheet {
          .clips {
            top: -55px;
-           left: calc(50% - 33px);
+           left: calc(50% - 26px);
            &:before {
              background: $pale-grey;
              height: 5px;
@@ -699,10 +714,8 @@
   }
 
   #gap-support {
-    margin: 0 -5px;
     padding: 0;
     padding-top: 50px;
-    padding-bottom: 0;
 
     .container {
       border: none;
@@ -722,7 +735,9 @@
       }
 
       .read-carefully {
-        padding: 0
+        padding: 0;
+        letter-spacing: -0.1px;
+        line-height: 1.6;
       }
     }
   }

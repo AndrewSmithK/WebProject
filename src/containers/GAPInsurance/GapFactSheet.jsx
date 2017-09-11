@@ -144,7 +144,7 @@ export default class GapFactSheet extends React.Component {
                             learning techniques for pricing.`}
                           /><b><FormattedMessage 
                             id={`gap.sheet.right.list.item4.bold`}
-                            defaultMessage={`A more
+                            defaultMessage={` A more
                             sophisticated approach for a better
                             pricing!`} /></b>
                         </p>

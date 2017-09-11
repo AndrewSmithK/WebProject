@@ -10,6 +10,7 @@ body {
   color: $white;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .app {
@@ -332,11 +333,7 @@ a {
       }
     }
   }
-  @media (max-width: 381px) {
-    #topline {
-      top: 30px !important;
-    }
-  }
+
   .logo {
     float: left;
     display: block;
@@ -504,6 +501,10 @@ a {
   @media screen and (max-width: 992px) {
     nav ul li {
       margin-right: 25px;
+    }
+
+    & {
+      top: 0;
     }
   }
 
