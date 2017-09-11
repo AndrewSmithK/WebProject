@@ -8,7 +8,7 @@ export default class Circle extends React.Component {
     return <section className="section bg-pale-grey-two" id="circle">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-3 side-bar">
+          <div className="col-lg-3 side-bar">
             <div className="left-side-bar item text-right bd-right">
               <h3 className="title text-blue">
                 <FormattedMessage 
@@ -42,7 +42,7 @@ export default class Circle extends React.Component {
         <div className="icon col-md-5">
           <img src={QoverWheel} alt="qover-wheel" />
         </div>
-        <div className="col-md-3 side-bar">
+        <div className="col-lg-3 side-bar">
           <div className="item right-side-bar bd-left">
               <h3 className="title text-blue">
                 <FormattedMessage 

@@ -7,7 +7,7 @@ export default class GetStarted extends React.Component {
     return (<section className="section text-white" id="get-started">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 pr-4">
+          <div className="col-12 col-lg-6 pr-4">
             <h2 className="secture-title text-left">
               <FormattedMessage 
                 id={`home.start.title`}
@@ -94,9 +94,8 @@ export default class GetStarted extends React.Component {
               </li>
             </ul>
           </div>
-          <div className="col-md-6">
+          <div className="col-12 col-lg-6">
             <div className="shadow-image">
-              {/*<div style={{ width: `${510}px`, height: `${485}px`, background: '#f00' }} />*/}
               <img src={dashboard} alt="dashboard" />
             </div>
           </div>

@@ -10,6 +10,7 @@ body {
   color: $white;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .app {
@@ -272,14 +273,24 @@ a {
       margin: 0 10px; 
       font-size: 9px;
       line-height: 18px;
-    }
+    } 
 
     @media (max-width: 381px) {
+      & {
+        display: none;
+      }
+
       .btn {
         font-size: 8px;
       }
     }
   }
+  
+  @media screen and (max-width: 768px) {
+    & {
+      display: none;
+    }
+  }   
 }
 
 #topline {
@@ -322,11 +333,7 @@ a {
       }
     }
   }
-  @media (max-width: 381px) {
-    #topline {
-      top: 30px !important;
-    }
-  }
+
   .logo {
     float: left;
     display: block;
@@ -495,6 +502,10 @@ a {
     nav ul li {
       margin-right: 25px;
     }
+
+    & {
+      top: 0;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -589,6 +600,8 @@ footer {
         color: white;
         font-size: 24px;
         line-height: 25px;
+        width: 25px !important;
+        display: inline-block;
       }
     }
 

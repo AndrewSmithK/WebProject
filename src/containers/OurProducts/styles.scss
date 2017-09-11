@@ -38,6 +38,7 @@
 
     .item {
       padding-bottom: 30px;
+      min-height: 301px;
       background-image: linear-gradient($grey, $grey), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
       border-radius: 3px;
 
@@ -230,8 +231,8 @@
       box-shadow: 0 0 10px 0 $pale-grey;
 
       .icon {
-        height: 70px;
-        line-height: 70px;
+        height: 60px;
+        line-height: 60px;
         margin-bottom: 30px;
       }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax as ParallaxBox } from 'react-scroll-parallax';
+// import { Parallax as ParallaxBox } from 'react-scroll-parallax';
 import { Parallax } from 'react-parallax';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
@@ -57,20 +57,20 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image m-hidden">
-              <ParallaxBox
+              {/*<ParallaxBox
                 offsetYMax={20}
                 offsetYMin={-20}
                 slowerScrollRate
                 tag="imac">
-                <img src={imac} alt="" />
               </ParallaxBox>
               <ParallaxBox
                 offsetYMax={20}
                 offsetYMin={-20}
                 slowerScrollRate
                 tag="LloydsLogoSmall">
-                <img src={api} alt="" />
-              </ParallaxBox>
+              </ParallaxBox> */}
+              <img src={imac} alt="" />
+              <img src={api} alt="" />
             </div>
             <div className="mac-image d-hidden">
               <img src={imacMobile} alt="imac" />
