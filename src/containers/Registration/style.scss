@@ -51,26 +51,35 @@ $first-break: 636px;
                     clear: both;
                     display: block;
                 }
-                @media (min-width: $first-break) {
-                    .form__field {
-                        padding: 0 25px 0 0;
+                .form__field {
+                    float: left;
+                    @media (min-width: $first-break) {
                         &:last-child {
-                            text-align: right;
-                            padding: 0 0 0 25px;
+                            float: right;
                         }
                     }
                 }
+                &--post {
+                    width: calc(50% + 25px);
+                }
             }
 
+
+
             &__field {
-                width: 50%;
-                float: left;
+                width: calc(50% - 25px);
                 font-family: Roboto;
                 label {
                     margin-bottom: 10px;
                 }
                 @media (max-width: $first-break) {
                     width: 100%;
+                }
+                &--post {
+                    width: 33.333%;
+                }
+                &--code {
+                    width: 60.333%;
                 }
             }
 

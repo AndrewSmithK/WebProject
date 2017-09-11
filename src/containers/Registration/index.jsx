@@ -47,6 +47,10 @@ const textFieldSettings = {
         fontSize: '10px',
         opacity: 1
     },
+    floatingLabelShrinkStyle: {
+        fontSize: '10px',
+        opacity: 1
+    },
     floatingLabelStyle: {
         fontSize: '18px',
         color: '#5b7289',
@@ -102,6 +106,21 @@ export default () => (
                         <RadioButton value="1" label="Yes" {...radioButtonSettings} />
                         <RadioButton value="0" label="No" {...radioButtonSettings} />
                     </RadioButtonGroup>
+                </div>
+
+
+                <div className="form__field">
+                    <TextField {...textFieldSettings} />
+                </div>
+
+                <div className="form__row form__row--post">
+                    <div className="form__field form__field--post">
+                        <TextField {...textFieldSettings} floatingLabelText="Post Code" />
+                    </div>
+
+                    <div className="form__field form__field--code">
+                        <TextField {...textFieldSettings} floatingLabelText="City" />
+                    </div>
                 </div>
 
             </div>
