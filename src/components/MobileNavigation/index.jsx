@@ -110,19 +110,19 @@ export default class MobileNavigation extends Component {
         </div>
         <div className="mobile-logo"><img src={Logo} alt='' /></div>
         <ul className="nav-list">
-          <li><Link to="/" exact activeClassName="selected">
+          <li onClick={this.props.toglMobNav}><Link to="/" exact activeClassName="selected">
             <FormattedMessage 
               id={`topLine.homepage`}
               defaultMessage={`Homepage`}
             />
           </Link></li>
-          <li><Link to="/about" exact activeClassName="selected">
+          <li onClick={this.props.toglMobNav}><Link to="/about" exact activeClassName="selected">
             <FormattedMessage 
               id={`topLine.about`}
               defaultMessage={`About`}
             />
           </Link></li>
-          <li>
+          <li onClick={this.props.toglMobNav}>
             <span className="selected" onClick={this.toglSubNav.bind(this)}>
               <FormattedMessage 
                 id={`topLine.ourProducts`}
@@ -131,13 +131,13 @@ export default class MobileNavigation extends Component {
             </span>
             { this.state.showSubNav && <SubNav /> }
           </li>
-          <li><Link to="/about" exact activeClassName="selected">
+          <li onClick={this.props.toglMobNav}><Link to="/about" exact activeClassName="selected">
             <FormattedMessage 
               id={`topLine.developers`}
               defaultMessage={`Developers`}
             />
           </Link></li>
-          <li><Link to="/contact-us" exact activeClassName="selected">
+          <li onClick={this.props.toglMobNav}><Link to="/contact-us" exact activeClassName="selected">
             <FormattedMessage 
               id={`topLine.contactUs`}
               defaultMessage={`Contact us`}
@@ -146,13 +146,13 @@ export default class MobileNavigation extends Component {
         </ul>
         <div className="link-block">
           <ul className="link-list">
-            <li><Link to="#">
+            <li onClick={this.props.toglMobNav}><Link to="#">
               <FormattedMessage 
                 id={`topLine.btnLogin`}
                 defaultMessage={`Log in`}
               />
             </Link></li>
-            <li><Link to="#">
+            <li onClick={this.props.toglMobNav}><Link to="#">
               <FormattedMessage 
                 id={`topLine.btnAccess`}
                 defaultMessage={`Request an access`}
