@@ -4,11 +4,17 @@ $first-break: 636px;
     .head-block {
         background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd);
         padding: 130px 0;
+        @media (max-width: $first-break) {
+            padding: 110px 0 50px 0;
+        }
 
         &__title {
             font-size: 36px;
             font-weight: 700;
             line-height: 43px;
+            @media (max-width: $first-break) {
+                font-size: 28px;
+            }
         }
     }
 
@@ -19,10 +25,30 @@ $first-break: 636px;
         box-shadow: 1px 1px 15px 0 #eaeff3;
         border: solid 1px #eaeff3;
         color: black;
+
+        @media (max-width: $first-break) {
+            border-radius: 0;
+            box-shadow: none;
+            margin: 0 auto;
+        }
         
         .form {
             background-color: #fff;
             padding: 60px 50px;
+
+            @media (max-width: $first-break) {
+                padding: 50px 20px;
+            }
+
+            .btn {
+                margin-top: 45px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Roboto';
+                border-radius: 3px;
+                background-color: #317bda;
+              }
             
             &:after {
                 content: '';
@@ -33,6 +59,9 @@ $first-break: 636px;
             &:last-child {
                 background-color: #f5f7f9;
                 border-top: 1px solid #eaeff3;
+                @media (max-width: $first-break) {
+                    border-top: none;
+                }
             }
             
             &__title {
@@ -61,6 +90,22 @@ $first-break: 636px;
                 }
                 &--post {
                     width: calc(50% + 25px);
+                    @media (max-width: $first-break) {
+                        width: 100%;
+                    }
+                }
+                &--phone {
+                    width: calc(50% - 25px);
+                    @media (max-width: $first-break) {
+                        width: 100%;
+                    }
+                    >:first-child {
+                        width: 77px;
+                    }
+                    >:last-child {
+                        width: calc(100% - 87px);
+                        float: right;
+                    }
                 }
             }
 
@@ -76,10 +121,11 @@ $first-break: 636px;
                     width: 100%;
                 }
                 &--post {
-                    width: 33.333%;
+                    width: 100px;
                 }
                 &--code {
-                    width: 60.333%;
+                    width: calc(100% - 120px);
+                    float: right !important;
                 }
             }
 

@@ -10,7 +10,6 @@ import arrowBottom from './icon-dropdown.svg'
 
 const selectFieldSettings = {
     fullWidth: true,
-    floatingLabelText: "Frequency",
     dropDownMenuProps: {
         iconButton: <img src={arrowBottom} alt="arrowBottom" />
     },
@@ -36,8 +35,6 @@ const selectFieldSettings = {
 
 const textFieldSettings = {
     fullWidth: true,
-    hintText: "Hint Text",
-    floatingLabelText: "Fixed Floating Label Text",
     underlineStyle: {
         borderBottomWidth: '2px',
         borderBottomColor: '#317bda',
@@ -86,32 +83,31 @@ export default () => (
                 <h2 className="form__title">The Company</h2>
                 <div className="form__row">
                     <div className="form__field">
-                        <SelectField {...selectFieldSettings} value={1}>
-                            <MenuItem value={1} primaryText="Neverg" />
-                            <MenuItem value={2} primaryText="Every Night" />
-                            <MenuItem value={3} primaryText="Weeknights" />
-                            <MenuItem value={4} primaryText="Weekends" />
-                            <MenuItem value={5} primaryText="Weekly" />
+                        <SelectField {...selectFieldSettings} value={1} floatingLabelText="Country" >
+                            <MenuItem value={1} primaryText="Belgium" />
+                            <MenuItem value={2} primaryText="Germany" />
+                            <MenuItem value={3} primaryText="France" />
                         </SelectField>
                     </div>
 
                     <div className="form__field">
-                        <TextField {...textFieldSettings} />
+                        <TextField {...textFieldSettings} floatingLabelText="Company registration number" />
                     </div>
                 </div>
 
-                <div className="radio-group">
-                    <div className="radio-group__title">Insurance intermediary</div>
-                    <RadioButtonGroup defaultSelected="1" name="insurance" className="radio-group__buttons">
-                        <RadioButton value="1" label="Yes" {...radioButtonSettings} />
-                        <RadioButton value="0" label="No" {...radioButtonSettings} />
-                    </RadioButtonGroup>
+                <div className="form__row">
+                    <div className="form__field">
+                        <TextField {...textFieldSettings} floatingLabelText="Legal Name" />
+                    </div>
+
+                    <div className="form__field">
+                        <TextField {...textFieldSettings} floatingLabelText="Commercial Name (optional)" />
+                    </div>
                 </div>
 
+                <TextField {...textFieldSettings} floatingLabelText="Address Line 1" />
 
-                <div className="form__field">
-                    <TextField {...textFieldSettings} />
-                </div>
+                <TextField {...textFieldSettings} floatingLabelText="Address Line 2" />
 
                 <div className="form__row form__row--post">
                     <div className="form__field form__field--post">
@@ -123,11 +119,64 @@ export default () => (
                     </div>
                 </div>
 
+                <div className="radio-group">
+                    <div className="radio-group__title">Insurance intermediary</div>
+                    <RadioButtonGroup defaultSelected="1" name="insurance" className="radio-group__buttons">
+                        <RadioButton value="1" label="Yes" {...radioButtonSettings} />
+                        <RadioButton value="0" label="No" {...radioButtonSettings} />
+                    </RadioButtonGroup>
+                </div>
+
+                <div className="form__field">
+                    <TextField {...textFieldSettings} floatingLabelText="Insurance License Number" />
+                </div>
+
+                <div className="form__field">
+                    <TextField {...textFieldSettings} floatingLabelText="Website" />
+                </div>
+
+                <TextField {...textFieldSettings} multiLine rows={3} floatingLabelText="Short description of your business" />
+
             </div>
 
             <div className="form">
                 <h2 className="form__title">The Contact Person</h2>
-                test
+
+                <div className="form__field">
+                    <SelectField {...selectFieldSettings} value={1} floatingLabelText="Title" >
+                        <MenuItem value={1} primaryText="Miss" />
+                    </SelectField>
+                </div>
+
+                <div className="form__row">
+                    <div className="form__field">
+                        <TextField {...textFieldSettings} floatingLabelText="First Name" />
+                    </div>
+
+                    <div className="form__field">
+                        <TextField {...textFieldSettings} floatingLabelText="Last Name" />
+                    </div>
+                </div>
+
+                <div className="form__field">
+                    <TextField {...textFieldSettings} floatingLabelText="Function" />
+                </div>
+
+                <TextField {...textFieldSettings} floatingLabelText="Email" />
+
+                <div className="form__row form__row--phone">
+                    <div className="form__field form__field">
+                    <SelectField {...selectFieldSettings} value={1} floatingLabelText="Phone Number" >
+                        <MenuItem value={1} primaryText="+32" />
+                    </SelectField>
+                    </div>
+
+                    <div className="form__field form__field">
+                        <TextField {...textFieldSettings} floatingLabelStyle={{display: 'none'}} floatingLabelText="Number" />
+                    </div>
+                </div>
+
+                <button className="btn" type="submit">Continue</button>
             </div>
         </div>
     </div>
