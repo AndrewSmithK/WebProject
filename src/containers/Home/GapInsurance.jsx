@@ -2,12 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
+import DropdownItem from './dropdownItem';
+
 import IconCancel from '../../images/HomePage/GapInsurance/icon-cancel-small.svg';
 import IconCoverage from '../../images/HomePage/GapInsurance/icon-coverage.svg';
 import IconReferralSmall from '../../images/HomePage/GapInsurance/icon-referral-small.svg';
 import Mockup from '../../images/HomePage/GapInsurance/mockup.png';
 
 export default class GapInsurance extends React.Component {
+
   render() {
     return (<section className="section bg-dark-blue" id="gap-insurance">
       <div className="gap-tabs">
@@ -49,13 +52,10 @@ export default class GapInsurance extends React.Component {
                 Motor GAP Insurance in Belgium.`}
               />
             </h3>
-            <div className="text-block">
-              <h4 className="title">
-                <FormattedMessage 
-                  id={`home.gap.part1.title`}
-                  defaultMessage={`What is GAP Insurance?`}
-                />
-              </h4>
+            <DropdownItem title={{
+                id: "home.gap.part1.title",
+                text: "What is GAP Insurance?"
+              }}>
               <p className="text">
                 <FormattedMessage 
                   id={`home.gap.part1.p1`}
@@ -69,14 +69,11 @@ export default class GapInsurance extends React.Component {
                   in case the vehicle is written off.`}
                 />
               </p>
-            </div>
-            <div className="text-block">
-              <h4 className="title">
-                <FormattedMessage 
-                  id={`home.gap.part2.title`}
-                  defaultMessage={`Target customer:`}
-                />
-              </h4>
+            </DropdownItem>
+            <DropdownItem title={{
+              id: "home.gap.part2.title",
+              text: "Target customer:"
+            }}>
               <p className="text">
                 •&nbsp;&nbsp;&nbsp;&nbsp;
                 <FormattedMessage 
@@ -89,45 +86,41 @@ export default class GapInsurance extends React.Component {
                   defaultMessage={`Must have a casco insurance`}
                 />
               </p>
-            </div>
-
-            <h4 className="title" style={{ marginBottom: '20px' }}>
-              <FormattedMessage 
-                id={`home.gap.part3.title`}
-                defaultMessage={`We sublime the customer experience`}
-              />
-            </h4>
-
-            <div className="icon-label-list">
-              <div className="icon-label">
-                <img src={IconCoverage} alt="icon-coverage" />
-                <span>
-                  <FormattedMessage 
-                    id={`home.gap.part3.listitem1`}
-                    defaultMessage={`Up to 60 months`}
-                  />
-                </span>
+            </DropdownItem>
+            <DropdownItem  style={{ marginBottom: '20px' }} title={{
+              id: "home.gap.part3.title",
+              text: "We sublime the customer experience"
+            }}>
+              <div className="icon-label-list">
+                <div className="icon-label">
+                  <img src={IconCoverage} alt="icon-coverage" />
+                  <span>
+                    <FormattedMessage 
+                      id={`home.gap.part3.listitem1`}
+                      defaultMessage={`Up to 60 months`}
+                    />
+                  </span>
+                </div>
+                <div className="icon-label" style={{ float: 'right' }}>
+                  <img src={IconCancel} alt="icon-cancel" />
+                  <span>
+                    <FormattedMessage 
+                      id={`home.gap.part3.listitem2`}
+                      defaultMessage={`Cancel anytime`}
+                    />
+                  </span>
+                </div>
+                <div className="icon-label">
+                  <img src={IconReferralSmall} alt="icon-referral_small" />
+                  <span>
+                    <FormattedMessage 
+                      id={`home.gap.part3.listitem3`}
+                      defaultMessage={`Digital, efficient and much (much) cheaper`}
+                    />
+                  </span>
+                </div>
               </div>
-              <div className="icon-label" style={{ float: 'right' }}>
-                <img src={IconCancel} alt="icon-cancel" />
-                <span>
-                  <FormattedMessage 
-                    id={`home.gap.part3.listitem2`}
-                    defaultMessage={`Cancel anytime`}
-                  />
-                </span>
-              </div>
-              <div className="icon-label">
-                <img src={IconReferralSmall} alt="icon-referral_small" />
-                <span>
-                  <FormattedMessage 
-                    id={`home.gap.part3.listitem3`}
-                    defaultMessage={`Digital, efficient and much (much) cheaper`}
-                  />
-                </span>
-              </div>
-            </div>
-
+            </DropdownItem>
             <div>
               <Link className="btn button btn-turquoise" to="/">
                 <FormattedMessage 
