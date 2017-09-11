@@ -6,44 +6,54 @@ import IconClose from '../../images/Header/icon-close.svg';
 import Logo from '../../images/Header/logo-qover.svg';
 import './MobileNavigation.scss';
 
-const SubNav = () => (
+const SubNav = ({toglMobNav}) => (
   <div className="subnav-wrap bg-pale-grey-two">
     <div className="subnav">
       <ul>
-        <li>
+        <li onClick={() => toglMobNav()}>
+          <div className="item">
+            <Link to="/our-products" style={{ color: '#31cfda' }}>
+              <FormattedMessage
+                id={`topLine.ourProducts.all`}
+                defaultMessage={`All`}
+              />
+            </Link>
+          </div>
+        </li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.gapInsurance`}
                 defaultMessage={`Gap insurance`}
               />
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#3daed2' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.lightCasco`}
                 defaultMessage={`Light-casco`}
               />
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#3897d6' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.fullCasco`}
                 defaultMessage={`Full-casco`}
               />
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#317bda' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.driverAccident`}
                 defaultMessage={`Driver accident`}
               />
@@ -52,30 +62,30 @@ const SubNav = () => (
         </li>
       </ul>
       <ul>
-        <li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#31cfda' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.accidentHealth`}
                 defaultMessage={`Accident & health`}
               />
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#3aa2d3' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.travel`}
                 defaultMessage={`Travel`}
               />
             </Link>
           </div>
         </li>
-        <li>
+        <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#317bda' }}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts.jobLoss`}
                 defaultMessage={`Job loss`}
               />
@@ -111,34 +121,34 @@ export default class MobileNavigation extends Component {
         <div className="mobile-logo"><img src={Logo} alt='' /></div>
         <ul className="nav-list">
           <li onClick={this.props.toglMobNav}><Link to="/" exact activeClassName="selected">
-            <FormattedMessage 
+            <FormattedMessage
               id={`topLine.homepage`}
               defaultMessage={`Homepage`}
             />
           </Link></li>
           <li onClick={this.props.toglMobNav}><Link to="/about" exact activeClassName="selected">
-            <FormattedMessage 
+            <FormattedMessage
               id={`topLine.about`}
               defaultMessage={`About`}
             />
           </Link></li>
           <li>
             <span className="selected" onClick={this.toglSubNav.bind(this)}>
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.ourProducts`}
                 defaultMessage={`Our products`}
               /><i className="fa fa-angle-down" aria-hidden="true" />
             </span>
-            { this.state.showSubNav && <SubNav /> }
+            {this.state.showSubNav && <SubNav toglMobNav = {this.props.toglMobNav.bind(this)}/>}
           </li>
           <li onClick={this.props.toglMobNav}><Link to="/about" exact activeClassName="selected">
-            <FormattedMessage 
+            <FormattedMessage
               id={`topLine.developers`}
               defaultMessage={`Developers`}
             />
           </Link></li>
           <li onClick={this.props.toglMobNav}><Link to="/contact-us" exact activeClassName="selected">
-            <FormattedMessage 
+            <FormattedMessage
               id={`topLine.contactUs`}
               defaultMessage={`Contact us`}
             />
@@ -147,13 +157,13 @@ export default class MobileNavigation extends Component {
         <div className="link-block">
           <ul className="link-list">
             <li onClick={this.props.toglMobNav}><Link to="#">
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.btnLogin`}
                 defaultMessage={`Log in`}
               />
             </Link></li>
             <li onClick={this.props.toglMobNav}><Link to="#">
-              <FormattedMessage 
+              <FormattedMessage
                 id={`topLine.btnAccess`}
                 defaultMessage={`Request an access`}
               />
