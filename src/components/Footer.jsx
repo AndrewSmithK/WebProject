@@ -12,10 +12,10 @@ export default class TopLine extends React.Component {
     return (<footer className="footer bg-dark-blue">
       <div className="container">
         <div className="row text-white">
-          <div className="logo col-12 pl-0" style={{ width: `${89}px`, marginRight: `${111  }px` }}>
+          <div className="logo" style={{ width: `${89}px`, marginRight: `${111  }px` }}>
             <img src={LogoQover} alt="Qover - logo-qover" />
           </div>
-          <div className="item item1 col-6 pl-0">
+          <div className="item item1">
             <div className="list-title">
               <b>
                 <FormattedMessage 
@@ -51,7 +51,7 @@ export default class TopLine extends React.Component {
               </Link></li>
             </ul>
           </div>
-          <div className="item item2 col-6 pl-0">
+          <div className="item item2">
             <div className="list-title">
               <b>
                 <FormattedMessage 
