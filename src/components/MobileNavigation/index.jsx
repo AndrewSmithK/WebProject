@@ -122,7 +122,7 @@ export default class MobileNavigation extends Component {
               defaultMessage={`About`}
             />
           </Link></li>
-          <li onClick={this.props.toglMobNav}>
+          <li>
             <span className="selected" onClick={this.toglSubNav.bind(this)}>
               <FormattedMessage 
                 id={`topLine.ourProducts`}
