@@ -147,5 +147,24 @@ $first-break: 636px;
                 }
             }
         }
+
+        .text-field {
+            > :nth-child(4) {
+                color: #fff !important;
+                margin-top: 4px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 0; 
+                    height: 0; 
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid #f4566a;
+                    top: -3px;
+                    left: 2px;
+                  }
+            }
+        }
     }
 }

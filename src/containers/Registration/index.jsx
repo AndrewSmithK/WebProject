@@ -35,6 +35,7 @@ const selectFieldSettings = {
 }
 
 const textFieldSettings = {
+    className: 'text-field',
     fullWidth: true,
     underlineStyle: {
         borderBottomWidth: '2px',
@@ -57,6 +58,13 @@ const textFieldSettings = {
     inputStyle: {
         color: '#317bda',
         fontSize: '18px'
+    },
+    errorStyle: {
+        backgroundColor: '#f4566a',
+        color: '#f4566a',
+        padding: '10px',
+        fontSize: '12px',
+        fontWeight: '500'
     }
 }
 
@@ -76,17 +84,28 @@ export default class Registration extends Component {
         super(props)
         this.state = {
             formData: {
-                email: ''
+                email: '',
+                function: '',
+                lastName: '',
+                firstName: '',
+                number: ''
             },
             submitted: false
         }
         this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleChange(event) {
         const { formData } = this.state
         formData[event.target.name] = event.target.value
         this.setState({ formData })
+    }
+
+    handleSubmit() {
+        this.setState({ submitted: true }, () => {
+            setTimeout(() => this.setState({ submitted: false }), 5000)
+        })
     }
 
     render() {
@@ -100,7 +119,7 @@ export default class Registration extends Component {
                 </div>
 
                 <div className="main-block">
-                    <ValidatorForm ref="form" >
+                    <ValidatorForm ref="form" onSubmit={this.handleSubmit} >
                         <div className="form">
                             <h2 className="form__title">The Company</h2>
                             <div className="form__row">
@@ -172,19 +191,42 @@ export default class Registration extends Component {
 
                             <div className="form__row">
                                 <div className="form__field">
-                                    <TextField {...textFieldSettings} floatingLabelText="First Name" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.firstName}
+                                        onChange={this.handleChange}
+                                        floatingLabelText="First Name"
+                                        name="firstName"
+                                        validators={['required']}
+                                        errorMessages={['You forgot to give us the first name of the contact.']}
+                                    />
                                 </div>
 
                                 <div className="form__field">
-                                    <TextField {...textFieldSettings} floatingLabelText="Last Name" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.lastName}
+                                        onChange={this.handleChange}
+                                        floatingLabelText="Last Name"
+                                        name="lastName"
+                                        validators={['required']}
+                                        errorMessages={['You forgot to give us the last name of the contact.']}
+                                    />
                                 </div>
                             </div>
 
                             <div className="form__field">
-                                <TextField {...textFieldSettings} floatingLabelText="Function" />
+                                <TextValidator
+                                    {...textFieldSettings}
+                                    value={formData.function}
+                                    onChange={this.handleChange}
+                                    floatingLabelText="Function"
+                                    name="function"
+                                    validators={['required']}
+                                    errorMessages={['Please specify the function of the contact person.']}
+                                />
                             </div>
 
-                            {/* <TextField {...textFieldSettings} floatingLabelText="Email" /> */}
                             <TextValidator
                                 {...textFieldSettings}
                                 value={formData.email}
@@ -203,7 +245,16 @@ export default class Registration extends Component {
                                 </div>
 
                                 <div className="form__field form__field">
-                                    <TextField {...textFieldSettings} floatingLabelStyle={{ display: 'none' }} floatingLabelText="Number" />
+                                    <TextValidator
+                                        {...textFieldSettings}
+                                        value={formData.number}
+                                        onChange={this.handleChange}
+                                        floatingLabelStyle={{ display: 'none' }}
+                                        floatingLabelText="Number"
+                                        name="number"
+                                        validators={['required', 'matchRegexp:^[0-9]$']}
+                                        errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
+                                    />
                                 </div>
                             </div>
 
