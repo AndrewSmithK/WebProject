@@ -21,25 +21,22 @@ export default class TopLine extends React.Component {
     this.handleScroll();
   }
 
+  doItOnScroll(scrolled, scrolling) {
+    scrolling = true;
+
+    if (scrolling && global.window.innerWidth > 500) {
+      scrolling = false;
+      scrolled = global.window.pageYOffset || document.documentElement.scrollTop;
+      scrolled > 70 ? this.setState({ navClass: 'narrow' }) : this.setState({navClass: '' });
+    }
+  }
+
   handleScroll() {
     let scrolled = global.window.pageYOffset || global.document.documentElement.scrollTop;
 
     let scrolling = false;
 
-    global.window.addEventListener('scroll', doItOnScroll);
-
-    function doItOnScroll() {
-      scrolling = true;
-    }
-
-    setInterval(function() {
-      if (scrolling && global.window.innerWidth > 500) {
-        scrolling = false;
-        scrolled = global.window.pageYOffset || document.documentElement.scrollTop;
-        scrolled > 70 ? this.setState({ navClass: 'narrow' }) : this.setState({navClass: '' });
-      }
-      console.log('handleScroll');
-    }.bind(this), 200);
+    global.window.addEventListener('scroll', () => this.doItOnScroll(scrolled, scrolling));
   }
 
   toglMobNav() {

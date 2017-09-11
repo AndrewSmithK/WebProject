@@ -117,23 +117,50 @@
 }
 
 #gap-video {
+  position: relative;
   padding-top: 90px;
   padding-bottom: 210px;
+  min-height: 510px;
   background: $turquoise url('../../images/OurProducts/GapInsurance/video.png') center / cover;
   background-position: bottom;
+  box-sizing: border-box;
 
-  .title {
-    line-height: 31px;
-    font-size: 26px;
-    text-align: center;
-    font-weight: 500;
-    margin: 0 auto;
-    width: 300px;
+  .front {
+    z-index: 3;
+
+    .title {
+      line-height: 31px;
+      font-size: 26px;
+      text-align: center;
+      font-weight: 500;
+      margin: 0 auto;
+      width: 300px;
+    }
+
+    .icon-play {
+      margin-top: 58px;
+      text-align: center;
+      cursor: pointer;
+    }
   }
 
-  .icon-play {
-    margin-top: 58px;
-    text-align: center;
+  .vimeo-box {
+    // display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.play {
+      display: block;
+    }
   }
 }
 
