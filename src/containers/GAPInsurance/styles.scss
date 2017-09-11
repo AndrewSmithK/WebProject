@@ -645,7 +645,7 @@
       .content-box {
         position: relative;
         margin: 0 -5px;
-        padding: 35px 10px 13px 15px;
+        padding: 35px 15px 13px 15px;
         border-radius: 0;
         box-shadow: 1px 1px 15px 0 $pale-grey;
   
@@ -699,10 +699,8 @@
   }
 
   #gap-support {
-    margin: 0 -5px;
     padding: 0;
     padding-top: 50px;
-    padding-bottom: 0;
 
     .container {
       border: none;
@@ -710,6 +708,7 @@
       .info {
         width: 100%;
         padding: 20px;
+        padding-right: 65px;
         padding-bottom: 80px;
 
         .title {
@@ -722,7 +721,8 @@
       }
 
       .read-carefully {
-        padding: 0
+        padding: 0;
+        margin-right: -10px;
       }
     }
   }
