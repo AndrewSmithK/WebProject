@@ -46,8 +46,8 @@ export default class InnProducts extends React.Component {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="item text-center bg-white">
-              <div className="icon hide" style={{ height: 70 + 'px', background: '#f00' }}>
-                {/*<img src={IconDiamont} style={{height: 50 + 'px' background: '#f00'}} alt="icon-diamont"/>*/}
+              <div className="icon hide">
+                <img src={IconDiamsSmall} alt="icon-diamont"/>
               </div>
               <div className="small-icon d-none display" id="diamonds">
                 <img src={IconDiamsSmall} alt="" />
