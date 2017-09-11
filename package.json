@@ -61,6 +61,7 @@
     "react-dom": "^15.5.4",
     "react-intl": "^2.4.0",
     "react-intl-phraseapp": "^0.1.0",
+    "react-material-ui-form-validator": "^0.5.1",
     "react-parallax": "^1.4.4",
     "react-parallax-component": "^1.0.6",
     "react-redux": "^5.0.4",
