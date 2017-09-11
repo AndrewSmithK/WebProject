@@ -2,7 +2,7 @@
 
 #header-gap-insurance {
   position: relative;
-  padding-top: 90px;
+  padding-top: 70px;
   padding-bottom: 70px;
   background-color: $dark-sky-blue;
   background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
@@ -505,7 +505,15 @@
 @media screen and (max-width: 992px) {
   #header-gap-insurance {
     padding: 90px 10px;
-    padding-top: 100px;
+    padding-top: 120px;
+    .hide {
+      display: none;
+    }
+    .container {
+      a {
+        margin-right: 0;
+      }
+    }
     .logo-box {
       .logo {
         font-size: 11px;
@@ -513,6 +521,11 @@
         letter-spacing: 1.6px;
         margin: 0 -5px 20px 0;
       }
+    }
+    .block {
+        a {
+          margin-right: 20px;
+        }
     }
   }
 
@@ -595,11 +608,35 @@
 
 @media screen and (max-width: 768px) {
   #header-gap-insurance {
+    background-image:  url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+    background-size: cover;
+    background-position: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 0;
+    .container {
+      .picture {
+        margin-left: -15px;
+        margin-right: -15px;
+        img {
+          width: 100%;
+        }
+      }
+      .display {
+        display: block !important;
+      }
+      .link {
+        margin: 15px 0 25px;
+      }
+    }
     .screenshot-api {
       display: none;
     }
   }
 }
+
+
 
 @media screen and (max-width: $break-mobile) {
 
@@ -611,14 +648,8 @@
     padding-left: 20px;
     padding-top: 80px;
     padding-bottom: 0;
-    .hide {
-      display: none;
-    }
-    .container {
-      a {
-        margin-right: 0;
-      }
-    }
+
+
     .picture {
       margin-left: -15px;
       margin-right: -15px;
@@ -638,9 +669,7 @@
       .link {
         margin: 15px 0 25px;
       }
-      a {
-        margin-right: 20px;
-      }
+
     }
   }
 
