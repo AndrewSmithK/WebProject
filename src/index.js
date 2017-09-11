@@ -7,6 +7,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { IntlProvider } from 'react-intl';
 import { initializePhraseAppEditor } from 'react-intl-phraseapp';
 import { ParallaxController } from 'react-scroll-parallax';
+import Intl from 'intl'
 // import { initConf } from '../config/phraseapp'
 
 import $ from 'jquery'
@@ -17,6 +18,7 @@ import App from './containers/App'
 import registerServiceWorker from './registerServiceWorker'
 import initializePhraseAppEnabled from './scripts/phraceappEnable'
 
+global.Intl = Intl;
 ParallaxController.init();
 injectTapEventPlugin()
 initializePhraseAppEnabled()

@@ -38,12 +38,19 @@
 
     .item {
       padding-bottom: 30px;
-      min-height: 301px;
+      margin-bottom: 30px;
+      min-height: 320px;
       background-image: linear-gradient($grey, $grey), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
       border-radius: 3px;
 
       .last-icon {
         margin-bottom: 6px;
+      }
+
+      .icon {
+        img {
+          width: 100%
+        }
       }
 
       .btn {
@@ -228,12 +235,17 @@
     .item {
       padding-top: 40px;
       padding-bottom: 40px;
+      max-height: 205px;
       box-shadow: 0 0 10px 0 $pale-grey;
 
       .icon {
         height: 60px;
         line-height: 60px;
         margin-bottom: 30px;
+
+        img {
+          height: 100%;
+        }
       }
 
       .text {
@@ -284,19 +296,7 @@
 @media screen and (max-width: 992px) {
   #header-our-products {
     .container {
-      padding: 0;
-    }
-  }
-
-  #trad-inn-prod {
-    .item {
-      margin-bottom: 20px;
-
-      .icon {
-        img {
-          width: 100%
-        }
-      }
+      padding: 0 -15px;
     }
   }
 
