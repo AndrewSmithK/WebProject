@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax as ParallaxBox } from 'react-scroll-parallax';
+// import { Parallax as ParallaxBox } from 'react-scroll-parallax';
 import { Parallax } from 'react-parallax';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
