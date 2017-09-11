@@ -32,7 +32,14 @@ $slick-dots-height: 110px;
   @media (max-width: $break-mobile) {
     .slick-next, .slick-prev {
       top: auto;
-      bottom: -95px;
+      transform: scale(0.5);
+      bottom: -75px;
+    }
+    .slick-next {
+      right: 18px;
+    }
+    .slick-prev {
+      left: 18px;
     }
   }
   .slick-list {
