@@ -644,8 +644,8 @@
     .container {
       .content-box {
         position: relative;
-        margin: 0 -5px;
-        padding: 35px 15px 13px 15px;
+        margin: 0;
+        padding: 35px 10px 13px 10px;
         border-radius: 0;
         box-shadow: 1px 1px 15px 0 $pale-grey;
   
@@ -673,7 +673,7 @@
       .sheet {
          .clips {
            top: -55px;
-           left: calc(50% - 33px);
+           left: calc(50% - 26px);
            &:before {
              background: $pale-grey;
              height: 5px;
@@ -708,7 +708,6 @@
       .info {
         width: 100%;
         padding: 20px;
-        padding-right: 65px;
         padding-bottom: 80px;
 
         .title {
@@ -722,7 +721,8 @@
 
       .read-carefully {
         padding: 0;
-        margin-right: -10px;
+        letter-spacing: -0.1px;
+        line-height: 1.6;
       }
     }
   }
