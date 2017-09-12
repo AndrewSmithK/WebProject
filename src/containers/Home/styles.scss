@@ -143,6 +143,7 @@
     margin: 0 auto;
     height: 120px;
     max-width: 1000px;
+    width: 100%;
     background: url('../../images/HomePage/value-chain-v-4.svg') no-repeat;
     background-size: contain;
   }
@@ -156,6 +157,7 @@
   .descripts {
     display: flex;
     padding: 20px 0 0;
+    width: 100%;
 
     .item {
       flex-grow: 1;
@@ -209,6 +211,12 @@
         }
       }
     }
+
+    .infographic, .descripts {
+      float: left;
+      width: 50%;
+    }
+    
     .container {
       max-width: 500px;
     }
@@ -694,6 +702,12 @@
     .paralax {
       display: none;
     }
+    .left-block {
+      .icon2 {
+        margin-bottom: 25px;
+        margin-left: 2px;
+      }
+    }
   }
 
   .disclaimer {
@@ -848,12 +862,15 @@
         display: block;
       }
     }
-    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
     .header-space {
       padding-bottom: 70px;
     }
   }
-
 }
 
 @media screen and (max-width: $break-mobile) {
