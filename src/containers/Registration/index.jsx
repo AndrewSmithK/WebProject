@@ -251,6 +251,8 @@ export default class Registration extends Component {
                         <div className="form__field">
                           <TextValidator
                             {...textFieldSettings}
+                            min='0'
+                            pattern="\d*"
                             type='number'
                             value={formData.registrationNumber}
                             onChange={this.handleChange}
@@ -446,14 +448,14 @@ export default class Registration extends Component {
 
                           <div className="form__field form__field">
                             <TextValidator style={{left:'12px'}}
-                                        {...textFieldSettings}
-                                        value={formData.number}
-                                        onChange={this.handleChange}
-                                        floatingLabelStyle={{ display: 'none' }}
-                                        floatingLabelText="Number"
-                                        name="number"
-                                        validators={['required', 'matchRegexp:^[0-9]$']}
-                                        errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
+                              {...textFieldSettings}
+                              value={formData.number}
+                              onChange={this.handleChange}
+                              floatingLabelStyle={{ display: 'none' }}
+                              floatingLabelText="Number"
+                              name="number"
+                              validators={['required', 'matchRegexp:[0-9]$']}
+                              errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
                                     />
                                 </div>
                             </div>
