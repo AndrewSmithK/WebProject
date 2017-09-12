@@ -112,7 +112,8 @@ export default class Registration extends Component {
                 description: ''
             },
             submitted: false,
-            showInsurance: false
+            showInsurance: false,
+            nextStep: false 
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -134,6 +135,12 @@ export default class Registration extends Component {
     handleSubmit() {
         this.setState({ submitted: true }, () => {
             setTimeout(() => this.setState({ submitted: false }), 5000)
+        })
+    }
+
+    test() {
+        this.setState({
+            nextStep: true
         })
     }
 
@@ -177,8 +184,13 @@ export default class Registration extends Component {
                                     />
                                 </div>
                             </div>
+                        {!this.state.nextStep ?
+                            <button className="btn" type="submit" onClick={this.test.bind(this)}>Continue</button> :
+                            null
+                        }
 
-                            <div className="form__row">
+                        {this.state.nextStep ?
+                            <div> <div className="form__row">
                                 <div className="form__field">
                                     <TextValidator
                                         {...textFieldSettings}
@@ -273,10 +285,13 @@ export default class Registration extends Component {
                                 name="description"
                                 validators={['required', 'maxNumber:250']}
                                 errorMessages={['This field is required.', 'max 250 characters']}
-                            />
+                            /> </div> :
 
+                            null
+                        }
                         </div>
 
+                    {this.state.nextStep ?
                         <div className="form">
                             <h2 className="form__title">The Contact Person</h2>
 
@@ -364,7 +379,9 @@ export default class Registration extends Component {
                             </div>
 
                             <button className="btn" type="submit">Continue</button>
-                        </div>
+                        </div> :
+                        null
+                    }
                     </ValidatorForm>
                 </div>
             </div>
