@@ -648,6 +648,21 @@
       margin-top: 3px;
     }
   }
+
+  @media screen and (max-width: $break-mobile) {
+    padding: 40px 20px;
+    overflow: hidden;
+    .subtitle {
+      margin: 0 0 20px 0;
+    }
+    .container {
+      margin: 0;
+      padding: 0 0 100px 0;
+      margin-bottom: -100px;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
 }
 
 #subscribe {
