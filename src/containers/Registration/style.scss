@@ -19,6 +19,7 @@ $first-break: 636px;
     }
 
     .main-block {
+        position: relative;
         max-width: 650px;
         margin: -60px auto 80px;
         border-radius: 3px;
@@ -166,5 +167,14 @@ $first-break: 636px;
                   }
             }
         }
+    }
+
+    .opacity-for {
+        opacity: 0.1;
+    }
+
+    .opacity-none {
+        opacity: 1;
+        transition: 0.3s;
     }
 }

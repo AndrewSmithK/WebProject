@@ -1,0 +1,30 @@
+@keyframes rotation { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.loading {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0;
+    margin-top: 300px;
+
+    .spinner {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 13px;
+        &__image {
+            width: 50px;
+            height: 50px;
+            animation: rotation 2s infinite linear;
+        }
+    }
+
+    .message {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1.54;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #317bda;
+        text-transform: uppercase;
+    }
+}
