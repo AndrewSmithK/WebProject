@@ -108,13 +108,12 @@ export default class WhyQover extends Component {
               id={`about.insertion.p1.part1`}
               defaultMessage={`With our business model, you keep the same level of commission`}
             /></b>
-              <span className="high-priority">
-              <FormattedMessage
+              <span className="high-priority"> <FormattedMessage
                   id={`about.insertion.p1.part2`}
                   defaultMessage={`(more if you wish to administrate your customer contracts yourself)`}
               />
             </span>
-              <b className="high-priority"><FormattedMessage
+              <b className="high-priority"> <FormattedMessage
               id={`about.insertion.p1.part3`}
               defaultMessage={`while offering much cheaper premium to your customers.`}
             /></b>

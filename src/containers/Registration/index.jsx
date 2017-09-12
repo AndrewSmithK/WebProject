@@ -199,7 +199,7 @@ export default class Registration extends Component {
     }
 
     render() {
-        const { formData, submitted } = this.state
+        const { formData } = this.state
         return (
             <div id="registration">
                 <div className="head-block">
