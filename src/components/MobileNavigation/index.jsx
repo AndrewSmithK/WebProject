@@ -162,7 +162,7 @@ export default class MobileNavigation extends Component {
                 defaultMessage={`Log in`}
               />
             </Link></li>
-            <li onClick={this.props.toglMobNav}><Link to="#">
+            <li onClick={this.props.toglMobNav}><Link to="/registration">
               <FormattedMessage
                 id={`topLine.btnAccess`}
                 defaultMessage={`Request an access`}
