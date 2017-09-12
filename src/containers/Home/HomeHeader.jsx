@@ -65,8 +65,8 @@ export default class HomeHeader extends React.Component {
               </ParallaxBox>
               <ParallaxBox
                 className="api-logo"
-                offsetYMax={50}
-                offsetYMin={-10}
+                offsetYMax={170}
+                offsetYMin={-100}
                 tag="LloydsLogoSmall">
                 <img src={api} alt="" />
               </ParallaxBox>

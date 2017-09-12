@@ -5,7 +5,7 @@
 #header {
   position: relative;
   padding-top: 0;
-  padding-bottom: 63px;
+  padding-bottom: 0;
   background-color: $dark-sky-blue;
   // background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: center;
@@ -19,6 +19,7 @@
 
   .react-parallax  {
     position: static !important;
+    padding-bottom: 63px;
   }
 
   .left-block {

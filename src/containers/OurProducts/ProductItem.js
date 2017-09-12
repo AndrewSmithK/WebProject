@@ -2,7 +2,7 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl-phraseapp'
 
 export default (props) => (
-    <div className="col-sm-4 col-6">
+    <div className="col-md-3 col-sm-4 col-6">
       <div className="item text-center bg-white">
         <div className="icon">
           <img src={props.image} alt="accident-health" />
