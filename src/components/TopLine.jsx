@@ -61,7 +61,7 @@ export default class TopLine extends React.Component {
                 defaultMessage={`Log in`}
               />
             </Link>
-            <Link className="btn btn-access" to="#">
+            <Link className="btn btn-access" to="/registration">
               <FormattedMessage
                 id={`topLine.btnAccess`}
                 defaultMessage={`Request an access`}

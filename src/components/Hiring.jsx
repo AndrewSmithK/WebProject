@@ -10,11 +10,12 @@ export default class Hiring extends React.Component {
     }
     render() {
         return (
-            <div className="container-fluid hiringline">
-                <div className="container hiring p-0">
-                    <Link to="/" className="link">Consumer website</Link>
-                    <span className="separator">|</span>
-                    <Link to="/" className="link">Complaints</Link> 
+            <div className={`container-fluid hiringline ${this.props.special ? 'special' : null}`}>
+              {console.log(this.props)}
+              <div className="container hiring p-0">
+                <a href="https://qover.be/" target="_blank" className="link">Consumer website</a>
+                <span className="separator">|</span>
+                <Link to="/terms-policies/complaints" className="link">Complaints</Link>
                     <Link to="/" className="btn btn-hiring">We are hiring</Link>
                 </div>
             </div>);

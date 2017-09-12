@@ -8,17 +8,17 @@ export default class Disclaimer extends React.Component {
       <div className="container p-0">
         <p className="text-grey">
           <i className="fa fa-star text-turquoise" aria-hidden="true"></i>
-          <b><FormattedMessage 
+          <b><FormattedMessage
             id={`home.disclaimer.title`}
             defaultMessage={`Disclaimer:`}
-          /></b> <FormattedMessage 
-            id={`home.disclaimer.text`}
-            defaultMessage={`This website targets brokers and introducers willing to embrace the digital revolution in insurance.
+             /></b> <FormattedMessage
+               id={`home.disclaimer.text`}
+               defaultMessage={`This website targets brokers and introducers willing to embrace the digital revolution in insurance.
             If you are a private individual, please visit our`}
-          /> <Link to="#"><FormattedMessage 
-            id={`home.disclaimer.link`}
-            defaultMessage={`consumer website.`}
-          /></Link>
+                    /> <a href="https://qover.be/" target="_blank"><FormattedMessage 
+                      id={`home.disclaimer.link`}
+                      defaultMessage={`consumer website.`}
+                                 /></a>
         </p>
       </div>
     </div>;

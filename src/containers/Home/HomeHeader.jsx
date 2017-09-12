@@ -21,38 +21,38 @@ export default class HomeHeader extends React.Component {
 
   render() {
     return (<section className="section" id="header">
-    <Parallax bgImage={bg} strength={400}>
-      <div className="container">
-        <div className="header-space"></div>
-        <div className="icon">
-          <img src={LloydsLogoSmall} alt="lloyds-logo" />
-        </div>
-        <div className="row">
-          <div className="col-md-6">
-            <div className="left-block">
-              <h1 className="text-white">
-                <FormattedMessage 
-                  id={`home.title`}
-                  defaultMessage={`Sell digitally branded innovative and
+      <Parallax bgImage={bg} strength={400}>
+        <div className="container">
+          <div className="header-space"></div>
+          <div className="icon">
+            <img src={LloydsLogoSmall} alt="lloyds-logo" />
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="left-block">
+                <h1 className="text-white">
+                  <FormattedMessage
+                    id={`home.title`}
+                    defaultMessage={`Sell digitally branded innovative and
                   traditional insurance to
                   your customers`}
-                />
-              </h1>
-              <h4 className="text-white">                
-                <FormattedMessage 
-                  id={`home.callToAction`}
-                  defaultMessage={`Call us today. Start selling tomorrow!`}
-                />
-              </h4>
-              <div className="icon2">
-                <img src={LloydsLogoSmall} alt="lloyds-logo" />
-              </div>
-              <button className="btn hidden-sm-down btn-turquoise">
-                <FormattedMessage 
-                  id={`home.btnDemo`}
-                  defaultMessage={`Request a demo`}
-                />
-              </button>
+                  />
+                </h1>
+                <h4 className="text-white">
+                  <FormattedMessage
+                    id={`home.callToAction`}
+                    defaultMessage={`Call us today. Start selling tomorrow!`}
+                  />
+                </h4>
+                <div className="icon2">
+                  <img src={LloydsLogoSmall} alt="lloyds-logo" />
+                </div>
+                <a href="/registration" className="btn hidden-sm-down btn-turquoise">
+                  <FormattedMessage
+                    id={`home.btnDemo`}
+                    defaultMessage={`Request a demo`}
+                  />
+                </a>
             </div>
           </div>
           <div className="col-md-6">

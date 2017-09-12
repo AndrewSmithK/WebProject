@@ -45,7 +45,6 @@ const TermsLayout = ({ component: Component, ...rest }) => (
 );
 
 export default () => (
-  <div>
     <ScrollToTop>
       <Switch>
         { /* Home (main) route */ }
@@ -55,19 +54,16 @@ export default () => (
         <DefaultLayout exact path="/our-products" component={OurProducts} />
         <DefaultLayout path="/our-products/gap-insurance" component={GapInsurance} />
         <DefaultLayout path="/registration" component={Registration} />
+        <TermsLayout exact path="/terms-policies" component={TermsNotices} />
+        <TermsLayout path="/terms-policies/cookie-policy" component={TermsCookies} />
+        <TermsLayout path="/terms-policies/conflicts" component={TermsConflicts} />
+        <TermsLayout path="/terms-policies/data" component={TermsDataPrivacy} />
+        <TermsLayout path="/terms-policies/notification" component={TermsClaimNotif} />
+        <TermsLayout path="/terms-policies/complaints" component={TermsComplaints} />
         { /* Catch all route */ }
         <Route path="/signin" component={Signin} />
         <Route path="/forgot" component={Forgot} />
         <Route component={NotFound} status={404} />
       </Switch>
     </ScrollToTop>
-    <Switch>
-      <TermsLayout exact path="/terms-policies" component={TermsNotices} />
-      <TermsLayout path="/terms-policies/cookie-policy" component={TermsCookies} />
-      <TermsLayout path="/terms-policies/conflicts" component={TermsConflicts} />
-      <TermsLayout path="/terms-policies/data" component={TermsDataPrivacy} />
-      <TermsLayout path="/terms-policies/notification" component={TermsClaimNotif} />
-      <TermsLayout path="/terms-policies/complaints" component={TermsComplaints} />
-    </Switch>
-  </div>
 );
