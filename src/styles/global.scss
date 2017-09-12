@@ -362,7 +362,6 @@ a {
         height: 100%;
         line-height: 11px;
         list-style: none;
-
         &:nth-child(2){
           & > a {
             padding-top: 22.5px;
@@ -394,7 +393,9 @@ a {
         &:hover .subnav-wrap {
           display: block;
         }
-
+        .active {
+          border-bottom: 2px solid #fff;
+        }
         .subnav-wrap {
           display: none;
           position: absolute;
