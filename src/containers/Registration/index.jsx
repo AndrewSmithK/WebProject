@@ -111,10 +111,18 @@ export default class Registration extends Component {
                 website: '',
                 description: ''
             },
-            submitted: false
+            submitted: false,
+            showInsurance: false
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleRadio = this.handleRadio.bind(this)
+    }
+
+    handleRadio(event, value) {
+        this.setState({
+            showInsurance: Boolean(+value) ? true : false
+        })
     }
 
     handleChange(event) {
@@ -228,13 +236,18 @@ export default class Registration extends Component {
 
                             <div className="radio-group">
                                 <div className="radio-group__title">Insurance intermediary</div>
-                                <RadioButtonGroup defaultSelected="1" name="insurance" className="radio-group__buttons">
+                                <RadioButtonGroup name="insurance" onChange={this.handleRadio} className="radio-group__buttons">
                                     <RadioButton value="1" label="Yes" {...radioButtonSettings} />
                                     <RadioButton value="0" label="No" {...radioButtonSettings} />
                                 </RadioButtonGroup>
                             </div>
 
-                            <div className="form__field">
+                            <div
+                                className="form__field"
+                                style={{
+                                    display: this.state.showInsurance ? 'block' : 'none'
+                                }}
+                            >
                                 <TextField {...textFieldSettings} floatingLabelText="Insurance License Number" />
                             </div>
 
