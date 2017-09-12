@@ -5,8 +5,9 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: $dark-sky-blue;
-  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: left bottom;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -30,11 +31,12 @@
     font-size: 9px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 45px;
     margin-left: -15px;
   }
 
-  a {
+  a.btn {
     text-decoration: none;
     font-weight: 500;
     margin-right: 20px;

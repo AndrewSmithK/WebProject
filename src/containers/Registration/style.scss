@@ -83,6 +83,9 @@ $first-break: 636px;
                 }
                 .form__field {
                     float: left;
+                    label {
+                        // font-size: 13.33px !important;
+                    }
                     @media (min-width: $first-break) {
                         &:last-child {
                             float: right;
@@ -117,6 +120,7 @@ $first-break: 636px;
                 font-family: Roboto;
                 label {
                     margin-bottom: 10px;
+                    // font-size: 13.333px !important;
                 }
                 @media (max-width: $first-break) {
                     width: 100%;
@@ -133,6 +137,7 @@ $first-break: 636px;
             .radio-group {
                 font-size: 18px;
                 line-height: 24px;
+                margin-top: 30px;
                 &__title {
                     float: left;
                     color: #5b7289;
@@ -154,6 +159,10 @@ $first-break: 636px;
                 color: #fff !important;
                 margin-top: 4px;
 
+                label {
+                    font-size: 13.33px !important;
+                }
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -164,7 +173,7 @@ $first-break: 636px;
                     border-bottom: 5px solid #f4566a;
                     top: -3px;
                     left: 2px;
-                  }
+                }
             }
         }
     }

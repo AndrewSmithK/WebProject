@@ -37,7 +37,7 @@ const selectFieldSettings = {
         paddingBottom: '15px'
     },
     floatingLabelStyle: {
-        fontSize: '10px',
+        fontSize: '13.333px',
         color: '#5b7289'
     },
     errorStyle: {
@@ -58,11 +58,11 @@ const textFieldSettings = {
         bottom: '5px'
     },
     floatingLabelFocusStyle: {
-        fontSize: '10px',
+        fontSize: '13.333px',
         opacity: 1
     },
     floatingLabelShrinkStyle: {
-        fontSize: '10px',
+        fontSize: '13.333px',
         opacity: 1
     },
     floatingLabelStyle: {

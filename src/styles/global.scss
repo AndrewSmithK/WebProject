@@ -321,7 +321,7 @@ a {
       color: $dark-sky-blue;
       transition: color .4s;
 
-      &:hover {
+      &:hover, &.active {
         border-color: $dark-sky-blue;
       }
     }
@@ -400,9 +400,11 @@ a {
         &:hover .subnav-wrap {
           display: block;
         }
+
         .active {
           border-bottom: 2px solid #fff;
         }
+        
         .subnav-wrap {
           display: none;
           position: absolute;
