@@ -5,7 +5,7 @@ export default class TermsHeader extends React.Component {
   render() {
     return (<section className="section" id="terms-header">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row pl-0 pr-0 justify-content-center">
           <Link to="/">
             <div className="label">
               <i className="fa fa-angle-left" aria-hidden="true" />Back

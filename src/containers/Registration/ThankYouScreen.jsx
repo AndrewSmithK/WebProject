@@ -8,9 +8,7 @@ export default () =>
     <div className="thank-you-screen">
         <h1 className="title">Thank you for your interest!</h1>
 
-        <div className="image">
-            <img src={image} alt="thank you"/>
-        </div>
+        <img className="image" src={image} alt="thank you"/>
 
         <div className="message">
             <p>

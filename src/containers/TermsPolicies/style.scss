@@ -6,7 +6,7 @@
 
   .container {
     padding: 0;
-    
+
     .label {
       position: absolute;
       top: -40px;
@@ -48,7 +48,7 @@
     padding: 0 50px;
 
     .side-container {
-      width: 200px;
+      width: auto;
 
       a {
         font-size: 10px;
@@ -111,7 +111,7 @@
               font-weight: 400;
               padding: 0 10px 10px 0;
               cursor: pointer;
-  
+
               &:hover {
                 text-decoration: underline;
               }
@@ -206,6 +206,13 @@
         margin-bottom: 25px;
       }
     }
+    @media (max-width: 992px) {
+      .text-container {
+        margin-bottom: -20px;
+        margin-top: 20px;
+        max-width: fit-content;
+        float: none;
+      }
+    }
   }
 }
-
