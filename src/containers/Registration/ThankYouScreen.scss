@@ -1,3 +1,5 @@
+@import '../../styles/varibles';
+
 .thank-you-screen {
     text-align: center;
     width: 100%;
@@ -10,10 +12,17 @@
         margin-bottom: 50px;
         font-weight: bold;
         line-height: 1;
+        @media (max-width: $break-mobile) {
+            font-size: 18px;
+            line-height: 1.11;
+        }
     }
 
     .image {
         margin-bottom: 30px;
+        @media (max-width: $break-mobile) {
+            width: 200px;
+        }
     }
 
     .message {
@@ -25,6 +34,10 @@
 
         span {
             font-weight: normal;
+        }
+        @media (max-width: $break-mobile) {
+            font-size: 13px;
+            line-height: 1.69;
         }
     }
 
