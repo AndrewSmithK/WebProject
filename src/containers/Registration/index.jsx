@@ -4,6 +4,7 @@ import MenuItem from 'material-ui/MenuItem'
 import TextField from 'material-ui/TextField'
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 import { ValidatorForm, TextValidator, SelectValidator } from 'react-material-ui-form-validator'
+import ThankYouScreen from './ThankYouScreen'
 
 import './style.scss'
 
@@ -209,6 +210,8 @@ export default class Registration extends Component {
                 </div>
 
                 <div className="main-block">
+                    {this.state.thirdStep ?
+                    <ThankYouScreen /> :
                     <ValidatorForm ref="form" onSubmit={this.handleSubmit} >
                         <div className="form">
                             <h2 className="form__title">The Company</h2>
@@ -440,6 +443,7 @@ export default class Registration extends Component {
                         null
                     }
                     </ValidatorForm>
+                    }
                 </div>
             </div>
         )

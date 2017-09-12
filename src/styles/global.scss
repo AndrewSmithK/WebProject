@@ -301,20 +301,21 @@ a {
   box-sizing: border-box;
   border-bottom: 1px solid rgba(247,247,247, .3);
   z-index: 999;
-  transition: all .4s;
+  transition: background .4s, border-bottom .4s;
   &.narrow {
     position: fixed;
     top: 0;
     border: 1px solid #f7f7f7;
     background: #fff;
-    transition: all .4s;
-
+    transition: background .4s, border-bottom .4s;
+    
     .logo {
       background: url(../images/Header/logo-qover.svg) center no-repeat;
     }
 
     a {
       color: $dark-sky-blue;
+      transition: color .4s;
 
       &:hover {
         border-color: $dark-sky-blue;
@@ -325,11 +326,13 @@ a {
       .btn-access {
         color: #fff;
         background: $dark-sky-blue;
+        transition: background .4s, color .4s;
       }
 
       .btn-login {
         color: $dark-sky-blue;
         background: #fff;
+        transition: background .4s, color .4s;
       }
     }
   }

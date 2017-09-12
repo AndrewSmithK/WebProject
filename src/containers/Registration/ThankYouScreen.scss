@@ -1,0 +1,50 @@
+@import '../../styles/varibles';
+
+.thank-you-screen {
+    text-align: center;
+    width: 100%;
+    background-color: #eaeff3;
+    padding: 60px 0 50px;
+    
+    .title {
+        font-size: 20px;
+        color: #317bda;
+        margin-bottom: 50px;
+        font-weight: bold;
+        line-height: 1;
+        @media (max-width: $break-mobile) {
+            font-size: 18px;
+            line-height: 1.11;
+        }
+    }
+
+    .image {
+        margin-bottom: 30px;
+        @media (max-width: $break-mobile) {
+            width: 200px;
+        }
+    }
+
+    .message {
+        margin-bottom: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.57;
+        color: #5b7289;
+
+        span {
+            font-weight: normal;
+        }
+        @media (max-width: $break-mobile) {
+            font-size: 13px;
+            line-height: 1.69;
+        }
+    }
+
+    .btn {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #317bda;
+    }
+}
