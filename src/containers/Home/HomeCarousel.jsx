@@ -13,8 +13,10 @@ import datanews from '../../images/HomePage/Carousel/datanews.png';
 const NextArrow = (props) => {
   const { className, style, onClick, next } = props;
   const onClickAll = () => {
-    typeof(onClick) === 'function' && onClick();
-    next();
+    if (typeof(onClick) === 'function') {
+      onClick();
+      next();
+    }
   }
   return (
     <div
@@ -28,8 +30,10 @@ const NextArrow = (props) => {
 const PrevArrow = (props) => {
   const { className, style, onClick, previous } = props;
   const onClickAll = () => {
-    typeof(onClick) === 'function' && onClick();
-    previous();
+    if (typeof(onClick) === 'function') {
+      onClick();
+      previous();
+    }
   }
   return (
     <div
