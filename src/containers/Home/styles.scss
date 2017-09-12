@@ -7,11 +7,15 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: $dark-sky-blue;
-  // background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+
+  @media (min-width: 992px) {
+    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  }
 
   .header-space {
     padding-bottom: 140px;
@@ -192,7 +196,19 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
+
+    #explanation {
+      .row {
+        .item {
+          max-height: 430px;
+        }
+      }
+    }
+    .container {
+      max-width: 500px;
+    }
+
     .infographic {
       height: 560px;
       background: url('../../images/HomePage/mobile-schema.png') no-repeat center;
@@ -326,7 +342,7 @@
 
     .item {
       padding: 45px 25px;
-      height: 335px;
+      max-height: 335px;
       border-radius: 3px;
       box-shadow: 0 0 10px $pale-grey;
 
@@ -442,6 +458,10 @@
 #inn-products {
   img {
     height: 50px;
+  }
+
+  .item {
+    max-height: 216px;
   }
 }
 
@@ -696,7 +716,7 @@
       .left-block {
         padding-left: 40px;
         padding-right: 40px;
-        max-width: 100%;
+        // max-width: 100%;
         flex: none;
 
         a.link {

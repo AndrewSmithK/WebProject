@@ -18,6 +18,10 @@
       }
     }
   }
+  
+  .react-parallax-bgimage {
+    display: none;
+  }
 }
 
 @media screen and (max-width: $break-mobile) {

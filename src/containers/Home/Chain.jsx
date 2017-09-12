@@ -20,8 +20,8 @@ export default class Chain extends React.Component {
       </h2>
       <div className="container">
         <div className="row">
-          <div className="infographic col-6 col-md-12" />
-          <div className="descripts col-6 col-md-12">
+          <div className="infographic col-6 col-lg-12" />
+          <div className="descripts col-6 col-lg-12">
             <div className="item">
               <h4>
                 <FormattedMessage 

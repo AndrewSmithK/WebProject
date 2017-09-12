@@ -22,9 +22,13 @@
 
 #header-about {
   padding: 0;
-  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/About/future-about.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 992px) {
+    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  }
 
   .react-parallax  {
     overflow: hidden;
@@ -64,9 +68,9 @@
 
   #insertion {
     position: absolute;
-    left: 50%;
-    margin-left: -425px;
     bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .container {
@@ -74,6 +78,7 @@
       padding: 0 20px;
 
       .item {
+        margin: 0 auto; 
         background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd), linear-gradient($pale-grey-two, $pale-grey-two), linear-gradient(291deg, $turquoise, #82e5c9 76%, #b9f4bc);
         font-size: 16px;
         font-family: 'MuseoSans', sans-serif;

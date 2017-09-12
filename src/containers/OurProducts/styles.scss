@@ -5,6 +5,10 @@
   background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-width: 992px) {
+    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  }
+
   .react-parallax  {
     overflow: hidden;
     padding-bottom: 63px;
