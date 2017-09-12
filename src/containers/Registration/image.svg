@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="294" height="181" viewBox="0 0 294 181">
+    <defs>
+        <filter id="a" width="124%" height="123.7%" x="-12%" y="-12.2%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.356862745 0 0 0 0 0.447058824 0 0 0 0 0.537254902 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="b" d="M0 2.994A3.002 3.002 0 0 1 3.002 0h116.063a3.002 3.002 0 0 1 3.002 2.994v116.928H0V2.994z"/>
+        <path id="d" d="M0 .027h46.486v42.08H0"/>
+        <path id="e" d="M8.243 7.47C3.866 7.47.283 4.172 0 0h16.486c-.283 4.172-3.866 7.47-8.243 7.47z"/>
+        <radialGradient id="h" cx="0%" cy="0%" r="292.454%" fx="0%" fy="0%" gradientTransform="matrix(.56543 .5425 -.54425 1.25212 0 0)">
+            <stop offset="0%" stop-color="#317BDA"/>
+            <stop offset="100%" stop-color="#43C8CD"/>
+        </radialGradient>
+        <path id="g" d="M.012 3.108C.012.896 1.489.1 3.319 1.335l137.923 93.049c1.827 1.232 1.52 2.231-.69 2.231H5.008a5.002 5.002 0 0 1-4.996-5.003V3.108z"/>
+        <radialGradient id="j" cx="0%" cy="0%" r="208.67%" fx="0%" fy="0%" gradientTransform="matrix(.55734 .55756 -.55796 1.23733 0 0)">
+            <stop offset="0%" stop-color="#317BDA"/>
+            <stop offset="100%" stop-color="#43C8CD"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g filter="url(#a)" transform="translate(75.745 13.404)">
+            <path fill="#464859" d="M.266 65.186c-.317-2.19.87-5.031 2.657-6.324 0 0 45.382-34.209 71.46-34.337 26.077-.127 71.89 34.163 71.89 34.163 1.782 1.292 2.6 4.02 1.83 6.083l-14.112 37.819H5.675L.266 65.186z"/>
+            <g transform="translate(13.735)">
+                <mask id="c" fill="#fff">
+                    <use xlink:href="#b"/>
+                </mask>
+                <use fill="#EEEFF5" xlink:href="#b"/>
+                <path stroke="#D2D5DF" d="M-.5 2.994A3.502 3.502 0 0 1 3.002-.5h116.063a3.502 3.502 0 0 1 3.502 3.494v117.428H-.5V2.994z"/>
+                <path fill="#FFF" d="M0 0h114.154v164.345H0z" mask="url(#c)"/>
+            </g>
+            <g transform="translate(43.776 46.316)">
+                <g fill="#393C65" transform="translate(6.008)">
+                    <ellipse cx="6.008" cy="5.976" rx="6.008" ry="5.976"/>
+                    <ellipse cx="43.559" cy="5.976" rx="6.008" ry="5.976"/>
+                </g>
+                <g transform="translate(22.53 19.423)">
+                    <mask id="f" fill="#fff">
+                        <use xlink:href="#e"/>
+                    </mask>
+                    <use fill="#22253F" stroke="#22253F" stroke-width="2" xlink:href="#e"/>
+                    <ellipse cx="8.261" cy="8.004" fill="#FF2E63" mask="url(#f)" rx="6.058" ry="5.869"/>
+                </g>
+                <ellipse cx="4.506" cy="23.905" fill="#CCD1E6" opacity=".516" rx="4.506" ry="4.482"/>
+                <ellipse cx="57.077" cy="23.905" fill="#CCD1E6" opacity=".516" rx="4.506" ry="4.482"/>
+            </g>
+            <g transform="translate(6.444 58.766)">
+                <mask id="i" fill="#fff">
+                    <use xlink:href="#g"/>
+                </mask>
+                <use fill="url(#h)" transform="matrix(-1 0 0 1 142.445 0)" xlink:href="#g"/>
+                <path fill="#32365A" d="M133.461-1.992h42.057v153.887h-42.057z" mask="url(#i)" opacity=".096"/>
+            </g>
+            <path fill="url(#j)" d="M.215 61.874c0-2.212 1.483-2.992 3.302-1.75l139.458 95.257H5.213a5.002 5.002 0 0 1-4.998-5.003V61.874z"/>
+        </g>
+        <g transform="translate(0 49.149)">
+            <ellipse cx="38.909" cy="39.423" stroke="#FB9E76" stroke-width="3" rx="6.809" ry="6.899"/>
+            <ellipse cx="32.587" cy="79.338" stroke="#31CFDA" stroke-width="3" rx="5.35" ry="5.421"/>
+            <ellipse cx="35.991" cy="2.957" fill="#317BDA" rx="2.918" ry="2.957"/>
+            <ellipse cx="1.945" cy="15.769" fill="#F4566A" rx="1.945" ry="1.971"/>
+            <g fill="#317BDA" transform="translate(1.945 46.322)">
+                <rect width="2.918" height="13.798" x="5.836" rx="1.459"/>
+                <rect width="2.918" height="13.798" x="5.836" rx="1.459" transform="rotate(-90 7.295 6.899)"/>
+            </g>
+        </g>
+        <g transform="translate(255.32 49.149)">
+            <ellipse cx="5.433" cy="39.916" stroke="#31CFDA" stroke-width="3" rx="5.433" ry="5.421"/>
+            <ellipse cx="8.891" cy="2.957" fill="#317BDA" rx="2.964" ry="2.957"/>
+            <ellipse cx="35.563" cy="58.149" fill="#FB9E76" rx="2.964" ry="2.957"/>
+            <g fill="#F4566A" transform="translate(2.964 70.96)">
+                <rect width="2.964" height="13.798" x="5.927" rx="1.482"/>
+                <rect width="2.964" height="13.798" x="5.927" rx="1.482" transform="rotate(-90 7.409 6.899)"/>
+            </g>
+            <g fill="#31CFDA" transform="translate(25.685 16.755)">
+                <rect width="1.976" height="8.87" x="3.951" rx=".988"/>
+                <rect width="1.976" height="8.87" x="3.951" rx=".988" transform="rotate(-90 4.94 4.435)"/>
+            </g>
+        </g>
+        <path fill="#F4566A" d="M89.687 26.198l121.106 1.647a2 2 0 0 1 1.973 2v12.316a2 2 0 0 1-1.878 1.997L89.782 51.572a2 2 0 0 1-2.122-1.996V28.198a2 2 0 0 1 2.027-2z"/>
+        <path fill="#F4566A" d="M211.915 35.577l16.655-22.404a1 1 0 0 1 1.792.74l-2.471 17.06a1 1 0 0 1-.75.828l-15.226 3.776z"/>
+        <path fill="#F4566A" d="M211.915 35.532h14.625a1 1 0 0 1 1 1v5.125a1 1 0 0 1-1.444.896l-14.181-7.021z"/>
+        <path fill="#CD374A" d="M204.006 27.753l6.787.092a2 2 0 0 1 1.973 2v12.316a2 2 0 0 1-1.878 1.997l-7.063.432V28.587c0-.298.065-.58.181-.834z"/>
+    </g>
+</svg>
