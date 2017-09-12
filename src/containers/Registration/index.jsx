@@ -109,15 +109,19 @@ export default class Registration extends Component {
                 postCode: '',
                 city: '',
                 website: '',
-                description: ''
+                description: '',
+                country: 1
             },
             submitted: false,
+            submitted2: false,
             showInsurance: false,
-            nextStep: false 
+            secondStep: false,
+            thirdStep: false
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleRadio = this.handleRadio.bind(this)
+        this.handleSelectCountry = this.handleSelectCountry.bind(this)
     }
 
     handleRadio(event, value) {
@@ -130,17 +134,67 @@ export default class Registration extends Component {
         const { formData } = this.state
         formData[event.target.name] = event.target.value
         this.setState({ formData })
+
+        this.firstStepCheck()
+    }
+
+    handleSelectCountry(event, key, payload) {
+        const { formData } = this.state
+        formData['country'] = payload
+        this.setState({ formData })
+
+        this.firstStepCheck()
+    }
+
+    handleSelectTitle(event, key, payload) {
+        const { formData } = this.state
+        formData['title'] = payload
+        this.setState({ formData })
+
+        this.firstStepCheck()
     }
 
     handleSubmit() {
-        this.setState({ submitted: true }, () => {
-            setTimeout(() => this.setState({ submitted: false }), 5000)
+        // this.setState({ submitted: true }, () => {
+        //     setTimeout(() => this.setState({ submitted: false }), 5000)
+        // })
+        console.log('handle submit')
+    }
+
+    firstStepCheck() {
+        const { country, registrationNumber } = this.state.formData
+        this.setState({
+            submitted: country !== '' && registrationNumber !== '' ? true : false
+        })
+
+        this.secondStepCheck()
+    }
+
+    secondStepCheck() {
+        const { formData } = this.state
+        const checkProps = function () {
+            let res = true
+            for (let key in formData) {
+                if (formData[key] === '' || formData[key] === null) {
+                    res = false
+                }
+            }
+            return res
+        }
+        this.setState({
+            submitted2: checkProps()
         })
     }
 
-    test() {
+    secondStep() {
         this.setState({
-            nextStep: true
+            secondStep: true
+        })
+    }
+
+    thirdStep() {
+        this.setState({
+            thirdStep: true
         })
     }
 
@@ -163,7 +217,8 @@ export default class Registration extends Component {
                                     <SelectValidator
                                         {...selectFieldSettings}
                                         name="country"
-                                        value={0}
+                                        onChange={this.handleSelectCountry}
+                                        value={formData.country}
                                         floatingLabelText="Country"
                                         validators={['required']}
                                         errorMessages={['You forgot to give us the country.']}
@@ -184,12 +239,13 @@ export default class Registration extends Component {
                                     />
                                 </div>
                             </div>
-                        {!this.state.nextStep ?
-                            <button className="btn" type="submit" onClick={this.test.bind(this)}>Continue</button> :
+                            
+                        {!this.state.secondStep ?
+                            <button onClick={this.secondStep.bind(this)} className="btn" disabled={!submitted} type="submit">Continue</button> :
                             null
                         }
 
-                        {this.state.nextStep ?
+                        {this.state.secondStep ?
                             <div> <div className="form__row">
                                 <div className="form__field">
                                     <TextValidator
@@ -283,7 +339,7 @@ export default class Registration extends Component {
                                 rows={3}
                                 floatingLabelText="Short description of your business"
                                 name="description"
-                                validators={['required', 'maxNumber:250']}
+                                validators={['required', 'matchRegexp:^.{0,250}$']}
                                 errorMessages={['This field is required.', 'max 250 characters']}
                             /> </div> :
 
@@ -291,15 +347,16 @@ export default class Registration extends Component {
                         }
                         </div>
 
-                    {this.state.nextStep ?
+                    {this.state.secondStep ?
                         <div className="form">
                             <h2 className="form__title">The Contact Person</h2>
 
                             <div className="form__field">
                                 <SelectValidator
+                                    onChange={this.handleSelectTitle.bind(this)}
                                     {...selectFieldSettings}
-                                    name="country"
-                                    value={0}
+                                    name="title"
+                                    value={formData.title}
                                     floatingLabelText="Title"
                                     validators={['required']}
                                     errorMessages={['This field is required.']}
@@ -378,7 +435,7 @@ export default class Registration extends Component {
                                 </div>
                             </div>
 
-                            <button className="btn" type="submit">Continue</button>
+                            <button onClick={this.thirdStep.bind(this)} disabled={!this.state.submitted2} className="btn" type="submit">Continue</button>
                         </div> :
                         null
                     }
