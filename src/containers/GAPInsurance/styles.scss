@@ -2,8 +2,8 @@
 
 #header-gap-insurance {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: $dark-sky-blue;
   background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: left bottom;
@@ -16,7 +16,7 @@
   }
 
   .header-space {
-    padding-bottom: 140px;
+    padding-bottom: 70px;
   }
 
   .return-label {
@@ -118,7 +118,7 @@
 
   .screenshot-api {
     position: absolute;
-    bottom: 0;
+    bottom: -70px;
     right: 0;
     width: 45%;
     max-width: 550px;
