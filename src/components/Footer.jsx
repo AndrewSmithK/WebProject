@@ -32,7 +32,7 @@ export default class TopLine extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">
+                  <Link to="/contact-us">
                     <FormattedMessage id={`footer.contactUs`} defaultMessage={`Contact us`}/>
                   </Link>
                 </li>
