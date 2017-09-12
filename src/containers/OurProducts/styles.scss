@@ -1,10 +1,19 @@
 @import '../../styles/varibles';
 
 #header-our-products {
-  padding: 130px 0 90px 0;
-  background-image: url('../../images/OurProducts/future-our-products.png'), radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
+  padding: 0;
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
   background-size: cover;
 
+  .react-parallax  {
+    overflow: hidden;
+    padding-bottom: 63px;
+  }
+
+  .header-space {
+    padding-bottom: 140px;
+  }
+  
   .container {
     padding: 0 295px;
 
