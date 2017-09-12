@@ -642,7 +642,6 @@
 
   .container {
     margin: 40px auto auto;
-    overflow: hidden;
     
     .justify-content-around {
       width: 1000px;
@@ -665,7 +664,7 @@
     }
     .container {
       margin: 0;
-      padding: 0 0 100px 0;
+      padding: 10px 0 100px 0;
       margin-bottom: -100px;
       overflow-x: scroll;
       -webkit-overflow-scrolling: touch;
