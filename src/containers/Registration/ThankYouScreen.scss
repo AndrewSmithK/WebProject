@@ -1,0 +1,37 @@
+.thank-you-screen {
+    text-align: center;
+    width: 100%;
+    background-color: #eaeff3;
+    padding: 60px 0 50px;
+    
+    .title {
+        font-size: 20px;
+        color: #317bda;
+        margin-bottom: 50px;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .image {
+        margin-bottom: 30px;
+    }
+
+    .message {
+        margin-bottom: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.57;
+        color: #5b7289;
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    .btn {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #317bda;
+    }
+}
