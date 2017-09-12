@@ -8,7 +8,7 @@ import ThankYouScreen from './ThankYouScreen'
 import Loading from './Loading'
 
 import './style.scss'
-
+import Flag from '../../images/Registration/flag-belgium.svg'
 import arrowBottom from './icon-dropdown.svg'
 
 const countryList = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Republic of Cyprus', 'Czech Republic',
@@ -218,232 +218,234 @@ export default class Registration extends Component {
         const { formData, submitted } = this.state
         return (
             <div id="registration">
-                <div className="head-block">
-                    <div className="container text-center">
-                        <h1 className="head-block__title">Commercial Registration Form</h1>
-                    </div>
+              <div className="head-block">
+                <div className="container text-center">
+                  <h1 className="head-block__title">Commercial Registration Form</h1>
                 </div>
+              </div>
 
-                <div className="main-block">
+              <div className="main-block">
 
-                    {this.state.showSpinner && <Loading />}
+                {this.state.showSpinner && <Loading />}
 
-                    {this.state.thirdStep ?
-                    <ThankYouScreen /> :
-                    <ValidatorForm ref="form" onSubmit={this.handleSubmit} >
-                        <div className="form">
-                            <h2 className="form__title">The Company</h2>
-                            <div className="form__row">
-                                <div className="form__field">
-                                    <SelectValidator
-                                        {...selectFieldSettings}
-                                        name="country"
-                                        onChange={this.handleSelectCountry}
-                                        value={formData.country}
-                                        floatingLabelText="Country"
-                                        validators={['required']}
-                                        errorMessages={['You forgot to give us the country.']}
-                                    >
-                                        {countryList.map((country, index) => <MenuItem key={index} value={index} primaryText={country} />)}
-                                    </SelectValidator>
-                                </div>
-
-                                <div className="form__field">
-                                    <TextValidator
-                                        {...textFieldSettings}
-                                        value={formData.registrationNumber}
-                                        onChange={this.handleChange}
-                                        floatingLabelText="Company registration number"
-                                        name="registrationNumber"
-                                        validators={['required']}
-                                        errorMessages={['You forgot to give us the company registration number.']}
-                                    />
-                                </div>
-                            </div>
-                            
-                        {!this.state.secondStep ?
-                            <button onClick={this.secondStep.bind(this)} className="btn" disabled={!submitted} type="submit">Continue</button> :
-                            null
-                        }
-
-                        {this.state.secondStep ?
-                            <div className="opacity-for"> <div className="form__row">
-                                <div className="form__field">
-                                    <TextValidator
-                                        {...textFieldSettings}
-                                        value={formData.legalName}
-                                        onChange={this.handleChange}
-                                        floatingLabelText="Legal Name"
-                                        name="legalName"
-                                        validators={['required']}
-                                        errorMessages={['This field is required.']}
-                                    />
-                                </div>
-
-                                <div className="form__field">
-                                    <TextField {...textFieldSettings} floatingLabelText="Commercial Name (optional)" />
-                                </div>
-                            </div>
-
-                            <TextValidator
-                                {...textFieldSettings}
-                                value={formData.addressFirst}
-                                onChange={this.handleChange}
-                                floatingLabelText="Address Line 1"
-                                name="addressFirst"
-                                validators={['required']}
-                                errorMessages={['This field is required.']}
-                            />
-
-                            <TextField {...textFieldSettings} floatingLabelText="Address Line 2" />
-
-                            <div className="form__row form__row--post">
-                                <div className="form__field form__field--post">
-                                    <TextValidator
-                                        {...textFieldSettings}
-                                        value={formData.postCode}
-                                        onChange={this.handleChange}
-                                        floatingLabelText="Post Code"
-                                        name="postCode"
-                                        validators={['required']}
-                                        errorMessages={['This field is required.']}
-                                    />
-                                </div>
-
-                                <div className="form__field form__field--code">
-                                    <TextValidator
-                                        {...textFieldSettings}
-                                        value={formData.city}
-                                        onChange={this.handleChange}
-                                        floatingLabelText="City"
-                                        name="city"
-                                        validators={['required']}
-                                        errorMessages={['This field is required.']}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="radio-group">
-                                <div className="radio-group__title">Insurance intermediary</div>
-                                <RadioButtonGroup name="insurance" onChange={this.handleRadio} className="radio-group__buttons">
-                                    <RadioButton value="1" label="Yes" {...radioButtonSettings} />
-                                    <RadioButton value="0" label="No" {...radioButtonSettings} />
-                                </RadioButtonGroup>
-                            </div>
-
-                            <div
-                                className="form__field"
-                                style={{
-                                    display: this.state.showInsurance ? 'block' : 'none'
-                                }}
-                            >
-                                <TextField {...textFieldSettings} floatingLabelText="Insurance License Number" />
-                            </div>
-
-                            <div className="form__field">
-                                <TextValidator
-                                    {...textFieldSettings}
-                                    value={formData.website}
-                                    onChange={this.handleChange}
-                                    floatingLabelText="Website"
-                                    name="website"
-                                    validators={['required']}
-                                    errorMessages={['This field is required.']}
-                                />
-                            </div>
-
-                            <TextValidator
-                                {...textFieldSettings}
-                                value={formData.description}
-                                onChange={this.handleChange}
-                                multiLine
-                                rows={3}
-                                floatingLabelText="Short description of your business"
-                                name="description"
-                                validators={['required', 'matchRegexp:^.{0,250}$']}
-                                errorMessages={['This field is required.', 'max 250 characters']}
-                            /> </div> :
-
-                            null
-                        }
+                {this.state.thirdStep ?
+                  <ThankYouScreen /> :
+                  <ValidatorForm ref="form" onSubmit={this.handleSubmit} >
+                    <div className="form">
+                      <h2 className="form__title">The Company</h2>
+                      <div className="form__row">
+                        <div className="form__field">
+                          <SelectValidator
+                            {...selectFieldSettings}
+                            name="country"
+                            onChange={this.handleSelectCountry}
+                            value={formData.country}
+                            floatingLabelText="Country"
+                            validators={['required']}
+                            errorMessages={['You forgot to give us the country.']}
+                          >
+                            {countryList.map((country, index) => <MenuItem key={index} value={index} primaryText={country} />)}
+                          </SelectValidator>
                         </div>
 
-                    {this.state.secondStep ?
-                        <div className="form opacity-for">
-                            <h2 className="form__title">The Contact Person</h2>
+                        <div className="form__field">
+                          <TextValidator
+                            {...textFieldSettings}
+                            type='number'
+                            value={formData.registrationNumber}
+                            onChange={this.handleChange}
+                            floatingLabelText="Company registration number"
+                            name="registrationNumber"
+                            validators={['required']}
+                            errorMessages={['You forgot to give us the company registration number.']}
+                          />
+                        </div>
+                      </div>
 
-                            <div className="form__field">
-                                <SelectValidator
-                                    onChange={this.handleSelectTitle.bind(this)}
-                                    {...selectFieldSettings}
-                                    name="title"
-                                    value={formData.title}
-                                    floatingLabelText="Title"
-                                    validators={['required']}
-                                    errorMessages={['This field is required.']}
-                                >
-                                    <MenuItem value={0} primaryText="Mr" />
-                                    <MenuItem value={1} primaryText="Mme" />
-                                </SelectValidator>
-                            </div>
+                      {!this.state.secondStep ?
+                        <button onClick={this.secondStep.bind(this)} className="btn" disabled={!submitted} type="submit">Continue</button> :
+                        null
+                      }
 
-                            <div className="form__row">
-                                <div className="form__field">
-                                    <TextValidator
-                                        {...textFieldSettings}
-                                        value={formData.firstName}
-                                        onChange={this.handleChange}
-                                        floatingLabelText="First Name"
-                                        name="firstName"
-                                        validators={['required']}
-                                        errorMessages={['You forgot to give us the first name of the contact.']}
-                                    />
-                                </div>
-
-                                <div className="form__field">
-                                    <TextValidator
-                                        {...textFieldSettings}
-                                        value={formData.lastName}
-                                        onChange={this.handleChange}
-                                        floatingLabelText="Last Name"
-                                        name="lastName"
-                                        validators={['required']}
-                                        errorMessages={['You forgot to give us the last name of the contact.']}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="form__field">
-                                <TextValidator
-                                    {...textFieldSettings}
-                                    value={formData.function}
-                                    onChange={this.handleChange}
-                                    floatingLabelText="Function"
-                                    name="function"
-                                    validators={['required']}
-                                    errorMessages={['Please specify the function of the contact person.']}
-                                />
-                            </div>
-
+                      {this.state.secondStep ?
+                        <div className="opacity-for"> <div className="form__row">
+                          <div className="form__field">
                             <TextValidator
-                                {...textFieldSettings}
-                                value={formData.email}
-                                onChange={this.handleChange}
-                                floatingLabelText="Email"
-                                name="email"
-                                validators={['required', 'isEmail']}
-                                errorMessages={['this field is required', 'email is not valid']}
+                              {...textFieldSettings}
+                              value={formData.legalName}
+                              onChange={this.handleChange}
+                              floatingLabelText="Legal Name"
+                              name="legalName"
+                              validators={['required']}
+                              errorMessages={['This field is required.']}
                             />
+                          </div>
 
-                            <div className="form__row form__row--phone">
-                                <div className="form__field form__field">
-                                    <SelectField {...selectFieldSettings} value={1} floatingLabelText="Phone Number" >
-                                        <MenuItem value={1} primaryText="+32" />
-                                    </SelectField>
-                                </div>
+                          <div className="form__field">
+                            <TextField {...textFieldSettings} floatingLabelText="Commercial Name (optional)" />
+                          </div>
+                        </div>
 
-                                <div className="form__field form__field">
-                                    <TextValidator
+                          <TextValidator
+                            {...textFieldSettings}
+                            value={formData.addressFirst}
+                            onChange={this.handleChange}
+                            floatingLabelText="Address Line 1"
+                            name="addressFirst"
+                            validators={['required']}
+                            errorMessages={['This field is required.']}
+                          />
+
+                          <TextField {...textFieldSettings} floatingLabelText="Address Line 2" />
+
+                          <div className="form__row form__row--post">
+                            <div className="form__field form__field--post">
+                              <TextValidator
+                                {...textFieldSettings}
+                                value={formData.postCode}
+                                onChange={this.handleChange}
+                                floatingLabelText="Post Code"
+                                name="postCode"
+                                validators={['required']}
+                                errorMessages={['This field is required.']}
+                              />
+                            </div>
+
+                            <div className="form__field form__field--code">
+                              <TextValidator
+                                {...textFieldSettings}
+                                value={formData.city}
+                                onChange={this.handleChange}
+                                floatingLabelText="City"
+                                name="city"
+                                validators={['required']}
+                                errorMessages={['This field is required.']}
+                              />
+                            </div>
+                          </div>
+
+                          <div className="radio-group">
+                            <div className="radio-group__title">Insurance intermediary</div>
+                            <RadioButtonGroup name="insurance" onChange={this.handleRadio} className="radio-group__buttons">
+                              <RadioButton value="1" label="Yes" {...radioButtonSettings} />
+                              <RadioButton value="0" label="No" {...radioButtonSettings} />
+                            </RadioButtonGroup>
+                          </div>
+
+                          <div
+                            className="form__field"
+                            style={{
+                              display: this.state.showInsurance ? 'block' : 'none'
+                            }}
+                          >
+                            <TextField {...textFieldSettings} floatingLabelText="Insurance License Number" />
+                          </div>
+
+                          <div className="form__field">
+                            <TextValidator
+                              {...textFieldSettings}
+                              value={formData.website}
+                              onChange={this.handleChange}
+                              floatingLabelText="Website"
+                              name="website"
+                              validators={['required']}
+                              errorMessages={['This field is required.']}
+                            />
+                          </div>
+
+                          <TextValidator
+                            {...textFieldSettings}
+                            value={formData.description}
+                            onChange={this.handleChange}
+                            multiLine
+                            rows={3}
+                            floatingLabelText="Short description of your business"
+                            name="description"
+                            validators={['required', 'matchRegexp:^.{0,250}$']}
+                            errorMessages={['This field is required.', 'max 250 characters']}
+                          /> </div> :
+
+                        null
+                      }
+                    </div>
+
+                    {this.state.secondStep ?
+                      <div className="form opacity-for">
+                        <h2 className="form__title">The Contact Person</h2>
+
+                        <div className="form__field">
+                          <SelectValidator
+                            onChange={this.handleSelectTitle.bind(this)}
+                            {...selectFieldSettings}
+                            name="title"
+                            value={formData.title}
+                            floatingLabelText="Title"
+                            validators={['required']}
+                            errorMessages={['This field is required.']}
+                          >
+                            <MenuItem value={0} primaryText="Mr" />
+                            <MenuItem value={1} primaryText="Mme" />
+                          </SelectValidator>
+                        </div>
+
+                        <div className="form__row">
+                          <div className="form__field">
+                            <TextValidator
+                              {...textFieldSettings}
+                              value={formData.firstName}
+                              onChange={this.handleChange}
+                              floatingLabelText="First Name"
+                              name="firstName"
+                              validators={['required']}
+                              errorMessages={['You forgot to give us the first name of the contact.']}
+                            />
+                          </div>
+
+                          <div className="form__field">
+                            <TextValidator
+                              {...textFieldSettings}
+                              value={formData.lastName}
+                              onChange={this.handleChange}
+                              floatingLabelText="Last Name"
+                              name="lastName"
+                              validators={['required']}
+                              errorMessages={['You forgot to give us the last name of the contact.']}
+                            />
+                          </div>
+                        </div>
+
+                        <div className="form__field">
+                          <TextValidator
+                            {...textFieldSettings}
+                            value={formData.function}
+                            onChange={this.handleChange}
+                            floatingLabelText="Function"
+                            name="function"
+                            validators={['required']}
+                            errorMessages={['Please specify the function of the contact person.']}
+                          />
+                        </div>
+
+                        <TextValidator
+                          {...textFieldSettings}
+                          value={formData.email}
+                          onChange={this.handleChange}
+                          floatingLabelText="Email"
+                          name="email"
+                          validators={['required', 'isEmail']}
+                          errorMessages={['this field is required', 'email is not valid']}
+                        />
+
+                        <div className="form__row form__row--phone">
+                          <div className="form__field form__field">
+                            <SelectField style={{width:'90px'}} {...selectFieldSettings} value={1} floatingLabelText="Phone Number" >
+                              <MenuItem value={1} primaryText="+32" />
+                            </SelectField>
+                            <img src={Flag} style={{position:'relative', bottom:'42px', left: '50px'}}/>
+                          </div>
+
+                          <div className="form__field form__field">
+                            <TextValidator style={{left:'12px'}}
                                         {...textFieldSettings}
                                         value={formData.number}
                                         onChange={this.handleChange}
