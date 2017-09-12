@@ -13,6 +13,10 @@
   background-size: cover;
   overflow: hidden;
 
+  .no-paralax {
+    display: none;
+  }
+
   @media (min-width: 992px) {
     background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   }
@@ -683,6 +687,15 @@
 }
 
 @media screen and (max-width: 992px) {
+  #header {
+    .no-paralax {
+      display: block;
+    }
+    .paralax {
+      display: none;
+    }
+  }
+
   .disclaimer {
     p {
       margin: 0 20px;
@@ -717,7 +730,7 @@
         padding-left: 40px;
         padding-right: 40px;
         // max-width: 100%;
-        flex: none;
+        // flex: none;
 
         a.link {
           margin-left: 0;

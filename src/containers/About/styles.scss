@@ -385,6 +385,7 @@
     #insertion {
       left: unset;
       bottom: unset;
+      transform: none;
       margin-left: auto;
 
       .item {
@@ -457,7 +458,7 @@
 
 @media screen and (max-width: 480px) {
   .m-hidden {
-    display: none;
+    display: none !important;
   }
 
   .d-hidden {

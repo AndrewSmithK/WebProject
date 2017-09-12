@@ -187,14 +187,23 @@
 
   #contactUs {
     padding-bottom: 0;
-
-    .wraper {
+    .wraper {  
       .form-col, .contact-info-col {
-        width: 100%;
         border-radius: 0;
         .form-wrap {
           border-radius: 0;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #contactUs {
+    .wraper {
+      .form-col, .contact-info-col {
+        width: 100%;
       }
     }
   }

@@ -56,7 +56,7 @@ export default class HomeHeader extends React.Component {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="mac-image m-hidden">
+            <div className="mac-image paralax m-hidden">
               <ParallaxBox
                 offsetYMax={50}
                 offsetYMin={-10}
@@ -65,11 +65,15 @@ export default class HomeHeader extends React.Component {
               </ParallaxBox>
               <ParallaxBox
                 className="api-logo"
-                offsetYMax={170}
+                offsetYMax={120}
                 offsetYMin={-100}
                 tag="LloydsLogoSmall">
                 <img src={api} alt="" />
               </ParallaxBox>
+            </div>
+            <div className="mac-image no-paralax m-hidden">
+              <img src={imac} alt="" />
+              <img src={api} className="api-logo" alt="" />
             </div>
             <div className="mac-image d-hidden">
               <img src={imacMobile} alt="imac" />
