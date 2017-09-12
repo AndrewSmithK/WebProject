@@ -5,6 +5,7 @@ import TextField from 'material-ui/TextField'
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 import { ValidatorForm, TextValidator, SelectValidator } from 'react-material-ui-form-validator'
 import ThankYouScreen from './ThankYouScreen'
+import Loading from './Loading'
 
 import './style.scss'
 
@@ -113,6 +114,7 @@ export default class Registration extends Component {
                 description: '',
                 country: 1
             },
+            showSpinner: false,
             submitted: false,
             submitted2: false,
             showInsurance: false,
@@ -189,8 +191,21 @@ export default class Registration extends Component {
 
     secondStep() {
         this.setState({
-            secondStep: true
+            secondStep: true,
+            showSpinner: true
         })
+
+        setTimeout(() => {
+            if (typeof window !== 'undefined') {
+                let items = document.querySelectorAll('.opacity-for')
+                items.forEach(item => {
+                    item.classList.add('opacity-none')
+                })
+            }
+            this.setState({
+                showSpinner: false
+            })
+        }, 1000)
     }
 
     thirdStep() {
@@ -210,6 +225,9 @@ export default class Registration extends Component {
                 </div>
 
                 <div className="main-block">
+
+                    {this.state.showSpinner && <Loading />}
+
                     {this.state.thirdStep ?
                     <ThankYouScreen /> :
                     <ValidatorForm ref="form" onSubmit={this.handleSubmit} >
@@ -249,7 +267,7 @@ export default class Registration extends Component {
                         }
 
                         {this.state.secondStep ?
-                            <div> <div className="form__row">
+                            <div className="opacity-for"> <div className="form__row">
                                 <div className="form__field">
                                     <TextValidator
                                         {...textFieldSettings}
@@ -351,7 +369,7 @@ export default class Registration extends Component {
                         </div>
 
                     {this.state.secondStep ?
-                        <div className="form">
+                        <div className="form opacity-for">
                             <h2 className="form__title">The Contact Person</h2>
 
                             <div className="form__field">
