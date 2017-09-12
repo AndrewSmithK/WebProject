@@ -308,7 +308,7 @@ a {
     border: 1px solid #f7f7f7;
     background: #fff;
     transition: background .4s, border-bottom .4s;
-    
+
     .logo {
       background: url(../images/Header/logo-qover.svg) center no-repeat;
     }
@@ -502,13 +502,13 @@ a {
     display: none;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 768px) {
     nav ul li {
       margin-right: 25px;
     }
 
     & {
-      top: 0;
+      top: 0px;
     }
   }
 
@@ -528,6 +528,7 @@ a {
       border-radius: 1px;
       top: 20px;
       right: 17px;
+      margin-right: 15px;
     }
   }
 }
