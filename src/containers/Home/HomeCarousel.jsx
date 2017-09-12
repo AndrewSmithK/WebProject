@@ -13,7 +13,7 @@ import datanews from '../../images/HomePage/Carousel/datanews.png';
 const NextArrow = (props) => {
   const { className, style, onClick, next } = props;
   const onClickAll = () => {
-    onClick();
+    typeof(onClick) === 'function' && onClick();
     next();
   }
   return (
@@ -28,7 +28,7 @@ const NextArrow = (props) => {
 const PrevArrow = (props) => {
   const { className, style, onClick, previous } = props;
   const onClickAll = () => {
-    onClick();
+    typeof(onClick) === 'function' && onClick();
     previous();
   }
   return (
@@ -87,16 +87,25 @@ export default class HomeCarousel extends Component {
     super(props)
     this.next = this.next.bind(this)
     this.previous = this.previous.bind(this)
+    this.test = this.test.bind(this)
   }
+
   next() {
     this.slider.slickNext()
   }
+
   previous() {
     this.slider.slickPrev()
   }
-  test() {
-    console.log('test')
+
+  test(first, second) {
+    if (first < second) {
+      this.next()
+    } else if (first > second) {
+      this.previous()
+    }
   }
+
   render() {
     const settings = {
       customPaging(i) {
@@ -104,24 +113,28 @@ export default class HomeCarousel extends Component {
         return <a><img src={images[i++]} alt="test" /></a>;
       },
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 2,
       nextArrow: <NextArrow next={this.next} />,
-      prevArrow: <PrevArrow previous={this.previous} />
+      prevArrow: <PrevArrow previous={this.previous} />,
+      beforeChange: this.test
     };
     const settings2 = {
+      swipe: false,
+      swipeToSlide: false,
       centerMode: true,
       arrows: false,
-      infinite: true,
+      infinite: false,
       initialSlide: 2,
       responsive: [{
         breakpoint: 768, settings: { slidesToShow: 1 }
       }, {
         breakpoint: 10000, settings: { slidesToShow: 5 }
-      }]
+      }],
+      beforeChange: this.test2
     };
     return (
       <section id="home-carousel">
