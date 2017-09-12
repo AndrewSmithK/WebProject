@@ -23,7 +23,7 @@ $first-break: 636px;
         max-width: 650px;
         margin: -60px auto 80px;
         border-radius: 3px;
-        box-shadow: 1px 1px 15px 0 #eaeff3;
+        box-shadow: 1px 1px 15px 0 rgba(151, 151, 151, 0.2);
         border: solid 1px #eaeff3;
         color: black;
 
@@ -32,7 +32,7 @@ $first-break: 636px;
             box-shadow: none;
             margin: 0 auto;
         }
-        
+
         .form {
             background-color: #fff;
             padding: 60px 50px;
@@ -50,7 +50,7 @@ $first-break: 636px;
                 border-radius: 3px;
                 background-color: #317bda;
               }
-            
+
             &:after {
                 content: '';
                 clear: both;
@@ -64,7 +64,7 @@ $first-break: 636px;
                     border-top: none;
                 }
             }
-            
+
             &__title {
                 font-family: MuseoSans;
                 font-size: 20px;
@@ -157,8 +157,8 @@ $first-break: 636px;
                 &:before {
                     content: '';
                     position: absolute;
-                    width: 0; 
-                    height: 0; 
+                    width: 0;
+                    height: 0;
                     border-left: 5px solid transparent;
                     border-right: 5px solid transparent;
                     border-bottom: 5px solid #f4566a;
