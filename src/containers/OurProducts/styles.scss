@@ -2,7 +2,7 @@
 
 #header-our-products {
   padding: 0;
-  background-image: radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
+  background-image: url('../../images/OurProducts/future-our-products.png'), radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: 992px) {
@@ -19,10 +19,11 @@
   }
   
   .container {
-    padding: 0 295px;
+    padding: 0;
 
     .title {
       margin-bottom: 30px;
+      width: 100%;
       font-size: 36px;
       font-weight: 700;
       text-align: center;
@@ -30,6 +31,7 @@
     }
 
     .subtitle {
+      max-width: 460px;
       font-size: 24px;
       font-weight: 500;
       line-height: 30px;
