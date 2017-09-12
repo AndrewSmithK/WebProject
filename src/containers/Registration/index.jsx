@@ -251,6 +251,8 @@ export default class Registration extends Component {
                         <div className="form__field">
                           <TextValidator
                             {...textFieldSettings}
+                            min='0'
+                            pattern="\d*"
                             type='number'
                             value={formData.registrationNumber}
                             onChange={this.handleChange}
