@@ -4,7 +4,7 @@
   padding: 130px 0 90px 0;
   background-image: url('../../images/OurProducts/future-our-products.png'), radial-gradient(circle at -6% -9%, #317bda, #43c8cd); background-repeat: no-repeat;
   background-size: cover;
-  
+
   .container {
     padding: 0 295px;
 
@@ -42,7 +42,7 @@
       min-height: 320px;
       background-image: linear-gradient($grey, $grey), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
       border-radius: 3px;
-
+      overflow: hidden;
       .last-icon {
         margin-bottom: 6px;
       }
@@ -51,6 +51,12 @@
         img {
           width: 100%
         }
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+      }
+      .icon:hover {
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
       }
 
       .btn {
@@ -61,7 +67,7 @@
           cursor: default;
           background-color: #7B8EA0;
           color: $black;
-          
+
           &:hover {
             color: $black;
             background-color: #7B8EA0;
