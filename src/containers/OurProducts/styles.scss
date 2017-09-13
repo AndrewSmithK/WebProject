@@ -279,7 +279,7 @@
 }
 
 #prod-in-dev {
-  padding: 70px 0 90px 100px;
+  padding: 70px 0 90px 0;
   background-image: url('../../images/OurProducts/product-in-development.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-repeat: no-repeat;
   background-position: right;
@@ -289,27 +289,53 @@
   }
 
   .container {
-    margin-left: -15px;
-
-    .items {
-      margin-bottom: 30px;
-
-      .title {
-        margin-left: 30px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .checkbox {
-        float: left;
-        margin-top: -3px;
-      }
-
-      .text {
-        margin-left: 30px;
-        padding-right: 80px;
+    margin: 0 auto;
+    @media screen and (max-width: $break-mobile) {
+      padding-left: 0;
+    }
+    > .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      @media screen and (max-width: $break-mobile) {
+        font-size: 28px;
       }
     }
+  
+    > .subtitle {
+      font-size: 26px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      @media screen and (max-width: $break-mobile) {
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+
+    .container {
+      
+          padding-left: 0;
+      
+          .items {
+            margin-bottom: 30px;
+      
+            .title {
+              margin-left: 30px;
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+      
+            .checkbox {
+              float: left;
+              margin-top: -3px;
+            }
+      
+            .text {
+              margin-left: 30px;
+              padding-right: 80px;
+            }
+          }
+        }
   }
 }
 
