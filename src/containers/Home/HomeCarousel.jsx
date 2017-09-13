@@ -4,11 +4,11 @@ import { FormattedMessage } from 'react-intl-phraseapp';
 import Slider from 'react-slick';
 
 import './HomeCarousel.scss';
-import emerce from '../../images/HomePage/Carousel/emerce.svg';
-import echo from '../../images/HomePage/Carousel/echo.svg';
-import techeu from '../../images/HomePage/Carousel/tech-eu.svg';
-import detijd from '../../images/HomePage/Carousel/de-tijd.svg';
-import datanews from '../../images/HomePage/Carousel/datanews.svg';
+import emerce from '../../images/HomePage/Carousel/emerce.png';
+import echo from '../../images/HomePage/Carousel/echo.png';
+import techeu from '../../images/HomePage/Carousel/tech-eu.png';
+import detijd from '../../images/HomePage/Carousel/de-tijd.png';
+import datanews from '../../images/HomePage/Carousel/datanews.png';
 
 const NextArrow = (props) => {
   const { className, style, onClick, next } = props;
