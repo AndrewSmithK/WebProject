@@ -695,6 +695,9 @@
       height: 40px;
       color: rgba(91, 114, 137, 0.5);
       &::-webkit-input-placeholder { color: rgba(91, 114, 137, 0.5); }
+      &:focus {
+        outline: none;
+      }
     }
 
     button {
