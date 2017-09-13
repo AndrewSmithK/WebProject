@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Parallax as ParallaxBox } from 'react-scroll-parallax';
 import { Parallax } from 'react-parallax';
 import { FormattedMessage } from 'react-intl-phraseapp';
@@ -47,12 +48,12 @@ export default class HomeHeader extends React.Component {
                 <div className="icon2">
                   <img src={LloydsLogoSmall} alt="lloyds-logo" />
                 </div>
-                <a href="/registration" className="btn hidden-sm-down btn-turquoise">
+                <Link to="/registration" className="btn hidden-sm-down btn-turquoise">
                   <FormattedMessage
                     id={`home.btnDemo`}
                     defaultMessage={`Request a demo`}
                   />
-                </a>
+                </Link>
             </div>
           </div>
           <div className="col-md-6">
