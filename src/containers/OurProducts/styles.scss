@@ -333,6 +333,9 @@
             .text {
               margin-left: 30px;
               padding-right: 80px;
+              @media screen and (max-width: $break-mobile) {
+                padding-right: 15px;
+              }
             }
           }
         }

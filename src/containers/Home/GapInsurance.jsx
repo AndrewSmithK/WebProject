@@ -59,7 +59,7 @@ export default class GapInsurance extends React.Component {
                   <p className="text">
                     <FormattedMessage
                       id={`home.gap.part1.p1`}
-                      defaultMessage={`Get back 100% back of the purchase price of a car up to 5-years.`}
+                      defaultMessage={`Get back 100% of the purchase price of a car up to 5-years.`}
                     />
                     <br /><br />
                     <FormattedMessage
