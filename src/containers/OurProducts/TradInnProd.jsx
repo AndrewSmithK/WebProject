@@ -156,7 +156,8 @@ export default class TradInnProd extends React.Component {
               color: '#317bda',
               fontSize: '16px',
               fontWeight: 'bold',
-              letterSpacing: '0.6px'
+              letterSpacing: '0.6px',
+              paddingRight: '20px'
             }}
             underlineStyle={{
               borderBottomWidth: '2px',
@@ -190,7 +191,8 @@ export default class TradInnProd extends React.Component {
                 color: '#317bda',
                 fontSize: '16px',
                 fontWeight: 'bold',
-                letterSpacing: '0.6px'
+                letterSpacing: '0.6px',
+                paddingRight: '20px'
               }}
               underlineStyle={{
                 borderBottomWidth: '2px',
