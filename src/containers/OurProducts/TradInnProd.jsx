@@ -145,7 +145,7 @@ export default class TradInnProd extends React.Component {
             value={this.state.category}
             onChange={this.changeCategory.bind(this)}
             style={{
-              width: '100px'
+              width: '110px'
             }}
             iconStyle={{
               fill: '#317bda',
@@ -180,7 +180,7 @@ export default class TradInnProd extends React.Component {
               value={this.state.country}
               onChange={this.changeCountry.bind(this)}
               style={{
-                width: '100px'
+                width: '110px'
               }}
               iconStyle={{
                 fill: '#317bda',
