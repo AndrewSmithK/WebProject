@@ -55,12 +55,12 @@ export default class TopLine extends React.Component {
                 </b>
               </div>
               <ul>
-                {/* <li><Link to="/our-products/gap-insurance">
+                <li><Link to="/our-products/gap-insurance">
                   <FormattedMessage
-                  id={`footer.gap`}
-                  defaultMessage={`GAP insurance`}
+                    id={`footer.gap`}
+                    defaultMessage={`GAP insurance`}
                   />
-                </Link></li> */}
+                </Link></li>
                 <li>
                   <Link to="/">Light casco</Link>
                 </li>
