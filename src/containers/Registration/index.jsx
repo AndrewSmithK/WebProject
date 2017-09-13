@@ -202,9 +202,6 @@ export default class Registration extends Component {
                 for (let i = 0, len = items.length; i < len; i++) {
                     items[i].classList.add('opacity-none')
                 }
-                // items.forEach(item => {
-                //     item.classList.add('opacity-none')
-                // })
             }
             this.setState({
                 showSpinner: false
