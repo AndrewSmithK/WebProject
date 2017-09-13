@@ -197,10 +197,14 @@ export default class Registration extends Component {
 
         setTimeout(() => {
             if (typeof window !== 'undefined') {
-                let items = document.querySelectorAll('.opacity-for')
-                items.forEach(item => {
-                    item.classList.add('opacity-none')
-                })
+                let items = document.getElementsByClassName('opacity-for')
+                console.log('****', items)
+                for (let i = 0, len = items.length; i < len; i++) {
+                    items[i].classList.add('opacity-none')
+                }
+                // items.forEach(item => {
+                //     item.classList.add('opacity-none')
+                // })
             }
             this.setState({
                 showSpinner: false
