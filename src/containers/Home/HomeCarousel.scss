@@ -126,7 +126,17 @@ $slick-dots-height: 110px;
       line-height: 110px;
       img {
         display: inline-block;
+        max-height: 55px;
+        max-width: 120px;
       }
+    }
+    .slick-slide {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    .slick-center {
+      opacity: 1;
+      transition: 0.3s;
     }
   }
 }
