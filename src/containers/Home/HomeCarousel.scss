@@ -131,10 +131,12 @@ $slick-dots-height: 110px;
       }
     }
     .slick-slide {
+      filter: grayscale(100%);
       opacity: 0.5;
       transition: 0.3s;
     }
     .slick-center {
+      filter: none;
       opacity: 1;
       transition: 0.3s;
     }
