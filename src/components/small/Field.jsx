@@ -8,7 +8,8 @@ export default class Field extends React.Component {
             width,
             multiLine,
             rows,
-            rowsMax } = this.props;
+            rowsMax,
+            type } = this.props;
 
     return (<div className={`field ${width}`}>
       <TextField
@@ -19,6 +20,7 @@ export default class Field extends React.Component {
         multiLine={multiLine || false}
         rows={rows || 1}
         rowsMax={rowsMax || 1}
+        type={type || 'text'}
         inputStyle={{
           paddingBottom: '18px',
           fontSize: '18px',

@@ -189,10 +189,6 @@ a {
   background-color: $white;
 }
 
-.opaque {
-  background: #1f8bd9;
-}
-
 // bg-end //
 
 //bd
@@ -322,7 +318,7 @@ a {
     position: fixed;
     top: 0;
     border: 1px solid #f7f7f7;
-    background: #fff;
+    background: #fff !important;
     transition: background .4s, border-bottom .4s;
 
     .logo-box .logo {
@@ -549,6 +545,18 @@ a {
       line-height: 60px;
       font-size: 21px;
     }
+  }
+}
+
+
+
+.opaque {
+  #topline, {
+    background-color: #1f8bd9;
+  }
+  
+  .hiringline  {
+    background-color: rgba(63, 154, 220, 1) !important;
   }
 }
 
