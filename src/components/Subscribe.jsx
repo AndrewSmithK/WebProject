@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 //eslint-disable-next-line
-const emailReqex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailReqex = /^(?=[^@]{4,}@)([\w\.-]*[a-zA-Z0-9_]@(?=.{4,}\.[^.]*$)[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z])$/;
 
 export default class Subscribe extends React.Component {
   constructor() {
@@ -10,13 +10,19 @@ export default class Subscribe extends React.Component {
 
     this.state = {
       email: '',
-      invalidEmail: false
+      invalidEmail: false,
+      error: false
     };
   }
-  handleFormSubmit() {
+  handleFormSubmit(e) {
     let requiredFields = this.checkRequiredFields();
-    if (!requiredFields.email) {
+    if (!this.state.invalidEmail) {
       console.log("EMAIL OK")
+      this.setState({error: false});
+    }
+    else {
+      this.setState({error: true});
+      e.preventDefault();
     }
   }
   checkRequiredFields() {
@@ -57,8 +63,8 @@ export default class Subscribe extends React.Component {
       </div>
       <div className="container">
         <div className="row">
-          <form onSubmit={this.handleFormSubmit}>
-            <input type="email" placeholder="please@qover.me" 
+          <form onSubmit={(e) => this.handleFormSubmit(e)}>
+            <input type="email" placeholder="please@qover.me"
               onBlur={() => this.validateEmail()}
               onChange={(e) => this.handleEmailChange(e)}
               error={this.state.invalidEmail} required />
@@ -70,6 +76,7 @@ export default class Subscribe extends React.Component {
             </button>
           </form>
         </div>
+        {this.state.error ? <div style={{textAlign: 'center', color: 'red', width:'75%'}}><span>Input correct email</span></div> : null}
       </div>
     </section>;
   }
