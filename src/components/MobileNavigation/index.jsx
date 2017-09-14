@@ -141,12 +141,12 @@ export default class MobileNavigation extends Component {
             </span>
             {this.state.showSubNav && <SubNav toglMobNav = {this.props.toglMobNav.bind(this)}/>}
           </li>
-          <li onClick={this.props.toglMobNav}><Link to="/about" exact activeClassName="selected">
+          <li onClick={this.props.toglMobNav}><a href="https://www.qover.me/docs/" target="_blank">
             <FormattedMessage
               id={`topLine.developers`}
               defaultMessage={`Developers`}
             />
-          </Link></li>
+          </a></li>
           <li onClick={this.props.toglMobNav}><Link to="/contact-us" exact activeClassName="selected">
             <FormattedMessage
               id={`topLine.contactUs`}
