@@ -8,6 +8,9 @@ import Facebook from '../images/Footer/facebook.svg';
 import Linkedin from '../images/Footer/linkedin.svg';
 
 export default class TopLine extends React.Component {
+  disableLink (e) {
+    e.preventDefault()
+  }
   render() {
     return (
       <footer className="footer bg-dark-blue">
@@ -62,22 +65,22 @@ export default class TopLine extends React.Component {
                   />
                 </Link></li>
                 <li>
-                  <Link to="/">Light casco</Link>
+                  <Link onClick={this.disableLink} to="/">Light casco</Link>
                 </li>
                 <li>
-                  <Link to="/">Full casco</Link>
+                  <Link onClick={this.disableLink} to="/">Full casco</Link>
                 </li>
                 <li>
-                  <Link to="/">Driver Accident</Link>
+                  <Link onClick={this.disableLink} to="/">Driver Accident</Link>
                 </li>
                 <li>
-                  <Link to="/">Accident & Health</Link>
+                  <Link onClick={this.disableLink} to="/">Accident & Health</Link>
                 </li>
                 <li>
-                  <Link to="/">Travel</Link>
+                  <Link onClick={this.disableLink} to="/">Travel</Link>
                 </li>
                 <li>
-                  <Link to="/">Job Loss</Link>
+                  <Link onClick={this.disableLink} to="/">Job Loss</Link>
                 </li>
               </ul>
             </div>
@@ -97,17 +100,17 @@ export default class TopLine extends React.Component {
             </div>
             <div className="address">
               <div className="sn text-white">
-                <Link to="/">
+                <Link onClick={this.disableLink} to="/">
                   <div className="logo">
                     <img src={Facebook} alt="facebook"/>
                   </div>
                 </Link>
-                <Link to="/">
+                <Link onClick={this.disableLink} to="/">
                   <div className="logo">
                     <img src={Linkedin} alt="linkedin"/>
                   </div>
                 </Link>
-                <Link to="/">
+                <Link onClick={this.disableLink} to="/">
                   <div className="logo">
                     <img src={Twitter} alt="twitter"/>
                   </div>
