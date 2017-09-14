@@ -489,6 +489,14 @@
   position: relative;
   padding-top: 0;
 
+  .text-block {
+    .title {
+      .arrow {
+        display: none;
+      }
+    }
+  }
+
   .container{
     .subtitle {
       font-family: 'MuseoSans', sans-serif;
