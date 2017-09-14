@@ -30,6 +30,7 @@ export default class Content extends React.Component {
                   <Field
                     width="half"
                     hintText="nathalie@qover.me"
+                    type="email"
                     floatingLabelText="Email"
                   />
                   <Field
@@ -40,6 +41,7 @@ export default class Content extends React.Component {
                   <Field
                     width="half"
                     hintText="+32478982241"
+                    type="tel"
                     floatingLabelText="Phone Number"
                   />
                   <Field

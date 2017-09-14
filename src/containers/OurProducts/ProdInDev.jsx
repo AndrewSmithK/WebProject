@@ -6,7 +6,7 @@ import ActiveCheckBox from '../../images/OurProducts/icon-checkbox.svg';
 export default class ProdInDev extends React.Component {
   render() {
     return <section className="section" id="prod-in-dev">
-			<div className="container">
+			<div className="container p-0">
         <h2 className="title text-white text-left">
 					<FormattedMessage
 						id={`products.prodInDev.title`}

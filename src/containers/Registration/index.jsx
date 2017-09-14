@@ -438,6 +438,7 @@ export default class Registration extends Component {
                           onChange={this.handleChange}
                           floatingLabelText="Email"
                           name="email"
+                          type="email"
                           validators={['required', 'isEmail']}
                           errorMessages={['this field is required', 'email is not valid']}
                         />
@@ -458,6 +459,7 @@ export default class Registration extends Component {
                               floatingLabelStyle={{ display: 'none' }}
                               floatingLabelText="Number"
                               name="number"
+                              type="tel"
                               validators={['required', 'matchRegexp:[0-9]$']}
                               errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
                                     />
