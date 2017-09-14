@@ -70,14 +70,14 @@ export default class TopLine extends React.Component {
           </div>
           <nav>
             <ul>
-              <li><Link className={this.props.path === '/about' ? 'active' : null} to="/about">
+              <li><Link className={window.location.pathname === '/about' ? 'active' : null} to="/about">
                 <FormattedMessage
                   id={`topLine.about`}
                   defaultMessage={`About`}
                 />
               </Link></li>
               <li>
-                <Link className={(this.props.path).includes('/our-products') ? 'active' : null} to="/our-products">
+                <Link className={(window.location.pathname).includes('/our-products') ? 'active' : null} to="/our-products">
                   <FormattedMessage
                     id={`topLine.ourProducts`}
                     defaultMessage={`Our products`}
@@ -222,11 +222,11 @@ export default class TopLine extends React.Component {
                   defaultMessage={`Developers`}
                 />
               </Link></li>
-              <li><Link className={this.props.path === '/contact-us' ? 'active' : null} to="/contact-us">
-              <FormattedMessage
-                id={`topLine.contactUs`}
-                defaultMessage={`Contact us`}
-              />
+              <li><Link className={window.location.pathname === '/contact-us' ? 'active' : null} to="/contact-us">
+                <FormattedMessage
+                  id={`topLine.contactUs`}
+                  defaultMessage={`Contact us`}
+                />
             </Link></li>
           </ul>
         </nav>

@@ -11,7 +11,7 @@ export default class Default extends React.Component {
   render() {
     return (<MuiThemeProvider>
       <div className="app">
-        <TopLine path={this.props.children.props.children.props.location.pathname} />
+        <TopLine path={this.props} />
         <div className="content">
           {this.props.children}
         </div>
