@@ -22,7 +22,7 @@ export default class WhyQover extends Component {
           text: "The only viable way to truly innovate in Insurance is to behave as an Insurer from a product development & pricing perspective."},
         {
           id: "about.whyQover.desc1.p2",
-          text: "This is what we do at Qover! We don't sell &quot;on the shelf&quot; products from an Insurer but we internally build our own products and make the pricing."},
+          text: "This is what we do at Qover! We don't sell \"on the shelf\" products from an Insurer but we internally build our own products and make the pricing."},
         {
           id: "about.whyQover.desc1.p3",
           text: "So at Qover, you will find unique innovative products with a pricing sophistication that goes beyond what traditional insurers do."},
@@ -59,7 +59,7 @@ export default class WhyQover extends Component {
       desc: [
         {
           id: "about.whyQover.desc3.p1",
-          text: "Digital does not only mean &quot;on the internet&quot;. At Qover it means rethinking the front and back-office of an insurer optimizing processes by using technology."},
+          text: "Digital does not only mean \"on the internet\". At Qover it means rethinking the front and back-office of an insurer optimizing processes by using technology."},
         {
           id: "about.whyQover.desc3.p2",
           text: "The result allows us to make instant decision, offer personalised products at the lowest rate."},
