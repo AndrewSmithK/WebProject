@@ -554,6 +554,10 @@
         font-size: 16px;
       }
     }
+    
+    .arrow {
+      display: none;
+    }
 
     .big-image {
       position: relative;
@@ -804,6 +808,7 @@
               position: absolute;
               right: 0;
               bottom: 0;
+              display: block;
             }
           }
 
@@ -816,6 +821,19 @@
             opacity: 0;
             overflow: hidden;
             transition: all .5s ease;
+
+            span {
+              position: relative;
+              display: inline-block;
+              padding-left: 12px;
+
+              &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '•';
+              }
+            }
             
             &.open {
               opacity: 1;
