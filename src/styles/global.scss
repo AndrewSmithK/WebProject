@@ -311,45 +311,46 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+  }
 
-    &.narrow {
-      position: fixed;
-      top: 0;
-      border: 1px solid #f7f7f7;
-      background: #fff;
-      transition: background .4s, border-bottom .4s;
+  &.narrow {
+    position: fixed;
+    top: 0;
+    border: 1px solid #f7f7f7;
+    background: #fff;
+    transition: background .4s, border-bottom .4s;
 
-      .logo {
-        background: url(../images/Header/logo-qover.svg) center no-repeat;
-      }
+    .logo {
+      background: url(../images/Header/logo-qover.svg) center no-repeat;
+    }
 
-      .burger-menu-icon {
-        color: #317bda;
-      }
+    .burger-menu-icon {
+      color: #317bda;
+    }
 
-      a {
-        color: $dark-sky-blue;
-        transition: color .4s;
+    a {
+      color: $dark-sky-blue;
+      transition: color .4s;
 
-        &:hover, &.active {
-          border-color: $dark-sky-blue;
-        }
-      }
-
-      .topline-buttons {
-        .btn-access {
-          color: #fff;
-          background: $dark-sky-blue;
-          transition: background .4s, color .4s;
-        }
-
-        .btn-login {
-          color: $dark-sky-blue;
-          background: #fff;
-          transition: background .4s, color .4s;
-        }
+      &:hover, &.active {
+        border-color: $dark-sky-blue;
       }
     }
+
+    .topline-buttons {
+      .btn-access {
+        color: #fff;
+        background: $dark-sky-blue;
+        transition: background .4s, color .4s;
+      }
+
+      .btn-login {
+        color: $dark-sky-blue;
+        background: #fff;
+        transition: background .4s, color .4s;
+      }
+    }
+  
   }
 
   .logo-box {
