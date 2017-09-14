@@ -19,6 +19,12 @@ module.exports = function universalLoader(req, res) {
     }
     const context = {}
     const store = configureStore()
+
+    !!(
+      (typeof window !== 'undefined' &&
+      window.document && window.document.createElement)
+    );
+
     const markup = renderToString(
       <Provider store={store}>
         <StaticRouter

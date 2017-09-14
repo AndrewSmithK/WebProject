@@ -2,10 +2,10 @@
 
 #header-gap-insurance {
   position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 140px;
+  padding-bottom: 70px;
   background-color: $dark-sky-blue;
-  background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,13 +15,16 @@
     background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   }
 
-  .react-parallax  {
-    overflow: hidden;
-    padding-bottom: 63px;
+  .react-simple-parallax-bg {
+    position: absolute;
+    background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png');
+    height: 100%;
   }
 
-  .header-space {
-    padding-bottom: 70px;
+  .parallax {
+    position: relative !important;
+    top: unset !important;
+    right: unset !important;
   }
 
   .return-label {

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Intl from 'intl'
+import { IntlProvider } from 'react-intl';
 
 import Default from '../layouts/Default';
 import TermsDefault from '../layouts/TermsDefault';
@@ -21,6 +23,8 @@ import Signin from './Signin';
 import Forgot from './Forgot';
 
 import ScrollToTop from '../ScrollTo';
+
+global.Intl = Intl;
 
 const DefaultLayout = ({ component: Component, ...rest }) => (
   <Route
@@ -45,6 +49,7 @@ const TermsLayout = ({ component: Component, ...rest }) => (
 );
 
 export default () => (
+  <IntlProvider locale="en">
     <ScrollToTop>
       <Switch>
         { /* Home (main) route */ }
@@ -66,4 +71,5 @@ export default () => (
         <Route component={NotFound} status={404} />
       </Switch>
     </ScrollToTop>
+  </IntlProvider>
 );

@@ -4,14 +4,26 @@
 
 #header {
   position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 140px;
+  padding-bottom: 70px;
   background-color: $dark-sky-blue;
-  background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+
+  .react-simple-parallax-bg {
+    position: absolute;
+    background-image: url('../../images/HomePage/homepage-bg.png');
+    height: 100%;
+  }
+
+  .parallax {
+    position: relative !important;
+    top: unset !important;
+    right: unset !important;
+  }
 
   .no-paralax {
     display: none;
@@ -19,15 +31,6 @@
 
   @media (min-width: 992px) {
     background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
-  }
-
-  .header-space {
-    padding-bottom: 140px;
-  }
-
-  .react-parallax  {
-    position: static !important;
-    padding-bottom: 63px;
   }
 
   .left-block {

@@ -1,13 +1,11 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
+import Parallax from '../../components/ParalaxBackground.js';
 import { FormattedMessage } from 'react-intl-phraseapp';
-
-import bg from '../../images/OurProducts/future-our-products.png';
 
 export default class Header extends React.Component {
   render() {
     return <section className="section" id="header-our-products">
-      <Parallax bgImage={bg} strength={400}>
+      <Parallax speedDivider="3" className="parallax">
         <div className="header-space"></div>
         <div className="container">
           <div className="row justify-content-center">

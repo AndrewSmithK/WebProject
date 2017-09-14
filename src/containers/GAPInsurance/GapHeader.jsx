@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Parallax } from 'react-parallax';
+import Parallax from '../../components/ParalaxBackground.js';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import ScreenshotApi from '../../images/OurProducts/GapInsurance/screeshot-api.png';
-import bg from '../../images/OurProducts/GapInsurance/header-gap-insurance.png';
 
 export default class GapHeader extends React.Component {
   render() {
     return <section className="section" id="header-gap-insurance">
-      <Parallax bgImage={bg} strength={400}>
-        <div className="header-space"></div>
+      <Parallax speedDivider="3" className="parallax">
         <div className="container">
           <Link to="/our-products">
             <div className="return-label text-white hide">

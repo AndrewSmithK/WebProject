@@ -1,6 +1,5 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
-import { Link } from 'react-router-dom';
 
 export default class Disclaimer extends React.Component {
   render() {
@@ -15,7 +14,7 @@ export default class Disclaimer extends React.Component {
                id={`home.disclaimer.text`}
                defaultMessage={`This website targets brokers and introducers willing to embrace the digital revolution in insurance.
             If you are a private individual, please visit our`}
-                    /> <a href="https://qover.be/" target="_blank"><FormattedMessage 
+                    /> <a href="https://qover.be/" target="_blank" rel="noopener noreferrer"><FormattedMessage 
                       id={`home.disclaimer.link`}
                       defaultMessage={`consumer website.`}
                                  /></a>

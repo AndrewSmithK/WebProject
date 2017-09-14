@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Parallax as ParallaxBox } from 'react-scroll-parallax';
-import { Parallax } from 'react-parallax';
+import Parallax from '../../components/ParalaxBackground.js';
+import ParallaxComponent from '../../components/ParalaxComponent';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
 import imacMobile from '../../images/HomePage/Header/imac-mobile.png';
 import imac from '../../images/HomePage/Header/imac.png';
 import api from '../../images/HomePage/Header/api.svg';
-import bg from '../../images/HomePage/homepage-bg.png';
 
 export default class HomeHeader extends React.Component {
   constructor(props) {
@@ -22,9 +21,8 @@ export default class HomeHeader extends React.Component {
 
   render() {
     return (<section className="section" id="header">
-      <Parallax bgImage={bg} strength={400}>
+      <Parallax speedDivider="3" className="parallax">
         <div className="container">
-          <div className="header-space"></div>
           <div className="icon">
             <img src={LloydsLogoSmall} alt="lloyds-logo" />
           </div>
@@ -58,19 +56,22 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image paralax m-hidden">
-              <ParallaxBox
-                offsetYMax={50}
-                offsetYMin={-10}
-                tag="imac">
-                <img src={imac} alt="" />
-              </ParallaxBox>
-              <ParallaxBox
-                className="api-logo"
-                offsetYMax={120}
-                offsetYMin={-100}
-                tag="LloydsLogoSmall">
-                <img src={api} alt="" />
-              </ParallaxBox>
+              {this.state.isMounted?
+                <div>
+                  <ParallaxComponent
+                    speed={0.3}
+                    scrollContainer={global.window}>
+                    <img src={imac} alt="" />
+                  </ParallaxComponent>
+                  <ParallaxComponent
+                    className="api-logo"
+                    speed={0.5}
+                    scrollContainer={global.window}>
+                    <img src={api} alt="" />
+                  </ParallaxComponent>
+                </div>
+                : ''
+              }
             </div>
             <div className="mac-image no-paralax m-hidden">
               <img src={imac} alt="" />
