@@ -24,7 +24,7 @@ export default class DropdownItem extends Component {
             id={this.props.title.id}
             defaultMessage={this.props.title.text}
           />
-          <span className="arrow d-hidden">
+          <span className="arrow">
             <i className={this.state.visible ? 'fa fa-angle-up' : 'fa fa-angle-down'} aria-hidden="true" />
           </span>
           {this.props.logo ? <img src={this.props.logo} className="logo" alt="" /> : ''}

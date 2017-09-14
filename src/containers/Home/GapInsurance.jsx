@@ -75,12 +75,10 @@ export default class GapInsurance extends React.Component {
                   text: "Target customer:"
                 }}>
                   <p className="text">
-                    •&nbsp;&nbsp;&nbsp;&nbsp;
                     <FormattedMessage
                       id={`home.gap.part2.listitem1`}
                       defaultMessage={`For new and used cars bought in the last 6 months`}
                     /><br />
-                    •&nbsp;&nbsp;&nbsp;&nbsp;
                     <FormattedMessage
                       id={`home.gap.part2.listitem2`}
                       defaultMessage={`Must have a casco insurance`}
