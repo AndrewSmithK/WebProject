@@ -46,7 +46,7 @@ export default class HomeHeader extends React.Component {
                 <div className="icon2">
                   <img src={LloydsLogoSmall} alt="lloyds-logo" />
                 </div>
-                <Link to="/registration" className="btn hidden-sm-down btn-turquoise">
+                <Link to="/registration" className="btn btn-demo btn-turquoise">
                   <FormattedMessage
                     id={`home.btnDemo`}
                     defaultMessage={`Request a demo`}

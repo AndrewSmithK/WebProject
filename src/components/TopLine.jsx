@@ -50,23 +50,11 @@ export default class TopLine extends React.Component {
       <Hiring />
       <div className={`container-fluid ${this.state.navClass}`} id="topline">
         <div className="container pr-0 pl-0">
-          <Link to="/" className="logo" />
+          <div className="logo-box">
+            <Link to="/" className="logo" />
+          </div>
           <div onClick={this.toglMobNav.bind(this)} className="burger-menu-icon">
             <i className="fa fa-bars" aria-hidden="true"></i>
-          </div>
-          <div className="topline-buttons">
-            <Link className="btn btn-login" to="#">
-              <FormattedMessage
-                id={`topLine.btnLogin`}
-                defaultMessage={`Log in`}
-              />
-            </Link>
-            <Link className="btn btn-access" to="/registration">
-              <FormattedMessage
-                id={`topLine.btnAccess`}
-                defaultMessage={`Request an access`}
-              />
-            </Link>
           </div>
           <nav>
             <ul>
@@ -228,8 +216,23 @@ export default class TopLine extends React.Component {
                   defaultMessage={`Contact us`}
                 />
             </Link></li>
-          </ul>
-        </nav>
+          
+            </ul>
+          </nav>
+          <div className="topline-buttons">
+          <Link className="btn btn-login" to="#">
+            <FormattedMessage
+              id={`topLine.btnLogin`}
+              defaultMessage={`Log in`}
+            />
+          </Link>
+          <Link className="btn btn-access" to="/registration">
+            <FormattedMessage
+              id={`topLine.btnAccess`}
+              defaultMessage={`Request an access`}
+            />
+          </Link>
+        </div>
       </div>
       { this.state.showMobNav && <MobileNavigation toglMobNav={this.toglMobNav.bind(this)} /> }
   </div></div>);

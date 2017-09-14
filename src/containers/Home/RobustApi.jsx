@@ -47,12 +47,12 @@ export default class RobustApi extends React.Component {
                   defaultMessage={`We continously seek out elegant solutions that enable robust, scalable and flexible integrations. We manage the complexity on our side so that you can get up and running with Qover in few minutes.`}
                 />
               </p>
-              <Link className="link" to="#">
+              <a className="link" target="_blank" rel="noopener noreferrer" href="https://www.qover.me/docs/">
                 <FormattedMessage 
                   id={`home.robustApi.link`}
                   defaultMessage={`See the API documentation`}
                 /><i className="fa fa-angle-right" aria-hidden="true"></i>
-              </Link>
+              </a>
             </div>
           </div>
           <div className="col-md-5">
