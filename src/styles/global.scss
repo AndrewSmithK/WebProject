@@ -317,6 +317,10 @@ a {
       background: url(../images/Header/logo-qover.svg) center no-repeat;
     }
 
+    .burger-menu-icon {
+      color: #317bda;
+    }
+
     a {
       color: $dark-sky-blue;
       transition: color .4s;
@@ -526,15 +530,10 @@ a {
     }
 
     .burger-menu-icon {
-      position: absolute;
       display: block;
       float: right;
-      width: 20px;
-      height: 17px;
-      border-radius: 1px;
-      top: 20px;
-      right: 17px;
-      margin-right: 15px;
+      line-height: 60px;
+      font-size: 21px;
     }
   }
 }
