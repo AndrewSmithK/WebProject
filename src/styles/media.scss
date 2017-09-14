@@ -18,7 +18,7 @@
       }
     }
   }
-  
+
   .react-parallax-bgimage {
     display: none;
   }
@@ -40,6 +40,14 @@
   }
 }
 
+@media (max-width: 320px) {
+  #why-qover {
+    top: 325px;
+  }
+  #circle {
+    padding-top: 350px !important;
+  }
+}
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
 
@@ -219,7 +227,7 @@
 
   #subscribe {
     form {
-      margin-top: 15px !important;               
+      margin-top: 15px !important;
     }
   }
 
@@ -299,7 +307,7 @@
         text-align: center;
         left: calc(50% - 57px);
         top: 168px;
-        font-size: 15px;                          
+        font-size: 15px;
         font-weight: 500;
         font-family: Roboto;
         display: block !important;
@@ -343,7 +351,7 @@
   }
 
   #circle {
-    padding-top: 30px !important;
+    padding-top: 30px;
     padding-bottom: 50px !important;
     .container{
       .side-bar {

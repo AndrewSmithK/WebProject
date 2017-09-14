@@ -11,7 +11,7 @@ export default class Subscribe extends React.Component {
     this.state = {
       email: '',
       invalidEmail: false,
-      error: false
+      // error: false
     };
   }
   handleFormSubmit(e) {
@@ -65,6 +65,7 @@ export default class Subscribe extends React.Component {
         <div className="row">
           <form onSubmit={(e) => this.handleFormSubmit(e)}>
             <input type="email" placeholder="please@qover.me"
+              style={this.state.invalidEmail ? {boxShadow:'inset 0 0 2px #e74c3c'} : {boxShadow:'inset 0 0 2px #27ae60'}}
               onBlur={() => this.validateEmail()}
               onChange={(e) => this.handleEmailChange(e)}
               error={this.state.invalidEmail} required />
@@ -76,7 +77,7 @@ export default class Subscribe extends React.Component {
             </button>
           </form>
         </div>
-        {this.state.error ? <div style={{textAlign: 'center', color: 'red', width:'75%'}}><span>Input correct email</span></div> : null}
+        {/* {this.state.error ? <div style={{textAlign: 'center', color: '#e74c3c',marginTop:'10px', width:'75%'}}><span>Input correct email</span></div> : null} */}
       </div>
     </section>;
   }
