@@ -7,16 +7,21 @@ import Footer from '../components/Footer';
 
 import '../styles/main.scss';
 
+import ScrollToTop from '../ScrollTo';
+
 export default class Default extends React.Component {
   render() {
     return (<MuiThemeProvider>
-      <div className="app">
-        <TopLine />
-        <div className="content">
-          {this.props.children}
+      <ScrollToTop>
+        <div className="app">
+
+          <TopLine />
+          <div className="content">
+            {this.props.children}
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </ScrollToTop>
     </MuiThemeProvider>);
   }
 }
