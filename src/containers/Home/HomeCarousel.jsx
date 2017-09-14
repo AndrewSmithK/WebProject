@@ -66,7 +66,7 @@ const CarouselItem = () => (
         defaultMessage={`in a Series A round ledby Anthemis.`}
       /> »
     </div>
-    <Link to="#" className="read-article">
+    <Link onClick={(e) => {e.preventDefault()}} to="#" className="read-article">
       <FormattedMessage 
         id={`home.carousel.linkFullArticle`}
         defaultMessage={`Read the full article`}
