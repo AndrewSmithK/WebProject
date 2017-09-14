@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
+import { Link } from 'react-router-dom'
 
 import Quentin from '../../images/About/Who-we-are/quentin.png';
 import JeanCharles from '../../images/About/Who-we-are/jean-charles.png';
@@ -442,7 +443,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage 
                     id={`about.whoWeAre.team.Francesca.position`}
-                    defaultMessage={`title`}
+                    defaultMessage={`Office Manager`}
                   />
                 </p>
                 <p className="icon-text">
@@ -461,7 +462,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage 
                     id={`about.whoWeAre.team.Arthur.position`}
-                    defaultMessage={`title`}
+                    defaultMessage={`Business Analyst`}
                   />
                 </p>
                 <p className="icon-text">
@@ -510,14 +511,14 @@ export default class WhoWeAre extends React.Component {
                 </p>
               </div>
             </div>
+              <Link to="#" style={{color: 'white'}}>
             <div className="item last-icon m-hidden">
-              <p>
                 <FormattedMessage
                   id={`about.whoWeAre.team.WantToJoin`}
                   defaultMessage={`Want to join the team?`}
                 />
-              </p>
             </div>
+              </Link>
           </div>
         </div>
 

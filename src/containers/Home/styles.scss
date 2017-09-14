@@ -417,6 +417,15 @@
       }
     }
   }
+
+  @media screen and (max-width: 825px) and (min-width: 768px) {
+      .row {
+        .item {
+          max-height: 355px;
+          height: 355px;
+        }
+      }
+    }
 }
 
 #robust-api {
@@ -736,7 +745,7 @@
     .no-paralax {
       display: block;
     }
-    .paralax {
+    .paralax, .btn-demo {
       display: none;
     }
     .left-block {

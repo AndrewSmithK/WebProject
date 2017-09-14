@@ -377,8 +377,11 @@ export default class Registration extends Component {
 
                         <div className="form__field">
                           <SelectValidator
-                            onChange={this.handleSelectTitle.bind(this)}
                             {...selectFieldSettings}
+                            className="form__field--fixed"
+                            hintText="Mr/Mrs/Miss"
+                            floatingLabelFixed={true}
+                            onChange={this.handleSelectTitle.bind(this)}
                             name="title"
                             value={formData.title}
                             floatingLabelText="Title"
@@ -386,7 +389,8 @@ export default class Registration extends Component {
                             errorMessages={['This field is required.']}
                           >
                             <MenuItem value={0} primaryText="Mr" />
-                            <MenuItem value={1} primaryText="Mme" />
+                            <MenuItem value={1} primaryText="Mrs" />
+                            <MenuItem value={2} primaryText="Miss" />
                           </SelectValidator>
                         </div>
 

@@ -306,6 +306,13 @@ a {
   border-bottom: 1px solid rgba(247,247,247, .3);
   z-index: 999;
   transition: background .4s, border-bottom .4s;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
   &.narrow {
     position: fixed;
     top: 0;
@@ -343,23 +350,25 @@ a {
         transition: background .4s, color .4s;
       }
     }
+  
   }
 
-  .logo {
-    float: left;
-    display: block;
-    margin: 18px 0 17px 0;
-    width: 89px;
-    height: 25px;
-    background: url(../images/Header/logo-qover-white.svg) center no-repeat;
+  .logo-box {
+    flex-grow: 2;
 
-    img {
-      width: 100%
+    .logo {
+      float: left;
+      display: block;
+      margin: 18px 0 17px 0;
+      width: 89px;
+      height: 25px;
+      background: url(../images/Header/logo-qover-white.svg) center no-repeat;
     }
   }
 
   nav {
     float: right;
+    flex-grow: 1;
 
     & > ul {
       margin: 0;
@@ -512,18 +521,18 @@ a {
     display: none;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     nav ul li {
       margin-right: 25px;
-    }
-
-    & {
-      top: 0px;
     }
   }
 
   @media screen and (max-width: 768px) {
     border-bottom: none;
+
+    & {
+      top: 0px;
+    }
 
     nav, .topline-buttons {
       display: none;

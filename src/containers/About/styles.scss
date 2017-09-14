@@ -221,6 +221,7 @@
       margin: 0 -5px;
       flex-wrap: wrap;
       display: flex;
+
     }
 
     .click-visible {
@@ -378,7 +379,7 @@
 
       .item {
         margin: 0 auto;
-        max-width: 300px;
+        max-width: 480px;
 
         .text {
           margin-bottom: 0;
@@ -409,6 +410,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  #header-about {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .subtitle {
+      padding: 0 20px;
+    }
+  }
   #circle {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -615,7 +623,6 @@
         max-height: 150px;
         overflow: hidden;
         transition: all 2s ease;
-
         .item {
           width: 130px;
           height: 130px;
