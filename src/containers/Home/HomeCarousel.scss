@@ -128,5 +128,13 @@ $slick-dots-height: 110px;
         display: inline-block;
       }
     }
+    .slick-slide {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    .slick-center {
+      opacity: 1;
+      transition: 0.3s;
+    }
   }
 }

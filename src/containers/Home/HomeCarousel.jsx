@@ -127,6 +127,7 @@ export default class HomeCarousel extends Component {
       beforeChange: this.test
     };
     const settings2 = {
+      centerMode: true,
       swipe: false,
       swipeToSlide: false,
       centerMode: true,

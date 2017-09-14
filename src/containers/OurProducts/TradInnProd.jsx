@@ -145,7 +145,7 @@ export default class TradInnProd extends React.Component {
             value={this.state.category}
             onChange={this.changeCategory.bind(this)}
             style={{
-              width: '100px'
+              width: '110px'
             }}
             iconStyle={{
               fill: '#317bda',
@@ -156,7 +156,8 @@ export default class TradInnProd extends React.Component {
               color: '#317bda',
               fontSize: '16px',
               fontWeight: 'bold',
-              letterSpacing: '0.6px'
+              letterSpacing: '0.6px',
+              paddingRight: '20px'
             }}
             underlineStyle={{
               borderBottomWidth: '2px',
@@ -179,7 +180,7 @@ export default class TradInnProd extends React.Component {
               value={this.state.country}
               onChange={this.changeCountry.bind(this)}
               style={{
-                width: '100px'
+                width: '110px'
               }}
               iconStyle={{
                 fill: '#317bda',
@@ -190,7 +191,8 @@ export default class TradInnProd extends React.Component {
                 color: '#317bda',
                 fontSize: '16px',
                 fontWeight: 'bold',
-                letterSpacing: '0.6px'
+                letterSpacing: '0.6px',
+                paddingRight: '20px'
               }}
               underlineStyle={{
                 borderBottomWidth: '2px',

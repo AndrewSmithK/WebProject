@@ -24,7 +24,7 @@ export default class TopLine extends React.Component {
   doItOnScroll(scrolled, scrolling) {
     scrolling = true;
 
-    if (scrolling && global.window.innerWidth > 500) {
+    if (scrolling) {
       scrolling = false;
       scrolled = global.window.pageYOffset || document.documentElement.scrollTop;
       scrolled > 30 ? this.setState({ navClass: 'narrow' }) : this.setState({navClass: '' });
