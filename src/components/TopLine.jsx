@@ -52,7 +52,7 @@ export default class TopLine extends React.Component {
         <div className="container pr-0 pl-0">
           <Link to="/" className="logo" />
           <div onClick={this.toglMobNav.bind(this)} className="burger-menu-icon">
-            <img src={MenuIcon} alt="Burger Icon" />
+            <i className="fa fa-bars" aria-hidden="true"></i>
           </div>
           <div className="topline-buttons">
             <Link className="btn btn-login" to="#">
