@@ -27,7 +27,7 @@ export default class GetStarted extends React.Component {
                     <b>
                       <FormattedMessage 
                         id={`home.start.item1.bold`}
-                        defaultMessage={`Discover our library of insurance products.`}
+                        defaultMessage={`Discover our library of insurance products. `}
                       />
                     </b> 
                     <FormattedMessage 
@@ -52,7 +52,7 @@ export default class GetStarted extends React.Component {
                     <FormattedMessage 
                       id={`home.start.item2.text1`}
                       defaultMessage={`Before signing, you can of course play around with our`}
-                    /><b id="api">API</b>. <FormattedMessage 
+                    /><b id="api"> API</b>. <FormattedMessage
                       id={`home.start.item2.text1`}
                       defaultMessage={`Once you get a token, you can start selling immediately !`}
                     />
