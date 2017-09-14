@@ -557,7 +557,7 @@
   }
 
   #gap-fact-sheet {
-    
+
     .container {
       .sheet {
         .clips {
@@ -654,6 +654,67 @@
   }
 }
 
+#gap-fact-sheet {
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  .container {
+    .content-box {
+      position: relative;
+      margin: 0;
+      padding: 35px 10px 13px 10px;
+      border-radius: 0;
+      box-shadow: 1px 1px 15px 0 $pale-grey;
+
+      .content {
+        padding: 30px;
+        background-color: rgb(247, 247, 247);
+        box-shadow: inset 0 1px 1px 0 rgba(91, 114, 137, 0.1);
+        border: solid 1px $pale-grey;
+
+        .title {
+          font-size: 16px;
+        }
+
+        .item {
+          margin-bottom: 15px;
+
+          .text {
+            font-style: 13px;
+            line-height: 18px;
+          }
+        }
+      }
+
+    }
+    .sheet {
+      .clips {
+        top: -55px;
+        left: calc(50% - 26px);
+        &:before {
+          background: $pale-grey;
+          height: 5px;
+        }
+      }
+    }
+  }
+
+  .descript-list {
+    margin-bottom: 70px;
+    padding-right: 0;
+
+    .item {
+      &:last-child {
+        margin-bottom: 0
+      }
+
+      .text {
+        // font-size: 15px;
+      }
+    }
+  }
+}
+
 
 
 @media screen and (max-width: $break-mobile) {
@@ -721,67 +782,6 @@
           p {
             display: none; 
           }
-        }
-      }
-    }
-  }
-
-  #gap-fact-sheet {
-    padding-top: 50px;
-    padding-bottom: 0;
-    
-    .container {
-      .content-box {
-        position: relative;
-        margin: 0;
-        padding: 35px 10px 13px 10px;
-        border-radius: 0;
-        box-shadow: 1px 1px 15px 0 $pale-grey;
-  
-        .content {
-          padding: 30px;
-          background-color: rgb(247, 247, 247);
-          box-shadow: inset 0 1px 1px 0 rgba(91, 114, 137, 0.1);
-          border: solid 1px $pale-grey;
-
-          .title {
-            font-size: 16px;
-          }
-  
-          .item {
-            margin-bottom: 15px;
-
-            .text {
-              font-style: 13px;
-              line-height: 18px;
-            }
-          }
-        }
-
-      }
-      .sheet {
-         .clips {
-           top: -55px;
-           left: calc(50% - 26px);
-           &:before {
-             background: $pale-grey;
-             height: 5px;
-           }
-         }
-       }
-    }
-
-    .descript-list {
-      margin-bottom: 70px;
-      padding-right: 0;
-
-      .item {
-        &:last-child {
-          margin-bottom: 0
-        }
-
-        .text {
-          // font-size: 15px;  
         }
       }
     }
