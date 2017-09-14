@@ -43,18 +43,18 @@ export default class GapHeader extends React.Component {
                     in case of a total loss or theft of their vehicle`}
                   />
                 </h4>
-                <Link className="btn button btn-turquoise" to="#">
+                <Link className="btn button btn-turquoise" to="/registration">
                   <FormattedMessage 
                     id={`gap.btnRequest`}
                     defaultMessage={`Request access`}
                   />
                 </Link>
-                <Link className="link text-white" to="#">
+                <a className="link text-white" href="https://www.qover.me/docs/" target="_blank">
                   <FormattedMessage 
                     id={`gap.linkToDoc`}
                     defaultMessage={`See the documentation`}
                   /><i className="fa fa-angle-right" aria-hidden="true"></i>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

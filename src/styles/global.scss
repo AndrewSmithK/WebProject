@@ -132,6 +132,7 @@ a {
   }
 }
 
+
 // form-end //
 
 // text //
@@ -186,6 +187,10 @@ a {
 
 .bg-white {
   background-color: $white;
+}
+
+.opaque {
+  background: #1f8bd9;
 }
 
 // bg-end //
@@ -320,7 +325,7 @@ a {
     background: #fff;
     transition: background .4s, border-bottom .4s;
 
-    .logo {
+    .logo-box .logo {
       background: url(../images/Header/logo-qover.svg) center no-repeat;
     }
 
@@ -354,7 +359,7 @@ a {
   }
 
   .logo-box {
-    flex-grow: 2;
+    flex-grow: 3;
 
     .logo {
       float: left;
