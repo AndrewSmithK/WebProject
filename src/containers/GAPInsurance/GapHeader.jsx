@@ -4,7 +4,7 @@ import Parallax from '../../components/ParalaxBackground.js';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import ScreenshotApi from '../../images/OurProducts/GapInsurance/screeshot-api.png';
-import SmallApi from '../../images/OurProducts/GapInsurance/screeshot-api.png';
+import SmallApi from '../../images/OurProducts/GapInsurance/small-api.jpg';
 
 export default class GapHeader extends React.Component {
   render() {
@@ -16,7 +16,7 @@ export default class GapHeader extends React.Component {
               <i className="fa fa-angle-left fa-lg" aria-hidden="true" /><FormattedMessage
                 id={`gap.header.btnBack`}
                 defaultMessage={` ALL products`}
-              />
+                                                                         />
             </div>
           </Link>
           <div className="row">
@@ -24,20 +24,20 @@ export default class GapHeader extends React.Component {
               <div className="block">
                 <div className="logo-box">
                   <div className="logo text-blue bg-white">
-                    <FormattedMessage 
+                    <FormattedMessage
                       id={`gap.header.gapLogo`}
                       defaultMessage={`Gap Insurance`}
                     />
                   </div>
                 </div>
                 <h1 className="text-white">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`gap.title`}
                     defaultMessage={`Protect 100% of the purchase price of your car for up to 5 years.`}
                   />
                 </h1>
                 <h4 className="text-white">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`gap.descript`}
                     defaultMessage={`Our GAP Insurance can protect your customers
                     against the depreciation applied by their casco insurer
@@ -45,13 +45,13 @@ export default class GapHeader extends React.Component {
                   />
                 </h4>
                 <Link className="btn button btn-turquoise" to="/registration">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`gap.btnRequest`}
                     defaultMessage={`Request access`}
                   />
                 </Link>
                 <a className="link text-white" href="https://www.qover.me/docs/" target="_blank">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`gap.linkToDoc`}
                     defaultMessage={`See the documentation`}
                   /><i className="fa fa-angle-right" aria-hidden="true"></i>

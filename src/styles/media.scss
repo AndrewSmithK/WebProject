@@ -40,14 +40,6 @@
   }
 }
 
-@media (max-width: 320px) {
-  #why-qover {
-    top: 325px;
-  }
-  #circle {
-    padding-top: 350px !important;
-  }
-}
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
 
@@ -351,7 +343,7 @@
   }
 
   #circle {
-    padding-top: 30px;
+    padding-top: 30px !important;
     padding-bottom: 50px !important;
     .container{
       .side-bar {
