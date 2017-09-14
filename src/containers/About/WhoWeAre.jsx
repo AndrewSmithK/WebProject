@@ -442,7 +442,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage 
                     id={`about.whoWeAre.team.Francesca.position`}
-                    defaultMessage={`title`}
+                    defaultMessage={`Office Manager`}
                   />
                 </p>
                 <p className="icon-text">
@@ -461,7 +461,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage 
                     id={`about.whoWeAre.team.Arthur.position`}
-                    defaultMessage={`title`}
+                    defaultMessage={`Business Analyst`}
                   />
                 </p>
                 <p className="icon-text">
