@@ -42,7 +42,7 @@ export default class ProdInDev extends React.Component {
 									<h5 className="title non-active-text">
 										<FormattedMessage
 											id={`products.prodInDev.list.titem2.title`}
-											defaultMessage={`ExteProduct Name`}
+											defaultMessage={`Product Name`}
 										/>
 									</h5>
 									<p className="text non-active-text">
