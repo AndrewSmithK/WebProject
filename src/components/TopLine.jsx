@@ -204,12 +204,12 @@ export default class TopLine extends React.Component {
                   </div>
                 </div>
               </li>
-              <li><Link to="/about">
+              <li><a href="https://www.qover.me/docs/" target="_blank">
                 <FormattedMessage
                   id={`topLine.developers`}
                   defaultMessage={`Developers`}
                 />
-              </Link></li>
+              </a></li>
               <li><Link className={window.location.pathname === '/contact-us' ? 'active' : null} to="/contact-us">
                 <FormattedMessage
                   id={`topLine.contactUs`}
