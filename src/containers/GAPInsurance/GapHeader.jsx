@@ -4,7 +4,7 @@ import Parallax from '../../components/ParalaxBackground.js';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import ScreenshotApi from '../../images/OurProducts/GapInsurance/screeshot-api.png';
-// import SmallApi from '../../images/OurProducts/GapInsurance/small-api.jpg';
+import SmallApi from '../../images/OurProducts/GapInsurance/small-api.jpg';
 
 export default class GapHeader extends React.Component {
   render() {
@@ -59,9 +59,9 @@ export default class GapHeader extends React.Component {
               </div>
             </div>
           </div>
-          {/* <div className="picture d-none display">
+          <div className="picture d-none display">
             <img src={SmallApi} alt="screenshot-api" />
-          </div> */}
+          </div>
         </div>
         <div className="screenshot-api hide">
           <img src={ScreenshotApi} alt="screenshot-api" />

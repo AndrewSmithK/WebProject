@@ -44,7 +44,7 @@ export default class InnProducts extends React.Component {
               <div className="text text-grey">
                 <b><FormattedMessage 
                   id={`home.InnProducts.item2.title`}
-                  defaultMessage={`Your branding our ours.`}
+                  defaultMessage={`Your branding our ours`}
                 /></b><br />
                 <FormattedMessage 
                   id={`home.InnProducts.item2.text`}

@@ -6,6 +6,36 @@ import IconPhonelink from '../../images/OurProducts/GapInsurance/phonelink-mater
 import Pdf from '../../images/OurProducts/GapInsurance/icon-pdf.svg';
 
 export default class GapSupport extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      selected: {
+        title: 'Belgium',
+        image: ''
+      },
+      isSelectOpened: false
+    }
+  }
+
+  list = [
+    {
+      title: 'France',
+      image: ''
+    },
+    {
+      title: 'Belgium',
+      image: ''
+    }
+  ]
+
+  openSelect() {
+    this.setState({
+      isSelectOpened: true
+    })
+  }
+
   render() {
     return <section className="section" id="gap-support">
       <h2 className="title text-blue">
@@ -19,6 +49,7 @@ export default class GapSupport extends React.Component {
           id={`gap.support.subtitle`}
           defaultMessage={`Available in Belgium`}
         />
+        
       </h4>
       <div className="container">
         <div className="row">
