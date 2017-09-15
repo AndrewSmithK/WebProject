@@ -44,7 +44,7 @@ export default class Subscribe extends React.Component {
     item.classList.add('subscribe-form-message--show')
     setTimeout(() => {
       item.classList.remove('subscribe-form-message--show')
-    }, 1000)
+    }, 1500)
   }
 
   render() {
