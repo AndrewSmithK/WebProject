@@ -43,7 +43,6 @@ export default class Subscribe extends React.Component {
       </div>
       <div className="container">
         <div className="row">
-<<<<<<< HEAD
           <form onSubmit={this.handleFormSubmit}>
             <input
               type="email"
@@ -51,14 +50,6 @@ export default class Subscribe extends React.Component {
               placeholder="please@qover.me"
               onChange={this.handleEmailChange}
             />
-=======
-          <form onSubmit={(e) => this.handleFormSubmit(e)}>
-            <input type="email" placeholder="please@qover.me"
-              style={this.state.invalidEmail ? {boxShadow:'inset 0 0 2px #e74c3c'} : null}
-              onBlur={() => this.validateEmail()}
-              onChange={(e) => this.handleEmailChange(e)}
-              error={this.state.invalidEmail} required />
->>>>>>> 4c87d34071e4893fe0bc018ce41c04a5152e8c7e
             <button type="submit" className="btn bg-turquoise text-white">
               <FormattedMessage
                 id={`subscribe.btnSubscribe`}
