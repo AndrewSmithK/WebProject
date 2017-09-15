@@ -29,8 +29,14 @@
     display: none;
   }
 
-  @media (min-width: 992px) {
-    background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  @media screen and (min-width: 992px) {
+    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  }
+  
+  @media screen and (max-width: 992px) {
+    .react-simple-parallax-bg {
+      background-image: none;
+    }  
   }
 
   .left-block {
@@ -522,6 +528,19 @@
 
     .text-block {
       margin-bottom: 30px;
+
+      .what-desc {
+        span {
+          padding-left: 12px;
+          
+          &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '•';
+          }
+        }
+      }
     }
 
     .title {
@@ -842,14 +861,6 @@
             span {
               position: relative;
               display: inline-block;
-              padding-left: 12px;
-
-              &:before {
-                position: absolute;
-                top: 0;
-                left: 0;
-                content: '•';
-              }
             }
 
             &.open {
