@@ -60,6 +60,7 @@
     "node-sass": "^4.5.3",
     "popper.js": "^1.12.5",
     "react": "^15.5.4",
+    "react-click-outside": "^3.0.0",
     "react-dom": "^15.5.4",
     "react-intl": "^2.4.0",
     "react-intl-phraseapp": "^0.1.0",

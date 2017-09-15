@@ -519,6 +519,63 @@
   }
 }
 
+.cust-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  .selected {
+    overflow: hidden;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #317bda;
+    cursor: pointer;
+    
+    h4 {
+      float: left;
+      font-weight: 500;
+      color: #317bda;
+    }
+
+    img {
+      float: left;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 6px;
+      right: -16px;
+      font-size: 16px;
+      color: #317bda;
+    }
+  }
+
+  .list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px 0 $pale-grey;
+
+    .item {
+      padding: 10px 15px;
+      box-sizing: border-box;
+      font-weight: 500;
+      cursor: pointer;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &.open {
+    .list {
+      display: block;
+    }
+  }
+}
 
 @media screen and (max-width: 992px) {
   #header-gap-insurance {
