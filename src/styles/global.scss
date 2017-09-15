@@ -170,7 +170,8 @@ a {
 }
 
 .bg-dark-blue {
-  background-color: $dark-sky-blue;
+  // background-color: $dark-sky-blue;
+  background-image: radial-gradient(circle at -6% -9%, #317bda, #3ba5d3);
 }
 
 .bg-turquoise {

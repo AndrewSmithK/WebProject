@@ -881,7 +881,7 @@
 
   #get-started {
     background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #3692d6 30%, #43c8cd), linear-gradient(#e33d7a, #e33d7a);
-
+    background-size: cover;
     & {
       padding: 50px 25px 30px;
     }
