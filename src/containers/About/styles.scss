@@ -296,6 +296,8 @@
     position: relative;
     width: 420px;
     margin: auto;
+    z-index: -1;
+    
     .qc-container {
       position: absolute;
       width: 100%;
