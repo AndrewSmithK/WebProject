@@ -2,8 +2,45 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import ActiveCheckBox from '../../images/OurProducts/icon-checkbox.svg';
+import InactiveCheckBox from '../../images/OurProducts/circle.png';
+
+const ProdItem = ({itemId, title, desc, className, onSelect, selected}) => {
+	const handleClick = () => {
+		onSelect(itemId);
+	}
+
+	return <div className={`item ${className} ${selected === itemId ? 'active' : ''}`} onClick={handleClick}>
+			<div className="checkbox"></div>
+			<h5 className="title">
+					<FormattedMessage
+						id={`products.prodInDev.list.item${itemId}.title`}
+						defaultMessage={`${title}`}
+					/>
+			</h5>
+			<p className="text">
+				<FormattedMessage
+					id={`products.prodInDev.list.item${itemId}.text`}
+					defaultMessage={`${desc}`}
+				/>
+			</p>
+		</div>
+}
 
 export default class ProdInDev extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			selected: null
+		}
+	}
+
+	select(n) {
+		this.setState({
+			selected: n
+		})
+	}
+
   render() {
     return <section className="section" id="prod-in-dev">
 			<div className="container p-0">
@@ -20,92 +57,39 @@ export default class ProdInDev extends React.Component {
 					/>
         </h4>
         <div className="container">
-            <div className="row items">
-                <div className="item col-md-5">
-                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
-									<h5 className="title non-active-text">
-											<FormattedMessage
-												id={`products.prodInDev.list.titem1.title`}
-												defaultMessage={`Motor extended warranty`}
-											/>
-									</h5>
-									<p className="text non-active-text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem1.text`}
-											defaultMessage={`Extend the manufacturer warranty on your vehicle.
-											Three variants covering mechanical and electronic failures. Wear and tear excluded.`}
-										/>
-									</p>
-                </div>
-                <div className="item col-md-5">
-                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
-									<h5 className="title non-active-text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem2.title`}
-											defaultMessage={`Product Name`}
-										/>
-									</h5>
-									<p className="text non-active-text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem2.text`}
-											defaultMessage={`Description`}
-										/>
-									</p>
-                </div>
+						<div className="row items">
+							<ProdItem
+								itemId="1"
+								title="Motor extended warranty"
+								desc="Extend the manufacturer warranty on your vehicle. Three variants covering mechanical and electronic failures. Wear and tear excluded."
+								className="col-md-5"
+								selected={this.state.selected}
+								onSelect={this.select.bind(this)} />
+							<ProdItem	
+								itemId="2"
+								title="Product Name"
+								desc="Description"
+								className="col-md-5"
+								selected={this.state.selected}
+								onSelect={this.select.bind(this)} />
             </div>
             <div className="row items">
-                <div className="item col-md-5 hide">
-                  <div className="checkbox">
-                    <img src={ActiveCheckBox} alt="ActiveCheckBox" />
-                  </div>
-									<h5 className="title">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem3.title`}
-											defaultMessage={`Mandatory Third-Party-Liability`}
-										/>
-									</h5>
-									<p className="text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem3.text`}
-											defaultMessage={`Mandatory motor liability insurance for private cars and light commercial vehicles.`}
-										/>
-									</p>
-                </div>
-                <div className="item col-md-5">
-                  <div className="checkbox non-active" style={{width: 20 + 'px', height: 20 + 'px', background: '#f00', display: 'inline-block'}}></div>
-									<h5 className="title non-active-text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem4.title`}
-											defaultMessage={`Rental damage`}
-										/>
-									</h5>
-									<p className="text non-active-text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem4.text`}
-											defaultMessage={`Cover for damages caused by tenants to your property.
-											Two variants: long- or short term rental contracts.`}
-										/>
-									</p>
-                </div>
-                <div className="item col-md-5 d-none display">
-                  <div className="checkbox">
-                    <img src={ActiveCheckBox} alt="ActiveCheckBox" />
-                  </div>
-                  <h5 className="title">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem3.title`}
-											defaultMessage={`Mandatory Third-Party-Liability`}
-										/>
-									</h5>
-									<p className="text">
-										<FormattedMessage
-											id={`products.prodInDev.list.titem3.text`}
-											defaultMessage={`Mandatory motor liability insurance for private cars and light commercial vehicles.`}
-										/>
-									</p>
-                </div>
+							<ProdItem	
+								itemId="3"
+								title="Rental damage"
+								desc="Mandatory motor liability insurance for private cars and light commercial vehicles."
+								className="col-md-5"
+								selected={this.state.selected}
+								onSelect={this.select.bind(this)} />
+							<ProdItem	
+								itemId="4"
+								title="Mandatory Third-Party-Liability"
+								desc="Cover for damages caused by tenants to your property. Two variants: long- or short term rental contracts."
+								className="col-md-5"
+								selected={this.state.selected}
+								onSelect={this.select.bind(this)} />
             </div>
-        </div>
+				</div>
 				<button className="btn hidden-sm-down btn-turquoise">
 					<FormattedMessage
 						id={`products.prodInDev.btnVote`}
