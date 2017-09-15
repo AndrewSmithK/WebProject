@@ -305,6 +305,7 @@
     @media screen and (max-width: $break-mobile) {
       padding-left: 0;
     }
+
     > .title {
       font-size: 36px;
       font-weight: bold;
@@ -325,32 +326,46 @@
     }
 
     .container {
-      
-          padding-left: 0;
-      
-          .items {
-            margin-bottom: 30px;
-      
-            .title {
-              margin-left: 30px;
-              font-weight: 700;
-              margin-bottom: 10px;
-            }
-      
-            .checkbox {
-              float: left;
-              margin-top: -3px;
-            }
-      
-            .text {
-              margin-left: 30px;
-              padding-right: 80px;
-              @media screen and (max-width: $break-mobile) {
-                padding-right: 15px;
-              }
-            }
+      padding-left: 0;
+  
+      .item {
+        margin-bottom: 30px;
+        opacity: .6;
+        cursor: pointer;
+  
+        .title {
+          margin-left: 30px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+  
+        .checkbox {
+          float: left;
+          margin-top: -3px;
+          width: 20px;
+          height: 20px;
+          background: url('../../images/OurProducts/circle.png') center no-repeat;
+        }
+  
+        .text {
+          margin-left: 30px;
+          padding-right: 80px;
+          @media screen and (max-width: $break-mobile) {
+            padding-right: 15px;
           }
         }
+
+        &.active, &:hover {
+          opacity: 1;
+        }
+
+        &.active {
+          .checkbox {
+            background: url('../../images/OurProducts/icon-checkbox.svg') center no-repeat;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
+import './Subscribe.scss'
+
 //eslint-disable-next-line
 const emailReqex = /^(?=[^@]{4,}@)([\w\.-]*[a-zA-Z0-9_]@(?=.{4,}\.[^.]*$)[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z])$/;
 
@@ -10,47 +12,41 @@ export default class Subscribe extends React.Component {
 
     this.state = {
       email: '',
-      invalidEmail: false,
-      // error: false
+      invalidEmail: false
     };
+
+    this.handleFormSubmit = this.handleFormSubmit.bind(this)
+    this.handleEmailChange = this.handleEmailChange.bind(this)
   }
+
   handleFormSubmit(e) {
-    let requiredFields = this.checkRequiredFields();
-    if (!this.state.invalidEmail) {
-      console.log("EMAIL OK")
-      this.setState({error: false});
-    }
-    else {
-      this.setState({error: true});
-      e.preventDefault();
-    }
-  }
-  checkRequiredFields() {
-    let requiredFields = {
-      email: true,
-      password: true
-    }
-    if (this.state.email && !this.state.invalidEmail) {
-      requiredFields.email = false;
+    e.preventDefault()
+    if (this.state.invalidEmail) {
+      alert('Success. In the near future you will receive an answer.')
+    } else if (this.state.email === '') {
+      this.showMessage('Email address field is empty')
     } else {
-      this.setState({ requireEmail: true })
+      this.showMessage('Email address is filled in incorrectly')
     }
-    return requiredFields;
   }
+
   handleEmailChange(e) {
-    const email = e.target.value.trim();
-    if (email && emailReqex.test(email)) {
-      this.setState({ invalidEmail: false })
-    }
-    this.setState({ email: email, requireEmail: false })
+    let email = e.target.value.trim()
+    this.setState({
+      email,
+      invalidEmail: emailReqex.test(email) ? true : false
+    })
   }
-  validateEmail() {
-    if (this.state.email && emailReqex.test(this.state.email)) {
-      this.setState({ invalidEmail: false })
-    } else {
-      this.setState({ invalidEmail: this.state.email ? true : false })
-    }
+
+  showMessage(message) {
+    let item = document.getElementsByClassName('subscribe-form-message')[0]
+    item.innerHTML = message
+    item.classList.add('subscribe-form-message--show')
+    setTimeout(() => {
+      item.classList.remove('subscribe-form-message--show')
+    }, 1500)
   }
+
   render() {
     return <section className="section bg-light-grey" id="subscribe">
       <div className="text-center">
@@ -63,12 +59,13 @@ export default class Subscribe extends React.Component {
       </div>
       <div className="container">
         <div className="row">
-          <form onSubmit={(e) => this.handleFormSubmit(e)}>
-            <input type="email" placeholder="please@qover.me"
-              style={this.state.invalidEmail ? {boxShadow:'inset 0 0 2px #e74c3c'} : null}
-              onBlur={() => this.validateEmail()}
-              onChange={(e) => this.handleEmailChange(e)}
-              error={this.state.invalidEmail} required />
+          <form onSubmit={this.handleFormSubmit}>
+            <input
+              type="text"
+              placeholder="please@qover.me"
+              onChange={this.handleEmailChange}
+            />
+            <div className="subscribe-form-message">test</div>
             <button type="submit" className="btn bg-turquoise text-white">
               <FormattedMessage
                 id={`subscribe.btnSubscribe`}
@@ -77,7 +74,6 @@ export default class Subscribe extends React.Component {
             </button>
           </form>
         </div>
-        {/* {this.state.error ? <div style={{textAlign: 'center', color: '#e74c3c',marginTop:'10px', width:'75%'}}><span>Input correct email</span></div> : null} */}
       </div>
     </section>;
   }
