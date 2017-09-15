@@ -5,7 +5,7 @@
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: $dark-sky-blue;
-  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -599,9 +599,6 @@
   #header-gap-insurance {
     padding: 90px 10px;
     padding-top: 120px;
-    .hide {
-      display: none;
-    }
     .container {
       a {
         margin-right: 0;

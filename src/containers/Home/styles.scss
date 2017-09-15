@@ -15,7 +15,7 @@
 
   .react-simple-parallax-bg {
     position: absolute;
-    // background-image: url('../../images/HomePage/homepage-bg.png');
+    background-image: url('../../images/HomePage/homepage-bg.png');
     height: 100%;
   }
 
@@ -856,7 +856,7 @@
             max-height: 0;
             opacity: 0;
             overflow: hidden;
-            transition: all .5s ease;
+            transition: all .5s;
 
             span {
               position: relative;
@@ -866,7 +866,7 @@
             &.open {
               opacity: 1;
               max-height: 1000px;
-              transition: all .5s ease;
+              transition: all .5s;
             }
           }
         }
@@ -877,7 +877,7 @@
         img {
           right: 0;
           left: unset;
-          width: 90%;
+          width: calc(100% - 25px);
           height: auto;
         }
       }
