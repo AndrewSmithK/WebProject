@@ -17,7 +17,9 @@
 
   .react-simple-parallax-bg {
     position: absolute;
-    background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png') left/contain;
+    background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png');
+    background-position: left bottom !important;
+    background-size: auto !important;
     height: 100%;
   }
 
@@ -628,13 +630,14 @@
     .container {
       .sheet {
         .clips {
-          top: 0;
+          top: -50px;
+          left: calc(50% - 24px);
         }
       }
 
       .content-box {
         position: relative;
-        margin: 50px 15px 0;
+        margin: 0 15px 0;
       }
     }
   }
@@ -693,7 +696,7 @@
 
 @media screen and (max-width: 768px) {
   #header-gap-insurance {
-    background-image:  url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+    background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
     background-size: cover;
     background-position: center;
     padding-right: 20px;
@@ -719,81 +722,77 @@
       display: none;
     }
   }
-}
 
-#gap-fact-sheet {
-  padding-top: 50px;
-  padding-bottom: 0;
+  #gap-fact-sheet {
+    padding-top: 50px;
+    padding-bottom: 0;
 
-  .container {
-    .content-box {
-      position: relative;
-      margin: 0;
-      padding: 35px 10px 13px 10px;
-      border-radius: 0;
-      box-shadow: 1px 1px 15px 0 $pale-grey;
+    .container {
+      .content-box {
+        position: relative;
+        margin: 0;
+        padding: 35px 10px 13px 10px;
+        border-radius: 0;
+        box-shadow: 1px 1px 15px 0 $pale-grey;
 
-      .content {
-        padding: 30px;
-        background-color: rgb(247, 247, 247);
-        box-shadow: inset 0 1px 1px 0 rgba(91, 114, 137, 0.1);
-        border: solid 1px $pale-grey;
+        .content {
+          padding: 30px;
+          background-color: rgb(247, 247, 247);
+          box-shadow: inset 0 1px 1px 0 rgba(91, 114, 137, 0.1);
+          border: solid 1px $pale-grey;
 
-        .title {
-          font-size: 16px;
+          .title {
+            font-size: 16px;
+          }
+
+          .item {
+            margin-bottom: 15px;
+
+            .text {
+              font-style: 13px;
+              line-height: 18px;
+            }
+          }
         }
 
-        .item {
-          margin-bottom: 15px;
-
-          .text {
-            font-style: 13px;
-            line-height: 18px;
+      }
+      .sheet {
+        .clips {
+          top: -55px;
+          left: calc(50% - 26px);
+          &:before {
+            background: $pale-grey;
+            height: 5px;
           }
         }
       }
-
     }
-    .sheet {
-      .clips {
-        top: -55px;
-        left: calc(50% - 26px);
-        &:before {
-          background: $pale-grey;
-          height: 5px;
+
+    .descript-list {
+      margin-bottom: 70px;
+      padding-right: 0;
+
+      .item {
+        &:last-child {
+          margin-bottom: 0
+        }
+
+        .text {
+          // font-size: 15px;
         }
       }
     }
   }
-
-  .descript-list {
-    margin-bottom: 70px;
-    padding-right: 0;
-
-    .item {
-      &:last-child {
-        margin-bottom: 0
-      }
-
-      .text {
-        // font-size: 15px;
-      }
-    }
-  }
 }
-
 
 
 @media screen and (max-width: $break-mobile) {
 
   #header-gap-insurance {
-    background-image:  url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+    background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
     background-size: cover;
     background-position: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 80px;
-    padding-bottom: 0;
+    padding: 80px 20px 0 20px;
 
 
     .picture {
@@ -863,8 +862,7 @@
 
       .info {
         width: 100%;
-        padding: 20px;
-        padding-bottom: 80px;
+        padding: 20px 20px 80px 20px;
 
         .title {
           font-size: 16px;
