@@ -17,7 +17,7 @@
 
   .react-simple-parallax-bg {
     position: absolute;
-    background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png');
+    background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png') left/contain;
     height: 100%;
   }
 
