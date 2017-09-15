@@ -611,6 +611,8 @@
     }
     .block {
       a {
+        width: 161px;
+        height: 45px;
         margin-right: 20px;
       }
     }
@@ -955,6 +957,9 @@
          }
        }
      }
+   }
+   .rwd-line {
+     display: block !important;
    }
 }
 
