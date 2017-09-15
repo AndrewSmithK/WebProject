@@ -538,12 +538,14 @@
 
     img {
       float: left;
+      margin-left: 5px;
+      margin-top: 3px;
     }
 
     .arrow {
       position: absolute;
-      top: 6px;
-      right: -16px;
+      top: 5px;
+      right: -18px;
       font-size: 16px;
       color: #317bda;
     }
@@ -560,12 +562,20 @@
 
     .item {
       padding: 10px 15px;
+      font-weight: 400;
       box-sizing: border-box;
-      font-weight: 500;
       cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
 
       span {
         font-size: 20px;
+      }
+
+      img {
+        margin-left: 5px;
       }
     }
   }

@@ -26,6 +26,7 @@ class DropDown extends React.Component {
 
   handleChange(item) {
     this.props.select(item);
+    this.close();
   }
 
   render() {
