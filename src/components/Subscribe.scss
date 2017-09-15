@@ -1,0 +1,22 @@
+#subscribe {
+
+    form {
+        position: relative;
+    }
+
+    .subscribe-form-message {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+        padding: 2px;
+        width: 100%;
+        color: white;
+        background-color: red;
+    }
+
+    .subscribe-form-message--show {
+        display: block;
+    }
+
+}

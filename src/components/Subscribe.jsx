@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
+import './Subscribe.scss'
+
 //eslint-disable-next-line
 const emailReqex = /^(?=[^@]{4,}@)([\w\.-]*[a-zA-Z0-9_]@(?=.{4,}\.[^.]*$)[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z])$/;
 
@@ -20,15 +22,29 @@ export default class Subscribe extends React.Component {
   handleFormSubmit(e) {
     e.preventDefault()
     if (this.state.invalidEmail) {
-      alert('hello')
+      alert('Success. In the near future you will receive an answer.')
+    } else if (this.state.email === '') {
+      this.showMessage('Email address field is empty')
+    } else {
+      this.showMessage('Email address is filled in incorrectly')
     }
   }
 
   handleEmailChange(e) {
     let email = e.target.value.trim()
     this.setState({
+      email,
       invalidEmail: emailReqex.test(email) ? true : false
     })
+  }
+
+  showMessage(message) {
+    let item = document.getElementsByClassName('subscribe-form-message')[0]
+    item.innerHTML = message
+    item.classList.add('subscribe-form-message--show')
+    setTimeout(() => {
+      item.classList.remove('subscribe-form-message--show')
+    }, 1000)
   }
 
   render() {
@@ -45,11 +61,11 @@ export default class Subscribe extends React.Component {
         <div className="row">
           <form onSubmit={this.handleFormSubmit}>
             <input
-              type="email"
-              required
+              type="text"
               placeholder="please@qover.me"
               onChange={this.handleEmailChange}
             />
+            <div className="subscribe-form-message">test</div>
             <button type="submit" className="btn bg-turquoise text-white">
               <FormattedMessage
                 id={`subscribe.btnSubscribe`}
