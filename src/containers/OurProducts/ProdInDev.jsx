@@ -1,9 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
-import ActiveCheckBox from '../../images/OurProducts/icon-checkbox.svg';
-import InactiveCheckBox from '../../images/OurProducts/circle.png';
-
 const ProdItem = ({itemId, title, desc, className, onSelect, selected}) => {
 	const handleClick = () => {
 		onSelect(itemId);
@@ -31,7 +28,7 @@ export default class ProdInDev extends React.Component {
 		super(props);
 
 		this.state = {
-			selected: null
+			selected: "3"
 		}
 	}
 

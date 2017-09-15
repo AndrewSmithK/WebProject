@@ -5,15 +5,11 @@
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: $dark-sky-blue;
-  background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-
-  @media (min-width: 992px) {
-    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
-  }
 
   .react-simple-parallax-bg {
     position: absolute;
@@ -27,6 +23,16 @@
     position: relative !important;
     top: unset !important;
     right: unset !important;
+  }
+
+  @media screen and (min-width: 992px) {
+    background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+  }
+
+  @media screen and (max-width: 992px) {
+    .react-simple-parallax-bg {
+      background-image: none;
+    }  
   }
 
   .return-label {
@@ -593,9 +599,6 @@
   #header-gap-insurance {
     padding: 90px 10px;
     padding-top: 120px;
-    .hide {
-      display: none;
-    }
     .container {
       a {
         margin-right: 0;
