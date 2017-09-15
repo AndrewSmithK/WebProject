@@ -98,7 +98,7 @@ export default class WhyQover extends Component {
         }
         </div>
       </div>
-       <div className="container" id="insertion">
+       <div className="container m-hidden" id="insertion">
          <div className="insertion row">
             <div className="item col-md-10 col-sm-12">
             <div className="qover-logo">

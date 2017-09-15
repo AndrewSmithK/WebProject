@@ -529,6 +529,76 @@
     }
   }
 
+  #circle {
+    padding-top: 0;
+    .display {
+      display: block !important;
+    }
+
+    #insertion {
+      position: relative;
+      left: unset;
+      top: -50px;
+      bottom: unset;
+      transform: none;
+      margin-left: auto;
+    }
+
+    .insertion {
+      padding: 0 20px;
+      .item {
+        margin: 0 auto;
+        background-image: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd), linear-gradient($pale-grey-two, $pale-grey-two), linear-gradient(291deg, $turquoise, #82e5c9 76%, #b9f4bc);
+        font-size: 14px;
+        font-family: 'MuseoSans', sans-serif;
+        font-weight: 300;
+        line-height: 21px;
+        padding: 30px 20px;
+        border-radius: 3px;
+        float: none;
+        .logo {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        .item-text {
+          margin-bottom: 0;
+        }
+        .qover-logo {
+          position: absolute;
+          left: 0;
+        }
+        .text {
+          font-size: 13px;
+          line-height: 18px;
+          font-weight: 500;
+        }
+
+        .text-title {
+          font-weight: bold;
+          font-size: 13px;
+          letter-spacing: 1.2px;
+          margin: 30px auto 10px auto;
+          text-transform: uppercase;
+        }
+      }
+
+      b {
+        font-weight: bold;
+      }
+      .text {
+        line-height: 18px;
+        font-weight: 500;
+      }
+
+      .text-title {
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        margin: 30px auto 10px auto;
+        text-transform: uppercase;
+      }
+    }
+  }
+
   #contact-us {
     background: radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
     position: relative;
@@ -563,7 +633,7 @@
 
   #why-qover {
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 100px !important;
 
     .title {
       font-size: 28px;

@@ -343,7 +343,6 @@
   }
 
   #circle {
-    padding-top: 30px !important;
     padding-bottom: 50px !important;
     .container{
       .side-bar {
@@ -374,9 +373,9 @@
       }
       .item {
         margin-top: 0 !important;
-        .text {
-          margin-bottom: 0 !important;
-        }
+        //.text {
+        //  margin-bottom: 0 !important;
+        //}
       }
     }
   }
