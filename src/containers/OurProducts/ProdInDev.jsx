@@ -73,14 +73,14 @@ export default class ProdInDev extends React.Component {
             <div className="row items">
 							<ProdItem	
 								itemId="3"
-								title="Rental damage"
+								title="Mandatory Third-Party-Liability"
 								desc="Mandatory motor liability insurance for private cars and light commercial vehicles."
 								className="col-md-5"
 								selected={this.state.selected}
 								onSelect={this.select.bind(this)} />
 							<ProdItem	
 								itemId="4"
-								title="Mandatory Third-Party-Liability"
+								title="Rental damage"
 								desc="Cover for damages caused by tenants to your property. Two variants: long- or short term rental contracts."
 								className="col-md-5"
 								selected={this.state.selected}
