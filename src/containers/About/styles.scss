@@ -237,7 +237,7 @@
       position: relative;
       margin-bottom: 20px;
       margin-left: 9px;
-      margin-right: 9px;
+      // margin-right: 9px;
       width: 150px;
       height: 150px;
 
@@ -290,6 +290,40 @@
       padding: 51px 25px;
       background-color: $turquoise;
       border-radius: 3px;
+    }
+  }
+  .qc-uppercontainer{
+    position: relative;
+    width: 420px;
+    margin: auto;
+    .qc-container {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .qc {
+        width: 130px;
+        height: 130px;
+        background: linear-gradient(#5b7289,rgba(255,255,255,0.0));
+        border-radius: 3px;
+        opacity: 0.1;
+        margin: 5px;
+      }
+      @media(max-width: 416px){
+        .middle {
+          display: none;
+        }
+      }
+    }
+  }
+  @media(max-width: 416px){
+    .qc-uppercontainer{
+      width: 270px !important;
+    }
+  }
+  @media(max-width: 450px){
+    .qc-uppercontainer{
+      width: 100%;
     }
   }
 }
@@ -477,6 +511,7 @@
 
   .d-hidden {
     display: block;
+    padding-top: 10px;
   }
 
    #header-about {

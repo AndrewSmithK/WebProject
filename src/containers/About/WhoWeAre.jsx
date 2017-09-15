@@ -41,13 +41,13 @@ export default class WhoWeAre extends React.Component {
   render() {
     return (<section className="section" id="who-we-are">
       <h1 className="title text-turquoise">
-        <FormattedMessage 
+        <FormattedMessage
           id={`about.whoWeAre.title`}
           defaultMessage={`Who we are?`}
         />
       </h1>
       <h3 className="subtitle text-grey">
-        <FormattedMessage 
+        <FormattedMessage
           id={`about.whoWeAre.subtitle`}
           defaultMessage={`Meet our team of ninjas`}
         />
@@ -61,7 +61,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Quentin.position`}
                     defaultMessage={`Co-Founder & Managing Director`}
                   />
@@ -80,7 +80,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.JeanCharles.position`}
                     defaultMessage={`Co-Founder & Managing Director`}
                   />
@@ -99,7 +99,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Eleonore.position`}
                     defaultMessage={`insurance / HR / Accounting & Marketing`}
                   />
@@ -118,7 +118,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Geert.position`}
                     defaultMessage={`Head of IT Development`}
                   />
@@ -137,7 +137,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Denis.position`}
                     defaultMessage={`Full Stack Dev`}
                   />
@@ -156,7 +156,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Ali.position`}
                     defaultMessage={`Back End Dev`}
                   />
@@ -175,7 +175,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Romuald.position`}
                     defaultMessage={`Full Stack Dev`}
                   />
@@ -194,7 +194,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Juan.position`}
                     defaultMessage={`Front End Dev`}
                   />
@@ -213,7 +213,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Amandine.position`}
                     defaultMessage={`Legal & Insurance counsel`}
                   />
@@ -232,7 +232,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Dominique.position`}
                     defaultMessage={`Sales Manager`}
                   />
@@ -251,7 +251,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Nathalie.position`}
                     defaultMessage={`UI Designer`}
                   />
@@ -270,7 +270,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Hamza.position`}
                     defaultMessage={`Junior dev`}
                   />
@@ -289,7 +289,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Emilien.position`}
                     defaultMessage={`Junior dev`}
                   />
@@ -308,7 +308,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Simon.position`}
                     defaultMessage={`Junior dev`}
                   />
@@ -327,7 +327,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Mathieu.position`}
                     defaultMessage={`ux designer`}
                   />
@@ -346,7 +346,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Alexandre.position`}
                     defaultMessage={`Software Engineer`}
                   />
@@ -365,7 +365,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.AlexandreRoba.position`}
                     defaultMessage={`Software Engineer`}
                   />
@@ -384,7 +384,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.AnrienLebrun.position`}
                     defaultMessage={`title`}
                   />
@@ -399,11 +399,11 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)'}} />
+                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)' }} />
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Francois.position`}
                     defaultMessage={`Product Owner & Product Manager`}
                   />
@@ -418,11 +418,11 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                
+
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Degallaix.position`}
                     defaultMessage={`Software Engineer`}
                   />
@@ -441,7 +441,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Francesca.position`}
                     defaultMessage={`Office Manager`}
                   />
@@ -460,7 +460,7 @@ export default class WhoWeAre extends React.Component {
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Arthur.position`}
                     defaultMessage={`Business Analyst`}
                   />
@@ -475,11 +475,11 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                
+
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Laurent.position`}
                     defaultMessage={`Product Owner`}
                   />
@@ -494,11 +494,11 @@ export default class WhoWeAre extends React.Component {
             </div>
             <div className="item">
               <div className="icon">
-                
+
               </div>
               <div className="text">
                 <p className="icon-title">
-                  <FormattedMessage 
+                  <FormattedMessage
                     id={`about.whoWeAre.team.Pauline.position`}
                     defaultMessage={`Actuary`}
                   />
@@ -511,18 +511,25 @@ export default class WhoWeAre extends React.Component {
                 </p>
               </div>
             </div>
-              <Link to="#" style={{color: 'white'}}>
-            <div className="item last-icon m-hidden">
+            <Link to="#" style={{ color: 'white' }}>
+              <div className="item last-icon m-hidden">
                 <FormattedMessage
                   id={`about.whoWeAre.team.WantToJoin`}
                   defaultMessage={`Want to join the team?`}
                 />
-            </div>
-              </Link>
+              </div>
+            </Link>
           </div>
         </div>
 
         <div className="text-center d-hidden">
+          <div className="qc-uppercontainer">
+            <div className="qc-container">
+              <div className="qc"></div>
+              <div className="qc middle"></div>
+              <div className="qc"></div>
+            </div>
+          </div>
           <div className="btn-open text-grey">
             See all the team
             <div className="text-blue" onClick={this.visibilityClick}>

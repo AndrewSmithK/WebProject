@@ -65,7 +65,7 @@ export default class Subscribe extends React.Component {
         <div className="row">
           <form onSubmit={(e) => this.handleFormSubmit(e)}>
             <input type="email" placeholder="please@qover.me"
-              style={this.state.invalidEmail ? {boxShadow:'inset 0 0 2px #e74c3c'} : {boxShadow:'inset 0 0 2px #27ae60'}}
+              style={this.state.invalidEmail ? {boxShadow:'inset 0 0 2px #e74c3c'} : null}
               onBlur={() => this.validateEmail()}
               onChange={(e) => this.handleEmailChange(e)}
               error={this.state.invalidEmail} required />
