@@ -58,6 +58,11 @@
   .container {
     margin-top: 52px;
 
+    .item-box {
+      width: 250px;
+      padding: 15px;
+    }
+
     .item {
       padding-bottom: 30px;
       margin-bottom: 30px;
@@ -165,6 +170,7 @@
         float: right;
         margin: 0 20px;
         margin-bottom: -30px;
+        width: 150px;
       }
     }
   }
@@ -182,7 +188,6 @@
     text-align: center;
     text-transform: uppercase;
   }
-
 
   @media screen and (max-width: 768px) {
 
@@ -215,6 +220,10 @@
       .desktop-select {
         display: none;
       }
+    }
+    
+    .filter-box .filter .select-field {
+      width: 100px;
     }
   }
 

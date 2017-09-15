@@ -145,7 +145,7 @@ export default class TradInnProd extends React.Component {
             value={this.state.category}
             onChange={this.changeCategory.bind(this)}
             style={{
-              width: '150px'
+              width: '100%' 
             }}
             iconStyle={{
               fill: '#317bda',
@@ -180,7 +180,7 @@ export default class TradInnProd extends React.Component {
               value={this.state.country}
               onChange={this.changeCountry.bind(this)}
               style={{
-                width: '150px'
+                width: '100%'
               }}
               iconStyle={{
                 fill: '#317bda',
@@ -218,7 +218,7 @@ export default class TradInnProd extends React.Component {
         }
       </div>
       <div className="container only-desktop">
-        <div className="row">
+        <div className="row justify-content-center">
           {this.state.items.length > 0 ?
             this.renderAllItems(this.state.items) :
             <div className="container no-results">no results found</div>
