@@ -8,12 +8,13 @@
         display: none;
         position: absolute;
         left: 0;
-        bottom: -25px;
-        padding: 2px;
+        bottom: -30px;
+        padding: 5px;
         width: 100%;
         font-size: 12px;
         color: white;
         background-color: rgb(244, 86, 106);
+        box-sizing: border-box;
     }
 
     .subscribe-form-message--show {
