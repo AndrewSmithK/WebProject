@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import Hiring from "./Hiring";
@@ -58,19 +58,19 @@ export default class TopLine extends React.Component {
           </div>
           <nav>
             <ul>
-              <li><Link className={window.location.pathname === '/about' ? 'active' : null} to="/about">
+              <li><NavLink activeClassName="active" to="/about">
                 <FormattedMessage
                   id={`topLine.about`}
                   defaultMessage={`About`}
                 />
-              </Link></li>
+              </NavLink></li>
               <li>
-                <Link className={(window.location.pathname).includes('/our-products') ? 'active' : null} to="/our-products">
+                <NavLink activeClassName="active" to="/our-products">
                   <FormattedMessage
                     id={`topLine.ourProducts`}
                     defaultMessage={`Our products`}
                   /><i className="fa fa-angle-down" aria-hidden="true"></i>
-                </Link>
+                </NavLink>
                 <div className="subnav-wrap bg-pale-grey-two">
                   <div className="subnav">
                     <h5 className="title">
@@ -210,12 +210,12 @@ export default class TopLine extends React.Component {
                   defaultMessage={`Developers`}
                 />
               </a></li>
-              <li><Link className={window.location.pathname === '/contact-us' ? 'active' : null} to="/contact-us">
+              <li><NavLink activeClassName="active" to="/contact-us">
                 <FormattedMessage
                   id={`topLine.contactUs`}
                   defaultMessage={`Contact us`}
                 />
-            </Link></li>
+            </NavLink></li>
           
             </ul>
           </nav>

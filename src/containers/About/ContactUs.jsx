@@ -22,12 +22,12 @@ export default class ContactUs extends React.Component {
               defaultMessage={`You want to be a partner or wish to have more information about our products? Contact us!`}
             />
           </h4>
-          <a href="/contact-us" className="btn hidden-sm-down btn-turquoise text-center">
+          <Link to="/contact-us" className="btn hidden-sm-down btn-turquoise text-center">
             <FormattedMessage
               id={`about.contactUs.btnContactUs`}
               defaultMessage={`Contact us`}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>;
