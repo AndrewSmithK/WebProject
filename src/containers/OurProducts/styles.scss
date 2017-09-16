@@ -306,10 +306,11 @@
 }
 
 #prod-in-dev {
-  padding: 70px 0 90px 0;
+  padding: 70px 15px 90px;
   background-image: url('../../images/OurProducts/product-in-development.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
 
   button {
     font-weight: 500;
