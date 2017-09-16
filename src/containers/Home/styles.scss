@@ -643,7 +643,7 @@
       line-height: 48px;
       margin: 0 30px;
       padding: 0;
-      transition: 0.3s;
+      transition: all 0.3s;
       @media (max-width: 820px) {
         margin: 0 15px;
       }
@@ -652,7 +652,6 @@
         border-bottom: 2px solid #fff;
         font-size: 16px;
         font-weight: 500;
-        transition: 0.3s;
       }
 
     }
