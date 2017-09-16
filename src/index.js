@@ -6,7 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { initializePhraseAppEditor } from 'react-intl-phraseapp';
-import { ParallaxController } from 'react-scroll-parallax';
 // import { initConf } from '../config/phraseapp'
 
 import $ from 'jquery'
@@ -16,7 +15,6 @@ import configureStore from './store'
 import App from './containers/App'
 import registerServiceWorker from './registerServiceWorker'
 
-ParallaxController.init();
 injectTapEventPlugin()
 initializePhraseAppEditor({
   projectId: 'a3a97416736eb85bea5e555988548a56',

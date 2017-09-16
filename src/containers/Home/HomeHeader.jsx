@@ -65,7 +65,7 @@ export default class HomeHeader extends React.Component {
                   </ParallaxComponent>
                   <ParallaxComponent
                     className="api-logo"
-                    speed={0.6}
+                    speed={0.5}
                     scrollContainer={global.window}>
                     <img src={api} alt="" />
                   </ParallaxComponent>
