@@ -3,9 +3,12 @@ import { FormattedMessage } from 'react-intl-phraseapp'
 
 export default (props) => (
     <div className="item-box">
-      <div className="item text-center bg-white">
-        <div className="icon">
-          <img src={props.image} alt="accident-health" />
+      <div className={`item text-center bg-white ${props.status}`}>
+        <div className="trapezoid"></div>      
+        <div className="icon-box">
+          <div className="icon">
+            <img src={props.image} alt="accident-health" />
+          </div>
         </div>
         <div className="text-container">
           <h5 className="title">
@@ -21,20 +24,12 @@ export default (props) => (
             />
           </p>
         </div>
-        {props.status === 'soon' ?
-          <button className="btn btn-disabled">
-            <FormattedMessage
-              id={`products.traditional.ComingSoon`}
-              defaultMessage={`Coming soon`}
-            />
-          </button> :
-          <button className="btn">
-            <FormattedMessage
-              id={`products.traditional.ComingSoon`}
-              defaultMessage={`More info`}
-            />
-          </button>
-        }
+        <button className="btn">
+          <FormattedMessage
+            id={`products.traditional.ComingSoon`}
+            defaultMessage={`More info`}
+          />
+        </button>
       </div>
     </div>
 )

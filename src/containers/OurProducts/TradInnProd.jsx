@@ -11,36 +11,71 @@ import AccidentHealth from '../../images/OurProducts/accident-health.png';
 import Travel from '../../images/OurProducts/travel.png';
 import JobLoss from '../../images/OurProducts/job-loss.png';
 import Landlord from '../../images/OurProducts/landlord.png';
+import GapInsurance from '../../images/OurProducts/gap.png';
+import LightCasco from '../../images/OurProducts/light-casco.png';
+import FullCasco from '../../images/OurProducts/full-casco.png';
+import DriverAccident from '../../images/OurProducts/driver-accident.png';
 
-const mock = [{
-  'image': AccidentHealth,
-  'title': 'Accident & Health',
-  'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
-  'status': 'soon',
-  'category': 'motor',
-  'country': 'france'
-}, {
-  'image': Travel,
-  'title': 'Travel',
-  'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
-  'status': 'soon',
-  'category': 'lifestyle',
-  'country': 'belgium'
-}, {
-  'image': JobLoss,
-  'title': 'Job Loss',
-  'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
-  'status': 'soon',
-  'category': 'lifestyle',
-  'country': 'germany'
-}, {
-  'image': Landlord,
-  'title': 'Landlord Insurance',
-  'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
-  'status': 'soon',
-  'category': 'motor',
-  'country': 'germany'
-}]
+const mock = [
+  {
+    'image': GapInsurance,
+    'title': 'GAP Insurance',
+    'text': 'Protect 100% of the purchase price of your car up to 5 years.',
+    'status': 'new',
+    'category': 'motor',
+    'country': 'belgium'
+  }, {
+    'image': LightCasco,
+    'title': 'Light Casco',
+    'text': 'Protect your vehicle against fire, glass breakage, natural distaster & animal collision.',
+    'status': 'soon',
+    'category': 'motor',
+    'country': 'belgium'
+  }, {
+    'image': FullCasco,
+    'title': 'Full Casco',
+    'text': 'Protect your vehicle against most occurrences.',
+    'status': 'soon',
+    'category': 'motor',
+    'country': 'belgium'
+  }, {
+    'image': DriverAccident,
+    'title': 'Driver Accident',
+    'text': 'Cover bodily injuries to the driver when involved in an accident and is at fault.',
+    'status': 'soon',
+    'category': 'motor',
+    'country': 'belgium'
+  },
+  {
+    'image': AccidentHealth,
+    'title': 'Accident & Health',
+    'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+    'status': 'soon',
+    'category': 'motor',
+    'country': 'france'
+  }, {
+    'image': Travel,
+    'title': 'Travel',
+    'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+    'status': 'soon',
+    'category': 'lifestyle',
+    'country': 'belgium'
+  }, {
+    'image': JobLoss,
+    'title': 'Job Loss',
+    'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+    'status': 'soon',
+    'category': 'lifestyle',
+    'country': 'belgium'
+  }, {
+    'image': Landlord,
+    'title': 'Landlord Insurance',
+    'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
+    'status': 'soon',
+    'category': 'motor',
+    'country': 'belgium'
+  }
+]
 
 export default class TradInnProd extends React.Component {
   constructor(props) {

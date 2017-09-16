@@ -18,9 +18,12 @@ export default class ProductsCarousel extends Component {
                     {
                         this.props.items.map((item, index) => (
                             <div key={index} className="col-lg-3 col-md-6">
-                                <div className="item text-center bg-white">
-                                    <div className="icon">
-                                        <img src={item.image} alt="accident-health" />
+                                <div className={`item text-center bg-white ${item.status}`}>
+                                    <div className="trapezoid"></div>
+                                    <div className="icon-box">
+                                        <div className="icon">
+                                            <img src={item.image} alt="accident-health" />
+                                        </div>
                                     </div>
                                     <div className="text-container">
                                         <h5 className="title">
@@ -36,20 +39,12 @@ export default class ProductsCarousel extends Component {
                                             />
                                         </p>
                                     </div>
-                                    {item.status === 'soon' ?
-                                        <button className="btn btn-disabled">
-                                            <FormattedMessage
-                                                id={`products.traditional.ComingSoon`}
-                                                defaultMessage={`Coming soon`}
-                                            />
-                                        </button> :
-                                        <button className="btn">
-                                            <FormattedMessage
-                                                id={`products.traditional.ComingSoon`}
-                                                defaultMessage={`More info`}
-                                            />
-                                        </button>
-                                    }
+                                    <button className="btn">
+                                        <FormattedMessage
+                                            id={`products.traditional.ComingSoon`}
+                                            defaultMessage={`More info`}
+                                        />
+                                    </button>
                                 </div>
                             </div>
                         ))
