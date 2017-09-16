@@ -556,13 +556,17 @@
 
       .icon-label {
         float: left;
+        position: relative;
         margin-bottom: 12px;
+        padding-left: 28px;
 
         img {
-          margin-right: 8px;
+          position: absolute;
+          top: 5px;
+          left: 0;
         }
 
-        span {
+        & > span {
           text-transform: uppercase;
           font-family: Roboto;
           font-size: 11px;
@@ -856,7 +860,7 @@
             max-height: 0;
             opacity: 0;
             overflow: hidden;
-            transition: all .5s;
+            transition: opacity .3s, max-height .3s;
 
             span {
               position: relative;
@@ -866,7 +870,6 @@
             &.open {
               opacity: 1;
               max-height: 1000px;
-              transition: all .5s;
             }
           }
         }
