@@ -707,6 +707,14 @@
     }
   }
 
+  @media screen and (max-width: 992px) {
+    .container {
+      padding-top: 10px;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
   @media screen and (max-width: $break-mobile) {
     padding: 40px 20px;
     overflow: hidden;
@@ -715,10 +723,8 @@
     }
     .container {
       margin: 0;
-      padding: 10px 0 100px 0;
+      padding-bottom: 100px;
       margin-bottom: -100px;
-      overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
     }
   }
 }

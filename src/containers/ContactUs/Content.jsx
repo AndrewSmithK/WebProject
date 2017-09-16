@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
-import Field from '../../components/small/Field';
+import Field from './Field';
 import poneIcon from '../../images/contact-us/icon-phone.svg';
 import mailIcon from '../../images/contact-us/icon-mail.svg';
 import pinIcon from '../../images/contact-us/icon-pin.svg';

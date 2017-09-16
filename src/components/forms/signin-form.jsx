@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Field from '../../components/small/Field';
+// import Field from '../../components/small/Field';
 
 import Checkbox from '../../images/SignIn/icon-checkbox.svg';
 
@@ -9,7 +9,7 @@ export default class SigninForm extends Component {
       <div className="email-form">
       <div className="title">Welcome at Qover</div>
       <form className="form">
-          <Field
+          {/*<Field
             width="full"
             hintText="Type your email"
             floatingLabelText="Email"
@@ -18,7 +18,7 @@ export default class SigninForm extends Component {
             width="full"
             hintText="********"
             floatingLabelText="Password"
-          />
+          />*/}
 
           <div className="clearfix"></div>
 
