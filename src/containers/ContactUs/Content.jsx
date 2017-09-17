@@ -25,7 +25,7 @@ export default class Content extends React.Component {
   }
 
   formSubmit() {
-    console.log('submit')
+    alert('Success. In the near future you will receive an answer.')
   }
 
   handleChange(event) {
@@ -85,7 +85,7 @@ export default class Content extends React.Component {
                   />
                   <Field
                     className="text-field--fixed"
-                    validators={['required', 'matchRegexp:^.{0,10}$']}
+                    validators={['required', 'matchRegexp:^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$']}
                     errorMessages={['this field is required', 'The format of the phone number is not correct.']}
                     onChange={this.handleChange}
                     value={formData.phone}
