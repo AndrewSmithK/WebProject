@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl-phraseapp';
 export default class Header extends React.Component {
   render() {
     return <section className="section" id="header-our-products">
-      <Parallax speedDivider="3" className="parallax">
+      <Parallax className="parallax">
         <div className="header-space"></div>
         <div className="container">
           <div className="row justify-content-center">

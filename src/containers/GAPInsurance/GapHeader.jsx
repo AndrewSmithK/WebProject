@@ -9,7 +9,7 @@ import SmallApi from '../../images/OurProducts/GapInsurance/small-api.jpg';
 export default class GapHeader extends React.Component {
   render() {
     return <section className="section" id="header-gap-insurance">
-      <Parallax speedDivider="3" className="parallax">
+      <Parallax className="parallax">
         <div className="container">
           <Link to="/our-products">
             <div className="return-label text-white hide">

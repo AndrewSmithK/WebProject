@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl-phraseapp';
 export default class AboutHeader extends React.Component {
   render() {
     return (<section className="section" id="header-about">
-      <Parallax speedDivider="3" className="parallax">
+      <Parallax className="parallax">
         <div className="container">
           <div className="row justify-content-center text-center">
             <h1 className="title text-white">
