@@ -3,37 +3,6 @@ import throttle from 'lodash.throttle';
 
 export default class ParallaxComponent extends Component {
 
-  static propTypes = {
-    children: React.PropTypes.node.isRequired,
-    speed: React.PropTypes.number,
-
-    // Style
-    style: React.PropTypes.object,
-    className: React.PropTypes.string,
-    width: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-    ]),
-    height: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-    ]),
-    top: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-    ]),
-    left: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-    ]),
-    right: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-    ]),
-
-    scrollContainer: React.PropTypes.object,
-  }
-
   static defaultProps = {
     width: 'auto',
     height: 'auto',
@@ -48,6 +17,7 @@ export default class ParallaxComponent extends Component {
     super(props);
 
     this.handleScroll = throttle(this.handleScroll.bind(this), 10);
+    // eslint-disable-next-line
     this.parallaxElement;
   }
 
@@ -84,21 +54,16 @@ export default class ParallaxComponent extends Component {
   }
 
   render() {
-    const { width, height, left, right, top, speed, style, children, className, ...rest } = this.props;
-    const ownStyle = {
-      width,
-      height,
-      left,
-      right,
-    };
+    const { width, height, left, right, speed, style, children, className } = this.props;
+    const ownStyle = { width, height, left, right };
     return (
       <div
         className={`${className}`}
         ref={ref => this.parallaxElement = ref}
         style={{ ...style, ...ownStyle }}
-        {...rest}
+        speed={speed || 0}
       >
-          {children}
+        {children}
       </div>
     );
   }

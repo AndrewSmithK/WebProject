@@ -1,6 +1,7 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 
-export default React.createClass({
+export default createReactClass({
   // Define initial values
   getInitialState: function(){
     return {
@@ -39,6 +40,7 @@ export default React.createClass({
 
     // Aplly the transform to the background element
     var translate = 'translate3d(0px,' + translateValue + 'px, 0px)';
+    // eslint-disable-next-line
     this.refs.background ? this.refs.background.style.transform = translate : null;
   },
   render: function() {

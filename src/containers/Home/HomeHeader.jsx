@@ -21,7 +21,7 @@ export default class HomeHeader extends React.Component {
 
   render() {
     return (<section className="section" id="header">
-      <Parallax speedDivider="3" className="parallax">
+      <Parallax className="parallax">
         <div className="container">
           <div className="icon">
             <img src={LloydsLogoSmall} alt="lloyds-logo" />
@@ -56,21 +56,22 @@ export default class HomeHeader extends React.Component {
           </div>
           <div className="col-md-6">
             <div className="mac-image paralax m-hidden">
-              {this.state.isMounted?
+              {this.state.isMounted ?
                 <div>
                   <ParallaxComponent
                     speed={0.3}
-                    scrollContainer={global.window}>
+                    scrollContainer={global.window}
+                  >
                     <img src={imac} alt="" />
                   </ParallaxComponent>
                   <ParallaxComponent
                     className="api-logo"
                     speed={0.5}
-                    scrollContainer={global.window}>
+                    scrollContainer={global.window}
+                  >
                     <img src={api} alt="" />
                   </ParallaxComponent>
-                </div>
-                : ''
+                </div> : ''
               }
             </div>
             <div className="mac-image no-paralax m-hidden">
