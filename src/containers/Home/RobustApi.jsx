@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
 import Api from '../../images/HomePage/RobustApi/api-image.jpg';

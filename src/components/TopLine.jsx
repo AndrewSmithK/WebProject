@@ -5,8 +5,6 @@ import { FormattedMessage } from 'react-intl-phraseapp';
 import Hiring from "./Hiring";
 import MobileNavigation from './MobileNavigation';
 
-import MenuIcon from '../images/Header/icon-burger.svg';
-
 export default class TopLine extends React.Component {
   constructor() {
     super();
@@ -204,7 +202,7 @@ export default class TopLine extends React.Component {
                   </div>
                 </div>
               </li>
-              <li><a href="https://www.qover.me/docs/" target="_blank">
+              <li><a href="https://www.qover.me/docs/" target="_blank" rel="noopener noreferrer">
                 <FormattedMessage
                   id={`topLine.developers`}
                   defaultMessage={`Developers`}

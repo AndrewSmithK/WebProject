@@ -51,7 +51,7 @@ export default class GapHeader extends React.Component {
                   />
                 </Link>
 
-                <a className="link text-white rwd-line" href="https://www.qover.me/docs/" target="_blank">
+                <a className="link text-white rwd-line" href="https://www.qover.me/docs/" target="_blank" rel="noopener noreferrer">
                   <FormattedMessage
                     id={`gap.linkToDoc`}
                     defaultMessage={`See the documentation`}

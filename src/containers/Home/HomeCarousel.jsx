@@ -130,7 +130,6 @@ export default class HomeCarousel extends Component {
       centerMode: true,
       swipe: false,
       swipeToSlide: false,
-      centerMode: true,
       arrows: false,
       infinite: false,
       initialSlide: 2,

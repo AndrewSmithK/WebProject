@@ -92,7 +92,7 @@ export default class TopLine extends React.Component {
               </div>
               <ul>
                 <li>
-                  <a href="https://www.qover.me/docs/" target="_blank">
+                  <a href="https://www.qover.me/docs/" target="_blank" rel="noopener noreferrer">
                     <FormattedMessage id={`footer.apiDoc`} defaultMessage={`API Documentation`}/>
                   </a>
                 </li>

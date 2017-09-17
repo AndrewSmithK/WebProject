@@ -448,7 +448,7 @@ export default class Registration extends Component {
                             <SelectField style={{width:'90px'}} {...selectFieldSettings} value={1} floatingLabelText="Phone Number" >
                               <MenuItem value={1} primaryText="+32" />
                             </SelectField>
-                            <img src={Flag} style={{position:'relative', bottom:'42px', left: '50px'}}/>
+                            <img src={Flag} alt="flag" style={{position:'relative', bottom:'42px', left: '50px'}}/>
                           </div>
 
                           <div className="form__field form__field">
@@ -460,7 +460,7 @@ export default class Registration extends Component {
                               floatingLabelText="Number"
                               name="number"
                               type="tel"
-                              validators={['required', 'matchRegexp:^[-+\/\s]*([0-9][-\(\) ]*){9}$']}
+                              validators={['required', 'matchRegexp:^[-+\\/\\s]*([0-9][-\\(\\) ]*){9}$']}
                               errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
                                     />
                                 </div>
