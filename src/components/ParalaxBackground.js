@@ -11,7 +11,8 @@ export default createReactClass({
   },
   componentDidMount: function() {
     // Add event listener to the window
-    window.addEventListener('scroll', () => setInterval(this._calcTranslation), 10);
+    // Disable scroll listener if width les than 992px
+    window.innerWidth > 992 && window.addEventListener('scroll', () => setInterval(this._calcTranslation), 10);
 
     // Set basic style rules for a parallax effect
     this.refs.background.setAttribute('style', 'width: 100%; top: 0; bottom: 0; background-size: cover ;background-position: 50% 0; background-repeat: no-repeat;');
