@@ -44,7 +44,7 @@ export default class TopLine extends React.Component {
   }
 
   render() {
-    return (<div className={(window.location.pathname).includes('/our-products/gap-insurance') ? 'opaque' : null}>
+    return (<div className={global.window ? ((global.window.location.pathname).includes('/our-products/gap-insurance') ? 'opaque' : null) : null}>
       <Hiring />
       <div className={`container-fluid ${this.state.navClass}`} id="topline">
         <div className="container pr-0 pl-0">
