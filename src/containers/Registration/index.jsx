@@ -162,6 +162,7 @@ export default class Registration extends Component {
         //     setTimeout(() => this.setState({ submitted: false }), 5000)
         // })
         console.log('handle submit')
+        this.thirdStep()
     }
 
     firstStepCheck() {
@@ -438,7 +439,6 @@ export default class Registration extends Component {
                           onChange={this.handleChange}
                           floatingLabelText="Email"
                           name="email"
-                          type="email"
                           validators={['required', 'isEmail']}
                           errorMessages={['this field is required', 'email is not valid']}
                         />
@@ -466,7 +466,7 @@ export default class Registration extends Component {
                                 </div>
                             </div>
 
-                            <button onClick={this.thirdStep.bind(this)} disabled={!this.state.submitted2} className="btn" type="submit">Continue</button>
+                            <button disabled={!this.state.submitted2} className="btn" type="submit">Continue</button>
                         </div> :
                         null
                     }
