@@ -439,6 +439,7 @@ export default class Registration extends Component {
                           onChange={this.handleChange}
                           floatingLabelText="Email"
                           name="email"
+                          type="email"
                           validators={['required', 'isEmail']}
                           errorMessages={['this field is required', 'email is not valid']}
                         />
