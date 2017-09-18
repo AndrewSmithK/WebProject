@@ -168,6 +168,12 @@
     }
   }
 
+  @supports (-ms-ime-align:auto) {
+    .infographic {
+      background: url('../../images/HomePage/value-chain-v-4.png  ') no-repeat;
+    }
+  }
+
   .descripts {
     display: flex;
     padding: 20px 0 0;
