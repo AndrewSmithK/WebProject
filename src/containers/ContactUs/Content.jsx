@@ -26,6 +26,15 @@ export default class Content extends React.Component {
 
   formSubmit() {
     alert('Success. In the near future you will receive an answer.')
+    this.setState({
+      formData: {
+        company: '',
+        email: '',
+        object: '',
+        phone: '',
+        message: ''
+      }
+    })
   }
 
   handleChange(event) {
