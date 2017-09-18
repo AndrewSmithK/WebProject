@@ -25,10 +25,17 @@ export default (props) => (
           </p>
         </div>
         <button className="btn">
-          <FormattedMessage
-            id={`products.traditional.ComingSoon`}
-            defaultMessage={`More info`}
-          />
+          {
+            props.status === 'soon' ?
+            <FormattedMessage
+              id={`products.traditional.comingSoon`}
+              defaultMessage='Coming soon'
+            /> :
+            <FormattedMessage
+              id={`products.traditional.moreІnfo`}
+              defaultMessage='More info'
+            />
+          }
         </button>
       </div>
     </div>
