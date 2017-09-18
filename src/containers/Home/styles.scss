@@ -531,13 +531,14 @@
 
       .what-desc {
         span {
+          position: relative;
           padding-left: 12px;
           
           &:before {
             position: absolute;
             top: 0;
             left: 0;
-            content: '';
+            content: '•';
           }
         }
       }
