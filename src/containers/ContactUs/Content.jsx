@@ -77,6 +77,7 @@ export default class Content extends React.Component {
                     validators={['required', 'isEmail']}
                     errorMessages={['this field is required', 'email is not valid']}
                     name="email"
+                    type="email"
                     width="half"
                     hintText="nathalie@qover.me"
                     floatingLabelText="Email"
