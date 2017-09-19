@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import IconReferral from '../../images/HomePage/Explanation/icon-referral.svg';
 import IconLead from '../../images/HomePage/Explanation/icon-lead.svg';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormattedHTMLMessage } from 'react-intl-phraseapp';
+import FormattedHTMLMessage from '../../components/phrase';
 
 export default class DropdownItem extends Component {
   constructor(props) {

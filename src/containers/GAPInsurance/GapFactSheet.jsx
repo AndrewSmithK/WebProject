@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import IconCheckbox from '../../images/OurProducts/GapInsurance/icon-checkbox.svg';
 import IconClips from '../../images/OurProducts/GapInsurance/clips.svg';

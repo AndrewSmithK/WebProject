@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink as Link } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../phrase';
 
 import IconClose from '../../images/Header/icon-close.svg';
 import Logo from '../../images/Header/logo-qover.svg';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import LogoLloyds from '../../images/HomePage/Parthners/logo-lloyds.svg';
 import LogoMunich from '../../images/HomePage/Parthners/logo-munich-re.svg';

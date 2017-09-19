@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import IconSettings from '../../images/About/WhyQover/icon-settings.svg';
 import IconEnergy from '../../images/About/WhyQover/icon-energy.svg';

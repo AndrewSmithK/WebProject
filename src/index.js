@@ -3,10 +3,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { initializePhraseAppEditor } from 'react-intl-phraseapp';
-import initializePhraseAppEnabled from './scripts/phraceappEnable';
+// import injectTapEventPlugin from 'react-tap-event-plugin';
+// import { initializePhraseAppEditor } from 'react-intl-phraseapp';
+// import initializePhraseAppEnabled from './scripts/phraceappEnable';
 // import { initConf } from '../config/phraseapp';
 
 import $ from 'jquery'
@@ -16,14 +16,14 @@ import configureStore from './store'
 import App from './containers/App'
 import registerServiceWorker from './registerServiceWorker'
 
-injectTapEventPlugin()
-initializePhraseAppEnabled();
-initializePhraseAppEditor({
-  projectId: '2a6ee73abebe1c645eca1468265100eb',
-  phraseEnabled: localStorage.phraseEnabled === 'true',
-  prefix: '[[__',
-  suffix: '__]]'
-});
+// injectTapEventPlugin()
+// initializePhraseAppEnabled();
+// initializePhraseAppEditor({
+//   projectId: '2a6ee73abebe1c645eca1468265100eb',
+//   phraseEnabled: localStorage.phraseEnabled === 'true',
+//   prefix: '[[__',
+//   suffix: '__]]'
+// });
 
 window.jQuery = $
 window.Popper = Popper

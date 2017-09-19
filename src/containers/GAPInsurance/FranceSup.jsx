@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import IconPhonelink from '../../images/OurProducts/GapInsurance/phonelink-material.svg';
 import Pdf from '../../images/OurProducts/GapInsurance/icon-pdf.svg';

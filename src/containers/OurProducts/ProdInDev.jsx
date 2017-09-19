@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 const ProdItem = ({itemId, title, desc, className, onSelect, selected}) => {
 	const handleClick = () => {

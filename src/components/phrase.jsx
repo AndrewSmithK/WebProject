@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormattedMessage } from 'react-intl-phraseapp'
+import {FormattedMessage} from 'react-intl-phraseapp'
 
 export default (props) => {
     if (process.env.BROWSER) {
@@ -11,10 +11,9 @@ export default (props) => {
         )
     } else {
         return (
-            <div>
-                !!!no phraseapp!!!
+            <span>
                 {props.defaultMessage}
-            </div>
+            </span>
         )
     }
 }

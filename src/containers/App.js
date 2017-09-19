@@ -7,18 +7,18 @@ import Default from '../layouts/Default';
 import TermsDefault from '../layouts/TermsDefault';
 import NotFound from '../components/NotFound';
 
-// import Home from './Home';
-// import About from './About';
-// import OurProducts from './OurProducts';
-// import GapInsurance from './GAPInsurance';
-// import ContactUs from './ContactUs';
-// import TermsNotices from './TermsPolicies/TermsNotices';
-// import TermsCookies from './TermsPolicies/TermsCookies';
-// import TermsConflicts from './TermsPolicies/TermsConflicts';
-// import TermsDataPrivacy from './TermsPolicies/TermsDataPrivacy';
-// import TermsClaimNotif from './TermsPolicies/TermsClaimNotif';
-// import TermsComplaints from './TermsPolicies/TermsComplaints';
-// import Registration from './Registration';
+import Home from './Home';
+import About from './About';
+import OurProducts from './OurProducts';
+import GapInsurance from './GAPInsurance';
+import ContactUs from './ContactUs';
+import TermsNotices from './TermsPolicies/TermsNotices';
+import TermsCookies from './TermsPolicies/TermsCookies';
+import TermsConflicts from './TermsPolicies/TermsConflicts';
+import TermsDataPrivacy from './TermsPolicies/TermsDataPrivacy';
+import TermsClaimNotif from './TermsPolicies/TermsClaimNotif';
+import TermsComplaints from './TermsPolicies/TermsComplaints';
+import Registration from './Registration';
 import Signin from './Signin';
 import Forgot from './Forgot';
 
@@ -53,7 +53,7 @@ export default () => (
     <ScrollToTop>
       <Switch>
         { /* Home (main) route */ }
-        {/* <DefaultLayout exact path="/" component={Home} />
+        <DefaultLayout exact path="/" component={Home} />
         <DefaultLayout path="/about" component={About} />
         <DefaultLayout path="/contact-us" component={ContactUs} />
         <DefaultLayout exact path="/our-products" component={OurProducts} />
@@ -64,7 +64,7 @@ export default () => (
         <TermsLayout path="/terms-policies/conflicts" component={TermsConflicts} />
         <TermsLayout path="/terms-policies/data" component={TermsDataPrivacy} />
         <TermsLayout path="/terms-policies/notification" component={TermsClaimNotif} />
-        <TermsLayout path="/terms-policies/complaints" component={TermsComplaints} /> */}
+        <TermsLayout path="/terms-policies/complaints" component={TermsComplaints} />
         { /* Catch all route */ }
         <Route path="/signin" component={Signin} />
         <Route path="/forgot" component={Forgot} />

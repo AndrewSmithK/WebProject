@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import './ProductsCarousel.scss'
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Parallax from '../../components/ParalaxBackground.js';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 export default class Header extends React.Component {
   render() {

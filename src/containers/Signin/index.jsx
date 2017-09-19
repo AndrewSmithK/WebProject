@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FormattedMessage from './phrase'
+import FormattedMessage from '../../components/phrase'
 
 import Form from '../../components/forms';
 import SigninForm from '../../components/forms/signin-form';

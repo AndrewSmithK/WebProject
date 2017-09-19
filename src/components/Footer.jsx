@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {FormattedMessage} from 'react-intl-phraseapp';
+import FormattedMessage from './phrase';
 
 import LogoQover from '../images/Footer/logo-qover.svg';
 import Twitter from '../images/Footer/twitter.svg';

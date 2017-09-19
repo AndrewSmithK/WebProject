@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import QoverWheel from '../../images/About/Circle/qover-wheel.svg';
 import qover from '../../images/About/WhyQover/q-qover.svg';

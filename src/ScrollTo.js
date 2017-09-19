@@ -7,7 +7,7 @@ class ScrollToTop extends React.Component {
     const urlHasHash = window.location.hash !== '';
 
     if (hasLocationChanged && !urlHasHash) {
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
     }
   }
 

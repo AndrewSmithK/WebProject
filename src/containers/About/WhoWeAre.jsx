@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 import { Link } from 'react-router-dom'
 
 import Quentin from '../../images/About/Who-we-are/quentin.png';

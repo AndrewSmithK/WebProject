@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import Api from '../../images/HomePage/RobustApi/api-image.jpg';
 import IconDevBig from '../../images/HomePage/RobustApi/icon-dev-big.svg';

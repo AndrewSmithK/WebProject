@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 import _ from 'lodash'
 
 import Carousel from './ProductsCarousel';

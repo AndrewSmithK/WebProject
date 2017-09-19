@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from './phrase';
 
 import Hiring from "./Hiring";
 import MobileNavigation from './MobileNavigation';

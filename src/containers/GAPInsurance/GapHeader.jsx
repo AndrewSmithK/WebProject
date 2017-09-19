@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Parallax from '../../components/ParalaxBackground.js';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import ScreenshotApi from '../../images/OurProducts/GapInsurance/screeshot-api.png';
 import SmallApi from '../../images/OurProducts/GapInsurance/small-api.jpg';

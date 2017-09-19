@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import dieteren from '../../images/OurProducts/GapInsurance/logo-dieteren-white.svg';
 import Fiat from '../../images/OurProducts/GapInsurance/logo-fiat.png';

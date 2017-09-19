@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Parallax from '../../components/ParalaxBackground.js';
 import ParallaxComponent from '../../components/ParalaxComponent';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 
 import LloydsLogoSmall from '../../images/HomePage/Header/lloyds-logo-small.svg';
 import imacMobile from '../../images/HomePage/Header/imac-mobile.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl-phraseapp';
+import FormattedMessage from '../../components/phrase';
 import dashboard from '../../images/HomePage/GetStarted/img-dashboard.png';
 
 export default class GetStarted extends React.Component {
