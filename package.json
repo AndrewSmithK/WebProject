@@ -71,6 +71,7 @@
     "react-slick": "^0.15.4",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "slick-carousel": "^1.7.1"
   },
@@ -79,7 +80,7 @@
     "start:server": "cross-env NODE_ENV=development node server/index.js",
     "now-start": "cross-env NODE_ENV=production node server/index.js",
     "forever": "cross-env NODE_ENV=production forever start -c node ./server/index.js",
-    "build": "node scripts/build.js",
+    "build": "rimraf build && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
