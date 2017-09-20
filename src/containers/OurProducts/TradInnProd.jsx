@@ -10,11 +10,11 @@ import Item from './ProductItem'
 import AccidentHealth from '../../images/OurProducts/accident-health.png';
 import Travel from '../../images/OurProducts/travel.png';
 import JobLoss from '../../images/OurProducts/job-loss.png';
-import Landlord from '../../images/OurProducts/landlord.png';
+// import Landlord from '../../images/OurProducts/landlord.png';
 import GapInsurance from '../../images/OurProducts/gap.png';
-import LightCasco from '../../images/OurProducts/light-casco.png';
-import FullCasco from '../../images/OurProducts/full-casco.png';
-import DriverAccident from '../../images/OurProducts/driver-accident.png';
+// import LightCasco from '../../images/OurProducts/light-casco.png';
+// import FullCasco from '../../images/OurProducts/full-casco.png';
+// import DriverAccident from '../../images/OurProducts/driver-accident.png';
 
 const mock = [
   {
@@ -22,6 +22,7 @@ const mock = [
     'title': 'GAP Insurance',
     'text': 'Protect 100% of the purchase price of your car up to 5 years.',
     'status': 'new',
+    'url': '/our-products/gap-insurance',
     'category': 'motor',
     'country': 'belgium'
   }, {
