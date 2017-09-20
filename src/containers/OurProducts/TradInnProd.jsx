@@ -30,8 +30,8 @@ const mock = [
     'title': 'Accident & Health',
     'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
     'status': 'soon',
-    'category': 'motor',
-    'country': 'germany'
+    'category': 'lifestyle',
+    'country': 'belgium'
   }, {
     'image': Travel,
     'title': 'Travel',
