@@ -114,7 +114,6 @@ export default class Registration extends Component {
                 description: '',
                 country: 1
             },
-            showSpinner: false,
             submitted: false,
             submitted2: false,
             showInsurance: false,
@@ -192,21 +191,8 @@ export default class Registration extends Component {
 
     secondStep() {
         this.setState({
-            secondStep: true,
-            showSpinner: true
+            secondStep: true
         })
-
-        setTimeout(() => {
-            if (typeof window !== 'undefined') {
-                let items = document.getElementsByClassName('opacity-for')
-                for (let i = 0, len = items.length; i < len; i++) {
-                    items[i].classList.add('opacity-none')
-                }
-            }
-            this.setState({
-                showSpinner: false
-            })
-        }, 1000)
     }
 
     thirdStep() {
@@ -226,8 +212,6 @@ export default class Registration extends Component {
               </div>
 
               <div className="main-block">
-
-                {this.state.showSpinner && <Loading />}
 
                 {this.state.thirdStep ?
                   <ThankYouScreen /> :
@@ -361,7 +345,6 @@ export default class Registration extends Component {
                             value={formData.description}
                             onChange={this.handleChange}
                             multiLine
-                            rows={3}
                             floatingLabelText="Short description of your business"
                             name="description"
                             validators={['required', 'matchRegexp:^.{0,250}$']}
