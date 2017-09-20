@@ -12,7 +12,7 @@ import IconRevenueSmall from '../../images/OurProducts/icon-revenue-small.svg';
 export default class InnProducts extends React.Component {
   render() {
     return <section className="bg-light-grey" id="our-features">
-      <div className="header hide">
+      <div className="header">
         <h2 className="title text-blue text-center">
           <FormattedMessage
             id={`products.innProducts.title`}
