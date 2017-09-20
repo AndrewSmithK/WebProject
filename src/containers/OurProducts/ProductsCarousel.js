@@ -9,8 +9,7 @@ export default class ProductsCarousel extends Component {
         const settings = {
             dots: true,
             infinite: false,
-            centerMode: true,
-            initialSlide: 1
+            centerMode: true
         }
         return (
             <div className="products-carousel">
