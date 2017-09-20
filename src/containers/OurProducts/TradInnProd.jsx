@@ -25,28 +25,6 @@ const mock = [
     'category': 'motor',
     'country': 'belgium'
   }, {
-    'image': LightCasco,
-    'title': 'Light Casco',
-    'text': 'Protect your vehicle against fire, glass breakage, natural distaster & animal collision.',
-    'status': 'soon',
-    'category': 'motor',
-    'country': 'belgium'
-  }, {
-    'image': FullCasco,
-    'title': 'Full Casco',
-    'text': 'Protect your vehicle against most occurrences.',
-    'status': 'soon',
-    'category': 'motor',
-    'country': 'belgium'
-  }, {
-    'image': DriverAccident,
-    'title': 'Driver Accident',
-    'text': 'Cover bodily injuries to the driver when involved in an accident and is at fault.',
-    'status': 'soon',
-    'category': 'motor',
-    'country': 'belgium'
-  },
-  {
     'image': AccidentHealth,
     'title': 'Accident & Health',
     'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
@@ -66,13 +44,6 @@ const mock = [
     'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
     'status': 'soon',
     'category': 'lifestyle',
-    'country': 'belgium'
-  }, {
-    'image': Landlord,
-    'title': 'Landlord Insurance',
-    'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
-    'status': 'soon',
-    'category': 'motor',
     'country': 'belgium'
   }
 ]
