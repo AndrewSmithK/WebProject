@@ -52,7 +52,7 @@ const mock = [
     'text': 'Protect you from the financial loss from an accident, whether it occurs at home or at work.',
     'status': 'soon',
     'category': 'motor',
-    'country': 'france'
+    'country': 'germany'
   }, {
     'image': Travel,
     'title': 'Travel',
@@ -89,6 +89,10 @@ export default class TradInnProd extends React.Component {
 
   changeCountry(event, index, country) {
     const category = this.state.category
+    if (country ==='other') {
+      typeof window !== 'undefined' && window.history.go('/our-products')
+      return
+    }
     if (country === 'all') {
       this.setState({
         country: country,
@@ -237,7 +241,7 @@ export default class TradInnProd extends React.Component {
             <MenuItem value={'all'} primaryText="All" />
             <MenuItem value={'belgium'} primaryText="Belgium" />
             <MenuItem value={'germany'} primaryText="Germany" />
-            <MenuItem value={'france'} primaryText="France" />
+            <MenuItem value={'other'} primaryText="Other" />
           </SelectField>
         </div>
 
