@@ -152,7 +152,7 @@ export default class TopLine extends React.Component {
                     <ul>
                       <li>
                         <div className="item">
-                          <Link to="/" style={{ color: '#31cfda' }}>
+                          <Link to="/our-products" style={{ color: '#31cfda' }}>
                             <FormattedMessage
                               id={`topLine.ourProducts.accidentHealth`}
                               defaultMessage={`Accident & health`}
@@ -168,7 +168,7 @@ export default class TopLine extends React.Component {
                       </li>
                       <li>
                         <div className="item">
-                          <Link to="/" style={{ color: '#3aa2d3' }}>
+                          <Link to="/our-products" style={{ color: '#3aa2d3' }}>
                             <FormattedMessage
                               id={`topLine.ourProducts.travel`}
                               defaultMessage={`Travel`}
@@ -184,7 +184,7 @@ export default class TopLine extends React.Component {
                       </li>
                       <li>
                         <div className="item">
-                          <Link to="/" style={{ color: '#317bda' }}>
+                          <Link to="/our-products" style={{ color: '#317bda' }}>
                             <FormattedMessage
                               id={`topLine.ourProducts.jobLoss`}
                               defaultMessage={`Job loss`}

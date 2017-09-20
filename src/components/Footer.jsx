@@ -74,13 +74,13 @@ export default class TopLine extends React.Component {
                   <Link onClick={this.disableLink} to="/">Driver Accident</Link>
                 </li>
                 <li>
-                  <Link onClick={this.disableLink} to="/">Accident & Health</Link>
+                  <Link to="/our-products">Accident & Health</Link>
                 </li>
                 <li>
-                  <Link onClick={this.disableLink} to="/">Travel</Link>
+                  <Link to="/our-products">Travel</Link>
                 </li>
                 <li>
-                  <Link onClick={this.disableLink} to="/">Job Loss</Link>
+                  <Link to="/our-products">Job Loss</Link>
                 </li>
               </ul>
             </div>
