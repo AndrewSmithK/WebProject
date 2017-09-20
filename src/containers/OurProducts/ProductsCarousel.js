@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import { FormattedMessage } from 'react-intl-phraseapp';
+import { FormattedMessage } from 'react-intl-phraseapp'
+import { Link } from 'react-router-dom'
 
 import './ProductsCarousel.scss'
 
@@ -38,12 +39,21 @@ export default class ProductsCarousel extends Component {
                                             />
                                         </p>
                                     </div>
-                                    <button className="btn">
-                                        <FormattedMessage
-                                            id={`products.traditional.ComingSoon`}
-                                            defaultMessage={`More info`}
-                                        />
-                                    </button>
+                                    {
+                                        item.status === 'soon' ?
+                                            <button className="btn">
+                                                <FormattedMessage
+                                                    id={`products.traditional.comingSoon`}
+                                                    defaultMessage='Coming soon'
+                                                />
+                                            </button> :
+                                            <Link to={item.url} className="btn">
+                                                <FormattedMessage
+                                                    id={`products.traditional.moreІnfo`}
+                                                    defaultMessage='More info'
+                                                />
+                                            </Link>
+                                    }
                                 </div>
                             </div>
                         ))
