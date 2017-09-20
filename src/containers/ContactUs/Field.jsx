@@ -55,7 +55,7 @@ export default class Field extends Component {
           }}
           hintStyle={{
             fontSize: '18px',
-            color: '#317bda',
+            color: '#86ade6',
             bottom: '18px'
           }}
           underlineStyle={{
