@@ -46,7 +46,7 @@ export default class GapCase extends React.Component {
                   <p className="text">
                     <FormattedMessage 
                       id={`gap.case.left.email`}
-                      defaultMessage={`Sending an email to claims@qover.me with all relevant and required documents in the attachment`}
+                      defaultMessage={`Sending an email to claims@qover.be with all relevant and required documents in the attachment`}
                     />
                   </p>
                 </div>
