@@ -18,7 +18,7 @@ export default class TermsSideBar extends React.Component {
         </TermsItem>
 
         <TermsItem title="Conflicts of Interest & Inducement Policy" path="/terms-policies/conflicts">
-          <li><Link to="/terms-policies">Link   Information on the policy on conflicts of interest</Link></li>
+          <li><Link to="/terms-policies">Information on the policy on conflicts of interest</Link></li>
           <li><Link to="/terms-policies">Information Qover's policy on inducements</Link></li>
         </TermsItem>
 
