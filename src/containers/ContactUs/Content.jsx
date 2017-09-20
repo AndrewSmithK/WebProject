@@ -1,12 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
-import { ValidatorForm } from 'react-material-ui-form-validator'
+import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 
-import Field from './Field';
 import poneIcon from '../../images/contact-us/icon-phone.svg';
 import mailIcon from '../../images/contact-us/icon-mail.svg';
 import pinIcon from '../../images/contact-us/icon-pin.svg';
+
+import './Field.scss'
+
+const settings = {
+  inputStyle: {
+    paddingBottom: '18px',
+    fontSize: '18px',
+    color: '#317bda'
+  },
+  textareaStyle: {
+    paddingBottom: '7px',
+    fontSize: '18px',
+    color: '#317bda'
+  },
+  floatingLabelStyle: {
+    top: '30px',
+    fontSize: '14.667px',
+    color: '#5b7289',
+    fontFamily: 'Roboto'
+  },
+  hintStyle: {
+    fontSize: '18px',
+    color: '#86ade6',
+    bottom: '18px'
+  },
+  underlineStyle: {
+    borderBottomWidth: '2px',
+    borderBottomColor: '#317bda'
+  },
+  errorStyle: {
+    backgroundColor: '#f4566a',
+    color: '#f4566a',
+    padding: '10px',
+    fontSize: '12px',
+    fontWeight: '500'
+  }
+}
 
 export default class Content extends React.Component {
   constructor(props) {
@@ -20,7 +56,7 @@ export default class Content extends React.Component {
         message: ''
       }
     }
-
+    this.handleBlur = this.handleBlur.bind(this)
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -43,6 +79,10 @@ export default class Content extends React.Component {
     this.setState({ formData })
   }
 
+  handleBlur(event) {
+    this.refs[event.target.name].validate(event.target.value);
+}
+
   render() {
     const { formData } = this.state
 
@@ -58,19 +98,26 @@ export default class Content extends React.Component {
                     defaultMessage={`Send us a message`}
                   />
                 </h3>
-                <ValidatorForm className="row form" onSubmit={this.formSubmit.bind(this)}>
-                  <Field
+                <ValidatorForm className="row form" instantValidate={false} onSubmit={this.formSubmit.bind(this)}>
+                  <div className='field half'><TextValidator
+                    {...settings}
+                    fullWidth
+                    floatingLabelFixed
                     className="text-field--fixed"
                     validators={['required']}
                     errorMessages={['this field is required']}
                     onChange={this.handleChange}
                     value={formData.company}
                     name="company"
-                    width="half"
                     hintText="Company"
                     floatingLabelText="Name/Company"
-                  />
-                  <Field
+                    onBlur={this.handleBlur}
+                    ref="company"
+                  /></div>
+                  <div className='field half'><TextValidator
+                    {...settings}
+                    fullWidth
+                    floatingLabelFixed
                     className="text-field--fixed"
                     onChange={this.handleChange}
                     value={formData.email}
@@ -78,45 +125,59 @@ export default class Content extends React.Component {
                     errorMessages={['this field is required', 'email is not valid']}
                     name="email"
                     type="email"
-                    width="half"
                     hintText="nathalie@qover.me"
                     floatingLabelText="Email"
-                  />
-                  <Field
+                    onBlur={this.handleBlur}
+                    ref="email"
+                  /></div>
+                  <div className='field half'><TextValidator
+                    {...settings}
+                    fullWidth
+                    floatingLabelFixed
                     className="text-field--fixed"
                     validators={['required']}
                     errorMessages={['this field is required']}
                     onChange={this.handleChange}
                     value={formData.object}
                     name="object"
-                    width="half"
                     hintText="i ♥ Qover"
                     floatingLabelText="Object"
-                  />
-                  <Field
+                    onBlur={this.handleBlur}
+                    ref="object"
+                  /></div>
+                  <div className='field half'><TextValidator
+                    {...settings}
+                    fullWidth
+                    floatingLabelFixed
                     className="text-field--fixed"
                     validators={['required', 'matchRegexp:^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$']}
                     errorMessages={['this field is required', 'The format of the phone number is not correct.']}
                     onChange={this.handleChange}
                     value={formData.phone}
                     name="phone"
-                    width="half"
                     hintText="+32478982241"
                     type="tel"
                     floatingLabelText="Phone Number"
-                  />
-                  <Field
+                    onBlur={this.handleBlur}
+                    ref="phone"
+                  /></div>
+                  <div className='field full'><TextValidator
+                    {...settings}
+                    fullWidth
+                    floatingLabelFixed
+                    className="text-field"
                     validators={['required']}
                     errorMessages={['this field is required']}
                     onChange={this.handleChange}
                     value={formData.message}
                     name="message"
-                    width="full"
                     multiLine
                     rows={1}
                     rowsMax={5}
                     floatingLabelText="Type your message here"
-                  />
+                    onBlur={this.handleBlur}
+                    ref="message"
+                  /></div>
 
                   <button className="btn" type="submit">Submit</button>
                 </ValidatorForm>
