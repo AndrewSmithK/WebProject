@@ -61,7 +61,7 @@ export default class Subscribe extends React.Component {
         <div className="row">
           <form onSubmit={this.handleFormSubmit}>
             <input
-              type="text"
+              type="email"
               placeholder="please@qover.me"
               onChange={this.handleEmailChange}
             />
