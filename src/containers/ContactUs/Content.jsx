@@ -133,7 +133,7 @@ export default class Content extends React.Component {
                   </div>
                 </li>
                 <li>
-                  <span><i>contact@qover.be</i></span>
+                  <span><i>contact@qover.com</i></span>
                   <div className="icon">
                     <img src={mailIcon} alt="" />
                   </div>
