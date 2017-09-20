@@ -44,9 +44,9 @@ export default class TermsSideBar extends React.Component {
         </TermsItem>
 
         <div className="item-title">
-          <Link to="/terms-policies/FAQ">
+          <a href="https://qover.zendesk.com/hc/en-us" target="_blank" rel="noopener noreferrer">
             FAQ
-          </Link>
+          </a>
         </div>
       </div>
     );

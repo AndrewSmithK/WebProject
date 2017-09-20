@@ -126,7 +126,7 @@ export default class GapInsurance extends React.Component {
                       defaultMessage={`More info about the GAP`}
                     />
                   </Link>
-                  <Link className="link text-white" to="/contact-us">
+                  <Link className="link text-white" to="/registration">
                 <FormattedMessage
                   id={`home.gap.link`}
                   defaultMessage={`Become a partner`}
