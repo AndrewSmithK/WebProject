@@ -523,7 +523,7 @@ export default class WhoWeAre extends React.Component {
         </div>
 
         <div className="text-center d-hidden">
-          <div className="qc-uppercontainer">
+          <div className={this.state.visible ? 'd-none' : 'qc-uppercontainer'}>
             <div className="qc-container">
               <div className="qc"></div>
               <div className="qc middle"></div>
