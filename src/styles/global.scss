@@ -328,6 +328,9 @@ a {
 
     .burger-menu-icon {
       color: #317bda;
+      i {
+        cursor: pointer;
+      }
     }
 
     a {

@@ -16,6 +16,9 @@
   .close-button {
     float: right;
     margin: 13px 13px 0 0;
+    img {
+      cursor: pointer;
+    }
   }
 
   .mobile-logo {
