@@ -23,7 +23,7 @@ export default class GapVideo extends React.Component {
     return <section className="section" id="gap-video">
       {
         this.state.play 
-          ? <div className="vimeo-box"><iframe title="GAP Insurance" src="https://www.youtube.com/embed/9mTyoXK58vQ?rel=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+          ? <div className="vimeo-box"><iframe title="GAP Insurance" src="https://www.youtube.com/embed/9mTyoXK58vQ?rel=0&autoplay=1" frameborder="0" allowFullScreen="allowFullScreen" ></iframe></div>
           : <div className="front">
               <h2 className="title">
               <FormattedMessage 
