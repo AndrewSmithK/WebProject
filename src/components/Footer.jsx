@@ -13,7 +13,7 @@ export default class TopLine extends React.Component {
   }
   render() {
     return (
-      <footer className="footer bg-dark-blue">
+      <footer className="footer bg-blue-footer">
         <div className="container">
           <div className="row text-white">
             <div className="logo" style={{
