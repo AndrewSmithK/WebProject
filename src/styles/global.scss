@@ -552,7 +552,9 @@ a {
       float: right;
       line-height: 60px;
       font-size: 21px;
-      cursor: default;
+      i {
+        cursor: pointer;
+      }
     }
   }
 }
