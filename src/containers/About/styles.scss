@@ -121,6 +121,10 @@
         font-weight: bold;
       }
 
+      .regular {
+        font-weight: 400;
+      }
+
       .text {
         line-height: 18px;
         font-weight: 500;
@@ -631,6 +635,7 @@
           position: absolute;
           left: 0;
         }
+
         .text {
           font-size: 13px;
           line-height: 18px;
@@ -652,6 +657,10 @@
       .text {
         line-height: 18px;
         font-weight: 500;
+      }
+
+      .regular {
+        font-weight: 400;
       }
 
       .text-title {

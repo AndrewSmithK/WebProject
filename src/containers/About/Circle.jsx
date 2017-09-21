@@ -17,7 +17,7 @@ export default class Circle extends React.Component {
                 id={`about.insertion.p1.part1`}
                 defaultMessage={`With our business model, you keep the same level of commission`}
             /></b>
-            <span className="high-priority"> <FormattedMessage
+            <span className="regular high-priority"> <FormattedMessage
                 id={`about.insertion.p1.part2`}
                 defaultMessage={`(more if you wish to administrate your customer contracts yourself)`}
             />
