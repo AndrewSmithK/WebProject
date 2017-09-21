@@ -209,6 +209,7 @@ export default class TradInnProd extends React.Component {
             <MenuItem value={'all'} primaryText="All" />
             <MenuItem value={'belgium'} primaryText="Belgium" />
             <MenuItem value={'germany'} primaryText="Germany" />
+            <MenuItem value={'france'} primaryText="France" />
           </SelectField>
         </div>
 
