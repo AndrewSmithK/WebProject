@@ -957,8 +957,38 @@
       padding-bottom: 70px;
     }
   }
+
 }
 
+@media screen and (min-width: $break-mobile) and (max-width: 767px) {
+  #advantages {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .container {
+      margin-bottom: 0;
+      .item-box {
+        .item {
+          margin-bottom: 30px;
+          .item-icon {
+            float: left;
+            text-align: center;
+            margin: 0;
+            margin-left: 25px;
+            margin-right: 18px;
+            width: 42px;
+          }
+          .title {
+            margin: 0 0 11px 0;
+            overflow: hidden;
+          }
+          .text {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: $break-mobile) {
   .hide {
     display: none;
