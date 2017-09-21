@@ -26,13 +26,16 @@ export default class GapSupport extends React.Component {
       flag: FlagBelgium
     },
     {
-      title: 'France',
+      title: 'Other',
       flag: ''
     }
   ]
 
   select(el) {
-    console.log(el);
+    if (el.title ==='Other') {
+      typeof window !== 'undefined' && window.location.replace('/our-products')
+      return
+    }
     this.setState({ selected: el });
   }
 
