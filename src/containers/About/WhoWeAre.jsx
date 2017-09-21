@@ -139,7 +139,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Denis.position`}
-                    defaultMessage={`Full Stack Dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -158,7 +158,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Ali.position`}
-                    defaultMessage={`Back End Dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -177,7 +177,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Romuald.position`}
-                    defaultMessage={`Full Stack Dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -196,7 +196,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Juan.position`}
-                    defaultMessage={`Front End Dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -272,7 +272,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Hamza.position`}
-                    defaultMessage={`Junior dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -291,7 +291,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Emilien.position`}
-                    defaultMessage={`Junior dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -310,7 +310,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Simon.position`}
-                    defaultMessage={`Junior dev`}
+                    defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
@@ -359,25 +359,25 @@ export default class WhoWeAre extends React.Component {
                 </p>
               </div>
             </div>
-            <div className="item">
-              <div className="icon">
-                <img src={AlexandreRoba} alt="alexandre-roba" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.AlexandreRoba.position`}
-                    defaultMessage={`Software Engineer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.AlexandreRoba.name`}
-                    defaultMessage={`Alexandre Roba`}
-                  />
-                </p>
-              </div>
-            </div>
+            {/*<div className="item">*/}
+              {/*<div className="icon">*/}
+                {/*<img src={AlexandreRoba} alt="alexandre-roba" />*/}
+              {/*</div>*/}
+              {/*<div className="text">*/}
+                {/*<p className="icon-title">*/}
+                  {/*<FormattedMessage*/}
+                    {/*id={`about.whoWeAre.team.AlexandreRoba.position`}*/}
+                    {/*defaultMessage={`Software Engineer`}*/}
+                  {/*/>*/}
+                {/*</p>*/}
+                {/*<p className="icon-text">*/}
+                  {/*<FormattedMessage*/}
+                    {/*id={`about.whoWeAre.team.AlexandreRoba.name`}*/}
+                    {/*defaultMessage={`Alexandre Roba`}*/}
+                  {/*/>*/}
+                {/*</p>*/}
+              {/*</div>*/}
+            {/*</div>*/}
             <div className="item">
               <div className="icon">
                 <img src={AnrienLebrun} alt="adrien-lebrun" />
