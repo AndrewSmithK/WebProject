@@ -150,7 +150,7 @@ export default class Content extends React.Component {
                     fullWidth
                     floatingLabelFixed
                     className="text-field--fixed"
-                    validators={['required', 'matchRegexp:^[\\+]?\\d{1,100}$']}
+                    validators={['required', 'matchRegexp:^[\\+]?\\d{3,100}$']}
                     errorMessages={['this field is required', 'The format of the phone number is not correct.']}
                     onChange={this.handleChange}
                     value={formData.phone}
