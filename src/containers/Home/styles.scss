@@ -700,6 +700,7 @@
 
   .container {
     margin: 40px auto auto;
+    position: relative;
 
     .justify-content-around {
       width: 1000px;
@@ -715,6 +716,33 @@
   }
 
   @media screen and (max-width: 992px) {
+    .test {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        // background-color: white;
+        width: 40px;
+        height: 45px;
+        left: 0px;
+        top: 2px;
+        // box-shadow: 10px 0 10px red;
+        background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+        z-index: 1;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        // background-color: white;
+        width: 40px;
+        height: 45px;
+        right: 0px;
+        top: 2px;
+        // box-shadow: -10px 0 10px red;
+        background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+      }
+    }
     .container {
       padding-top: 10px;
       overflow-x: scroll;

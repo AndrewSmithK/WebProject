@@ -18,6 +18,7 @@ export default class Partners extends React.Component {
           defaultMessage={`Our trusted partners`}
         />
       </h3>
+      <div className="test">
       <div className="container">
         <div className="row justify-content-around">
           <div className="icon">
@@ -41,6 +42,7 @@ export default class Partners extends React.Component {
           <div className="icon" id="cj">
             <img src={LogoCallatayWouters} alt="logo-callatay-wouters" />
           </div>
+        </div>
         </div>
       </div>
     </section>;
