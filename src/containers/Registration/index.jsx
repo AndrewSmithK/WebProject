@@ -443,7 +443,7 @@ export default class Registration extends Component {
                               floatingLabelText="Number"
                               name="number"
                               type="tel"
-                              validators={['required', 'matchRegexp:^[-+\\/\\s]*([0-9][-\\(\\) ]*){9}$']}
+                              validators={['required', 'matchRegexp:^\\d*$']}
                               errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
                                     />
                                 </div>
