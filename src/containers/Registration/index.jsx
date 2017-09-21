@@ -4,7 +4,7 @@ import MenuItem from 'material-ui/MenuItem'
 import TextField from 'material-ui/TextField'
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 import { ValidatorForm, TextValidator, SelectValidator } from 'react-material-ui-form-validator'
-import ThankYouScreen from './ThankYouScreen'
+import ThankYouScreen from '../../components/ThankYouScreen'
 
 import './style.scss'
 import Flag from '../../images/Registration/flag-belgium.svg'

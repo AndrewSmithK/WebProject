@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl-phraseapp';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
+import ThankYouScreen from '../../components/ThankYouScreen'
 
 import poneIcon from '../../images/contact-us/icon-phone.svg';
 import mailIcon from '../../images/contact-us/icon-mail.svg';
@@ -54,15 +55,17 @@ export default class Content extends React.Component {
         object: '',
         phone: '',
         message: ''
-      }
+      },
+      thanksScreen: false
     }
     this.handleBlur = this.handleBlur.bind(this)
     this.handleChange = this.handleChange.bind(this)
   }
 
   formSubmit() {
-    alert('Success. In the near future you will receive an answer.')
+    // alert('Success. In the near future you will receive an answer.')
     this.setState({
+      thanksScreen: true,
       formData: {
         company: '',
         email: '',
@@ -74,13 +77,14 @@ export default class Content extends React.Component {
   }
 
   handleChange(event) {
+    this.refs[event.target.name].validate()
     const { formData } = this.state
     formData[event.target.name] = event.target.value
     this.setState({ formData })
   }
 
   handleBlur(event) {
-    this.refs[event.target.name].validate(event.target.value);
+    this.refs[event.target.name].validate(event.target.value)
 }
 
   render() {
@@ -89,7 +93,11 @@ export default class Content extends React.Component {
     return (
       <div id="contactUs">
         <div className="container">
-          <div className="row wraper">
+          {this.state.thanksScreen ?
+            <div className="thank-screen">
+              <ThankYouScreen />
+            </div> :
+            <div className="row wraper">
             <div className="form-col">
               <div className="form-wrap">
                 <h3 className="title">
@@ -228,6 +236,7 @@ export default class Content extends React.Component {
               </ul>
             </div>
           </div>
+          }
         </div>
       </div>
     );
