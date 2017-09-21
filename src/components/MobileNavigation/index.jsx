@@ -30,7 +30,7 @@ const SubNav = ({toglMobNav}) => (
             </Link>
           </div>
         </li>
-        <li onClick={() => toglMobNav()}>
+        {/* <li onClick={() => toglMobNav()}>
           <div className="item">
             <Link to="/" style={{ color: '#3daed2' }}>
               <FormattedMessage
@@ -59,7 +59,7 @@ const SubNav = ({toglMobNav}) => (
               />
             </Link>
           </div>
-        </li>
+        </li> */}
       </ul>
       <ul>
         <li onClick={() => toglMobNav()}>

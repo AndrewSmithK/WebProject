@@ -94,7 +94,7 @@ export default class TopLine extends React.Component {
                           </p>
                         </div>
                       </li>
-                      <li>
+                      {/* <li>
                         <div className="item">
                           <Link to="/" style={{ color: '#3daed2' }}>
                             <FormattedMessage
@@ -141,7 +141,7 @@ export default class TopLine extends React.Component {
                             />
                           </p>
                         </div>
-                      </li>
+                      </li> */}
                     </ul>
                     <h5 className="title">
                       <FormattedMessage

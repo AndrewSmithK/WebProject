@@ -22,7 +22,7 @@ export default class GapInsurance extends React.Component {
             <li className="nav-item">
               <a className="nav-link active" href="#insurance" role="tab" data-toggle="tab">Gap Insurance</a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#light-casco" role="tab" data-toggle="tab">Light Casco</a>
             </li>
             <li className="nav-item">
@@ -30,7 +30,7 @@ export default class GapInsurance extends React.Component {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#driver-accident" role="tab" data-toggle="tab">Driver Accident</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -64,7 +64,7 @@ export default class TopLine extends React.Component {
                     defaultMessage={`GAP insurance`}
                   />
                 </Link></li>
-                <li>
+                {/* <li>
                   <Link onClick={this.disableLink} to="/">Light casco</Link>
                 </li>
                 <li>
@@ -72,7 +72,7 @@ export default class TopLine extends React.Component {
                 </li>
                 <li>
                   <Link onClick={this.disableLink} to="/">Driver Accident</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/our-products">Accident & Health</Link>
                 </li>
