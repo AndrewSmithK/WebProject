@@ -126,6 +126,14 @@
           margin-bottom: 20px;
           list-style: none;
 
+          > a {
+            font-family: Roboto;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: normal;
+          }
+
           .icon {
             position: absolute;
             top: 0;

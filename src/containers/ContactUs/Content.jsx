@@ -194,7 +194,7 @@ export default class Content extends React.Component {
                   </div>
                 </li>
                 <li>
-                  <span><i>contact@qover.com</i></span>
+                  <a href="mailto:contact@qover.com"><i>contact@qover.com</i></a>
                   <div className="icon">
                     <img src={mailIcon} alt="" />
                   </div>
