@@ -89,4 +89,13 @@
       }
     }
   }
+
+  .subnav {
+    .item {
+      .active span {
+        font-weight: bold;
+        color: #31cfda;
+      }
+    }
+  }
 }

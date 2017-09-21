@@ -12,7 +12,7 @@ const SubNav = ({toglMobNav}) => (
       <ul>
         <li onClick={() => toglMobNav()}>
           <div className="item">
-            <Link to="/our-products" style={{ color: '#31cfda' }}>
+            <Link to="/our-products" exact={true} activeClassName="active" style={{ color: '#31cfda' }}>
               <FormattedMessage
                 id={`topLine.ourProducts.all`}
                 defaultMessage={`All`}
@@ -22,7 +22,7 @@ const SubNav = ({toglMobNav}) => (
         </li>
         <li onClick={() => toglMobNav()}>
           <div className="item">
-            <Link to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>
+            <Link to="/our-products/gap-insurance" activeClassName="active" style={{ color: '#31cfda' }}>
               <FormattedMessage
                 id={`topLine.ourProducts.gapInsurance`}
                 defaultMessage={`Gap insurance`}
@@ -64,32 +64,32 @@ const SubNav = ({toglMobNav}) => (
       <ul>
         <li onClick={() => toglMobNav()}>
           <div className="item">
-            <Link to="/our-products" style={{ color: '#31cfda' }}>
+            <a href="/our-products" style={{ color: '#31cfda' }}>
               <FormattedMessage
                 id={`topLine.ourProducts.accidentHealth`}
                 defaultMessage={`Accident & health`}
               />
-            </Link>
+            </a>
           </div>
         </li>
         <li onClick={() => toglMobNav()}>
           <div className="item">
-            <Link to="/our-products" style={{ color: '#3aa2d3' }}>
+            <a href="/our-products" style={{ color: '#3aa2d3' }}>
               <FormattedMessage
                 id={`topLine.ourProducts.travel`}
                 defaultMessage={`Travel`}
               />
-            </Link>
+            </a>
           </div>
         </li>
         <li onClick={() => toglMobNav()}>
           <div className="item">
-            <Link to="/our-products" style={{ color: '#317bda' }}>
+            <a href="/our-products" style={{ color: '#317bda' }}>
               <FormattedMessage
                 id={`topLine.ourProducts.jobLoss`}
                 defaultMessage={`Job loss`}
               />
-            </Link>
+            </a>
           </div>
         </li>
       </ul>
