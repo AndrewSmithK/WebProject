@@ -2,6 +2,9 @@
 
     form {
         position: relative;
+        input {
+            border-radius: 3px 0 0 3px;
+        }
     }
 
     .subscribe-form-message {

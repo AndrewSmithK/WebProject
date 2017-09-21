@@ -24,7 +24,7 @@ const mock = [
     'status': 'new',
     'url': '/our-products/gap-insurance',
     'category': 'motor',
-    'country': 'belgium'
+    'country': 'france'
   }, {
     'image': AccidentHealth,
     'title': 'Accident & Health',
