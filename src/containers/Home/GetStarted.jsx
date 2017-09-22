@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 import dashboard from '../../images/HomePage/GetStarted/img-dashboard.png';
+// import api_image from '../../images/HomePage/api_image.png';
 
 export default class GetStarted extends React.Component {
   render() {
