@@ -123,7 +123,7 @@ export default class HomeCarousel extends Component {
         return <a><img src={images[i++]} alt="test" /></a>;
       },
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -137,7 +137,7 @@ export default class HomeCarousel extends Component {
       swipe: false,
       swipeToSlide: false,
       arrows: false,
-      infinite: false,
+      infinite: true,
       initialSlide: 2,
       responsive: [{
         breakpoint: 768, settings: { slidesToShow: 1 }

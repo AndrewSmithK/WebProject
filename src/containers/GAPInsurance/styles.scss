@@ -15,7 +15,7 @@
     position: absolute;
     background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png');
     background-position: left bottom !important;
-    background-size: auto !important;
+    background-size: auto 100% !important;
     height: 100%;
   }
 
@@ -702,7 +702,7 @@
 
 @media screen and (max-width: 768px) {
   #header-gap-insurance {
-    background-image: url('../../images/HomePage/homepage-bg.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
+    background-image: url('../../images/OurProducts/GapInsurance/header-gap-insurance.png'), radial-gradient(circle at -6% -9%, $dark-sky-blue, #43c8cd);
     background-size: cover;
     background-position: center;
     padding-right: 20px;
