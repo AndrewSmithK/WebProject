@@ -313,7 +313,7 @@ export default class TermsConflicts extends React.Component {
             id={`terms.conflicts.block2.p4`}
             defaultMessage={`Should you wish to have more information on these policies, the Client can contact the Compliance Officer by e-
             mail on the following address:`}
-          /><a href="mailto:compliance@qover.be">compliance@qover.be</a>
+          /><a href="mailto:compliance@qover.be"> compliance@qover.be </a>
           <FormattedMessage
             id={`terms.conflicts.block2.p5`}
             defaultMessage={`or by mail: Qover - Compliance Department – rue des
