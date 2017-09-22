@@ -63,7 +63,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-title">
                   <FormattedMessage
                       id={`about.whoWeAre.team.AnrienLebrun.position`}
-                      defaultMessage={`title`}
+                      defaultMessage={`Product Manager`}
                   />
                 </p>
                 <p className="icon-text">
