@@ -79,19 +79,18 @@ export default class TopLine extends React.Component {
                     </h5>
                     <ul>
                       <li>
-                        <div className="item">
-                          <Link to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>
-                            <FormattedMessage
+                        <div>
+                          <Link className="item" to="/our-products/gap-insurance" style={{ color: '#31cfda' }}>
+                            <span className="title"><FormattedMessage
                               id={`topLine.ourProducts.gapInsurance`}
                               defaultMessage={`Gap insurance`}
-                            />
-                          </Link>
-                          <p>
-                            <FormattedMessage
-                              id={`topLine.ourProducts.gapInsurance.desc`}
-                              defaultMessage={`Protect 100% of your car’s purchase price up to 5-years.`}
-                            />
-                          </p>
+                            /></span>
+                            <p>
+                              <FormattedMessage
+                                id={`topLine.ourProducts.gapInsurance.desc`}
+                                defaultMessage={`Protect 100% of your car’s purchase price up to 5-years.`}
+                              />
+                            </p></Link>
                         </div>
                       </li>
                       {/* <li>
@@ -151,51 +150,51 @@ export default class TopLine extends React.Component {
                     </h5>
                     <ul>
                       <li>
-                        <div className="item">
-                          <Link to="/our-products" style={{ color: '#31cfda' }}>
-                            <FormattedMessage
+                        <div>
+                          <Link className="item" to="/our-products" style={{ color: '#31cfda' }}>
+                            <span className="title"><FormattedMessage
                               id={`topLine.ourProducts.accidentHealth`}
                               defaultMessage={`Accident & health`}
-                            />
+                            /></span>
+                            <p>
+                              <FormattedMessage
+                                id={`topLine.ourProducts.accidentHealth.desc`}
+                                defaultMessage={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero `}
+                              />
+                            </p>
                           </Link>
-                          <p>
-                            <FormattedMessage
-                              id={`topLine.ourProducts.accidentHealth.desc`}
-                              defaultMessage={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero `}
-                            />
-                          </p>
                         </div>
                       </li>
                       <li>
-                        <div className="item">
-                          <Link to="/our-products" style={{ color: '#3aa2d3' }}>
-                            <FormattedMessage
+                        <div>
+                          <Link className="item" to="/our-products" style={{ color: '#3aa2d3' }}>
+                            <span className="title"><FormattedMessage
                               id={`topLine.ourProducts.travel`}
                               defaultMessage={`Travel`}
-                            />
+                            /></span>
+                            <p>
+                              <FormattedMessage
+                                id={`topLine.ourProducts.travel.desc`}
+                                defaultMessage={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero `}
+                              />
+                            </p>
                           </Link>
-                          <p>
-                            <FormattedMessage
-                              id={`topLine.ourProducts.travel.desc`}
-                              defaultMessage={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero `}
-                            />
-                          </p>
                         </div>
                       </li>
                       <li>
-                        <div className="item">
-                          <Link to="/our-products" style={{ color: '#317bda' }}>
-                            <FormattedMessage
+                        <div>
+                          <Link className="item" to="/our-products" style={{ color: '#317bda' }}>
+                            <span className="title"><FormattedMessage
                               id={`topLine.ourProducts.jobLoss`}
                               defaultMessage={`Job loss`}
-                            />
+                            /></span>
+                            <p>
+                              <FormattedMessage
+                                id={`topLine.ourProducts.jobLoss`}
+                                defaultMessage={`In quis tellus ac quam tristique adipiscing elit. Maecenas lacinia blandit metus.`}
+                              />
+                            </p>
                           </Link>
-                          <p>
-                            <FormattedMessage
-                              id={`topLine.ourProducts.jobLoss`}
-                              defaultMessage={`In quis tellus ac quam tristique adipiscing elit. Maecenas lacinia blandit metus.`}
-                            />
-                          </p>
                         </div>
                       </li>
                     </ul>
