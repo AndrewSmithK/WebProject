@@ -93,7 +93,7 @@ export default class Content extends React.Component {
     return (
       <div id="contactUs">
         <div className="container">
-          {!this.state.thanksScreen ?
+          {this.state.thanksScreen ?
             <div className="thank-screen">
               <ThankYouScreen regularText="We will come back to you soon." />
             </div> :
