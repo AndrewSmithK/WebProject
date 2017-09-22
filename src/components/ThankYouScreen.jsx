@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './ThankYouScreen.scss'
 import image from './image.svg'
 
-export default () =>
+export default (props) =>
     <div className="thank-you-screen">
         <h1 className="title">Thank you for your interest!</h1>
 
@@ -12,9 +12,9 @@ export default () =>
 
         <div className="message">
             <p>
-                Your registration request was well executed.
+                {props.boldText || ''}
                 <br />
-                <span>We will come back to you soon.</span>
+                <span>{props.regularText || ''}</span>
             </p>
         </div>
 

@@ -213,7 +213,7 @@ export default class Registration extends Component {
               <div className="main-block">
 
                 {this.state.thirdStep ?
-                  <ThankYouScreen /> :
+                  <ThankYouScreen boldText="Your registration request was well executed." regularText="We will come back to you soon." /> :
                   <ValidatorForm ref="form" onSubmit={this.handleSubmit} >
                     <div className="form">
                       <h2 className="form__title">The Company</h2>

@@ -93,9 +93,9 @@ export default class Content extends React.Component {
     return (
       <div id="contactUs">
         <div className="container">
-          {this.state.thanksScreen ?
+          {!this.state.thanksScreen ?
             <div className="thank-screen">
-              <ThankYouScreen />
+              <ThankYouScreen regularText="We will come back to you soon." />
             </div> :
             <div className="row wraper">
             <div className="form-col">
