@@ -19,13 +19,14 @@ export default class Subscribe extends React.Component {
 
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
     this.handleEmailChange = this.handleEmailChange.bind(this)
+    this.handleClose = this.handleClose.bind(this)
   }
 
   handleOpen = () => {
     this.setState({ open: true });
     setTimeout(() => {
       this.handleClose()
-    }, 2000)
+    }, 4000)
   };
 
   handleClose = () => {
@@ -65,10 +66,12 @@ export default class Subscribe extends React.Component {
       <section className="section bg-light-grey" id="subscribe">
 
         <Dialog
+          className="dialog-window"
           modal={false}
           open={this.state.open}
           onRequestClose={this.handleClose.bind(this)}
         >
+          <button className="close-button" onClick={this.handleClose}><i className="fa fa-times" aria-hidden="true"></i></button>
           Thank you for your subscription! You will receive soon some news about our latest features.
         </Dialog>
 

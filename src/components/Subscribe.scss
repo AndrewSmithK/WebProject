@@ -25,3 +25,13 @@
     }
 
 }
+
+.dialog-window {
+    button.close-button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
