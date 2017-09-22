@@ -30,7 +30,7 @@ export default (props) => (
           <button className="btn">
             <FormattedMessage
               id={`products.traditional.comingSoon`}
-              defaultMessage='Coming soon'
+              defaultMessage='More info'
             />
           </button> :
           <Link to={props.url} className="btn">
