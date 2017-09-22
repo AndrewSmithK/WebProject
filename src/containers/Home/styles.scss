@@ -778,7 +778,8 @@
       padding: 12px 140px 13px 13px;
       float: left;
       height: 40px;
-      color: rgba(91, 114, 137, 0.5);
+      color: $grey;
+      //color: rgba(91, 114, 137, 0.5);
       &::-webkit-input-placeholder { color: rgba(91, 114, 137, 0.5); }
       &:focus {
         outline: none;

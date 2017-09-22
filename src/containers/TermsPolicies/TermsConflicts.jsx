@@ -6,7 +6,7 @@ import img from "../../images/inducements.svg";
 export default class TermsConflicts extends React.Component {
   render () {
     return <div className="text-container">
-      <h5 className="title text-blue">
+      <h5 className="title text-blue" id="conflicts">
         <FormattedMessage
           id={`terms.conflicts.title`}
           defaultMessage={`Conflicts of Interest & Inducement Policy`}
@@ -240,7 +240,7 @@ export default class TermsConflicts extends React.Component {
             of interest management measures as laid out and required above.`}
           />
         </p>
-        <p className="text text-grey">
+        <p className="text text-grey" id="qover-policy">
           <FormattedMessage
             id={`terms.conflicts.block1.part2.p6`}
             defaultMessage={`An additional support to the identification and management of conflicts of interest is provided through
