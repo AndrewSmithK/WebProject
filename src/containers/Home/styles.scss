@@ -205,6 +205,11 @@
         text-transform: uppercase;
       }
 
+      b {
+        display: inline-block
+        margin-bottom: 4px;
+      }
+
       &:nth-child(1) p {
         float: left;
         max-width: 103px;
