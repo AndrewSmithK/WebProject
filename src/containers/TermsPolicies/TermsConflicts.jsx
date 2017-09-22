@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
 
+import img from "../../images/inducements.svg";
+
 export default class TermsConflicts extends React.Component {
   render () {
     return <div className="text-container">
@@ -298,7 +300,7 @@ export default class TermsConflicts extends React.Component {
             />
           </li>
         </ul>
-        <div className="chain-icon" style={{width: 'auto', height: 91.3 + 'px', background: '#f00'}} />
+        <img src={img} alt='' />
         <p className="text text-grey">
           <FormattedMessage
             id={`terms.conflicts.block2.p4`}

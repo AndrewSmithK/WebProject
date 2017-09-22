@@ -91,6 +91,7 @@ export default class HomeCarousel extends Component {
     super(props)
     this.next = this.next.bind(this)
     this.previous = this.previous.bind(this)
+    this.slickGoTo = this.slickGoTo.bind(this)
     this.test = this.test.bind(this)
   }
 
@@ -102,6 +103,10 @@ export default class HomeCarousel extends Component {
     this.slider.slickPrev()
   }
 
+  slickGoTo(n) {
+    this.refs.mainSlider.slickGoTo(n);
+  }
+
   test(first, second) {
     if (first < second) {
       this.next()
@@ -111,6 +116,7 @@ export default class HomeCarousel extends Component {
   }
 
   render() {
+    console.log(this.refs);
     const settings = {
       customPaging(i) {
         const images = [emerce, echo, techeu, detijd, datanews];
@@ -140,9 +146,10 @@ export default class HomeCarousel extends Component {
       }],
       beforeChange: this.test2
     };
+
     return (
       <section id="home-carousel">
-        <Slider {...settings}>
+        <Slider ref='mainSlider' {...settings}>
           <div><CarouselItem /></div>
           <div><CarouselItem /></div>
           <div><CarouselItem /></div>
@@ -151,27 +158,27 @@ export default class HomeCarousel extends Component {
         </Slider>
         <div className="bottom-slider">
           <Slider ref={c => this.slider = c } {...settings2}>
-            <div>
+            <div onClick={() => this.slickGoTo(0)}>
               <div className="bottom-slider-image">
                 <img src={emerce} alt="test" />
               </div>
             </div>
-            <div>
+            <div onClick={() => this.slickGoTo(1)}>
               <div className="bottom-slider-image">
                 <img src={echo} alt="test" />
               </div>
             </div>
-            <div>
+            <div onClick={() => this.slickGoTo(2)}>
               <div className="bottom-slider-image">
                 <img src={techeu} alt="test" />
               </div>
             </div>
-            <div>
+            <div onClick={() => this.slickGoTo(3)}>
               <div className="bottom-slider-image">
                 <img src={detijd} alt="test" />
               </div>
             </div>
-            <div>
+            <div onClick={() => this.slickGoTo(4)}>
               <div className="bottom-slider-image">
                 <img src={datanews} alt="test" />
               </div>
