@@ -145,7 +145,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-text">
                   <FormattedMessage
                       id={`about.whoWeAre.team.Arthur.name`}
-                      defaultMessage={`Arthur Lemoine`}
+                      defaultMessage={`Arthur`}
                   />
                 </p>
               </div>

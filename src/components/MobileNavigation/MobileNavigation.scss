@@ -67,6 +67,8 @@
 
       .selected {
         cursor: pointer;
+        width: 100%;
+        display: inline-block;
       }
 
       span {
@@ -81,6 +83,8 @@
         color: #317bda;
         text-decoration: none;
         font-weight: 400;
+        display: inline-block;
+        width: 100%;
         &.selected span {
           font-weight: bold;
           color: #31cfda;
