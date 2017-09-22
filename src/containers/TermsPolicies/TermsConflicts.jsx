@@ -300,7 +300,7 @@ export default class TermsConflicts extends React.Component {
             />
           </li>
         </ul>
-        <img src={img} alt='' />
+        <img src={img} alt='' className="hidden"/>
         <p className="text text-grey">
           <FormattedMessage
             id={`terms.conflicts.block2.p4`}
