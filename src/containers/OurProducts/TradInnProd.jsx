@@ -24,7 +24,7 @@ const mock = [
     'status': 'new',
     'url': '/our-products/gap-insurance',
     'category': 'motor',
-    'country': 'france'
+    'country': ['france', 'belgium']
   }, {
     'image': AccidentHealth,
     'title': 'Accident & Health',
@@ -72,10 +72,21 @@ export default class TradInnProd extends React.Component {
       this.setState({
         country: country,
         items: category === 'all' ?
-          _.filter(mock, { 'country': country }) :
-          _.filter(mock, { 'category': category, 'country': country })
+          _.filter(mock, (o) => {
+            return _.includes(o.country, country)
+          }) :
+          _.filter(mock, (o) => {
+            return o.category === category && _.includes(o.country, country)
+          })
       })
     }
+  }
+  
+  test(event, index, country) {
+    _.filter(mock, (o) => {
+      // console.log(_.includes(o.country, country))
+      console.log(o['country'] === country)
+    })
   }
 
   changeCategory(event, index, category) {
@@ -85,14 +96,19 @@ export default class TradInnProd extends React.Component {
         category: category,
         items: country === 'all' ?
           _.filter(mock, {}) :
-          _.filter(mock, { 'country': country })
+          _.filter(mock, (o) => {
+            return _.includes(o.country, country)
+          })
       })
     } else {
       this.setState({
         category: category,
         items: country === 'all' ?
           _.filter(mock, { 'category': category }) :
-          _.filter(mock, { 'category': category, 'country': country })
+          // _.filter(mock, { 'category': category, 'country': country })
+          _.filter(mock, (o) => {
+            return o.category === category && _.includes(o.country, country)
+          })
       })
     }
   }
@@ -104,14 +120,19 @@ export default class TradInnProd extends React.Component {
         category: category,
         items: country === 'all' ?
           _.filter(mock, {}) :
-          _.filter(mock, { 'country': country })
+          _.filter(mock, (o) => {
+            return _.includes(o.country, country)
+          })
       })
     } else {
       this.setState({
         category: category,
         items: country === 'all' ?
           _.filter(mock, { 'category': category }) :
-          _.filter(mock, { 'category': category, 'country': country })
+          // _.filter(mock, { 'category': category, 'country': country })
+          _.filter(mock, (o) => {
+            return o.category === category && _.includes(o.country, country)
+          })
       })
     }
   }
