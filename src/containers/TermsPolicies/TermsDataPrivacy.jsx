@@ -73,7 +73,7 @@ export default class TermsDataPrivacy extends React.Component {
               defaultMessage={`To request deletion, a copy of Personal Data, or for any other individual data subject queries, contact`}
             /> <a href="mailto:contact@qover.be">privacy@qover.be</a>
           </li>
-          <li className="text text-grey">
+          <li className="text text-grey" id="policy">
             <FormattedMessage 
               id={`terms.data.summary.list.item3`}
               defaultMessage={`You are always entitled to lodge a complaint with the supervisory authority by contacting the Belgian
@@ -97,7 +97,7 @@ export default class TermsDataPrivacy extends React.Component {
             receive from users of the site.`}
           />
         </p>
-        <p className="text text-grey">
+        <p className="text text-grey" id="information">
           <FormattedMessage 
             id={`terms.data.policy.p2`}
             defaultMessage={`We are committed to ensuring the protection of all Personal Information that we hold and to fulfilling our
@@ -135,14 +135,14 @@ export default class TermsDataPrivacy extends React.Component {
               defaultMessage={`information from a third party (e.g. a broker, lawyer or medical expert) authorised to provide it to us;`}
             />
           </li>
-          <li className="text text-grey">
+          <li className="text text-grey" id="communications">
             <FormattedMessage 
               id={`terms.data.information.list.item3`}
               defaultMessage={`information received from a third party (e.g. a lawyer or external claims handler appointed by us in relation
                 to a claim);`}
             />
           </li>
-          <li className="text text-grey">
+          <li className="text text-grey" >
             <FormattedMessage 
               id={`terms.data.information.list.item4`}
               defaultMessage={`information provided in correspondence with us, or a record of it.`}
@@ -158,7 +158,7 @@ export default class TermsDataPrivacy extends React.Component {
             defaultMessage={`Communications`}
           />
         </h6>
-        <p className="text text-grey">
+        <p className="text text-grey" id="security">
           <FormattedMessage 
             id={`terms.data.communications.p`}
             defaultMessage={`We may use your Personal Information to contact you with newsletters, marketing or promotional materials and
@@ -203,7 +203,7 @@ export default class TermsDataPrivacy extends React.Component {
             order to carry out their jobs.`}
           />
         </p>
-        <p className="text text-grey">
+        <p className="text text-grey" id="personal-information">
           <FormattedMessage 
             id={`terms.data.security.p4`}
             defaultMessage={`We have physical, electronic, and procedural safeguards that comply with our legal obligations to protect
@@ -285,7 +285,7 @@ export default class TermsDataPrivacy extends React.Component {
             />
           </li>
         </ul>
-        <p className="text text-grey">
+        <p className="text text-grey" id="parties">
           <FormattedMessage 
             id={`terms.data.personal.p2`}
             defaultMessage={`Where you provide us with Personal Information that may be regarded as “sensitive personal data” you agree
@@ -314,7 +314,7 @@ export default class TermsDataPrivacy extends React.Component {
             our behalf, in accordance with this Privacy Policy.`}
           />
         </p>
-        <p className="text text-grey">
+        <p className="text text-grey" id="disclouser">
           <FormattedMessage 
             id={`terms.data.otherParties.p2`}
             defaultMessage={`By submitting such information to us you confirm that you have all necessary permissions and consents to do so.`}
@@ -386,7 +386,7 @@ export default class TermsDataPrivacy extends React.Component {
               and`}
             />
           </li>
-          <li className="text text-grey">
+          <li className="text text-grey" id="access">
             <FormattedMessage 
               id={`terms.data.disclosure.list2.item1`}
               defaultMessage={`to protect the rights, property, or safety of us, our customers, or others (e.g. exchanging information with
@@ -403,7 +403,7 @@ export default class TermsDataPrivacy extends React.Component {
             defaultMessage={`Access to information`}
           />
         </h6>
-        <p className="text text-grey">
+        <p className="text text-grey" id="changes">
           Data subjects have the right to access information held about them. This right of access can be exercised in
           accordance with Belgian and EU data protection laws.
           <FormattedMessage 

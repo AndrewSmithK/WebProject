@@ -13,34 +13,34 @@ export default class TermsSideBar extends React.Component {
         <TermsItem title="Legal notices" path="/terms-policies" exact={true} />
 
         <TermsItem title="Cookie policy" path="/terms-policies/cookie-policy">
-          <li><Link to="/terms-policies">Log data</Link></li>
-          <li><Link to="/terms-policies">Cookies</Link></li>
+          <li><a href="#data">Log data</a></li>
+          <li><a href="#cookies">Cookies</a></li>
         </TermsItem>
 
         <TermsItem title="Conflicts of Interest & Inducement Policy" path="/terms-policies/conflicts">
-          <li><Link to="/terms-policies">Information on the policy on conflicts of interest</Link></li>
-          <li><Link to="/terms-policies">Information Qover's policy on inducements</Link></li>
+          <li><a href="#conflicts">Information on the policy on conflicts of interest</a></li>
+          <li><a href="#qover-policy">Information Qover's policy on inducements</a></li>
         </TermsItem>
 
         <TermsItem title="Data privacy" path="/terms-policies/data">
-          <li><Link to="/terms-policies">Summary</Link></li>
-          <li><Link to="/terms-policies">Policy</Link></li>
-          <li><Link to="/terms-policies">Information we may collect</Link></li>
-          <li><Link to="/terms-policies">Communications</Link></li>
-          <li><Link to="/terms-policies">Security</Link></li>
-          <li><Link to="/terms-policies">Use of Personal Information</Link></li>
-          <li><Link to="/terms-policies">Information that you provide about other parties</Link></li>
-          <li><Link to="/terms-policies">Disclosure of your Personal Information</Link></li>
-          <li><Link to="/terms-policies">Access to information</Link></li>
-          <li><Link to="/terms-policies">Changes to This Privacy Policy</Link></li>
+          <li><a href="#terms-notices">Summary</a></li>
+          <li><a href="#policy">Policy</a></li>
+          <li><a href="#information">Information we may collect</a></li>
+          <li><a href="#communications">Communications</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#personal-information">Use of Personal Information</a></li>
+          <li><a href="#parties">Information that you provide about other parties</a></li>
+          <li><a href="#disclouser">Disclosure of your Personal Information</a></li>
+          <li><a href="#access">Access to information</a></li>
+          <li><a href="#changes">Changes to This Privacy Policy</a></li>
         </TermsItem>
 
         <TermsItem title="Claim notification" path="/terms-policies/notification" />
 
         <TermsItem title="Complaints" path="/terms-policies/complaints">
-          <li><Link to="/terms-policies">Qover</Link></li>
-          <li><Link to="/terms-policies">Ombudsman</Link></li>
-          <li><Link to="/terms-policies">The European Online Dispute Resolution Platform</Link></li>
+          <li><a href="/terms-policies">Qover</a></li>
+          <li><a href="/terms-policies">Ombudsman</a></li>
+          <li><a href="/terms-policies">The European Online Dispute Resolution Platform</a></li>
         </TermsItem>
 
         <div className="item-title">

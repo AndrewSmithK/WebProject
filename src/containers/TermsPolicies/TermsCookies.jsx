@@ -4,13 +4,13 @@ import { FormattedMessage } from 'react-intl-phraseapp';
 export default class TermsCookies extends React.Component {
   render () {
     return <div className="text-container">
-      <h5 className="title text-blue">
+      <h5 className="title text-blue" id="data">
         <FormattedMessage 
           id={`terms.cookie.title`}
           defaultMessage={`Cookie policy`}
         />
       </h5>
-      <p className="text text-grey">
+      <p className="text text-grey" >
         <b>
           <FormattedMessage 
             id={`terms.cookie.bold`}
@@ -19,7 +19,7 @@ export default class TermsCookies extends React.Component {
         </b>
       </p>
       <div className="item">
-        <h6 className="subtitle text-turquoise">
+        <h6 className="subtitle text-turquoise" >
           <FormattedMessage 
             id={`terms.cookie.logData.title`}
             defaultMessage={`Log data`}
@@ -40,7 +40,7 @@ export default class TermsCookies extends React.Component {
             pages and other statistics.`}
           />
         </p>
-        <p className="text text-grey">
+        <p className="text text-grey" id="cookies">
           <FormattedMessage 
             id={`terms.cookie.logData.p3`}
             defaultMessage={`In addition, we may use third party services such as Google Analytics that collect, monitor and analyse this
@@ -49,7 +49,7 @@ export default class TermsCookies extends React.Component {
         </p>
       </div>
       <div className="item">
-        <h6 className="subtitle text-turquoise">
+        <h6 className="subtitle text-turquoise" >
           <FormattedMessage 
             id={`terms.cookie.cookies.title`}
             defaultMessage={`Cookies`}
