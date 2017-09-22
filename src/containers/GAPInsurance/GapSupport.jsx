@@ -6,6 +6,7 @@ import BelgiumSup from './BelgiumSup';
 import FranceSup from './FranceSup';
 
 import FlagBelgium from '../../images/Registration/flag-belgium.svg'
+import FlagFrance from '../../images/Registration/flag-france.svg'
 
 export default class GapSupport extends React.Component {
 
