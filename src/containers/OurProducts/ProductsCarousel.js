@@ -44,7 +44,7 @@ export default class ProductsCarousel extends Component {
                                 <button className="btn">
                                   <FormattedMessage
                                     id={`products.traditional.comingSoon`}
-                                    defaultMessage='More info'
+                                    defaultMessage='Coming soon'
                                   />
                                 </button> :
                                 <Link to={item.url} className="btn">
