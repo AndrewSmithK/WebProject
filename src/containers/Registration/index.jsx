@@ -242,7 +242,7 @@ export default class Registration extends Component {
                   <div className="form__field">
                     <TextValidator
                       {...textFieldSettings}
-                      className="form__field--fixed"
+                      className="text-field--fixed"
                       hintText="BE____.___.___"
                       floatingLabelFixed={true}
                       value={formData.registrationNumber}

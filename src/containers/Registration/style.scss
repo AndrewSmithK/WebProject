@@ -152,6 +152,9 @@ $first-break: 636px;
         }
 
         .text-field {
+            > input::-ms-clear {
+                display: none;
+            }
             &--fixed {
                 > :nth-child(5) {
                     color: #fff !important;
@@ -172,6 +175,9 @@ $first-break: 636px;
                         top: -3px;
                         left: 2px;
                     }
+                }
+                > input::-ms-clear {
+                    display: none;
                 }
             }
             > :nth-child(4) {

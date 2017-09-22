@@ -20,6 +20,10 @@
                 left: 2px;
             }
         }
+        
+        > input::-ms-clear {
+            display: none;
+        }
     }
     > :nth-child(4) {
         color: #fff !important;
