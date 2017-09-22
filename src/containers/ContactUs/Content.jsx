@@ -182,6 +182,7 @@ export default class Content extends React.Component {
                       multiLine
                       rows={1}
                       rowsMax={5}
+                      autoFocus={false}
                       floatingLabelText="Type your message here"
                       onBlur={this.handleBlur}
                       ref="message"
