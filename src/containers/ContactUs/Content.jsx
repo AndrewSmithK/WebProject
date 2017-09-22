@@ -109,6 +109,7 @@ export default class Content extends React.Component {
                   <ValidatorForm className="row form" instantValidate={false} onSubmit={this.formSubmit.bind(this)}>
                     <div className='field half'><TextValidator
                       {...settings}
+                      autoFocus
                       fullWidth
                       floatingLabelFixed
                       className="text-field--fixed"
