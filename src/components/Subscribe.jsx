@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl-phraseapp';
+import Dialog from 'material-ui/Dialog';
 
 import './Subscribe.scss'
 
@@ -12,17 +13,29 @@ export default class Subscribe extends React.Component {
 
     this.state = {
       email: '',
-      invalidEmail: false
+      invalidEmail: false,
+      open: false
     };
 
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
     this.handleEmailChange = this.handleEmailChange.bind(this)
   }
 
+  handleOpen = () => {
+    this.setState({ open: true });
+    setTimeout(() => {
+      this.handleClose()
+    }, 2000)
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
   handleFormSubmit(e) {
     e.preventDefault()
     if (this.state.invalidEmail) {
-      alert('Success. In the near future you will receive an answer.')
+      this.handleOpen()
     } else if (this.state.email === '') {
       this.showMessage('Email address field is empty')
     } else {
@@ -48,33 +61,44 @@ export default class Subscribe extends React.Component {
   }
 
   render() {
-    return <section className="section bg-light-grey" id="subscribe">
-      <div className="text-center">
-        <h4 className="title text-grey">
-          <FormattedMessage
-            id={`subscribe.title`}
-            defaultMessage={`Keep up with the latest features`}
-          />
-        </h4>
-      </div>
-      <div className="container">
-        <div className="row">
-          <form onSubmit={this.handleFormSubmit}>
-            <input
-              type="email"
-              placeholder="please@qover.me"
-              onChange={this.handleEmailChange}
+    return (
+      <section className="section bg-light-grey" id="subscribe">
+
+        <Dialog
+          modal={false}
+          open={this.state.open}
+          onRequestClose={this.handleClose.bind(this)}
+        >
+          Thank you for your subscription! You will receive soon some news about our latest features.
+        </Dialog>
+
+        <div className="text-center">
+          <h4 className="title text-grey">
+            <FormattedMessage
+              id={`subscribe.title`}
+              defaultMessage={`Keep up with the latest features`}
             />
-            <div className="subscribe-form-message">test</div>
-            <button type="submit" className="btn bg-turquoise text-white">
-              <FormattedMessage
-                id={`subscribe.btnSubscribe`}
-                defaultMessage={`Subscribe`}
-              />
-            </button>
-          </form>
+          </h4>
         </div>
-      </div>
-    </section>;
+        <div className="container">
+          <div className="row">
+            <form onSubmit={this.handleFormSubmit}>
+              <input
+                type="email"
+                placeholder="please@qover.me"
+                onChange={this.handleEmailChange}
+              />
+              <div className="subscribe-form-message">test</div>
+              <button type="submit" className="btn bg-turquoise text-white">
+                <FormattedMessage
+                  id={`subscribe.btnSubscribe`}
+                  defaultMessage={`Subscribe`}
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    );
   }
 }
