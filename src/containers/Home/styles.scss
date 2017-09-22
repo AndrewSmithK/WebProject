@@ -721,12 +721,10 @@
       &:before {
         content: '';
         position: absolute;
-        // background-color: white;
-        width: 40px;
+        width: 60px;
         height: 45px;
         left: 0px;
         top: 2px;
-        // box-shadow: 10px 0 10px red;
         background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
         z-index: 1;
       }
@@ -734,12 +732,10 @@
       &:after {
         content: '';
         position: absolute;
-        // background-color: white;
-        width: 40px;
+        width: 60px;
         height: 45px;
         right: 0px;
         top: 2px;
-        // box-shadow: -10px 0 10px red;
         background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
       }
     }
