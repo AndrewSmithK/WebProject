@@ -30,7 +30,7 @@ export default class Subscribe extends React.Component {
   };
 
   handleClose = () => {
-    this.setState({ open: false });
+    this.setState({ open: false, email: '' });
   };
 
   handleFormSubmit(e) {
@@ -87,6 +87,7 @@ export default class Subscribe extends React.Component {
           <div className="row">
             <form onSubmit={this.handleFormSubmit}>
               <input
+                value={this.state.email}
                 type="email"
                 placeholder="please@qover.me"
                 onChange={this.handleEmailChange}
