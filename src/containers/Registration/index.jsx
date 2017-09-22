@@ -351,8 +351,8 @@ export default class Registration extends Component {
                         onChange={this.handleChange}
                         floatingLabelText="Website"
                         name="website"
-                        validators={['required']}
-                        errorMessages={['This field is required.']}
+                        validators={['required', 'matchRegexp:^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$']}
+                        errorMessages={['This field is required.', 'Url is not valid.']}
                         ref="website"
                         onBlur={this.handleBlur}
                       />
@@ -455,7 +455,7 @@ export default class Registration extends Component {
                     onBlur={this.handleBlur}
                   />
 
-                  <div className="form__row form__row--phone">
+                  {/* <div className="form__row form__row--phone">
                     <div className="form__field form__field">
                       <SelectField style={{ width: '90px' }} {...selectFieldSettings} value={1} floatingLabelText="Phone Number" >
                         <MenuItem value={1} primaryText="+32" />
@@ -478,6 +478,24 @@ export default class Registration extends Component {
                         onBlur={this.handleBlur}
                       />
                     </div>
+                  </div> */}
+
+                  <div className="form__field">
+                    <TextValidator
+                      {...textFieldSettings}
+                      className="text-field--fixed"
+                      floatingLabelFixed
+                      hintText="+32478982241"
+                      validators={['required', 'matchRegexp:^[\\+]?\\d{3,100}$']}
+                      errorMessages={['this field is required', 'The format of the phone number is not correct.']}
+                      onChange={this.handleChange}
+                      value={formData.number}
+                      name="number"
+                      type="tel"
+                      floatingLabelText="Phone Number"
+                      ref="number"
+                      onBlur={this.handleBlur}
+                    />
                   </div>
 
                   <button disabled={!this.state.submitted2} className="btn" type="submit">Continue</button>
