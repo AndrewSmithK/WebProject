@@ -57,76 +57,132 @@ export default class WhoWeAre extends React.Component {
           <div className="employers-list justify-center">
             <div className="item">
               <div className="icon">
-                <img src={Quentin} alt="quentin" />
+                <img src={AnrienLebrun} alt="adrien-lebrun" />
               </div>
               <div className="text">
                 <p className="icon-title">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Quentin.position`}
-                    defaultMessage={`Co-Founder & Managing Director`}
+                      id={`about.whoWeAre.team.AnrienLebrun.position`}
+                      defaultMessage={`title`}
                   />
                 </p>
                 <p className="icon-text">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Quentin.name`}
-                    defaultMessage={`Quentin Colmant`}
+                      id={`about.whoWeAre.team.AnrienLebrun.name`}
+                      defaultMessage={`Adrien`}
                   />
                 </p>
               </div>
             </div>
             <div className="item">
               <div className="icon">
-                <img src={JeanCharles} alt="jean-charles" />
+                <img src={Alexandre} alt="alexandre" />
               </div>
               <div className="text">
                 <p className="icon-title">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.JeanCharles.position`}
-                    defaultMessage={`Co-Founder & Managing Director`}
+                      id={`about.whoWeAre.team.Alexandre.position`}
+                      defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.JeanCharles.name`}
-                    defaultMessage={`Jean-Charles Velge`}
+                      id={`about.whoWeAre.team.Alexandre.name`}
+                      defaultMessage={`Alexandre`}
                   />
                 </p>
               </div>
             </div>
             <div className="item">
               <div className="icon">
-                <img src={Eleonore} alt="eleonore" />
+                <img src={Ali} alt="ali" />
               </div>
               <div className="text">
                 <p className="icon-title">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Eleonore.position`}
-                    defaultMessage={`insurance / HR / Accounting & Marketing`}
+                      id={`about.whoWeAre.team.Ali.position`}
+                      defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Eleonore.name`}
-                    defaultMessage={`Eléonore Speeckaert`}
+                      id={`about.whoWeAre.team.Ali.name`}
+                      defaultMessage={`Ali`}
                   />
                 </p>
               </div>
             </div>
             <div className="item">
               <div className="icon">
-                <img src={Geert} alt="geert" />
+                <img src={Amandine} alt="amandine" />
               </div>
               <div className="text">
                 <p className="icon-title">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Geert.position`}
-                    defaultMessage={`Head of IT Development`}
+                      id={`about.whoWeAre.team.Amandine.position`}
+                      defaultMessage={`Legal & Insurance counsel`}
                   />
                 </p>
                 <p className="icon-text">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Geert.name`}
-                    defaultMessage={`Geert Vandendriessche`}
+                      id={`about.whoWeAre.team.Amandine.name`}
+                      defaultMessage={`Amandine`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Arthur} alt="arthur" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Arthur.position`}
+                      defaultMessage={`Business Analyst`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Arthur.name`}
+                      defaultMessage={`Arthur Lemoine`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Degallaix.position`}
+                      defaultMessage={`Software Engineer`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Degallaix.name`}
+                      defaultMessage={`Cédric`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)' }} />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Francois.position`}
+                      defaultMessage={`Product Owner & Product Manager`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Francois.name`}
+                      defaultMessage={`Cédric`}
                   />
                 </p>
               </div>
@@ -145,26 +201,254 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-text">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Denis.name`}
-                    defaultMessage={`Denis Schmitz`}
+                    defaultMessage={`Denis`}
                   />
                 </p>
               </div>
             </div>
             <div className="item">
               <div className="icon">
-                <img src={Ali} alt="ali" />
+                <img src={Dominique} alt="dominique" />
               </div>
               <div className="text">
                 <p className="icon-title">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Ali.position`}
-                    defaultMessage={`Software Engineer`}
+                      id={`about.whoWeAre.team.Dominique.position`}
+                      defaultMessage={`Sales Manager`}
                   />
                 </p>
                 <p className="icon-text">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Ali.name`}
-                    defaultMessage={`Ali El Gariani`}
+                      id={`about.whoWeAre.team.Dominique.name`}
+                      defaultMessage={`Dominique`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Eleonore} alt="eleonore" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Eleonore.position`}
+                      defaultMessage={`insurance / HR / Accounting & Marketing`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Eleonore.name`}
+                      defaultMessage={`Eléonore`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Emilien} alt="emilien" width="100%" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Emilien.position`}
+                      defaultMessage={`Software Engineer`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Emilien.name`}
+                      defaultMessage={`Emilien`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Francesca} alt="francesca" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Francesca.position`}
+                      defaultMessage={`Office Manager`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Francesca.name`}
+                      defaultMessage={`Francesca`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Geert} alt="geert" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Geert.position`}
+                      defaultMessage={`Head of IT Development`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Geert.name`}
+                      defaultMessage={`Geert`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Hamza} alt="hamza" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Hamza.position`}
+                      defaultMessage={`Software Engineer`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Hamza.name`}
+                      defaultMessage={`Hamza`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={JeanCharles} alt="jean-charles" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.JeanCharles.position`}
+                      defaultMessage={`Co-Founder & Managing Director`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.JeanCharles.name`}
+                      defaultMessage={`Jean-Charles`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Juan} alt="juan" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Juan.position`}
+                      defaultMessage={`Software Engineer`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Juan.name`}
+                      defaultMessage={`Juan Carlos`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Laurent.position`}
+                      defaultMessage={`Product Owner`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Laurent.name`}
+                      defaultMessage={`Laurent`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Mathieu} alt="mathieu" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Mathieu.position`}
+                      defaultMessage={`ux designer`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Mathieu.name`}
+                      defaultMessage={`Mathieu`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Nathalie} alt="nathalie" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Nathalie.position`}
+                      defaultMessage={`UI Designer`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Nathalie.name`}
+                      defaultMessage={`Nathalie`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Pauline.position`}
+                      defaultMessage={`Actuary`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Pauline.name`}
+                      defaultMessage={`Pauline`}
+                  />
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon">
+                <img src={Quentin} alt="quentin" />
+              </div>
+              <div className="text">
+                <p className="icon-title">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Quentin.position`}
+                      defaultMessage={`Co-Founder & Managing Director`}
+                  />
+                </p>
+                <p className="icon-text">
+                  <FormattedMessage
+                      id={`about.whoWeAre.team.Quentin.name`}
+                      defaultMessage={`Quentin`}
                   />
                 </p>
               </div>
@@ -183,121 +467,7 @@ export default class WhoWeAre extends React.Component {
                 <p className="icon-text">
                   <FormattedMessage
                     id={`about.whoWeAre.team.Romuald.name`}
-                    defaultMessage={`Romuald Deshayes`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Juan} alt="juan" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Juan.position`}
-                    defaultMessage={`Software Engineer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Juan.name`}
-                    defaultMessage={`Juan Carlos Sanchez`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Amandine} alt="amandine" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Amandine.position`}
-                    defaultMessage={`Legal & Insurance counsel`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Amandine.name`}
-                    defaultMessage={`Amandine de Lhoneux`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Dominique} alt="dominique" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Dominique.position`}
-                    defaultMessage={`Sales Manager`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Dominique.name`}
-                    defaultMessage={`Dominique Depondt`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Nathalie} alt="nathalie" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Nathalie.position`}
-                    defaultMessage={`UI Designer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Nathalie.name`}
-                    defaultMessage={`Nathalie Francotte`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Hamza} alt="hamza" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Hamza.position`}
-                    defaultMessage={`Software Engineer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Hamza.name`}
-                    defaultMessage={`Hamza Mounir`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Emilien} alt="emilien" width="100%" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Emilien.position`}
-                    defaultMessage={`Software Engineer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Emilien.name`}
-                    defaultMessage={`Emilien Durieu`}
+                    defaultMessage={`Romuald`}
                   />
                 </p>
               </div>
@@ -309,56 +479,19 @@ export default class WhoWeAre extends React.Component {
               <div className="text">
                 <p className="icon-title">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Simon.position`}
-                    defaultMessage={`Software Engineer`}
+                      id={`about.whoWeAre.team.Simon.position`}
+                      defaultMessage={`Software Engineer`}
                   />
                 </p>
                 <p className="icon-text">
                   <FormattedMessage
-                    id={`about.whoWeAre.team.Simon.name`}
-                    defaultMessage={`Simon Parmentier`}
+                      id={`about.whoWeAre.team.Simon.name`}
+                      defaultMessage={`Simon`}
                   />
                 </p>
               </div>
             </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Mathieu} alt="mathieu" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Mathieu.position`}
-                    defaultMessage={`ux designer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Mathieu.name`}
-                    defaultMessage={`Mathieu Nisen`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Alexandre} alt="alexandre" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Alexandre.position`}
-                    defaultMessage={`Software Engineer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Alexandre.name`}
-                    defaultMessage={`Alexandre Cys`}
-                  />
-                </p>
-              </div>
-            </div>
+
             {/*<div className="item">*/}
               {/*<div className="icon">*/}
                 {/*<img src={AlexandreRoba} alt="alexandre-roba" />*/}
@@ -378,139 +511,6 @@ export default class WhoWeAre extends React.Component {
                 {/*</p>*/}
               {/*</div>*/}
             {/*</div>*/}
-            <div className="item">
-              <div className="icon">
-                <img src={AnrienLebrun} alt="adrien-lebrun" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.AnrienLebrun.position`}
-                    defaultMessage={`title`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.AnrienLebrun.name`}
-                    defaultMessage={`Adrien Lebrun`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <div className="div-block" style={{ width: `${100}%`, height: `${100}%`, backgroundImage: 'radial-gradient(circle at -6% -9%, #317bda, #43c8cd)' }} />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Francois.position`}
-                    defaultMessage={`Product Owner & Product Manager`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Francois.name`}
-                    defaultMessage={`Cédric François`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Degallaix.position`}
-                    defaultMessage={`Software Engineer`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Degallaix.name`}
-                    defaultMessage={`Cédric Degallaix`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Francesca} alt="francesca" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Francesca.position`}
-                    defaultMessage={`Office Manager`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Francesca.name`}
-                    defaultMessage={`Francesca Nicolini`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-                <img src={Arthur} alt="arthur" />
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Arthur.position`}
-                    defaultMessage={`Business Analyst`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Arthur.name`}
-                    defaultMessage={`Arthur Lemoine`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Laurent.position`}
-                    defaultMessage={`Product Owner`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Laurent.name`}
-                    defaultMessage={`Laurent Parmentier`}
-                  />
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="icon">
-
-              </div>
-              <div className="text">
-                <p className="icon-title">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Pauline.position`}
-                    defaultMessage={`Actuary`}
-                  />
-                </p>
-                <p className="icon-text">
-                  <FormattedMessage
-                    id={`about.whoWeAre.team.Pauline.name`}
-                    defaultMessage={`Pauline Dedeurwaerder`}
-                  />
-                </p>
-              </div>
-            </div>
             <Link to="#" style={{ color: 'white' }}>
               <div className="item last-icon m-hidden">
                 <FormattedMessage

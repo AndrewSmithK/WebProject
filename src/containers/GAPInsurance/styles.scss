@@ -234,7 +234,7 @@
 }
 
 #gap-fact-sheet {
-  padding-bottom: 45px;
+  padding-bottom: 58px;
   padding-top: 90px;
   .container {
     .main-title {
@@ -278,7 +278,7 @@
       box-shadow: 1px 1px 15px rgba(49, 123, 218, .2);
 
       .content {
-        padding: 25px 25px 26px 25px;
+        padding: 25px 25px 16px 25px;
 
         .title {
           font-size: 20px;
@@ -289,7 +289,7 @@
 
         .advantages-list {
           padding-left: 35px;
-
+          margin-bottom: 0;
           .item {
             position: relative;
 
@@ -301,6 +301,7 @@
 
             .text {
               font-size: 13px;
+              margin-bottom: 10px;
             }
           }
         }
