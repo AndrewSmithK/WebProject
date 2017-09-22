@@ -64,12 +64,13 @@ const selectFieldSettings = {
   underlineStyle: {
     borderBottomWidth: '2px',
     borderBottomColor: '#317bda',
-    bottom: '5px'
+    bottom: '4px'
   },
   labelStyle: {
     color: '#317bda',
-    fontSize: '18px',
-    paddingBottom: '15px'
+    fontSize: '16px',
+    // paddingBottom: '20px',
+    paddingRight: '15px'
   },
   floatingLabelStyle: {
     fontSize: '13.333px',
@@ -80,6 +81,10 @@ const selectFieldSettings = {
     color: '#f4566a',
     padding: '10px',
     fontSize: '12px',
+    fontWeight: '500'
+  },
+  style: {
+    height: '47px',
     fontWeight: '500'
   }
 }
@@ -203,7 +208,7 @@ export default class TradInnProd extends React.Component {
           </div>
 
           <div className="select-field mobile-select">
-            <SelectField
+            {/* <SelectField
               fullWidth
               value={this.state.category}
               onChange={this.changeCategory.bind(this)}
@@ -226,6 +231,15 @@ export default class TradInnProd extends React.Component {
                 borderBottomWidth: '2px',
                 borderBottomColor: '#317bda',
               }}
+            >
+              <MenuItem value={'all'} primaryText="All" />
+              <MenuItem value={'motor'} primaryText="Motor" />
+              <MenuItem value={'lifestyle'} primaryText="Lifestyle" />
+            </SelectField> */}
+            <SelectField
+              {...selectFieldSettings}
+              value={this.state.category}
+              onChange={this.changeCategory.bind(this)}
             >
               <MenuItem value={'all'} primaryText="All" />
               <MenuItem value={'motor'} primaryText="Motor" />
