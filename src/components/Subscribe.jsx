@@ -5,7 +5,7 @@ import Dialog from 'material-ui/Dialog';
 import './Subscribe.scss'
 
 //eslint-disable-next-line
-const emailReqex = /^(?=[^@]{4,}@)([\w\.-]*[a-zA-Z0-9_]@(?=.{4,}\.[^.]*$)[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z])$/;
+const emailReqex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
 export default class Subscribe extends React.Component {
   constructor() {
