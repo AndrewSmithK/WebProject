@@ -113,8 +113,6 @@ export default class Registration extends Component {
         description: '',
         country: 1
       },
-      submitted: false,
-      submitted2: false,
       showInsurance: false,
       secondStep: false,
       thirdStep: false
@@ -137,8 +135,6 @@ export default class Registration extends Component {
     const { formData } = this.state
     formData[event.target.name] = event.target.value
     this.setState({ formData })
-
-    this.firstStepCheck()
   }
 
   handleBlur(event) {
@@ -149,62 +145,25 @@ export default class Registration extends Component {
     const { formData } = this.state
     formData['country'] = payload
     this.setState({ formData })
-
-    this.firstStepCheck()
   }
 
   handleSelectTitle(event, key, payload) {
     const { formData } = this.state
     formData['title'] = payload
     this.setState({ formData })
-
-    this.firstStepCheck()
   }
 
   handleSubmit() {
-    // this.setState({ submitted: true }, () => {
-    //     setTimeout(() => this.setState({ submitted: false }), 5000)
-    // })
-    console.log('handle submit')
-    console.log(this.state.formData)
-    this.thirdStep()
-  }
+    if (this.state.secondStep) {
+      this.setState({
+        thirdStep: true
+      })
+      
+      console.log('submit form', this.state.formData)
 
-  firstStepCheck() {
-    const { country, registrationNumber } = this.state.formData
-    this.setState({
-      submitted: country !== '' && registrationNumber !== '' ? true : false
-    })
-
-    this.secondStepCheck()
-  }
-
-  secondStepCheck() {
-    const { formData } = this.state
-    const checkProps = function () {
-      let res = true
-      for (let key in formData) {
-        if (formData[key] === '' || formData[key] === null) {
-          res = false
-        }
-      }
-      return res
+      return
     }
-    this.setState({
-      submitted2: checkProps()
-    })
-  }
-
-  secondStep() {
-    this.setState({
-      secondStep: true
-    })
-  }
-
-  thirdStep() {
-    this.setState({
-      thirdStep: true
-    })
+    this.setState({ secondStep: true })
   }
 
   render() {
@@ -258,7 +217,7 @@ export default class Registration extends Component {
                 </div>
 
                 {!this.state.secondStep ?
-                  <button onClick={this.secondStep.bind(this)} className="btn" disabled={!submitted} type="submit">Continue</button> :
+                  <button className="btn" type="submit">Continue</button> :
                   null
                 }
 
@@ -455,31 +414,6 @@ export default class Registration extends Component {
                     onBlur={this.handleBlur}
                   />
 
-                  {/* <div className="form__row form__row--phone">
-                    <div className="form__field form__field">
-                      <SelectField style={{ width: '90px' }} {...selectFieldSettings} value={1} floatingLabelText="Phone Number" >
-                        <MenuItem value={1} primaryText="+32" />
-                      </SelectField>
-                      <img src={Flag} alt="flag" style={{ position: 'relative', bottom: '42px', left: '50px' }} />
-                    </div>
-
-                    <div className="form__field form__field">
-                      <TextValidator style={{ left: '12px' }}
-                        {...textFieldSettings}
-                        value={formData.number}
-                        onChange={this.handleChange}
-                        floatingLabelStyle={{ display: 'none' }}
-                        floatingLabelText="Number"
-                        name="number"
-                        type="tel"
-                        validators={['required', 'matchRegexp:^\\d*$']}
-                        errorMessages={['this field is required', 'The format of the phone number is not correct. Please respect the format « 499 12 34 56 ».']}
-                        ref="number"
-                        onBlur={this.handleBlur}
-                      />
-                    </div>
-                  </div> */}
-
                   <div className="form__field">
                     <TextValidator
                       {...textFieldSettings}
@@ -498,7 +432,7 @@ export default class Registration extends Component {
                     />
                   </div>
 
-                  <button disabled={!this.state.submitted2} className="btn" type="submit">Continue</button>
+                  <button className="btn" type="submit">Continue</button>
                 </div> :
                 null
               }
