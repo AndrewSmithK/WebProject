@@ -4,6 +4,9 @@
         position: relative;
         input {
             border-radius: 3px 0 0 3px;
+            &::-ms-clear {
+                display: none;
+            }
         }
     }
 
